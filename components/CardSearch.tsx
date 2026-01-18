@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import { Search, Plus, X } from 'lucide-react';
 import { searchCards, getCardImage, getCardPrice } from '@/lib/scryfall';
 import { formatCurrency } from '@/lib/calculations';
@@ -91,10 +92,12 @@ export default function CardSearch({ onAddCard }: CardSearchProps) {
               className="flex items-center gap-3 p-2 bg-slate-700/30 rounded-lg"
             >
               {getCardImage(card) && (
-                <img
+                <Image
                   src={getCardImage(card) || ''}
                   alt={card.name}
-                  className="w-8 h-11 rounded object-cover"
+                  width={32}
+                  height={44}
+                  className="rounded object-cover"
                 />
               )}
               <div className="flex-1 min-w-0">

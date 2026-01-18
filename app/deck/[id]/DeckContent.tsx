@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowLeft, Loader2 } from 'lucide-react';
 import { getPreconById, getDeckCards } from '@/lib/precons';
 import { getStaticDeckPrices, fetchDeckPrices, getCardByName, getCardImage } from '@/lib/scryfall';
@@ -156,10 +157,12 @@ export default function DeckContent({ deckId }: { deckId: string }) {
         <div className="flex gap-6">
           {commanderImage && (
             <div className="flex-shrink-0">
-              <img
+              <Image
                 src={commanderImage}
                 alt={`${deck?.name} Commander`}
-                className="w-48 rounded-lg shadow-lg shadow-purple-500/20 border border-slate-600"
+                width={192}
+                height={268}
+                className="rounded-lg shadow-lg shadow-purple-500/20 border border-slate-600"
               />
               <p className="text-xs text-slate-500 text-center mt-2">Face Commander</p>
             </div>
