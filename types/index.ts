@@ -58,6 +58,7 @@ export interface PreconDeck {
 export interface DeckCardEntry {
   name: string;
   quantity: number;
+  setCode?: string;
 }
 
 export interface CardWithPrice {

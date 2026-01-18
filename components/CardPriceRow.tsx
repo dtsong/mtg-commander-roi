@@ -1,3 +1,5 @@
+import { memo } from 'react';
+import { ExternalLink } from 'lucide-react';
 import { formatCurrency } from '@/lib/calculations';
 
 interface CardPriceRowCard {
@@ -12,12 +14,15 @@ interface CardPriceRowProps {
   rank?: number;
 }
 
-export default function CardPriceRow({ card, rank }: CardPriceRowProps) {
+function CardPriceRow({ card, rank }: CardPriceRowProps) {
   const rawPrice = card.price ?? card.total;
   const hasPriceData = rawPrice !== null && rawPrice !== undefined && rawPrice !== 0;
   const price = rawPrice ?? 0;
   const quantity = card.quantity ?? 1;
   const showQuantity = quantity > 1;
+
+  const scryfallUrl = `https://scryfall.com/search?q=!"${encodeURIComponent(card.name)}"`;
+  const tcgPlayerUrl = `https://www.tcgplayer.com/search/magic/product?q=${encodeURIComponent(card.name)}`;
 
   return (
     <div className="flex items-center gap-3 p-2 bg-slate-700/30 rounded-lg hover:bg-slate-700/50 transition-colors">
@@ -27,9 +32,27 @@ export default function CardPriceRow({ card, rank }: CardPriceRowProps) {
         </span>
       )}
       <div className="flex-1 min-w-0">
-        <div className="font-medium text-white truncate">
+        <div className="font-medium text-white truncate flex items-center gap-1">
           {showQuantity && <span className="text-slate-400 mr-1">{quantity}x</span>}
-          {card.name}
+          <a
+            href={scryfallUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-purple-400 transition-colors"
+            title="View on Scryfall"
+          >
+            {card.name}
+          </a>
+          <a
+            href={tcgPlayerUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="ml-1 px-1.5 py-0.5 text-xs bg-slate-600 hover:bg-green-600 text-slate-300 hover:text-white rounded transition-colors flex items-center gap-1"
+            title="Search on TCGPlayer"
+          >
+            TCG
+            <ExternalLink className="w-3 h-3" />
+          </a>
         </div>
         {showQuantity && hasPriceData && (
           <div className="text-xs text-slate-400">
@@ -49,3 +72,5 @@ export default function CardPriceRow({ card, rank }: CardPriceRowProps) {
     </div>
   );
 }
+
+export default memo(CardPriceRow);

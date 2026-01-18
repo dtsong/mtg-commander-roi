@@ -14,6 +14,14 @@ const RATE_LIMIT_MS = 100;
 const MAX_RETRIES = 4;
 let lastRequestTime = 0;
 
+interface PriceInfo {
+  name: string;
+  price: number;
+  image: string | null;
+}
+
+const sessionPriceCache = new Map<string, PriceInfo>();
+
 const sleep = (ms: number): Promise<void> => new Promise(resolve => setTimeout(resolve, ms));
 
 interface ScryfallSearchResponse {
@@ -174,20 +182,40 @@ export const getCardPrice = (card: ScryfallCard): number => {
   return usd || usdFoil || 0;
 };
 
-interface PriceInfo {
-  name: string;
-  price: number;
-  image: string | null;
-}
-
 export const fetchCardsPrices = async (
   cardList: DeckCardEntry[],
   onProgress?: (progress: FetchProgress) => void
 ): Promise<Map<string, PriceInfo>> => {
   const BATCH_SIZE = 75;
-  const results: ScryfallCard[] = [];
+  const priceMap = new Map<string, PriceInfo>();
+  const uncachedCards: DeckCardEntry[] = [];
 
-  const identifiers = cardList.map(card => ({ name: card.name }));
+  for (const card of cardList) {
+    const cacheKey = card.setCode
+      ? `${card.name.toLowerCase()}|${card.setCode.toLowerCase()}`
+      : card.name.toLowerCase();
+    const cached = sessionPriceCache.get(cacheKey);
+    if (cached) {
+      priceMap.set(card.name, cached);
+    } else {
+      uncachedCards.push(card);
+    }
+  }
+
+  if (uncachedCards.length === 0) {
+    if (onProgress) {
+      onProgress({ fetched: cardList.length, total: cardList.length });
+    }
+    return priceMap;
+  }
+
+  const results: ScryfallCard[] = [];
+  const identifiers = uncachedCards.map(card => {
+    if (card.setCode) {
+      return { name: card.name, set: card.setCode };
+    }
+    return { name: card.name };
+  });
 
   for (let i = 0; i < identifiers.length; i += BATCH_SIZE) {
     const batch = identifiers.slice(i, i + BATCH_SIZE);
@@ -209,7 +237,8 @@ export const fetchCardsPrices = async (
     results.push(...(data.data || []));
 
     if (onProgress) {
-      onProgress({ fetched: Math.min(i + BATCH_SIZE, identifiers.length), total: identifiers.length });
+      const cachedCount = cardList.length - uncachedCards.length;
+      onProgress({ fetched: cachedCount + Math.min(i + BATCH_SIZE, identifiers.length), total: cardList.length });
     }
 
     if (i + BATCH_SIZE < identifiers.length) {
@@ -217,14 +246,18 @@ export const fetchCardsPrices = async (
     }
   }
 
-  const priceMap = new Map<string, PriceInfo>();
   for (const card of results) {
     const price = getCardPrice(card);
-    priceMap.set(card.name, {
+    const priceInfo: PriceInfo = {
       name: card.name,
       price,
       image: getCardImage(card),
-    });
+    };
+    priceMap.set(card.name, priceInfo);
+    const cacheKey = card.set
+      ? `${card.name.toLowerCase()}|${card.set.toLowerCase()}`
+      : card.name.toLowerCase();
+    sessionPriceCache.set(cacheKey, priceInfo);
   }
 
   return priceMap;

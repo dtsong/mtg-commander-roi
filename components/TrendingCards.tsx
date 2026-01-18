@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import Link from 'next/link';
 import { TrendingUp, ExternalLink, ChevronDown, ChevronUp } from 'lucide-react';
 import { loadTrendingData, findTrendingInPrecons, formatTrendingAge } from '@/lib/trending';
@@ -24,6 +24,14 @@ export default function TrendingCards() {
     };
     loadData();
   }, []);
+
+  const preconsByCardName = useMemo(() => {
+    const map = new Map<string, TrendingInPrecons>();
+    for (const item of trendingInPrecons) {
+      map.set(item.card.name.toLowerCase(), item);
+    }
+    return map;
+  }, [trendingInPrecons]);
 
   if (loading) {
     return (
@@ -64,9 +72,7 @@ export default function TrendingCards() {
 
       <div className="space-y-3">
         {displayCards.map((card, index) => {
-          const inPrecons = trendingInPrecons.find(
-            t => t.card.name.toLowerCase() === card.name.toLowerCase()
-          );
+          const inPrecons = preconsByCardName.get(card.name.toLowerCase());
 
           return (
             <div

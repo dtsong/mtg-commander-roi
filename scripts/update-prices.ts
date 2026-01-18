@@ -7,6 +7,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const BULK_DATA_URL = 'https://api.scryfall.com/bulk-data/default-cards';
 const DECKLISTS_PATH = join(__dirname, '..', 'public', 'data', 'decklists.json');
+const PRECONS_PATH = join(__dirname, '..', 'lib', 'precons.ts');
 const OUTPUT_PATH = join(__dirname, '..', 'public', 'data', 'prices.json');
 
 const sleep = (ms: number): Promise<void> => new Promise(resolve => setTimeout(resolve, ms));
@@ -18,6 +19,9 @@ interface BulkDataMetadata {
 
 interface BulkCard {
   name: string;
+  set: string;
+  collector_number: string;
+  promo?: boolean;
   prices?: CardPrices;
 }
 
@@ -36,6 +40,10 @@ interface ComputedDeckPrices {
 interface PricesOutput {
   updatedAt: string;
   decks: Record<string, ComputedDeckPrices>;
+}
+
+interface DeckSetMap {
+  [deckId: string]: string;
 }
 
 async function fetchWithRetry(url: string, maxRetries: number = 5): Promise<Response> {
@@ -64,15 +72,39 @@ function loadDecklists(): Decklists {
   return data;
 }
 
-function collectUniqueCardNames(decklists: Decklists): Set<string> {
-  const names = new Set<string>();
+function loadDeckSetCodes(): DeckSetMap {
+  console.log('Loading deck set codes from precons.ts...');
+  const content = readFileSync(PRECONS_PATH, 'utf-8');
+
+  const deckSetMap: DeckSetMap = {};
+  const regex = /\{\s*id:\s*'([^']+)'[^}]*setCode:\s*'([^']+)'/g;
+  let match;
+
+  while ((match = regex.exec(content)) !== null) {
+    deckSetMap[match[1]] = match[2];
+  }
+
+  console.log(`Found set codes for ${Object.keys(deckSetMap).length} decks`);
+  return deckSetMap;
+}
+
+function collectNeededCardSets(decklists: Decklists, deckSetMap: DeckSetMap): Map<string, Set<string>> {
+  const cardSets = new Map<string, Set<string>>();
+
   for (const deckId of Object.keys(decklists)) {
+    const setCode = deckSetMap[deckId];
+    if (!setCode) continue;
+
     for (const card of decklists[deckId]) {
-      names.add(card.name);
+      if (!cardSets.has(card.name)) {
+        cardSets.set(card.name, new Set());
+      }
+      cardSets.get(card.name)!.add(setCode);
     }
   }
-  console.log(`Found ${names.size} unique card names across all decks`);
-  return names;
+
+  console.log(`Found ${cardSets.size} unique card names across all decks`);
+  return cardSets;
 }
 
 async function getBulkDataUrl(): Promise<string> {
@@ -91,38 +123,107 @@ async function downloadBulkData(url: string): Promise<BulkCard[]> {
   return data;
 }
 
-function buildPriceLookup(allCards: BulkCard[], neededNames: Set<string>): Map<string, string | null> {
-  console.log('Building price lookup...');
-  const lookup = new Map<string, string | null>();
-  let matchCount = 0;
+interface CardVersion {
+  price: number;
+  priceStr: string;
+  collectorNumber: string;
+  isPromo: boolean;
+  isFoilOnly: boolean;
+}
+
+function isSerializedCollectorNumber(cn: string): boolean {
+  return /[a-zA-Z]/.test(cn) || parseInt(cn, 10) > 500;
+}
+
+function buildSetAwarePriceLookup(
+  allCards: BulkCard[],
+  neededCardSets: Map<string, Set<string>>
+): Map<string, string | null> {
+  console.log('Building set-aware price lookup (selecting cheapest versions)...');
+
+  const cardVersions = new Map<string, CardVersion[]>();
 
   for (const card of allCards) {
-    if (!neededNames.has(card.name)) continue;
-    if (lookup.has(card.name)) continue;
+    const neededSets = neededCardSets.get(card.name);
+    if (!neededSets || !neededSets.has(card.set)) continue;
 
     const usd = card.prices?.usd ?? null;
     const usdFoil = card.prices?.usd_foil ?? null;
-    const price = usd || usdFoil;
 
-    lookup.set(card.name, price);
-    matchCount++;
+    const priceStr = usd || usdFoil;
+    if (!priceStr) continue;
+
+    const price = parseFloat(priceStr);
+    if (isNaN(price) || price <= 0) continue;
+
+    const setKey = `${card.name}|${card.set}`;
+
+    if (!cardVersions.has(setKey)) {
+      cardVersions.set(setKey, []);
+    }
+
+    cardVersions.get(setKey)!.push({
+      price,
+      priceStr,
+      collectorNumber: card.collector_number,
+      isPromo: card.promo === true,
+      isFoilOnly: usd === null && usdFoil !== null,
+    });
   }
 
-  console.log(`Matched prices for ${matchCount}/${neededNames.size} cards`);
+  const lookup = new Map<string, string | null>();
+  let serializedSkipped = 0;
+
+  for (const [setKey, versions] of cardVersions) {
+    const validVersions = versions.filter(v => {
+      if (isSerializedCollectorNumber(v.collectorNumber)) {
+        serializedSkipped++;
+        return false;
+      }
+      return true;
+    });
+
+    const candidates = validVersions.length > 0 ? validVersions : versions;
+
+    candidates.sort((a, b) => {
+      if (a.isPromo !== b.isPromo) return a.isPromo ? 1 : -1;
+      if (a.isFoilOnly !== b.isFoilOnly) return a.isFoilOnly ? 1 : -1;
+      return a.price - b.price;
+    });
+
+    if (candidates.length > 0) {
+      lookup.set(setKey, candidates[0].priceStr);
+    }
+  }
+
+  console.log(`Matched prices for ${lookup.size} card+set combinations`);
+  console.log(`Skipped ${serializedSkipped} serialized/special versions`);
   return lookup;
 }
 
-function computeDeckPrices(decklists: Decklists, priceLookup: Map<string, string | null>): Record<string, ComputedDeckPrices> {
+function computeDeckPrices(
+  decklists: Decklists,
+  deckSetMap: DeckSetMap,
+  priceLookup: Map<string, string | null>
+): Record<string, ComputedDeckPrices> {
   console.log('Computing deck prices...');
   const decks: Record<string, ComputedDeckPrices> = {};
+  let missingPrices = 0;
 
   for (const deckId of Object.keys(decklists)) {
+    const setCode = deckSetMap[deckId];
     const cards = decklists[deckId];
     const cardPrices: ComputedCardPrice[] = [];
     let totalValue = 0;
 
     for (const card of cards) {
-      const priceStr = priceLookup.get(card.name) ?? null;
+      const setKey = `${card.name}|${setCode}`;
+      const priceStr = priceLookup.get(setKey) ?? null;
+
+      if (!priceStr) {
+        missingPrices++;
+      }
+
       const price = priceStr ? parseFloat(priceStr) : 0;
       const lineTotal = price * card.quantity;
 
@@ -148,6 +249,10 @@ function computeDeckPrices(decklists: Decklists, priceLookup: Map<string, string
     };
   }
 
+  if (missingPrices > 0) {
+    console.log(`Warning: ${missingPrices} cards missing set-specific prices`);
+  }
+
   return decks;
 }
 
@@ -160,12 +265,13 @@ async function main(): Promise<void> {
       process.exit(1);
     }
 
-    const neededNames = collectUniqueCardNames(decklists);
+    const deckSetMap = loadDeckSetCodes();
+    const neededCardSets = collectNeededCardSets(decklists, deckSetMap);
 
     const downloadUrl = await getBulkDataUrl();
     const allCards = await downloadBulkData(downloadUrl);
-    const priceLookup = buildPriceLookup(allCards, neededNames);
-    const decks = computeDeckPrices(decklists, priceLookup);
+    const priceLookup = buildSetAwarePriceLookup(allCards, neededCardSets);
+    const decks = computeDeckPrices(decklists, deckSetMap, priceLookup);
 
     const output: PricesOutput = {
       updatedAt: new Date().toISOString(),

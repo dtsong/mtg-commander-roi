@@ -38,6 +38,8 @@ const ROI_FILTERS = [
   { value: 'positive', label: 'Positive ROI' },
   { value: 'over20', label: '>20% ROI' },
   { value: 'buy', label: 'BUY (>15%)' },
+  { value: 'negative', label: 'Negative ROI' },
+  { value: 'hits', label: '3+ $10 Cards' },
 ];
 
 interface DeckComparisonTableProps {
@@ -76,29 +78,42 @@ export default function DeckComparisonTable({
   };
 
   const filteredAndSortedDecks = useMemo(() => {
-    let result = [...decks];
+    const decksWithMetrics = decks.map(deck => {
+      const data = priceData[deck.id];
+      const distroCost = getDistroCost(deck.msrp);
+      const highValueCount = data?.topCards?.filter(c => c.price >= 10).length ?? 0;
+      return {
+        deck,
+        roi: data ? calculateROI(data.totalValue, deck.msrp) : -999,
+        distroRoi: data ? calculateDistroROI(data.totalValue, distroCost) : -999,
+        value: data?.totalValue ?? -1,
+        highValueCount,
+      };
+    });
+
+    let result = decksWithMetrics;
 
     if (filter.year !== 'all') {
-      result = result.filter(d => d.year === parseInt(filter.year));
+      result = result.filter(d => d.deck.year === parseInt(filter.year));
     }
     if (filter.set !== 'all') {
-      result = result.filter(d => d.set === filter.set);
+      result = result.filter(d => d.deck.set === filter.set);
     }
 
     if (filter.roiThreshold !== 'all') {
       result = result.filter(d => {
-        const data = priceData[d.id];
-        if (!data) return false;
-        const distroCost = getDistroCost(d.msrp);
-        const distroRoi = calculateDistroROI(data.totalValue, distroCost);
-
+        if (d.distroRoi === -999) return false;
         switch (filter.roiThreshold) {
           case 'positive':
-            return distroRoi > 0;
+            return d.distroRoi > 0;
           case 'over20':
-            return distroRoi > 20;
+            return d.distroRoi > 20;
           case 'buy':
-            return distroRoi > 15;
+            return d.distroRoi > 15;
+          case 'negative':
+            return d.distroRoi < 0 || d.roi < 0;
+          case 'hits':
+            return d.highValueCount >= 3;
           default:
             return true;
         }
@@ -106,38 +121,36 @@ export default function DeckComparisonTable({
     }
 
     result.sort((a, b) => {
-      const aData = priceData[a.id];
-      const bData = priceData[b.id];
       let aVal: number | string, bVal: number | string;
 
       switch (sort.key) {
         case 'name':
-          aVal = a.name;
-          bVal = b.name;
+          aVal = a.deck.name;
+          bVal = b.deck.name;
           break;
         case 'set':
-          aVal = a.set;
-          bVal = b.set;
+          aVal = a.deck.set;
+          bVal = b.deck.set;
           break;
         case 'year':
-          aVal = a.year;
-          bVal = b.year;
+          aVal = a.deck.year;
+          bVal = b.deck.year;
           break;
         case 'msrp':
-          aVal = a.msrp;
-          bVal = b.msrp;
+          aVal = a.deck.msrp;
+          bVal = b.deck.msrp;
           break;
         case 'value':
-          aVal = aData?.totalValue ?? -1;
-          bVal = bData?.totalValue ?? -1;
+          aVal = a.value;
+          bVal = b.value;
           break;
         case 'roi':
-          aVal = aData ? calculateROI(aData.totalValue, a.msrp) : -999;
-          bVal = bData ? calculateROI(bData.totalValue, b.msrp) : -999;
+          aVal = a.roi;
+          bVal = b.roi;
           break;
         case 'distroRoi':
-          aVal = aData ? calculateDistroROI(aData.totalValue, getDistroCost(a.msrp)) : -999;
-          bVal = bData ? calculateDistroROI(bData.totalValue, getDistroCost(b.msrp)) : -999;
+          aVal = a.distroRoi;
+          bVal = b.distroRoi;
           break;
         default:
           aVal = 0;
@@ -152,7 +165,7 @@ export default function DeckComparisonTable({
       return sort.direction === 'asc' ? (aVal as number) - (bVal as number) : (bVal as number) - (aVal as number);
     });
 
-    return result;
+    return result.map(r => r.deck);
   }, [decks, filter, sort, priceData]);
 
   const stats = useMemo(() => {
@@ -200,21 +213,15 @@ export default function DeckComparisonTable({
             ))}
           </select>
 
-          <div className="flex rounded-lg overflow-hidden border border-slate-600">
+          <select
+            value={filter.roiThreshold}
+            onChange={(e) => setFilter(prev => ({ ...prev, roiThreshold: e.target.value }))}
+            className="bg-slate-700 border border-slate-600 rounded-lg px-3 py-2 text-white text-sm"
+          >
             {ROI_FILTERS.map(opt => (
-              <button
-                key={opt.value}
-                onClick={() => setFilter(prev => ({ ...prev, roiThreshold: opt.value }))}
-                className={`px-3 py-2 text-sm transition-colors ${
-                  filter.roiThreshold === opt.value
-                    ? 'bg-purple-600 text-white'
-                    : 'bg-slate-700 text-slate-300 hover:bg-slate-600'
-                }`}
-              >
-                {opt.label}
-              </button>
+              <option key={opt.value} value={opt.value}>{opt.label}</option>
             ))}
-          </div>
+          </select>
         </div>
 
         <div className="text-sm text-slate-400">

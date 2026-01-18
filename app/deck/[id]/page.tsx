@@ -5,7 +5,7 @@ import { useParams } from 'next/navigation';
 import Link from 'next/link';
 import { ArrowLeft, Loader2 } from 'lucide-react';
 import { getPreconById, getDeckCards } from '@/lib/precons';
-import { getStaticDeckPrices, fetchDeckPrices } from '@/lib/scryfall';
+import { getStaticDeckPrices, fetchDeckPrices, getCardByName, getCardImage } from '@/lib/scryfall';
 import ColorIndicator from '@/components/ColorIndicator';
 import ROISummary from '@/components/ROISummary';
 import TopValueCards from '@/components/TopValueCards';
@@ -25,6 +25,7 @@ export default function DeckDetailPage() {
   const [error, setError] = useState<string | null>(null);
   const [fetchSource, setFetchSource] = useState<string | null>(null);
   const [excludedCount, setExcludedCount] = useState(0);
+  const [commanderImage, setCommanderImage] = useState<string | null>(null);
 
   useEffect(() => {
     const loadDeckData = async () => {
@@ -51,6 +52,14 @@ export default function DeckDetailPage() {
         setExcludedCount(cardsWithoutPrice.length);
         setCards(formattedCards);
         setTotalValue(deckPrices.totalValue);
+
+        if (formattedCards.length > 0) {
+          const commander = await getCardByName(formattedCards[0].name);
+          if (commander) {
+            setCommanderImage(getCardImage(commander));
+          }
+        }
+
         setLoading(false);
         return;
       }
@@ -76,6 +85,10 @@ export default function DeckDetailPage() {
         setExcludedCount(cardsWithoutPrice.length);
         setCards(formattedCards);
         setTotalValue(liveData.totalValue);
+
+        if (liveData.cards.length > 0 && liveData.cards[0].image) {
+          setCommanderImage(liveData.cards[0].image);
+        }
       } catch (err) {
         setError('Failed to fetch card prices from Scryfall');
       }
@@ -135,7 +148,21 @@ export default function DeckDetailPage() {
       </header>
 
       <main className="max-w-4xl mx-auto px-6 py-6 space-y-6">
-        <ROISummary deck={deck} totalValue={totalValue} loading={loading} excludedCount={excludedCount} />
+        <div className="flex gap-6">
+          {commanderImage && (
+            <div className="flex-shrink-0">
+              <img
+                src={commanderImage}
+                alt={`${deck?.name} Commander`}
+                className="w-48 rounded-lg shadow-lg shadow-purple-500/20 border border-slate-600"
+              />
+              <p className="text-xs text-slate-500 text-center mt-2">Face Commander</p>
+            </div>
+          )}
+          <div className="flex-1">
+            <ROISummary deck={deck} totalValue={totalValue} loading={loading} excludedCount={excludedCount} />
+          </div>
+        </div>
         <TopValueCards cards={cards} loading={loading} />
         <CardList cards={cards} loading={loading} />
 

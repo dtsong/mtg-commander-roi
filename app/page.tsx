@@ -9,15 +9,16 @@ import BulkImport from '@/components/BulkImport';
 import CardList from '@/components/CardList';
 import TopValueCards from '@/components/TopValueCards';
 import AddDeckModal from '@/components/AddDeckModal';
-import { loadSetCards } from '@/lib/scryfall';
+import { fetchDeckPrices, getCardPrice } from '@/lib/scryfall';
+import { getDeckCards } from '@/lib/precons';
 import { calculateTotalValue } from '@/lib/calculations';
-import type { PreconDeck, ScryfallCard } from '@/types';
+import type { PreconDeck, CardWithPrice, ScryfallCard } from '@/types';
 
 export default function Home() {
   const [selectedYear, setSelectedYear] = useState<number | null>(2026);
   const [selectedSet, setSelectedSet] = useState<string | null>(null);
   const [selectedDeck, setSelectedDeck] = useState<PreconDeck | null>(null);
-  const [cards, setCards] = useState<ScryfallCard[]>([]);
+  const [cards, setCards] = useState<CardWithPrice[]>([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [customDecks, setCustomDecks] = useState<PreconDeck[]>([]);
@@ -26,19 +27,22 @@ export default function Home() {
   const totalValue = calculateTotalValue(cards);
 
   const loadDeckCards = useCallback(async (deck: PreconDeck) => {
-    if (!deck?.setCode) return;
+    if (!deck?.id) return;
 
     setLoading(true);
     setError(null);
     setCards([]);
 
     try {
-      const loadedCards = await loadSetCards(deck.setCode, (progress) => {
-        console.log(`Loaded ${progress.loaded} cards...`);
-      });
-      setCards(loadedCards);
+      const deckCards = await getDeckCards(deck.id);
+      if (!deckCards.length) {
+        setError('No deck list found for this deck');
+        return;
+      }
+      const priceResult = await fetchDeckPrices(deckCards);
+      setCards(priceResult.cards);
     } catch (err) {
-      setError('Failed to load cards from Scryfall');
+      setError('Failed to load deck prices');
       console.error(err);
     } finally {
       setLoading(false);
@@ -51,12 +55,23 @@ export default function Home() {
     }
   }, [selectedDeck, loadDeckCards]);
 
+  const scryfallToCardWithPrice = (card: ScryfallCard): CardWithPrice => {
+    const price = getCardPrice(card);
+    return {
+      name: card.name,
+      quantity: 1,
+      price,
+      total: price,
+      image: card.image_uris?.normal || null,
+    };
+  };
+
   const handleAddCard = (card: ScryfallCard) => {
-    setCards(prev => [...prev, card]);
+    setCards(prev => [...prev, scryfallToCardWithPrice(card)]);
   };
 
   const handleBulkImport = (importedCards: ScryfallCard[]) => {
-    setCards(prev => [...prev, ...importedCards]);
+    setCards(prev => [...prev, ...importedCards.map(scryfallToCardWithPrice)]);
   };
 
   const handleAddCustomDeck = (deck: PreconDeck) => {
@@ -77,7 +92,7 @@ export default function Home() {
         )}
 
         <div className="grid grid-cols-12 gap-6">
-          <div className="col-span-4">
+          <div className="col-span-4 space-y-6">
             <DeckSelector
               selectedYear={selectedYear}
               setSelectedYear={setSelectedYear}

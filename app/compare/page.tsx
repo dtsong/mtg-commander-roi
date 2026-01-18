@@ -4,7 +4,6 @@ import { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
 import { ArrowLeft, Trash2, RefreshCw, Loader2 } from 'lucide-react';
 import DeckComparisonTable from '@/components/DeckComparisonTable';
-import TrendingCards from '@/components/TrendingCards';
 import { PRECON_DATABASE, getDeckCards } from '@/lib/precons';
 import { loadStaticPrices, fetchDeckPrices } from '@/lib/scryfall';
 import { getCachedPrice, setCachedPrice, clearCache, formatStaticPriceAge } from '@/lib/priceCache';
@@ -70,6 +69,7 @@ export default function ComparePage() {
       const deckCards = await getDeckCards(deck.id);
       if (!deckCards.length) {
         console.warn(`No deck list found for ${deck.name}`);
+        alert(`No deck list available for "${deck.name}" yet.`);
         return;
       }
 
@@ -177,20 +177,13 @@ export default function ComparePage() {
       </header>
 
       <main className="max-w-7xl mx-auto px-6 py-6">
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 mb-6">
-          <div className="lg:col-span-1">
-            <TrendingCards />
-          </div>
-          <div className="lg:col-span-3">
-            <DeckComparisonTable
-              decks={PRECON_DATABASE}
-              priceData={priceData}
-              loadingDeck={loadingDeck}
-              onLoadPrice={fetchDeckPrice}
-              onRefreshPrice={fetchDeckPrice}
-            />
-          </div>
-        </div>
+        <DeckComparisonTable
+          decks={PRECON_DATABASE}
+          priceData={priceData}
+          loadingDeck={loadingDeck}
+          onLoadPrice={fetchDeckPrice}
+          onRefreshPrice={fetchDeckPrice}
+        />
 
         <footer className="mt-8 pt-6 border-t border-slate-700 text-center text-sm text-slate-500">
           Card data and prices provided by{' '}

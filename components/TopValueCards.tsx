@@ -1,3 +1,4 @@
+import { useMemo } from 'react';
 import { Trophy } from 'lucide-react';
 import CardPriceRow from './CardPriceRow';
 import { getTopValueCards } from '@/lib/calculations';
@@ -16,7 +17,10 @@ interface TopValueCardsProps {
 }
 
 export default function TopValueCards({ cards, loading }: TopValueCardsProps) {
-  const topCards = getTopValueCards(cards, 5) as TopValueCardsCard[];
+  const topCards = useMemo(
+    () => getTopValueCards(cards, 5) as TopValueCardsCard[],
+    [cards]
+  );
 
   if (loading || cards.length === 0) {
     return null;
@@ -31,7 +35,7 @@ export default function TopValueCards({ cards, loading }: TopValueCardsProps) {
       <p className="text-sm text-slate-400 mb-4">Highest value singles in this deck</p>
       <div className="space-y-2">
         {topCards.map((card, index) => (
-          <CardPriceRow key={card.id} card={card} rank={index + 1} />
+          <CardPriceRow key={card.name} card={card} rank={index + 1} />
         ))}
       </div>
     </div>

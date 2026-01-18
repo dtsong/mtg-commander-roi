@@ -122,7 +122,15 @@ export async function loadDecklists(): Promise<Decklists> {
 
 export async function getDeckCards(deckId: string): Promise<DeckCardEntry[]> {
   const decklists = await loadDecklists();
-  return decklists[deckId] || [];
+  const cards = decklists[deckId] || [];
+
+  const deck = getPreconById(deckId);
+  if (!deck) return cards;
+
+  return cards.map(card => ({
+    ...card,
+    setCode: deck.setCode,
+  }));
 }
 
 export async function hasDeckList(deckId: string): Promise<boolean> {
