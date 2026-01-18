@@ -4,10 +4,13 @@ Analyze the return on investment of Magic: The Gathering Commander preconstructe
 
 ## Features
 
-- **Deck Comparison Table** - Side-by-side comparison of all Commander precons with sortable columns
+- **98 Precon Decks** - Complete coverage of Commander precons from 2022-2026
+- **Deck Comparison Table** - Side-by-side comparison with sortable columns and filters
 - **Distributor ROI Calculations** - Calculate ROI at wholesale pricing (40% discount default)
 - **BUY/HOLD/PASS Verdicts** - Clear recommendations based on configurable ROI thresholds
-- **ROI Threshold Filters** - Filter decks by minimum ROI percentage
+- **Card Search** - Find specific cards across all decks
+- **Bulk Import** - Import decklists from external sources
+- **Custom Deck Creation** - Build and analyze your own deck configurations
 - **Deck Detail Pages** - Individual deck breakdowns with card-by-card pricing
 - **Live Price Fallback** - Automatic Scryfall API queries when static data is unavailable
 
@@ -35,10 +38,9 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Usage
 
-1. Browse the comparison table on the home page to see all precons ranked by ROI
-2. Adjust the distributor discount slider to match your wholesale pricing
-3. Use ROI filters to show only decks meeting your investment criteria
-4. Click any deck to view detailed card breakdowns and top value cards
+1. **Home Page** - Select a deck from the dropdown to see instant ROI analysis with market value vs MSRP
+2. **Comparison Page** - Browse all precons in a sortable table, filter by year/set, adjust distributor discount
+3. **Deck Detail Pages** - Click any deck for card-by-card pricing breakdown and top value cards
 
 ## Roadmap
 
@@ -66,11 +68,9 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ### Backlog
 
-- Velocity metric (blocked - no free sales velocity API)
-- Distributor spend tracker
-- Expand beyond Commander precons
 - Historical ROI trends (requires database)
 - TCGplayer/CardMarket purchase links
+- Play Booster EV analysis
 
 ## Routes
 

@@ -48,6 +48,21 @@ bun lint       # Linting
 - Static generation with `generateStaticParams`
 - Content as template literal strings (not MDX)
 
+### ROI Calculations
+- MSRP vs current market value
+- Distributor pricing: 40% discount from MSRP
+- Verdicts: BUY (>15% distro ROI), HOLD (0-15%), PASS (<0%)
+
+### Scripts (`scripts/`)
+- `update-prices.ts`: Fetch bulk Scryfall data, generate static pricing
+- `import-decklist.ts`: Import deck lists from external sources
+- `fetch-trending.ts`: Fetch trending cards from EDHREC
+
+### Data
+- 98 precon decks (2022-2026)
+- Decklists: `public/data/decklists.json`
+- Static prices: `public/data/prices.json`
+
 ## React Guidelines
 
 Follow `~/.claude/skills/react-best-practices` for performance patterns.
