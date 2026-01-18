@@ -84,15 +84,15 @@ export default function Home() {
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
       <Header onAddDeck={() => setShowAddModal(true)} />
 
-      <main className="max-w-7xl mx-auto px-6 py-6">
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 py-6">
         {error && (
           <div className="mb-4 p-4 bg-red-500/20 border border-red-500 rounded-lg text-red-300">
             {error}
           </div>
         )}
 
-        <div className="grid grid-cols-12 gap-6">
-          <div className="col-span-4 space-y-6">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+          <div className="lg:col-span-4 space-y-6">
             <DeckSelector
               selectedYear={selectedYear}
               setSelectedYear={setSelectedYear}
@@ -104,14 +104,14 @@ export default function Home() {
             />
           </div>
 
-          <div className="col-span-8 space-y-6">
+          <div className="lg:col-span-8 space-y-6">
             <ROISummary
               deck={selectedDeck}
               totalValue={totalValue}
               loading={loading}
             />
 
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <CardSearch onAddCard={handleAddCard} />
               <BulkImport onImport={handleBulkImport} />
             </div>

@@ -189,12 +189,12 @@ export default function DeckComparisonTable({
 
   return (
     <div className="space-y-4">
-      <div className="flex flex-wrap items-center justify-between gap-4">
-        <div className="flex items-center gap-3 flex-wrap">
+      <div className="flex flex-col sm:flex-row flex-wrap items-start sm:items-center justify-between gap-4">
+        <div className="flex items-center gap-3 flex-wrap w-full sm:w-auto">
           <select
             value={filter.year}
             onChange={(e) => setFilter(prev => ({ ...prev, year: e.target.value }))}
-            className="bg-slate-700 border border-slate-600 rounded-lg px-3 py-2 text-white text-sm"
+            className="bg-slate-700 border border-slate-600 rounded-lg px-3 py-2 min-h-[44px] text-white text-sm flex-1 sm:flex-none"
           >
             <option value="all">All Years</option>
             {years.map(year => (
@@ -205,7 +205,7 @@ export default function DeckComparisonTable({
           <select
             value={filter.set}
             onChange={(e) => setFilter(prev => ({ ...prev, set: e.target.value }))}
-            className="bg-slate-700 border border-slate-600 rounded-lg px-3 py-2 text-white text-sm"
+            className="bg-slate-700 border border-slate-600 rounded-lg px-3 py-2 min-h-[44px] text-white text-sm flex-1 sm:flex-none"
           >
             <option value="all">All Sets</option>
             {sets.map(set => (
@@ -216,7 +216,7 @@ export default function DeckComparisonTable({
           <select
             value={filter.roiThreshold}
             onChange={(e) => setFilter(prev => ({ ...prev, roiThreshold: e.target.value }))}
-            className="bg-slate-700 border border-slate-600 rounded-lg px-3 py-2 text-white text-sm"
+            className="bg-slate-700 border border-slate-600 rounded-lg px-3 py-2 min-h-[44px] text-white text-sm flex-1 sm:flex-none"
           >
             {ROI_FILTERS.map(opt => (
               <option key={opt.value} value={opt.value}>{opt.label}</option>
@@ -238,7 +238,80 @@ export default function DeckComparisonTable({
         </div>
       </div>
 
-      <div className="bg-slate-800/50 border border-slate-700 rounded-lg overflow-hidden">
+      {/* Mobile card view */}
+      <div className="md:hidden space-y-3">
+        {filteredAndSortedDecks.map(deck => {
+          const data = priceData[deck.id];
+          const isLoading = loadingDeck === deck.id;
+          const roi = data ? calculateROI(data.totalValue, deck.msrp) : null;
+          const distroCost = getDistroCost(deck.msrp);
+          const distroRoi = data ? calculateDistroROI(data.totalValue, distroCost) : null;
+
+          return (
+            <div key={deck.id} className="bg-slate-800/50 border border-slate-700 rounded-lg p-4">
+              <div className="flex items-start justify-between gap-3 mb-3">
+                <div className="min-w-0 flex-1">
+                  <Link
+                    href={`/deck/${deck.id}`}
+                    className="font-medium text-white hover:text-purple-400 block truncate"
+                  >
+                    {deck.name}
+                  </Link>
+                  <div className="text-sm text-slate-400 mt-1">{deck.set} ({deck.year})</div>
+                </div>
+                <ColorIndicator colors={deck.colors} />
+              </div>
+
+              <div className="grid grid-cols-2 gap-3 mb-3">
+                <div className="bg-slate-700/50 rounded-lg p-2">
+                  <div className="text-xs text-slate-400">MSRP</div>
+                  <div className="text-white font-medium">{formatCurrency(deck.msrp)}</div>
+                </div>
+                <div className="bg-slate-700/50 rounded-lg p-2">
+                  <div className="text-xs text-slate-400">Value</div>
+                  <div className="text-white font-medium">
+                    {isLoading ? '...' : data ? formatCurrency(data.totalValue) : '—'}
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-3">
+                  {distroRoi !== null && roi !== null && (
+                    <span className={`font-bold ${getROIVerdict(distroRoi, roi).color}`}>
+                      {formatPercentage(distroRoi)}
+                    </span>
+                  )}
+                  {roi !== null && <ROIBadge roi={roi} size="sm" />}
+                </div>
+                <button
+                  onClick={() => data ? onRefreshPrice(deck) : onLoadPrice(deck)}
+                  disabled={isLoading || !!loadingDeck}
+                  className={`inline-flex items-center gap-1 px-4 py-2 min-h-[44px] rounded-lg text-sm transition-colors ${
+                    isLoading
+                      ? 'bg-slate-600 text-slate-400 cursor-not-allowed'
+                      : loadingDeck
+                        ? 'bg-slate-700 text-slate-500 cursor-not-allowed'
+                        : data
+                          ? 'bg-slate-600 hover:bg-slate-500 text-slate-200'
+                          : 'bg-purple-600 hover:bg-purple-500 text-white'
+                  }`}
+                >
+                  {isLoading ? (
+                    <Loader2 className="w-4 h-4 animate-spin" />
+                  ) : (
+                    <RefreshCw className="w-4 h-4" />
+                  )}
+                  {data ? 'Refresh' : 'Load'}
+                </button>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
+      {/* Desktop table view */}
+      <div className="hidden md:block bg-slate-800/50 border border-slate-700 rounded-lg overflow-hidden">
         <div className="overflow-x-auto">
           <table className="w-full">
             <thead className="bg-slate-700/50">

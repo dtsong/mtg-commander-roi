@@ -44,7 +44,7 @@ export default function DeckSelector({
         <select
           value={selectedYear || ''}
           onChange={(e) => handleYearChange(e.target.value ? Number(e.target.value) : null)}
-          className="w-full bg-slate-700 border border-slate-600 rounded-lg px-3 py-2 text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
+          className="w-full bg-slate-700 border border-slate-600 rounded-lg px-3 py-2 min-h-[44px] text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
         >
           <option value="">All Years</option>
           {years.map(year => (
@@ -58,7 +58,7 @@ export default function DeckSelector({
         <select
           value={selectedSet || ''}
           onChange={(e) => setSelectedSet(e.target.value || null)}
-          className="w-full bg-slate-700 border border-slate-600 rounded-lg px-3 py-2 text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
+          className="w-full bg-slate-700 border border-slate-600 rounded-lg px-3 py-2 min-h-[44px] text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
         >
           <option value="">All Sets</option>
           {sets.map(set => (
@@ -72,7 +72,7 @@ export default function DeckSelector({
           <button
             key={deck.id}
             onClick={() => setSelectedDeck(deck)}
-            className={`w-full text-left p-3 rounded-lg border transition-colors ${
+            className={`w-full text-left p-3 min-h-[44px] rounded-lg border transition-colors ${
               selectedDeck?.id === deck.id
                 ? 'bg-purple-600/30 border-purple-500'
                 : 'bg-slate-700/50 border-slate-600 hover:bg-slate-700'
@@ -101,7 +101,7 @@ export default function DeckSelector({
               <button
                 key={deck.id}
                 onClick={() => setSelectedDeck(deck)}
-                className={`w-full text-left p-3 rounded-lg border transition-colors ${
+                className={`w-full text-left p-3 min-h-[44px] rounded-lg border transition-colors ${
                   selectedDeck?.id === deck.id
                     ? 'bg-purple-600/30 border-purple-500'
                     : 'bg-slate-700/50 border-slate-600 hover:bg-slate-700'

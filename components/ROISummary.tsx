@@ -25,26 +25,26 @@ export default function ROISummary({ deck, totalValue, loading, excludedCount = 
 
   return (
     <div className="bg-slate-800/50 rounded-xl border border-slate-700 overflow-hidden">
-      <div className={`${verdict.bg} ${verdict.border} border-b p-6`}>
+      <div className={`${verdict.bg} ${verdict.border} border-b p-4 sm:p-6`}>
         <div className="flex flex-col items-center text-center">
           {loading ? (
             <div className="text-slate-400">Loading prices...</div>
           ) : (
             <>
-              <div className={`text-5xl font-black ${verdict.color} mb-1`}>
+              <div className={`text-4xl sm:text-5xl font-black ${verdict.color} mb-1`}>
                 {verdict.label}
               </div>
               {verdict.label === 'DISTRO' && (
                 <div className="text-sm text-orange-300 mb-1">Only at distributor pricing</div>
               )}
-              <div className="text-3xl font-bold text-white mb-1">
+              <div className="text-2xl sm:text-3xl font-bold text-white mb-1">
                 {formatCurrency(totalValue)}
               </div>
-              <div className="flex items-center gap-4 text-sm">
+              <div className="flex flex-col sm:flex-row items-center gap-1 sm:gap-4 text-sm">
                 <span className={`${distroRoi >= 0 ? 'text-green-400' : 'text-red-400'} font-semibold`}>
                   {formatPercentage(distroRoi)} Distro ROI
                 </span>
-                <span className="text-slate-500">|</span>
+                <span className="text-slate-500 hidden sm:inline">|</span>
                 <span className={`${roi >= 0 ? 'text-green-400' : 'text-red-400'}`}>
                   {formatPercentage(roi)} vs MSRP
                 </span>
@@ -54,8 +54,8 @@ export default function ROISummary({ deck, totalValue, loading, excludedCount = 
         </div>
       </div>
 
-      <div className="p-6">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div className="p-4 sm:p-6">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
           <div className="bg-slate-700/50 rounded-lg p-3">
             <div className="flex items-center gap-2 text-slate-400 text-xs mb-1">
               <Tag className="w-3 h-3" />

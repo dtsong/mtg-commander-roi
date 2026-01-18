@@ -124,21 +124,21 @@ export default function DeckContent({ deckId }: { deckId: string }) {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
-      <header className="bg-slate-800/50 border-b border-slate-700 px-6 py-4">
+      <header className="bg-slate-800/50 border-b border-slate-700 px-4 sm:px-6 py-4">
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center gap-4">
             <Link
               href="/compare"
-              className="flex items-center gap-2 text-slate-400 hover:text-white transition-colors"
+              className="flex items-center gap-2 text-slate-400 hover:text-white transition-colors min-h-[44px]"
             >
               <ArrowLeft className="w-5 h-5" />
-              Back
+              <span className="hidden sm:inline">Back</span>
             </Link>
             <div className="h-6 w-px bg-slate-600" />
             {deck ? (
-              <div className="flex items-center gap-3">
-                <div>
-                  <h1 className="text-xl font-bold text-white">{deck.name}</h1>
+              <div className="flex items-center gap-3 min-w-0 flex-1">
+                <div className="min-w-0 flex-1">
+                  <h1 className="text-lg sm:text-xl font-bold text-white truncate">{deck.name}</h1>
                   <p className="text-sm text-slate-400">{deck.set} ({deck.year})</p>
                 </div>
                 <ColorIndicator colors={deck.colors} />
@@ -153,10 +153,10 @@ export default function DeckContent({ deckId }: { deckId: string }) {
         </div>
       </header>
 
-      <main className="max-w-4xl mx-auto px-6 py-6 space-y-6">
-        <div className="flex gap-6">
+      <main className="max-w-4xl mx-auto px-4 sm:px-6 py-6 space-y-6">
+        <div className="flex flex-col sm:flex-row gap-6">
           {commanderImage && (
-            <div className="flex-shrink-0">
+            <div className="flex-shrink-0 flex flex-col items-center sm:items-start">
               <Image
                 src={commanderImage}
                 alt={`${deck?.name} Commander`}
