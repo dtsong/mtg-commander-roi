@@ -13,6 +13,7 @@ import type { PreconDeck, CardWithPrice } from '@/types';
 
 interface FormattedCard extends CardWithPrice {
   id: string;
+  isCommander?: boolean;
 }
 
 export default function DeckContent({ deckId }: { deckId: string }) {
@@ -45,14 +46,16 @@ export default function DeckContent({ deckId }: { deckId: string }) {
           quantity: card.quantity,
           price: card.price,
           total: card.total,
+          isCommander: card.isCommander,
         }));
         const cardsWithoutPrice = formattedCards.filter(c => c.price === 0 || c.price === null);
         setExcludedCount(cardsWithoutPrice.length);
         setCards(formattedCards);
         setTotalValue(deckPrices.totalValue);
 
-        if (formattedCards.length > 0) {
-          const commander = await getCardByName(formattedCards[0].name);
+        const commanderCard = formattedCards.find(c => c.isCommander) || formattedCards[0];
+        if (commanderCard) {
+          const commander = await getCardByName(commanderCard.name);
           if (commander) {
             setCommanderImage(getCardImage(commander));
           }
@@ -78,13 +81,17 @@ export default function DeckContent({ deckId }: { deckId: string }) {
           quantity: card.quantity,
           price: card.price,
           total: card.total,
+          isCommander: card.isCommander,
         }));
         const cardsWithoutPrice = formattedCards.filter(c => c.price === 0 || c.price === null);
         setExcludedCount(cardsWithoutPrice.length);
         setCards(formattedCards);
         setTotalValue(liveData.totalValue);
 
-        if (liveData.cards.length > 0 && liveData.cards[0].image) {
+        const commanderCard = liveData.cards.find(c => c.isCommander);
+        if (commanderCard?.image) {
+          setCommanderImage(commanderCard.image);
+        } else if (liveData.cards.length > 0 && liveData.cards[0].image) {
           setCommanderImage(liveData.cards[0].image);
         }
       } catch {

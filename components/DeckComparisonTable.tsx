@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { ChevronUp, ChevronDown, RefreshCw, AlertTriangle, Loader2 } from 'lucide-react';
 import ColorIndicator from './ColorIndicator';
 import ROIBadge from './ROIBadge';
-import { formatCurrency, calculateROI, calculateDistroROI, getDistroCost, formatPercentage } from '@/lib/calculations';
+import { formatCurrency, calculateROI, calculateDistroROI, getDistroCost, formatPercentage, getROIVerdict } from '@/lib/calculations';
 import { formatCacheAge, isCacheStale } from '@/lib/priceCache';
 import type { PreconDeck, CachedPriceData, SortState, FilterState } from '@/types';
 
@@ -306,8 +306,8 @@ export default function DeckComparisonTable({
                     <td className="px-4 py-3 text-center">
                       {isLoading ? (
                         <span className="text-slate-500">...</span>
-                      ) : distroRoi !== null ? (
-                        <span className={`font-bold ${distroRoi > 15 ? 'text-green-400' : distroRoi >= 0 ? 'text-yellow-400' : 'text-red-400'}`}>
+                      ) : distroRoi !== null && roi !== null ? (
+                        <span className={`font-bold ${getROIVerdict(distroRoi, roi).color}`}>
                           {formatPercentage(distroRoi)}
                         </span>
                       ) : (

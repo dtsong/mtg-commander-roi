@@ -21,7 +21,7 @@ export default function ROISummary({ deck, totalValue, loading, excludedCount = 
   const roi = calculateROI(totalValue, deck.msrp);
   const distroCost = getDistroCost(deck.msrp);
   const distroRoi = calculateDistroROI(totalValue, distroCost);
-  const verdict = getROIVerdict(distroRoi);
+  const verdict = getROIVerdict(distroRoi, roi);
 
   return (
     <div className="bg-slate-800/50 rounded-xl border border-slate-700 overflow-hidden">
@@ -31,9 +31,12 @@ export default function ROISummary({ deck, totalValue, loading, excludedCount = 
             <div className="text-slate-400">Loading prices...</div>
           ) : (
             <>
-              <div className={`text-5xl font-black ${verdict.color} mb-2`}>
+              <div className={`text-5xl font-black ${verdict.color} mb-1`}>
                 {verdict.label}
               </div>
+              {verdict.label === 'DISTRO' && (
+                <div className="text-sm text-orange-300 mb-1">Only at distributor pricing</div>
+              )}
               <div className="text-3xl font-bold text-white mb-1">
                 {formatCurrency(totalValue)}
               </div>

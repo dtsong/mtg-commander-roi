@@ -2,7 +2,8 @@
   "ltc-elven-council": [
     {
       "name": "Galadriel, Elven-Queen",
-      "quantity": 1
+      "quantity": 1,
+      "isCommander": true
     },
     {
       "name": "Arbor Elf",
@@ -308,7 +309,8 @@
   "ltc-food-and-fellowship": [
     {
       "name": "Frodo, Adventurous Hobbit",
-      "quantity": 1
+      "quantity": 1,
+      "isCommander": true
     },
     {
       "name": "Sam, Loyal Attendant",
@@ -658,7 +660,8 @@
   "ecc-dance-of-the-elements": [
     {
       "name": "Ashling, the Limitless",
-      "quantity": 1
+      "quantity": 1,
+      "isCommander": true
     },
     {
       "name": "Abundant Countryside",
@@ -1016,7 +1019,8 @@
   "ecc-blight-curse": [
     {
       "name": "Auntie Ool, Cursewretch",
-      "quantity": 1
+      "quantity": 1,
+      "isCommander": true
     },
     {
       "name": "Aberrant Return",
@@ -1358,7 +1362,8 @@
   "eoc-counter-intelligence": [
     {
       "name": "Kilo, Apogee Mind",
-      "quantity": 1
+      "quantity": 1,
+      "isCommander": true
     },
     {
       "name": "Adarkar Wastes",
@@ -1736,7 +1741,8 @@
   "eoc-world-shaper": [
     {
       "name": "Szarel, Genesis Shepherd",
-      "quantity": 1
+      "quantity": 1,
+      "isCommander": true
     },
     {
       "name": "Aftermath Analyst",
@@ -2086,7 +2092,8 @@
   "fic-revival-trance": [
     {
       "name": "Terra, Herald of Hope",
-      "quantity": 1
+      "quantity": 1,
+      "isCommander": true
     },
     {
       "name": "Angel of the Ruins",
@@ -2460,7 +2467,8 @@
   "fic-limit-break": [
     {
       "name": "Cloud, Ex-SOLDIER",
-      "quantity": 1
+      "quantity": 1,
+      "isCommander": true
     },
     {
       "name": "Aerith, Last Ancient",
@@ -2838,7 +2846,8 @@
   "fic-counter-blitz": [
     {
       "name": "Tidus, Yuna's Guardian",
-      "quantity": 1
+      "quantity": 1,
+      "isCommander": true
     },
     {
       "name": "Altered Ego",
@@ -3216,7 +3225,8 @@
   "fic-scions-and-spellcraft": [
     {
       "name": "Y'shtola, Night's Blessed",
-      "quantity": 1
+      "quantity": 1,
+      "isCommander": true
     },
     {
       "name": "Alisaie Leveilleur",
@@ -3586,7 +3596,8 @@
   "tdc-temur-roar": [
     {
       "name": "Eshki, Temur's Roar",
-      "quantity": 1
+      "quantity": 1,
+      "isCommander": true
     },
     {
       "name": "Arcane Signet",
@@ -3944,7 +3955,8 @@
   "tdc-abzan-armor": [
     {
       "name": "Felothar the Steadfast",
-      "quantity": 1
+      "quantity": 1,
+      "isCommander": true
     },
     {
       "name": "Access Tunnel",
@@ -4286,7 +4298,8 @@
   "tdc-jeskai-striker": [
     {
       "name": "Shiko and Narset, Unified",
-      "quantity": 1
+      "quantity": 1,
+      "isCommander": true
     },
     {
       "name": "Abrade",
@@ -4644,7 +4657,8 @@
   "tdc-sultai-arisen": [
     {
       "name": "Teval, the Balanced Scale",
-      "quantity": 1
+      "quantity": 1,
+      "isCommander": true
     },
     {
       "name": "Afterlife from the Loam",
@@ -4998,7 +5012,8 @@
   "tdc-mardu-surge": [
     {
       "name": "Zurgo Stormrender",
-      "quantity": 1
+      "quantity": 1,
+      "isCommander": true
     },
     {
       "name": "Abrade",
@@ -5352,7 +5367,8 @@
   "drc-living-energy": [
     {
       "name": "Saheeli, Radiant Creator",
-      "quantity": 1
+      "quantity": 1,
+      "isCommander": true
     },
     {
       "name": "Academy Ruins",
@@ -5702,7 +5718,8 @@
   "drc-eternal-might": [
     {
       "name": "Temmet, Naktamun's Will",
-      "quantity": 1
+      "quantity": 1,
+      "isCommander": true
     },
     {
       "name": "Accursed Duneyard",
@@ -6060,7 +6077,8 @@
   "dsc-endless-punishment": [
     {
       "name": "Valgavoth, Harrower of Souls",
-      "quantity": 1
+      "quantity": 1,
+      "isCommander": true
     },
     {
       "name": "Arcane Signet",
@@ -6406,7 +6424,8 @@
   "dsc-jump-scare": [
     {
       "name": "Zimone, Mystery Unraveler",
-      "quantity": 1
+      "quantity": 1,
+      "isCommander": true
     },
     {
       "name": "Aesi, Tyrant of Gyre Strait",
@@ -6744,7 +6763,8 @@
   "dsc-miracle-worker": [
     {
       "name": "Aminatou, Veil Piercer",
-      "quantity": 1
+      "quantity": 1,
+      "isCommander": true
     },
     {
       "name": "Adarkar Wastes",
@@ -7102,7 +7122,8 @@
   "blc-squirreled-away": [
     {
       "name": "Hazel of the Rootbloom",
-      "quantity": 1
+      "quantity": 1,
+      "isCommander": true
     },
     {
       "name": "Academy Manufactor",
@@ -7444,7 +7465,8 @@
   "blc-family-matters": [
     {
       "name": "Zinnia, Valley's Voice",
-      "quantity": 1
+      "quantity": 1,
+      "isCommander": true
     },
     {
       "name": "Adarkar Wastes",
@@ -7806,7 +7828,8 @@
   "blc-animated-army": [
     {
       "name": "Bello, Bard of the Brambles",
-      "quantity": 1
+      "quantity": 1,
+      "isCommander": true
     },
     {
       "name": "Abrade",
@@ -8144,7 +8167,8 @@
   "blc-peace-offering": [
     {
       "name": "Ms. Bumbleflower",
-      "quantity": 1
+      "quantity": 1,
+      "isCommander": true
     },
     {
       "name": "Adarkar Wastes",
@@ -8510,7 +8534,8 @@
   "m3c-graveyard-overdrive": [
     {
       "name": "Disa the Restless",
-      "quantity": 1
+      "quantity": 1,
+      "isCommander": true
     },
     {
       "name": "Accursed Marauder",
@@ -8876,7 +8901,8 @@
   "m3c-creative-energy": [
     {
       "name": "Satya, Aetherflux Genius",
-      "quantity": 1
+      "quantity": 1,
+      "isCommander": true
     },
     {
       "name": "Adarkar Wastes",
@@ -9210,7 +9236,8 @@
   "m3c-tricky-terrain": [
     {
       "name": "Omo, Queen of Vesuva",
-      "quantity": 1
+      "quantity": 1,
+      "isCommander": true
     },
     {
       "name": "Acidic Slime",
@@ -9592,7 +9619,8 @@
   "m3c-eldrazi-incursion": [
     {
       "name": "Ulalek, Fused Atrocity",
-      "quantity": 1
+      "quantity": 1,
+      "isCommander": true
     },
     {
       "name": "Adarkar Wastes",
@@ -9994,7 +10022,8 @@
   "otc-quick-draw": [
     {
       "name": "Stella Lee, Wild Card",
-      "quantity": 1
+      "quantity": 1,
+      "isCommander": true
     },
     {
       "name": "Arcane Bombardment",
@@ -10296,7 +10325,8 @@
   "otc-most-wanted": [
     {
       "name": "Olivia, Opulent Outlaw",
-      "quantity": 1
+      "quantity": 1,
+      "isCommander": true
     },
     {
       "name": "Academy Manufactor",
@@ -10678,7 +10708,8 @@
   "otc-grand-larceny": [
     {
       "name": "Gonti, Canny Acquisitor",
-      "quantity": 1
+      "quantity": 1,
+      "isCommander": true
     },
     {
       "name": "Access Tunnel",
@@ -11032,7 +11063,8 @@
   "otc-desert-bloom": [
     {
       "name": "Yuma, Proud Protector",
-      "quantity": 1
+      "quantity": 1,
+      "isCommander": true
     },
     {
       "name": "Abraded Bluffs",
@@ -11378,7 +11410,8 @@
   "pip-scrappy-survivors": [
     {
       "name": "Dogmeat, Ever Loyal",
-      "quantity": 1
+      "quantity": 1,
+      "isCommander": true
     },
     {
       "name": "Abundant Growth",
@@ -11744,7 +11777,8 @@
   "pip-mutant-menace": [
     {
       "name": "The Wise Mothman",
-      "quantity": 1
+      "quantity": 1,
+      "isCommander": true
     },
     {
       "name": "Agent Frank Horrigan",
@@ -12098,7 +12132,8 @@
   "pip-science": [
     {
       "name": "Dr. Madison Li",
-      "quantity": 1
+      "quantity": 1,
+      "isCommander": true
     },
     {
       "name": "Arcade Gannon",
@@ -12460,7 +12495,8 @@
   "pip-hail-caesar": [
     {
       "name": "Caesar, Legion's Emperor",
-      "quantity": 1
+      "quantity": 1,
+      "isCommander": true
     },
     {
       "name": "Anguished Unmaking",
@@ -12818,7 +12854,8 @@
   "mkc-deadly-disguise": [
     {
       "name": "Kaust, Eyes of the Glade",
-      "quantity": 1
+      "quantity": 1,
+      "isCommander": true
     },
     {
       "name": "Ainok Survivalist",
@@ -13188,7 +13225,8 @@
   "mkc-blame-game": [
     {
       "name": "Nelly Borca, Impulsive Accuser",
-      "quantity": 1
+      "quantity": 1,
+      "isCommander": true
     },
     {
       "name": "Access Tunnel",
@@ -13534,7 +13572,8 @@
   "mkc-deep-clue-sea": [
     {
       "name": "Morska, Undersea Sleuth",
-      "quantity": 1
+      "quantity": 1,
+      "isCommander": true
     },
     {
       "name": "Academy Manufactor",
@@ -13892,7 +13931,8 @@
   "mkc-revenant-recon": [
     {
       "name": "Mirko, Obsessive Theorist",
-      "quantity": 1
+      "quantity": 1,
+      "isCommander": true
     },
     {
       "name": "Amphin Mutineer",
@@ -14230,7 +14270,8 @@
   "lcc-ahoy-mateys": [
     {
       "name": "Admiral Brass, Unsinkable",
-      "quantity": 1
+      "quantity": 1,
+      "isCommander": true
     },
     {
       "name": "Admiral Beckett Brass",
@@ -14584,7 +14625,8 @@
   "lcc-blood-rites": [
     {
       "name": "Clavileño, First of the Blessed",
-      "quantity": 1
+      "quantity": 1,
+      "isCommander": true
     },
     {
       "name": "Arcane Signet",
@@ -14910,7 +14952,8 @@
   "lcc-explorers-of-the-deep": [
     {
       "name": "Hakbal of the Surging Soul",
-      "quantity": 1
+      "quantity": 1,
+      "isCommander": true
     },
     {
       "name": "Aetherize",
@@ -15240,7 +15283,8 @@
   "lcc-veloci-ramp-tor": [
     {
       "name": "Pantlaza, Sun-Favored",
-      "quantity": 1
+      "quantity": 1,
+      "isCommander": true
     },
     {
       "name": "Akroma's Will",
@@ -15590,7 +15634,8 @@
   "who-blast-from-the-past": [
     {
       "name": "The Fourth Doctor",
-      "quantity": 1
+      "quantity": 1,
+      "isCommander": true
     },
     {
       "name": "Sarah Jane Smith",
@@ -15976,7 +16021,8 @@
   "who-timey-wimey": [
     {
       "name": "The Tenth Doctor",
-      "quantity": 1
+      "quantity": 1,
+      "isCommander": true
     },
     {
       "name": "Rose Tyler",
@@ -16354,7 +16400,8 @@
   "who-paradox-power": [
     {
       "name": "The Thirteenth Doctor",
-      "quantity": 1
+      "quantity": 1,
+      "isCommander": true
     },
     {
       "name": "Yasmin Khan",
@@ -16724,7 +16771,8 @@
   "who-masters-of-evil": [
     {
       "name": "Davros, Dalek Creator",
-      "quantity": 1
+      "quantity": 1,
+      "isCommander": true
     },
     {
       "name": "Arcane Signet",
@@ -17114,7 +17162,8 @@
   "woc-fae-dominion": [
     {
       "name": "Tegwyll, Duke of Splendor",
-      "quantity": 1
+      "quantity": 1,
+      "isCommander": true
     },
     {
       "name": "Alela, Cunning Conqueror",
@@ -17424,7 +17473,8 @@
   "woc-virtue-and-valor": [
     {
       "name": "Ellivere of the Wild Court",
-      "quantity": 1
+      "quantity": 1,
+      "isCommander": true
     },
     {
       "name": "Ajani's Chosen",
@@ -17718,7 +17768,8 @@
   "cmc-eldrazi-unbound": [
     {
       "name": "Zhulodok, Void Gorger",
-      "quantity": 1
+      "quantity": 1,
+      "isCommander": true
     },
     {
       "name": "Abstruse Archaic",
@@ -18064,7 +18115,8 @@
   "cmc-enduring-enchantments": [
     {
       "name": "Anikthea, Hand of Erebos",
-      "quantity": 1
+      "quantity": 1,
+      "isCommander": true
     },
     {
       "name": "Abundance",
@@ -18402,7 +18454,8 @@
   "cmc-planeswalker-party": [
     {
       "name": "Commodore Guff",
-      "quantity": 1
+      "quantity": 1,
+      "isCommander": true
     },
     {
       "name": "Ajani Steadfast",
@@ -18744,7 +18797,8 @@
   "cmc-sliver-swarm": [
     {
       "name": "Sliver Gravemother",
-      "quantity": 1
+      "quantity": 1,
+      "isCommander": true
     },
     {
       "name": "Arcane Signet",
@@ -19122,7 +19176,8 @@
   "ltc-riders-of-rohan": [
     {
       "name": "Éowyn, Shieldmaiden",
-      "quantity": 1
+      "quantity": 1,
+      "isCommander": true
     },
     {
       "name": "Aragorn, King of Gondor",
@@ -19460,7 +19515,8 @@
   "ltc-hosts-of-mordor": [
     {
       "name": "Sauron, Lord of the Rings",
-      "quantity": 1
+      "quantity": 1,
+      "isCommander": true
     },
     {
       "name": "Anger",
@@ -19798,7 +19854,8 @@
   "40k-forces-of-the-imperium": [
     {
       "name": "Inquisitor Greyfax",
-      "quantity": 1
+      "quantity": 1,
+      "isCommander": true
     },
     {
       "name": "And They Shall Know No Fear",
@@ -20132,7 +20189,8 @@
   "40k-necron-dynasties": [
     {
       "name": "Szarekh, the Silent King",
-      "quantity": 1
+      "quantity": 1,
+      "isCommander": true
     },
     {
       "name": "Anrakyr the Traveller",
@@ -20418,7 +20476,8 @@
   "40k-the-ruinous-powers": [
     {
       "name": "Abaddon the Despoiler",
-      "quantity": 1
+      "quantity": 1,
+      "isCommander": true
     },
     {
       "name": "Aspiring Champion",
@@ -20736,7 +20795,8 @@
   "40k-tyranid-swarm": [
     {
       "name": "The Swarmlord",
-      "quantity": 1
+      "quantity": 1,
+      "isCommander": true
     },
     {
       "name": "Aberrant",

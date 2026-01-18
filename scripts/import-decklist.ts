@@ -71,7 +71,7 @@ function extractDeckList(nextData: NextData): DeckCardEntry[] | null {
 
   if (deckData.commander && Array.isArray(deckData.commander)) {
     for (const name of deckData.commander) {
-      const entry: DeckCardEntry = { name, quantity: 1 };
+      const entry: DeckCardEntry = { name, quantity: 1, isCommander: true };
       cards.push(entry);
       seen.set(name, entry);
     }

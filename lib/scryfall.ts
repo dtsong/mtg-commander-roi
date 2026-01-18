@@ -106,6 +106,7 @@ export const getStaticDeckPrices = async (deckId: string): Promise<StaticDeckPri
       quantity: card.quantity,
       price: card.usd ? parseFloat(card.usd) : 0,
       total: card.usd ? parseFloat(card.usd) * card.quantity : 0,
+      isCommander: card.isCommander,
     })),
     topCards: deckData.cards
       .filter(c => c.usd)
@@ -115,6 +116,7 @@ export const getStaticDeckPrices = async (deckId: string): Promise<StaticDeckPri
         quantity: card.quantity,
         price: card.usd ? parseFloat(card.usd) : 0,
         total: card.usd ? parseFloat(card.usd) * card.quantity : 0,
+        isCommander: card.isCommander,
       })),
   };
 };
@@ -283,6 +285,7 @@ export const fetchDeckPrices = async (
       price: cardPrice,
       total: lineTotal,
       image: priceInfo?.image || null,
+      isCommander: card.isCommander,
     });
 
     totalValue += lineTotal;

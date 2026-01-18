@@ -163,7 +163,8 @@
         {
           "name": "Galadriel, Elven-Queen",
           "quantity": 1,
-          "usd": "0.26"
+          "usd": "0.26",
+          "isCommander": true
         },
         {
           "name": "Devastation Tide",
@@ -589,7 +590,8 @@
         {
           "name": "Frodo, Adventurous Hobbit",
           "quantity": 1,
-          "usd": "0.30"
+          "usd": "0.30",
+          "isCommander": true
         },
         {
           "name": "Command Tower",
@@ -840,7 +842,8 @@
         {
           "name": "Ashling, the Limitless",
           "quantity": 1,
-          "usd": "6.68"
+          "usd": "6.68",
+          "isCommander": true
         },
         {
           "name": "Springleaf Parade",
@@ -1321,7 +1324,8 @@
         {
           "name": "Auntie Ool, Cursewretch",
           "quantity": 1,
-          "usd": "1.56"
+          "usd": "1.56",
+          "isCommander": true
         },
         {
           "name": "Wickersmith's Tools",
@@ -1722,7 +1726,8 @@
         {
           "name": "Kilo, Apogee Mind",
           "quantity": 1,
-          "usd": "2.28"
+          "usd": "2.28",
+          "isCommander": true
         },
         {
           "name": "Cyberdrive Awakener",
@@ -2253,7 +2258,8 @@
         {
           "name": "Szarel, Genesis Shepherd",
           "quantity": 1,
-          "usd": "0.89"
+          "usd": "0.89",
+          "isCommander": true
         },
         {
           "name": "Skyshroud Claim",
@@ -2674,7 +2680,8 @@
         {
           "name": "Terra, Herald of Hope",
           "quantity": 1,
-          "usd": "1.87"
+          "usd": "1.87",
+          "isCommander": true
         },
         {
           "name": "Swiftfoot Boots",
@@ -3195,7 +3202,8 @@
         {
           "name": "Cloud, Ex-SOLDIER",
           "quantity": 1,
-          "usd": "1.03"
+          "usd": "1.03",
+          "isCommander": true
         },
         {
           "name": "Colossus Hammer",
@@ -3631,7 +3639,8 @@
         {
           "name": "Tidus, Yuna's Guardian",
           "quantity": 1,
-          "usd": "2.05"
+          "usd": "2.05",
+          "isCommander": true
         },
         {
           "name": "An Offer You Can't Refuse",
@@ -4082,7 +4091,8 @@
         {
           "name": "Y'shtola, Night's Blessed",
           "quantity": 1,
-          "usd": "4.23"
+          "usd": "4.23",
+          "isCommander": true
         },
         {
           "name": "Snuff Out",
@@ -4528,7 +4538,8 @@
         {
           "name": "Eshki, Temur's Roar",
           "quantity": 1,
-          "usd": "3.25"
+          "usd": "3.25",
+          "isCommander": true
         },
         {
           "name": "Talisman of Creativity",
@@ -4984,7 +4995,8 @@
         {
           "name": "Felothar the Steadfast",
           "quantity": 1,
-          "usd": "3.80"
+          "usd": "3.80",
+          "isCommander": true
         },
         {
           "name": "Staff of Compleation",
@@ -5455,7 +5467,8 @@
         {
           "name": "Shiko and Narset, Unified",
           "quantity": 1,
-          "usd": "1.45"
+          "usd": "1.45",
+          "isCommander": true
         },
         {
           "name": "Sol Ring",
@@ -5871,7 +5884,8 @@
         {
           "name": "Teval, the Balanced Scale",
           "quantity": 1,
-          "usd": "4.56"
+          "usd": "4.56",
+          "isCommander": true
         },
         {
           "name": "Dauthi Voidwalker",
@@ -6312,7 +6326,8 @@
         {
           "name": "Zurgo Stormrender",
           "quantity": 1,
-          "usd": "4.04"
+          "usd": "4.04",
+          "isCommander": true
         },
         {
           "name": "Shattered Sanctum",
@@ -6863,7 +6878,8 @@
         {
           "name": "Saheeli, Radiant Creator",
           "quantity": 1,
-          "usd": "0.29"
+          "usd": "0.29",
+          "isCommander": true
         },
         {
           "name": "Bootleggers' Stash",
@@ -7324,7 +7340,8 @@
         {
           "name": "Temmet, Naktamun's Will",
           "quantity": 1,
-          "usd": "0.45"
+          "usd": "0.45",
+          "isCommander": true
         },
         {
           "name": "Arcane Signet",
@@ -7645,7 +7662,8 @@
         {
           "name": "Valgavoth, Harrower of Souls",
           "quantity": 1,
-          "usd": "9.75"
+          "usd": "9.75",
+          "isCommander": true
         },
         {
           "name": "Witch's Clinic",
@@ -8136,7 +8154,8 @@
         {
           "name": "Zimone, Mystery Unraveler",
           "quantity": 1,
-          "usd": "0.47"
+          "usd": "0.47",
+          "isCommander": true
         },
         {
           "name": "Cultivate",
@@ -8592,7 +8611,8 @@
         {
           "name": "Aminatou, Veil Piercer",
           "quantity": 1,
-          "usd": "0.63"
+          "usd": "0.63",
+          "isCommander": true
         },
         {
           "name": "One with the Multiverse",
@@ -8958,7 +8978,8 @@
         {
           "name": "Hazel of the Rootbloom",
           "quantity": 1,
-          "usd": "4.92"
+          "usd": "4.92",
+          "isCommander": true
         },
         {
           "name": "Skullclamp",
@@ -9494,7 +9515,8 @@
         {
           "name": "Zinnia, Valley's Voice",
           "quantity": 1,
-          "usd": "0.38"
+          "usd": "0.38",
+          "isCommander": true
         },
         {
           "name": "Fortune Teller's Talent",
@@ -9845,7 +9867,8 @@
         {
           "name": "Bello, Bard of the Brambles",
           "quantity": 1,
-          "usd": "3.67"
+          "usd": "3.67",
+          "isCommander": true
         },
         {
           "name": "Alchemist's Talent",
@@ -10271,7 +10294,8 @@
         {
           "name": "Ms. Bumbleflower",
           "quantity": 1,
-          "usd": "3.32"
+          "usd": "3.32",
+          "isCommander": true
         },
         {
           "name": "Reliquary Tower",
@@ -10932,7 +10956,8 @@
         {
           "name": "Disa the Restless",
           "quantity": 1,
-          "usd": "0.24"
+          "usd": "0.24",
+          "isCommander": true
         },
         {
           "name": "Cinder Glade",
@@ -11353,7 +11378,8 @@
         {
           "name": "Satya, Aetherflux Genius",
           "quantity": 1,
-          "usd": "0.25"
+          "usd": "0.25",
+          "isCommander": true
         },
         {
           "name": "Aetherworks Marvel",
@@ -11799,7 +11825,8 @@
         {
           "name": "Omo, Queen of Vesuva",
           "quantity": 1,
-          "usd": "0.25"
+          "usd": "0.25",
+          "isCommander": true
         },
         {
           "name": "Growth Spiral",
@@ -12260,7 +12287,8 @@
         {
           "name": "Ulalek, Fused Atrocity",
           "quantity": 1,
-          "usd": "0.72"
+          "usd": "0.72",
+          "isCommander": true
         },
         {
           "name": "Idol of Oblivion",
@@ -12621,7 +12649,8 @@
         {
           "name": "Stella Lee, Wild Card",
           "quantity": 1,
-          "usd": "5.63"
+          "usd": "5.63",
+          "isCommander": true
         },
         {
           "name": "Arcane Bombardment",
@@ -13037,7 +13066,8 @@
         {
           "name": "Olivia, Opulent Outlaw",
           "quantity": 1,
-          "usd": "2.47"
+          "usd": "2.47",
+          "isCommander": true
         },
         {
           "name": "Rakdos Signet",
@@ -13603,7 +13633,8 @@
         {
           "name": "Gonti, Canny Acquisitor",
           "quantity": 1,
-          "usd": "0.81"
+          "usd": "0.81",
+          "isCommander": true
         },
         {
           "name": "Woodland Cemetery",
@@ -14069,7 +14100,8 @@
         {
           "name": "Yuma, Proud Protector",
           "quantity": 1,
-          "usd": "0.36"
+          "usd": "0.36",
+          "isCommander": true
         },
         {
           "name": "Genesis Hydra",
@@ -14355,7 +14387,8 @@
         {
           "name": "Dogmeat, Ever Loyal",
           "quantity": 1,
-          "usd": "6.16"
+          "usd": "6.16",
+          "isCommander": true
         },
         {
           "name": "Basilisk Collar",
@@ -14801,7 +14834,8 @@
         {
           "name": "The Wise Mothman",
           "quantity": 1,
-          "usd": "18.01"
+          "usd": "18.01",
+          "isCommander": true
         },
         {
           "name": "Power Fist",
@@ -15287,7 +15321,8 @@
         {
           "name": "Dr. Madison Li",
           "quantity": 1,
-          "usd": "1.69"
+          "usd": "1.69",
+          "isCommander": true
         },
         {
           "name": "Sol Ring",
@@ -15703,7 +15738,8 @@
         {
           "name": "Caesar, Legion's Emperor",
           "quantity": 1,
-          "usd": "6.05"
+          "usd": "6.05",
+          "isCommander": true
         },
         {
           "name": "Skullclamp",
@@ -16299,7 +16335,8 @@
         {
           "name": "Kaust, Eyes of the Glade",
           "quantity": 1,
-          "usd": "0.20"
+          "usd": "0.20",
+          "isCommander": true
         },
         {
           "name": "Sidar Kondo of Jamuraa",
@@ -16730,7 +16767,8 @@
         {
           "name": "Nelly Borca, Impulsive Accuser",
           "quantity": 1,
-          "usd": "0.53"
+          "usd": "0.53",
+          "isCommander": true
         },
         {
           "name": "Sevinne's Reclamation",
@@ -17156,7 +17194,8 @@
         {
           "name": "Morska, Undersea Sleuth",
           "quantity": 1,
-          "usd": "0.49"
+          "usd": "0.49",
+          "isCommander": true
         },
         {
           "name": "Psychosis Crawler",
@@ -17627,7 +17666,8 @@
         {
           "name": "Mirko, Obsessive Theorist",
           "quantity": 1,
-          "usd": "0.50"
+          "usd": "0.50",
+          "isCommander": true
         },
         {
           "name": "Syr Konrad, the Grim",
@@ -18118,7 +18158,8 @@
         {
           "name": "Admiral Brass, Unsinkable",
           "quantity": 1,
-          "usd": "0.20"
+          "usd": "0.20",
+          "isCommander": true
         },
         {
           "name": "Siren Stormtamer",
@@ -18479,7 +18520,8 @@
         {
           "name": "Clavileño, First of the Blessed",
           "quantity": 1,
-          "usd": "0.46"
+          "usd": "0.46",
+          "isCommander": true
         },
         {
           "name": "Twilight Prophet",
@@ -18895,7 +18937,8 @@
         {
           "name": "Hakbal of the Surging Soul",
           "quantity": 1,
-          "usd": "0.44"
+          "usd": "0.44",
+          "isCommander": true
         },
         {
           "name": "Alchemist's Refuge",
@@ -19261,7 +19304,8 @@
         {
           "name": "Pantlaza, Sun-Favored",
           "quantity": 1,
-          "usd": "0.99"
+          "usd": "0.99",
+          "isCommander": true
         },
         {
           "name": "Return of the Wildspeaker",
@@ -19717,7 +19761,8 @@
         {
           "name": "The Fourth Doctor",
           "quantity": 1,
-          "usd": "0.62"
+          "usd": "0.62",
+          "isCommander": true
         },
         {
           "name": "Dreamroot Cascade",
@@ -20198,7 +20243,8 @@
         {
           "name": "The Tenth Doctor",
           "quantity": 1,
-          "usd": "2.49"
+          "usd": "2.49",
+          "isCommander": true
         },
         {
           "name": "Everything Comes to Dust",
@@ -20644,7 +20690,8 @@
         {
           "name": "The Thirteenth Doctor",
           "quantity": 1,
-          "usd": "1.45"
+          "usd": "1.45",
+          "isCommander": true
         },
         {
           "name": "Sol Ring",
@@ -21175,7 +21222,8 @@
         {
           "name": "Davros, Dalek Creator",
           "quantity": 1,
-          "usd": "1.37"
+          "usd": "1.37",
+          "isCommander": true
         },
         {
           "name": "Sol Ring",
@@ -21676,7 +21724,8 @@
         {
           "name": "Tegwyll, Duke of Splendor",
           "quantity": 1,
-          "usd": "1.37"
+          "usd": "1.37",
+          "isCommander": true
         },
         {
           "name": "Sol Ring",
@@ -22132,7 +22181,8 @@
         {
           "name": "Ellivere of the Wild Court",
           "quantity": 1,
-          "usd": "0.45"
+          "usd": "0.45",
+          "isCommander": true
         },
         {
           "name": "Danitha Capashen, Paragon",
@@ -22328,7 +22378,8 @@
         {
           "name": "Zhulodok, Void Gorger",
           "quantity": 1,
-          "usd": "35.37"
+          "usd": "35.37",
+          "isCommander": true
         },
         {
           "name": "Darksteel Monolith",
@@ -22774,7 +22825,8 @@
         {
           "name": "Anikthea, Hand of Erebos",
           "quantity": 1,
-          "usd": "10.06"
+          "usd": "10.06",
+          "isCommander": true
         },
         {
           "name": "Dryad of the Ilysian Grove",
@@ -23355,7 +23407,8 @@
         {
           "name": "Commodore Guff",
           "quantity": 1,
-          "usd": "1.00"
+          "usd": "1.00",
+          "isCommander": true
         },
         {
           "name": "Mountain",
@@ -23621,7 +23674,8 @@
         {
           "name": "Sliver Gravemother",
           "quantity": 1,
-          "usd": "22.69"
+          "usd": "22.69",
+          "isCommander": true
         },
         {
           "name": "Sliver Hivelord",
@@ -24222,7 +24276,8 @@
         {
           "name": "Éowyn, Shieldmaiden",
           "quantity": 1,
-          "usd": "0.37"
+          "usd": "0.37",
+          "isCommander": true
         },
         {
           "name": "Talisman of Conviction",
@@ -24668,7 +24723,8 @@
         {
           "name": "Sauron, Lord of the Rings",
           "quantity": 1,
-          "usd": "0.45"
+          "usd": "0.45",
+          "isCommander": true
         },
         {
           "name": "Saruman, the White Hand",
@@ -25144,7 +25200,8 @@
         {
           "name": "Inquisitor Greyfax",
           "quantity": 1,
-          "usd": "0.48"
+          "usd": "0.48",
+          "isCommander": true
         },
         {
           "name": "Everflowing Chalice",
@@ -25595,7 +25652,8 @@
         {
           "name": "Szarekh, the Silent King",
           "quantity": 1,
-          "usd": "0.52"
+          "usd": "0.52",
+          "isCommander": true
         },
         {
           "name": "Beacon of Unrest",
@@ -25911,7 +25969,8 @@
         {
           "name": "Abaddon the Despoiler",
           "quantity": 1,
-          "usd": "0.86"
+          "usd": "0.86",
+          "isCommander": true
         },
         {
           "name": "Chaos Terminator Lord",
@@ -26337,7 +26396,8 @@
         {
           "name": "The Swarmlord",
           "quantity": 1,
-          "usd": "0.58"
+          "usd": "0.58",
+          "isCommander": true
         },
         {
           "name": "The First Tyrannic War",

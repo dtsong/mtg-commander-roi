@@ -59,6 +59,7 @@ export interface DeckCardEntry {
   name: string;
   quantity: number;
   setCode?: string;
+  isCommander?: boolean;
 }
 
 export interface CardWithPrice {
@@ -68,6 +69,7 @@ export interface CardWithPrice {
   price: number;
   total: number;
   image?: string | null;
+  isCommander?: boolean;
 }
 
 export interface TopCard {
@@ -82,7 +84,7 @@ export interface DeckPriceResult {
   cardCount: number;
 }
 
-export type ROIVerdictLabel = 'BUY' | 'HOLD' | 'PASS';
+export type ROIVerdictLabel = 'BUY' | 'HOLD' | 'PASS' | 'DISTRO';
 
 export interface ROIVerdict {
   label: ROIVerdictLabel;
@@ -120,6 +122,7 @@ export interface StaticCardEntry {
   name: string;
   quantity: number;
   usd?: string | null;
+  isCommander?: boolean;
 }
 
 export interface TrendingCard {

@@ -29,6 +29,7 @@ interface ComputedCardPrice {
   name: string;
   quantity: number;
   usd: string | null;
+  isCommander?: boolean;
 }
 
 interface ComputedDeckPrices {
@@ -231,6 +232,7 @@ function computeDeckPrices(
         name: card.name,
         quantity: card.quantity,
         usd: priceStr,
+        isCommander: card.isCommander,
       });
 
       totalValue += lineTotal;

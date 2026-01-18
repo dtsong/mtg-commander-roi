@@ -15,9 +15,14 @@ export const getDistroCost = (msrp: number, customDiscount: number | null = null
   return msrp * (1 - discount);
 };
 
-export const getROIVerdict = (roi: number): ROIVerdict => {
-  if (roi > 15) return { label: 'BUY', color: 'text-green-400', bg: 'bg-green-500/20', border: 'border-green-500/50' };
-  if (roi >= 0) return { label: 'HOLD', color: 'text-yellow-400', bg: 'bg-yellow-500/20', border: 'border-yellow-500/50' };
+export const getROIVerdict = (distroRoi: number, msrpRoi?: number): ROIVerdict => {
+  if (distroRoi > 15) {
+    if (msrpRoi !== undefined && msrpRoi <= 0) {
+      return { label: 'DISTRO', color: 'text-orange-400', bg: 'bg-orange-500/20', border: 'border-orange-500/50' };
+    }
+    return { label: 'BUY', color: 'text-green-400', bg: 'bg-green-500/20', border: 'border-green-500/50' };
+  }
+  if (distroRoi >= 0) return { label: 'HOLD', color: 'text-yellow-400', bg: 'bg-yellow-500/20', border: 'border-yellow-500/50' };
   return { label: 'PASS', color: 'text-red-400', bg: 'bg-red-500/20', border: 'border-red-500/50' };
 };
 

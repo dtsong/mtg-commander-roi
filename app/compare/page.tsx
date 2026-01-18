@@ -9,10 +9,17 @@ import { loadStaticPrices, fetchDeckPrices } from '@/lib/scryfall';
 import { getCachedPrice, setCachedPrice, clearCache, formatStaticPriceAge } from '@/lib/priceCache';
 import type { PreconDeck, CachedPriceData } from '@/types';
 
+interface RefreshProgress {
+  current: number;
+  total: number;
+  currentDeck: string;
+}
+
 export default function ComparePage() {
   const [priceData, setPriceData] = useState<Record<string, CachedPriceData>>({});
   const [loadingDeck, setLoadingDeck] = useState<string | null>(null);
   const [refreshingAll, setRefreshingAll] = useState(false);
+  const [refreshProgress, setRefreshProgress] = useState<RefreshProgress | null>(null);
   const [staticUpdatedAt, setStaticUpdatedAt] = useState<string | null>(null);
   const [loadingStatic, setLoadingStatic] = useState(true);
 
@@ -102,11 +109,19 @@ export default function ComparePage() {
 
   const handleRefreshAll = async () => {
     setRefreshingAll(true);
+    const total = PRECON_DATABASE.length;
 
-    for (const deck of PRECON_DATABASE) {
+    for (let i = 0; i < total; i++) {
+      const deck = PRECON_DATABASE[i];
+      setRefreshProgress({ current: i + 1, total, currentDeck: deck.name });
       await fetchDeckPrice(deck);
+
+      if (i < total - 1) {
+        await new Promise(r => setTimeout(r, 500));
+      }
     }
 
+    setRefreshProgress(null);
     setRefreshingAll(false);
   };
 
@@ -159,7 +174,9 @@ export default function ComparePage() {
                   ) : (
                     <RefreshCw className="w-4 h-4" />
                   )}
-                  {refreshingAll ? 'Loading All...' : 'Fetch Prices'}
+                  {refreshProgress
+                    ? `${refreshProgress.current}/${refreshProgress.total}: ${refreshProgress.currentDeck}`
+                    : 'Fetch Prices'}
                 </button>
               )}
 
