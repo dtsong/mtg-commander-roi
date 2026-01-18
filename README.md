@@ -51,11 +51,18 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 - Missing price handling (N/A display)
 - Live Scryfall fallback when static data unavailable
 
-### Sprint 2 (Planned)
+### Sprint 2 (Complete)
 
-- **TypeScript migration** - Convert .jsx to .tsx for type safety
-- Comparison page enhancements
-- Loading state polish
+- **TypeScript migration** - Full conversion to .tsx with strict mode
+- **Comparison page enhancements** - Year/set filters, sortable columns, batch refresh
+- **Loading state polish** - Progress tracking, skeleton states
+
+### Sprint 3 (Complete)
+
+- **Mobile responsiveness** - Responsive layouts across all pages
+- **Security hardening** - Rate limiting, CSP headers, clickjacking protection
+- **Production tooling** - ESLint, pre-commit hooks, Vercel Analytics
+- **Image optimization** - Next.js Image component for Scryfall images
 
 ### Backlog
 
@@ -63,7 +70,6 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 - Distributor spend tracker
 - Expand beyond Commander precons
 - Historical ROI trends (requires database)
-- Mobile responsiveness
 - TCGplayer/CardMarket purchase links
 
 ## Tech Stack
