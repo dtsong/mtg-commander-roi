@@ -2,8 +2,8 @@
 
 ## Project Overview
 
-**Project Name:** MTG Commander ROI Analyzer  
-**Client:** JinkiesCo (Frank)  
+**Project Name:** MTG Commander ROI Analyzer
+**Client:** JinkiesCo (Frank)
 **Purpose:** Assess the ROI (Return on Investment) of Magic: The Gathering Commander preconstructed decks by comparing current card market values against original MSRP.
 
 ---
@@ -257,16 +257,16 @@ const rateLimitedFetch = async (url) => {
   const now = Date.now();
   const timeSinceLastRequest = now - lastRequestTime;
   if (timeSinceLastRequest < RATE_LIMIT_MS) {
-    await new Promise(resolve => 
+    await new Promise(resolve =>
       setTimeout(resolve, RATE_LIMIT_MS - timeSinceLastRequest)
     );
   }
   lastRequestTime = Date.now();
-  
+
   const response = await fetch(url, {
     headers: { 'Accept': 'application/json' }
   });
-  
+
   if (!response.ok) throw new Error(`API Error: ${response.status}`);
   return response.json();
 };
@@ -293,13 +293,13 @@ const calculateTotalValue = (cards) => {
 const loadSetCards = async (setCode) => {
   let allCards = [];
   let url = `${SCRYFALL_API}/cards/search?q=set:${setCode}&unique=cards`;
-  
+
   while (url) {
     const data = await rateLimitedFetch(url);
     allCards = [...allCards, ...(data.data || [])];
     url = data.next_page || null;
   }
-  
+
   return allCards;
 };
 ```
