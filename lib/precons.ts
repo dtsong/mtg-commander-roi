@@ -1,4 +1,4 @@
-import type { PreconDeck, DeckCardEntry, ManaColor, Decklists } from '@/types';
+import type { PreconDeck, DeckCardEntry, Decklists } from '@/types';
 
 export const PRECON_DATABASE: PreconDeck[] = [
   // 2026 - Lorwyn Eclipsed

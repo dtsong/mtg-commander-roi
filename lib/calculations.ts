@@ -1,4 +1,4 @@
-import type { ROIVerdict, CardWithPrice, ScryfallCard } from '@/types';
+import type { ROIVerdict } from '@/types';
 
 export const calculateROI = (currentValue: number, msrp: number): number => {
   if (!msrp || msrp === 0) return 0;

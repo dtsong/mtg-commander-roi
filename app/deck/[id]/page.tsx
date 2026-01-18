@@ -1,184 +1,55 @@
-'use client';
+import type { Metadata } from 'next';
+import { notFound } from 'next/navigation';
+import { PRECON_DATABASE, getPreconById } from '@/lib/precons';
+import DeckContent from './DeckContent';
 
-import { useState, useEffect } from 'react';
-import { useParams } from 'next/navigation';
-import Link from 'next/link';
-import { ArrowLeft, Loader2 } from 'lucide-react';
-import { getPreconById, getDeckCards } from '@/lib/precons';
-import { getStaticDeckPrices, fetchDeckPrices, getCardByName, getCardImage } from '@/lib/scryfall';
-import ColorIndicator from '@/components/ColorIndicator';
-import ROISummary from '@/components/ROISummary';
-import TopValueCards from '@/components/TopValueCards';
-import CardList from '@/components/CardList';
-import type { PreconDeck, CardWithPrice } from '@/types';
-
-interface FormattedCard extends CardWithPrice {
-  id: string;
+interface PageProps {
+  params: Promise<{ id: string }>;
 }
 
-export default function DeckDetailPage() {
-  const params = useParams<{ id: string }>();
-  const [deck, setDeck] = useState<PreconDeck | null>(null);
-  const [cards, setCards] = useState<FormattedCard[]>([]);
-  const [totalValue, setTotalValue] = useState(0);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
-  const [fetchSource, setFetchSource] = useState<string | null>(null);
-  const [excludedCount, setExcludedCount] = useState(0);
-  const [commanderImage, setCommanderImage] = useState<string | null>(null);
+export async function generateStaticParams() {
+  return PRECON_DATABASE.map((deck) => ({
+    id: deck.id,
+  }));
+}
 
-  useEffect(() => {
-    const loadDeckData = async () => {
-      const deckInfo = getPreconById(params.id);
-      if (!deckInfo) {
-        setError('Deck not found');
-        setLoading(false);
-        return;
-      }
-      setDeck(deckInfo);
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { id } = await params;
+  const deck = getPreconById(id);
 
-      const deckPrices = await getStaticDeckPrices(params.id);
-
-      if (deckPrices) {
-        setFetchSource('static');
-        const formattedCards: FormattedCard[] = deckPrices.cards.map((card, index) => ({
-          id: `${card.name}-${index}`,
-          name: card.name,
-          quantity: card.quantity,
-          price: card.price,
-          total: card.total,
-        }));
-        const cardsWithoutPrice = formattedCards.filter(c => c.price === 0 || c.price === null);
-        setExcludedCount(cardsWithoutPrice.length);
-        setCards(formattedCards);
-        setTotalValue(deckPrices.totalValue);
-
-        if (formattedCards.length > 0) {
-          const commander = await getCardByName(formattedCards[0].name);
-          if (commander) {
-            setCommanderImage(getCardImage(commander));
-          }
-        }
-
-        setLoading(false);
-        return;
-      }
-
-      const deckCards = await getDeckCards(params.id);
-      if (!deckCards || deckCards.length === 0) {
-        setError('No decklist available for this deck');
-        setLoading(false);
-        return;
-      }
-
-      try {
-        setFetchSource('live');
-        const liveData = await fetchDeckPrices(deckCards);
-        const formattedCards: FormattedCard[] = liveData.cards.map((card, index) => ({
-          id: `${card.name}-${index}`,
-          name: card.name,
-          quantity: card.quantity,
-          price: card.price,
-          total: card.total,
-        }));
-        const cardsWithoutPrice = formattedCards.filter(c => c.price === 0 || c.price === null);
-        setExcludedCount(cardsWithoutPrice.length);
-        setCards(formattedCards);
-        setTotalValue(liveData.totalValue);
-
-        if (liveData.cards.length > 0 && liveData.cards[0].image) {
-          setCommanderImage(liveData.cards[0].image);
-        }
-      } catch (err) {
-        setError('Failed to fetch card prices from Scryfall');
-      }
-
-      setLoading(false);
+  if (!deck) {
+    return {
+      title: 'Deck Not Found - MTG Commander ROI',
     };
-
-    loadDeckData();
-  }, [params.id]);
-
-  if (error) {
-    return (
-      <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 flex items-center justify-center">
-        <div className="text-center">
-          <p className="text-red-400 text-xl mb-4">{error}</p>
-          <Link
-            href="/compare"
-            className="text-purple-400 hover:text-purple-300 flex items-center gap-2 justify-center"
-          >
-            <ArrowLeft className="w-4 h-4" />
-            Back to Compare
-          </Link>
-        </div>
-      </div>
-    );
   }
 
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
-      <header className="bg-slate-800/50 border-b border-slate-700 px-6 py-4">
-        <div className="max-w-4xl mx-auto">
-          <div className="flex items-center gap-4">
-            <Link
-              href="/compare"
-              className="flex items-center gap-2 text-slate-400 hover:text-white transition-colors"
-            >
-              <ArrowLeft className="w-5 h-5" />
-              Back
-            </Link>
-            <div className="h-6 w-px bg-slate-600" />
-            {deck ? (
-              <div className="flex items-center gap-3">
-                <div>
-                  <h1 className="text-xl font-bold text-white">{deck.name}</h1>
-                  <p className="text-sm text-slate-400">{deck.set} ({deck.year})</p>
-                </div>
-                <ColorIndicator colors={deck.colors} />
-              </div>
-            ) : (
-              <div className="flex items-center gap-2">
-                <Loader2 className="w-5 h-5 animate-spin text-slate-400" />
-                <span className="text-slate-400">Loading...</span>
-              </div>
-            )}
-          </div>
-        </div>
-      </header>
+  const title = `${deck.name} ROI Analysis - MTG Commander ROI`;
+  const description = `Analyze the value of ${deck.name} from ${deck.set} (${deck.year}). Compare card prices against the $${deck.msrp.toFixed(2)} MSRP to calculate ROI.`;
 
-      <main className="max-w-4xl mx-auto px-6 py-6 space-y-6">
-        <div className="flex gap-6">
-          {commanderImage && (
-            <div className="flex-shrink-0">
-              <img
-                src={commanderImage}
-                alt={`${deck?.name} Commander`}
-                className="w-48 rounded-lg shadow-lg shadow-purple-500/20 border border-slate-600"
-              />
-              <p className="text-xs text-slate-500 text-center mt-2">Face Commander</p>
-            </div>
-          )}
-          <div className="flex-1">
-            <ROISummary deck={deck} totalValue={totalValue} loading={loading} excludedCount={excludedCount} />
-          </div>
-        </div>
-        <TopValueCards cards={cards} loading={loading} />
-        <CardList cards={cards} loading={loading} />
+  return {
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      type: 'article',
+      url: `https://mtg-commander-roi.vercel.app/deck/${deck.id}`,
+    },
+    twitter: {
+      card: 'summary',
+      title,
+      description,
+    },
+  };
+}
 
-        <footer className="pt-6 border-t border-slate-700 text-center text-sm text-slate-500">
-          Card data and prices provided by{' '}
-          <a
-            href="https://scryfall.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-purple-400 hover:text-purple-300"
-          >
-            Scryfall
-          </a>
-          . Prices update daily.
-        </footer>
-      </main>
-    </div>
-  );
+export default async function DeckPage({ params }: PageProps) {
+  const { id } = await params;
+  const deck = getPreconById(id);
+
+  if (!deck) {
+    notFound();
+  }
+
+  return <DeckContent deckId={id} />;
 }

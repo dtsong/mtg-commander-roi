@@ -1,7 +1,7 @@
 import { writeFileSync, readFileSync, mkdirSync } from 'fs';
 import { dirname, join } from 'path';
 import { fileURLToPath } from 'url';
-import type { DeckCardEntry, Decklists, CardPrices } from '../types';
+import type { Decklists, CardPrices } from '../types';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 

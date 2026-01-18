@@ -24,7 +24,7 @@ export default function CardSearch({ onAddCard }: CardSearchProps) {
     try {
       const cards = await searchCards(query);
       setResults(cards.slice(0, 10));
-    } catch (err) {
+    } catch {
       setError('Failed to search cards');
       setResults([]);
     } finally {

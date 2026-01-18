@@ -1,4 +1,4 @@
-import type { TrendingCard, TrendingData, TrendingInPrecons, TrendingDeckInfo, Decklists } from '@/types';
+import type { TrendingCard, TrendingData, TrendingInPrecons, TrendingDeckInfo } from '@/types';
 import { PRECON_DATABASE, loadDecklists } from './precons';
 
 let trendingCache: TrendingData | null = null;

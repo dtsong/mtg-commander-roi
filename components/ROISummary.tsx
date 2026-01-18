@@ -21,7 +21,6 @@ export default function ROISummary({ deck, totalValue, loading, excludedCount = 
   const roi = calculateROI(totalValue, deck.msrp);
   const distroCost = getDistroCost(deck.msrp);
   const distroRoi = calculateDistroROI(totalValue, distroCost);
-  const valueDiff = totalValue - deck.msrp;
   const verdict = getROIVerdict(distroRoi);
 
   return (
