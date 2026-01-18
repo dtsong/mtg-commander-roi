@@ -4,7 +4,18 @@ import { fileURLToPath } from 'url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-const SET_CODES = ['dsc', 'blc', 'm3c', 'otc', 'pip', 'mkc', 'lcc', 'who', 'woc', 'cmm', 'ltc', '40k'];
+const SET_CODES = [
+  // 2026
+  'ecc',
+  // 2025
+  'eoc', 'fic', 'tdc', 'drc',
+  // 2024
+  'dsc', 'blc', 'm3c', 'otc', 'pip', 'mkc',
+  // 2023
+  'lcc', 'who', 'woc', 'cmm', 'ltc',
+  // 2022
+  '40k',
+];
 const BULK_DATA_URL = 'https://api.scryfall.com/bulk-data/default-cards';
 const OUTPUT_PATH = join(__dirname, '..', 'public', 'data', 'prices.json');
 

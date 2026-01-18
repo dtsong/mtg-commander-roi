@@ -1,6 +1,7266 @@
 {
-  "updatedAt": "2026-01-18T04:31:01.687Z",
+  "updatedAt": "2026-01-18T04:39:12.944Z",
   "sets": {
+    "ecc": [
+      {
+        "name": "Sol Ring",
+        "collector_number": "57",
+        "usd": "1.32"
+      },
+      {
+        "name": "Rain-Slicked Copse",
+        "collector_number": "23",
+        "usd": "0.49"
+      },
+      {
+        "name": "Ferrafor, Young Yew",
+        "collector_number": "36",
+        "usd": "3.99"
+      },
+      {
+        "name": "Jungle Shrine",
+        "collector_number": "154",
+        "usd": "0.25"
+      },
+      {
+        "name": "Terramorphic Expanse",
+        "collector_number": "169",
+        "usd": "0.30"
+      },
+      {
+        "name": "Woodland Cemetery",
+        "collector_number": "176",
+        "usd": "0.65"
+      },
+      {
+        "name": "Sol Ring",
+        "collector_number": "58",
+        "usd": "1.05"
+      },
+      {
+        "name": "Cathartic Pyre",
+        "collector_number": "90",
+        "usd": "0.09"
+      },
+      {
+        "name": "Puca's Covenant",
+        "collector_number": "38",
+        "usd": "0.75"
+      },
+      {
+        "name": "Timeless Lotus",
+        "collector_number": "143",
+        "usd": "2.98"
+      },
+      {
+        "name": "Hoarder's Greed",
+        "collector_number": "47",
+        "usd": "0.27"
+      },
+      {
+        "name": "Thriving Heath",
+        "collector_number": "172",
+        "usd": "0.09"
+      },
+      {
+        "name": "Ancient Ziggurat",
+        "collector_number": "144",
+        "usd": "0.71"
+      },
+      {
+        "name": "Faeburrow Elder",
+        "collector_number": "53",
+        "usd": "0.40"
+      },
+      {
+        "name": "Necroskitter",
+        "collector_number": "48",
+        "usd": "5.56"
+      },
+      {
+        "name": "Skinrender",
+        "collector_number": "86",
+        "usd": "0.31"
+      },
+      {
+        "name": "Puca's Covenant",
+        "collector_number": "18",
+        "usd": "0.73"
+      },
+      {
+        "name": "Fire Covenant",
+        "collector_number": "54",
+        "usd": "0.57"
+      },
+      {
+        "name": "Evolution Sage",
+        "collector_number": "105",
+        "usd": "0.97"
+      },
+      {
+        "name": "Haunting Voyage",
+        "collector_number": "75",
+        "usd": "0.67"
+      },
+      {
+        "name": "Rakdos Carnarium",
+        "collector_number": "161",
+        "usd": "0.31"
+      },
+      {
+        "name": "Terminate",
+        "collector_number": "134",
+        "usd": "0.29"
+      },
+      {
+        "name": "Devoted Druid",
+        "collector_number": "104",
+        "usd": "0.55"
+      },
+      {
+        "name": "Greenwarden of Murasa",
+        "collector_number": "110",
+        "usd": "0.59"
+      },
+      {
+        "name": "Infernal Grasp",
+        "collector_number": "77",
+        "usd": "0.38"
+      },
+      {
+        "name": "Aberrant Return",
+        "collector_number": "27",
+        "usd": "3.79"
+      },
+      {
+        "name": "Lamentation",
+        "collector_number": "10",
+        "usd": "0.48"
+      },
+      {
+        "name": "Return of the Wildspeaker",
+        "collector_number": "115",
+        "usd": "0.71"
+      },
+      {
+        "name": "Lamentation",
+        "collector_number": "30",
+        "usd": "1.45"
+      },
+      {
+        "name": "Cinder Glade",
+        "collector_number": "146",
+        "usd": "0.25"
+      },
+      {
+        "name": "Kindred Summons",
+        "collector_number": "112",
+        "usd": "1.51"
+      },
+      {
+        "name": "Path to Exile",
+        "collector_number": "65",
+        "usd": "0.70"
+      },
+      {
+        "name": "Abundant Countryside",
+        "collector_number": "22",
+        "usd": "7.44"
+      },
+      {
+        "name": "Wickersmith's Tools",
+        "collector_number": "21",
+        "usd": "1.49"
+      },
+      {
+        "name": "Flourishing Defenses",
+        "collector_number": "107",
+        "usd": "1.76"
+      },
+      {
+        "name": "Raging Ravine",
+        "collector_number": "160",
+        "usd": null
+      },
+      {
+        "name": "Grave Titan",
+        "collector_number": "74",
+        "usd": "0.68"
+      },
+      {
+        "name": "Path of Ancestry",
+        "collector_number": "158",
+        "usd": "0.25"
+      },
+      {
+        "name": "Mulldrifter",
+        "collector_number": "67",
+        "usd": "0.44"
+      },
+      {
+        "name": "Oft-Nabbed Goat",
+        "collector_number": "11",
+        "usd": "0.91"
+      },
+      {
+        "name": "Binding the Old Gods",
+        "collector_number": "120",
+        "usd": "0.78"
+      },
+      {
+        "name": "Golgari Rot Farm",
+        "collector_number": "151",
+        "usd": "0.46"
+      },
+      {
+        "name": "Titan of Industry",
+        "collector_number": "117",
+        "usd": "0.63"
+      },
+      {
+        "name": "Thriving Grove",
+        "collector_number": "171",
+        "usd": "0.17"
+      },
+      {
+        "name": "Springleaf Parade",
+        "collector_number": "19",
+        "usd": "5.16"
+      },
+      {
+        "name": "Reality Shift",
+        "collector_number": "68",
+        "usd": "0.39"
+      },
+      {
+        "name": "Frontier Bivouac",
+        "collector_number": "150",
+        "usd": "0.19"
+      },
+      {
+        "name": "Springleaf Parade",
+        "collector_number": "39",
+        "usd": "5.25"
+      },
+      {
+        "name": "Cultivate",
+        "collector_number": "103",
+        "usd": "0.57"
+      },
+      {
+        "name": "Realmwalker",
+        "collector_number": "114",
+        "usd": "0.71"
+      },
+      {
+        "name": "Bane of Progress",
+        "collector_number": "99",
+        "usd": "0.80"
+      },
+      {
+        "name": "Savage Lands",
+        "collector_number": "165",
+        "usd": "0.36"
+      },
+      {
+        "name": "Descendants' Fury",
+        "collector_number": "93",
+        "usd": "0.59"
+      },
+      {
+        "name": "Maelstrom Wanderer",
+        "collector_number": "127",
+        "usd": "0.76"
+      },
+      {
+        "name": "Slithermuse",
+        "collector_number": "69",
+        "usd": "0.48"
+      },
+      {
+        "name": "Ashling, the Limitless",
+        "collector_number": "1",
+        "usd": "6.68"
+      },
+      {
+        "name": "Sinister Gnarlbark",
+        "collector_number": "32",
+        "usd": "5.54"
+      },
+      {
+        "name": "Opal Palace",
+        "collector_number": "156",
+        "usd": "0.20"
+      },
+      {
+        "name": "Dread Tiller",
+        "collector_number": "20",
+        "usd": "0.84"
+      },
+      {
+        "name": "Assassin's Trophy",
+        "collector_number": "119",
+        "usd": "1.40"
+      },
+      {
+        "name": "Village Pillagers",
+        "collector_number": "34",
+        "usd": "2.45"
+      },
+      {
+        "name": "Elemental Spectacle",
+        "collector_number": "35",
+        "usd": "0.54"
+      },
+      {
+        "name": "Omnath, Locus of Rage",
+        "collector_number": "129",
+        "usd": "0.55"
+      },
+      {
+        "name": "Riveteers Overlook",
+        "collector_number": "162",
+        "usd": "0.22"
+      },
+      {
+        "name": "Incremental Blight",
+        "collector_number": "76",
+        "usd": "0.46"
+      },
+      {
+        "name": "Thriving Moor",
+        "collector_number": "174",
+        "usd": "0.30"
+      },
+      {
+        "name": "Glissa Sunslayer",
+        "collector_number": "122",
+        "usd": "0.83"
+      },
+      {
+        "name": "Thriving Isle",
+        "collector_number": "173",
+        "usd": "0.15"
+      },
+      {
+        "name": "Jubilation",
+        "collector_number": "37",
+        "usd": "4.83"
+      },
+      {
+        "name": "Abundant Countryside",
+        "collector_number": "42",
+        "usd": "15.40"
+      },
+      {
+        "name": "Omnath, Locus of the Roil",
+        "collector_number": "130",
+        "usd": "1.33"
+      },
+      {
+        "name": "Liliana, Death Wielder",
+        "collector_number": "78",
+        "usd": "1.05"
+      },
+      {
+        "name": "Muldrotha, the Gravetide",
+        "collector_number": "128",
+        "usd": "0.78"
+      },
+      {
+        "name": "Risen Reef",
+        "collector_number": "132",
+        "usd": "0.41"
+      },
+      {
+        "name": "Tree of Perdition",
+        "collector_number": "49",
+        "usd": "3.05"
+      },
+      {
+        "name": "Harmonize",
+        "collector_number": "111",
+        "usd": "0.19"
+      },
+      {
+        "name": "Blowfly Infestation",
+        "collector_number": "46",
+        "usd": "0.92"
+      },
+      {
+        "name": "The Scorpion God",
+        "collector_number": "133",
+        "usd": "0.85"
+      },
+      {
+        "name": "Jegantha, the Wellspring",
+        "collector_number": "125",
+        "usd": "0.22"
+      },
+      {
+        "name": "Command Tower",
+        "collector_number": "60",
+        "usd": "0.46"
+      },
+      {
+        "name": "Grim Poppet",
+        "collector_number": "142",
+        "usd": "0.72"
+      },
+      {
+        "name": "Chimil, the Inner Sun",
+        "collector_number": "137",
+        "usd": "6.34"
+      },
+      {
+        "name": "Vernal Sovereign",
+        "collector_number": "135",
+        "usd": "0.33"
+      },
+      {
+        "name": "Carnifex Demon",
+        "collector_number": "72",
+        "usd": "0.46"
+      },
+      {
+        "name": "Unclaimed Territory",
+        "collector_number": "175",
+        "usd": "0.35"
+      },
+      {
+        "name": "Selvala, Heart of the Wilds",
+        "collector_number": "116",
+        "usd": "2.22"
+      },
+      {
+        "name": "Vernal Fen",
+        "collector_number": "63",
+        "usd": "0.64"
+      },
+      {
+        "name": "Archfiend of Ifnir",
+        "collector_number": "70",
+        "usd": "0.59"
+      },
+      {
+        "name": "Fertile Ground",
+        "collector_number": "106",
+        "usd": "0.28"
+      },
+      {
+        "name": "Wickerbough Elder",
+        "collector_number": "118",
+        "usd": "0.34"
+      },
+      {
+        "name": "Oft-Nabbed Goat",
+        "collector_number": "31",
+        "usd": "2.73"
+      },
+      {
+        "name": "Mass of Mysteries",
+        "collector_number": "3",
+        "usd": "4.61"
+      },
+      {
+        "name": "Abundant Growth",
+        "collector_number": "97",
+        "usd": "0.10"
+      },
+      {
+        "name": "Wickersmith's Tools",
+        "collector_number": "41",
+        "usd": "5.18"
+      },
+      {
+        "name": "Festering Thicket",
+        "collector_number": "61",
+        "usd": "0.42"
+      },
+      {
+        "name": "Thriving Bluff",
+        "collector_number": "170",
+        "usd": "0.09"
+      },
+      {
+        "name": "Rain-Slicked Copse",
+        "collector_number": "43",
+        "usd": "1.15"
+      },
+      {
+        "name": "Massacre Girl, Known Killer",
+        "collector_number": "79",
+        "usd": "0.64"
+      },
+      {
+        "name": "Channeler Initiate",
+        "collector_number": "101",
+        "usd": "0.38"
+      },
+      {
+        "name": "Ifnir Deadlands",
+        "collector_number": "153",
+        "usd": "0.34"
+      },
+      {
+        "name": "Sodden Verdure",
+        "collector_number": "44",
+        "usd": "2.47"
+      },
+      {
+        "name": "Kodama's Reach",
+        "collector_number": "113",
+        "usd": "0.66"
+      },
+      {
+        "name": "Dragonskull Summit",
+        "collector_number": "147",
+        "usd": "0.52"
+      },
+      {
+        "name": "Fury",
+        "collector_number": "50",
+        "usd": "0.73"
+      },
+      {
+        "name": "Sinister Gnarlbark",
+        "collector_number": "12",
+        "usd": "1.93"
+      },
+      {
+        "name": "Cream of the Crop",
+        "collector_number": "102",
+        "usd": "3.45"
+      },
+      {
+        "name": "Secluded Courtyard",
+        "collector_number": "62",
+        "usd": "0.43"
+      },
+      {
+        "name": "Auntie Ool, Cursewretch",
+        "collector_number": "2",
+        "usd": "1.56"
+      },
+      {
+        "name": "Eventide's Shadow",
+        "collector_number": "8",
+        "usd": "0.48"
+      },
+      {
+        "name": "Vraska, Betrayal's Sting",
+        "collector_number": "88",
+        "usd": "1.45"
+      },
+      {
+        "name": "Commander's Sphere",
+        "collector_number": "139",
+        "usd": "0.19"
+      },
+      {
+        "name": "Village Pillagers",
+        "collector_number": "14",
+        "usd": "2.24"
+      },
+      {
+        "name": "Everlasting Torment",
+        "collector_number": "121",
+        "usd": "1.43"
+      },
+      {
+        "name": "Aberrant Return",
+        "collector_number": "7",
+        "usd": "0.84"
+      },
+      {
+        "name": "Arcane Signet",
+        "collector_number": "56",
+        "usd": "1.24"
+      },
+      {
+        "name": "Impulsivity",
+        "collector_number": "33",
+        "usd": "1.70"
+      },
+      {
+        "name": "Jubilation",
+        "collector_number": "17",
+        "usd": "2.29"
+      },
+      {
+        "name": "Belonging",
+        "collector_number": "5",
+        "usd": "0.81"
+      },
+      {
+        "name": "Arcane Signet",
+        "collector_number": "55",
+        "usd": "0.87"
+      },
+      {
+        "name": "Cavalier of Thorns",
+        "collector_number": "100",
+        "usd": "0.72"
+      },
+      {
+        "name": "Putrefy",
+        "collector_number": "131",
+        "usd": "0.34"
+      },
+      {
+        "name": "Sheltered Thicket",
+        "collector_number": "167",
+        "usd": "0.37"
+      },
+      {
+        "name": "Hoofprints of the Stag",
+        "collector_number": "64",
+        "usd": "0.12"
+      },
+      {
+        "name": "Elemental Spectacle",
+        "collector_number": "15",
+        "usd": "0.83"
+      },
+      {
+        "name": "Garruk's Uprising",
+        "collector_number": "109",
+        "usd": "0.53"
+      },
+      {
+        "name": "Seaside Citadel",
+        "collector_number": "166",
+        "usd": "0.24"
+      },
+      {
+        "name": "Chain Reaction",
+        "collector_number": "92",
+        "usd": "0.28"
+      },
+      {
+        "name": "Endurance",
+        "collector_number": "51",
+        "usd": "2.45"
+      },
+      {
+        "name": "Persist",
+        "collector_number": "83",
+        "usd": "0.64"
+      },
+      {
+        "name": "Fellwar Stone",
+        "collector_number": "141",
+        "usd": "0.81"
+      },
+      {
+        "name": "Rootbound Crag",
+        "collector_number": "163",
+        "usd": "0.34"
+      },
+      {
+        "name": "Grave Venerations",
+        "collector_number": "29",
+        "usd": "1.46"
+      },
+      {
+        "name": "Chromatic Lantern",
+        "collector_number": "138",
+        "usd": "1.00"
+      },
+      {
+        "name": "Yarok, the Desecrated",
+        "collector_number": "136",
+        "usd": "0.92"
+      },
+      {
+        "name": "Incandescent Soulstoke",
+        "collector_number": "94",
+        "usd": "0.43"
+      },
+      {
+        "name": "Impulsivity",
+        "collector_number": "13",
+        "usd": "0.73"
+      },
+      {
+        "name": "Ingot Chewer",
+        "collector_number": "95",
+        "usd": "0.34"
+      },
+      {
+        "name": "Nesting Grounds",
+        "collector_number": "155",
+        "usd": "0.47"
+      },
+      {
+        "name": "Kulrath Knight",
+        "collector_number": "126",
+        "usd": "0.48"
+      },
+      {
+        "name": "Soul Snuffers",
+        "collector_number": "87",
+        "usd": "0.46"
+      },
+      {
+        "name": "Night's Whisper",
+        "collector_number": "81",
+        "usd": "0.27"
+      },
+      {
+        "name": "Avenger of Zendikar",
+        "collector_number": "98",
+        "usd": "0.53"
+      },
+      {
+        "name": "Primal Beyond",
+        "collector_number": "159",
+        "usd": "0.67"
+      },
+      {
+        "name": "Hapatra, Vizier of Poisons",
+        "collector_number": "123",
+        "usd": "0.80"
+      },
+      {
+        "name": "The Reaper, King No More",
+        "collector_number": "4",
+        "usd": "2.01"
+      },
+      {
+        "name": "Canyon Slough",
+        "collector_number": "145",
+        "usd": "0.44"
+      },
+      {
+        "name": "Smokebraider",
+        "collector_number": "96",
+        "usd": "0.28"
+      },
+      {
+        "name": "Ferrafor, Young Yew",
+        "collector_number": "16",
+        "usd": "1.20"
+      },
+      {
+        "name": "Subterfuge",
+        "collector_number": "26",
+        "usd": "2.52"
+      },
+      {
+        "name": "Smoldering Marsh",
+        "collector_number": "168",
+        "usd": "0.48"
+      },
+      {
+        "name": "Foundation Breaker",
+        "collector_number": "108",
+        "usd": "0.59"
+      },
+      {
+        "name": "Command Tower",
+        "collector_number": "59",
+        "usd": "0.42"
+      },
+      {
+        "name": "Exotic Orchard",
+        "collector_number": "148",
+        "usd": "0.32"
+      },
+      {
+        "name": "Flamekin Village",
+        "collector_number": "149",
+        "usd": "0.68"
+      },
+      {
+        "name": "Cathartic Reunion",
+        "collector_number": "91",
+        "usd": null
+      },
+      {
+        "name": "Sandsteppe Citadel",
+        "collector_number": "164",
+        "usd": "0.22"
+      },
+      {
+        "name": "Shatter the Sky",
+        "collector_number": "66",
+        "usd": null
+      },
+      {
+        "name": "Horde of Notions",
+        "collector_number": "124",
+        "usd": "0.82"
+      },
+      {
+        "name": "Dread Tiller",
+        "collector_number": "40",
+        "usd": "3.57"
+      },
+      {
+        "name": "Ignoble Hierarch",
+        "collector_number": "52",
+        "usd": "0.74"
+      },
+      {
+        "name": "Belonging",
+        "collector_number": "25",
+        "usd": "0.68"
+      },
+      {
+        "name": "Grave Venerations",
+        "collector_number": "9",
+        "usd": "1.14"
+      },
+      {
+        "name": "Shriekmaw",
+        "collector_number": "85",
+        "usd": "0.17"
+      },
+      {
+        "name": "Black Sun's Zenith",
+        "collector_number": "71",
+        "usd": "0.76"
+      },
+      {
+        "name": "Contagion Clasp",
+        "collector_number": "140",
+        "usd": "0.33"
+      },
+      {
+        "name": "Eventide's Shadow",
+        "collector_number": "28",
+        "usd": "1.58"
+      },
+      {
+        "name": "Opulent Palace",
+        "collector_number": "157",
+        "usd": "0.23"
+      },
+      {
+        "name": "Midnight Banshee",
+        "collector_number": "80",
+        "usd": "0.84"
+      },
+      {
+        "name": "Gruul Turf",
+        "collector_number": "152",
+        "usd": "0.11"
+      },
+      {
+        "name": "Distant Melody",
+        "collector_number": "45",
+        "usd": "0.48"
+      },
+      {
+        "name": "Blasphemous Act",
+        "collector_number": "89",
+        "usd": "0.93"
+      },
+      {
+        "name": "Painful Truths",
+        "collector_number": "82",
+        "usd": "0.40"
+      },
+      {
+        "name": "Dusk Urchins",
+        "collector_number": "73",
+        "usd": "0.69"
+      },
+      {
+        "name": "Sodden Verdure",
+        "collector_number": "24",
+        "usd": "1.68"
+      },
+      {
+        "name": "Subterfuge",
+        "collector_number": "6",
+        "usd": "1.78"
+      },
+      {
+        "name": "Puppeteer Clique",
+        "collector_number": "84",
+        "usd": "0.32"
+      }
+    ],
+    "eoc": [
+      {
+        "name": "Eumidian Hatchery",
+        "collector_number": "40",
+        "usd": "0.93"
+      },
+      {
+        "name": "Coretapper",
+        "collector_number": "132",
+        "usd": "0.11"
+      },
+      {
+        "name": "Solar Array",
+        "collector_number": "18",
+        "usd": "0.21"
+      },
+      {
+        "name": "Skycloud Expanse",
+        "collector_number": "181",
+        "usd": "0.12"
+      },
+      {
+        "name": "Chrome Host Seedshark",
+        "collector_number": "68",
+        "usd": "0.15"
+      },
+      {
+        "name": "Infernal Grasp",
+        "collector_number": "84",
+        "usd": "0.21"
+      },
+      {
+        "name": "Loamcrafter Faun",
+        "collector_number": "99",
+        "usd": "0.12"
+      },
+      {
+        "name": "The Mycosynth Gardens",
+        "collector_number": "168",
+        "usd": "0.38"
+      },
+      {
+        "name": "Razortide Bridge",
+        "collector_number": "171",
+        "usd": "0.13"
+      },
+      {
+        "name": "Solar Array",
+        "collector_number": "38",
+        "usd": "0.29"
+      },
+      {
+        "name": "Swords to Plowshares",
+        "collector_number": "45",
+        "usd": "1.13"
+      },
+      {
+        "name": "Alibou, Ancient Witness",
+        "collector_number": "113",
+        "usd": "0.23"
+      },
+      {
+        "name": "Pull from Tomorrow",
+        "collector_number": "76",
+        "usd": "0.11"
+      },
+      {
+        "name": "God-Eternal Bontu",
+        "collector_number": "83",
+        "usd": "0.25"
+      },
+      {
+        "name": "Mazirek, Kraul Death Priest",
+        "collector_number": "122",
+        "usd": "0.52"
+      },
+      {
+        "name": "Radiant Summit",
+        "collector_number": "23",
+        "usd": "1.71"
+      },
+      {
+        "name": "Golem Foundry",
+        "collector_number": "138",
+        "usd": "0.12"
+      },
+      {
+        "name": "Thought Monitor",
+        "collector_number": "79",
+        "usd": "0.35"
+      },
+      {
+        "name": "Cyberdrive Awakener",
+        "collector_number": "69",
+        "usd": "2.17"
+      },
+      {
+        "name": "Worldsoul's Rage",
+        "collector_number": "130",
+        "usd": "0.16"
+      },
+      {
+        "name": "Wake the Past",
+        "collector_number": "128",
+        "usd": "0.12"
+      },
+      {
+        "name": "Scouring Swarm",
+        "collector_number": "36",
+        "usd": "0.19"
+      },
+      {
+        "name": "Etched Oracle",
+        "collector_number": "136",
+        "usd": "0.09"
+      },
+      {
+        "name": "Empowered Autogenerator",
+        "collector_number": "135",
+        "usd": "0.13"
+      },
+      {
+        "name": "Patrolling Peacemaker",
+        "collector_number": "5",
+        "usd": "1.15"
+      },
+      {
+        "name": "Putrefy",
+        "collector_number": "124",
+        "usd": "0.11"
+      },
+      {
+        "name": "Uthros Research Craft",
+        "collector_number": "27",
+        "usd": "3.12"
+      },
+      {
+        "name": "Karn's Bastion",
+        "collector_number": "163",
+        "usd": "1.18"
+      },
+      {
+        "name": "Sulfur Falls",
+        "collector_number": "184",
+        "usd": "0.29"
+      },
+      {
+        "name": "Eumidian Hatchery",
+        "collector_number": "20",
+        "usd": "0.49"
+      },
+      {
+        "name": "Dispatch",
+        "collector_number": "64",
+        "usd": "0.18"
+      },
+      {
+        "name": "Tezzeret's Gambit",
+        "collector_number": "47",
+        "usd": "0.12"
+      },
+      {
+        "name": "Rocky Tar Pit",
+        "collector_number": "173",
+        "usd": "0.12"
+      },
+      {
+        "name": "Roiling Regrowth",
+        "collector_number": "105",
+        "usd": "0.29"
+      },
+      {
+        "name": "Baloth Prime",
+        "collector_number": "13",
+        "usd": "0.24"
+      },
+      {
+        "name": "Tekuthal, Inquiry Dominus",
+        "collector_number": "78",
+        "usd": "1.88"
+      },
+      {
+        "name": "Groundskeeper",
+        "collector_number": "97",
+        "usd": "0.04"
+      },
+      {
+        "name": "Gavel of the Righteous",
+        "collector_number": "55",
+        "usd": "0.14"
+      },
+      {
+        "name": "Kilo, Apogee Mind",
+        "collector_number": "3",
+        "usd": "2.28"
+      },
+      {
+        "name": "Mountain Valley",
+        "collector_number": "61",
+        "usd": "0.13"
+      },
+      {
+        "name": "Evolving Wilds",
+        "collector_number": "158",
+        "usd": "0.07"
+      },
+      {
+        "name": "Crystalline Crawler",
+        "collector_number": "133",
+        "usd": "0.17"
+      },
+      {
+        "name": "Exploration Broodship",
+        "collector_number": "34",
+        "usd": "4.09"
+      },
+      {
+        "name": "Patrolling Peacemaker",
+        "collector_number": "25",
+        "usd": "2.37"
+      },
+      {
+        "name": "Spire of Industry",
+        "collector_number": "183",
+        "usd": "0.15"
+      },
+      {
+        "name": "Cascade Bluffs",
+        "collector_number": "153",
+        "usd": "0.45"
+      },
+      {
+        "name": "Irrigated Farmland",
+        "collector_number": "162",
+        "usd": "0.13"
+      },
+      {
+        "name": "Arcane Signet",
+        "collector_number": "53",
+        "usd": "0.44"
+      },
+      {
+        "name": "Riveteers Overlook",
+        "collector_number": "172",
+        "usd": "0.16"
+      },
+      {
+        "name": "Harrow",
+        "collector_number": "98",
+        "usd": "0.23"
+      },
+      {
+        "name": "Horizon Explorer",
+        "collector_number": "35",
+        "usd": "3.61"
+      },
+      {
+        "name": "Eumidian Wastewaker",
+        "collector_number": "8",
+        "usd": "0.13"
+      },
+      {
+        "name": "The Gitrog Monster",
+        "collector_number": "117",
+        "usd": "0.59"
+      },
+      {
+        "name": "Adarkar Wastes",
+        "collector_number": "147",
+        "usd": "0.29"
+      },
+      {
+        "name": "Lonely Sandbar",
+        "collector_number": "166",
+        "usd": "0.08"
+      },
+      {
+        "name": "Thirst for Knowledge",
+        "collector_number": "48",
+        "usd": "0.08"
+      },
+      {
+        "name": "Moraug, Fury of Akoum",
+        "collector_number": "89",
+        "usd": "2.68"
+      },
+      {
+        "name": "Inspirit, Flagship Vessel",
+        "collector_number": "2",
+        "usd": "0.95"
+      },
+      {
+        "name": "Angel of the Ruins",
+        "collector_number": "63",
+        "usd": "0.11"
+      },
+      {
+        "name": "Depthshaker Titan",
+        "collector_number": "29",
+        "usd": "0.78"
+      },
+      {
+        "name": "Juri, Master of the Revue",
+        "collector_number": "119",
+        "usd": "0.10"
+      },
+      {
+        "name": "Seat of the Synod",
+        "collector_number": "176",
+        "usd": "0.59"
+      },
+      {
+        "name": "Soul of Windgrace",
+        "collector_number": "126",
+        "usd": "0.18"
+      },
+      {
+        "name": "Nature's Lore",
+        "collector_number": "101",
+        "usd": "2.26"
+      },
+      {
+        "name": "Canyon Slough",
+        "collector_number": "152",
+        "usd": "0.14"
+      },
+      {
+        "name": "Temple of Triumph",
+        "collector_number": "188",
+        "usd": "0.09"
+      },
+      {
+        "name": "Korvold, Fae-Cursed King",
+        "collector_number": "120",
+        "usd": "0.66"
+      },
+      {
+        "name": "Exploration Broodship",
+        "collector_number": "14",
+        "usd": "3.09"
+      },
+      {
+        "name": "Vernal Fen",
+        "collector_number": "44",
+        "usd": "2.53"
+      },
+      {
+        "name": "Splendid Reclamation",
+        "collector_number": "108",
+        "usd": "0.48"
+      },
+      {
+        "name": "Rakdos Charm",
+        "collector_number": "125",
+        "usd": "0.28"
+      },
+      {
+        "name": "Springbloom Druid",
+        "collector_number": "51",
+        "usd": "0.17"
+      },
+      {
+        "name": "Planetary Annihilation",
+        "collector_number": "32",
+        "usd": "0.33"
+      },
+      {
+        "name": "Binding the Old Gods",
+        "collector_number": "52",
+        "usd": "0.11"
+      },
+      {
+        "name": "Tireless Tracker",
+        "collector_number": "110",
+        "usd": "0.18"
+      },
+      {
+        "name": "Aftermath Analyst",
+        "collector_number": "91",
+        "usd": "0.93"
+      },
+      {
+        "name": "Karplusan Forest",
+        "collector_number": "164",
+        "usd": "0.30"
+      },
+      {
+        "name": "Mayhem Devil",
+        "collector_number": "121",
+        "usd": "0.20"
+      },
+      {
+        "name": "Night's Whisper",
+        "collector_number": "85",
+        "usd": "0.31"
+      },
+      {
+        "name": "Surge Conductor",
+        "collector_number": "19",
+        "usd": "0.39"
+      },
+      {
+        "name": "Threefold Thunderhulk",
+        "collector_number": "145",
+        "usd": "0.19"
+      },
+      {
+        "name": "Fabled Passage",
+        "collector_number": "60",
+        "usd": "4.91"
+      },
+      {
+        "name": "Uthros Research Craft",
+        "collector_number": "7",
+        "usd": "1.45"
+      },
+      {
+        "name": "Hearthhull, the Worldseed",
+        "collector_number": "1",
+        "usd": "1.01"
+      },
+      {
+        "name": "Battlefield Forge",
+        "collector_number": "58",
+        "usd": "0.23"
+      },
+      {
+        "name": "Deepglow Skate",
+        "collector_number": "70",
+        "usd": "0.15"
+      },
+      {
+        "name": "Terramorphic Expanse",
+        "collector_number": "62",
+        "usd": "0.15"
+      },
+      {
+        "name": "Dakmor Salvage",
+        "collector_number": "156",
+        "usd": "0.20"
+      },
+      {
+        "name": "Shivan Reef",
+        "collector_number": "179",
+        "usd": "0.24"
+      },
+      {
+        "name": "Titania, Protector of Argoth",
+        "collector_number": "111",
+        "usd": "0.24"
+      },
+      {
+        "name": "Great Furnace",
+        "collector_number": "161",
+        "usd": "2.08"
+      },
+      {
+        "name": "Steel Overseer",
+        "collector_number": "144",
+        "usd": "0.27"
+      },
+      {
+        "name": "Jhoira, Weatherlight Captain",
+        "collector_number": "118",
+        "usd": "0.38"
+      },
+      {
+        "name": "Omnath, Locus of Rage",
+        "collector_number": "123",
+        "usd": "0.55"
+      },
+      {
+        "name": "Universal Surveillance",
+        "collector_number": "81",
+        "usd": "0.15"
+      },
+      {
+        "name": "Cinder Glade",
+        "collector_number": "154",
+        "usd": "0.22"
+      },
+      {
+        "name": "Resourceful Defense",
+        "collector_number": "67",
+        "usd": "0.30"
+      },
+      {
+        "name": "Buried Ruin",
+        "collector_number": "150",
+        "usd": "0.28"
+      },
+      {
+        "name": "Long-Range Sensor",
+        "collector_number": "11",
+        "usd": "0.15"
+      },
+      {
+        "name": "Cultivate",
+        "collector_number": "95",
+        "usd": "0.57"
+      },
+      {
+        "name": "Eumidian Wastewaker",
+        "collector_number": "28",
+        "usd": "0.20"
+      },
+      {
+        "name": "Rugged Prairie",
+        "collector_number": "174",
+        "usd": "0.20"
+      },
+      {
+        "name": "Swan Song",
+        "collector_number": "46",
+        "usd": "8.18"
+      },
+      {
+        "name": "Rampaging Baloths",
+        "collector_number": "104",
+        "usd": "0.28"
+      },
+      {
+        "name": "Command Tower",
+        "collector_number": "59",
+        "usd": "0.29"
+      },
+      {
+        "name": "Skyshroud Claim",
+        "collector_number": "107",
+        "usd": "0.75"
+      },
+      {
+        "name": "Planetary Annihilation",
+        "collector_number": "12",
+        "usd": "0.13"
+      },
+      {
+        "name": "Escape to the Wilds",
+        "collector_number": "115",
+        "usd": "0.16"
+      },
+      {
+        "name": "Szarel, Genesis Shepherd",
+        "collector_number": "4",
+        "usd": "0.89"
+      },
+      {
+        "name": "Experimental Augury",
+        "collector_number": "73",
+        "usd": "0.13"
+      },
+      {
+        "name": "Evendo Brushrazer",
+        "collector_number": "10",
+        "usd": "0.20"
+      },
+      {
+        "name": "Satyr Wayfinder",
+        "collector_number": "106",
+        "usd": "0.05"
+      },
+      {
+        "name": "Ripples of Potential",
+        "collector_number": "77",
+        "usd": "1.16"
+      },
+      {
+        "name": "Silverbluff Bridge",
+        "collector_number": "180",
+        "usd": "0.14"
+      },
+      {
+        "name": "Scouring Swarm",
+        "collector_number": "16",
+        "usd": "0.12"
+      },
+      {
+        "name": "Hammer of Purphoros",
+        "collector_number": "88",
+        "usd": "0.23"
+      },
+      {
+        "name": "Titan Forge",
+        "collector_number": "146",
+        "usd": "0.10"
+      },
+      {
+        "name": "Surge Conductor",
+        "collector_number": "39",
+        "usd": "1.10"
+      },
+      {
+        "name": "Farseek",
+        "collector_number": "50",
+        "usd": "0.54"
+      },
+      {
+        "name": "Viridescent Bog",
+        "collector_number": "190",
+        "usd": "0.13"
+      },
+      {
+        "name": "Depthshaker Titan",
+        "collector_number": "9",
+        "usd": "0.16"
+      },
+      {
+        "name": "Fumigate",
+        "collector_number": "65",
+        "usd": "0.19"
+      },
+      {
+        "name": "Gaze of Granite",
+        "collector_number": "116",
+        "usd": "0.11"
+      },
+      {
+        "name": "Pest Infestation",
+        "collector_number": "103",
+        "usd": "0.32"
+      },
+      {
+        "name": "Kappa Cannoneer",
+        "collector_number": "74",
+        "usd": "0.29"
+      },
+      {
+        "name": "Baloth Prime",
+        "collector_number": "33",
+        "usd": "0.48"
+      },
+      {
+        "name": "Mystic Monastery",
+        "collector_number": "170",
+        "usd": "0.10"
+      },
+      {
+        "name": "Escape Tunnel",
+        "collector_number": "157",
+        "usd": "0.27"
+      },
+      {
+        "name": "Darksteel Reactor",
+        "collector_number": "134",
+        "usd": "0.25"
+      },
+      {
+        "name": "Myriad Landscape",
+        "collector_number": "169",
+        "usd": "0.20"
+      },
+      {
+        "name": "Glacial Fortress",
+        "collector_number": "160",
+        "usd": "0.21"
+      },
+      {
+        "name": "Temple of Epiphany",
+        "collector_number": "187",
+        "usd": "0.15"
+      },
+      {
+        "name": "Phyrexian Metamorph",
+        "collector_number": "75",
+        "usd": "2.13"
+      },
+      {
+        "name": "Horizon Explorer",
+        "collector_number": "15",
+        "usd": "2.70"
+      },
+      {
+        "name": "Secluded Steppe",
+        "collector_number": "177",
+        "usd": "0.06"
+      },
+      {
+        "name": "Oracle of Mul Daya",
+        "collector_number": "102",
+        "usd": "3.30"
+      },
+      {
+        "name": "Moxite Refinery",
+        "collector_number": "17",
+        "usd": "0.13"
+      },
+      {
+        "name": "Sheltered Thicket",
+        "collector_number": "178",
+        "usd": "0.09"
+      },
+      {
+        "name": "Etherium Sculptor",
+        "collector_number": "72",
+        "usd": "0.68"
+      },
+      {
+        "name": "Bojuka Bog",
+        "collector_number": "149",
+        "usd": "0.75"
+      },
+      {
+        "name": "Astral Cornucopia",
+        "collector_number": "131",
+        "usd": "0.17"
+      },
+      {
+        "name": "Formless Genesis",
+        "collector_number": "96",
+        "usd": "0.14"
+      },
+      {
+        "name": "Twilight Mire",
+        "collector_number": "189",
+        "usd": "0.23"
+      },
+      {
+        "name": "Insight Engine",
+        "collector_number": "6",
+        "usd": "1.57"
+      },
+      {
+        "name": "Cloud Key",
+        "collector_number": "54",
+        "usd": "1.32"
+      },
+      {
+        "name": "Radiant Summit",
+        "collector_number": "43",
+        "usd": "2.58"
+      },
+      {
+        "name": "Vernal Fen",
+        "collector_number": "24",
+        "usd": "1.73"
+      },
+      {
+        "name": "Wastes",
+        "collector_number": "191",
+        "usd": "0.52"
+      },
+      {
+        "name": "Augur of Autumn",
+        "collector_number": "92",
+        "usd": "0.25"
+      },
+      {
+        "name": "Multani, Yavimaya's Avatar",
+        "collector_number": "100",
+        "usd": "0.16"
+      },
+      {
+        "name": "Cabaretti Courtyard",
+        "collector_number": "151",
+        "usd": "0.25"
+      },
+      {
+        "name": "Glittering Massif",
+        "collector_number": "22",
+        "usd": "0.21"
+      },
+      {
+        "name": "Hangarback Walker",
+        "collector_number": "139",
+        "usd": "0.20"
+      },
+      {
+        "name": "Emry, Lurker of the Loch",
+        "collector_number": "71",
+        "usd": "0.44"
+      },
+      {
+        "name": "Lux Artillery",
+        "collector_number": "140",
+        "usd": "0.13"
+      },
+      {
+        "name": "Beast Within",
+        "collector_number": "93",
+        "usd": "0.66"
+      },
+      {
+        "name": "Mindless Automaton",
+        "collector_number": "142",
+        "usd": "0.11"
+      },
+      {
+        "name": "Centaur Vinecrasher",
+        "collector_number": "94",
+        "usd": "0.11"
+      },
+      {
+        "name": "Glittering Massif",
+        "collector_number": "42",
+        "usd": "0.51"
+      },
+      {
+        "name": "Uurg, Spawn of Turg",
+        "collector_number": "127",
+        "usd": "0.10"
+      },
+      {
+        "name": "World Breaker",
+        "collector_number": "112",
+        "usd": "0.21"
+      },
+      {
+        "name": "Festering Thicket",
+        "collector_number": "21",
+        "usd": "0.28"
+      },
+      {
+        "name": "Maestros Theater",
+        "collector_number": "167",
+        "usd": "0.17"
+      },
+      {
+        "name": "Chaos Warp",
+        "collector_number": "49",
+        "usd": "0.41"
+      },
+      {
+        "name": "Lux Cannon",
+        "collector_number": "141",
+        "usd": "0.13"
+      },
+      {
+        "name": "Ancient Den",
+        "collector_number": "148",
+        "usd": "1.07"
+      },
+      {
+        "name": "Llanowar Wastes",
+        "collector_number": "165",
+        "usd": "0.29"
+      },
+      {
+        "name": "Rustvale Bridge",
+        "collector_number": "175",
+        "usd": "0.16"
+      },
+      {
+        "name": "Festering Thicket",
+        "collector_number": "41",
+        "usd": "0.67"
+      },
+      {
+        "name": "Organic Extinction",
+        "collector_number": "66",
+        "usd": "0.16"
+      },
+      {
+        "name": "Temple of Enlightenment",
+        "collector_number": "186",
+        "usd": "0.15"
+      },
+      {
+        "name": "Chain Reaction",
+        "collector_number": "87",
+        "usd": "0.16"
+      },
+      {
+        "name": "Insight Engine",
+        "collector_number": "26",
+        "usd": "3.23"
+      },
+      {
+        "name": "Tear Asunder",
+        "collector_number": "109",
+        "usd": "0.11"
+      },
+      {
+        "name": "Pentad Prism",
+        "collector_number": "56",
+        "usd": "0.11"
+      },
+      {
+        "name": "Everflowing Chalice",
+        "collector_number": "137",
+        "usd": "0.19"
+      },
+      {
+        "name": "Evendo Brushrazer",
+        "collector_number": "30",
+        "usd": "0.35"
+      },
+      {
+        "name": "Exotic Orchard",
+        "collector_number": "159",
+        "usd": "0.20"
+      },
+      {
+        "name": "Smoldering Marsh",
+        "collector_number": "182",
+        "usd": "0.28"
+      },
+      {
+        "name": "Moxite Refinery",
+        "collector_number": "37",
+        "usd": "0.27"
+      },
+      {
+        "name": "Sol Ring",
+        "collector_number": "57",
+        "usd": "1.44"
+      },
+      {
+        "name": "Sulfurous Springs",
+        "collector_number": "185",
+        "usd": "0.71"
+      },
+      {
+        "name": "Thrummingbird",
+        "collector_number": "80",
+        "usd": "0.12"
+      },
+      {
+        "name": "Windgrace's Judgment",
+        "collector_number": "129",
+        "usd": "0.14"
+      },
+      {
+        "name": "Soul-Guide Lantern",
+        "collector_number": "143",
+        "usd": "0.15"
+      },
+      {
+        "name": "Sprouting Goblin",
+        "collector_number": "90",
+        "usd": "0.08"
+      },
+      {
+        "name": "Clifftop Retreat",
+        "collector_number": "155",
+        "usd": "0.20"
+      },
+      {
+        "name": "Braids, Arisen Nightmare",
+        "collector_number": "82",
+        "usd": "2.00"
+      },
+      {
+        "name": "Blasphemous Act",
+        "collector_number": "86",
+        "usd": "1.43"
+      },
+      {
+        "name": "Enthusiastic Mechanaut",
+        "collector_number": "114",
+        "usd": "0.12"
+      },
+      {
+        "name": "Long-Range Sensor",
+        "collector_number": "31",
+        "usd": "0.31"
+      }
+    ],
+    "fic": [
+      {
+        "name": "Amarant Coral",
+        "collector_number": "457",
+        "usd": "3.59"
+      },
+      {
+        "name": "Conformer Shuriken",
+        "collector_number": "98",
+        "usd": "0.27"
+      },
+      {
+        "name": "Nature's Lore",
+        "collector_number": "311",
+        "usd": "2.54"
+      },
+      {
+        "name": "Talisman of Conviction",
+        "collector_number": "363",
+        "usd": "0.27"
+      },
+      {
+        "name": "Bronze Guardian",
+        "collector_number": "234",
+        "usd": "0.21"
+      },
+      {
+        "name": "Temple of Plenty",
+        "collector_number": "437",
+        "usd": "0.12"
+      },
+      {
+        "name": "Sphere Grid",
+        "collector_number": "123",
+        "usd": "12.93"
+      },
+      {
+        "name": "Swords to Plowshares",
+        "collector_number": "256",
+        "usd": "1.32"
+      },
+      {
+        "name": "Cloud, Ex-SOLDIER",
+        "collector_number": "2",
+        "usd": "1.03"
+      },
+      {
+        "name": "Combustible Gearhulk",
+        "collector_number": "292",
+        "usd": "0.28"
+      },
+      {
+        "name": "Lethal Scheme",
+        "collector_number": "277",
+        "usd": "0.18"
+      },
+      {
+        "name": "The Falcon, Airship Restored",
+        "collector_number": "45",
+        "usd": "0.14"
+      },
+      {
+        "name": "Commander's Sphere",
+        "collector_number": "339",
+        "usd": "0.22"
+      },
+      {
+        "name": "Hero's Heirloom",
+        "collector_number": "346",
+        "usd": "0.14"
+      },
+      {
+        "name": "Tome of Legends",
+        "collector_number": "369",
+        "usd": "0.29"
+      },
+      {
+        "name": "Fandaniel, Telophoroi Ascian",
+        "collector_number": "46",
+        "usd": "0.25"
+      },
+      {
+        "name": "Skycloud Expanse",
+        "collector_number": "423",
+        "usd": "0.13"
+      },
+      {
+        "name": "Edgar, Master Machinist",
+        "collector_number": "80",
+        "usd": "0.17"
+      },
+      {
+        "name": "High Market",
+        "collector_number": "402",
+        "usd": "0.74"
+      },
+      {
+        "name": "Tifa, Martial Artist",
+        "collector_number": "225",
+        "usd": "7.88"
+      },
+      {
+        "name": "Forest",
+        "collector_number": "482",
+        "usd": "2.87"
+      },
+      {
+        "name": "Tromell, Seymour's Butler",
+        "collector_number": "162",
+        "usd": "1.45"
+      },
+      {
+        "name": "Papalymo Totolymo",
+        "collector_number": "90",
+        "usd": "0.17"
+      },
+      {
+        "name": "Y'shtola, Night's Blessed",
+        "collector_number": "191",
+        "usd": "10.74"
+      },
+      {
+        "name": "Conformer Shuriken",
+        "collector_number": "127",
+        "usd": "1.36"
+      },
+      {
+        "name": "Cultivate",
+        "collector_number": "300",
+        "usd": "0.51"
+      },
+      {
+        "name": "Gogo, Mysterious Mime",
+        "collector_number": "56",
+        "usd": "3.17"
+      },
+      {
+        "name": "Setzer, Wandering Gambler",
+        "collector_number": "183",
+        "usd": "0.42"
+      },
+      {
+        "name": "Bastion Protector",
+        "collector_number": "233",
+        "usd": "0.56"
+      },
+      {
+        "name": "Tromell, Seymour's Butler",
+        "collector_number": "73",
+        "usd": "0.37"
+      },
+      {
+        "name": "Talisman of Indulgence",
+        "collector_number": "366",
+        "usd": "1.66"
+      },
+      {
+        "name": "Fortified Village",
+        "collector_number": "396",
+        "usd": "0.10"
+      },
+      {
+        "name": "Red XIII, Proud Warrior",
+        "collector_number": "91",
+        "usd": "0.25"
+      },
+      {
+        "name": "Professor Hojo",
+        "collector_number": "69",
+        "usd": "0.20"
+      },
+      {
+        "name": "Priest of Fell Rites",
+        "collector_number": "328",
+        "usd": "0.13"
+      },
+      {
+        "name": "Yuffie, Materia Hunter",
+        "collector_number": "65",
+        "usd": "0.29"
+      },
+      {
+        "name": "Hraesvelgr of the First Brood",
+        "collector_number": "142",
+        "usd": "0.59"
+      },
+      {
+        "name": "Hardened Scales",
+        "collector_number": "307",
+        "usd": "1.83"
+      },
+      {
+        "name": "Krile Baldesion",
+        "collector_number": "86",
+        "usd": "0.13"
+      },
+      {
+        "name": "Auron, Venerated Guardian",
+        "collector_number": "130",
+        "usd": "1.46"
+      },
+      {
+        "name": "Lord Jyscal Guado",
+        "collector_number": "23",
+        "usd": "0.15"
+      },
+      {
+        "name": "Dancer's Chakrams",
+        "collector_number": "105",
+        "usd": "1.26"
+      },
+      {
+        "name": "Cloud, Ex-SOLDIER",
+        "collector_number": "202",
+        "usd": "61.08"
+      },
+      {
+        "name": "Krile Baldesion",
+        "collector_number": "176",
+        "usd": "0.51"
+      },
+      {
+        "name": "Summoning Materia",
+        "collector_number": "72",
+        "usd": "0.17"
+      },
+      {
+        "name": "Eye of Nidhogg",
+        "collector_number": "44",
+        "usd": "0.22"
+      },
+      {
+        "name": "Sol Ring",
+        "collector_number": "359",
+        "usd": "1.68"
+      },
+      {
+        "name": "Vindicate",
+        "collector_number": "330",
+        "usd": "0.28"
+      },
+      {
+        "name": "Blue Mage's Cane",
+        "collector_number": "112",
+        "usd": "0.44"
+      },
+      {
+        "name": "Swiftfoot Boots",
+        "collector_number": "361",
+        "usd": "1.73"
+      },
+      {
+        "name": "Professor Hojo",
+        "collector_number": "161",
+        "usd": "0.50"
+      },
+      {
+        "name": "Cloud's Limit Break",
+        "collector_number": "14",
+        "usd": "0.18"
+      },
+      {
+        "name": "Secret Rendezvous",
+        "collector_number": "219",
+        "usd": "3.35"
+      },
+      {
+        "name": "Helitrooper",
+        "collector_number": "22",
+        "usd": "0.12"
+      },
+      {
+        "name": "Avalanche of Sector 7",
+        "collector_number": "53",
+        "usd": "0.13"
+      },
+      {
+        "name": "G'raha Tia, Scion Reborn",
+        "collector_number": "222",
+        "usd": "1.43"
+      },
+      {
+        "name": "Kefka, Dancing Mad",
+        "collector_number": "84",
+        "usd": "0.48"
+      },
+      {
+        "name": "Lyse Hext",
+        "collector_number": "178",
+        "usd": "2.12"
+      },
+      {
+        "name": "Behemoth Sledge",
+        "collector_number": "320",
+        "usd": "0.11"
+      },
+      {
+        "name": "Duelist's Flame",
+        "collector_number": "452",
+        "usd": "7.19"
+      },
+      {
+        "name": "Judgment of Alexander",
+        "collector_number": "455",
+        "usd": "9.60"
+      },
+      {
+        "name": "Gyre Sage",
+        "collector_number": "306",
+        "usd": "0.52"
+      },
+      {
+        "name": "G'raha Tia, Scion Reborn",
+        "collector_number": "203",
+        "usd": "11.65"
+      },
+      {
+        "name": "Into the Story",
+        "collector_number": "266",
+        "usd": "0.14"
+      },
+      {
+        "name": "Sunscorch Regent",
+        "collector_number": "255",
+        "usd": "0.18"
+      },
+      {
+        "name": "Cait Sith, Fortune Teller",
+        "collector_number": "151",
+        "usd": "1.33"
+      },
+      {
+        "name": "Dancer's Chakrams",
+        "collector_number": "17",
+        "usd": "0.25"
+      },
+      {
+        "name": "Yuna, Grand Summoner",
+        "collector_number": "216",
+        "usd": "257.72"
+      },
+      {
+        "name": "Bedevil",
+        "collector_number": "319",
+        "usd": "0.25"
+      },
+      {
+        "name": "Flash Photography",
+        "collector_number": "463",
+        "usd": "9.15"
+      },
+      {
+        "name": "Promise of Loyalty",
+        "collector_number": "249",
+        "usd": "0.21"
+      },
+      {
+        "name": "Clifftop Retreat",
+        "collector_number": "381",
+        "usd": "0.21"
+      },
+      {
+        "name": "Duskshell Crawler",
+        "collector_number": "301",
+        "usd": "0.18"
+      },
+      {
+        "name": "Tidus, Yuna's Guardian",
+        "collector_number": "5",
+        "usd": "2.05"
+      },
+      {
+        "name": "Overflowing Basin",
+        "collector_number": "410",
+        "usd": "0.19"
+      },
+      {
+        "name": "Protection Magic",
+        "collector_number": "107",
+        "usd": "1.21"
+      },
+      {
+        "name": "Sunken Ruins",
+        "collector_number": "430",
+        "usd": "2.98"
+      },
+      {
+        "name": "Talisman of Progress",
+        "collector_number": "367",
+        "usd": "0.33"
+      },
+      {
+        "name": "Barret, Avalanche Leader",
+        "collector_number": "79",
+        "usd": "0.11"
+      },
+      {
+        "name": "Dispatch",
+        "collector_number": "241",
+        "usd": "0.25"
+      },
+      {
+        "name": "Snort",
+        "collector_number": "120",
+        "usd": "0.80"
+      },
+      {
+        "name": "Celes, Rune Knight",
+        "collector_number": "1",
+        "usd": "1.95"
+      },
+      {
+        "name": "Interceptor, Shadow's Hound",
+        "collector_number": "47",
+        "usd": "0.15"
+      },
+      {
+        "name": "Slayers' Stronghold",
+        "collector_number": "424",
+        "usd": "0.18"
+      },
+      {
+        "name": "Tifa, Martial Artist",
+        "collector_number": "6",
+        "usd": "4.98"
+      },
+      {
+        "name": "Umaro, Raging Yeti",
+        "collector_number": "63",
+        "usd": "0.13"
+      },
+      {
+        "name": "Pull from Tomorrow",
+        "collector_number": "269",
+        "usd": "0.17"
+      },
+      {
+        "name": "Secret Rendezvous",
+        "collector_number": "217",
+        "usd": "4.27"
+      },
+      {
+        "name": "Rejoin the Fight",
+        "collector_number": "118",
+        "usd": "0.39"
+      },
+      {
+        "name": "Exsanguinate",
+        "collector_number": "276",
+        "usd": "0.30"
+      },
+      {
+        "name": "Tifa, Martial Artist",
+        "collector_number": "206",
+        "usd": "37.47"
+      },
+      {
+        "name": "Endless Detour",
+        "collector_number": "324",
+        "usd": "0.11"
+      },
+      {
+        "name": "Incubation Druid",
+        "collector_number": "309",
+        "usd": "0.61"
+      },
+      {
+        "name": "Yuffie, Materia Hunter",
+        "collector_number": "158",
+        "usd": "1.58"
+      },
+      {
+        "name": "Evolving Wilds",
+        "collector_number": "389",
+        "usd": "0.12"
+      },
+      {
+        "name": "Vineglimmer Snarl",
+        "collector_number": "440",
+        "usd": "0.17"
+      },
+      {
+        "name": "Estinien Varlineau",
+        "collector_number": "474",
+        "usd": "21.53"
+      },
+      {
+        "name": "Sulfurous Springs",
+        "collector_number": "427",
+        "usd": "0.79"
+      },
+      {
+        "name": "Alphinaud Leveilleur",
+        "collector_number": "140",
+        "usd": "1.03"
+      },
+      {
+        "name": "General Leo Cristophe",
+        "collector_number": "20",
+        "usd": "0.15"
+      },
+      {
+        "name": "Legions to Ashes",
+        "collector_number": "326",
+        "usd": "0.15"
+      },
+      {
+        "name": "Summon: Good King Mog XII",
+        "collector_number": "194",
+        "usd": "5.36"
+      },
+      {
+        "name": "Rugged Prairie",
+        "collector_number": "417",
+        "usd": "0.25"
+      },
+      {
+        "name": "Cait Sith, Fortune Teller",
+        "collector_number": "54",
+        "usd": "0.32"
+      },
+      {
+        "name": "Sunken Hollow",
+        "collector_number": "429",
+        "usd": "0.31"
+      },
+      {
+        "name": "Temple of Mystery",
+        "collector_number": "436",
+        "usd": "0.17"
+      },
+      {
+        "name": "Kimahri, Valiant Guardian",
+        "collector_number": "175",
+        "usd": "1.02"
+      },
+      {
+        "name": "Tifa, Martial Artist",
+        "collector_number": "188",
+        "usd": "6.72"
+      },
+      {
+        "name": "Chaos Shrine's Black Crystal",
+        "collector_number": "445",
+        "usd": "4.31"
+      },
+      {
+        "name": "Kimahri, Valiant Guardian",
+        "collector_number": "85",
+        "usd": "0.15"
+      },
+      {
+        "name": "Estinien Varlineau",
+        "collector_number": "171",
+        "usd": "0.53"
+      },
+      {
+        "name": "Locke, Treasure Hunter",
+        "collector_number": "87",
+        "usd": "0.24"
+      },
+      {
+        "name": "Sephiroth, Fallen Hero",
+        "collector_number": "182",
+        "usd": "3.77"
+      },
+      {
+        "name": "Hypnotic Sprite // Mesmeric Glare",
+        "collector_number": "264",
+        "usd": "0.13"
+      },
+      {
+        "name": "Final Judgment",
+        "collector_number": "243",
+        "usd": "0.19"
+      },
+      {
+        "name": "Sabin, Master Monk",
+        "collector_number": "57",
+        "usd": "0.11"
+      },
+      {
+        "name": "Morbid Opportunist",
+        "collector_number": "278",
+        "usd": "0.21"
+      },
+      {
+        "name": "Urianger Augurelt",
+        "collector_number": "96",
+        "usd": "0.12"
+      },
+      {
+        "name": "Dragonskull Summit",
+        "collector_number": "387",
+        "usd": "1.28"
+      },
+      {
+        "name": "Red XIII, Proud Warrior",
+        "collector_number": "181",
+        "usd": "1.89"
+      },
+      {
+        "name": "Snort",
+        "collector_number": "58",
+        "usd": "0.22"
+      },
+      {
+        "name": "Gatta and Luzzu",
+        "collector_number": "19",
+        "usd": "0.18"
+      },
+      {
+        "name": "Snapcaster Mage",
+        "collector_number": "469",
+        "usd": "157.61"
+      },
+      {
+        "name": "Exotic Orchard",
+        "collector_number": "390",
+        "usd": "0.24"
+      },
+      {
+        "name": "Night's Whisper",
+        "collector_number": "280",
+        "usd": "0.37"
+      },
+      {
+        "name": "Clever Concealment",
+        "collector_number": "236",
+        "usd": "8.99"
+      },
+      {
+        "name": "Anger",
+        "collector_number": "289",
+        "usd": "1.31"
+      },
+      {
+        "name": "Herald's Horn",
+        "collector_number": "228",
+        "usd": "4.69"
+      },
+      {
+        "name": "Lifestream's Blessing",
+        "collector_number": "67",
+        "usd": "0.48"
+      },
+      {
+        "name": "Darksteel Plate",
+        "collector_number": "342",
+        "usd": "4.81"
+      },
+      {
+        "name": "Command Tower",
+        "collector_number": "484",
+        "usd": "0.23"
+      },
+      {
+        "name": "Sepulchral Primordial",
+        "collector_number": "284",
+        "usd": "0.19"
+      },
+      {
+        "name": "Baleful Strix",
+        "collector_number": "318",
+        "usd": "0.95"
+      },
+      {
+        "name": "Sunlit Marsh",
+        "collector_number": "431",
+        "usd": "0.12"
+      },
+      {
+        "name": "Fathom Mage",
+        "collector_number": "325",
+        "usd": "0.16"
+      },
+      {
+        "name": "Arcane Signet",
+        "collector_number": "335",
+        "usd": "0.46"
+      },
+      {
+        "name": "Shadowblood Ridge",
+        "collector_number": "421",
+        "usd": "0.22"
+      },
+      {
+        "name": "Crux of Fate",
+        "collector_number": "275",
+        "usd": "0.32"
+      },
+      {
+        "name": "Game Trail",
+        "collector_number": "398",
+        "usd": "0.16"
+      },
+      {
+        "name": "Farewell",
+        "collector_number": "242",
+        "usd": "3.71"
+      },
+      {
+        "name": "Path of Ancestry",
+        "collector_number": "411",
+        "usd": "0.21"
+      },
+      {
+        "name": "G'raha Tia, Scion Reborn",
+        "collector_number": "211",
+        "usd": "55.02"
+      },
+      {
+        "name": "Skullclamp",
+        "collector_number": "355",
+        "usd": "4.32"
+      },
+      {
+        "name": "Terra, Herald of Hope",
+        "collector_number": "223",
+        "usd": "3.06"
+      },
+      {
+        "name": "Chocobo Camp",
+        "collector_number": "462",
+        "usd": "9.33"
+      },
+      {
+        "name": "Helitrooper",
+        "collector_number": "106",
+        "usd": "0.32"
+      },
+      {
+        "name": "Yuna's Decision",
+        "collector_number": "74",
+        "usd": "0.17"
+      },
+      {
+        "name": "Walking Ballista",
+        "collector_number": "371",
+        "usd": "6.76"
+      },
+      {
+        "name": "Sphere Grid",
+        "collector_number": "70",
+        "usd": "8.43"
+      },
+      {
+        "name": "Y'shtola, Night's Blessed",
+        "collector_number": "207",
+        "usd": "107.10"
+      },
+      {
+        "name": "Transpose",
+        "collector_number": "119",
+        "usd": "1.67"
+      },
+      {
+        "name": "Fetid Heath",
+        "collector_number": "391",
+        "usd": "0.35"
+      },
+      {
+        "name": "Authority of the Consuls",
+        "collector_number": "232",
+        "usd": "5.23"
+      },
+      {
+        "name": "Tataru Taru",
+        "collector_number": "466",
+        "usd": "75.09"
+      },
+      {
+        "name": "Mog, Moogle Warrior",
+        "collector_number": "179",
+        "usd": "0.68"
+      },
+      {
+        "name": "Emet-Selch of the Third Seat",
+        "collector_number": "170",
+        "usd": "2.89"
+      },
+      {
+        "name": "Maester Seymour",
+        "collector_number": "160",
+        "usd": "1.43"
+      },
+      {
+        "name": "Reanimate",
+        "collector_number": "282",
+        "usd": "6.29"
+      },
+      {
+        "name": "Y'shtola, Night's Blessed",
+        "collector_number": "215",
+        "usd": "478.51"
+      },
+      {
+        "name": "Cinder Glade",
+        "collector_number": "380",
+        "usd": "0.27"
+      },
+      {
+        "name": "Yuna's Decision",
+        "collector_number": "125",
+        "usd": "0.85"
+      },
+      {
+        "name": "The Warring Triad",
+        "collector_number": "193",
+        "usd": "1.89"
+      },
+      {
+        "name": "Cloud, Ex-SOLDIER",
+        "collector_number": "221",
+        "usd": "6.57"
+      },
+      {
+        "name": "Terra, Herald of Hope",
+        "collector_number": "4",
+        "usd": "1.87"
+      },
+      {
+        "name": "Sunpetal Grove",
+        "collector_number": "432",
+        "usd": "0.32"
+      },
+      {
+        "name": "Coveted Jewel",
+        "collector_number": "341",
+        "usd": "0.16"
+      },
+      {
+        "name": "Vanquish the Horde",
+        "collector_number": "260",
+        "usd": "0.26"
+      },
+      {
+        "name": "Three Visits",
+        "collector_number": "315",
+        "usd": "5.32"
+      },
+      {
+        "name": "Tidus, Yuna's Guardian",
+        "collector_number": "213",
+        "usd": "145.89"
+      },
+      {
+        "name": "Thought Vessel",
+        "collector_number": "368",
+        "usd": "1.46"
+      },
+      {
+        "name": "Canopy Vista",
+        "collector_number": "378",
+        "usd": "0.20"
+      },
+      {
+        "name": "Everflowing Chalice",
+        "collector_number": "343",
+        "usd": "0.19"
+      },
+      {
+        "name": "Setzer, Wandering Gambler",
+        "collector_number": "93",
+        "usd": "0.12"
+      },
+      {
+        "name": "Mortify",
+        "collector_number": "327",
+        "usd": "0.18"
+      },
+      {
+        "name": "Bane of Progress",
+        "collector_number": "299",
+        "usd": "0.52"
+      },
+      {
+        "name": "Spire of Industry",
+        "collector_number": "426",
+        "usd": "0.20"
+      },
+      {
+        "name": "Syphon Mind",
+        "collector_number": "288",
+        "usd": "0.25"
+      },
+      {
+        "name": "Tidus, Yuna's Guardian",
+        "collector_number": "224",
+        "usd": "3.88"
+      },
+      {
+        "name": "Command Tower",
+        "collector_number": "486",
+        "usd": "0.23"
+      },
+      {
+        "name": "Hildibrand Manderville // Gentleman's Rise",
+        "collector_number": "83",
+        "usd": "0.15"
+      },
+      {
+        "name": "Lulu, Stern Guardian",
+        "collector_number": "143",
+        "usd": "3.91"
+      },
+      {
+        "name": "Observed Stasis",
+        "collector_number": "40",
+        "usd": "0.24"
+      },
+      {
+        "name": "Banon, the Returners' Leader",
+        "collector_number": "78",
+        "usd": "0.13"
+      },
+      {
+        "name": "Solemn Simulacrum",
+        "collector_number": "360",
+        "usd": "0.22"
+      },
+      {
+        "name": "Coin of Fate",
+        "collector_number": "104",
+        "usd": "0.26"
+      },
+      {
+        "name": "Alphinaud Leveilleur",
+        "collector_number": "33",
+        "usd": "0.19"
+      },
+      {
+        "name": "Transpose",
+        "collector_number": "52",
+        "usd": "0.32"
+      },
+      {
+        "name": "Hildibrand Manderville // Gentleman's Rise",
+        "collector_number": "173",
+        "usd": "0.44"
+      },
+      {
+        "name": "Wooded Ridgeline",
+        "collector_number": "441",
+        "usd": "0.17"
+      },
+      {
+        "name": "Big Score",
+        "collector_number": "290",
+        "usd": "0.92"
+      },
+      {
+        "name": "Furycalm Snarl",
+        "collector_number": "397",
+        "usd": "0.16"
+      },
+      {
+        "name": "Squall, Gunblade Duelist",
+        "collector_number": "453",
+        "usd": "4.58"
+      },
+      {
+        "name": "Bastion of Remembrance",
+        "collector_number": "274",
+        "usd": "0.19"
+      },
+      {
+        "name": "Destroy Evil",
+        "collector_number": "240",
+        "usd": "0.17"
+      },
+      {
+        "name": "Siegfried, Famed Swordsman",
+        "collector_number": "51",
+        "usd": "0.15"
+      },
+      {
+        "name": "Wayfarer's Bauble",
+        "collector_number": "372",
+        "usd": "0.24"
+      },
+      {
+        "name": "Swamp",
+        "collector_number": "480",
+        "usd": "1.98"
+      },
+      {
+        "name": "Inspiring Statuary",
+        "collector_number": "347",
+        "usd": "0.22"
+      },
+      {
+        "name": "Ultimate Magic: Holy",
+        "collector_number": "110",
+        "usd": "2.86"
+      },
+      {
+        "name": "Espers to Magicite",
+        "collector_number": "43",
+        "usd": "0.23"
+      },
+      {
+        "name": "Edea, Possessed Sorceress",
+        "collector_number": "448",
+        "usd": "11.37"
+      },
+      {
+        "name": "Barret, Avalanche Leader",
+        "collector_number": "166",
+        "usd": "0.38"
+      },
+      {
+        "name": "Shelinda, Yevon Acolyte",
+        "collector_number": "94",
+        "usd": "0.18"
+      },
+      {
+        "name": "Millikin",
+        "collector_number": "352",
+        "usd": "0.13"
+      },
+      {
+        "name": "Reaper's Scythe",
+        "collector_number": "117",
+        "usd": "0.52"
+      },
+      {
+        "name": "Warrior's Resolve",
+        "collector_number": "465",
+        "usd": "3.43"
+      },
+      {
+        "name": "Celes, Rune Knight",
+        "collector_number": "167",
+        "usd": "2.63"
+      },
+      {
+        "name": "Rootbound Crag",
+        "collector_number": "416",
+        "usd": "0.70"
+      },
+      {
+        "name": "Cid, Freeflier Pilot",
+        "collector_number": "131",
+        "usd": "2.30"
+      },
+      {
+        "name": "Stitch Together",
+        "collector_number": "286",
+        "usd": "0.55"
+      },
+      {
+        "name": "The Destined Warrior",
+        "collector_number": "443",
+        "usd": "4.32"
+      },
+      {
+        "name": "Grateful Apparition",
+        "collector_number": "244",
+        "usd": "0.15"
+      },
+      {
+        "name": "Dig Through Time",
+        "collector_number": "263",
+        "usd": "0.25"
+      },
+      {
+        "name": "Summon: Magus Sisters",
+        "collector_number": "71",
+        "usd": "0.17"
+      },
+      {
+        "name": "Rinoa, Angel Wing",
+        "collector_number": "450",
+        "usd": "6.28"
+      },
+      {
+        "name": "Yuna's Whistle",
+        "collector_number": "126",
+        "usd": "0.55"
+      },
+      {
+        "name": "Unfinished Business",
+        "collector_number": "259",
+        "usd": "0.16"
+      },
+      {
+        "name": "Kefka, Dancing Mad",
+        "collector_number": "174",
+        "usd": "3.00"
+      },
+      {
+        "name": "Blitzball Stadium",
+        "collector_number": "34",
+        "usd": "0.17"
+      },
+      {
+        "name": "Tidus, Yuna's Guardian",
+        "collector_number": "187",
+        "usd": "4.53"
+      },
+      {
+        "name": "Lightning Greaves",
+        "collector_number": "349",
+        "usd": "4.41"
+      },
+      {
+        "name": "Ash Barrens",
+        "collector_number": "374",
+        "usd": "0.09"
+      },
+      {
+        "name": "Estinien Varlineau",
+        "collector_number": "82",
+        "usd": "0.12"
+      },
+      {
+        "name": "Nomad Outpost",
+        "collector_number": "409",
+        "usd": "1.02"
+      },
+      {
+        "name": "Talisman of Hierarchy",
+        "collector_number": "365",
+        "usd": "0.55"
+      },
+      {
+        "name": "Papalymo Totolymo",
+        "collector_number": "180",
+        "usd": "0.52"
+      },
+      {
+        "name": "Forge of Heroes",
+        "collector_number": "395",
+        "usd": "0.13"
+      },
+      {
+        "name": "Meteor Golem",
+        "collector_number": "351",
+        "usd": "0.10"
+      },
+      {
+        "name": "Flooded Grove",
+        "collector_number": "393",
+        "usd": "0.20"
+      },
+      {
+        "name": "Smoldering Marsh",
+        "collector_number": "425",
+        "usd": "0.28"
+      },
+      {
+        "name": "Summon: Esper Valigarmanda",
+        "collector_number": "60",
+        "usd": "0.18"
+      },
+      {
+        "name": "Graven Cairns",
+        "collector_number": "401",
+        "usd": "2.12"
+      },
+      {
+        "name": "Tidus, Yuna's Guardian",
+        "collector_number": "205",
+        "usd": "34.78"
+      },
+      {
+        "name": "Demolition Field",
+        "collector_number": "385",
+        "usd": "0.21"
+      },
+      {
+        "name": "Mind Stone",
+        "collector_number": "353",
+        "usd": "0.23"
+      },
+      {
+        "name": "Ultimate Magic: Meteor",
+        "collector_number": "121",
+        "usd": "0.44"
+      },
+      {
+        "name": "Cleansing Nova",
+        "collector_number": "235",
+        "usd": "0.23"
+      },
+      {
+        "name": "The Falcon, Airship Restored",
+        "collector_number": "116",
+        "usd": "0.57"
+      },
+      {
+        "name": "Summoner's Sending",
+        "collector_number": "29",
+        "usd": "0.12"
+      },
+      {
+        "name": "Sungrass Prairie",
+        "collector_number": "428",
+        "usd": "0.12"
+      },
+      {
+        "name": "Aerith, Last Ancient",
+        "collector_number": "163",
+        "usd": "2.20"
+      },
+      {
+        "name": "Arcane Sanctum",
+        "collector_number": "373",
+        "usd": "0.36"
+      },
+      {
+        "name": "Together Forever",
+        "collector_number": "257",
+        "usd": "0.19"
+      },
+      {
+        "name": "Summon: Magus Sisters",
+        "collector_number": "200",
+        "usd": "4.17"
+      },
+      {
+        "name": "Sunscorched Divide",
+        "collector_number": "433",
+        "usd": "0.16"
+      },
+      {
+        "name": "Umaro, Raging Yeti",
+        "collector_number": "156",
+        "usd": "0.40"
+      },
+      {
+        "name": "Ardbert, Warrior of Darkness",
+        "collector_number": "164",
+        "usd": "2.62"
+      },
+      {
+        "name": "Chasm Skulker",
+        "collector_number": "262",
+        "usd": "0.23"
+      },
+      {
+        "name": "Gau, Feral Youth",
+        "collector_number": "55",
+        "usd": "0.16"
+      },
+      {
+        "name": "Seifer, Balamb Rival",
+        "collector_number": "451",
+        "usd": "2.81"
+      },
+      {
+        "name": "Emet-Selch of the Third Seat",
+        "collector_number": "473",
+        "usd": "51.65"
+      },
+      {
+        "name": "Drowned Catacomb",
+        "collector_number": "388",
+        "usd": "1.74"
+      },
+      {
+        "name": "Celes, Rune Knight",
+        "collector_number": "220",
+        "usd": "2.98"
+      },
+      {
+        "name": "The Destined White Mage",
+        "collector_number": "444",
+        "usd": "9.26"
+      },
+      {
+        "name": "Strago and Relm",
+        "collector_number": "155",
+        "usd": "0.43"
+      },
+      {
+        "name": "Pitiless Plunderer",
+        "collector_number": "281",
+        "usd": "1.69"
+      },
+      {
+        "name": "Tataru Taru",
+        "collector_number": "138",
+        "usd": "10.50"
+      },
+      {
+        "name": "Isolated Chapel",
+        "collector_number": "405",
+        "usd": "0.31"
+      },
+      {
+        "name": "Cloud's Limit Break",
+        "collector_number": "103",
+        "usd": "0.99"
+      },
+      {
+        "name": "Damning Verdict",
+        "collector_number": "239",
+        "usd": "4.91"
+      },
+      {
+        "name": "Wakka, Devoted Guardian",
+        "collector_number": "477",
+        "usd": "26.20"
+      },
+      {
+        "name": "Heidegger, Shinra Executive",
+        "collector_number": "21",
+        "usd": "0.13"
+      },
+      {
+        "name": "Conqueror's Flail",
+        "collector_number": "340",
+        "usd": "1.06"
+      },
+      {
+        "name": "Yuna's Whistle",
+        "collector_number": "75",
+        "usd": "0.14"
+      },
+      {
+        "name": "Sin, Unending Cataclysm",
+        "collector_number": "185",
+        "usd": "1.70"
+      },
+      {
+        "name": "Generous Patron",
+        "collector_number": "305",
+        "usd": "4.79"
+      },
+      {
+        "name": "Sol Ring",
+        "collector_number": "356",
+        "usd": "1.51"
+      },
+      {
+        "name": "Ultimate Magic: Holy",
+        "collector_number": "32",
+        "usd": "0.89"
+      },
+      {
+        "name": "Propaganda",
+        "collector_number": "268",
+        "usd": "3.03"
+      },
+      {
+        "name": "Terra, Herald of Hope",
+        "collector_number": "204",
+        "usd": "39.74"
+      },
+      {
+        "name": "Protection Magic",
+        "collector_number": "24",
+        "usd": "0.27"
+      },
+      {
+        "name": "Summon: Ixion",
+        "collector_number": "195",
+        "usd": "7.56"
+      },
+      {
+        "name": "Champions from Beyond",
+        "collector_number": "101",
+        "usd": "0.94"
+      },
+      {
+        "name": "Ruinous Ultimatum",
+        "collector_number": "329",
+        "usd": "0.51"
+      },
+      {
+        "name": "Yuna, Grand Summoner",
+        "collector_number": "8",
+        "usd": "3.52"
+      },
+      {
+        "name": "Tataru Taru",
+        "collector_number": "30",
+        "usd": "6.76"
+      },
+      {
+        "name": "Blitzball Stadium",
+        "collector_number": "111",
+        "usd": "0.36"
+      },
+      {
+        "name": "Austere Command",
+        "collector_number": "231",
+        "usd": "0.31"
+      },
+      {
+        "name": "Rise of the Dark Realms",
+        "collector_number": "283",
+        "usd": "3.04"
+      },
+      {
+        "name": "Cloud, Ex-SOLDIER",
+        "collector_number": "168",
+        "usd": "4.51"
+      },
+      {
+        "name": "Island",
+        "collector_number": "479",
+        "usd": "2.90"
+      },
+      {
+        "name": "Vincent, Vengeful Atoner",
+        "collector_number": "157",
+        "usd": "3.53"
+      },
+      {
+        "name": "Radiant Grove",
+        "collector_number": "414",
+        "usd": "0.13"
+      },
+      {
+        "name": "Harmonize",
+        "collector_number": "308",
+        "usd": "0.21"
+      },
+      {
+        "name": "Lyse Hext",
+        "collector_number": "88",
+        "usd": "0.23"
+      },
+      {
+        "name": "Hellkite Tyrant",
+        "collector_number": "295",
+        "usd": "2.00"
+      },
+      {
+        "name": "Bugenhagen, Wise Elder",
+        "collector_number": "66",
+        "usd": "0.59"
+      },
+      {
+        "name": "Lulu, Stern Guardian",
+        "collector_number": "467",
+        "usd": "73.84"
+      },
+      {
+        "name": "Scholar of New Horizons",
+        "collector_number": "252",
+        "usd": "0.22"
+      },
+      {
+        "name": "Armory Automaton",
+        "collector_number": "336",
+        "usd": "0.17"
+      },
+      {
+        "name": "The Warring Triad",
+        "collector_number": "99",
+        "usd": "0.61"
+      },
+      {
+        "name": "Sol Ring",
+        "collector_number": "358",
+        "usd": "1.51"
+      },
+      {
+        "name": "Mountain",
+        "collector_number": "481",
+        "usd": "1.73"
+      },
+      {
+        "name": "Command Tower",
+        "collector_number": "382",
+        "usd": "0.26"
+      },
+      {
+        "name": "Search for Dagger",
+        "collector_number": "459",
+        "usd": "4.93"
+      },
+      {
+        "name": "Blue Mage's Cane",
+        "collector_number": "35",
+        "usd": "0.18"
+      },
+      {
+        "name": "Vandalblast",
+        "collector_number": "298",
+        "usd": "2.10"
+      },
+      {
+        "name": "Lulu, Stern Guardian",
+        "collector_number": "38",
+        "usd": "0.58"
+      },
+      {
+        "name": "Avalanche of Sector 7",
+        "collector_number": "150",
+        "usd": "0.40"
+      },
+      {
+        "name": "Rampant Rejuvenator",
+        "collector_number": "314",
+        "usd": "0.17"
+      },
+      {
+        "name": "Arcane Signet",
+        "collector_number": "332",
+        "usd": "0.62"
+      },
+      {
+        "name": "O'aka, Traveling Merchant",
+        "collector_number": "39",
+        "usd": "0.26"
+      },
+      {
+        "name": "Arcane Signet",
+        "collector_number": "334",
+        "usd": "0.41"
+      },
+      {
+        "name": "Vincent, Vengeful Atoner",
+        "collector_number": "64",
+        "usd": "0.26"
+      },
+      {
+        "name": "Palace Jailer",
+        "collector_number": "247",
+        "usd": "0.11"
+      },
+      {
+        "name": "Hero's Blade",
+        "collector_number": "345",
+        "usd": "0.18"
+      },
+      {
+        "name": "Wakka, Devoted Guardian",
+        "collector_number": "97",
+        "usd": "0.16"
+      },
+      {
+        "name": "Banon, the Returners' Leader",
+        "collector_number": "165",
+        "usd": "0.30"
+      },
+      {
+        "name": "Hinterland Harbor",
+        "collector_number": "403",
+        "usd": "0.23"
+      },
+      {
+        "name": "Birds of Paradise",
+        "collector_number": "483",
+        "usd": "10.13"
+      },
+      {
+        "name": "Ardbert, Warrior of Darkness",
+        "collector_number": "77",
+        "usd": "0.26"
+      },
+      {
+        "name": "Bred for the Hunt",
+        "collector_number": "321",
+        "usd": "0.15"
+      },
+      {
+        "name": "Ruin Grinder",
+        "collector_number": "297",
+        "usd": "0.12"
+      },
+      {
+        "name": "Desolate Mire",
+        "collector_number": "386",
+        "usd": "0.20"
+      },
+      {
+        "name": "Cyan, Vengeful Samurai",
+        "collector_number": "16",
+        "usd": "0.13"
+      },
+      {
+        "name": "Champion's Helm",
+        "collector_number": "337",
+        "usd": "1.35"
+      },
+      {
+        "name": "Battlefield Forge",
+        "collector_number": "375",
+        "usd": "0.24"
+      },
+      {
+        "name": "Eye of Nidhogg",
+        "collector_number": "115",
+        "usd": "0.76"
+      },
+      {
+        "name": "Chaos Warp",
+        "collector_number": "291",
+        "usd": "0.42"
+      },
+      {
+        "name": "Snuff Out",
+        "collector_number": "285",
+        "usd": "4.12"
+      },
+      {
+        "name": "Summon: Kujata",
+        "collector_number": "199",
+        "usd": "3.75"
+      },
+      {
+        "name": "Tragic Arrogance",
+        "collector_number": "258",
+        "usd": "0.15"
+      },
+      {
+        "name": "Scavenger Grounds",
+        "collector_number": "419",
+        "usd": "0.20"
+      },
+      {
+        "name": "Seaside Citadel",
+        "collector_number": "420",
+        "usd": "0.25"
+      },
+      {
+        "name": "G'raha Tia, Scion Reborn",
+        "collector_number": "172",
+        "usd": "2.15"
+      },
+      {
+        "name": "Torrential Gearhulk",
+        "collector_number": "272",
+        "usd": "0.40"
+      },
+      {
+        "name": "Sublime Epiphany",
+        "collector_number": "271",
+        "usd": "0.21"
+      },
+      {
+        "name": "Foreboding Ruins",
+        "collector_number": "394",
+        "usd": "0.23"
+      },
+      {
+        "name": "Sword of the Animist",
+        "collector_number": "362",
+        "usd": "6.10"
+      },
+      {
+        "name": "Furious Rise",
+        "collector_number": "294",
+        "usd": "0.09"
+      },
+      {
+        "name": "Strago and Relm",
+        "collector_number": "59",
+        "usd": "0.15"
+      },
+      {
+        "name": "Plains",
+        "collector_number": "478",
+        "usd": "3.38"
+      },
+      {
+        "name": "Yuna, Grand Summoner",
+        "collector_number": "227",
+        "usd": "6.27"
+      },
+      {
+        "name": "Mask of Memory",
+        "collector_number": "350",
+        "usd": "0.28"
+      },
+      {
+        "name": "Inexorable Tide",
+        "collector_number": "265",
+        "usd": "0.80"
+      },
+      {
+        "name": "Archfiend of Depravity",
+        "collector_number": "273",
+        "usd": "0.38"
+      },
+      {
+        "name": "Aerith, Last Ancient",
+        "collector_number": "471",
+        "usd": "85.47"
+      },
+      {
+        "name": "Command Tower",
+        "collector_number": "485",
+        "usd": "0.26"
+      },
+      {
+        "name": "Bonders' Enclave",
+        "collector_number": "376",
+        "usd": "0.27"
+      },
+      {
+        "name": "Hraesvelgr of the First Brood",
+        "collector_number": "37",
+        "usd": "0.17"
+      },
+      {
+        "name": "Observed Stasis",
+        "collector_number": "113",
+        "usd": "0.80"
+      },
+      {
+        "name": "Summon: Ixion",
+        "collector_number": "27",
+        "usd": "0.28"
+      },
+      {
+        "name": "Path of Discovery",
+        "collector_number": "312",
+        "usd": "0.17"
+      },
+      {
+        "name": "Heidegger, Shinra Executive",
+        "collector_number": "136",
+        "usd": "0.36"
+      },
+      {
+        "name": "Collective Effort",
+        "collector_number": "237",
+        "usd": "0.18"
+      },
+      {
+        "name": "Locke, Treasure Hunter",
+        "collector_number": "475",
+        "usd": "26.94"
+      },
+      {
+        "name": "Cid, Freeflier Pilot",
+        "collector_number": "13",
+        "usd": "0.38"
+      },
+      {
+        "name": "Idyllic Beachfront",
+        "collector_number": "404",
+        "usd": "0.12"
+      },
+      {
+        "name": "Cyan, Vengeful Samurai",
+        "collector_number": "132",
+        "usd": "0.39"
+      },
+      {
+        "name": "Void Rend",
+        "collector_number": "331",
+        "usd": "0.28"
+      },
+      {
+        "name": "Fishing Gear",
+        "collector_number": "461",
+        "usd": "13.14"
+      },
+      {
+        "name": "Barret, Avalanche Leader",
+        "collector_number": "472",
+        "usd": "18.40"
+      },
+      {
+        "name": "Cut a Deal",
+        "collector_number": "238",
+        "usd": "0.23"
+      },
+      {
+        "name": "Ultimate Magic: Meteor",
+        "collector_number": "62",
+        "usd": "0.15"
+      },
+      {
+        "name": "Rikku, Resourceful Guardian",
+        "collector_number": "468",
+        "usd": "40.95"
+      },
+      {
+        "name": "Puresteel Paladin",
+        "collector_number": "250",
+        "usd": "0.71"
+      },
+      {
+        "name": "Garland, Royal Kidnapper",
+        "collector_number": "442",
+        "usd": "5.93"
+      },
+      {
+        "name": "Rogue's Passage",
+        "collector_number": "415",
+        "usd": "0.34"
+      },
+      {
+        "name": "Summon: Kujata",
+        "collector_number": "61",
+        "usd": "0.18"
+      },
+      {
+        "name": "Alisaie Leveilleur",
+        "collector_number": "9",
+        "usd": "0.24"
+      },
+      {
+        "name": "Terra, Herald of Hope",
+        "collector_number": "212",
+        "usd": "168.29"
+      },
+      {
+        "name": "Path to Exile",
+        "collector_number": "248",
+        "usd": "1.32"
+      },
+      {
+        "name": "Yuna, Grand Summoner",
+        "collector_number": "192",
+        "usd": "4.47"
+      },
+      {
+        "name": "Explorer's Scope",
+        "collector_number": "344",
+        "usd": "0.14"
+      },
+      {
+        "name": "Fire-Lit Thicket",
+        "collector_number": "392",
+        "usd": "1.91"
+      },
+      {
+        "name": "Darkwater Catacombs",
+        "collector_number": "384",
+        "usd": "0.21"
+      },
+      {
+        "name": "Thancred Waters",
+        "collector_number": "139",
+        "usd": "0.69"
+      },
+      {
+        "name": "Lord Jyscal Guado",
+        "collector_number": "137",
+        "usd": "0.34"
+      },
+      {
+        "name": "Fated Clash",
+        "collector_number": "449",
+        "usd": "9.32"
+      },
+      {
+        "name": "Vivi's Persistence",
+        "collector_number": "458",
+        "usd": "38.19"
+      },
+      {
+        "name": "Inspiring Call",
+        "collector_number": "310",
+        "usd": "0.17"
+      },
+      {
+        "name": "Contaminated Aquifer",
+        "collector_number": "383",
+        "usd": "0.12"
+      },
+      {
+        "name": "Summon: Good King Mog XII",
+        "collector_number": "26",
+        "usd": "0.19"
+      },
+      {
+        "name": "Underground River",
+        "collector_number": "439",
+        "usd": "1.30"
+      },
+      {
+        "name": "Cloud, Ex-SOLDIER",
+        "collector_number": "210",
+        "usd": "334.51"
+      },
+      {
+        "name": "Brushland",
+        "collector_number": "377",
+        "usd": "0.27"
+      },
+      {
+        "name": "Brilliant Wings",
+        "collector_number": "454",
+        "usd": "13.00"
+      },
+      {
+        "name": "Elena, Turk Recruit",
+        "collector_number": "133",
+        "usd": "0.76"
+      },
+      {
+        "name": "Summoner's Sending",
+        "collector_number": "109",
+        "usd": "1.28"
+      },
+      {
+        "name": "Archaeomancer's Map",
+        "collector_number": "230",
+        "usd": "2.79"
+      },
+      {
+        "name": "Y'shtola, Night's Blessed",
+        "collector_number": "7",
+        "usd": "4.23"
+      },
+      {
+        "name": "Gau, Feral Youth",
+        "collector_number": "152",
+        "usd": "0.38"
+      },
+      {
+        "name": "Talisman of Dominance",
+        "collector_number": "364",
+        "usd": "1.74"
+      },
+      {
+        "name": "Noctis, Heir Apparent",
+        "collector_number": "460",
+        "usd": "7.84"
+      },
+      {
+        "name": "Wrecking Ball Arm",
+        "collector_number": "128",
+        "usd": "1.21"
+      },
+      {
+        "name": "Wakka, Devoted Guardian",
+        "collector_number": "190",
+        "usd": "0.57"
+      },
+      {
+        "name": "Summon: Valefor",
+        "collector_number": "197",
+        "usd": "4.21"
+      },
+      {
+        "name": "Auron, Venerated Guardian",
+        "collector_number": "10",
+        "usd": "0.20"
+      },
+      {
+        "name": "Summoning Materia",
+        "collector_number": "124",
+        "usd": "0.65"
+      },
+      {
+        "name": "The Destined Black Mage",
+        "collector_number": "447",
+        "usd": "24.71"
+      },
+      {
+        "name": "Thancred Waters",
+        "collector_number": "31",
+        "usd": "0.14"
+      },
+      {
+        "name": "Summon: Yojimbo",
+        "collector_number": "28",
+        "usd": "1.63"
+      },
+      {
+        "name": "Coin of Fate",
+        "collector_number": "15",
+        "usd": "0.10"
+      },
+      {
+        "name": "Prairie Stream",
+        "collector_number": "413",
+        "usd": "0.19"
+      },
+      {
+        "name": "Jungle Shrine",
+        "collector_number": "406",
+        "usd": "0.26"
+      },
+      {
+        "name": "Interceptor, Shadow's Hound",
+        "collector_number": "147",
+        "usd": "0.36"
+      },
+      {
+        "name": "Aerith, Last Ancient",
+        "collector_number": "76",
+        "usd": "0.28"
+      },
+      {
+        "name": "Locke, Treasure Hunter",
+        "collector_number": "177",
+        "usd": "1.19"
+      },
+      {
+        "name": "Secret Rendezvous",
+        "collector_number": "253",
+        "usd": "0.18"
+      },
+      {
+        "name": "Champions from Beyond",
+        "collector_number": "11",
+        "usd": "0.27"
+      },
+      {
+        "name": "Sol Ring",
+        "collector_number": "357",
+        "usd": "1.38"
+      },
+      {
+        "name": "Elena, Turk Recruit",
+        "collector_number": "18",
+        "usd": "0.15"
+      },
+      {
+        "name": "Lifestream's Blessing",
+        "collector_number": "122",
+        "usd": "1.61"
+      },
+      {
+        "name": "O'aka, Traveling Merchant",
+        "collector_number": "144",
+        "usd": "1.47"
+      },
+      {
+        "name": "Shadow, Mysterious Assassin",
+        "collector_number": "148",
+        "usd": "1.09"
+      },
+      {
+        "name": "Celes, Rune Knight",
+        "collector_number": "201",
+        "usd": "28.50"
+      },
+      {
+        "name": "Secret Rendezvous",
+        "collector_number": "218",
+        "usd": "5.14"
+      },
+      {
+        "name": "Sabin, Master Monk",
+        "collector_number": "154",
+        "usd": "0.40"
+      },
+      {
+        "name": "Rikku, Resourceful Guardian",
+        "collector_number": "41",
+        "usd": "0.24"
+      },
+      {
+        "name": "Geothermal Bog",
+        "collector_number": "399",
+        "usd": "0.15"
+      },
+      {
+        "name": "Professional Face-Breaker",
+        "collector_number": "296",
+        "usd": "3.33"
+      },
+      {
+        "name": "Glacial Fortress",
+        "collector_number": "400",
+        "usd": "0.23"
+      },
+      {
+        "name": "Shelinda, Yevon Acolyte",
+        "collector_number": "184",
+        "usd": "0.53"
+      },
+      {
+        "name": "Choked Estuary",
+        "collector_number": "379",
+        "usd": "0.22"
+      },
+      {
+        "name": "Decimate",
+        "collector_number": "323",
+        "usd": "0.20"
+      },
+      {
+        "name": "Mega Flare",
+        "collector_number": "456",
+        "usd": "1.66"
+      },
+      {
+        "name": "Edgar, Master Machinist",
+        "collector_number": "169",
+        "usd": "0.47"
+      },
+      {
+        "name": "Siegfried, Famed Swordsman",
+        "collector_number": "149",
+        "usd": "0.48"
+      },
+      {
+        "name": "Murderous Rider // Swift End",
+        "collector_number": "279",
+        "usd": "0.19"
+      },
+      {
+        "name": "Emet-Selch of the Third Seat",
+        "collector_number": "81",
+        "usd": "0.44"
+      },
+      {
+        "name": "SOLDIER Military Program",
+        "collector_number": "25",
+        "usd": "0.19"
+      },
+      {
+        "name": "Forgotten Ancient",
+        "collector_number": "304",
+        "usd": "0.33"
+      },
+      {
+        "name": "Mossfire Valley",
+        "collector_number": "407",
+        "usd": "0.16"
+      },
+      {
+        "name": "The Destined Thief",
+        "collector_number": "446",
+        "usd": "4.05"
+      },
+      {
+        "name": "Alisaie Leveilleur",
+        "collector_number": "129",
+        "usd": "1.55"
+      },
+      {
+        "name": "Tangled Islet",
+        "collector_number": "434",
+        "usd": "0.15"
+      },
+      {
+        "name": "Key to the City",
+        "collector_number": "348",
+        "usd": "0.19"
+      },
+      {
+        "name": "Bugenhagen, Wise Elder",
+        "collector_number": "159",
+        "usd": "2.37"
+      },
+      {
+        "name": "Sephiroth, Fallen Hero",
+        "collector_number": "92",
+        "usd": "0.42"
+      },
+      {
+        "name": "Summon: Valefor",
+        "collector_number": "42",
+        "usd": "0.17"
+      },
+      {
+        "name": "Hermes, Overseer of Elpis",
+        "collector_number": "36",
+        "usd": "0.25"
+      },
+      {
+        "name": "Terra, Herald of Hope",
+        "collector_number": "186",
+        "usd": "2.18"
+      },
+      {
+        "name": "Sun Titan",
+        "collector_number": "254",
+        "usd": "0.57"
+      },
+      {
+        "name": "Rite of Replication",
+        "collector_number": "270",
+        "usd": "0.26"
+      },
+      {
+        "name": "Reaper's Scythe",
+        "collector_number": "48",
+        "usd": "0.18"
+      },
+      {
+        "name": "Wrecking Ball Arm",
+        "collector_number": "100",
+        "usd": "0.32"
+      },
+      {
+        "name": "Summon: Esper Valigarmanda",
+        "collector_number": "198",
+        "usd": "3.57"
+      },
+      {
+        "name": "Shineshadow Snarl",
+        "collector_number": "422",
+        "usd": "0.19"
+      },
+      {
+        "name": "Lingering Souls",
+        "collector_number": "245",
+        "usd": "0.10"
+      },
+      {
+        "name": "General Leo Cristophe",
+        "collector_number": "135",
+        "usd": "0.25"
+      },
+      {
+        "name": "Yuna, Grand Summoner",
+        "collector_number": "208",
+        "usd": "40.58"
+      },
+      {
+        "name": "Luminous Broodmoth",
+        "collector_number": "246",
+        "usd": "0.50"
+      },
+      {
+        "name": "Crackling Doom",
+        "collector_number": "322",
+        "usd": "0.16"
+      },
+      {
+        "name": "Archmage Emeritus",
+        "collector_number": "261",
+        "usd": "2.48"
+      },
+      {
+        "name": "Chocobo Knights",
+        "collector_number": "12",
+        "usd": "0.28"
+      },
+      {
+        "name": "Y'shtola, Night's Blessed",
+        "collector_number": "226",
+        "usd": "8.21"
+      },
+      {
+        "name": "Nesting Grounds",
+        "collector_number": "408",
+        "usd": "0.15"
+      },
+      {
+        "name": "Mog, Moogle Warrior",
+        "collector_number": "89",
+        "usd": "0.23"
+      },
+      {
+        "name": "Chocobo Knights",
+        "collector_number": "102",
+        "usd": "1.02"
+      },
+      {
+        "name": "Sacred Peaks",
+        "collector_number": "418",
+        "usd": "0.13"
+      },
+      {
+        "name": "Hermes, Overseer of Elpis",
+        "collector_number": "141",
+        "usd": "1.45"
+      },
+      {
+        "name": "Urianger Augurelt",
+        "collector_number": "189",
+        "usd": "0.46"
+      },
+      {
+        "name": "Gogo, Mysterious Mime",
+        "collector_number": "153",
+        "usd": "5.82"
+      },
+      {
+        "name": "Campsite Cuisine",
+        "collector_number": "464",
+        "usd": "18.88"
+      },
+      {
+        "name": "Tifa, Martial Artist",
+        "collector_number": "214",
+        "usd": "247.50"
+      },
+      {
+        "name": "Relic of Legends",
+        "collector_number": "354",
+        "usd": "1.48"
+      },
+      {
+        "name": "Fight Rigging",
+        "collector_number": "303",
+        "usd": "0.16"
+      },
+      {
+        "name": "Espers to Magicite",
+        "collector_number": "114",
+        "usd": "0.67"
+      },
+      {
+        "name": "Port Town",
+        "collector_number": "412",
+        "usd": "0.13"
+      },
+      {
+        "name": "Celes, Rune Knight",
+        "collector_number": "209",
+        "usd": "121.88"
+      },
+      {
+        "name": "Temple of the False God",
+        "collector_number": "438",
+        "usd": "0.12"
+      },
+      {
+        "name": "Rejoin the Fight",
+        "collector_number": "49",
+        "usd": "0.12"
+      },
+      {
+        "name": "Rampant Growth",
+        "collector_number": "313",
+        "usd": "0.35"
+      },
+      {
+        "name": "Arcane Signet",
+        "collector_number": "333",
+        "usd": "0.52"
+      },
+      {
+        "name": "Colossus Hammer",
+        "collector_number": "338",
+        "usd": "0.91"
+      },
+      {
+        "name": "Maester Seymour",
+        "collector_number": "68",
+        "usd": "0.24"
+      },
+      {
+        "name": "Yuffie, Materia Hunter",
+        "collector_number": "470",
+        "usd": "46.35"
+      },
+      {
+        "name": "Shadow, Mysterious Assassin",
+        "collector_number": "50",
+        "usd": "0.22"
+      },
+      {
+        "name": "Mog, Moogle Warrior",
+        "collector_number": "476",
+        "usd": "22.24"
+      },
+      {
+        "name": "G'raha Tia, Scion Reborn",
+        "collector_number": "3",
+        "usd": "0.48"
+      },
+      {
+        "name": "Rikku, Resourceful Guardian",
+        "collector_number": "145",
+        "usd": "1.75"
+      },
+      {
+        "name": "Farseek",
+        "collector_number": "302",
+        "usd": "0.41"
+      },
+      {
+        "name": "Stitcher's Supplier",
+        "collector_number": "287",
+        "usd": "0.18"
+      },
+      {
+        "name": "Summon: Yojimbo",
+        "collector_number": "196",
+        "usd": "10.90"
+      },
+      {
+        "name": "Sin, Unending Cataclysm",
+        "collector_number": "95",
+        "usd": "0.25"
+      },
+      {
+        "name": "Temple of Enlightenment",
+        "collector_number": "435",
+        "usd": "0.12"
+      },
+      {
+        "name": "Trailblazer's Boots",
+        "collector_number": "370",
+        "usd": "1.04"
+      },
+      {
+        "name": "Tireless Tracker",
+        "collector_number": "316",
+        "usd": "0.20"
+      },
+      {
+        "name": "Angel of the Ruins",
+        "collector_number": "229",
+        "usd": "0.17"
+      },
+      {
+        "name": "Altered Ego",
+        "collector_number": "317",
+        "usd": "0.10"
+      },
+      {
+        "name": "SOLDIER Military Program",
+        "collector_number": "108",
+        "usd": "0.71"
+      },
+      {
+        "name": "An Offer You Can't Refuse",
+        "collector_number": "267",
+        "usd": "1.95"
+      },
+      {
+        "name": "Resourceful Defense",
+        "collector_number": "251",
+        "usd": "0.33"
+      },
+      {
+        "name": "Flayer of the Hatebound",
+        "collector_number": "293",
+        "usd": "0.11"
+      },
+      {
+        "name": "Fandaniel, Telophoroi Ascian",
+        "collector_number": "146",
+        "usd": "1.27"
+      },
+      {
+        "name": "Gatta and Luzzu",
+        "collector_number": "134",
+        "usd": "0.55"
+      }
+    ],
+    "tdc": [
+      {
+        "name": "Tip the Scales",
+        "collector_number": "29",
+        "usd": "0.19"
+      },
+      {
+        "name": "Crashing Drawbridge",
+        "collector_number": "316",
+        "usd": "0.36"
+      },
+      {
+        "name": "Disciple of Bolas",
+        "collector_number": "178",
+        "usd": "0.15"
+      },
+      {
+        "name": "Rampart Architect",
+        "collector_number": "87",
+        "usd": "0.30"
+      },
+      {
+        "name": "Cephalid Coliseum",
+        "collector_number": "349",
+        "usd": "0.44"
+      },
+      {
+        "name": "Darkwater Catacombs",
+        "collector_number": "355",
+        "usd": "0.62"
+      },
+      {
+        "name": "Avenger of Zendikar",
+        "collector_number": "247",
+        "usd": "0.74"
+      },
+      {
+        "name": "Forbidden Alchemy",
+        "collector_number": "152",
+        "usd": "0.05"
+      },
+      {
+        "name": "Leyline Tyrant",
+        "collector_number": "221",
+        "usd": "2.33"
+      },
+      {
+        "name": "Thunderbreak Regent",
+        "collector_number": "241",
+        "usd": "0.11"
+      },
+      {
+        "name": "Glorybringer",
+        "collector_number": "215",
+        "usd": "0.17"
+      },
+      {
+        "name": "Goldlust Triad",
+        "collector_number": "74",
+        "usd": "7.65"
+      },
+      {
+        "name": "Satyr Wayfinder",
+        "collector_number": "267",
+        "usd": "0.08"
+      },
+      {
+        "name": "Staff of Compleation",
+        "collector_number": "326",
+        "usd": "1.87"
+      },
+      {
+        "name": "Lathliss, Dragon Queen",
+        "collector_number": "219",
+        "usd": "0.60"
+      },
+      {
+        "name": "Sublime Epiphany",
+        "collector_number": "167",
+        "usd": "0.15"
+      },
+      {
+        "name": "Lord of the Forsaken",
+        "collector_number": "186",
+        "usd": "0.15"
+      },
+      {
+        "name": "Irrigated Farmland",
+        "collector_number": "372",
+        "usd": "0.13"
+      },
+      {
+        "name": "Rapacious Dragon",
+        "collector_number": "229",
+        "usd": "0.10"
+      },
+      {
+        "name": "Phyrexian Reclamation",
+        "collector_number": "194",
+        "usd": "1.22"
+      },
+      {
+        "name": "Will of the Sultai",
+        "collector_number": "89",
+        "usd": "4.28"
+      },
+      {
+        "name": "Legion Loyalty",
+        "collector_number": "122",
+        "usd": "0.21"
+      },
+      {
+        "name": "Grisly Salvage",
+        "collector_number": "290",
+        "usd": "0.06"
+      },
+      {
+        "name": "Gix, Yawgmoth Praetor",
+        "collector_number": "181",
+        "usd": "0.59"
+      },
+      {
+        "name": "Mosswort Bridge",
+        "collector_number": "379",
+        "usd": "0.16"
+      },
+      {
+        "name": "Hour of Reckoning",
+        "collector_number": "120",
+        "usd": "0.11"
+      },
+      {
+        "name": "Prismari Command",
+        "collector_number": "299",
+        "usd": "0.18"
+      },
+      {
+        "name": "Steward of the Harvest",
+        "collector_number": "88",
+        "usd": "0.51"
+      },
+      {
+        "name": "Fetid Heath",
+        "collector_number": "362",
+        "usd": "0.41"
+      },
+      {
+        "name": "Tasigur, the Golden Fang",
+        "collector_number": "197",
+        "usd": "0.12"
+      },
+      {
+        "name": "Crypt of Agadeem",
+        "collector_number": "354",
+        "usd": "1.04"
+      },
+      {
+        "name": "Swiftfoot Boots",
+        "collector_number": "328",
+        "usd": "1.60"
+      },
+      {
+        "name": "Rootbound Crag",
+        "collector_number": "388",
+        "usd": "0.46"
+      },
+      {
+        "name": "Storm-Kiln Artist",
+        "collector_number": "235",
+        "usd": "2.37"
+      },
+      {
+        "name": "Broodcaller Scourge",
+        "collector_number": "84",
+        "usd": "1.89"
+      },
+      {
+        "name": "Adeline, Resplendent Cathar",
+        "collector_number": "108",
+        "usd": "1.54"
+      },
+      {
+        "name": "Magma Opus",
+        "collector_number": "296",
+        "usd": "0.16"
+      },
+      {
+        "name": "Adarkar Wastes",
+        "collector_number": "338",
+        "usd": "0.21"
+      },
+      {
+        "name": "Deceptive Frostkite",
+        "collector_number": "19",
+        "usd": "0.33"
+      },
+      {
+        "name": "Necromantic Selection",
+        "collector_number": "189",
+        "usd": "0.12"
+      },
+      {
+        "name": "Temple of Enlightenment",
+        "collector_number": "401",
+        "usd": "0.11"
+      },
+      {
+        "name": "Rampart Architect",
+        "collector_number": "47",
+        "usd": "0.18"
+      },
+      {
+        "name": "Migration Path",
+        "collector_number": "262",
+        "usd": "0.16"
+      },
+      {
+        "name": "Shadrix Silverquill",
+        "collector_number": "302",
+        "usd": "0.32"
+      },
+      {
+        "name": "Monastery Mentor",
+        "collector_number": "125",
+        "usd": "0.29"
+      },
+      {
+        "name": "Isolated Chapel",
+        "collector_number": "373",
+        "usd": "0.24"
+      },
+      {
+        "name": "Emeria Angel",
+        "collector_number": "114",
+        "usd": "0.19"
+      },
+      {
+        "name": "Dragonskull Summit",
+        "collector_number": "357",
+        "usd": "1.06"
+      },
+      {
+        "name": "Ironwill Forger",
+        "collector_number": "53",
+        "usd": "0.59"
+      },
+      {
+        "name": "Gadrak, the Crown-Scourge",
+        "collector_number": "214",
+        "usd": "0.11"
+      },
+      {
+        "name": "Weathered Sentinels",
+        "collector_number": "336",
+        "usd": "0.45"
+      },
+      {
+        "name": "Sylvan Caryatid",
+        "collector_number": "272",
+        "usd": "0.37"
+      },
+      {
+        "name": "Nyx Weaver",
+        "collector_number": "298",
+        "usd": "0.07"
+      },
+      {
+        "name": "Will of the Mardu",
+        "collector_number": "17",
+        "usd": "1.16"
+      },
+      {
+        "name": "Mindblade Render",
+        "collector_number": "187",
+        "usd": "0.12"
+      },
+      {
+        "name": "Goldlust Triad",
+        "collector_number": "34",
+        "usd": "2.72"
+      },
+      {
+        "name": "Noxious Gearhulk",
+        "collector_number": "191",
+        "usd": "0.29"
+      },
+      {
+        "name": "Mossfire Valley",
+        "collector_number": "378",
+        "usd": "0.12"
+      },
+      {
+        "name": "Lingering Souls",
+        "collector_number": "123",
+        "usd": "0.07"
+      },
+      {
+        "name": "Karplusan Forest",
+        "collector_number": "374",
+        "usd": "0.35"
+      },
+      {
+        "name": "Felothar the Steadfast",
+        "collector_number": "4",
+        "usd": "3.80"
+      },
+      {
+        "name": "Shattered Sanctum",
+        "collector_number": "391",
+        "usd": "3.05"
+      },
+      {
+        "name": "Memorial to Folly",
+        "collector_number": "377",
+        "usd": "0.10"
+      },
+      {
+        "name": "Izzet Signet",
+        "collector_number": "320",
+        "usd": "0.30"
+      },
+      {
+        "name": "Blasphemous Act",
+        "collector_number": "207",
+        "usd": "1.65"
+      },
+      {
+        "name": "Ainok Strike Leader",
+        "collector_number": "51",
+        "usd": "3.56"
+      },
+      {
+        "name": "Beetleback Chief",
+        "collector_number": "205",
+        "usd": "0.07"
+      },
+      {
+        "name": "Deep Analysis",
+        "collector_number": "150",
+        "usd": "0.15"
+      },
+      {
+        "name": "Betor, Ancestor's Voice",
+        "collector_number": "1",
+        "usd": "4.16"
+      },
+      {
+        "name": "Thundermane Dragon",
+        "collector_number": "78",
+        "usd": "1.91"
+      },
+      {
+        "name": "Glacial Fortress",
+        "collector_number": "367",
+        "usd": "0.24"
+      },
+      {
+        "name": "Stitcher's Supplier",
+        "collector_number": "196",
+        "usd": "0.15"
+      },
+      {
+        "name": "Towering Titan",
+        "collector_number": "276",
+        "usd": "0.22"
+      },
+      {
+        "name": "Kessig Wolf Run",
+        "collector_number": "375",
+        "usd": "0.21"
+      },
+      {
+        "name": "Sulfur Falls",
+        "collector_number": "396",
+        "usd": "0.22"
+      },
+      {
+        "name": "Welcome the Dead",
+        "collector_number": "70",
+        "usd": "0.30"
+      },
+      {
+        "name": "Castle Embereth",
+        "collector_number": "347",
+        "usd": "0.18"
+      },
+      {
+        "name": "Arbor Adherent",
+        "collector_number": "82",
+        "usd": "3.46"
+      },
+      {
+        "name": "Walking Bulwark",
+        "collector_number": "334",
+        "usd": "0.08"
+      },
+      {
+        "name": "Dauthi Voidwalker",
+        "collector_number": "176",
+        "usd": "4.15"
+      },
+      {
+        "name": "Welcoming Vampire",
+        "collector_number": "140",
+        "usd": "0.56"
+      },
+      {
+        "name": "Stormbreath Dragon",
+        "collector_number": "237",
+        "usd": "0.25"
+      },
+      {
+        "name": "Will of the Sultai",
+        "collector_number": "49",
+        "usd": "0.77"
+      },
+      {
+        "name": "Infantry Shield",
+        "collector_number": "35",
+        "usd": "0.50"
+      },
+      {
+        "name": "Putrefy",
+        "collector_number": "300",
+        "usd": "0.08"
+      },
+      {
+        "name": "Divine Visitation",
+        "collector_number": "113",
+        "usd": "0.98"
+      },
+      {
+        "name": "Bojuka Bog",
+        "collector_number": "341",
+        "usd": "0.79"
+      },
+      {
+        "name": "Conduit of Worlds",
+        "collector_number": "251",
+        "usd": "3.25"
+      },
+      {
+        "name": "Yahenni, Undying Partisan",
+        "collector_number": "202",
+        "usd": "0.27"
+      },
+      {
+        "name": "Transforming Flourish",
+        "collector_number": "79",
+        "usd": "0.23"
+      },
+      {
+        "name": "Taurean Mauler",
+        "collector_number": "238",
+        "usd": "0.84"
+      },
+      {
+        "name": "Dragon Tempest",
+        "collector_number": "94",
+        "usd": "1.05"
+      },
+      {
+        "name": "Parapet Thrasher",
+        "collector_number": "76",
+        "usd": "2.08"
+      },
+      {
+        "name": "Transcendent Dragon",
+        "collector_number": "22",
+        "usd": "0.23"
+      },
+      {
+        "name": "Protector of the Wastes",
+        "collector_number": "54",
+        "usd": "0.43"
+      },
+      {
+        "name": "Wall of Omens",
+        "collector_number": "138",
+        "usd": "0.10"
+      },
+      {
+        "name": "Legion Warboss",
+        "collector_number": "220",
+        "usd": "0.16"
+      },
+      {
+        "name": "Lethal Scheme",
+        "collector_number": "184",
+        "usd": "0.10"
+      },
+      {
+        "name": "Chaos Warp",
+        "collector_number": "208",
+        "usd": "0.40"
+      },
+      {
+        "name": "Hinterland Harbor",
+        "collector_number": "371",
+        "usd": "0.21"
+      },
+      {
+        "name": "Jaddi Offshoot",
+        "collector_number": "260",
+        "usd": "0.12"
+      },
+      {
+        "name": "Dragon's Hoard",
+        "collector_number": "317",
+        "usd": "0.25"
+      },
+      {
+        "name": "Will of the Jeskai",
+        "collector_number": "80",
+        "usd": "7.31"
+      },
+      {
+        "name": "Haunted Mire",
+        "collector_number": "369",
+        "usd": "0.11"
+      },
+      {
+        "name": "Assault Formation",
+        "collector_number": "246",
+        "usd": "0.13"
+      },
+      {
+        "name": "Infantry Shield",
+        "collector_number": "75",
+        "usd": "1.90"
+      },
+      {
+        "name": "Teval's Judgment",
+        "collector_number": "28",
+        "usd": "4.75"
+      },
+      {
+        "name": "Ferrous Lake",
+        "collector_number": "361",
+        "usd": "0.27"
+      },
+      {
+        "name": "Pongify",
+        "collector_number": "160",
+        "usd": "1.80"
+      },
+      {
+        "name": "Temple of Silence",
+        "collector_number": "406",
+        "usd": "0.10"
+      },
+      {
+        "name": "Azorius Signet",
+        "collector_number": "312",
+        "usd": "0.17"
+      },
+      {
+        "name": "Command Beacon",
+        "collector_number": "352",
+        "usd": "5.14"
+      },
+      {
+        "name": "Dragonlord Dromoka",
+        "collector_number": "286",
+        "usd": "1.05"
+      },
+      {
+        "name": "Floral Evoker",
+        "collector_number": "46",
+        "usd": "0.18"
+      },
+      {
+        "name": "Sunken Hollow",
+        "collector_number": "398",
+        "usd": "0.21"
+      },
+      {
+        "name": "Tempt with Vengeance",
+        "collector_number": "239",
+        "usd": "0.15"
+      },
+      {
+        "name": "Mangara, the Diplomat",
+        "collector_number": "124",
+        "usd": "0.35"
+      },
+      {
+        "name": "Expressive Iteration",
+        "collector_number": "288",
+        "usd": "0.29"
+      },
+      {
+        "name": "Radiant Grove",
+        "collector_number": "385",
+        "usd": "0.08"
+      },
+      {
+        "name": "Adaptive Training Post",
+        "collector_number": "58",
+        "usd": "0.36"
+      },
+      {
+        "name": "Twilight Drover",
+        "collector_number": "136",
+        "usd": "0.11"
+      },
+      {
+        "name": "Dreamroot Cascade",
+        "collector_number": "358",
+        "usd": "0.63"
+      },
+      {
+        "name": "Curse of Opulence",
+        "collector_number": "209",
+        "usd": "0.76"
+      },
+      {
+        "name": "Curse of the Swine",
+        "collector_number": "149",
+        "usd": "0.13"
+      },
+      {
+        "name": "Consuming Aberration",
+        "collector_number": "283",
+        "usd": "0.13"
+      },
+      {
+        "name": "Ogre Battledriver",
+        "collector_number": "227",
+        "usd": "0.11"
+      },
+      {
+        "name": "Boros Signet",
+        "collector_number": "314",
+        "usd": "0.38"
+      },
+      {
+        "name": "Sarkhan, Soul Aflame",
+        "collector_number": "301",
+        "usd": "0.36"
+      },
+      {
+        "name": "Woodland Cemetery",
+        "collector_number": "412",
+        "usd": "0.44"
+      },
+      {
+        "name": "Fortified Village",
+        "collector_number": "366",
+        "usd": "0.11"
+      },
+      {
+        "name": "Will of the Mardu",
+        "collector_number": "57",
+        "usd": "3.12"
+      },
+      {
+        "name": "Lord of Extinction",
+        "collector_number": "295",
+        "usd": "0.47"
+      },
+      {
+        "name": "Living Death",
+        "collector_number": "185",
+        "usd": "1.42"
+      },
+      {
+        "name": "Access Tunnel",
+        "collector_number": "337",
+        "usd": "0.24"
+      },
+      {
+        "name": "Abrade",
+        "collector_number": "203",
+        "usd": "0.08"
+      },
+      {
+        "name": "Reassembling Skeleton",
+        "collector_number": "195",
+        "usd": "0.09"
+      },
+      {
+        "name": "Wakestone Gargoyle",
+        "collector_number": "137",
+        "usd": "0.12"
+      },
+      {
+        "name": "Faeburrow Elder",
+        "collector_number": "289",
+        "usd": "0.88"
+      },
+      {
+        "name": "Selesnya Signet",
+        "collector_number": "324",
+        "usd": "0.28"
+      },
+      {
+        "name": "Diviner of Mist",
+        "collector_number": "60",
+        "usd": "0.32"
+      },
+      {
+        "name": "Narset's Reversal",
+        "collector_number": "92",
+        "usd": "2.27"
+      },
+      {
+        "name": "Tree of Redemption",
+        "collector_number": "97",
+        "usd": "0.31"
+      },
+      {
+        "name": "Meren of Clan Nel Toth",
+        "collector_number": "297",
+        "usd": "0.39"
+      },
+      {
+        "name": "Reality Shift",
+        "collector_number": "163",
+        "usd": "0.20"
+      },
+      {
+        "name": "Within Range",
+        "collector_number": "32",
+        "usd": "0.21"
+      },
+      {
+        "name": "Talisman of Impulse",
+        "collector_number": "332",
+        "usd": "0.22"
+      },
+      {
+        "name": "Behind the Scenes",
+        "collector_number": "172",
+        "usd": "0.08"
+      },
+      {
+        "name": "Cascade Bluffs",
+        "collector_number": "345",
+        "usd": "0.53"
+      },
+      {
+        "name": "Velomachus Lorehold",
+        "collector_number": "309",
+        "usd": "0.17"
+      },
+      {
+        "name": "Kaya, Geist Hunter",
+        "collector_number": "294",
+        "usd": "0.25"
+      },
+      {
+        "name": "Ironwill Forger",
+        "collector_number": "13",
+        "usd": "0.17"
+      },
+      {
+        "name": "Shalai, Voice of Plenty",
+        "collector_number": "130",
+        "usd": "0.71"
+      },
+      {
+        "name": "Steel Hellkite",
+        "collector_number": "327",
+        "usd": "0.13"
+      },
+      {
+        "name": "Sunpetal Grove",
+        "collector_number": "399",
+        "usd": "0.56"
+      },
+      {
+        "name": "Wonder",
+        "collector_number": "170",
+        "usd": "1.34"
+      },
+      {
+        "name": "Temple of Triumph",
+        "collector_number": "407",
+        "usd": "0.11"
+      },
+      {
+        "name": "Reflections of Littjara",
+        "collector_number": "164",
+        "usd": "0.58"
+      },
+      {
+        "name": "Arbor Adherent",
+        "collector_number": "42",
+        "usd": "0.64"
+      },
+      {
+        "name": "Millikin",
+        "collector_number": "321",
+        "usd": "0.11"
+      },
+      {
+        "name": "Shiko and Narset, Unified",
+        "collector_number": "7",
+        "usd": "1.45"
+      },
+      {
+        "name": "Bone Devourer",
+        "collector_number": "26",
+        "usd": "0.19"
+      },
+      {
+        "name": "Temur Ascendancy",
+        "collector_number": "305",
+        "usd": "1.47"
+      },
+      {
+        "name": "Tempest Technique",
+        "collector_number": "16",
+        "usd": "0.23"
+      },
+      {
+        "name": "Verix Bladewing",
+        "collector_number": "243",
+        "usd": "0.14"
+      },
+      {
+        "name": "Morbid Opportunist",
+        "collector_number": "188",
+        "usd": "0.28"
+      },
+      {
+        "name": "Spit Flame",
+        "collector_number": "234",
+        "usd": "0.10"
+      },
+      {
+        "name": "Command Tower",
+        "collector_number": "107",
+        "usd": "0.25"
+      },
+      {
+        "name": "Springbloom Druid",
+        "collector_number": "271",
+        "usd": "0.13"
+      },
+      {
+        "name": "Perilous Landscape",
+        "collector_number": "383",
+        "usd": "0.10"
+      },
+      {
+        "name": "Nesting Dragon",
+        "collector_number": "225",
+        "usd": "0.22"
+      },
+      {
+        "name": "Archmage Emeritus",
+        "collector_number": "145",
+        "usd": "2.01"
+      },
+      {
+        "name": "Overgrown Farmland",
+        "collector_number": "381",
+        "usd": "1.79"
+      },
+      {
+        "name": "Harrow",
+        "collector_number": "258",
+        "usd": "0.18"
+      },
+      {
+        "name": "Adaptive Training Post",
+        "collector_number": "18",
+        "usd": "0.12"
+      },
+      {
+        "name": "Expansion // Explosion",
+        "collector_number": "287",
+        "usd": "0.17"
+      },
+      {
+        "name": "Castle Ardenvale",
+        "collector_number": "346",
+        "usd": "0.23"
+      },
+      {
+        "name": "Whirlwind of Thought",
+        "collector_number": "311",
+        "usd": "0.20"
+      },
+      {
+        "name": "Overgrown Battlement",
+        "collector_number": "264",
+        "usd": "0.15"
+      },
+      {
+        "name": "Jarad, Golgari Lich Lord",
+        "collector_number": "293",
+        "usd": "0.39"
+      },
+      {
+        "name": "Gravecrawler",
+        "collector_number": "93",
+        "usd": "0.50"
+      },
+      {
+        "name": "Cultivate",
+        "collector_number": "253",
+        "usd": "0.51"
+      },
+      {
+        "name": "Reliquary Tower",
+        "collector_number": "386",
+        "usd": "2.39"
+      },
+      {
+        "name": "Within Range",
+        "collector_number": "72",
+        "usd": "0.84"
+      },
+      {
+        "name": "Storm's Wrath",
+        "collector_number": "236",
+        "usd": "0.10"
+      },
+      {
+        "name": "Parapet Thrasher",
+        "collector_number": "36",
+        "usd": "0.29"
+      },
+      {
+        "name": "Crawling Sensation",
+        "collector_number": "252",
+        "usd": "0.07"
+      },
+      {
+        "name": "Steward of the Harvest",
+        "collector_number": "48",
+        "usd": "0.21"
+      },
+      {
+        "name": "Broodcaller Scourge",
+        "collector_number": "44",
+        "usd": "0.32"
+      },
+      {
+        "name": "Temple of Epiphany",
+        "collector_number": "402",
+        "usd": "0.11"
+      },
+      {
+        "name": "Shadow Summoning",
+        "collector_number": "101",
+        "usd": "0.07"
+      },
+      {
+        "name": "Reunion of the House",
+        "collector_number": "15",
+        "usd": "0.18"
+      },
+      {
+        "name": "Myr Battlesphere",
+        "collector_number": "322",
+        "usd": "0.11"
+      },
+      {
+        "name": "River Kelpie",
+        "collector_number": "166",
+        "usd": "0.12"
+      },
+      {
+        "name": "Aron, Benalia's Ruin",
+        "collector_number": "280",
+        "usd": "0.09"
+      },
+      {
+        "name": "Woe Strider",
+        "collector_number": "201",
+        "usd": "0.09"
+      },
+      {
+        "name": "Hammerhead Tyrant",
+        "collector_number": "61",
+        "usd": "0.83"
+      },
+      {
+        "name": "Colfenor's Urn",
+        "collector_number": "315",
+        "usd": "0.13"
+      },
+      {
+        "name": "Sidar Kondo of Jamuraa",
+        "collector_number": "303",
+        "usd": "0.16"
+      },
+      {
+        "name": "Grapple with the Past",
+        "collector_number": "257",
+        "usd": "0.04"
+      },
+      {
+        "name": "Seedborn Muse",
+        "collector_number": "268",
+        "usd": "6.62"
+      },
+      {
+        "name": "Nyx-Fleece Ram",
+        "collector_number": "126",
+        "usd": "0.08"
+      },
+      {
+        "name": "Voracious Bibliophile",
+        "collector_number": "23",
+        "usd": "0.21"
+      },
+      {
+        "name": "Treasure Cruise",
+        "collector_number": "169",
+        "usd": "0.18"
+      },
+      {
+        "name": "Zetalpa, Primal Dawn",
+        "collector_number": "142",
+        "usd": "0.19"
+      },
+      {
+        "name": "Beast Within",
+        "collector_number": "249",
+        "usd": "0.55"
+      },
+      {
+        "name": "Talisman of Hierarchy",
+        "collector_number": "331",
+        "usd": "0.52"
+      },
+      {
+        "name": "Sol Ring",
+        "collector_number": "106",
+        "usd": "1.29"
+      },
+      {
+        "name": "Colossal Grave-Reaver",
+        "collector_number": "50",
+        "usd": "6.92"
+      },
+      {
+        "name": "Thundermane Dragon",
+        "collector_number": "38",
+        "usd": "0.49"
+      },
+      {
+        "name": "Ophiomancer",
+        "collector_number": "193",
+        "usd": "0.72"
+      },
+      {
+        "name": "Necropolis Fiend",
+        "collector_number": "190",
+        "usd": "0.07"
+      },
+      {
+        "name": "Release the Dogs",
+        "collector_number": "127",
+        "usd": "0.16"
+      },
+      {
+        "name": "Chittering Witch",
+        "collector_number": "175",
+        "usd": "0.11"
+      },
+      {
+        "name": "Zenith Festival",
+        "collector_number": "81",
+        "usd": "0.97"
+      },
+      {
+        "name": "Sungrass Prairie",
+        "collector_number": "397",
+        "usd": "0.15"
+      },
+      {
+        "name": "Rugged Prairie",
+        "collector_number": "389",
+        "usd": "0.19"
+      },
+      {
+        "name": "Colossal Grave-Reaver",
+        "collector_number": "90",
+        "usd": "10.70"
+      },
+      {
+        "name": "Aligned Heart",
+        "collector_number": "52",
+        "usd": "0.90"
+      },
+      {
+        "name": "Kodama's Reach",
+        "collector_number": "261",
+        "usd": "1.28"
+      },
+      {
+        "name": "Keiga, the Tide Star",
+        "collector_number": "156",
+        "usd": "0.17"
+      },
+      {
+        "name": "Goldnight Commander",
+        "collector_number": "117",
+        "usd": "0.13"
+      },
+      {
+        "name": "Electrodominance",
+        "collector_number": "212",
+        "usd": "0.42"
+      },
+      {
+        "name": "Nogi, Draco-Zealot",
+        "collector_number": "226",
+        "usd": "0.33"
+      },
+      {
+        "name": "Canopy Gargantuan",
+        "collector_number": "45",
+        "usd": "1.52"
+      },
+      {
+        "name": "Hammerhead Tyrant",
+        "collector_number": "21",
+        "usd": "0.18"
+      },
+      {
+        "name": "Commander's Insignia",
+        "collector_number": "111",
+        "usd": "0.16"
+      },
+      {
+        "name": "Draconic Lore",
+        "collector_number": "151",
+        "usd": "0.09"
+      },
+      {
+        "name": "Lightning Greaves",
+        "collector_number": "102",
+        "usd": "4.39"
+      },
+      {
+        "name": "Timeless Witness",
+        "collector_number": "274",
+        "usd": "0.12"
+      },
+      {
+        "name": "Hero of Bladehold",
+        "collector_number": "119",
+        "usd": "0.49"
+      },
+      {
+        "name": "Haughty Djinn",
+        "collector_number": "154",
+        "usd": "0.13"
+      },
+      {
+        "name": "Zenith Festival",
+        "collector_number": "41",
+        "usd": "0.18"
+      },
+      {
+        "name": "Elemental Bond",
+        "collector_number": "254",
+        "usd": "1.86"
+      },
+      {
+        "name": "Vault of the Archangel",
+        "collector_number": "410",
+        "usd": "0.40"
+      },
+      {
+        "name": "Veyran, Voice of Duality",
+        "collector_number": "310",
+        "usd": "5.87"
+      },
+      {
+        "name": "Orzhov Signet",
+        "collector_number": "323",
+        "usd": "0.23"
+      },
+      {
+        "name": "Transforming Flourish",
+        "collector_number": "39",
+        "usd": "0.10"
+      },
+      {
+        "name": "Temple of the Dragon Queen",
+        "collector_number": "104",
+        "usd": "0.10"
+      },
+      {
+        "name": "Jaws of Defeat",
+        "collector_number": "67",
+        "usd": "1.51"
+      },
+      {
+        "name": "Caves of Koilos",
+        "collector_number": "348",
+        "usd": "0.63"
+      },
+      {
+        "name": "Arcane Signet",
+        "collector_number": "105",
+        "usd": "0.49"
+      },
+      {
+        "name": "Afterlife from the Loam",
+        "collector_number": "25",
+        "usd": "0.34"
+      },
+      {
+        "name": "Arasta of the Endless Web",
+        "collector_number": "244",
+        "usd": "0.17"
+      },
+      {
+        "name": "Amphin Mutineer",
+        "collector_number": "143",
+        "usd": "0.10"
+      },
+      {
+        "name": "Voracious Bibliophile",
+        "collector_number": "63",
+        "usd": "1.04"
+      },
+      {
+        "name": "Angel of Invention",
+        "collector_number": "109",
+        "usd": "0.19"
+      },
+      {
+        "name": "Manaform Hellkite",
+        "collector_number": "224",
+        "usd": "0.19"
+      },
+      {
+        "name": "Wingmantle Chaplain",
+        "collector_number": "141",
+        "usd": "0.07"
+      },
+      {
+        "name": "Slaughter the Strong",
+        "collector_number": "131",
+        "usd": "0.12"
+      },
+      {
+        "name": "Wall of Limbs",
+        "collector_number": "200",
+        "usd": "0.11"
+      },
+      {
+        "name": "Llanowar Wastes",
+        "collector_number": "376",
+        "usd": "0.30"
+      },
+      {
+        "name": "Farseek",
+        "collector_number": "255",
+        "usd": "0.54"
+      },
+      {
+        "name": "Bastion of Remembrance",
+        "collector_number": "171",
+        "usd": "0.19"
+      },
+      {
+        "name": "Talisman of Progress",
+        "collector_number": "333",
+        "usd": "0.26"
+      },
+      {
+        "name": "Blight Pile",
+        "collector_number": "174",
+        "usd": "0.07"
+      },
+      {
+        "name": "Arboreal Grazer",
+        "collector_number": "245",
+        "usd": "0.13"
+      },
+      {
+        "name": "Ancestral Vision",
+        "collector_number": "144",
+        "usd": "0.22"
+      },
+      {
+        "name": "Yavimaya Coast",
+        "collector_number": "413",
+        "usd": "0.21"
+      },
+      {
+        "name": "Contaminated Aquifer",
+        "collector_number": "353",
+        "usd": "0.14"
+      },
+      {
+        "name": "Terramorphic Expanse",
+        "collector_number": "408",
+        "usd": "0.12"
+      },
+      {
+        "name": "Dismantling Wave",
+        "collector_number": "112",
+        "usd": "0.16"
+      },
+      {
+        "name": "Frantic Search",
+        "collector_number": "153",
+        "usd": "0.38"
+      },
+      {
+        "name": "Aligned Heart",
+        "collector_number": "12",
+        "usd": "0.10"
+      },
+      {
+        "name": "Compulsive Research",
+        "collector_number": "147",
+        "usd": "0.08"
+      },
+      {
+        "name": "Indulging Patrician",
+        "collector_number": "292",
+        "usd": "0.15"
+      },
+      {
+        "name": "Siege-Gang Commander",
+        "collector_number": "232",
+        "usd": "0.17"
+      },
+      {
+        "name": "Smoldering Marsh",
+        "collector_number": "395",
+        "usd": "0.22"
+      },
+      {
+        "name": "Skarrgan Hellkite",
+        "collector_number": "233",
+        "usd": "0.15"
+      },
+      {
+        "name": "Dragonmaster Outcast",
+        "collector_number": "211",
+        "usd": "0.29"
+      },
+      {
+        "name": "Indomitable Ancients",
+        "collector_number": "121",
+        "usd": "0.20"
+      },
+      {
+        "name": "Floral Evoker",
+        "collector_number": "86",
+        "usd": "0.52"
+      },
+      {
+        "name": "Shivan Reef",
+        "collector_number": "393",
+        "usd": "0.25"
+      },
+      {
+        "name": "Sheltered Thicket",
+        "collector_number": "392",
+        "usd": "0.14"
+      },
+      {
+        "name": "Harbinger of the Hunt",
+        "collector_number": "291",
+        "usd": "0.10"
+      },
+      {
+        "name": "Ikra Shidiqi, the Usurper",
+        "collector_number": "100",
+        "usd": "0.28"
+      },
+      {
+        "name": "Feed the Swarm",
+        "collector_number": "180",
+        "usd": "0.17"
+      },
+      {
+        "name": "Infernal Grasp",
+        "collector_number": "182",
+        "usd": "0.26"
+      },
+      {
+        "name": "Grenzo, Havoc Raiser",
+        "collector_number": "216",
+        "usd": "0.22"
+      },
+      {
+        "name": "Wayfarer's Bauble",
+        "collector_number": "335",
+        "usd": "0.17"
+      },
+      {
+        "name": "Neriv, Crackling Vanguard",
+        "collector_number": "6",
+        "usd": "1.34"
+      },
+      {
+        "name": "Vanquish the Horde",
+        "collector_number": "91",
+        "usd": "0.22"
+      },
+      {
+        "name": "Golgari Rot Farm",
+        "collector_number": "368",
+        "usd": "0.15"
+      },
+      {
+        "name": "Tower Defense",
+        "collector_number": "275",
+        "usd": "0.07"
+      },
+      {
+        "name": "Tip the Scales",
+        "collector_number": "69",
+        "usd": "0.14"
+      },
+      {
+        "name": "Transcendent Dragon",
+        "collector_number": "62",
+        "usd": "0.92"
+      },
+      {
+        "name": "Temple of Mystery",
+        "collector_number": "404",
+        "usd": "0.11"
+      },
+      {
+        "name": "Stroke of Midnight",
+        "collector_number": "132",
+        "usd": "0.25"
+      },
+      {
+        "name": "Tempest Technique",
+        "collector_number": "56",
+        "usd": "0.93"
+      },
+      {
+        "name": "Deadly Dispute",
+        "collector_number": "177",
+        "usd": "0.23"
+      },
+      {
+        "name": "Will of the Abzan",
+        "collector_number": "71",
+        "usd": "5.83"
+      },
+      {
+        "name": "Skullclamp",
+        "collector_number": "103",
+        "usd": "4.05"
+      },
+      {
+        "name": "Teval, the Balanced Scale",
+        "collector_number": "8",
+        "usd": "4.56"
+      },
+      {
+        "name": "Become the Avalanche",
+        "collector_number": "83",
+        "usd": "0.37"
+      },
+      {
+        "name": "Rapid Hybridization",
+        "collector_number": "162",
+        "usd": "0.85"
+      },
+      {
+        "name": "Rampant Growth",
+        "collector_number": "265",
+        "usd": "0.35"
+      },
+      {
+        "name": "Selvala's Stampede",
+        "collector_number": "269",
+        "usd": "0.19"
+      },
+      {
+        "name": "Path of Ancestry",
+        "collector_number": "382",
+        "usd": "0.18"
+      },
+      {
+        "name": "Lier, Disciple of the Drowned",
+        "collector_number": "157",
+        "usd": "0.74"
+      },
+      {
+        "name": "Kotis, Sibsig Champion",
+        "collector_number": "5",
+        "usd": "0.53"
+      },
+      {
+        "name": "Deceptive Landscape",
+        "collector_number": "356",
+        "usd": "0.09"
+      },
+      {
+        "name": "Opt",
+        "collector_number": "158",
+        "usd": "0.09"
+      },
+      {
+        "name": "Expel the Interlopers",
+        "collector_number": "115",
+        "usd": "0.14"
+      },
+      {
+        "name": "Vengeful Ancestor",
+        "collector_number": "242",
+        "usd": "0.18"
+      },
+      {
+        "name": "Mana Geyser",
+        "collector_number": "223",
+        "usd": "1.74"
+      },
+      {
+        "name": "Goblin Electromancer",
+        "collector_number": "99",
+        "usd": "0.13"
+      },
+      {
+        "name": "Dragonlord's Servant",
+        "collector_number": "210",
+        "usd": "0.17"
+      },
+      {
+        "name": "Talisman of Creativity",
+        "collector_number": "330",
+        "usd": "2.41"
+      },
+      {
+        "name": "Big Score",
+        "collector_number": "206",
+        "usd": "0.85"
+      },
+      {
+        "name": "Young Pyromancer",
+        "collector_number": "95",
+        "usd": "0.21"
+      },
+      {
+        "name": "Grand Crescendo",
+        "collector_number": "118",
+        "usd": "1.33"
+      },
+      {
+        "name": "Diviner of Mist",
+        "collector_number": "20",
+        "usd": "0.17"
+      },
+      {
+        "name": "Canopy Vista",
+        "collector_number": "343",
+        "usd": "0.16"
+      },
+      {
+        "name": "Exotic Orchard",
+        "collector_number": "360",
+        "usd": "0.16"
+      },
+      {
+        "name": "Faithless Looting",
+        "collector_number": "213",
+        "usd": "0.31"
+      },
+      {
+        "name": "Jaws of Defeat",
+        "collector_number": "27",
+        "usd": "0.56"
+      },
+      {
+        "name": "Will of the Temur",
+        "collector_number": "64",
+        "usd": "1.49"
+      },
+      {
+        "name": "Bitter Triumph",
+        "collector_number": "173",
+        "usd": "0.60"
+      },
+      {
+        "name": "Atarka, World Render",
+        "collector_number": "281",
+        "usd": "0.20"
+      },
+      {
+        "name": "Clifftop Retreat",
+        "collector_number": "351",
+        "usd": "0.19"
+      },
+      {
+        "name": "Sun Titan",
+        "collector_number": "133",
+        "usd": "0.17"
+      },
+      {
+        "name": "Rhox Faithmender",
+        "collector_number": "128",
+        "usd": "0.88"
+      },
+      {
+        "name": "Anguished Unmaking",
+        "collector_number": "279",
+        "usd": "1.69"
+      },
+      {
+        "name": "Third Path Iconoclast",
+        "collector_number": "307",
+        "usd": "0.20"
+      },
+      {
+        "name": "Ainok Strike Leader",
+        "collector_number": "11",
+        "usd": "1.59"
+      },
+      {
+        "name": "Solemn Simulacrum",
+        "collector_number": "325",
+        "usd": "0.22"
+      },
+      {
+        "name": "Teval's Judgment",
+        "collector_number": "68",
+        "usd": "6.96"
+      },
+      {
+        "name": "Idol of Oblivion",
+        "collector_number": "319",
+        "usd": "0.66"
+      },
+      {
+        "name": "Shiny Impetus",
+        "collector_number": "231",
+        "usd": "0.07"
+      },
+      {
+        "name": "Hornet Nest",
+        "collector_number": "259",
+        "usd": "0.15"
+      },
+      {
+        "name": "Scourge of the Throne",
+        "collector_number": "230",
+        "usd": "0.22"
+      },
+      {
+        "name": "Life from the Loam",
+        "collector_number": "96",
+        "usd": "2.65"
+      },
+      {
+        "name": "Casualties of War",
+        "collector_number": "98",
+        "usd": "0.16"
+      },
+      {
+        "name": "Fellwar Stone",
+        "collector_number": "318",
+        "usd": "1.02"
+      },
+      {
+        "name": "Think Twice",
+        "collector_number": "168",
+        "usd": "0.04"
+      },
+      {
+        "name": "Tocasia's Welcome",
+        "collector_number": "135",
+        "usd": "1.62"
+      },
+      {
+        "name": "Foreboding Landscape",
+        "collector_number": "365",
+        "usd": "0.10"
+      },
+      {
+        "name": "Fetid Pools",
+        "collector_number": "363",
+        "usd": "0.15"
+      },
+      {
+        "name": "Will of the Jeskai",
+        "collector_number": "40",
+        "usd": "2.24"
+      },
+      {
+        "name": "Haven of the Spirit Dragon",
+        "collector_number": "370",
+        "usd": "0.39"
+      },
+      {
+        "name": "Blade of Selves",
+        "collector_number": "313",
+        "usd": "2.19"
+      },
+      {
+        "name": "Viscera Seer",
+        "collector_number": "199",
+        "usd": "0.35"
+      },
+      {
+        "name": "Hedron Crab",
+        "collector_number": "155",
+        "usd": "1.28"
+      },
+      {
+        "name": "Will of the Temur",
+        "collector_number": "24",
+        "usd": "0.41"
+      },
+      {
+        "name": "Temple of Abandon",
+        "collector_number": "400",
+        "usd": "0.14"
+      },
+      {
+        "name": "Hellkite Courser",
+        "collector_number": "218",
+        "usd": "2.40"
+      },
+      {
+        "name": "Dragonlord Atarka",
+        "collector_number": "285",
+        "usd": "0.30"
+      },
+      {
+        "name": "Loyal Apprentice",
+        "collector_number": "222",
+        "usd": "0.10"
+      },
+      {
+        "name": "Baral's Expertise",
+        "collector_number": "146",
+        "usd": "0.13"
+      },
+      {
+        "name": "Sakura-Tribe Elder",
+        "collector_number": "266",
+        "usd": "0.25"
+      },
+      {
+        "name": "Canyon Slough",
+        "collector_number": "344",
+        "usd": "0.11"
+      },
+      {
+        "name": "Reunion of the House",
+        "collector_number": "55",
+        "usd": "0.31"
+      },
+      {
+        "name": "Cinder Glade",
+        "collector_number": "350",
+        "usd": "0.15"
+      },
+      {
+        "name": "Skycloud Expanse",
+        "collector_number": "394",
+        "usd": "0.10"
+      },
+      {
+        "name": "Ghostly Prison",
+        "collector_number": "116",
+        "usd": "5.23"
+      },
+      {
+        "name": "Selfless Spirit",
+        "collector_number": "129",
+        "usd": "0.50"
+      },
+      {
+        "name": "Atsushi, the Blazing Sky",
+        "collector_number": "204",
+        "usd": "0.48"
+      },
+      {
+        "name": "Myriad Landscape",
+        "collector_number": "380",
+        "usd": "0.14"
+      },
+      {
+        "name": "Drownyard Temple",
+        "collector_number": "359",
+        "usd": "0.12"
+      },
+      {
+        "name": "Ponder",
+        "collector_number": "159",
+        "usd": "1.27"
+      },
+      {
+        "name": "Zurgo Stormrender",
+        "collector_number": "10",
+        "usd": "4.04"
+      },
+      {
+        "name": "Ob Nixilis, the Fallen",
+        "collector_number": "192",
+        "usd": "1.31"
+      },
+      {
+        "name": "Rockfall Vale",
+        "collector_number": "387",
+        "usd": "1.37"
+      },
+      {
+        "name": "Preordain",
+        "collector_number": "161",
+        "usd": "0.54"
+      },
+      {
+        "name": "Temple of Plenty",
+        "collector_number": "405",
+        "usd": "0.11"
+      },
+      {
+        "name": "Windbrisk Heights",
+        "collector_number": "411",
+        "usd": "0.13"
+      },
+      {
+        "name": "Wall of Blossoms",
+        "collector_number": "277",
+        "usd": "0.09"
+      },
+      {
+        "name": "Flooded Grove",
+        "collector_number": "364",
+        "usd": "0.29"
+      },
+      {
+        "name": "Wall of Roots",
+        "collector_number": "278",
+        "usd": "0.08"
+      },
+      {
+        "name": "Temple of Malady",
+        "collector_number": "403",
+        "usd": "0.12"
+      },
+      {
+        "name": "Eliminate the Competition",
+        "collector_number": "179",
+        "usd": "0.12"
+      },
+      {
+        "name": "Baral and Kari Zev",
+        "collector_number": "282",
+        "usd": "0.13"
+      },
+      {
+        "name": "Will of the Abzan",
+        "collector_number": "31",
+        "usd": "1.85"
+      },
+      {
+        "name": "Redoubled Stormsinger",
+        "collector_number": "77",
+        "usd": "1.49"
+      },
+      {
+        "name": "Junji, the Midnight Sky",
+        "collector_number": "183",
+        "usd": "0.38"
+      },
+      {
+        "name": "Skull Prophet",
+        "collector_number": "304",
+        "usd": "0.27"
+      },
+      {
+        "name": "Opportunistic Dragon",
+        "collector_number": "228",
+        "usd": "0.15"
+      },
+      {
+        "name": "Time Wipe",
+        "collector_number": "308",
+        "usd": "0.10"
+      },
+      {
+        "name": "Tear Asunder",
+        "collector_number": "273",
+        "usd": "0.12"
+      },
+      {
+        "name": "Caldera Pyremaw",
+        "collector_number": "73",
+        "usd": "2.56"
+      },
+      {
+        "name": "Shigeki, Jukai Visionary",
+        "collector_number": "270",
+        "usd": "0.16"
+      },
+      {
+        "name": "Victimize",
+        "collector_number": "198",
+        "usd": "0.42"
+      },
+      {
+        "name": "Elsha, Threefold Master",
+        "collector_number": "2",
+        "usd": "1.67"
+      },
+      {
+        "name": "Talisman of Conviction",
+        "collector_number": "329",
+        "usd": "0.27"
+      },
+      {
+        "name": "Canopy Gargantuan",
+        "collector_number": "85",
+        "usd": "5.66"
+      },
+      {
+        "name": "Axebane Guardian",
+        "collector_number": "248",
+        "usd": "0.06"
+      },
+      {
+        "name": "Battlefield Forge",
+        "collector_number": "340",
+        "usd": "0.17"
+      },
+      {
+        "name": "Twilight Mire",
+        "collector_number": "409",
+        "usd": "0.23"
+      },
+      {
+        "name": "Bountiful Landscape",
+        "collector_number": "342",
+        "usd": "0.10"
+      },
+      {
+        "name": "Wall of Reverence",
+        "collector_number": "139",
+        "usd": "0.15"
+      },
+      {
+        "name": "Despark",
+        "collector_number": "284",
+        "usd": "0.50"
+      },
+      {
+        "name": "Frontier Siege",
+        "collector_number": "256",
+        "usd": "0.16"
+      },
+      {
+        "name": "Welcome the Dead",
+        "collector_number": "30",
+        "usd": "0.13"
+      },
+      {
+        "name": "Become the Avalanche",
+        "collector_number": "43",
+        "usd": "0.17"
+      },
+      {
+        "name": "Ash Barrens",
+        "collector_number": "339",
+        "usd": "0.13"
+      },
+      {
+        "name": "Ureni of the Unwritten",
+        "collector_number": "9",
+        "usd": "10.27"
+      },
+      {
+        "name": "Caldera Pyremaw",
+        "collector_number": "33",
+        "usd": "0.73"
+      },
+      {
+        "name": "Deceptive Frostkite",
+        "collector_number": "59",
+        "usd": "1.94"
+      },
+      {
+        "name": "Carven Caryatid",
+        "collector_number": "250",
+        "usd": "0.10"
+      },
+      {
+        "name": "Multani, Yavimaya's Avatar",
+        "collector_number": "263",
+        "usd": "0.24"
+      },
+      {
+        "name": "Bone Devourer",
+        "collector_number": "66",
+        "usd": "0.40"
+      },
+      {
+        "name": "Shattered Landscape",
+        "collector_number": "390",
+        "usd": "0.12"
+      },
+      {
+        "name": "Swords to Plowshares",
+        "collector_number": "134",
+        "usd": "1.10"
+      },
+      {
+        "name": "Rite of Replication",
+        "collector_number": "165",
+        "usd": "0.21"
+      },
+      {
+        "name": "Thalisse, Reverent Medium",
+        "collector_number": "306",
+        "usd": "0.11"
+      },
+      {
+        "name": "Prairie Stream",
+        "collector_number": "384",
+        "usd": "0.15"
+      },
+      {
+        "name": "Territorial Hellkite",
+        "collector_number": "240",
+        "usd": "0.14"
+      },
+      {
+        "name": "Baldin, Century Herdmaster",
+        "collector_number": "110",
+        "usd": "0.16"
+      },
+      {
+        "name": "Redoubled Stormsinger",
+        "collector_number": "37",
+        "usd": "0.20"
+      },
+      {
+        "name": "Guttersnipe",
+        "collector_number": "217",
+        "usd": "0.21"
+      },
+      {
+        "name": "Protector of the Wastes",
+        "collector_number": "14",
+        "usd": "0.17"
+      },
+      {
+        "name": "Afterlife from the Loam",
+        "collector_number": "65",
+        "usd": "1.38"
+      },
+      {
+        "name": "Consider",
+        "collector_number": "148",
+        "usd": "0.22"
+      },
+      {
+        "name": "Eshki, Temur's Roar",
+        "collector_number": "3",
+        "usd": "3.25"
+      }
+    ],
+    "drc": [
+      {
+        "name": "Prophet of the Scarab",
+        "collector_number": "9",
+        "usd": "0.24"
+      },
+      {
+        "name": "Hashaton, Scarab's Fist",
+        "collector_number": "1",
+        "usd": "0.98"
+      },
+      {
+        "name": "Arcane Signet",
+        "collector_number": "52",
+        "usd": "0.48"
+      },
+      {
+        "name": "Territorial Aetherkite",
+        "collector_number": "28",
+        "usd": "0.15"
+      },
+      {
+        "name": "Loyal Apprentice",
+        "collector_number": "104",
+        "usd": "0.16"
+      },
+      {
+        "name": "Gravecrawler",
+        "collector_number": "43",
+        "usd": "0.65"
+      },
+      {
+        "name": "Arcane Denial",
+        "collector_number": "70",
+        "usd": "2.08"
+      },
+      {
+        "name": "Command Tower",
+        "collector_number": "60",
+        "usd": "0.22"
+      },
+      {
+        "name": "Cast Out",
+        "collector_number": "64",
+        "usd": "0.10"
+      },
+      {
+        "name": "Decoction Module",
+        "collector_number": "128",
+        "usd": "0.06"
+      },
+      {
+        "name": "Exotic Orchard",
+        "collector_number": "155",
+        "usd": "0.12"
+      },
+      {
+        "name": "Hinterland Harbor",
+        "collector_number": "160",
+        "usd": "0.21"
+      },
+      {
+        "name": "Glacial Fortress",
+        "collector_number": "159",
+        "usd": "0.21"
+      },
+      {
+        "name": "Academy Ruins",
+        "collector_number": "58",
+        "usd": "5.88"
+      },
+      {
+        "name": "Rhet-Tomb Mystic",
+        "collector_number": "10",
+        "usd": "0.18"
+      },
+      {
+        "name": "Sunken Hollow",
+        "collector_number": "174",
+        "usd": "0.25"
+      },
+      {
+        "name": "Path of Ancestry",
+        "collector_number": "61",
+        "usd": "0.17"
+      },
+      {
+        "name": "Lord of the Accursed",
+        "collector_number": "95",
+        "usd": "0.14"
+      },
+      {
+        "name": "Adaptive Omnitool",
+        "collector_number": "16",
+        "usd": "1.38"
+      },
+      {
+        "name": "Grave Titan",
+        "collector_number": "42",
+        "usd": "0.82"
+      },
+      {
+        "name": "Chaos Warp",
+        "collector_number": "48",
+        "usd": "0.35"
+      },
+      {
+        "name": "Caves of Koilos",
+        "collector_number": "148",
+        "usd": "0.60"
+      },
+      {
+        "name": "Aethersquall Ancient",
+        "collector_number": "68",
+        "usd": "0.11"
+      },
+      {
+        "name": "Damn",
+        "collector_number": "89",
+        "usd": "1.05"
+      },
+      {
+        "name": "Gempalm Polluter",
+        "collector_number": "93",
+        "usd": "0.11"
+      },
+      {
+        "name": "Timeless Dragon",
+        "collector_number": "67",
+        "usd": "0.14"
+      },
+      {
+        "name": "Aetheric Amplifier",
+        "collector_number": "18",
+        "usd": "2.03"
+      },
+      {
+        "name": "Prophet of the Scarab",
+        "collector_number": "25",
+        "usd": "0.30"
+      },
+      {
+        "name": "Plague Belcher",
+        "collector_number": "97",
+        "usd": "0.21"
+      },
+      {
+        "name": "Lost Monarch of Ifnir",
+        "collector_number": "27",
+        "usd": "0.74"
+      },
+      {
+        "name": "Tanglepool Bridge",
+        "collector_number": "175",
+        "usd": "0.12"
+      },
+      {
+        "name": "Rhet-Tomb Mystic",
+        "collector_number": "26",
+        "usd": "0.24"
+      },
+      {
+        "name": "Shivan Reef",
+        "collector_number": "170",
+        "usd": "0.24"
+      },
+      {
+        "name": "Saheeli, Sublime Artificer",
+        "collector_number": "119",
+        "usd": "0.16"
+      },
+      {
+        "name": "Forgotten Creation",
+        "collector_number": "77",
+        "usd": "0.15"
+      },
+      {
+        "name": "Midnight Reaper",
+        "collector_number": "44",
+        "usd": "0.19"
+      },
+      {
+        "name": "Triplicate Titan",
+        "collector_number": "143",
+        "usd": "0.33"
+      },
+      {
+        "name": "Solemn Simulacrum",
+        "collector_number": "138",
+        "usd": "0.20"
+      },
+      {
+        "name": "Desert of the Mindful",
+        "collector_number": "150",
+        "usd": "0.07"
+      },
+      {
+        "name": "Slagwoods Bridge",
+        "collector_number": "171",
+        "usd": "0.15"
+      },
+      {
+        "name": "Commander's Sphere",
+        "collector_number": "125",
+        "usd": "0.17"
+      },
+      {
+        "name": "Swords to Plowshares",
+        "collector_number": "37",
+        "usd": "1.04"
+      },
+      {
+        "name": "Reckless Fireweaver",
+        "collector_number": "106",
+        "usd": "0.31"
+      },
+      {
+        "name": "Whirler Rogue",
+        "collector_number": "85",
+        "usd": "0.08"
+      },
+      {
+        "name": "Talisman of Curiosity",
+        "collector_number": "140",
+        "usd": "0.20"
+      },
+      {
+        "name": "Attune with Aether",
+        "collector_number": "109",
+        "usd": "0.06"
+      },
+      {
+        "name": "Adaptive Omnitool",
+        "collector_number": "32",
+        "usd": "2.02"
+      },
+      {
+        "name": "Spire of Industry",
+        "collector_number": "172",
+        "usd": "0.13"
+      },
+      {
+        "name": "Ornithopter of Paradise",
+        "collector_number": "133",
+        "usd": "0.35"
+      },
+      {
+        "name": "Path of Ancestry",
+        "collector_number": "166",
+        "usd": "0.12"
+      },
+      {
+        "name": "Gate to the Afterlife",
+        "collector_number": "130",
+        "usd": "0.07"
+      },
+      {
+        "name": "Wizened Mentor",
+        "collector_number": "24",
+        "usd": "0.27"
+      },
+      {
+        "name": "Vineglimmer Snarl",
+        "collector_number": "183",
+        "usd": "0.16"
+      },
+      {
+        "name": "Lightning Greaves",
+        "collector_number": "55",
+        "usd": "4.27"
+      },
+      {
+        "name": "Combustible Gearhulk",
+        "collector_number": "102",
+        "usd": "0.15"
+      },
+      {
+        "name": "Stridehangar Automaton",
+        "collector_number": "19",
+        "usd": "2.66"
+      },
+      {
+        "name": "Dread Summons",
+        "collector_number": "90",
+        "usd": "0.23"
+      },
+      {
+        "name": "Rogue Refiner",
+        "collector_number": "118",
+        "usd": "0.05"
+      },
+      {
+        "name": "Chain Reaction",
+        "collector_number": "47",
+        "usd": "0.19"
+      },
+      {
+        "name": "Commence the Endgame",
+        "collector_number": "38",
+        "usd": "0.09"
+      },
+      {
+        "name": "Binding Mummy",
+        "collector_number": "63",
+        "usd": "0.07"
+      },
+      {
+        "name": "Angel of Sanctions",
+        "collector_number": "62",
+        "usd": "0.18"
+      },
+      {
+        "name": "Irrigated Farmland",
+        "collector_number": "161",
+        "usd": "0.11"
+      },
+      {
+        "name": "Prairie Stream",
+        "collector_number": "167",
+        "usd": "0.14"
+      },
+      {
+        "name": "Undead Augur",
+        "collector_number": "100",
+        "usd": "0.11"
+      },
+      {
+        "name": "Desert of the Glorified",
+        "collector_number": "149",
+        "usd": "0.10"
+      },
+      {
+        "name": "Saheeli, Radiant Creator",
+        "collector_number": "3",
+        "usd": "0.29"
+      },
+      {
+        "name": "Lazotep Chancellor",
+        "collector_number": "117",
+        "usd": "0.08"
+      },
+      {
+        "name": "Dimir Signet",
+        "collector_number": "129",
+        "usd": "0.50"
+      },
+      {
+        "name": "Temple of Epiphany",
+        "collector_number": "177",
+        "usd": "0.12"
+      },
+      {
+        "name": "Gleaming Overseer",
+        "collector_number": "116",
+        "usd": "0.14"
+      },
+      {
+        "name": "God-Eternal Oketra",
+        "collector_number": "66",
+        "usd": "3.31"
+      },
+      {
+        "name": "Wayward Servant",
+        "collector_number": "121",
+        "usd": "0.07"
+      },
+      {
+        "name": "Murderous Rider // Swift End",
+        "collector_number": "45",
+        "usd": "0.17"
+      },
+      {
+        "name": "Soul-Guide Lantern",
+        "collector_number": "139",
+        "usd": "0.13"
+      },
+      {
+        "name": "Evolving Wilds",
+        "collector_number": "154",
+        "usd": "0.12"
+      },
+      {
+        "name": "Drowned Catacomb",
+        "collector_number": "152",
+        "usd": "1.42"
+      },
+      {
+        "name": "Cultivator's Caravan",
+        "collector_number": "127",
+        "usd": "0.11"
+      },
+      {
+        "name": "Priest of the Crossing",
+        "collector_number": "22",
+        "usd": "0.19"
+      },
+      {
+        "name": "Rootbound Crag",
+        "collector_number": "168",
+        "usd": "0.41"
+      },
+      {
+        "name": "The Scarab God",
+        "collector_number": "120",
+        "usd": "4.76"
+      },
+      {
+        "name": "Aetherwind Basker",
+        "collector_number": "107",
+        "usd": "0.18"
+      },
+      {
+        "name": "Aethertide Whale",
+        "collector_number": "69",
+        "usd": "0.11"
+      },
+      {
+        "name": "Isolated Chapel",
+        "collector_number": "162",
+        "usd": "0.28"
+      },
+      {
+        "name": "Conjurer's Closet",
+        "collector_number": "126",
+        "usd": "2.67"
+      },
+      {
+        "name": "On Wings of Gold",
+        "collector_number": "21",
+        "usd": "0.33"
+      },
+      {
+        "name": "Accursed Duneyard",
+        "collector_number": "36",
+        "usd": "2.24"
+      },
+      {
+        "name": "Lightning Runner",
+        "collector_number": "103",
+        "usd": "0.14"
+      },
+      {
+        "name": "Disallow",
+        "collector_number": "74",
+        "usd": "0.59"
+      },
+      {
+        "name": "Arcane Signet",
+        "collector_number": "51",
+        "usd": "0.45"
+      },
+      {
+        "name": "Rot Hulk",
+        "collector_number": "98",
+        "usd": "0.42"
+      },
+      {
+        "name": "Despark",
+        "collector_number": "115",
+        "usd": "0.17"
+      },
+      {
+        "name": "Frostboil Snarl",
+        "collector_number": "158",
+        "usd": "0.19"
+      },
+      {
+        "name": "Druid of Purification",
+        "collector_number": "49",
+        "usd": "0.40"
+      },
+      {
+        "name": "Evolving Wilds",
+        "collector_number": "153",
+        "usd": "0.09"
+      },
+      {
+        "name": "Corpse Knight",
+        "collector_number": "50",
+        "usd": "0.46"
+      },
+      {
+        "name": "Renewed Solidarity",
+        "collector_number": "23",
+        "usd": "5.33"
+      },
+      {
+        "name": "Zombie Master",
+        "collector_number": "46",
+        "usd": "0.75"
+      },
+      {
+        "name": "Talisman of Hierarchy",
+        "collector_number": "142",
+        "usd": "0.46"
+      },
+      {
+        "name": "Corpse Augur",
+        "collector_number": "40",
+        "usd": "0.05"
+      },
+      {
+        "name": "Frontier Bivouac",
+        "collector_number": "157",
+        "usd": "0.13"
+      },
+      {
+        "name": "Chromatic Lantern",
+        "collector_number": "53",
+        "usd": "2.38"
+      },
+      {
+        "name": "Glimmer of Genius",
+        "collector_number": "78",
+        "usd": "0.02"
+      },
+      {
+        "name": "Talisman of Dominance",
+        "collector_number": "141",
+        "usd": "1.33"
+      },
+      {
+        "name": "Overflowing Basin",
+        "collector_number": "165",
+        "usd": "0.10"
+      },
+      {
+        "name": "Archfiend of Ifnir",
+        "collector_number": "86",
+        "usd": "2.53"
+      },
+      {
+        "name": "Twisted Abomination",
+        "collector_number": "99",
+        "usd": "0.06"
+      },
+      {
+        "name": "Renewed Solidarity",
+        "collector_number": "7",
+        "usd": "5.18"
+      },
+      {
+        "name": "Nissa, Worldsoul Speaker",
+        "collector_number": "29",
+        "usd": "0.25"
+      },
+      {
+        "name": "Bootleggers' Stash",
+        "collector_number": "110",
+        "usd": "0.29"
+      },
+      {
+        "name": "Panharmonicon",
+        "collector_number": "135",
+        "usd": "3.72"
+      },
+      {
+        "name": "Temple of Silence",
+        "collector_number": "178",
+        "usd": "0.12"
+      },
+      {
+        "name": "Yavimaya Coast",
+        "collector_number": "184",
+        "usd": "0.18"
+      },
+      {
+        "name": "Cryptbreaker",
+        "collector_number": "41",
+        "usd": "0.61"
+      },
+      {
+        "name": "Nissa, Worldsoul Speaker",
+        "collector_number": "13",
+        "usd": "0.14"
+      },
+      {
+        "name": "Eternal Skylord",
+        "collector_number": "76",
+        "usd": "0.07"
+      },
+      {
+        "name": "Underground River",
+        "collector_number": "181",
+        "usd": "1.12"
+      },
+      {
+        "name": "Liliana, Death's Majesty",
+        "collector_number": "94",
+        "usd": "0.33"
+      },
+      {
+        "name": "Rampaging Aetherhood",
+        "collector_number": "31",
+        "usd": "0.22"
+      },
+      {
+        "name": "God-Pharaoh's Gift",
+        "collector_number": "131",
+        "usd": "0.13"
+      },
+      {
+        "name": "Arcane Sanctum",
+        "collector_number": "146",
+        "usd": "0.31"
+      },
+      {
+        "name": "Dusk // Dawn",
+        "collector_number": "65",
+        "usd": "0.17"
+      },
+      {
+        "name": "Aetherworks Marvel",
+        "collector_number": "123",
+        "usd": "0.15"
+      },
+      {
+        "name": "Vizier of Many Faces",
+        "collector_number": "84",
+        "usd": "0.12"
+      },
+      {
+        "name": "Cemetery Reaper",
+        "collector_number": "87",
+        "usd": "0.20"
+      },
+      {
+        "name": "Bontu's Monument",
+        "collector_number": "124",
+        "usd": "4.59"
+      },
+      {
+        "name": "Aether Hub",
+        "collector_number": "145",
+        "usd": "0.10"
+      },
+      {
+        "name": "Rampaging Aetherhood",
+        "collector_number": "15",
+        "usd": "0.15"
+      },
+      {
+        "name": "Accursed Duneyard",
+        "collector_number": "20",
+        "usd": "1.23"
+      },
+      {
+        "name": "Temmet, Naktamun's Will",
+        "collector_number": "4",
+        "usd": "0.45"
+      },
+      {
+        "name": "Territorial Aetherkite",
+        "collector_number": "12",
+        "usd": "0.12"
+      },
+      {
+        "name": "Maskwood Nexus",
+        "collector_number": "132",
+        "usd": "0.99"
+      },
+      {
+        "name": "Sol Ring",
+        "collector_number": "57",
+        "usd": "1.19"
+      },
+      {
+        "name": "Orzhov Signet",
+        "collector_number": "134",
+        "usd": "0.25"
+      },
+      {
+        "name": "Temple of Deceit",
+        "collector_number": "176",
+        "usd": "0.18"
+      },
+      {
+        "name": "Lost Monarch of Ifnir",
+        "collector_number": "11",
+        "usd": "1.46"
+      },
+      {
+        "name": "Orzhov Basilica",
+        "collector_number": "164",
+        "usd": "0.13"
+      },
+      {
+        "name": "Dreadhorde Invasion",
+        "collector_number": "91",
+        "usd": "0.52"
+      },
+      {
+        "name": "Champion of Wits",
+        "collector_number": "72",
+        "usd": "0.11"
+      },
+      {
+        "name": "Karplusan Forest",
+        "collector_number": "163",
+        "usd": "0.32"
+      },
+      {
+        "name": "Thopter Spy Network",
+        "collector_number": "83",
+        "usd": "0.22"
+      },
+      {
+        "name": "Blasphemous Act",
+        "collector_number": "101",
+        "usd": "1.45"
+      },
+      {
+        "name": "Midnight Clock",
+        "collector_number": "79",
+        "usd": "0.21"
+      },
+      {
+        "name": "Peema Trailblazer",
+        "collector_number": "14",
+        "usd": "0.11"
+      },
+      {
+        "name": "On Wings of Gold",
+        "collector_number": "5",
+        "usd": "0.26"
+      },
+      {
+        "name": "Crowded Crypt",
+        "collector_number": "88",
+        "usd": "0.69"
+      },
+      {
+        "name": "Peema Trailblazer",
+        "collector_number": "30",
+        "usd": "0.16"
+      },
+      {
+        "name": "Aetherflux Conduit",
+        "collector_number": "17",
+        "usd": "0.16"
+      },
+      {
+        "name": "Duplicant",
+        "collector_number": "54",
+        "usd": "0.16"
+      },
+      {
+        "name": "Sai, Master Thopterist",
+        "collector_number": "82",
+        "usd": "0.19"
+      },
+      {
+        "name": "Peema Aether-Seer",
+        "collector_number": "113",
+        "usd": "0.01"
+      },
+      {
+        "name": "Fetid Pools",
+        "collector_number": "156",
+        "usd": "0.13"
+      },
+      {
+        "name": "Command Tower",
+        "collector_number": "59",
+        "usd": "0.23"
+      },
+      {
+        "name": "Unholy Grotto",
+        "collector_number": "182",
+        "usd": "1.09"
+      },
+      {
+        "name": "Bespoke Battlewagon",
+        "collector_number": "71",
+        "usd": "0.03"
+      },
+      {
+        "name": "Pull from Tomorrow",
+        "collector_number": "81",
+        "usd": "0.43"
+      },
+      {
+        "name": "Elder Gargaroth",
+        "collector_number": "111",
+        "usd": "1.00"
+      },
+      {
+        "name": "Whirler Virtuoso",
+        "collector_number": "122",
+        "usd": "0.06"
+      },
+      {
+        "name": "Desert of the True",
+        "collector_number": "151",
+        "usd": "0.11"
+      },
+      {
+        "name": "Reality Shift",
+        "collector_number": "39",
+        "usd": "0.10"
+      },
+      {
+        "name": "Fleshbag Marauder",
+        "collector_number": "92",
+        "usd": "0.11"
+      },
+      {
+        "name": "Explosive Vegetation",
+        "collector_number": "112",
+        "usd": "0.19"
+      },
+      {
+        "name": "Adarkar Wastes",
+        "collector_number": "144",
+        "usd": "0.56"
+      },
+      {
+        "name": "Sulfur Falls",
+        "collector_number": "173",
+        "usd": "0.25"
+      },
+      {
+        "name": "Era of Innovation",
+        "collector_number": "75",
+        "usd": "0.07"
+      },
+      {
+        "name": "Terramorphic Expanse",
+        "collector_number": "179",
+        "usd": "0.12"
+      },
+      {
+        "name": "Ash Barrens",
+        "collector_number": "147",
+        "usd": "0.10"
+      },
+      {
+        "name": "Priest of the Crossing",
+        "collector_number": "6",
+        "usd": "0.17"
+      },
+      {
+        "name": "Architect of the Untamed",
+        "collector_number": "108",
+        "usd": "0.07"
+      },
+      {
+        "name": "One with the Machine",
+        "collector_number": "80",
+        "usd": "0.17"
+      },
+      {
+        "name": "Pia and Kiran Nalaar",
+        "collector_number": "105",
+        "usd": "0.16"
+      },
+      {
+        "name": "Treasure Vault",
+        "collector_number": "180",
+        "usd": "1.45"
+      },
+      {
+        "name": "Aetheric Amplifier",
+        "collector_number": "34",
+        "usd": "2.33"
+      },
+      {
+        "name": "Servant of the Conduit",
+        "collector_number": "114",
+        "usd": "0.05"
+      },
+      {
+        "name": "Pia Nalaar, Chief Mechanic",
+        "collector_number": "2",
+        "usd": "0.16"
+      },
+      {
+        "name": "Sheltered Thicket",
+        "collector_number": "169",
+        "usd": "0.10"
+      },
+      {
+        "name": "Never // Return",
+        "collector_number": "96",
+        "usd": "0.10"
+      },
+      {
+        "name": "Aetherflux Conduit",
+        "collector_number": "33",
+        "usd": "0.24"
+      },
+      {
+        "name": "Stridehangar Automaton",
+        "collector_number": "35",
+        "usd": "5.27"
+      },
+      {
+        "name": "Wizened Mentor",
+        "collector_number": "8",
+        "usd": "0.19"
+      },
+      {
+        "name": "Solar Transformer",
+        "collector_number": "137",
+        "usd": "0.13"
+      },
+      {
+        "name": "Retrofitter Foundry",
+        "collector_number": "136",
+        "usd": "0.45"
+      },
+      {
+        "name": "Confiscation Coup",
+        "collector_number": "73",
+        "usd": "0.10"
+      },
+      {
+        "name": "Sol Ring",
+        "collector_number": "56",
+        "usd": "1.19"
+      }
+    ],
     "dsc": [
       {
         "name": "Gray Merchant of Asphodel",
