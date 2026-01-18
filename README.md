@@ -72,6 +72,18 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 - Historical ROI trends (requires database)
 - TCGplayer/CardMarket purchase links
 
+## Routes
+
+- `/` - Main ROI analyzer
+- `/compare` - Deck comparison table
+- `/deck/[id]` - Individual deck details
+- `/about` - About page
+- `/contact` - Contact form
+- `/privacy` - Privacy policy
+- `/terms` - Terms of service
+- `/blog` - Blog index
+- `/blog/[slug]` - Blog posts
+
 ## Tech Stack
 
 - Next.js 15 (App Router)

@@ -96,7 +96,11 @@ export default function PrivacyPage() {
             <h2 className="text-xl font-semibold text-white">Your Rights</h2>
             <p className="text-slate-300">
               You can clear locally stored data through your browser settings. For questions about this policy,
-              please open an issue on our GitHub repository.
+              please{' '}
+              <Link href="/contact" className="text-purple-400 hover:text-purple-300">
+                contact us
+              </Link>
+              .
             </p>
           </section>
 

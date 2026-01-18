@@ -12,9 +12,9 @@ MTG Commander precon deck value analyzer - compares market prices against MSRP u
 ## Structure
 
 ```
-app/           # Pages (home, /compare, /deck/[id])
-components/    # UI components
-lib/           # API integration, calculations, caching
+app/           # Pages (home, /compare, /deck/[id], /about, /contact, /terms, /blog)
+components/    # UI components (Header, Footer, ContactForm, etc.)
+lib/           # API integration, calculations, caching, articles
 scripts/       # CLI utilities
 public/data/   # Static price fallback data
 ```
@@ -37,6 +37,16 @@ bun lint       # Linting
 ### Price Caching
 - localStorage with TTL for client-side caching
 - Static JSON fallback in `public/data/` for offline/initial load
+
+### Static Pages
+- About, Contact, Terms, Blog pages in `app/` directory
+- Use Next.js metadata export for SEO
+- Follow existing prose styling from `/privacy`
+
+### Blog System
+- Articles defined in `lib/articles.ts`
+- Static generation with `generateStaticParams`
+- Content as template literal strings (not MDX)
 
 ## React Guidelines
 

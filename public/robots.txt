@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mtg-commander-roi.vercel.app/sitemap.xml
