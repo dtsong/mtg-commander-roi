@@ -12,7 +12,12 @@ import type {
 const SCRYFALL_API = 'https://api.scryfall.com';
 const RATE_LIMIT_MS = 100;
 const MAX_RETRIES = 4;
+const CLIENT_RATE_LIMIT = 50;
+const CLIENT_RATE_WINDOW_MS = 60 * 1000;
+
 let lastRequestTime = 0;
+let clientRequestCount = 0;
+let clientRateLimitReset = Date.now() + CLIENT_RATE_WINDOW_MS;
 
 interface PriceInfo {
   name: string;
@@ -35,7 +40,32 @@ interface ScryfallCollectionResponse {
   not_found?: { name: string }[];
 }
 
+const checkClientRateLimit = (): boolean => {
+  const now = Date.now();
+  if (now > clientRateLimitReset) {
+    clientRequestCount = 0;
+    clientRateLimitReset = now + CLIENT_RATE_WINDOW_MS;
+  }
+
+  if (clientRequestCount >= CLIENT_RATE_LIMIT) {
+    console.warn(`Client rate limit reached (${CLIENT_RATE_LIMIT}/min). Please wait.`);
+    return false;
+  }
+
+  clientRequestCount++;
+
+  if (clientRequestCount >= CLIENT_RATE_LIMIT - 10) {
+    console.warn(`Approaching client rate limit: ${clientRequestCount}/${CLIENT_RATE_LIMIT} requests`);
+  }
+
+  return true;
+};
+
 const rateLimitedFetch = async <T>(url: string, retryCount: number = 0): Promise<T> => {
+  if (!checkClientRateLimit()) {
+    throw new Error('Client rate limit exceeded. Please wait before making more requests.');
+  }
+
   const now = Date.now();
   const timeSinceLastRequest = now - lastRequestTime;
   if (timeSinceLastRequest < RATE_LIMIT_MS) {
@@ -166,6 +196,57 @@ export const getCardByName = async (name: string): Promise<ScryfallCard | null> 
   } catch {
     return null;
   }
+};
+
+const BATCH_SIZE = 75;
+const DELAY_BETWEEN_BATCHES_MS = 100;
+
+export interface BatchCardResult {
+  found: ScryfallCard[];
+  notFound: string[];
+}
+
+export const getCardsByNames = async (
+  names: string[],
+  onProgress?: (current: number, total: number) => void
+): Promise<BatchCardResult> => {
+  const found: ScryfallCard[] = [];
+  const notFound: string[] = [];
+  const identifiers = names.map(name => ({ name }));
+
+  for (let i = 0; i < identifiers.length; i += BATCH_SIZE) {
+    const batch = identifiers.slice(i, i + BATCH_SIZE);
+
+    const response = await fetch(`${SCRYFALL_API}/cards/collection`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
+      },
+      body: JSON.stringify({ identifiers: batch }),
+    });
+
+    if (!response.ok) {
+      throw new Error(`Scryfall Collection API Error: ${response.status}`);
+    }
+
+    const data = await response.json() as ScryfallCollectionResponse;
+    found.push(...(data.data || []));
+
+    if (data.not_found) {
+      notFound.push(...data.not_found.map(nf => nf.name));
+    }
+
+    if (onProgress) {
+      onProgress(Math.min(i + BATCH_SIZE, names.length), names.length);
+    }
+
+    if (i + BATCH_SIZE < identifiers.length) {
+      await sleep(DELAY_BETWEEN_BATCHES_MS);
+    }
+  }
+
+  return { found, notFound };
 };
 
 export const getCardImage = (card: ScryfallCard): string | null => {

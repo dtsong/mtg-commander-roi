@@ -1,9 +1,12 @@
 'use client';
 
 import { useState } from 'react';
-import { FileText, Upload } from 'lucide-react';
-import { getCardByName } from '@/lib/scryfall';
+import { FileText, Upload, AlertTriangle } from 'lucide-react';
+import { getCardsByNames } from '@/lib/scryfall';
 import type { ScryfallCard, ParsedDeckEntry, BulkImportProgress } from '@/types';
+
+const MAX_CARDS = 150;
+const MAX_QUANTITY_PER_CARD = 10;
 
 interface BulkImportProps {
   onImport: (cards: ScryfallCard[]) => void;
@@ -13,6 +16,7 @@ export default function BulkImport({ onImport }: BulkImportProps) {
   const [text, setText] = useState('');
   const [loading, setLoading] = useState(false);
   const [progress, setProgress] = useState<BulkImportProgress>({ current: 0, total: 0 });
+  const [warning, setWarning] = useState<string | null>(null);
 
   const parseDecklist = (text: string): ParsedDeckEntry[] => {
     const lines = text.split('\n').filter(line => line.trim());
@@ -21,7 +25,8 @@ export default function BulkImport({ onImport }: BulkImportProps) {
     for (const line of lines) {
       const match = line.match(/^(\d+)?\s*x?\s*(.+)$/i);
       if (match) {
-        const quantity = parseInt(match[1]) || 1;
+        const rawQuantity = parseInt(match[1]) || 1;
+        const quantity = Math.min(rawQuantity, MAX_QUANTITY_PER_CARD);
         const name = match[2].trim();
         if (name) {
           cards.push({ name, quantity });
@@ -33,24 +38,47 @@ export default function BulkImport({ onImport }: BulkImportProps) {
   };
 
   const handleImport = async () => {
-    const cardList = parseDecklist(text);
+    let cardList = parseDecklist(text);
     if (cardList.length === 0) return;
+
+    setWarning(null);
+
+    if (cardList.length > MAX_CARDS) {
+      setWarning(`Decklist truncated to ${MAX_CARDS} cards (was ${cardList.length})`);
+      cardList = cardList.slice(0, MAX_CARDS);
+    }
 
     setLoading(true);
     setProgress({ current: 0, total: cardList.length });
 
+    const uniqueNames = [...new Set(cardList.map(c => c.name))];
+    const quantityMap = new Map<string, number>();
+    for (const { name, quantity } of cardList) {
+      quantityMap.set(name, (quantityMap.get(name) || 0) + quantity);
+    }
+
+    const { found, notFound } = await getCardsByNames(uniqueNames, (current, total) => {
+      setProgress({ current, total });
+    });
+
+    const cardMap = new Map<string, ScryfallCard>();
+    for (const card of found) {
+      cardMap.set(card.name.toLowerCase(), card);
+    }
+
     const importedCards: ScryfallCard[] = [];
-
-    for (let i = 0; i < cardList.length; i++) {
-      const { name, quantity } = cardList[i];
-      setProgress({ current: i + 1, total: cardList.length });
-
-      const card = await getCardByName(name);
+    for (const { name, quantity } of cardList) {
+      const card = cardMap.get(name.toLowerCase());
       if (card) {
         for (let q = 0; q < quantity; q++) {
           importedCards.push(card);
         }
       }
+    }
+
+    if (notFound.length > 0) {
+      const existingWarning = warning ? warning + '. ' : '';
+      setWarning(`${existingWarning}${notFound.length} card(s) not found`);
     }
 
     setLoading(false);
@@ -69,9 +97,16 @@ export default function BulkImport({ onImport }: BulkImportProps) {
       <textarea
         value={text}
         onChange={(e) => setText(e.target.value)}
-        placeholder="Paste decklist here...&#10;Format: 1 Sol Ring&#10;or just: Sol Ring"
+        placeholder={`Paste decklist here (max ${MAX_CARDS} cards)...\nFormat: 1 Sol Ring\nor just: Sol Ring`}
         className="w-full h-32 bg-slate-700 border border-slate-600 rounded-lg px-3 py-2 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-purple-500 resize-none font-mono text-sm"
       />
+
+      {warning && (
+        <div className="mt-2 flex items-center gap-2 text-amber-400 text-sm">
+          <AlertTriangle className="w-4 h-4 flex-shrink-0" />
+          <span>{warning}</span>
+        </div>
+      )}
 
       {loading && (
         <div className="mt-2">
