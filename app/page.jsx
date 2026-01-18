@@ -13,7 +13,8 @@ import { loadSetCards } from '@/lib/scryfall';
 import { calculateTotalValue } from '@/lib/calculations';
 
 export default function Home() {
-  const [selectedYear, setSelectedYear] = useState(2024);
+  const [selectedYear, setSelectedYear] = useState(2026);
+  const [selectedSet, setSelectedSet] = useState(null);
   const [selectedDeck, setSelectedDeck] = useState(null);
   const [cards, setCards] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -79,6 +80,8 @@ export default function Home() {
             <DeckSelector
               selectedYear={selectedYear}
               setSelectedYear={setSelectedYear}
+              selectedSet={selectedSet}
+              setSelectedSet={setSelectedSet}
               selectedDeck={selectedDeck}
               setSelectedDeck={setSelectedDeck}
               customDecks={customDecks}
