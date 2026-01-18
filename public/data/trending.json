@@ -1,0 +1,112 @@
+{
+  "updatedAt": "2026-01-18T05:23:13.978Z",
+  "dailyCommander": {
+    "name": "Aang and Katara",
+    "sanitized": "aang-and-katara",
+    "url": "/commanders/aang-and-katara"
+  },
+  "trendingCards": [
+    {
+      "name": "Mass of Mysteries",
+      "sanitized": "mass-of-mysteries",
+      "url": "/commanders/mass-of-mysteries"
+    },
+    {
+      "name": "Toph, Hardheaded Teacher",
+      "sanitized": "toph-hardheaded-teacher",
+      "url": "/commanders/toph-hardheaded-teacher"
+    },
+    {
+      "name": "Aang, at the Crossroads",
+      "sanitized": "aang-at-the-crossroads",
+      "url": "/commanders/aang-at-the-crossroads"
+    },
+    {
+      "name": "Redirect Lightning",
+      "sanitized": "redirect-lightning",
+      "url": "/cards/redirect-lightning"
+    },
+    {
+      "name": "Shared Roots",
+      "sanitized": "shared-roots",
+      "url": "/cards/shared-roots"
+    },
+    {
+      "name": "Ba Sing Se",
+      "sanitized": "ba-sing-se",
+      "url": "/cards/ba-sing-se"
+    },
+    {
+      "name": "Badgermole Cub",
+      "sanitized": "badgermole-cub",
+      "url": "/cards/badgermole-cub"
+    },
+    {
+      "name": "Bumi, Unleashed",
+      "sanitized": "bumi-unleashed",
+      "url": "/commanders/bumi-unleashed"
+    },
+    {
+      "name": "Abandoned Air Temple",
+      "sanitized": "abandoned-air-temple",
+      "url": "/cards/abandoned-air-temple"
+    },
+    {
+      "name": "Aang, Swift Savior",
+      "sanitized": "aang-swift-savior",
+      "url": "/commanders/aang-swift-savior"
+    }
+  ],
+  "weeklyCommanders": [
+    {
+      "name": "Ashling, the Limitless",
+      "sanitized": "ashling-the-limitless",
+      "url": "/commanders/ashling-the-limitless"
+    },
+    {
+      "name": "Fire Lord Azula",
+      "sanitized": "fire-lord-azula",
+      "url": "/commanders/fire-lord-azula"
+    },
+    {
+      "name": "Maralen, Fae Ascendant",
+      "sanitized": "maralen-fae-ascendant",
+      "url": "/commanders/maralen-fae-ascendant"
+    },
+    {
+      "name": "Toph, the First Metalbender",
+      "sanitized": "toph-the-first-metalbender",
+      "url": "/commanders/toph-the-first-metalbender"
+    },
+    {
+      "name": "Y'shtola, Night's Blessed",
+      "sanitized": "yshtola-nights-blessed",
+      "url": "/commanders/yshtola-nights-blessed"
+    },
+    {
+      "name": "Auntie Ool, Cursewretch",
+      "sanitized": "auntie-ool-cursewretch",
+      "url": "/commanders/auntie-ool-cursewretch"
+    },
+    {
+      "name": "Teval, the Balanced Scale",
+      "sanitized": "teval-the-balanced-scale",
+      "url": "/commanders/teval-the-balanced-scale"
+    },
+    {
+      "name": "Tymna the Weaver",
+      "sanitized": "tymna-the-weaver",
+      "url": "/commanders/tymna-the-weaver"
+    },
+    {
+      "name": "Hearthhull, the Worldseed",
+      "sanitized": "hearthhull-the-worldseed",
+      "url": "/commanders/hearthhull-the-worldseed"
+    },
+    {
+      "name": "The Ur-Dragon",
+      "sanitized": "the-ur-dragon",
+      "url": "/commanders/the-ur-dragon"
+    }
+  ]
+}

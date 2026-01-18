@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useMemo } from 'react';
+import Link from 'next/link';
 import { ChevronUp, ChevronDown, RefreshCw, AlertTriangle, Loader2 } from 'lucide-react';
 import ColorIndicator from './ColorIndicator';
 import ROIBadge from './ROIBadge';
@@ -197,7 +198,12 @@ export default function DeckComparisonTable({
                 return (
                   <tr key={deck.id} className="hover:bg-slate-700/30 transition-colors">
                     <td className="px-4 py-3">
-                      <span className="font-medium text-white">{deck.name}</span>
+                      <Link
+                        href={`/deck/${deck.id}`}
+                        className="font-medium text-white hover:text-purple-400 hover:underline cursor-pointer"
+                      >
+                        {deck.name}
+                      </Link>
                     </td>
                     <td className="px-4 py-3 text-slate-400 text-sm">{deck.set}</td>
                     <td className="px-4 py-3">

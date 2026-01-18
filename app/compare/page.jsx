@@ -4,8 +4,9 @@ import { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
 import { ArrowLeft, Trash2, RefreshCw, Loader2 } from 'lucide-react';
 import DeckComparisonTable from '@/components/DeckComparisonTable';
-import { PRECON_DATABASE } from '@/lib/precons';
-import { loadStaticPrices, loadSetCards, getCardPrice } from '@/lib/scryfall';
+import TrendingCards from '@/components/TrendingCards';
+import { PRECON_DATABASE, getDeckCards } from '@/lib/precons';
+import { loadStaticPrices, fetchDeckPrices } from '@/lib/scryfall';
 import { getCachedPrice, setCachedPrice, clearCache, formatStaticPriceAge } from '@/lib/priceCache';
 
 export default function ComparePage() {
@@ -19,19 +20,15 @@ export default function ComparePage() {
     const loadPrices = async () => {
       const staticData = await loadStaticPrices();
 
-      if (staticData?.sets) {
+      if (staticData?.decks) {
         setStaticUpdatedAt(staticData.updatedAt);
         const pricesFromStatic = {};
 
         PRECON_DATABASE.forEach(deck => {
-          const setCards = staticData.sets[deck.setCode];
-          if (setCards?.length) {
-            const totalValue = setCards.reduce((sum, card) => {
-              return sum + parseFloat(card.usd || 0);
-            }, 0);
-
-            const sortedCards = [...setCards]
-              .sort((a, b) => parseFloat(b.usd || 0) - parseFloat(a.usd || 0))
+          const deckData = staticData.decks[deck.id];
+          if (deckData) {
+            const topCards = deckData.cards
+              .filter(c => c.usd)
               .slice(0, 5)
               .map(card => ({
                 name: card.name,
@@ -39,9 +36,9 @@ export default function ComparePage() {
               }));
 
             pricesFromStatic[deck.id] = {
-              totalValue,
-              topCards: sortedCards,
-              cardCount: setCards.length,
+              totalValue: deckData.totalValue,
+              topCards,
+              cardCount: deckData.cardCount,
               fetchedAt: staticData.updatedAt,
             };
           }
@@ -69,21 +66,21 @@ export default function ComparePage() {
     setLoadingDeck(deck.id);
 
     try {
-      const cards = await loadSetCards(deck.setCode);
-      const totalValue = cards.reduce((sum, card) => sum + getCardPrice(card), 0);
+      const deckCards = await getDeckCards(deck.id);
+      if (!deckCards.length) {
+        console.warn(`No deck list found for ${deck.name}`);
+        return;
+      }
 
-      const sortedCards = [...cards]
-        .sort((a, b) => getCardPrice(b) - getCardPrice(a))
-        .slice(0, 5)
-        .map(card => ({
-          name: card.name,
-          price: getCardPrice(card),
-        }));
+      const priceResult = await fetchDeckPrices(deckCards);
 
       const data = {
-        totalValue,
-        topCards: sortedCards,
-        cardCount: cards.length,
+        totalValue: priceResult.totalValue,
+        topCards: priceResult.topCards.map(c => ({
+          name: c.name,
+          price: c.total,
+        })),
+        cardCount: priceResult.cardCount,
       };
 
       setCachedPrice(deck.id, data);
@@ -179,13 +176,20 @@ export default function ComparePage() {
       </header>
 
       <main className="max-w-7xl mx-auto px-6 py-6">
-        <DeckComparisonTable
-          decks={PRECON_DATABASE}
-          priceData={priceData}
-          loadingDeck={loadingDeck}
-          onLoadPrice={fetchDeckPrice}
-          onRefreshPrice={fetchDeckPrice}
-        />
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 mb-6">
+          <div className="lg:col-span-1">
+            <TrendingCards />
+          </div>
+          <div className="lg:col-span-3">
+            <DeckComparisonTable
+              decks={PRECON_DATABASE}
+              priceData={priceData}
+              loadingDeck={loadingDeck}
+              onLoadPrice={fetchDeckPrice}
+              onRefreshPrice={fetchDeckPrice}
+            />
+          </div>
+        </div>
 
         <footer className="mt-8 pt-6 border-t border-slate-700 text-center text-sm text-slate-500">
           Card data and prices provided by{' '}

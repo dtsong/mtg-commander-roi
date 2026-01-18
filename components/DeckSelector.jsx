@@ -1,16 +1,25 @@
 import { Package, Star } from 'lucide-react';
-import { getYears, getPreconsByYear } from '@/lib/precons';
+import { getYears, getPreconsByYear, PRECON_DATABASE } from '@/lib/precons';
 import ColorIndicator from './ColorIndicator';
 
 export default function DeckSelector({
   selectedYear,
   setSelectedYear,
+  selectedSet,
+  setSelectedSet,
   selectedDeck,
   setSelectedDeck,
   customDecks,
 }) {
   const years = getYears();
-  const precons = selectedYear ? getPreconsByYear(selectedYear) : [];
+  const yearFiltered = selectedYear ? getPreconsByYear(selectedYear) : PRECON_DATABASE;
+  const sets = [...new Set(yearFiltered.map(d => d.set))].sort();
+  const precons = selectedSet ? yearFiltered.filter(d => d.set === selectedSet) : yearFiltered;
+
+  const handleYearChange = (year) => {
+    setSelectedYear(year);
+    setSelectedSet(null);
+  };
 
   return (
     <div className="bg-slate-800/50 rounded-xl border border-slate-700 p-4 h-full">
@@ -23,12 +32,26 @@ export default function DeckSelector({
         <label className="block text-sm text-slate-400 mb-2">Filter by Year</label>
         <select
           value={selectedYear || ''}
-          onChange={(e) => setSelectedYear(e.target.value ? Number(e.target.value) : null)}
+          onChange={(e) => handleYearChange(e.target.value ? Number(e.target.value) : null)}
           className="w-full bg-slate-700 border border-slate-600 rounded-lg px-3 py-2 text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
         >
           <option value="">All Years</option>
           {years.map(year => (
             <option key={year} value={year}>{year}</option>
+          ))}
+        </select>
+      </div>
+
+      <div className="mb-4">
+        <label className="block text-sm text-slate-400 mb-2">Filter by Set</label>
+        <select
+          value={selectedSet || ''}
+          onChange={(e) => setSelectedSet(e.target.value || null)}
+          className="w-full bg-slate-700 border border-slate-600 rounded-lg px-3 py-2 text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
+        >
+          <option value="">All Sets</option>
+          {sets.map(set => (
+            <option key={set} value={set}>{set}</option>
           ))}
         </select>
       </div>
