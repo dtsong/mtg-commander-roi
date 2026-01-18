@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { ChevronUp, ChevronDown, RefreshCw, AlertTriangle, Loader2 } from 'lucide-react';
 import ColorIndicator from './ColorIndicator';
 import ROIBadge from './ROIBadge';
-import { formatCurrency, calculateROI } from '@/lib/calculations';
+import { formatCurrency, calculateROI, calculateDistroROI, getDistroCost, formatPercentage } from '@/lib/calculations';
 import { formatCacheAge, isCacheStale } from '@/lib/priceCache';
 
 const SortHeader = ({ label, sortKey, currentSort, onSort }) => {
@@ -25,6 +25,13 @@ const SortHeader = ({ label, sortKey, currentSort, onSort }) => {
   );
 };
 
+const ROI_FILTERS = [
+  { value: 'all', label: 'All' },
+  { value: 'positive', label: 'Positive ROI' },
+  { value: 'over20', label: '>20% ROI' },
+  { value: 'buy', label: 'BUY (>15%)' },
+];
+
 export default function DeckComparisonTable({
   decks,
   priceData,
@@ -32,8 +39,8 @@ export default function DeckComparisonTable({
   onLoadPrice,
   onRefreshPrice,
 }) {
-  const [sort, setSort] = useState({ key: 'roi', direction: 'desc' });
-  const [filter, setFilter] = useState({ year: 'all', set: 'all' });
+  const [sort, setSort] = useState({ key: 'distroRoi', direction: 'desc' });
+  const [filter, setFilter] = useState({ year: 'all', set: 'all', roiThreshold: 'all' });
 
   const years = useMemo(() => {
     const uniqueYears = [...new Set(decks.map(d => d.year))];
@@ -60,6 +67,26 @@ export default function DeckComparisonTable({
     }
     if (filter.set !== 'all') {
       result = result.filter(d => d.set === filter.set);
+    }
+
+    if (filter.roiThreshold !== 'all') {
+      result = result.filter(d => {
+        const data = priceData[d.id];
+        if (!data) return false;
+        const distroCost = getDistroCost(d.msrp);
+        const distroRoi = calculateDistroROI(data.totalValue, distroCost);
+
+        switch (filter.roiThreshold) {
+          case 'positive':
+            return distroRoi > 0;
+          case 'over20':
+            return distroRoi > 20;
+          case 'buy':
+            return distroRoi > 15;
+          default:
+            return true;
+        }
+      });
     }
 
     result.sort((a, b) => {
@@ -92,6 +119,10 @@ export default function DeckComparisonTable({
           aVal = aData ? calculateROI(aData.totalValue, a.msrp) : -999;
           bVal = bData ? calculateROI(bData.totalValue, b.msrp) : -999;
           break;
+        case 'distroRoi':
+          aVal = aData ? calculateDistroROI(aData.totalValue, getDistroCost(a.msrp)) : -999;
+          bVal = bData ? calculateDistroROI(bData.totalValue, getDistroCost(b.msrp)) : -999;
+          break;
         default:
           aVal = 0;
           bVal = 0;
@@ -110,22 +141,27 @@ export default function DeckComparisonTable({
 
   const stats = useMemo(() => {
     const loadedDecks = decks.filter(d => priceData[d.id]);
-    const rois = loadedDecks.map(d => calculateROI(priceData[d.id].totalValue, d.msrp));
-    const avgRoi = rois.length > 0 ? rois.reduce((a, b) => a + b, 0) / rois.length : 0;
-    const positiveCount = rois.filter(r => r > 0).length;
+    const distroRois = loadedDecks.map(d => {
+      const distroCost = getDistroCost(d.msrp);
+      return calculateDistroROI(priceData[d.id].totalValue, distroCost);
+    });
+    const avgDistroRoi = distroRois.length > 0 ? distroRois.reduce((a, b) => a + b, 0) / distroRois.length : 0;
+    const positiveCount = distroRois.filter(r => r > 0).length;
+    const buyCount = distroRois.filter(r => r > 15).length;
 
     return {
       total: decks.length,
       loaded: loadedDecks.length,
-      avgRoi,
+      avgDistroRoi,
       positiveCount,
+      buyCount,
     };
   }, [decks, priceData]);
 
   return (
     <div className="space-y-4">
       <div className="flex flex-wrap items-center justify-between gap-4">
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-3 flex-wrap">
           <select
             value={filter.year}
             onChange={(e) => setFilter(prev => ({ ...prev, year: e.target.value }))}
@@ -147,17 +183,33 @@ export default function DeckComparisonTable({
               <option key={set} value={set}>{set}</option>
             ))}
           </select>
+
+          <div className="flex rounded-lg overflow-hidden border border-slate-600">
+            {ROI_FILTERS.map(opt => (
+              <button
+                key={opt.value}
+                onClick={() => setFilter(prev => ({ ...prev, roiThreshold: opt.value }))}
+                className={`px-3 py-2 text-sm transition-colors ${
+                  filter.roiThreshold === opt.value
+                    ? 'bg-purple-600 text-white'
+                    : 'bg-slate-700 text-slate-300 hover:bg-slate-600'
+                }`}
+              >
+                {opt.label}
+              </button>
+            ))}
+          </div>
         </div>
 
         <div className="text-sm text-slate-400">
           {stats.loaded}/{stats.total} loaded
           {stats.loaded > 0 && (
             <span className="ml-3">
-              Avg ROI: <span className={stats.avgRoi >= 0 ? 'text-green-400' : 'text-red-400'}>
-                {stats.avgRoi >= 0 ? '+' : ''}{stats.avgRoi.toFixed(1)}%
+              Avg Distro ROI: <span className={stats.avgDistroRoi >= 0 ? 'text-green-400' : 'text-red-400'}>
+                {stats.avgDistroRoi >= 0 ? '+' : ''}{stats.avgDistroRoi.toFixed(1)}%
               </span>
               <span className="mx-2">|</span>
-              {stats.positiveCount} positive
+              <span className="text-green-400">{stats.buyCount} BUY</span>
             </span>
           )}
         </div>
@@ -182,7 +234,10 @@ export default function DeckComparisonTable({
                   <SortHeader label="Value" sortKey="value" currentSort={sort} onSort={handleSort} />
                 </th>
                 <th className="px-4 py-3 text-center">
-                  <SortHeader label="ROI" sortKey="roi" currentSort={sort} onSort={handleSort} />
+                  <SortHeader label="Distro ROI" sortKey="distroRoi" currentSort={sort} onSort={handleSort} />
+                </th>
+                <th className="px-4 py-3 text-center">
+                  <SortHeader label="MSRP ROI" sortKey="roi" currentSort={sort} onSort={handleSort} />
                 </th>
                 <th className="px-4 py-3 text-center">Updated</th>
                 <th className="px-4 py-3 text-center">Action</th>
@@ -194,6 +249,8 @@ export default function DeckComparisonTable({
                 const isLoading = loadingDeck === deck.id;
                 const stale = data && isCacheStale(deck.id);
                 const roi = data ? calculateROI(data.totalValue, deck.msrp) : null;
+                const distroCost = getDistroCost(deck.msrp);
+                const distroRoi = data ? calculateDistroROI(data.totalValue, distroCost) : null;
 
                 return (
                   <tr key={deck.id} className="hover:bg-slate-700/30 transition-colors">
@@ -218,6 +275,17 @@ export default function DeckComparisonTable({
                       ) : data ? (
                         <span className="text-white font-medium">
                           {formatCurrency(data.totalValue)}
+                        </span>
+                      ) : (
+                        <span className="text-slate-500">—</span>
+                      )}
+                    </td>
+                    <td className="px-4 py-3 text-center">
+                      {isLoading ? (
+                        <span className="text-slate-500">...</span>
+                      ) : distroRoi !== null ? (
+                        <span className={`font-bold ${distroRoi > 15 ? 'text-green-400' : distroRoi >= 0 ? 'text-yellow-400' : 'text-red-400'}`}>
+                          {formatPercentage(distroRoi)}
                         </span>
                       ) : (
                         <span className="text-slate-500">—</span>

@@ -4,8 +4,8 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'next/navigation';
 import Link from 'next/link';
 import { ArrowLeft, Loader2 } from 'lucide-react';
-import { getPreconById } from '@/lib/precons';
-import { getStaticDeckPrices } from '@/lib/scryfall';
+import { getPreconById, getDeckCards } from '@/lib/precons';
+import { getStaticDeckPrices, fetchDeckPrices } from '@/lib/scryfall';
 import ColorIndicator from '@/components/ColorIndicator';
 import ROISummary from '@/components/ROISummary';
 import TopValueCards from '@/components/TopValueCards';
@@ -18,6 +18,8 @@ export default function DeckDetailPage() {
   const [totalValue, setTotalValue] = useState(0);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [fetchSource, setFetchSource] = useState(null);
+  const [excludedCount, setExcludedCount] = useState(0);
 
   useEffect(() => {
     const loadDeckData = async () => {
@@ -32,6 +34,7 @@ export default function DeckDetailPage() {
       const deckPrices = await getStaticDeckPrices(params.id);
 
       if (deckPrices) {
+        setFetchSource('static');
         const formattedCards = deckPrices.cards.map((card, index) => ({
           id: `${card.name}-${index}`,
           name: card.name,
@@ -39,8 +42,37 @@ export default function DeckDetailPage() {
           price: card.price,
           total: card.total,
         }));
+        const cardsWithoutPrice = formattedCards.filter(c => c.price === 0 || c.price === null);
+        setExcludedCount(cardsWithoutPrice.length);
         setCards(formattedCards);
         setTotalValue(deckPrices.totalValue);
+        setLoading(false);
+        return;
+      }
+
+      const deckCards = await getDeckCards(params.id);
+      if (!deckCards || deckCards.length === 0) {
+        setError('No decklist available for this deck');
+        setLoading(false);
+        return;
+      }
+
+      try {
+        setFetchSource('live');
+        const liveData = await fetchDeckPrices(deckCards);
+        const formattedCards = liveData.cards.map((card, index) => ({
+          id: `${card.name}-${index}`,
+          name: card.name,
+          quantity: card.quantity,
+          price: card.price,
+          total: card.total,
+        }));
+        const cardsWithoutPrice = formattedCards.filter(c => c.price === 0 || c.price === null);
+        setExcludedCount(cardsWithoutPrice.length);
+        setCards(formattedCards);
+        setTotalValue(liveData.totalValue);
+      } catch (err) {
+        setError('Failed to fetch card prices from Scryfall');
       }
 
       setLoading(false);
@@ -98,7 +130,7 @@ export default function DeckDetailPage() {
       </header>
 
       <main className="max-w-4xl mx-auto px-6 py-6 space-y-6">
-        <ROISummary deck={deck} totalValue={totalValue} loading={loading} />
+        <ROISummary deck={deck} totalValue={totalValue} loading={loading} excludedCount={excludedCount} />
         <TopValueCards cards={cards} loading={loading} />
         <CardList cards={cards} loading={loading} />
 

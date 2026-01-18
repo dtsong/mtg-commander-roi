@@ -1,8 +1,7 @@
-import { DollarSign, Tag, TrendingUp } from 'lucide-react';
-import { formatCurrency, calculateROI } from '@/lib/calculations';
-import ROIBadge from './ROIBadge';
+import { DollarSign, Tag, TrendingUp, Truck, AlertCircle } from 'lucide-react';
+import { formatCurrency, calculateROI, calculateDistroROI, getDistroCost, getROIVerdict, formatPercentage } from '@/lib/calculations';
 
-export default function ROISummary({ deck, totalValue, loading }) {
+export default function ROISummary({ deck, totalValue, loading, excludedCount = 0 }) {
   if (!deck) {
     return (
       <div className="bg-slate-800/50 rounded-xl border border-slate-700 p-6">
@@ -12,56 +11,89 @@ export default function ROISummary({ deck, totalValue, loading }) {
   }
 
   const roi = calculateROI(totalValue, deck.msrp);
+  const distroCost = getDistroCost(deck.msrp);
+  const distroRoi = calculateDistroROI(totalValue, distroCost);
   const valueDiff = totalValue - deck.msrp;
+  const verdict = getROIVerdict(distroRoi);
 
   return (
-    <div className="bg-slate-800/50 rounded-xl border border-slate-700 p-6">
-      <div className="flex items-start justify-between mb-4">
-        <div>
-          <h2 className="text-xl font-bold text-white">{deck.name}</h2>
-          <p className="text-slate-400">{deck.set} ({deck.year})</p>
+    <div className="bg-slate-800/50 rounded-xl border border-slate-700 overflow-hidden">
+      <div className={`${verdict.bg} ${verdict.border} border-b p-6`}>
+        <div className="flex flex-col items-center text-center">
+          {loading ? (
+            <div className="text-slate-400">Loading prices...</div>
+          ) : (
+            <>
+              <div className={`text-5xl font-black ${verdict.color} mb-2`}>
+                {verdict.label}
+              </div>
+              <div className="text-3xl font-bold text-white mb-1">
+                {formatCurrency(totalValue)}
+              </div>
+              <div className="flex items-center gap-4 text-sm">
+                <span className={`${distroRoi >= 0 ? 'text-green-400' : 'text-red-400'} font-semibold`}>
+                  {formatPercentage(distroRoi)} Distro ROI
+                </span>
+                <span className="text-slate-500">|</span>
+                <span className={`${roi >= 0 ? 'text-green-400' : 'text-red-400'}`}>
+                  {formatPercentage(roi)} vs MSRP
+                </span>
+              </div>
+            </>
+          )}
         </div>
-        {!loading && <ROIBadge roi={roi} size="lg" />}
       </div>
 
-      <div className="grid grid-cols-3 gap-4">
-        <div className="bg-slate-700/50 rounded-lg p-4">
-          <div className="flex items-center gap-2 text-slate-400 text-sm mb-1">
-            <Tag className="w-4 h-4" />
-            Original MSRP
+      <div className="p-6">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="bg-slate-700/50 rounded-lg p-3">
+            <div className="flex items-center gap-2 text-slate-400 text-xs mb-1">
+              <Tag className="w-3 h-3" />
+              MSRP
+            </div>
+            <div className="text-lg font-bold text-white">
+              {formatCurrency(deck.msrp)}
+            </div>
           </div>
-          <div className="text-xl font-bold text-white">
-            {formatCurrency(deck.msrp)}
+
+          <div className="bg-slate-700/50 rounded-lg p-3">
+            <div className="flex items-center gap-2 text-slate-400 text-xs mb-1">
+              <Truck className="w-3 h-3" />
+              Distro Cost
+            </div>
+            <div className="text-lg font-bold text-white">
+              {formatCurrency(distroCost)}
+            </div>
+            <div className="text-xs text-slate-500">40% discount</div>
+          </div>
+
+          <div className="bg-slate-700/50 rounded-lg p-3">
+            <div className="flex items-center gap-2 text-slate-400 text-xs mb-1">
+              <DollarSign className="w-3 h-3" />
+              Current Value
+            </div>
+            <div className="text-lg font-bold text-white">
+              {loading ? '...' : formatCurrency(totalValue)}
+            </div>
+          </div>
+
+          <div className="bg-slate-700/50 rounded-lg p-3">
+            <div className="flex items-center gap-2 text-slate-400 text-xs mb-1">
+              <TrendingUp className="w-3 h-3" />
+              Profit (Distro)
+            </div>
+            <div className={`text-lg font-bold ${totalValue - distroCost >= 0 ? 'text-green-400' : 'text-red-400'}`}>
+              {loading ? '...' : `${totalValue - distroCost >= 0 ? '+' : ''}${formatCurrency(totalValue - distroCost)}`}
+            </div>
           </div>
         </div>
 
-        <div className="bg-slate-700/50 rounded-lg p-4">
-          <div className="flex items-center gap-2 text-slate-400 text-sm mb-1">
-            <DollarSign className="w-4 h-4" />
-            Current Value
+        {excludedCount > 0 && !loading && (
+          <div className="mt-4 flex items-center gap-2 text-sm text-yellow-500">
+            <AlertCircle className="w-4 h-4" />
+            {excludedCount} card{excludedCount > 1 ? 's' : ''} excluded (no price data)
           </div>
-          <div className="text-xl font-bold text-white">
-            {loading ? (
-              <span className="text-slate-500">Loading...</span>
-            ) : (
-              formatCurrency(totalValue)
-            )}
-          </div>
-        </div>
-
-        <div className="bg-slate-700/50 rounded-lg p-4">
-          <div className="flex items-center gap-2 text-slate-400 text-sm mb-1">
-            <TrendingUp className="w-4 h-4" />
-            Value Difference
-          </div>
-          <div className={`text-xl font-bold ${valueDiff >= 0 ? 'text-green-400' : 'text-red-400'}`}>
-            {loading ? (
-              <span className="text-slate-500">Loading...</span>
-            ) : (
-              `${valueDiff >= 0 ? '+' : ''}${formatCurrency(valueDiff)}`
-            )}
-          </div>
-        </div>
+        )}
       </div>
     </div>
   );
