@@ -2,8 +2,21 @@ import { Trophy } from 'lucide-react';
 import CardPriceRow from './CardPriceRow';
 import { getTopValueCards } from '@/lib/calculations';
 
-export default function TopValueCards({ cards, loading }) {
-  const topCards = getTopValueCards(cards, 5);
+interface TopValueCardsCard {
+  id?: string;
+  name: string;
+  quantity?: number;
+  price?: number | null;
+  total?: number | null;
+}
+
+interface TopValueCardsProps {
+  cards: TopValueCardsCard[];
+  loading: boolean;
+}
+
+export default function TopValueCards({ cards, loading }: TopValueCardsProps) {
+  const topCards = getTopValueCards(cards, 5) as TopValueCardsCard[];
 
   if (loading || cards.length === 0) {
     return null;

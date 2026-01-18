@@ -1,6 +1,17 @@
 import { Package, Star } from 'lucide-react';
 import { getYears, getPreconsByYear, PRECON_DATABASE } from '@/lib/precons';
 import ColorIndicator from './ColorIndicator';
+import type { PreconDeck } from '@/types';
+
+interface DeckSelectorProps {
+  selectedYear: number | null;
+  setSelectedYear: (year: number | null) => void;
+  selectedSet: string | null;
+  setSelectedSet: (set: string | null) => void;
+  selectedDeck: PreconDeck | null;
+  setSelectedDeck: (deck: PreconDeck) => void;
+  customDecks: PreconDeck[];
+}
 
 export default function DeckSelector({
   selectedYear,
@@ -10,13 +21,13 @@ export default function DeckSelector({
   selectedDeck,
   setSelectedDeck,
   customDecks,
-}) {
+}: DeckSelectorProps) {
   const years = getYears();
   const yearFiltered = selectedYear ? getPreconsByYear(selectedYear) : PRECON_DATABASE;
   const sets = [...new Set(yearFiltered.map(d => d.set))].sort();
   const precons = selectedSet ? yearFiltered.filter(d => d.set === selectedSet) : yearFiltered;
 
-  const handleYearChange = (year) => {
+  const handleYearChange = (year: number | null) => {
     setSelectedYear(year);
     setSelectedSet(null);
   };

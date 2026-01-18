@@ -11,20 +11,21 @@ import TopValueCards from '@/components/TopValueCards';
 import AddDeckModal from '@/components/AddDeckModal';
 import { loadSetCards } from '@/lib/scryfall';
 import { calculateTotalValue } from '@/lib/calculations';
+import type { PreconDeck, ScryfallCard } from '@/types';
 
 export default function Home() {
-  const [selectedYear, setSelectedYear] = useState(2026);
-  const [selectedSet, setSelectedSet] = useState(null);
-  const [selectedDeck, setSelectedDeck] = useState(null);
-  const [cards, setCards] = useState([]);
+  const [selectedYear, setSelectedYear] = useState<number | null>(2026);
+  const [selectedSet, setSelectedSet] = useState<string | null>(null);
+  const [selectedDeck, setSelectedDeck] = useState<PreconDeck | null>(null);
+  const [cards, setCards] = useState<ScryfallCard[]>([]);
   const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
-  const [customDecks, setCustomDecks] = useState([]);
+  const [error, setError] = useState<string | null>(null);
+  const [customDecks, setCustomDecks] = useState<PreconDeck[]>([]);
   const [showAddModal, setShowAddModal] = useState(false);
 
   const totalValue = calculateTotalValue(cards);
 
-  const loadDeckCards = useCallback(async (deck) => {
+  const loadDeckCards = useCallback(async (deck: PreconDeck) => {
     if (!deck?.setCode) return;
 
     setLoading(true);
@@ -50,15 +51,15 @@ export default function Home() {
     }
   }, [selectedDeck, loadDeckCards]);
 
-  const handleAddCard = (card) => {
+  const handleAddCard = (card: ScryfallCard) => {
     setCards(prev => [...prev, card]);
   };
 
-  const handleBulkImport = (importedCards) => {
+  const handleBulkImport = (importedCards: ScryfallCard[]) => {
     setCards(prev => [...prev, ...importedCards]);
   };
 
-  const handleAddCustomDeck = (deck) => {
+  const handleAddCustomDeck = (deck: PreconDeck) => {
     setCustomDecks(prev => [...prev, deck]);
     setSelectedDeck(deck);
     setCards([]);

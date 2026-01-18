@@ -1,7 +1,15 @@
 import { DollarSign, Tag, TrendingUp, Truck, AlertCircle } from 'lucide-react';
 import { formatCurrency, calculateROI, calculateDistroROI, getDistroCost, getROIVerdict, formatPercentage } from '@/lib/calculations';
+import type { PreconDeck } from '@/types';
 
-export default function ROISummary({ deck, totalValue, loading, excludedCount = 0 }) {
+interface ROISummaryProps {
+  deck: PreconDeck | null;
+  totalValue: number;
+  loading: boolean;
+  excludedCount?: number;
+}
+
+export default function ROISummary({ deck, totalValue, loading, excludedCount = 0 }: ROISummaryProps) {
   if (!deck) {
     return (
       <div className="bg-slate-800/50 rounded-xl border border-slate-700 p-6">

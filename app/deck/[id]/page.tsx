@@ -10,15 +10,20 @@ import ColorIndicator from '@/components/ColorIndicator';
 import ROISummary from '@/components/ROISummary';
 import TopValueCards from '@/components/TopValueCards';
 import CardList from '@/components/CardList';
+import type { PreconDeck, CardWithPrice } from '@/types';
+
+interface FormattedCard extends CardWithPrice {
+  id: string;
+}
 
 export default function DeckDetailPage() {
-  const params = useParams();
-  const [deck, setDeck] = useState(null);
-  const [cards, setCards] = useState([]);
+  const params = useParams<{ id: string }>();
+  const [deck, setDeck] = useState<PreconDeck | null>(null);
+  const [cards, setCards] = useState<FormattedCard[]>([]);
   const [totalValue, setTotalValue] = useState(0);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-  const [fetchSource, setFetchSource] = useState(null);
+  const [error, setError] = useState<string | null>(null);
+  const [fetchSource, setFetchSource] = useState<string | null>(null);
   const [excludedCount, setExcludedCount] = useState(0);
 
   useEffect(() => {
@@ -35,7 +40,7 @@ export default function DeckDetailPage() {
 
       if (deckPrices) {
         setFetchSource('static');
-        const formattedCards = deckPrices.cards.map((card, index) => ({
+        const formattedCards: FormattedCard[] = deckPrices.cards.map((card, index) => ({
           id: `${card.name}-${index}`,
           name: card.name,
           quantity: card.quantity,
@@ -60,7 +65,7 @@ export default function DeckDetailPage() {
       try {
         setFetchSource('live');
         const liveData = await fetchDeckPrices(deckCards);
-        const formattedCards = liveData.cards.map((card, index) => ({
+        const formattedCards: FormattedCard[] = liveData.cards.map((card, index) => ({
           id: `${card.name}-${index}`,
           name: card.name,
           quantity: card.quantity,

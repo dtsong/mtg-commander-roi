@@ -2,8 +2,21 @@ import { List } from 'lucide-react';
 import CardPriceRow from './CardPriceRow';
 import { sortCardsByValue } from '@/lib/calculations';
 
-export default function CardList({ cards, loading }) {
-  const sortedCards = sortCardsByValue(cards);
+interface CardListCard {
+  id?: string;
+  name: string;
+  quantity?: number;
+  price?: number | null;
+  total?: number | null;
+}
+
+interface CardListProps {
+  cards: CardListCard[];
+  loading: boolean;
+}
+
+export default function CardList({ cards, loading }: CardListProps) {
+  const sortedCards = sortCardsByValue(cards) as CardListCard[];
 
   if (loading) {
     return (

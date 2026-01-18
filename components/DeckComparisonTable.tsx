@@ -7,8 +7,16 @@ import ColorIndicator from './ColorIndicator';
 import ROIBadge from './ROIBadge';
 import { formatCurrency, calculateROI, calculateDistroROI, getDistroCost, formatPercentage } from '@/lib/calculations';
 import { formatCacheAge, isCacheStale } from '@/lib/priceCache';
+import type { PreconDeck, CachedPriceData, SortState, FilterState } from '@/types';
 
-const SortHeader = ({ label, sortKey, currentSort, onSort }) => {
+interface SortHeaderProps {
+  label: string;
+  sortKey: string;
+  currentSort: SortState;
+  onSort: (key: string) => void;
+}
+
+const SortHeader = ({ label, sortKey, currentSort, onSort }: SortHeaderProps) => {
   const isActive = currentSort.key === sortKey;
   const Icon = isActive && currentSort.direction === 'asc' ? ChevronUp : ChevronDown;
 
@@ -32,15 +40,23 @@ const ROI_FILTERS = [
   { value: 'buy', label: 'BUY (>15%)' },
 ];
 
+interface DeckComparisonTableProps {
+  decks: PreconDeck[];
+  priceData: Record<string, CachedPriceData>;
+  loadingDeck: string | null;
+  onLoadPrice: (deck: PreconDeck) => void;
+  onRefreshPrice: (deck: PreconDeck) => void;
+}
+
 export default function DeckComparisonTable({
   decks,
   priceData,
   loadingDeck,
   onLoadPrice,
   onRefreshPrice,
-}) {
-  const [sort, setSort] = useState({ key: 'distroRoi', direction: 'desc' });
-  const [filter, setFilter] = useState({ year: 'all', set: 'all', roiThreshold: 'all' });
+}: DeckComparisonTableProps) {
+  const [sort, setSort] = useState<SortState>({ key: 'distroRoi', direction: 'desc' });
+  const [filter, setFilter] = useState<FilterState>({ year: 'all', set: 'all', roiThreshold: 'all' });
 
   const years = useMemo(() => {
     const uniqueYears = [...new Set(decks.map(d => d.year))];
@@ -52,7 +68,7 @@ export default function DeckComparisonTable({
     return uniqueSets.sort();
   }, [decks]);
 
-  const handleSort = (key) => {
+  const handleSort = (key: string) => {
     setSort(prev => ({
       key,
       direction: prev.key === key && prev.direction === 'desc' ? 'asc' : 'desc',
@@ -92,7 +108,7 @@ export default function DeckComparisonTable({
     result.sort((a, b) => {
       const aData = priceData[a.id];
       const bData = priceData[b.id];
-      let aVal, bVal;
+      let aVal: number | string, bVal: number | string;
 
       switch (sort.key) {
         case 'name':
@@ -128,12 +144,12 @@ export default function DeckComparisonTable({
           bVal = 0;
       }
 
-      if (typeof aVal === 'string') {
+      if (typeof aVal === 'string' && typeof bVal === 'string') {
         const cmp = aVal.localeCompare(bVal);
         return sort.direction === 'asc' ? cmp : -cmp;
       }
 
-      return sort.direction === 'asc' ? aVal - bVal : bVal - aVal;
+      return sort.direction === 'asc' ? (aVal as number) - (bVal as number) : (bVal as number) - (aVal as number);
     });
 
     return result;
@@ -304,7 +320,7 @@ export default function DeckComparisonTable({
                       {data ? (
                         <div className="flex items-center justify-center gap-1">
                           {stale && (
-                            <AlertTriangle className="w-4 h-4 text-yellow-500" title="Stale data" />
+                            <AlertTriangle className="w-4 h-4 text-yellow-500" />
                           )}
                           <span className={`text-sm ${stale ? 'text-yellow-500' : 'text-green-400'}`}>
                             {formatCacheAge(deck.id)}
@@ -317,7 +333,7 @@ export default function DeckComparisonTable({
                     <td className="px-4 py-3 text-center">
                       <button
                         onClick={() => data ? onRefreshPrice(deck) : onLoadPrice(deck)}
-                        disabled={isLoading || loadingDeck}
+                        disabled={isLoading || !!loadingDeck}
                         className={`inline-flex items-center gap-1 px-3 py-1 rounded text-sm transition-colors ${
                           isLoading
                             ? 'bg-slate-600 text-slate-400 cursor-not-allowed'

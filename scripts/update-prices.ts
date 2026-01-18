@@ -1,6 +1,7 @@
 import { writeFileSync, readFileSync, mkdirSync } from 'fs';
 import { dirname, join } from 'path';
 import { fileURLToPath } from 'url';
+import type { DeckCardEntry, Decklists, CardPrices } from '../types';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
@@ -8,9 +9,36 @@ const BULK_DATA_URL = 'https://api.scryfall.com/bulk-data/default-cards';
 const DECKLISTS_PATH = join(__dirname, '..', 'public', 'data', 'decklists.json');
 const OUTPUT_PATH = join(__dirname, '..', 'public', 'data', 'prices.json');
 
-const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+const sleep = (ms: number): Promise<void> => new Promise(resolve => setTimeout(resolve, ms));
 
-async function fetchWithRetry(url, maxRetries = 5) {
+interface BulkDataMetadata {
+  download_uri: string;
+  updated_at: string;
+}
+
+interface BulkCard {
+  name: string;
+  prices?: CardPrices;
+}
+
+interface ComputedCardPrice {
+  name: string;
+  quantity: number;
+  usd: string | null;
+}
+
+interface ComputedDeckPrices {
+  totalValue: number;
+  cardCount: number;
+  cards: ComputedCardPrice[];
+}
+
+interface PricesOutput {
+  updatedAt: string;
+  decks: Record<string, ComputedDeckPrices>;
+}
+
+async function fetchWithRetry(url: string, maxRetries: number = 5): Promise<Response> {
   for (let attempt = 0; attempt < maxRetries; attempt++) {
     try {
       const response = await fetch(url);
@@ -20,23 +48,24 @@ async function fetchWithRetry(url, maxRetries = 5) {
       return response;
     } catch (error) {
       const delay = Math.pow(2, attempt) * 1000;
-      console.log(`Attempt ${attempt + 1} failed: ${error.message}. Retrying in ${delay}ms...`);
+      console.log(`Attempt ${attempt + 1} failed: ${(error as Error).message}. Retrying in ${delay}ms...`);
       if (attempt === maxRetries - 1) throw error;
       await sleep(delay);
     }
   }
+  throw new Error('Max retries reached');
 }
 
-function loadDecklists() {
+function loadDecklists(): Decklists {
   console.log('Loading decklists...');
-  const data = JSON.parse(readFileSync(DECKLISTS_PATH, 'utf-8'));
+  const data = JSON.parse(readFileSync(DECKLISTS_PATH, 'utf-8')) as Decklists;
   const deckCount = Object.keys(data).length;
   console.log(`Loaded ${deckCount} decks`);
   return data;
 }
 
-function collectUniqueCardNames(decklists) {
-  const names = new Set();
+function collectUniqueCardNames(decklists: Decklists): Set<string> {
+  const names = new Set<string>();
   for (const deckId of Object.keys(decklists)) {
     for (const card of decklists[deckId]) {
       names.add(card.name);
@@ -46,34 +75,34 @@ function collectUniqueCardNames(decklists) {
   return names;
 }
 
-async function getBulkDataUrl() {
+async function getBulkDataUrl(): Promise<string> {
   console.log('Fetching bulk data metadata...');
   const response = await fetchWithRetry(BULK_DATA_URL);
-  const data = await response.json();
+  const data = await response.json() as BulkDataMetadata;
   console.log(`Bulk data updated at: ${data.updated_at}`);
   return data.download_uri;
 }
 
-async function downloadBulkData(url) {
+async function downloadBulkData(url: string): Promise<BulkCard[]> {
   console.log('Downloading bulk data (this may take a moment)...');
   const response = await fetchWithRetry(url);
-  const data = await response.json();
+  const data = await response.json() as BulkCard[];
   console.log(`Downloaded ${data.length} cards`);
   return data;
 }
 
-function buildPriceLookup(allCards, neededNames) {
+function buildPriceLookup(allCards: BulkCard[], neededNames: Set<string>): Map<string, string | null> {
   console.log('Building price lookup...');
-  const lookup = new Map();
+  const lookup = new Map<string, string | null>();
   let matchCount = 0;
 
   for (const card of allCards) {
     if (!neededNames.has(card.name)) continue;
     if (lookup.has(card.name)) continue;
 
-    const usd = card.prices?.usd;
-    const usdFoil = card.prices?.usd_foil;
-    const price = usd || usdFoil || null;
+    const usd = card.prices?.usd ?? null;
+    const usdFoil = card.prices?.usd_foil ?? null;
+    const price = usd || usdFoil;
 
     lookup.set(card.name, price);
     matchCount++;
@@ -83,17 +112,17 @@ function buildPriceLookup(allCards, neededNames) {
   return lookup;
 }
 
-function computeDeckPrices(decklists, priceLookup) {
+function computeDeckPrices(decklists: Decklists, priceLookup: Map<string, string | null>): Record<string, ComputedDeckPrices> {
   console.log('Computing deck prices...');
-  const decks = {};
+  const decks: Record<string, ComputedDeckPrices> = {};
 
   for (const deckId of Object.keys(decklists)) {
     const cards = decklists[deckId];
-    const cardPrices = [];
+    const cardPrices: ComputedCardPrice[] = [];
     let totalValue = 0;
 
     for (const card of cards) {
-      const priceStr = priceLookup.get(card.name);
+      const priceStr = priceLookup.get(card.name) ?? null;
       const price = priceStr ? parseFloat(priceStr) : 0;
       const lineTotal = price * card.quantity;
 
@@ -122,7 +151,7 @@ function computeDeckPrices(decklists, priceLookup) {
   return decks;
 }
 
-async function main() {
+async function main(): Promise<void> {
   try {
     const decklists = loadDecklists();
 
@@ -138,7 +167,7 @@ async function main() {
     const priceLookup = buildPriceLookup(allCards, neededNames);
     const decks = computeDeckPrices(decklists, priceLookup);
 
-    const output = {
+    const output: PricesOutput = {
       updatedAt: new Date().toISOString(),
       decks,
     };

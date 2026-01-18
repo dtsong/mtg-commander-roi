@@ -1,4 +1,6 @@
-const COLOR_STYLES = {
+import type { ManaColor } from '@/types';
+
+const COLOR_STYLES: Record<ManaColor, string> = {
   W: 'bg-amber-100 text-amber-800',
   U: 'bg-blue-100 text-blue-800',
   B: 'bg-gray-800 text-gray-100',
@@ -7,7 +9,7 @@ const COLOR_STYLES = {
   C: 'bg-gray-200 text-gray-700',
 };
 
-const COLOR_NAMES = {
+const COLOR_NAMES: Record<ManaColor, string> = {
   W: 'White',
   U: 'Blue',
   B: 'Black',
@@ -16,7 +18,11 @@ const COLOR_NAMES = {
   C: 'Colorless',
 };
 
-export default function ColorIndicator({ colors }) {
+interface ColorIndicatorProps {
+  colors: ManaColor[];
+}
+
+export default function ColorIndicator({ colors }: ColorIndicatorProps) {
   if (!colors || colors.length === 0) return null;
 
   return (

@@ -1,9 +1,14 @@
 import { TrendingUp, TrendingDown } from 'lucide-react';
 import { formatPercentage } from '@/lib/calculations';
 
-export default function ROIBadge({ roi, size = 'md' }) {
+interface ROIBadgeProps {
+  roi: number;
+  size?: 'sm' | 'md' | 'lg';
+}
+
+export default function ROIBadge({ roi, size = 'md' }: ROIBadgeProps) {
   const isPositive = roi >= 0;
-  const sizeClasses = {
+  const sizeClasses: Record<string, string> = {
     sm: 'px-2 py-1 text-sm',
     md: 'px-3 py-1.5 text-base',
     lg: 'px-4 py-2 text-lg font-semibold',

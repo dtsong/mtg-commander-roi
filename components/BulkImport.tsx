@@ -3,15 +3,20 @@
 import { useState } from 'react';
 import { FileText, Upload } from 'lucide-react';
 import { getCardByName } from '@/lib/scryfall';
+import type { ScryfallCard, ParsedDeckEntry, BulkImportProgress } from '@/types';
 
-export default function BulkImport({ onImport }) {
+interface BulkImportProps {
+  onImport: (cards: ScryfallCard[]) => void;
+}
+
+export default function BulkImport({ onImport }: BulkImportProps) {
   const [text, setText] = useState('');
   const [loading, setLoading] = useState(false);
-  const [progress, setProgress] = useState({ current: 0, total: 0 });
+  const [progress, setProgress] = useState<BulkImportProgress>({ current: 0, total: 0 });
 
-  const parseDecklist = (text) => {
+  const parseDecklist = (text: string): ParsedDeckEntry[] => {
     const lines = text.split('\n').filter(line => line.trim());
-    const cards = [];
+    const cards: ParsedDeckEntry[] = [];
 
     for (const line of lines) {
       const match = line.match(/^(\d+)?\s*x?\s*(.+)$/i);
@@ -34,7 +39,7 @@ export default function BulkImport({ onImport }) {
     setLoading(true);
     setProgress({ current: 0, total: cardList.length });
 
-    const importedCards = [];
+    const importedCards: ScryfallCard[] = [];
 
     for (let i = 0; i < cardList.length; i++) {
       const { name, quantity } = cardList[i];

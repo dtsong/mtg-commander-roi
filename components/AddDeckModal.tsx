@@ -1,10 +1,17 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, FormEvent } from 'react';
 import { X, Plus } from 'lucide-react';
+import type { PreconDeck, CustomDeckFormData } from '@/types';
 
-export default function AddDeckModal({ isOpen, onClose, onAdd }) {
-  const [formData, setFormData] = useState({
+interface AddDeckModalProps {
+  isOpen: boolean;
+  onClose: () => void;
+  onAdd: (deck: PreconDeck) => void;
+}
+
+export default function AddDeckModal({ isOpen, onClose, onAdd }: AddDeckModalProps) {
+  const [formData, setFormData] = useState<CustomDeckFormData>({
     name: '',
     set: '',
     year: new Date().getFullYear(),
@@ -12,7 +19,7 @@ export default function AddDeckModal({ isOpen, onClose, onAdd }) {
     setCode: '',
   });
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!formData.name || !formData.msrp) return;
 

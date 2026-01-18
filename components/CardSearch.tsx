@@ -4,12 +4,17 @@ import { useState } from 'react';
 import { Search, Plus, X } from 'lucide-react';
 import { searchCards, getCardImage, getCardPrice } from '@/lib/scryfall';
 import { formatCurrency } from '@/lib/calculations';
+import type { ScryfallCard } from '@/types';
 
-export default function CardSearch({ onAddCard }) {
+interface CardSearchProps {
+  onAddCard: (card: ScryfallCard) => void;
+}
+
+export default function CardSearch({ onAddCard }: CardSearchProps) {
   const [query, setQuery] = useState('');
-  const [results, setResults] = useState([]);
+  const [results, setResults] = useState<ScryfallCard[]>([]);
   const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
+  const [error, setError] = useState<string | null>(null);
 
   const handleSearch = async () => {
     if (query.length < 2) return;
@@ -27,7 +32,7 @@ export default function CardSearch({ onAddCard }) {
     }
   };
 
-  const handleKeyDown = (e) => {
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === 'Enter') {
       handleSearch();
     }
@@ -87,7 +92,7 @@ export default function CardSearch({ onAddCard }) {
             >
               {getCardImage(card) && (
                 <img
-                  src={getCardImage(card)}
+                  src={getCardImage(card) || ''}
                   alt={card.name}
                   className="w-8 h-11 rounded object-cover"
                 />

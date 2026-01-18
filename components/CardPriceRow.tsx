@@ -1,6 +1,18 @@
 import { formatCurrency } from '@/lib/calculations';
 
-export default function CardPriceRow({ card, rank }) {
+interface CardPriceRowCard {
+  name: string;
+  quantity?: number;
+  price?: number | null;
+  total?: number | null;
+}
+
+interface CardPriceRowProps {
+  card: CardPriceRowCard;
+  rank?: number;
+}
+
+export default function CardPriceRow({ card, rank }: CardPriceRowProps) {
   const rawPrice = card.price ?? card.total;
   const hasPriceData = rawPrice !== null && rawPrice !== undefined && rawPrice !== 0;
   const price = rawPrice ?? 0;

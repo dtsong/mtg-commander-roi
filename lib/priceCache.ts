@@ -1,7 +1,9 @@
+import type { CachedPriceData } from '@/types';
+
 const CACHE_PREFIX = 'deck-prices-';
 const STALE_DAYS = 7;
 
-export const getCachedPrice = (deckId) => {
+export const getCachedPrice = (deckId: string): CachedPriceData | null => {
   if (typeof window === 'undefined') return null;
 
   const key = CACHE_PREFIX + deckId;
@@ -10,17 +12,17 @@ export const getCachedPrice = (deckId) => {
   if (!cached) return null;
 
   try {
-    return JSON.parse(cached);
+    return JSON.parse(cached) as CachedPriceData;
   } catch {
     return null;
   }
 };
 
-export const setCachedPrice = (deckId, data) => {
+export const setCachedPrice = (deckId: string, data: Omit<CachedPriceData, 'fetchedAt'>): void => {
   if (typeof window === 'undefined') return;
 
   const key = CACHE_PREFIX + deckId;
-  const cacheData = {
+  const cacheData: CachedPriceData = {
     ...data,
     fetchedAt: new Date().toISOString(),
   };
@@ -28,28 +30,28 @@ export const setCachedPrice = (deckId, data) => {
   localStorage.setItem(key, JSON.stringify(cacheData));
 };
 
-export const getCacheAge = (deckId) => {
+export const getCacheAge = (deckId: string): number | null => {
   const cached = getCachedPrice(deckId);
   if (!cached?.fetchedAt) return null;
 
   const fetchedDate = new Date(cached.fetchedAt);
   const now = new Date();
-  const diffMs = now - fetchedDate;
+  const diffMs = now.getTime() - fetchedDate.getTime();
   const diffDays = diffMs / (1000 * 60 * 60 * 24);
 
   return diffDays;
 };
 
-export const isCacheStale = (deckId) => {
+export const isCacheStale = (deckId: string): boolean => {
   const age = getCacheAge(deckId);
   if (age === null) return true;
   return age > STALE_DAYS;
 };
 
-export const clearCache = () => {
+export const clearCache = (): void => {
   if (typeof window === 'undefined') return;
 
-  const keysToRemove = [];
+  const keysToRemove: string[] = [];
   for (let i = 0; i < localStorage.length; i++) {
     const key = localStorage.key(i);
     if (key?.startsWith(CACHE_PREFIX)) {
@@ -60,7 +62,7 @@ export const clearCache = () => {
   keysToRemove.forEach(key => localStorage.removeItem(key));
 };
 
-export const formatCacheAge = (deckId) => {
+export const formatCacheAge = (deckId: string): string | null => {
   const age = getCacheAge(deckId);
   if (age === null) return null;
 
@@ -75,12 +77,12 @@ export const formatCacheAge = (deckId) => {
   return `${days} days ago`;
 };
 
-export const formatStaticPriceAge = (updatedAt) => {
+export const formatStaticPriceAge = (updatedAt: string | null | undefined): string | null => {
   if (!updatedAt) return null;
 
   const updatedDate = new Date(updatedAt);
   const now = new Date();
-  const diffMs = now - updatedDate;
+  const diffMs = now.getTime() - updatedDate.getTime();
   const diffHours = diffMs / (1000 * 60 * 60);
 
   if (diffHours < 1) return 'Just now';

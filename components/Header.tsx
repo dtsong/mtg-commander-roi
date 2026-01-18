@@ -1,7 +1,11 @@
 import Link from 'next/link';
 import { Coins, Plus, BarChart3 } from 'lucide-react';
 
-export default function Header({ onAddDeck }) {
+interface HeaderProps {
+  onAddDeck: () => void;
+}
+
+export default function Header({ onAddDeck }: HeaderProps) {
   return (
     <header className="bg-slate-800/50 border-b border-slate-700 px-6 py-4">
       <div className="max-w-7xl mx-auto flex items-center justify-between">

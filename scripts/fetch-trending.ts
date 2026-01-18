@@ -1,13 +1,28 @@
 import { writeFileSync, mkdirSync } from 'fs';
 import { dirname, join } from 'path';
 import { fileURLToPath } from 'url';
+import type { TrendingCard, TrendingData } from '../types';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUTPUT_PATH = join(__dirname, '..', 'public', 'data', 'trending.json');
 
-const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+const sleep = (ms: number): Promise<void> => new Promise(resolve => setTimeout(resolve, ms));
 
-async function fetchWithRetry(url, maxRetries = 3) {
+interface NextDataProps {
+  pageProps?: {
+    initialDaily?: {
+      trending?: Array<{ name: string; sanitized: string; url?: string }>;
+      weekly?: Array<{ name: string; sanitized: string; url?: string }>;
+      daily?: { name: string; sanitized: string; url?: string };
+    };
+  };
+}
+
+interface NextData {
+  props?: NextDataProps;
+}
+
+async function fetchWithRetry(url: string, maxRetries: number = 3): Promise<Response> {
   for (let attempt = 0; attempt < maxRetries; attempt++) {
     try {
       const response = await fetch(url, {
@@ -22,24 +37,25 @@ async function fetchWithRetry(url, maxRetries = 3) {
       return response;
     } catch (error) {
       const delay = Math.pow(2, attempt) * 1000;
-      console.log(`Attempt ${attempt + 1} failed: ${error.message}. Retrying in ${delay}ms...`);
+      console.log(`Attempt ${attempt + 1} failed: ${(error as Error).message}. Retrying in ${delay}ms...`);
       if (attempt === maxRetries - 1) throw error;
       await sleep(delay);
     }
   }
+  throw new Error('Max retries reached');
 }
 
-function extractNextData(html) {
-  const match = html.match(/<script id="__NEXT_DATA__" type="application\/json">(.*?)<\/script>/s);
+function extractNextData(html: string): NextData | null {
+  const match = html.match(/<script id="__NEXT_DATA__" type="application\/json">([\s\S]*?)<\/script>/);
   if (!match) return null;
   try {
-    return JSON.parse(match[1]);
+    return JSON.parse(match[1]) as NextData;
   } catch {
     return null;
   }
 }
 
-function extractTrendingCards(nextData) {
+function extractTrendingCards(nextData: NextData): TrendingCard[] | null {
   const initialDaily = nextData?.props?.pageProps?.initialDaily;
   if (!initialDaily?.trending) return null;
 
@@ -50,7 +66,7 @@ function extractTrendingCards(nextData) {
   }));
 }
 
-function extractWeeklyCommanders(nextData) {
+function extractWeeklyCommanders(nextData: NextData): TrendingCard[] | null {
   const initialDaily = nextData?.props?.pageProps?.initialDaily;
   if (!initialDaily?.weekly) return null;
 
@@ -61,7 +77,7 @@ function extractWeeklyCommanders(nextData) {
   }));
 }
 
-function extractDailyCommander(nextData) {
+function extractDailyCommander(nextData: NextData): TrendingCard | null {
   const initialDaily = nextData?.props?.pageProps?.initialDaily;
   if (!initialDaily?.daily) return null;
 
@@ -72,7 +88,7 @@ function extractDailyCommander(nextData) {
   };
 }
 
-async function main() {
+async function main(): Promise<void> {
   console.log('Fetching EDHREC homepage...');
 
   try {
@@ -88,7 +104,7 @@ async function main() {
     const weeklyCommanders = extractWeeklyCommanders(nextData);
     const dailyCommander = extractDailyCommander(nextData);
 
-    const output = {
+    const output: TrendingData = {
       updatedAt: new Date().toISOString(),
       dailyCommander,
       trendingCards: trendingCards || [],

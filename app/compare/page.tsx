@@ -8,12 +8,13 @@ import TrendingCards from '@/components/TrendingCards';
 import { PRECON_DATABASE, getDeckCards } from '@/lib/precons';
 import { loadStaticPrices, fetchDeckPrices } from '@/lib/scryfall';
 import { getCachedPrice, setCachedPrice, clearCache, formatStaticPriceAge } from '@/lib/priceCache';
+import type { PreconDeck, CachedPriceData } from '@/types';
 
 export default function ComparePage() {
-  const [priceData, setPriceData] = useState({});
-  const [loadingDeck, setLoadingDeck] = useState(null);
+  const [priceData, setPriceData] = useState<Record<string, CachedPriceData>>({});
+  const [loadingDeck, setLoadingDeck] = useState<string | null>(null);
   const [refreshingAll, setRefreshingAll] = useState(false);
-  const [staticUpdatedAt, setStaticUpdatedAt] = useState(null);
+  const [staticUpdatedAt, setStaticUpdatedAt] = useState<string | null>(null);
   const [loadingStatic, setLoadingStatic] = useState(true);
 
   useEffect(() => {
@@ -22,7 +23,7 @@ export default function ComparePage() {
 
       if (staticData?.decks) {
         setStaticUpdatedAt(staticData.updatedAt);
-        const pricesFromStatic = {};
+        const pricesFromStatic: Record<string, CachedPriceData> = {};
 
         PRECON_DATABASE.forEach(deck => {
           const deckData = staticData.decks[deck.id];
@@ -32,7 +33,7 @@ export default function ComparePage() {
               .slice(0, 5)
               .map(card => ({
                 name: card.name,
-                price: parseFloat(card.usd || 0),
+                price: parseFloat(card.usd || '0'),
               }));
 
             pricesFromStatic[deck.id] = {
@@ -46,7 +47,7 @@ export default function ComparePage() {
 
         setPriceData(pricesFromStatic);
       } else {
-        const cached = {};
+        const cached: Record<string, CachedPriceData> = {};
         PRECON_DATABASE.forEach(deck => {
           const data = getCachedPrice(deck.id);
           if (data) {
@@ -62,7 +63,7 @@ export default function ComparePage() {
     loadPrices();
   }, []);
 
-  const fetchDeckPrice = useCallback(async (deck) => {
+  const fetchDeckPrice = useCallback(async (deck: PreconDeck) => {
     setLoadingDeck(deck.id);
 
     try {
@@ -74,7 +75,7 @@ export default function ComparePage() {
 
       const priceResult = await fetchDeckPrices(deckCards);
 
-      const data = {
+      const data: Omit<CachedPriceData, 'fetchedAt'> = {
         totalValue: priceResult.totalValue,
         topCards: priceResult.topCards.map(c => ({
           name: c.name,
@@ -146,7 +147,7 @@ export default function ComparePage() {
               {!staticUpdatedAt && (
                 <button
                   onClick={handleRefreshAll}
-                  disabled={refreshingAll || loadingDeck || loadingStatic}
+                  disabled={refreshingAll || !!loadingDeck || loadingStatic}
                   className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-colors ${
                     refreshingAll || loadingDeck || loadingStatic
                       ? 'bg-slate-700 text-slate-400 cursor-not-allowed'
@@ -164,7 +165,7 @@ export default function ComparePage() {
 
               <button
                 onClick={handleClearCache}
-                disabled={refreshingAll || loadingDeck || loadingStatic}
+                disabled={refreshingAll || !!loadingDeck || loadingStatic}
                 className="flex items-center gap-2 px-4 py-2 bg-slate-700 hover:bg-slate-600 text-slate-200 rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 <Trash2 className="w-4 h-4" />

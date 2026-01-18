@@ -1,36 +1,37 @@
+import type { TrendingCard, TrendingData, TrendingInPrecons, TrendingDeckInfo, Decklists } from '@/types';
 import { PRECON_DATABASE, loadDecklists } from './precons';
 
-let trendingCache = null;
+let trendingCache: TrendingData | null = null;
 
-export async function loadTrendingData() {
+export async function loadTrendingData(): Promise<TrendingData | null> {
   if (trendingCache) return trendingCache;
 
   try {
     const response = await fetch('/data/trending.json');
     if (!response.ok) return null;
-    trendingCache = await response.json();
+    trendingCache = await response.json() as TrendingData;
     return trendingCache;
   } catch {
     return null;
   }
 }
 
-export async function getTrendingCards() {
+export async function getTrendingCards(): Promise<TrendingCard[]> {
   const data = await loadTrendingData();
   return data?.trendingCards || [];
 }
 
-export async function getWeeklyCommanders() {
+export async function getWeeklyCommanders(): Promise<TrendingCard[]> {
   const data = await loadTrendingData();
   return data?.weeklyCommanders || [];
 }
 
-export async function getDailyCommander() {
+export async function getDailyCommander(): Promise<TrendingCard | null> {
   const data = await loadTrendingData();
   return data?.dailyCommander || null;
 }
 
-export async function findTrendingInPrecons() {
+export async function findTrendingInPrecons(): Promise<TrendingInPrecons[]> {
   const [trending, decklists] = await Promise.all([
     getTrendingCards(),
     loadDecklists(),
@@ -38,10 +39,10 @@ export async function findTrendingInPrecons() {
 
   if (!trending.length || !decklists) return [];
 
-  const results = [];
+  const results: TrendingInPrecons[] = [];
 
   for (const trendingCard of trending) {
-    const foundIn = [];
+    const foundIn: TrendingDeckInfo[] = [];
 
     for (const deck of PRECON_DATABASE) {
       const deckCards = decklists[deck.id];
@@ -72,12 +73,12 @@ export async function findTrendingInPrecons() {
   return results;
 }
 
-export function formatTrendingAge(updatedAt) {
+export function formatTrendingAge(updatedAt: string | null | undefined): string {
   if (!updatedAt) return 'Unknown';
 
   const updated = new Date(updatedAt);
   const now = new Date();
-  const diffMs = now - updated;
+  const diffMs = now.getTime() - updated.getTime();
   const diffHours = Math.floor(diffMs / (1000 * 60 * 60));
   const diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24));
 

@@ -4,10 +4,11 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { TrendingUp, ExternalLink, ChevronDown, ChevronUp } from 'lucide-react';
 import { loadTrendingData, findTrendingInPrecons, formatTrendingAge } from '@/lib/trending';
+import type { TrendingData, TrendingInPrecons } from '@/types';
 
 export default function TrendingCards() {
-  const [trendingData, setTrendingData] = useState(null);
-  const [trendingInPrecons, setTrendingInPrecons] = useState([]);
+  const [trendingData, setTrendingData] = useState<TrendingData | null>(null);
+  const [trendingInPrecons, setTrendingInPrecons] = useState<TrendingInPrecons[]>([]);
   const [loading, setLoading] = useState(true);
   const [expanded, setExpanded] = useState(false);
 

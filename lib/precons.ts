@@ -1,4 +1,6 @@
-export const PRECON_DATABASE = [
+import type { PreconDeck, DeckCardEntry, ManaColor, Decklists } from '@/types';
+
+export const PRECON_DATABASE: PreconDeck[] = [
   // 2026 - Lorwyn Eclipsed
   { id: 'ecc-dance-of-the-elements', name: 'Dance of the Elements', set: 'Lorwyn Eclipsed', year: 2026, msrp: 49.99, setCode: 'ecc', colors: ['W', 'U', 'B', 'R', 'G'], edhrec: 'dance-of-the-elements' },
   { id: 'ecc-blight-curse', name: 'Blight Curse', set: 'Lorwyn Eclipsed', year: 2026, msrp: 49.99, setCode: 'ecc', colors: ['B', 'R', 'G'], edhrec: 'blight-curse' },
@@ -95,35 +97,35 @@ export const PRECON_DATABASE = [
   { id: '40k-tyranid-swarm', name: 'Tyranid Swarm', set: 'Warhammer 40,000', year: 2022, msrp: 59.99, setCode: '40k', colors: ['R', 'G'], edhrec: 'tyranid-swarm' },
 ];
 
-export const getYears = () => [...new Set(PRECON_DATABASE.map(d => d.year))].sort((a, b) => b - a);
+export const getYears = (): number[] => [...new Set(PRECON_DATABASE.map(d => d.year))].sort((a, b) => b - a);
 
-export const getPreconsByYear = (year) => PRECON_DATABASE.filter(d => d.year === year);
+export const getPreconsByYear = (year: number): PreconDeck[] => PRECON_DATABASE.filter(d => d.year === year);
 
-export const getPreconById = (id) => PRECON_DATABASE.find(d => d.id === id);
+export const getPreconById = (id: string): PreconDeck | undefined => PRECON_DATABASE.find(d => d.id === id);
 
-let decklistsCache = null;
+let decklistsCache: Decklists | null = null;
 
-export async function loadDecklists() {
+export async function loadDecklists(): Promise<Decklists> {
   if (decklistsCache) return decklistsCache;
 
   if (typeof window !== 'undefined') {
     const res = await fetch('/data/decklists.json');
-    decklistsCache = await res.json();
+    decklistsCache = await res.json() as Decklists;
   } else {
     const fs = await import('fs');
     const path = await import('path');
     const filePath = path.join(process.cwd(), 'public', 'data', 'decklists.json');
-    decklistsCache = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+    decklistsCache = JSON.parse(fs.readFileSync(filePath, 'utf-8')) as Decklists;
   }
   return decklistsCache;
 }
 
-export async function getDeckCards(deckId) {
+export async function getDeckCards(deckId: string): Promise<DeckCardEntry[]> {
   const decklists = await loadDecklists();
   return decklists[deckId] || [];
 }
 
-export async function hasDeckList(deckId) {
+export async function hasDeckList(deckId: string): Promise<boolean> {
   const decklists = await loadDecklists();
   return deckId in decklists && decklists[deckId].length > 0;
 }
