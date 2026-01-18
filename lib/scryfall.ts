@@ -14,6 +14,7 @@ const RATE_LIMIT_MS = 100;
 const MAX_RETRIES = 4;
 const CLIENT_RATE_LIMIT = 50;
 const CLIENT_RATE_WINDOW_MS = 60 * 1000;
+const USER_AGENT = 'MTG-Commander-ROI/1.0';
 
 let lastRequestTime = 0;
 let clientRequestCount = 0;
@@ -74,7 +75,10 @@ const rateLimitedFetch = async <T>(url: string, retryCount: number = 0): Promise
   lastRequestTime = Date.now();
 
   const response = await fetch(url, {
-    headers: { 'Accept': 'application/json' }
+    headers: {
+      'Accept': 'application/json',
+      'User-Agent': USER_AGENT,
+    },
   });
 
   if (response.status === 429 && retryCount < MAX_RETRIES) {
@@ -222,6 +226,7 @@ export const getCardsByNames = async (
       headers: {
         'Content-Type': 'application/json',
         'Accept': 'application/json',
+        'User-Agent': USER_AGENT,
       },
       body: JSON.stringify({ identifiers: batch }),
     });
@@ -308,6 +313,7 @@ export const fetchCardsPrices = async (
       headers: {
         'Content-Type': 'application/json',
         'Accept': 'application/json',
+        'User-Agent': USER_AGENT,
       },
       body: JSON.stringify({ identifiers: batch }),
     });
