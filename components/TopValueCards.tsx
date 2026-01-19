@@ -9,6 +9,7 @@ interface TopValueCardsCard {
   quantity?: number;
   price?: number | null;
   total?: number | null;
+  lowestListing?: number | null;
 }
 
 interface TopValueCardsProps {

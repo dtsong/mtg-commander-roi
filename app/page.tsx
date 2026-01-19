@@ -9,7 +9,7 @@ import BulkImport from '@/components/BulkImport';
 import CardList from '@/components/CardList';
 import TopValueCards from '@/components/TopValueCards';
 import AddDeckModal from '@/components/AddDeckModal';
-import { fetchDeckPrices, getCardPrice } from '@/lib/scryfall';
+import { fetchDeckPrices, getCardPrice, mergeLowestListings } from '@/lib/scryfall';
 import { getDeckCards } from '@/lib/precons';
 import { calculateTotalValue } from '@/lib/calculations';
 import type { PreconDeck, CardWithPrice, ScryfallCard } from '@/types';
@@ -40,7 +40,8 @@ export default function Home() {
         return;
       }
       const priceResult = await fetchDeckPrices(deckCards);
-      setCards(priceResult.cards);
+      const cardsWithListings = await mergeLowestListings(priceResult.cards);
+      setCards(cardsWithListings);
     } catch (err) {
       setError('Failed to load deck prices');
       console.error(err);
