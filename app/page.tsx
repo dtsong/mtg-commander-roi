@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, useCallback } from 'react';
+import dynamic from 'next/dynamic';
 import Header from '@/components/Header';
 import DeckSelector from '@/components/DeckSelector';
 import ROISummary from '@/components/ROISummary';
@@ -8,7 +9,8 @@ import CardSearch from '@/components/CardSearch';
 import BulkImport from '@/components/BulkImport';
 import CardList from '@/components/CardList';
 import TopValueCards from '@/components/TopValueCards';
-import AddDeckModal from '@/components/AddDeckModal';
+
+const AddDeckModal = dynamic(() => import('@/components/AddDeckModal'));
 import { fetchDeckPrices, getCardPrice, mergeLowestListings } from '@/lib/scryfall';
 import { getDeckCards } from '@/lib/precons';
 import { calculateTotalValue } from '@/lib/calculations';

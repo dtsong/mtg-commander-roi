@@ -56,16 +56,14 @@ export default function DeckContent({ deckId }: { deckId: string }) {
         setExcludedCount(cardsWithoutPrice.length);
         setCards(formattedCards);
         setTotalValue(deckPrices.totalValue);
+        setLoading(false);
 
         const commanderCard = formattedCards.find(c => c.isCommander) || formattedCards[0];
         if (commanderCard) {
-          const commander = await getCardByName(commanderCard.name);
-          if (commander) {
-            setCommanderImage(getCardImage(commander));
-          }
+          getCardByName(commanderCard.name).then(commander => {
+            if (commander) setCommanderImage(getCardImage(commander));
+          });
         }
-
-        setLoading(false);
         return;
       }
 

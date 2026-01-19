@@ -58,7 +58,9 @@ export default function CardList({ cards, loading }: CardListProps) {
       </h3>
       <div className="space-y-2 max-h-96 overflow-y-auto pr-1">
         {sortedCards.map(card => (
-          <CardPriceRow key={card.name} card={card} />
+          <div key={card.name} style={{ contentVisibility: 'auto', containIntrinsicSize: '0 48px' }}>
+            <CardPriceRow card={card} />
+          </div>
         ))}
       </div>
     </div>
