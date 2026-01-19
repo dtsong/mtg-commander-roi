@@ -70,6 +70,7 @@ export interface CardWithPrice {
   total: number;
   image?: string | null;
   isCommander?: boolean;
+  lowestListing?: number | null;
 }
 
 export interface TopCard {
@@ -123,6 +124,17 @@ export interface StaticCardEntry {
   quantity: number;
   usd?: string | null;
   isCommander?: boolean;
+}
+
+export interface LowestListingEntry {
+  name: string;
+  lowestListing: number;
+  tcgplayerUrl?: string;
+}
+
+export interface LowestListingsData {
+  updatedAt: string;
+  cards: Record<string, LowestListingEntry>;
 }
 
 export interface TrendingCard {

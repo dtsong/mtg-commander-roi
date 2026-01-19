@@ -7,6 +7,7 @@ import type {
   FetchProgress,
   StaticPricesData,
   StaticCardData,
+  LowestListingsData,
 } from '@/types';
 
 const SCRYFALL_API = 'https://api.scryfall.com';
@@ -386,4 +387,40 @@ export const fetchDeckPrices = async (
     topCards: cardPrices.slice(0, 5),
     cardCount: deckCards.reduce((sum, c) => sum + c.quantity, 0),
   };
+};
+
+let lowestListingsCache: LowestListingsData | null = null;
+
+export const loadLowestListings = async (): Promise<LowestListingsData | null> => {
+  if (lowestListingsCache) return lowestListingsCache;
+
+  try {
+    const response = await fetch('/data/lowest-listings.json');
+    if (!response.ok) return null;
+    lowestListingsCache = await response.json() as LowestListingsData;
+    return lowestListingsCache;
+  } catch {
+    return null;
+  }
+};
+
+export const getLowestListingForCard = async (cardName: string): Promise<number | null> => {
+  const data = await loadLowestListings();
+  if (!data?.cards?.[cardName]) return null;
+  return data.cards[cardName].lowestListing;
+};
+
+export const mergeLowestListings = async (
+  cards: CardWithPrice[]
+): Promise<CardWithPrice[]> => {
+  const listings = await loadLowestListings();
+  if (!listings) return cards;
+
+  return cards.map(card => {
+    const listing = listings.cards[card.name];
+    return {
+      ...card,
+      lowestListing: listing?.lowestListing ?? null,
+    };
+  });
 };

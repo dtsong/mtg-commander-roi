@@ -1,3 +1,14 @@
+/**
+ * Price Update Script
+ *
+ * Primary data source: Scryfall bulk data (free, no API key required)
+ * Alternative: JustTCG API provides condition-specific pricing but has rate limits
+ *              (free tier: 10 req/min, 100/day) making it unsuitable for bulk updates.
+ *              Use lib/justtcg.ts for live/on-demand condition-specific lookups.
+ *
+ * For lowest listing data, run: bun scripts/fetch-lowest-listings.ts
+ */
+
 import { writeFileSync, readFileSync, mkdirSync } from 'fs';
 import { dirname, join } from 'path';
 import { fileURLToPath } from 'url';

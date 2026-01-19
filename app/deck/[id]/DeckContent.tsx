@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowLeft, Loader2 } from 'lucide-react';
 import { getPreconById, getDeckCards } from '@/lib/precons';
-import { getStaticDeckPrices, fetchDeckPrices, getCardByName, getCardImage } from '@/lib/scryfall';
+import { getStaticDeckPrices, fetchDeckPrices, getCardByName, getCardImage, mergeLowestListings } from '@/lib/scryfall';
 import ColorIndicator from '@/components/ColorIndicator';
 import ROISummary from '@/components/ROISummary';
 import TopValueCards from '@/components/TopValueCards';
@@ -15,6 +15,7 @@ import type { PreconDeck, CardWithPrice } from '@/types';
 interface FormattedCard extends CardWithPrice {
   id: string;
   isCommander?: boolean;
+  lowestListing?: number | null;
 }
 
 export default function DeckContent({ deckId }: { deckId: string }) {
@@ -41,13 +42,15 @@ export default function DeckContent({ deckId }: { deckId: string }) {
 
       if (deckPrices) {
         setFetchSource('static');
-        const formattedCards: FormattedCard[] = deckPrices.cards.map((card, index) => ({
+        const cardsWithListings = await mergeLowestListings(deckPrices.cards);
+        const formattedCards: FormattedCard[] = cardsWithListings.map((card, index) => ({
           id: `${card.name}-${index}`,
           name: card.name,
           quantity: card.quantity,
           price: card.price,
           total: card.total,
           isCommander: card.isCommander,
+          lowestListing: card.lowestListing,
         }));
         const cardsWithoutPrice = formattedCards.filter(c => c.price === 0 || c.price === null);
         setExcludedCount(cardsWithoutPrice.length);
@@ -76,13 +79,15 @@ export default function DeckContent({ deckId }: { deckId: string }) {
       try {
         setFetchSource('live');
         const liveData = await fetchDeckPrices(deckCards);
-        const formattedCards: FormattedCard[] = liveData.cards.map((card, index) => ({
+        const cardsWithListings = await mergeLowestListings(liveData.cards);
+        const formattedCards: FormattedCard[] = cardsWithListings.map((card, index) => ({
           id: `${card.name}-${index}`,
           name: card.name,
           quantity: card.quantity,
           price: card.price,
           total: card.total,
           isCommander: card.isCommander,
+          lowestListing: card.lowestListing,
         }));
         const cardsWithoutPrice = formattedCards.filter(c => c.price === 0 || c.price === null);
         setExcludedCount(cardsWithoutPrice.length);
@@ -175,16 +180,28 @@ export default function DeckContent({ deckId }: { deckId: string }) {
         <CardList cards={cards} loading={loading} />
 
         <footer className="pt-6 border-t border-slate-700 text-center text-sm text-slate-500">
-          Card data and prices provided by{' '}
-          <a
-            href="https://scryfall.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-purple-400 hover:text-purple-300"
-          >
-            Scryfall
-          </a>
-          . Prices update daily.
+          <p>
+            Card data provided by{' '}
+            <a
+              href="https://scryfall.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-purple-400 hover:text-purple-300"
+            >
+              Scryfall
+            </a>
+            . Market prices update daily.
+          </p>
+          <p className="mt-1">
+            All prices shown are for{' '}
+            <Link
+              href="/blog/understanding-card-conditions"
+              className="text-purple-400 hover:text-purple-300"
+            >
+              Near Mint (NM)
+            </Link>
+            {' '}condition.
+          </p>
         </footer>
       </main>
     </div>

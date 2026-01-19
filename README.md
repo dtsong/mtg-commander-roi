@@ -91,6 +91,89 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 - Tailwind CSS 4
 - Bun
 
+## Scripts
+
+Local CLI utilities for data management. Run with `bun scripts/<script-name>.ts`.
+
+### Price Updates
+
+**`update-prices.ts`** - Fetches bulk card data from Scryfall and generates static pricing for all decks.
+
+```bash
+bun scripts/update-prices.ts
+```
+
+- Downloads Scryfall bulk data (~85K cards)
+- Matches cards to deck set codes for accurate pricing
+- Selects cheapest non-promo versions
+- Outputs to `public/data/prices.json`
+- Runs automatically via GitHub Actions (3x daily)
+
+### Lowest Listings Scraper
+
+**`fetch-lowest-listings.ts`** - Scrapes TCGplayer for lowest listing prices on high-value cards.
+
+```bash
+# First-time setup
+bun add playwright
+bunx playwright install chromium
+
+# Run scraper
+bun scripts/fetch-lowest-listings.ts
+
+# Options
+bun scripts/fetch-lowest-listings.ts --limit 20          # Limit cards
+bun scripts/fetch-lowest-listings.ts --skip-existing     # Skip already scraped
+bun scripts/fetch-lowest-listings.ts --visible           # Show browser
+bun scripts/fetch-lowest-listings.ts --min-price 20      # Set minimum price threshold
+bun scripts/fetch-lowest-listings.ts --watchlist-only    # Only scrape watchlist cards
+bun scripts/fetch-lowest-listings.ts --batch-pause 60    # Pause 60s every 50 cards
+```
+
+- Targets cards above minimum price (default $5) in positive-ROI decks
+- Use `--batch-pause` for long runs to avoid rate limiting (pauses every 50 cards)
+- Watchlist file (`public/data/watchlist.json`) prioritizes specific cards regardless of price
+- Rate limited (1.5s between requests) to avoid blocks
+- Outputs to `public/data/lowest-listings.json`
+- Manual runs only (not automated)
+
+### Deck Import
+
+**`import-decklist.ts`** - Imports deck lists from EDHREC precon pages.
+
+```bash
+bun scripts/import-decklist.ts
+```
+
+- Reads deck URLs from `lib/precons.ts` (edhrec field)
+- Parses card lists and commander info
+- Outputs to `public/data/decklists.json`
+
+### Trending Cards
+
+**`fetch-trending.ts`** - Fetches trending commander cards from EDHREC.
+
+```bash
+bun scripts/fetch-trending.ts
+```
+
+- Scrapes daily/weekly trending commanders
+- Outputs to `public/data/trending.json`
+
+### Maintenance Scripts
+
+**`update-commander-flags.ts`** - Marks first card in each deck as commander.
+
+```bash
+bun scripts/update-commander-flags.ts
+```
+
+**`patch-prices-commanders.ts`** - Syncs commander flags from decklists to prices.json.
+
+```bash
+bun scripts/patch-prices-commanders.ts
+```
+
 ## Data Sources
 
-Card data and prices provided by [Scryfall](https://scryfall.com). Prices update daily.
+Card data and prices provided by [Scryfall](https://scryfall.com). Prices update daily via GitHub Actions. All prices shown are for Near Mint (NM) condition.

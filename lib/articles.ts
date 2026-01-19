@@ -11,6 +11,93 @@ export interface Article {
 
 export const articles: Article[] = [
   {
+    slug: 'understanding-card-conditions',
+    title: 'Understanding Card Conditions: NM, LP, MP, HP, and DMG',
+    description: 'Learn about MTG card condition grades and how they affect pricing. Understand when buying LP or MP cards can save you money.',
+    publishedAt: '2026-01-18',
+    author: 'MTG Commander ROI Team',
+    tags: ['Guide', 'Pricing', 'Conditions'],
+    content: `
+## What Do Card Conditions Mean?
+
+When buying Magic: The Gathering cards, you'll encounter condition grades that describe the physical state of a card. Understanding these grades helps you make informed purchasing decisions and find the best value.
+
+### The Condition Scale
+
+**NM (Near Mint)**
+- The card looks almost new
+- Minor edge wear or light scratches visible only under close inspection
+- No creases, bends, or significant marks
+- This is the default condition for price guides and our ROI calculations
+
+**LP (Lightly Played)**
+- Visible but minor wear on edges and corners
+- Light scratches on the surface
+- May have minor whitening on borders
+- Typically 10-15% cheaper than NM
+
+**MP (Moderately Played)**
+- Noticeable wear including edge wear, scratches, or scuffs
+- May have light creasing or minor bends
+- Still tournament legal in sleeves
+- Typically 20-30% cheaper than NM
+
+**HP (Heavily Played)**
+- Significant wear and damage
+- May have creases, writing, or heavy scratches
+- Cards are still recognizable and playable
+- Typically 40-50% cheaper than NM
+
+**DMG (Damaged)**
+- Major damage such as tears, water damage, or heavy creasing
+- May be bent, warped, or have missing pieces
+- Often not tournament legal even in sleeves
+- Typically 60%+ cheaper than NM
+
+### Why We Show NM Prices
+
+Our ROI calculations use Near Mint prices because:
+
+1. **Standard baseline** - NM is the industry standard for price guides
+2. **Consistent comparisons** - All decks are valued on the same scale
+3. **Resale value** - NM cards have the highest and most stable resale value
+4. **New product assumption** - Precon decks come with NM cards when purchased new
+
+### When to Buy LP or MP
+
+Buying lower-condition cards can be a smart budget strategy:
+
+**Good candidates for LP/MP:**
+- Commander staples you'll sleeve and never resell
+- Cards for casual play groups
+- High-value cards where savings are substantial
+- Cards you plan to alter or customize
+
+**Stick with NM for:**
+- Cards you might resell or trade
+- Collectible or reserved list cards
+- Cards with significant value appreciation potential
+- Your deck's most prominent cards (commanders, key pieces)
+
+### Budget Optimization Tips
+
+1. **Check the price gap** - Some cards have minimal LP discount while others have 25%+ savings
+2. **Read seller descriptions** - "LP" varies between sellers; check photos when available
+3. **Consider the card's role** - A sleeved Lightning Greaves looks the same as NM in play
+4. **Buy smart for upgrades** - Put budget savings toward better cards, not just cheaper copies
+
+### Using Our Lowest Listing Feature
+
+When available, we show the lowest current listing price alongside the market price. This helps you:
+
+- Spot cards currently listed below market value
+- Find quick deals on high-value cards
+- Compare actual buying prices vs. market averages
+
+Remember: The lowest listing may be for LP or MP condition. Always verify the condition before purchasing.
+    `,
+  },
+  {
     slug: 'what-is-commander-precon-roi',
     title: 'What is Commander Precon ROI?',
     description: 'Learn how to evaluate the value of Magic: The Gathering Commander preconstructed decks by calculating return on investment.',
