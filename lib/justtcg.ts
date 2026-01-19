@@ -161,7 +161,7 @@ export const fetchJustTCGCards = async (
 
     return data;
   } catch (error) {
-    console.error('JustTCG batch fetch error:', error);
+    console.error('JustTCG batch fetch error:', error instanceof Error ? error.message : 'Unknown error');
     throw error;
   }
 };

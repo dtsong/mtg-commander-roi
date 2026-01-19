@@ -68,6 +68,7 @@ export default function AddDeckModal({ isOpen, onClose, onAdd }: AddDeckModalPro
               onChange={(e) => setFormData({ ...formData, name: e.target.value })}
               className="w-full bg-slate-700 border border-slate-600 rounded-lg px-3 py-2 text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
               placeholder="e.g., My Custom Deck"
+              maxLength={100}
               required
             />
           </div>
@@ -80,6 +81,7 @@ export default function AddDeckModal({ isOpen, onClose, onAdd }: AddDeckModalPro
               onChange={(e) => setFormData({ ...formData, set: e.target.value })}
               className="w-full bg-slate-700 border border-slate-600 rounded-lg px-3 py-2 text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
               placeholder="e.g., Commander 2024"
+              maxLength={100}
             />
           </div>
 

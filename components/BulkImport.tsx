@@ -28,7 +28,7 @@ export default function BulkImport({ onImport }: BulkImportProps) {
         const rawQuantity = parseInt(match[1]) || 1;
         const quantity = Math.min(rawQuantity, MAX_QUANTITY_PER_CARD);
         const name = match[2].trim();
-        if (name) {
+        if (name && name.length <= 200) {
           cards.push({ name, quantity });
         }
       }
@@ -99,6 +99,7 @@ export default function BulkImport({ onImport }: BulkImportProps) {
         onChange={(e) => setText(e.target.value)}
         placeholder={`Paste decklist here (max ${MAX_CARDS} cards)...\nFormat: 1 Sol Ring\nor just: Sol Ring`}
         className="w-full h-32 bg-slate-700 border border-slate-600 rounded-lg px-3 py-2 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-purple-500 resize-none font-mono text-sm"
+        maxLength={50000}
       />
 
       {warning && (
