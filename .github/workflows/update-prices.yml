@@ -2,7 +2,9 @@ name: Update Prices
 
 on:
   schedule:
-    - cron: '0 17 * * *' # 9 AM Pacific (5 PM UTC)
+    - cron: '0 17 * * *' # 9 AM Pacific
+    - cron: '0 20 * * *' # 12 PM Pacific
+    - cron: '0 0 * * *'  # 4 PM Pacific
   workflow_dispatch: # Manual trigger
 
 jobs:
