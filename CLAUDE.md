@@ -33,6 +33,8 @@ bun lint       # Linting
 - 100ms rate limit between requests
 - Retry with exponential backoff on failures
 - Bulk card lookups: 75 cards per batch via collection endpoint
+- 30s timeout on all fetch requests
+- Rate limiting is per-process (module-level state). Multiple serverless instances share no state; proper distributed rate limiting would require Redis or similar.
 
 ### Price Caching
 - localStorage with TTL for client-side caching

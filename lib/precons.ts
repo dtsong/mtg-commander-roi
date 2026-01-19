@@ -112,10 +112,10 @@ export async function loadDecklists(): Promise<Decklists> {
     const res = await fetch('/data/decklists.json');
     decklistsCache = await res.json() as Decklists;
   } else {
-    const fs = await import('fs');
+    const { readFile } = await import('fs/promises');
     const path = await import('path');
     const filePath = path.join(process.cwd(), 'public', 'data', 'decklists.json');
-    decklistsCache = JSON.parse(fs.readFileSync(filePath, 'utf-8')) as Decklists;
+    decklistsCache = JSON.parse(await readFile(filePath, 'utf-8')) as Decklists;
   }
   return decklistsCache;
 }
