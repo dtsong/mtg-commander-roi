@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-01-20T20:41:18.317Z",
+  "updatedAt": "2026-01-21T01:01:51.895Z",
   "decks": {
     "ltc-elven-council": {
       "totalValue": 96.87,
@@ -1283,7 +1283,7 @@
       ]
     },
     "ecc-blight-curse": {
-      "totalValue": 55.89,
+      "totalValue": 55.82,
       "cardCount": 100,
       "cards": [
         {
@@ -1319,7 +1319,7 @@
         {
           "name": "The Reaper, King No More",
           "quantity": 1,
-          "usd": "1.56"
+          "usd": "1.51"
         },
         {
           "name": "Assassin's Trophy",
@@ -1359,7 +1359,7 @@
         {
           "name": "Auntie Ool, Cursewretch",
           "quantity": 1,
-          "usd": "0.96",
+          "usd": "0.94",
           "isCommander": true
         },
         {
