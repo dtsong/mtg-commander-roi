@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import { List } from 'lucide-react';
+import { List, Package } from 'lucide-react';
 import CardPriceRow from './CardPriceRow';
 import { sortCardsByValue } from '@/lib/calculations';
 
@@ -45,7 +45,13 @@ export default function CardList({ cards, loading }: CardListProps) {
           <List className="w-5 h-5" />
           All Cards
         </h3>
-        <p className="text-slate-400 text-center py-8">No cards loaded</p>
+        <div className="text-center py-8">
+          <Package className="w-8 h-8 mx-auto text-slate-500 mb-2" />
+          <p className="text-slate-400">No cards loaded</p>
+          <p className="text-sm text-slate-500 mt-1">
+            Select a deck from the sidebar to view its cards
+          </p>
+        </div>
       </div>
     );
   }

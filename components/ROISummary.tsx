@@ -1,4 +1,4 @@
-import { DollarSign, Tag, TrendingUp, Truck, AlertCircle } from 'lucide-react';
+import { DollarSign, Tag, TrendingUp, Truck, AlertCircle, Loader2 } from 'lucide-react';
 import { formatCurrency, calculateROI, calculateDistroROI, getDistroCost, getROIVerdict, formatPercentage } from '@/lib/calculations';
 import type { PreconDeck } from '@/types';
 
@@ -83,7 +83,7 @@ export default function ROISummary({ deck, totalValue, loading, excludedCount = 
               Current Value
             </div>
             <div className="text-lg font-bold text-white">
-              {loading ? '...' : formatCurrency(totalValue)}
+              {loading ? <Loader2 className="w-4 h-4 animate-spin inline" /> : formatCurrency(totalValue)}
             </div>
           </div>
 
@@ -93,7 +93,7 @@ export default function ROISummary({ deck, totalValue, loading, excludedCount = 
               Profit (Distro)
             </div>
             <div className={`text-lg font-bold ${totalValue - distroCost >= 0 ? 'text-green-400' : 'text-red-400'}`}>
-              {loading ? '...' : `${totalValue - distroCost >= 0 ? '+' : ''}${formatCurrency(totalValue - distroCost)}`}
+              {loading ? <Loader2 className="w-4 h-4 animate-spin inline" /> : `${totalValue - distroCost >= 0 ? '+' : ''}${formatCurrency(totalValue - distroCost)}`}
             </div>
           </div>
         </div>

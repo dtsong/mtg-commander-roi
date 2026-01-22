@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback } from 'react';
 import dynamic from 'next/dynamic';
+import { RefreshCw } from 'lucide-react';
 import Header from '@/components/Header';
 import DeckSelector from '@/components/DeckSelector';
 import ROISummary from '@/components/ROISummary';
@@ -9,6 +10,7 @@ import CardSearch from '@/components/CardSearch';
 import BulkImport from '@/components/BulkImport';
 import CardList from '@/components/CardList';
 import TopValueCards from '@/components/TopValueCards';
+import { useToast } from '@/components/ui/ToastProvider';
 
 const AddDeckModal = dynamic(() => import('@/components/AddDeckModal'));
 import { fetchDeckPrices, getCardPrice, mergeLowestListings } from '@/lib/scryfall';
@@ -25,6 +27,7 @@ export default function Home() {
   const [error, setError] = useState<string | null>(null);
   const [customDecks, setCustomDecks] = useState<PreconDeck[]>([]);
   const [showAddModal, setShowAddModal] = useState(false);
+  const { toast } = useToast();
 
   const totalValue = calculateTotalValue(cards);
 
@@ -38,19 +41,24 @@ export default function Home() {
     try {
       const deckCards = await getDeckCards(deck.id);
       if (!deckCards.length) {
-        setError('No deck list found for this deck');
+        const errorMsg = `No deck list found for "${deck.name}"`;
+        setError(errorMsg);
+        toast(errorMsg, 'error');
         return;
       }
       const priceResult = await fetchDeckPrices(deckCards);
       const cardsWithListings = await mergeLowestListings(priceResult.cards);
       setCards(cardsWithListings);
+      toast(`Loaded ${cardsWithListings.length} cards for "${deck.name}"`, 'success');
     } catch (err) {
-      setError('Failed to load deck prices');
+      const errorMsg = `Failed to load prices for "${deck.name}"`;
+      setError(errorMsg);
+      toast(errorMsg, 'error');
       console.error(err);
     } finally {
       setLoading(false);
     }
-  }, []);
+  }, [toast]);
 
   useEffect(() => {
     if (selectedDeck) {
@@ -89,8 +97,25 @@ export default function Home() {
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 py-6">
         {error && (
-          <div className="mb-4 p-4 bg-red-500/20 border border-red-500 rounded-lg text-red-300">
-            {error}
+          <div className="mb-4 p-4 bg-red-500/20 border border-red-500 rounded-lg">
+            <div className="flex items-center justify-between">
+              <div>
+                <p className="text-red-300 font-medium">{error}</p>
+                <p className="text-red-400/80 text-sm mt-1">
+                  Check your connection and try again
+                </p>
+              </div>
+              {selectedDeck && (
+                <button
+                  onClick={() => loadDeckCards(selectedDeck)}
+                  disabled={loading}
+                  className="flex items-center gap-2 px-3 py-1.5 bg-red-500/30 hover:bg-red-500/40 text-red-200 rounded-lg transition-colors disabled:opacity-50"
+                >
+                  <RefreshCw className={`w-4 h-4 ${loading ? 'animate-spin' : ''}`} />
+                  Retry
+                </button>
+              )}
+            </div>
           </div>
         )}
 

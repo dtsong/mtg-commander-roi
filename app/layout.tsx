@@ -4,6 +4,7 @@ import Script from 'next/script';
 import { Analytics } from '@vercel/analytics/next';
 import CookieConsent from '@/components/CookieConsent';
 import Footer from '@/components/Footer';
+import { ToastProvider } from '@/components/ui/ToastProvider';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://mtg-commander-roi.vercel.app'),
@@ -67,9 +68,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </Script>
       </head>
       <body className="min-h-screen flex flex-col bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
-        <div className="flex-1">{children}</div>
-        <Footer />
-        <CookieConsent />
+        <ToastProvider>
+          <div className="flex-1">{children}</div>
+          <Footer />
+          <CookieConsent />
+        </ToastProvider>
         <Analytics />
       </body>
     </html>
