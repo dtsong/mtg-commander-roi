@@ -109,15 +109,20 @@ export default function ComparePage() {
 
   const handleRefreshAll = async () => {
     setRefreshingAll(true);
-    const total = PRECON_DATABASE.length;
+    const BATCH_SIZE = 3;
 
-    for (let i = 0; i < total; i++) {
-      const deck = PRECON_DATABASE[i];
-      setRefreshProgress({ current: i + 1, total, currentDeck: deck.name });
-      await fetchDeckPrice(deck);
+    for (let i = 0; i < PRECON_DATABASE.length; i += BATCH_SIZE) {
+      const batch = PRECON_DATABASE.slice(i, i + BATCH_SIZE);
+      setRefreshProgress({
+        current: Math.min(i + BATCH_SIZE, PRECON_DATABASE.length),
+        total: PRECON_DATABASE.length,
+        currentDeck: batch[0].name,
+      });
 
-      if (i < total - 1) {
-        await new Promise(r => setTimeout(r, 500));
+      await Promise.all(batch.map(deck => fetchDeckPrice(deck)));
+
+      if (i + BATCH_SIZE < PRECON_DATABASE.length) {
+        await new Promise(r => setTimeout(r, 300));
       }
     }
 

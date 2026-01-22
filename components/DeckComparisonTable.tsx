@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useCallback, memo } from 'react';
 import Link from 'next/link';
 import { ChevronUp, ChevronDown, RefreshCw, AlertTriangle, Loader2 } from 'lucide-react';
 import ColorIndicator from './ColorIndicator';
@@ -16,7 +16,7 @@ interface SortHeaderProps {
   onSort: (key: string) => void;
 }
 
-const SortHeader = ({ label, sortKey, currentSort, onSort }: SortHeaderProps) => {
+const SortHeader = memo(function SortHeader({ label, sortKey, currentSort, onSort }: SortHeaderProps) {
   const isActive = currentSort.key === sortKey;
   const Icon = isActive && currentSort.direction === 'asc' ? ChevronUp : ChevronDown;
 
@@ -31,7 +31,7 @@ const SortHeader = ({ label, sortKey, currentSort, onSort }: SortHeaderProps) =>
       <Icon className={`w-4 h-4 ${isActive ? 'opacity-100' : 'opacity-30'}`} />
     </button>
   );
-};
+});
 
 const ROI_FILTERS = [
   { value: 'all', label: 'All' },
@@ -70,12 +70,12 @@ export default function DeckComparisonTable({
     return uniqueSets.sort();
   }, [decks]);
 
-  const handleSort = (key: string) => {
+  const handleSort = useCallback((key: string) => {
     setSort(prev => ({
       key,
       direction: prev.key === key && prev.direction === 'desc' ? 'asc' : 'desc',
     }));
-  };
+  }, []);
 
   const filteredAndSortedDecks = useMemo(() => {
     const decksWithMetrics = decks.map(deck => {
@@ -169,19 +169,23 @@ export default function DeckComparisonTable({
   }, [decks, filter, sort, priceData]);
 
   const stats = useMemo(() => {
-    const loadedDecks = decks.filter(d => priceData[d.id]);
-    const distroRois = loadedDecks.map(d => {
-      const distroCost = getDistroCost(d.msrp);
-      return calculateDistroROI(priceData[d.id].totalValue, distroCost);
-    });
-    const avgDistroRoi = distroRois.length > 0 ? distroRois.reduce((a, b) => a + b, 0) / distroRois.length : 0;
-    const positiveCount = distroRois.filter(r => r > 0).length;
-    const buyCount = distroRois.filter(r => r > 15).length;
+    let loaded = 0, sum = 0, positiveCount = 0, buyCount = 0;
+
+    for (const deck of decks) {
+      const data = priceData[deck.id];
+      if (!data) continue;
+      loaded++;
+      const distroCost = getDistroCost(deck.msrp);
+      const roi = calculateDistroROI(data.totalValue, distroCost);
+      sum += roi;
+      if (roi > 0) positiveCount++;
+      if (roi > 15) buyCount++;
+    }
 
     return {
       total: decks.length,
-      loaded: loadedDecks.length,
-      avgDistroRoi,
+      loaded,
+      avgDistroRoi: loaded > 0 ? sum / loaded : 0,
       positiveCount,
       buyCount,
     };

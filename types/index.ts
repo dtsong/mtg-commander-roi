@@ -72,6 +72,7 @@ export interface CardWithPrice {
   isCommander?: boolean;
   tcgplayerId?: number;
   cardmarketId?: number;
+  lowestListing?: number | null;
 }
 
 export interface TopCard {
@@ -134,6 +135,17 @@ export interface StaticCardEntry {
   tcgplayerId?: number;
   cardmarketId?: number;
   purchaseUrls?: PurchaseUrls;
+}
+
+export interface LowestListingEntry {
+  name: string;
+  lowestListing: number;
+  tcgplayerUrl?: string;
+}
+
+export interface LowestListingsData {
+  updatedAt: string;
+  cards: Record<string, LowestListingEntry>;
 }
 
 export interface TrendingCard {

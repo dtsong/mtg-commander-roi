@@ -2,7 +2,9 @@ name: Update Prices
 
 on:
   schedule:
-    - cron: '0 17 * * *' # 9 AM Pacific (5 PM UTC)
+    - cron: '0 17 * * *' # 9 AM Pacific
+    - cron: '0 20 * * *' # 12 PM Pacific
+    - cron: '0 0 * * *'  # 4 PM Pacific
   workflow_dispatch: # Manual trigger
 
 jobs:
@@ -15,16 +17,14 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
 
       - name: Install dependencies
-        run: npm ci
+        run: bun install --frozen-lockfile
 
       - name: Update prices
-        run: node scripts/update-prices.js
+        run: bun run scripts/update-prices.ts
 
       - name: Commit and push changes
         run: |

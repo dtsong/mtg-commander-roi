@@ -7,6 +7,7 @@ import type {
   FetchProgress,
   StaticPricesData,
   StaticCardData,
+  LowestListingsData,
 } from '@/types';
 
 const SCRYFALL_API = 'https://api.scryfall.com';
@@ -15,6 +16,20 @@ const MAX_RETRIES = 4;
 const CLIENT_RATE_LIMIT = 50;
 const CLIENT_RATE_WINDOW_MS = 60 * 1000;
 const USER_AGENT = 'MTG-Commander-ROI/1.0';
+const FETCH_TIMEOUT_MS = 30000;
+
+const fetchWithTimeout = async (
+  url: string,
+  options: RequestInit = {}
+): Promise<Response> => {
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
+  try {
+    return await fetch(url, { ...options, signal: controller.signal });
+  } finally {
+    clearTimeout(timeoutId);
+  }
+};
 
 let lastRequestTime = 0;
 let clientRequestCount = 0;
@@ -74,24 +89,37 @@ const rateLimitedFetch = async <T>(url: string, retryCount: number = 0): Promise
   }
   lastRequestTime = Date.now();
 
-  const response = await fetch(url, {
-    headers: {
-      'Accept': 'application/json',
-      'User-Agent': USER_AGENT,
-    },
-  });
+  try {
+    const response = await fetchWithTimeout(url, {
+      headers: {
+        'Accept': 'application/json',
+        'User-Agent': USER_AGENT,
+      },
+    });
 
-  if (response.status === 429 && retryCount < MAX_RETRIES) {
-    const delay = Math.pow(2, retryCount) * 1000;
-    console.log(`Rate limited, retrying in ${delay}ms...`);
-    await sleep(delay);
-    return rateLimitedFetch<T>(url, retryCount + 1);
-  }
+    if (response.status === 429 && retryCount < MAX_RETRIES) {
+      const delay = Math.pow(2, retryCount) * 1000;
+      console.log(`Rate limited, retrying in ${delay}ms...`);
+      await sleep(delay);
+      return rateLimitedFetch<T>(url, retryCount + 1);
+    }
 
-  if (!response.ok) {
-    throw new Error(`Scryfall API Error: ${response.status}`);
+    if (!response.ok) {
+      if (response.status === 404) {
+        throw new Error('Card not found');
+      }
+      if (response.status === 503) {
+        throw new Error('Scryfall is temporarily unavailable. Please try again.');
+      }
+      throw new Error(`Scryfall API Error: ${response.status} - ${response.statusText}`);
+    }
+    return response.json() as Promise<T>;
+  } catch (error) {
+    if (error instanceof Error && error.name === 'AbortError') {
+      throw new Error('Request timed out. Please try again.');
+    }
+    throw error;
   }
-  return response.json() as Promise<T>;
 };
 
 let staticPricesCache: StaticPricesData | null = null;
@@ -221,25 +249,35 @@ export const getCardsByNames = async (
   for (let i = 0; i < identifiers.length; i += BATCH_SIZE) {
     const batch = identifiers.slice(i, i + BATCH_SIZE);
 
-    const response = await fetch(`${SCRYFALL_API}/cards/collection`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json',
-        'User-Agent': USER_AGENT,
-      },
-      body: JSON.stringify({ identifiers: batch }),
-    });
+    try {
+      const response = await fetchWithTimeout(`${SCRYFALL_API}/cards/collection`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+          'User-Agent': USER_AGENT,
+        },
+        body: JSON.stringify({ identifiers: batch }),
+      });
 
-    if (!response.ok) {
-      throw new Error(`Scryfall Collection API Error: ${response.status}`);
-    }
+      if (!response.ok) {
+        if (response.status === 503) {
+          throw new Error('Scryfall is temporarily unavailable. Please try again.');
+        }
+        throw new Error(`Scryfall Collection API Error: ${response.status} - ${response.statusText}`);
+      }
 
-    const data = await response.json() as ScryfallCollectionResponse;
-    found.push(...(data.data || []));
+      const data = await response.json() as ScryfallCollectionResponse;
+      found.push(...(data.data || []));
 
-    if (data.not_found) {
-      notFound.push(...data.not_found.map(nf => nf.name));
+      if (data.not_found) {
+        notFound.push(...data.not_found.map(nf => nf.name));
+      }
+    } catch (error) {
+      if (error instanceof Error && error.name === 'AbortError') {
+        throw new Error('Request timed out. Please try again.');
+      }
+      throw error;
     }
 
     if (onProgress) {
@@ -308,22 +346,32 @@ export const fetchCardsPrices = async (
   for (let i = 0; i < identifiers.length; i += BATCH_SIZE) {
     const batch = identifiers.slice(i, i + BATCH_SIZE);
 
-    const response = await fetch(`${SCRYFALL_API}/cards/collection`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json',
-        'User-Agent': USER_AGENT,
-      },
-      body: JSON.stringify({ identifiers: batch }),
-    });
+    try {
+      const response = await fetchWithTimeout(`${SCRYFALL_API}/cards/collection`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+          'User-Agent': USER_AGENT,
+        },
+        body: JSON.stringify({ identifiers: batch }),
+      });
 
-    if (!response.ok) {
-      throw new Error(`Scryfall Collection API Error: ${response.status}`);
+      if (!response.ok) {
+        if (response.status === 503) {
+          throw new Error('Scryfall is temporarily unavailable. Please try again.');
+        }
+        throw new Error(`Scryfall Collection API Error: ${response.status} - ${response.statusText}`);
+      }
+
+      const data = await response.json() as ScryfallCollectionResponse;
+      results.push(...(data.data || []));
+    } catch (error) {
+      if (error instanceof Error && error.name === 'AbortError') {
+        throw new Error('Request timed out. Please try again.');
+      }
+      throw error;
     }
-
-    const data = await response.json() as ScryfallCollectionResponse;
-    results.push(...(data.data || []));
 
     if (onProgress) {
       const cachedCount = cardList.length - uncachedCards.length;
@@ -386,4 +434,40 @@ export const fetchDeckPrices = async (
     topCards: cardPrices.slice(0, 5),
     cardCount: deckCards.reduce((sum, c) => sum + c.quantity, 0),
   };
+};
+
+let lowestListingsCache: LowestListingsData | null = null;
+
+export const loadLowestListings = async (): Promise<LowestListingsData | null> => {
+  if (lowestListingsCache) return lowestListingsCache;
+
+  try {
+    const response = await fetch('/data/lowest-listings.json');
+    if (!response.ok) return null;
+    lowestListingsCache = await response.json() as LowestListingsData;
+    return lowestListingsCache;
+  } catch {
+    return null;
+  }
+};
+
+export const getLowestListingForCard = async (cardName: string): Promise<number | null> => {
+  const data = await loadLowestListings();
+  if (!data?.cards?.[cardName]) return null;
+  return data.cards[cardName].lowestListing;
+};
+
+export const mergeLowestListings = async (
+  cards: CardWithPrice[]
+): Promise<CardWithPrice[]> => {
+  const listings = await loadLowestListings();
+  if (!listings) return cards;
+
+  return cards.map(card => {
+    const listing = listings.cards[card.name];
+    return {
+      ...card,
+      lowestListing: listing?.lowestListing ?? null,
+    };
+  });
 };

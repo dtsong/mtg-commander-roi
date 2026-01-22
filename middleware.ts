@@ -9,6 +9,8 @@ interface RateLimitEntry {
   resetTime: number;
 }
 
+// In-memory rate limiting: works for single-instance deployments.
+// For horizontal scaling (multiple instances), use Redis or similar distributed store.
 const rateLimitStore = new Map<string, RateLimitEntry>();
 
 function cleanupExpiredEntries() {

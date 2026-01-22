@@ -33,6 +33,8 @@ bun lint       # Linting
 - 100ms rate limit between requests
 - Retry with exponential backoff on failures
 - Bulk card lookups: 75 cards per batch via collection endpoint
+- 30s timeout on all fetch requests
+- Rate limiting is per-process (module-level state). Multiple serverless instances share no state; proper distributed rate limiting would require Redis or similar.
 
 ### Price Caching
 - localStorage with TTL for client-side caching
@@ -57,11 +59,41 @@ bun lint       # Linting
 - `update-prices.ts`: Fetch bulk Scryfall data, generate static pricing
 - `import-decklist.ts`: Import deck lists from external sources
 - `fetch-trending.ts`: Fetch trending cards from EDHREC
+- `fetch-lowest-listings.ts`: Scrape TCGplayer lowest listings (manual, see below)
 
 ### Data
 - 98 precon decks (2022-2026)
 - Decklists: `public/data/decklists.json`
 - Static prices: `public/data/prices.json`
+- Lowest listings: `public/data/lowest-listings.json` (manual updates)
+
+### Lowest Listings Scraper (Manual)
+Scrapes TCGplayer for lowest listing prices on high-value cards in positive-ROI decks.
+
+```bash
+# First-time setup
+bun add playwright
+bunx playwright install chromium
+
+# Run scraper (targets cards >$5 in positive ROI decks)
+bun scripts/fetch-lowest-listings.ts
+
+# Options
+--limit N          # Limit to N cards
+--skip-existing    # Skip cards already in lowest-listings.json
+--visible          # Show browser window (for debugging)
+--min-price N      # Adjust minimum price threshold (default: 5)
+--watchlist-only   # Only scrape watchlist cards, skip auto-discovery
+--batch-pause N    # Pause N seconds every 50 cards (avoids rate limits)
+```
+
+Watchlist file at `public/data/watchlist.json` prioritizes specific cards regardless of price.
+Output saved to `public/data/lowest-listings.json`. Commit after running.
+
+### JustTCG API (Optional)
+Alternative price source with condition-specific pricing. Set `JUSTTCG_API_KEY` env var.
+Rate limited (free tier: 10 req/min, 100/day) - not suitable for bulk updates.
+See `lib/justtcg.ts` for usage.
 
 ## React Guidelines
 

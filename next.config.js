@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  experimental: {
+    optimizePackageImports: ['lucide-react'],
+  },
   images: {
     remotePatterns: [
       {
@@ -30,6 +33,10 @@ const nextConfig = {
             value: 'camera=(), microphone=(), geolocation=()',
           },
           {
+            key: 'Strict-Transport-Security',
+            value: 'max-age=31536000; includeSubDomains',
+          },
+          {
             key: 'Content-Security-Policy',
             value: [
               "default-src 'self'",
@@ -40,6 +47,9 @@ const nextConfig = {
               "connect-src 'self' https://api.scryfall.com https://va.vercel-scripts.com https://pagead2.googlesyndication.com",
               "frame-src https://googleads.g.doubleclick.net https://pagead2.googlesyndication.com",
               "frame-ancestors 'none'",
+              "base-uri 'self'",
+              "form-action 'self' https://formspree.io",
+              "upgrade-insecure-requests",
             ].join('; '),
           },
         ],

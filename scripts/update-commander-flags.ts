@@ -1,7 +1,7 @@
 import { readFileSync, writeFileSync } from 'fs';
 import { dirname, join } from 'path';
 import { fileURLToPath } from 'url';
-import type { DeckCardEntry, Decklists } from '../types';
+import type { Decklists } from '../types';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DECKLISTS_PATH = join(__dirname, '..', 'public', 'data', 'decklists.json');

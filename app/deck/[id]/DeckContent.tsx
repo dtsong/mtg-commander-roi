@@ -1,11 +1,11 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { ArrowLeft, Loader2 } from 'lucide-react';
+import { ArrowLeft, Loader2, RefreshCw } from 'lucide-react';
 import { getPreconById, getDeckCards } from '@/lib/precons';
-import { getStaticDeckPrices, fetchDeckPrices, getCardByName, getCardImage } from '@/lib/scryfall';
+import { getStaticDeckPrices, fetchDeckPrices, getCardByName, getCardImage, mergeLowestListings } from '@/lib/scryfall';
 import ColorIndicator from '@/components/ColorIndicator';
 import ROISummary from '@/components/ROISummary';
 import TopValueCards from '@/components/TopValueCards';
@@ -15,6 +15,7 @@ import type { PreconDeck, CardWithPrice } from '@/types';
 interface FormattedCard extends CardWithPrice {
   id: string;
   isCommander?: boolean;
+  lowestListing?: number | null;
 }
 
 export default function DeckContent({ deckId }: { deckId: string }) {
@@ -27,96 +28,133 @@ export default function DeckContent({ deckId }: { deckId: string }) {
   const [excludedCount, setExcludedCount] = useState(0);
   const [commanderImage, setCommanderImage] = useState<string | null>(null);
 
+  const [retryKey, setRetryKey] = useState(0);
+
+  const handleRetry = useCallback(() => {
+    setRetryKey(k => k + 1);
+  }, []);
+
   useEffect(() => {
+    let cancelled = false;
+
     const loadDeckData = async () => {
+      setLoading(true);
+      setError(null);
+
       const deckInfo = getPreconById(deckId);
       if (!deckInfo) {
-        setError('Deck not found');
-        setLoading(false);
+        if (!cancelled) {
+          setError('Deck not found');
+          setLoading(false);
+        }
         return;
       }
-      setDeck(deckInfo);
+      if (!cancelled) setDeck(deckInfo);
 
       const deckPrices = await getStaticDeckPrices(deckId);
 
       if (deckPrices) {
-        setFetchSource('static');
-        const formattedCards: FormattedCard[] = deckPrices.cards.map((card, index) => ({
+        if (!cancelled) setFetchSource('static');
+        const cardsWithListings = await mergeLowestListings(deckPrices.cards);
+        const formattedCards: FormattedCard[] = cardsWithListings.map((card, index) => ({
           id: `${card.name}-${index}`,
           name: card.name,
           quantity: card.quantity,
           price: card.price,
           total: card.total,
           isCommander: card.isCommander,
+          lowestListing: card.lowestListing,
         }));
         const cardsWithoutPrice = formattedCards.filter(c => c.price === 0 || c.price === null);
-        setExcludedCount(cardsWithoutPrice.length);
-        setCards(formattedCards);
-        setTotalValue(deckPrices.totalValue);
+        if (!cancelled) {
+          setExcludedCount(cardsWithoutPrice.length);
+          setCards(formattedCards);
+          setTotalValue(deckPrices.totalValue);
+          setLoading(false);
+        }
 
         const commanderCard = formattedCards.find(c => c.isCommander) || formattedCards[0];
         if (commanderCard) {
-          const commander = await getCardByName(commanderCard.name);
-          if (commander) {
-            setCommanderImage(getCardImage(commander));
-          }
+          getCardByName(commanderCard.name).then(commander => {
+            if (commander && !cancelled) setCommanderImage(getCardImage(commander));
+          });
         }
-
-        setLoading(false);
         return;
       }
 
       const deckCards = await getDeckCards(deckId);
       if (!deckCards || deckCards.length === 0) {
-        setError('No decklist available for this deck');
-        setLoading(false);
+        if (!cancelled) {
+          setError('No decklist available for this deck');
+          setLoading(false);
+        }
         return;
       }
 
       try {
-        setFetchSource('live');
+        if (!cancelled) setFetchSource('live');
         const liveData = await fetchDeckPrices(deckCards);
-        const formattedCards: FormattedCard[] = liveData.cards.map((card, index) => ({
+        const cardsWithListings = await mergeLowestListings(liveData.cards);
+        const formattedCards: FormattedCard[] = cardsWithListings.map((card, index) => ({
           id: `${card.name}-${index}`,
           name: card.name,
           quantity: card.quantity,
           price: card.price,
           total: card.total,
           isCommander: card.isCommander,
+          lowestListing: card.lowestListing,
         }));
         const cardsWithoutPrice = formattedCards.filter(c => c.price === 0 || c.price === null);
-        setExcludedCount(cardsWithoutPrice.length);
-        setCards(formattedCards);
-        setTotalValue(liveData.totalValue);
+        if (!cancelled) {
+          setExcludedCount(cardsWithoutPrice.length);
+          setCards(formattedCards);
+          setTotalValue(liveData.totalValue);
+        }
 
         const commanderCard = liveData.cards.find(c => c.isCommander);
         if (commanderCard?.image) {
-          setCommanderImage(commanderCard.image);
+          if (!cancelled) setCommanderImage(commanderCard.image);
         } else if (liveData.cards.length > 0 && liveData.cards[0].image) {
-          setCommanderImage(liveData.cards[0].image);
+          if (!cancelled) setCommanderImage(liveData.cards[0].image);
         }
-      } catch {
-        setError('Failed to fetch card prices from Scryfall');
+      } catch (err) {
+        if (!cancelled) {
+          const message = err instanceof Error ? err.message : 'Failed to fetch card prices';
+          setError(message);
+        }
       }
 
-      setLoading(false);
+      if (!cancelled) setLoading(false);
     };
 
     loadDeckData();
-  }, [deckId]);
+
+    return () => {
+      cancelled = true;
+    };
+  }, [deckId, retryKey]);
 
   if (error) {
     return (
       <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 flex items-center justify-center">
         <div className="text-center">
           <p className="text-red-400 text-xl mb-4">{error}</p>
-          <Link
-            href="/compare"
-            className="text-purple-400 hover:text-purple-300 flex items-center gap-2 justify-center"
-          >
-            <ArrowLeft className="w-4 h-4" />
-            Back to Compare
-          </Link>
+          <div className="flex items-center gap-4 justify-center">
+            <button
+              onClick={handleRetry}
+              className="flex items-center gap-2 bg-purple-600 hover:bg-purple-500 text-white px-4 py-2 rounded-lg transition-colors"
+            >
+              <RefreshCw className="w-4 h-4" />
+              Try Again
+            </button>
+            <Link
+              href="/compare"
+              className="text-purple-400 hover:text-purple-300 flex items-center gap-2"
+            >
+              <ArrowLeft className="w-4 h-4" />
+              Back to Compare
+            </Link>
+          </div>
         </div>
       </div>
     );
@@ -175,16 +213,28 @@ export default function DeckContent({ deckId }: { deckId: string }) {
         <CardList cards={cards} loading={loading} />
 
         <footer className="pt-6 border-t border-slate-700 text-center text-sm text-slate-500">
-          Card data and prices provided by{' '}
-          <a
-            href="https://scryfall.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-purple-400 hover:text-purple-300"
-          >
-            Scryfall
-          </a>
-          . Prices update daily.
+          <p>
+            Card data provided by{' '}
+            <a
+              href="https://scryfall.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-purple-400 hover:text-purple-300"
+            >
+              Scryfall
+            </a>
+            . Market prices update daily.
+          </p>
+          <p className="mt-1">
+            All prices shown are for{' '}
+            <Link
+              href="/blog/understanding-card-conditions"
+              className="text-purple-400 hover:text-purple-300"
+            >
+              Near Mint (NM)
+            </Link>
+            {' '}condition.
+          </p>
         </footer>
       </main>
     </div>

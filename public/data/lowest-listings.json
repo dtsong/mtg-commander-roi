@@ -1,0 +1,1835 @@
+{
+  "updatedAt": "2026-01-19T08:08:54.715Z",
+  "cards": {
+    "Sol Ring": {
+      "name": "Sol Ring",
+      "lowestListing": 1.25,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/539393/magic-universes-beyond-fallout-sol-ring?page=1"
+    },
+    "Command Tower": {
+      "name": "Command Tower",
+      "lowestListing": 0.24,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/525809/magic-commander-the-lost-caverns-of-ixalan-command-tower?page=1"
+    },
+    "Jeska's Will": {
+      "name": "Jeska's Will",
+      "lowestListing": 38.99,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/535882/magic-commander-murders-at-karlov-manor-jeskas-will?page=1"
+    },
+    "Ghyrson Starn, Kelermorph": {
+      "name": "Ghyrson Starn, Kelermorph",
+      "lowestListing": 35.55,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/285866/magic-universes-beyond-warhammer-40000-ghyrson-starn-kelermorph?page=1"
+    },
+    "Zhulodok, Void Gorger": {
+      "name": "Zhulodok, Void Gorger",
+      "lowestListing": 30.79,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/496050/magic-commander-masters-zhulodok-void-gorger?page=1"
+    },
+    "Trouble in Pairs": {
+      "name": "Trouble in Pairs",
+      "lowestListing": 25.5,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/535640/magic-commander-murders-at-karlov-manor-trouble-in-pairs?page=1"
+    },
+    "Exalted Flamer of Tzeentch": {
+      "name": "Exalted Flamer of Tzeentch",
+      "lowestListing": 22.89,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/286168/magic-universes-beyond-warhammer-40000-exalted-flamer-of-tzeentch?page=1"
+    },
+    "Sliver Gravemother": {
+      "name": "Sliver Gravemother",
+      "lowestListing": 9.95,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/496064/magic-commander-masters-sliver-gravemother?page=1"
+    },
+    "Bloodthirster": {
+      "name": "Bloodthirster",
+      "lowestListing": 21.38,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/286158/magic-universes-beyond-warhammer-40000-bloodthirster?page=1"
+    },
+    "Nuka-Cola Vending Machine": {
+      "name": "Nuka-Cola Vending Machine",
+      "lowestListing": 16.5,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/522937/magic-universes-beyond-fallout-nuka-cola-vending-machine?page=1"
+    },
+    "Cavern-Hoard Dragon": {
+      "name": "Cavern-Hoard Dragon",
+      "lowestListing": 16.79,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/499732/magic-commander-the-lord-of-the-rings-tales-of-middle-earth-cavern-hoard-dragon?page=1"
+    },
+    "Darksteel Monolith": {
+      "name": "Darksteel Monolith",
+      "lowestListing": 17.32,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/506749/magic-commander-masters-darksteel-monolith?page=1"
+    },
+    "Cryptothrall": {
+      "name": "Cryptothrall",
+      "lowestListing": 17.25,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/286337/magic-universes-beyond-warhammer-40000-cryptothrall?page=1"
+    },
+    "Celestine, the Living Saint": {
+      "name": "Celestine, the Living Saint",
+      "lowestListing": 16.49,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/286481/magic-universes-beyond-warhammer-40000-celestine-the-living-saint?page=1"
+    },
+    "Reaver Titan": {
+      "name": "Reaver Titan",
+      "lowestListing": 18.71,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/286553/magic-universes-beyond-warhammer-40000-reaver-titan?page=1"
+    },
+    "The Wise Mothman": {
+      "name": "The Wise Mothman",
+      "lowestListing": 0.88,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/523032/magic-universes-beyond-fallout-the-wise-mothman?page=1"
+    },
+    "Shadow in the Warp": {
+      "name": "Shadow in the Warp",
+      "lowestListing": 16.82,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/285940/magic-universes-beyond-warhammer-40000-shadow-in-the-warp?page=1"
+    },
+    "Talon Gates of Madara": {
+      "name": "Talon Gates of Madara",
+      "lowestListing": 16.95,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/553235/magic-commander-modern-horizons-3-talon-gates-of-madara?page=1"
+    },
+    "Commissar Severina Raine": {
+      "name": "Commissar Severina Raine",
+      "lowestListing": 16.48,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/286459/magic-universes-beyond-warhammer-40000-commissar-severina-raine?page=1"
+    },
+    "Sceptre of Eternal Glory": {
+      "name": "Sceptre of Eternal Glory",
+      "lowestListing": 16.6,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/286351/magic-universes-beyond-warhammer-40000-sceptre-of-eternal-glory?page=1"
+    },
+    "Misleading Signpost": {
+      "name": "Misleading Signpost",
+      "lowestListing": 14.66,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/513861/magic-commander-wilds-of-eldraine-misleading-signpost?page=1"
+    },
+    "Brainstealer Dragon": {
+      "name": "Brainstealer Dragon",
+      "lowestListing": 11.9,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/273890/magic-commander-legends-battle-for-baldurs-gate-brainstealer-dragon?page=1"
+    },
+    "Exquisite Blood": {
+      "name": "Exquisite Blood",
+      "lowestListing": 12,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/525752/magic-commander-the-lost-caverns-of-ixalan-exquisite-blood?page=1"
+    },
+    "Biophagus": {
+      "name": "Biophagus",
+      "lowestListing": 14.5,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/285868/magic-universes-beyond-warhammer-40000-biophagus?page=1"
+    },
+    "Narci, Fable Singer": {
+      "name": "Narci, Fable Singer",
+      "lowestListing": 10.8,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/505956/magic-commander-masters-narci-fable-singer?page=1"
+    },
+    "Seize the Spotlight": {
+      "name": "Seize the Spotlight",
+      "lowestListing": 13,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/545286/magic-commander-outlaws-of-thunder-junction-seize-the-spotlight?page=1"
+    },
+    "Barrowgoyf": {
+      "name": "Barrowgoyf",
+      "lowestListing": 16.57,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/553662/magic-commander-modern-horizons-3-barrowgoyf?page=1"
+    },
+    "Marneus Calgar": {
+      "name": "Marneus Calgar",
+      "lowestListing": 10.52,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/285803/magic-universes-beyond-warhammer-40000-marneus-calgar?page=1"
+    },
+    "Canoptek Spyder": {
+      "name": "Canoptek Spyder",
+      "lowestListing": 12.49,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/286332/magic-universes-beyond-warhammer-40000-canoptek-spyder?page=1"
+    },
+    "Flayer of Loyalties": {
+      "name": "Flayer of Loyalties",
+      "lowestListing": 13,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/506761/magic-commander-masters-flayer-of-loyalties?page=1"
+    },
+    "Starfield of Nyx": {
+      "name": "Starfield of Nyx",
+      "lowestListing": 14.5,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/100096/magic-magic-origins-starfield-of-nyx?page=1"
+    },
+    "Malleable Impostor": {
+      "name": "Malleable Impostor",
+      "lowestListing": 16.49,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/513863/magic-commander-wilds-of-eldraine-malleable-impostor?page=1"
+    },
+    "Darkness": {
+      "name": "Darkness",
+      "lowestListing": 9,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/286364/magic-universes-beyond-warhammer-40000-darkness?page=1"
+    },
+    "Kindred Dominance": {
+      "name": "Kindred Dominance",
+      "lowestListing": 10.15,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/513731/magic-commander-wilds-of-eldraine-kindred-dominance?page=1"
+    },
+    "Raise the Palisade": {
+      "name": "Raise the Palisade",
+      "lowestListing": 9.49,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/499572/magic-commander-the-lord-of-the-rings-tales-of-middle-earth-raise-the-palisade?page=1"
+    },
+    "Sliver Hivelord": {
+      "name": "Sliver Hivelord",
+      "lowestListing": 15.88,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/505114/magic-commander-masters-sliver-hivelord?page=1"
+    },
+    "Ashaya, Soul of the Wild": {
+      "name": "Ashaya, Soul of the Wild",
+      "lowestListing": 15.32,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/221884/magic-zendikar-rising-ashaya-soul-of-the-wild?page=1"
+    },
+    "Persistent Constrictor": {
+      "name": "Persistent Constrictor",
+      "lowestListing": 13.8,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/578912/magic-commander-duskmourn-house-of-horror-persistent-constrictor?page=1"
+    },
+    "Relic of Sauron": {
+      "name": "Relic of Sauron",
+      "lowestListing": 11.75,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/499597/magic-commander-the-lord-of-the-rings-tales-of-middle-earth-relic-of-sauron?page=1"
+    },
+    "Danny Pink": {
+      "name": "Danny Pink",
+      "lowestListing": 13.49,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/519493/magic-universes-beyond-doctor-who-danny-pink?page=1"
+    },
+    "Tireless Provisioner": {
+      "name": "Tireless Provisioner",
+      "lowestListing": 2.4,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/240157/magic-modern-horizons-2-tireless-provisioner?page=1"
+    },
+    "Akroma's Will": {
+      "name": "Akroma's Will",
+      "lowestListing": 12.24,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/552925/magic-commander-modern-horizons-3-akromas-will?page=1"
+    },
+    "The Black Gate": {
+      "name": "The Black Gate",
+      "lowestListing": 12.81,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/499595/magic-commander-the-lord-of-the-rings-tales-of-middle-earth-the-black-gate?page=1"
+    },
+    "Silver Shroud Costume": {
+      "name": "Silver Shroud Costume",
+      "lowestListing": 10.98,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/539757/magic-universes-beyond-fallout-silver-shroud-costume?page=1"
+    },
+    "Ancient Greenwarden": {
+      "name": "Ancient Greenwarden",
+      "lowestListing": 12.81,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/590118/magic-foundations-jumpstart-ancient-greenwarden?page=1"
+    },
+    "Silent Arbiter": {
+      "name": "Silent Arbiter",
+      "lowestListing": 11.87,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/212165/magic-commander-2020-silent-arbiter?page=1"
+    },
+    "Birds of Paradise": {
+      "name": "Birds of Paradise",
+      "lowestListing": 8.99,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/656844/magic-commander-final-fantasy-paradise-chocobo-birds-of-paradise-borderless?page=1"
+    },
+    "Black Market Connections": {
+      "name": "Black Market Connections",
+      "lowestListing": 13.53,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/633079/magic-the-list-reprints-black-market-connections?page=1"
+    },
+    "Veyran, Voice of Duality": {
+      "name": "Veyran, Voice of Duality",
+      "lowestListing": 37,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/617983/magic-secret-lair-drop-series-veyran-voice-of-duality?page=1"
+    },
+    "Yavimaya, Cradle of Growth": {
+      "name": "Yavimaya, Cradle of Growth",
+      "lowestListing": 12.89,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/553219/magic-commander-modern-horizons-3-yavimaya-cradle-of-growth?page=1"
+    },
+    "Spark Double": {
+      "name": "Spark Double",
+      "lowestListing": 8.51,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/505737/magic-commander-masters-spark-double?page=1"
+    },
+    "Charismatic Conqueror": {
+      "name": "Charismatic Conqueror",
+      "lowestListing": 9.22,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/525710/magic-commander-the-lost-caverns-of-ixalan-charismatic-conqueror?page=1"
+    },
+    "Resurrection Orb": {
+      "name": "Resurrection Orb",
+      "lowestListing": 10.4,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/286348/magic-universes-beyond-warhammer-40000-resurrection-orb?page=1"
+    },
+    "Keeper of Secrets": {
+      "name": "Keeper of Secrets",
+      "lowestListing": 9.6,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/286037/magic-universes-beyond-warhammer-40000-keeper-of-secrets?page=1"
+    },
+    "Rise of the Eldrazi": {
+      "name": "Rise of the Eldrazi",
+      "lowestListing": 11.99,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/506621/magic-commander-masters-rise-of-the-eldrazi?page=1"
+    },
+    "Winged Boots": {
+      "name": "Winged Boots",
+      "lowestListing": 7.85,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/243754/magic-commander-adventures-in-the-forgotten-realms-winged-boots?page=1"
+    },
+    "Heroic Intervention": {
+      "name": "Heroic Intervention",
+      "lowestListing": 11.5,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/215550/magic-core-set-2021-heroic-intervention?page=1"
+    },
+    "Out of the Tombs": {
+      "name": "Out of the Tombs",
+      "lowestListing": 10.99,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/286268/magic-universes-beyond-warhammer-40000-out-of-the-tombs?page=1"
+    },
+    "Skittering Cicada": {
+      "name": "Skittering Cicada",
+      "lowestListing": 10,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/506767/magic-commander-masters-skittering-cicada?page=1"
+    },
+    "Necromancy": {
+      "name": "Necromancy",
+      "lowestListing": 10.01,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/222757/magic-the-list-reprints-necromancy?page=1"
+    },
+    "Vexilus Praetor": {
+      "name": "Vexilus Praetor",
+      "lowestListing": 11.15,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/286534/magic-universes-beyond-warhammer-40000-vexilus-praetor?page=1"
+    },
+    "Syphon Sliver": {
+      "name": "Syphon Sliver",
+      "lowestListing": 8,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/505948/magic-commander-masters-syphon-sliver?page=1"
+    },
+    "Callidus Assassin": {
+      "name": "Callidus Assassin",
+      "lowestListing": 11.99,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/286542/magic-universes-beyond-warhammer-40000-callidus-assassin?page=1"
+    },
+    "Everybody Lives!": {
+      "name": "Everybody Lives!",
+      "lowestListing": 9.17,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/518879/magic-universes-beyond-doctor-who-everybody-lives?page=1"
+    },
+    "Glen Elendra Archmage": {
+      "name": "Glen Elendra Archmage",
+      "lowestListing": 9.5,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/513653/magic-commander-wilds-of-eldraine-glen-elendra-archmage?page=1"
+    },
+    "And They Shall Know No Fear": {
+      "name": "And They Shall Know No Fear",
+      "lowestListing": 10.2,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/286461/magic-universes-beyond-warhammer-40000-and-they-shall-know-no-fear?page=1"
+    },
+    "It That Betrays": {
+      "name": "It That Betrays",
+      "lowestListing": 22.24,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/514508/magic-secret-lair-drop-series-it-that-betrays?page=1"
+    },
+    "Auton Soldier": {
+      "name": "Auton Soldier",
+      "lowestListing": 10.42,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/519779/magic-universes-beyond-doctor-who-auton-soldier?page=1"
+    },
+    "Codsworth, Handy Helper": {
+      "name": "Codsworth, Handy Helper",
+      "lowestListing": 9.3,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/539629/magic-universes-beyond-fallout-codsworth-handy-helper?page=1"
+    },
+    "Sundown Pass": {
+      "name": "Sundown Pass",
+      "lowestListing": 5.67,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/609889/magic-innistrad-remastered-sundown-pass?page=1"
+    },
+    "Cybermen Squadron": {
+      "name": "Cybermen Squadron",
+      "lowestListing": 10.39,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/519739/magic-universes-beyond-doctor-who-cybermen-squadron?page=1"
+    },
+    "Ureni of the Unwritten": {
+      "name": "Ureni of the Unwritten",
+      "lowestListing": 4.05,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/623916/magic-commander-tarkir-dragonstorm-ureni-of-the-unwritten-borderless?page=1"
+    },
+    "Alela, Cunning Conqueror": {
+      "name": "Alela, Cunning Conqueror",
+      "lowestListing": 33.99,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/512238/magic-commander-wilds-of-eldraine-alela-cunning-conqueror?page=1"
+    },
+    "Thunderhawk Gunship": {
+      "name": "Thunderhawk Gunship",
+      "lowestListing": 9.89,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/286555/magic-universes-beyond-warhammer-40000-thunderhawk-gunship?page=1"
+    },
+    "Power Fist": {
+      "name": "Power Fist",
+      "lowestListing": 9.34,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/540931/magic-universes-beyond-fallout-power-fist?page=1"
+    },
+    "Ramunap Excavator": {
+      "name": "Ramunap Excavator",
+      "lowestListing": 5.57,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/137158/magic-prerelease-cards-ramunap-excavator?page=1"
+    },
+    "Anikthea, Hand of Erebos": {
+      "name": "Anikthea, Hand of Erebos",
+      "lowestListing": 4.61,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/496058/magic-commander-masters-anikthea-hand-of-erebos?page=1"
+    },
+    "Canoptek Scarab Swarm": {
+      "name": "Canoptek Scarab Swarm",
+      "lowestListing": 9.25,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/286331/magic-universes-beyond-warhammer-40000-canoptek-scarab-swarm?page=1"
+    },
+    "Snap": {
+      "name": "Snap",
+      "lowestListing": 2.99,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/6389/magic-urzas-legacy-snap?page=1"
+    },
+    "Valgavoth, Harrower of Souls": {
+      "name": "Valgavoth, Harrower of Souls",
+      "lowestListing": 8.64,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/575095/magic-commander-duskmourn-house-of-horror-valgavoth-harrower-of-souls-borderless?page=1"
+    },
+    "Sister Hospitaller": {
+      "name": "Sister Hospitaller",
+      "lowestListing": 8,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/286549/magic-universes-beyond-warhammer-40000-sister-hospitaller?page=1"
+    },
+    "Goldspan Dragon": {
+      "name": "Goldspan Dragon",
+      "lowestListing": 16.72,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/231588/magic-prerelease-cards-goldspan-dragon?page=1"
+    },
+    "The Golden Throne": {
+      "name": "The Golden Throne",
+      "lowestListing": 6,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/286475/magic-universes-beyond-warhammer-40000-the-golden-throne?page=1"
+    },
+    "Command Beacon": {
+      "name": "Command Beacon",
+      "lowestListing": 5.6,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/624449/magic-commander-tarkir-dragonstorm-command-beacon?page=1"
+    },
+    "Quantum Misalignment": {
+      "name": "Quantum Misalignment",
+      "lowestListing": 9.98,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/519544/magic-universes-beyond-doctor-who-quantum-misalignment?page=1"
+    },
+    "The Gaffer": {
+      "name": "The Gaffer",
+      "lowestListing": 9.18,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/499812/magic-commander-the-lord-of-the-rings-tales-of-middle-earth-the-gaffer?page=1"
+    },
+    "Guardian Project": {
+      "name": "Guardian Project",
+      "lowestListing": 9,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/183213/magic-ravnica-allegiance-guardian-project?page=1"
+    },
+    "Dryad of the Ilysian Grove": {
+      "name": "Dryad of the Ilysian Grove",
+      "lowestListing": 8.13,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/207717/magic-promo-pack-theros-beyond-death-dryad-of-the-ilysian-grove?page=1"
+    },
+    "Toxic Deluge": {
+      "name": "Toxic Deluge",
+      "lowestListing": 6.81,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/552728/magic-modern-horizons-3-toxic-deluge?page=1"
+    },
+    "Clever Concealment": {
+      "name": "Clever Concealment",
+      "lowestListing": 7.64,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/631155/magic-commander-final-fantasy-clever-concealment?page=1"
+    },
+    "Dark Ritual": {
+      "name": "Dark Ritual",
+      "lowestListing": 1.69,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/1712/magic-fourth-edition-dark-ritual?page=1"
+    },
+    "Three Visits": {
+      "name": "Three Visits",
+      "lowestListing": 6,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/535828/magic-commander-murders-at-karlov-manor-three-visits?page=1"
+    },
+    "The Reaver Cleaver": {
+      "name": "The Reaver Cleaver",
+      "lowestListing": 9.98,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/553539/magic-commander-modern-horizons-3-the-reaver-cleaver?page=1"
+    },
+    "Smuggler's Share": {
+      "name": "Smuggler's Share",
+      "lowestListing": 99.99,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/270603/magic-promo-pack-streets-of-new-capenna-smugglers-share?page=1"
+    },
+    "Archmage of Echoes": {
+      "name": "Archmage of Echoes",
+      "lowestListing": 8.74,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/513857/magic-commander-wilds-of-eldraine-archmage-of-echoes?page=1"
+    },
+    "Bear Umbra": {
+      "name": "Bear Umbra",
+      "lowestListing": 7.99,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/513707/magic-commander-wilds-of-eldraine-bear-umbra?page=1"
+    },
+    "Chandra, Awakened Inferno": {
+      "name": "Chandra, Awakened Inferno",
+      "lowestListing": 9.2,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/505774/magic-commander-masters-chandra-awakened-inferno?page=1"
+    },
+    "Witch's Clinic": {
+      "name": "Witch's Clinic",
+      "lowestListing": 7.75,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/578924/magic-commander-duskmourn-house-of-horror-witchs-clinic?page=1"
+    },
+    "Sphere Grid": {
+      "name": "Sphere Grid",
+      "lowestListing": 8.2,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/631529/magic-commander-final-fantasy-sphere-grid?page=1"
+    },
+    "Door of Destinies": {
+      "name": "Door of Destinies",
+      "lowestListing": 8.08,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/69888/magic-magic-2014-m14-door-of-destinies?page=1"
+    },
+    "Helm of the Host": {
+      "name": "Helm of the Host",
+      "lowestListing": 6,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/559849/magic-commander-bloomburrow-helm-of-the-host?page=1"
+    },
+    "Khârn the Betrayer": {
+      "name": "Khârn the Betrayer",
+      "lowestListing": 5.99,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/286162/magic-universes-beyond-warhammer-40000-kharn-the-betrayer?page=1"
+    },
+    "Sanguine Bond": {
+      "name": "Sanguine Bond",
+      "lowestListing": 19.59,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/565196/magic-secret-lair-drop-series-sanguine-bond?page=1"
+    },
+    "Poxwalkers": {
+      "name": "Poxwalkers",
+      "lowestListing": 8.22,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/286154/magic-universes-beyond-warhammer-40000-poxwalkers?page=1"
+    },
+    "Pollywog Prodigy": {
+      "name": "Pollywog Prodigy",
+      "lowestListing": 6.33,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/559733/magic-commander-bloomburrow-pollywog-prodigy?page=1"
+    },
+    "Ohran Frostfang": {
+      "name": "Ohran Frostfang",
+      "lowestListing": 6.95,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/535845/magic-commander-murders-at-karlov-manor-ohran-frostfang?page=1"
+    },
+    "Lazotep Sliver": {
+      "name": "Lazotep Sliver",
+      "lowestListing": 7.5,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/505038/magic-commander-masters-lazotep-sliver?page=1"
+    },
+    "Animate Dead": {
+      "name": "Animate Dead",
+      "lowestListing": 7.17,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/535784/magic-commander-murders-at-karlov-manor-animate-dead?page=1"
+    },
+    "Inkshield": {
+      "name": "Inkshield",
+      "lowestListing": 10.48,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/539220/magic-secret-lair-drop-series-inkshield?page=1"
+    },
+    "Blood for the Blood God!": {
+      "name": "Blood for the Blood God!",
+      "lowestListing": 7.2,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/285848/magic-universes-beyond-warhammer-40000-blood-for-the-blood-god?page=1"
+    },
+    "Reanimate": {
+      "name": "Reanimate",
+      "lowestListing": 7.98,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/247525/magic-commander-collection-black-reanimate?page=1"
+    },
+    "Adrix and Nev, Twincasters": {
+      "name": "Adrix and Nev, Twincasters",
+      "lowestListing": 8,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/537387/magic-secret-lair-drop-series-adrix-and-nev-twincasters?page=1"
+    },
+    "Ensnared by the Mara": {
+      "name": "Ensnared by the Mara",
+      "lowestListing": 7.15,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/519746/magic-universes-beyond-doctor-who-ensnared-by-the-mara?page=1"
+    },
+    "Scion of Oona": {
+      "name": "Scion of Oona",
+      "lowestListing": 9.25,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/68463/magic-modern-masters-scion-of-oona?page=1"
+    },
+    "Fallen Shinobi": {
+      "name": "Fallen Shinobi",
+      "lowestListing": 8.37,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/545189/magic-commander-outlaws-of-thunder-junction-fallen-shinobi?page=1"
+    },
+    "Abundant Countryside": {
+      "name": "Abundant Countryside",
+      "lowestListing": 8.45,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/671180/magic-commander-lorwyn-eclipsed-abundant-countryside?page=1"
+    },
+    "Seedborn Muse": {
+      "name": "Seedborn Muse",
+      "lowestListing": 9.18,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/10688/magic-legions-seedborn-muse?page=1"
+    },
+    "Hatchery Sliver": {
+      "name": "Hatchery Sliver",
+      "lowestListing": 7.21,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/505035/magic-commander-masters-hatchery-sliver?page=1"
+    },
+    "The Lord of Pain": {
+      "name": "The Lord of Pain",
+      "lowestListing": 0.24,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/499607/magic-commander-the-lord-of-the-rings-tales-of-middle-earth-decree-of-pain?page=1"
+    },
+    "Thunderclap Drake": {
+      "name": "Thunderclap Drake",
+      "lowestListing": 9,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/545381/magic-commander-outlaws-of-thunder-junction-thunderclap-drake?page=1"
+    },
+    "Colossal Grave-Reaver": {
+      "name": "Colossal Grave-Reaver",
+      "lowestListing": 7.54,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/624504/magic-commander-tarkir-dragonstorm-colossal-grave-reaver?page=1"
+    },
+    "Teyo, Geometric Tactician": {
+      "name": "Teyo, Geometric Tactician",
+      "lowestListing": 7.19,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/505854/magic-commander-masters-teyo-geometric-tactician?page=1"
+    },
+    "Taunt from the Rampart": {
+      "name": "Taunt from the Rampart",
+      "lowestListing": 2.2,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/499805/magic-commander-the-lord-of-the-rings-tales-of-middle-earth-taunt-from-the-rampart?page=1"
+    },
+    "Kindred Discovery": {
+      "name": "Kindred Discovery",
+      "lowestListing": 6.99,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/273121/magic-commander-legends-battle-for-baldurs-gate-kindred-discovery?page=1"
+    },
+    "Ghoulish Impetus": {
+      "name": "Ghoulish Impetus",
+      "lowestListing": 7.4,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/600000/magic-secret-lair-drop-series-ghoulish-impetus?page=1"
+    },
+    "Breena, the Demagogue": {
+      "name": "Breena, the Demagogue",
+      "lowestListing": 4.99,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/545338/magic-commander-outlaws-of-thunder-junction-breena-the-demagogue?page=1"
+    },
+    "Walking Ballista": {
+      "name": "Walking Ballista",
+      "lowestListing": 5.67,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/126443/magic-aether-revolt-walking-ballista?page=1"
+    },
+    "Tataru Taru": {
+      "name": "Tataru Taru",
+      "lowestListing": 6.99,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/631106/magic-commander-final-fantasy-tataru-taru?page=1"
+    },
+    "Kaldra Compleat": {
+      "name": "Kaldra Compleat",
+      "lowestListing": 6.88,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/506681/magic-commander-masters-kaldra-compleat?page=1"
+    },
+    "Chaos Defiler": {
+      "name": "Chaos Defiler",
+      "lowestListing": 7.41,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/286165/magic-universes-beyond-warhammer-40000-chaos-defiler?page=1"
+    },
+    "Ashling, the Limitless": {
+      "name": "Ashling, the Limitless",
+      "lowestListing": 1.2,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/671012/magic-commander-lorwyn-eclipsed-ashling-the-limitless-borderless?page=1"
+    },
+    "Songbirds' Blessing": {
+      "name": "Songbirds' Blessing",
+      "lowestListing": 5.07,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/513639/magic-commander-wilds-of-eldraine-songbirds-blessing?page=1"
+    },
+    "Shard of the Nightbringer": {
+      "name": "Shard of the Nightbringer",
+      "lowestListing": 4.99,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/286352/magic-universes-beyond-warhammer-40000-shard-of-the-nightbringer?page=1"
+    },
+    "Neheb, the Eternal": {
+      "name": "Neheb, the Eternal",
+      "lowestListing": 17.99,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/137152/magic-prerelease-cards-neheb-the-eternal?page=1"
+    },
+    "World Shaper": {
+      "name": "World Shaper",
+      "lowestListing": 6.27,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/193372/magic-promo-pack-core-set-2020-world-shaper?page=1"
+    },
+    "Wedding Ring": {
+      "name": "Wedding Ring",
+      "lowestListing": 6.64,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/518919/magic-universes-beyond-doctor-who-wedding-ring?page=1"
+    },
+    "Lotus Cobra": {
+      "name": "Lotus Cobra",
+      "lowestListing": 38.34,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/480530/magic-secret-lair-drop-series-lotus-cobra?page=1"
+    },
+    "Hall of Heliod's Generosity": {
+      "name": "Hall of Heliod's Generosity",
+      "lowestListing": 6.73,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/513760/magic-commander-wilds-of-eldraine-hall-of-heliods-generosity?page=1"
+    },
+    "Arcane Lighthouse": {
+      "name": "Arcane Lighthouse",
+      "lowestListing": 6.19,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/166723/magic-commander-anthology-volume-ii-arcane-lighthouse?page=1"
+    },
+    "Nature's Lore": {
+      "name": "Nature's Lore",
+      "lowestListing": 2.2,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/348/magic-starter-1999-natures-lore?page=1"
+    },
+    "Boros Charm": {
+      "name": "Boros Charm",
+      "lowestListing": 6.67,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/124413/magic-commander-2016-boros-charm?page=1"
+    },
+    "Rejuvenating Springs": {
+      "name": "Rejuvenating Springs",
+      "lowestListing": 6.69,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/505827/magic-commander-masters-rejuvenating-springs?page=1"
+    },
+    "Niv-Mizzet, Parun": {
+      "name": "Niv-Mizzet, Parun",
+      "lowestListing": 7.06,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/193325/magic-promo-pack-core-set-2020-niv-mizzet-parun?page=1"
+    },
+    "The Master, Multiplied": {
+      "name": "The Master, Multiplied",
+      "lowestListing": 4.9,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/519758/magic-universes-beyond-doctor-who-the-master-multiplied?page=1"
+    },
+    "Chimil, the Inner Sun": {
+      "name": "Chimil, the Inner Sun",
+      "lowestListing": 10,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/526909/magic-promo-pack-the-lost-caverns-of-ixalan-chimil-the-inner-sun?page=1"
+    },
+    "Haunted Ridge": {
+      "name": "Haunted Ridge",
+      "lowestListing": 8,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/249571/magic-prerelease-cards-haunted-ridge?page=1"
+    },
+    "Norn's Annex": {
+      "name": "Norn's Annex",
+      "lowestListing": 3.41,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/39420/magic-new-phyrexia-norns-annex?page=1"
+    },
+    "Titan of Littjara": {
+      "name": "Titan of Littjara",
+      "lowestListing": 5.5,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/505073/magic-commander-masters-titan-of-littjara?page=1"
+    },
+    "Herald of Slaanesh": {
+      "name": "Herald of Slaanesh",
+      "lowestListing": 4.5,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/286161/magic-universes-beyond-warhammer-40000-herald-of-slaanesh?page=1"
+    },
+    "Aesi, Tyrant of Gyre Strait": {
+      "name": "Aesi, Tyrant of Gyre Strait",
+      "lowestListing": 7,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/227229/magic-commander-legends-aesi-tyrant-of-gyre-strait?page=1"
+    },
+    "Eldrazi Confluence": {
+      "name": "Eldrazi Confluence",
+      "lowestListing": 5.89,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/553171/magic-commander-modern-horizons-3-eldrazi-confluence?page=1"
+    },
+    "Ghostly Prison": {
+      "name": "Ghostly Prison",
+      "lowestListing": 4.45,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/535588/magic-commander-murders-at-karlov-manor-ghostly-prison?page=1"
+    },
+    "Morophon, the Boundless": {
+      "name": "Morophon, the Boundless",
+      "lowestListing": 6.7,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/504115/magic-commander-masters-morophon-the-boundless?page=1"
+    },
+    "Agent Frank Horrigan": {
+      "name": "Agent Frank Horrigan",
+      "lowestListing": 17.5,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/539459/magic-universes-beyond-fallout-agent-frank-horrigan?page=1"
+    },
+    "Dogmeat, Ever Loyal": {
+      "name": "Dogmeat, Ever Loyal",
+      "lowestListing": 0.25,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/523044/magic-universes-beyond-fallout-dogmeat-ever-loyal?page=1"
+    },
+    "Galerider Sliver": {
+      "name": "Galerider Sliver",
+      "lowestListing": 6.13,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/69252/magic-magic-2014-m14-galerider-sliver?page=1"
+    },
+    "Mystic Sanctuary": {
+      "name": "Mystic Sanctuary",
+      "lowestListing": 1.41,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/199417/magic-throne-of-eldraine-mystic-sanctuary?page=1"
+    },
+    "Sword of the Animist": {
+      "name": "Sword of the Animist",
+      "lowestListing": 5.85,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/631215/magic-commander-final-fantasy-sword-of-the-animist?page=1"
+    },
+    "Silent-Blade Oni": {
+      "name": "Silent-Blade Oni",
+      "lowestListing": 3.91,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/545186/magic-commander-outlaws-of-thunder-junction-silent-blade-oni?page=1"
+    },
+    "Tower Winder": {
+      "name": "Tower Winder",
+      "lowestListing": 4.86,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/545263/magic-commander-outlaws-of-thunder-junction-tower-winder?page=1"
+    },
+    "Caesar, Legion's Emperor": {
+      "name": "Caesar, Legion's Emperor",
+      "lowestListing": 2.05,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/523039/magic-universes-beyond-fallout-caesar-legions-emperor?page=1"
+    },
+    "Oracle of Mul Daya": {
+      "name": "Oracle of Mul Daya",
+      "lowestListing": 3.19,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/641997/magic-commander-edge-of-eternities-oracle-of-mul-daya?page=1"
+    },
+    "Shipwreck Marsh": {
+      "name": "Shipwreck Marsh",
+      "lowestListing": 5.88,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/519921/magic-universes-beyond-doctor-who-shipwreck-marsh?page=1"
+    },
+    "Skullclamp": {
+      "name": "Skullclamp",
+      "lowestListing": 5,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/286524/magic-universes-beyond-warhammer-40000-skullclamp?page=1"
+    },
+    "War Room": {
+      "name": "War Room",
+      "lowestListing": 5.95,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/506700/magic-commander-masters-war-room?page=1"
+    },
+    "Heliod, God of the Sun": {
+      "name": "Heliod, God of the Sun",
+      "lowestListing": 14.38,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/209395/magic-secret-lair-drop-series-heliod-god-of-the-sun?page=1"
+    },
+    "Imotekh the Stormlord": {
+      "name": "Imotekh the Stormlord",
+      "lowestListing": 15.46,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/285806/magic-universes-beyond-warhammer-40000-imotekh-the-stormlord-surge-foil?page=1"
+    },
+    "Academy Ruins": {
+      "name": "Academy Ruins",
+      "lowestListing": 5.7,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/615224/magic-commander-aetherdrift-academy-ruins?page=1"
+    },
+    "Eldrazi Monument": {
+      "name": "Eldrazi Monument",
+      "lowestListing": 4.78,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/553119/magic-commander-modern-horizons-3-eldrazi-monument?page=1"
+    },
+    "Their Name Is Death": {
+      "name": "Their Name Is Death",
+      "lowestListing": 6.21,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/286358/magic-universes-beyond-warhammer-40000-their-name-is-death?page=1"
+    },
+    "Hullbreaker Horror": {
+      "name": "Hullbreaker Horror",
+      "lowestListing": 6,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/255686/magic-innistrad-double-feature-hullbreaker-horror?page=1"
+    },
+    "Mirari's Wake": {
+      "name": "Mirari's Wake",
+      "lowestListing": 5.7,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/239819/magic-modern-horizons-2-miraris-wake?page=1"
+    },
+    "Access Tunnel": {
+      "name": "Access Tunnel",
+      "lowestListing": 0.23,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/624594/magic-commander-tarkir-dragonstorm-access-tunnel?page=1"
+    },
+    "Asceticism": {
+      "name": "Asceticism",
+      "lowestListing": 5.49,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/499776/magic-commander-the-lord-of-the-rings-tales-of-middle-earth-asceticism?page=1"
+    },
+    "Biotransference": {
+      "name": "Biotransference",
+      "lowestListing": 5.88,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/286273/magic-universes-beyond-warhammer-40000-biotransference?page=1"
+    },
+    "Bone Sabres": {
+      "name": "Bone Sabres",
+      "lowestListing": 5.6,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/285930/magic-universes-beyond-warhammer-40000-bone-sabres?page=1"
+    },
+    "Mind's Dilation": {
+      "name": "Mind's Dilation",
+      "lowestListing": 4,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/545429/magic-commander-outlaws-of-thunder-junction-minds-dilation?page=1"
+    },
+    "Electrostatic Field": {
+      "name": "Electrostatic Field",
+      "lowestListing": 0.8,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/176833/magic-guilds-of-ravnica-electrostatic-field?page=1"
+    },
+    "Stella Lee, Wild Card": {
+      "name": "Stella Lee, Wild Card",
+      "lowestListing": 5,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/544321/magic-commander-outlaws-of-thunder-junction-stella-lee-wild-card-borderless?page=1"
+    },
+    "Fellwar Stone": {
+      "name": "Fellwar Stone",
+      "lowestListing": 0.9,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/624374/magic-commander-tarkir-dragonstorm-fellwar-stone?page=1"
+    },
+    "Planar Nexus": {
+      "name": "Planar Nexus",
+      "lowestListing": 4,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/548598/magic-commander-modern-horizons-3-planar-nexus?page=1"
+    },
+    "Necroskitter": {
+      "name": "Necroskitter",
+      "lowestListing": 3.66,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/671133/magic-commander-lorwyn-eclipsed-necroskitter?page=1"
+    },
+    "Baleful Mastery": {
+      "name": "Baleful Mastery",
+      "lowestListing": 3.78,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/545214/magic-commander-outlaws-of-thunder-junction-baleful-mastery?page=1"
+    },
+    "Sporocyst": {
+      "name": "Sporocyst",
+      "lowestListing": 4.59,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/285910/magic-universes-beyond-warhammer-40000-sporocyst?page=1"
+    },
+    "Beast Whisperer": {
+      "name": "Beast Whisperer",
+      "lowestListing": 3.86,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/535839/magic-commander-murders-at-karlov-manor-beast-whisperer?page=1"
+    },
+    "Crashing Drawbridge": {
+      "name": "Crashing Drawbridge",
+      "lowestListing": 0.3,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/199543/magic-throne-of-eldraine-crashing-drawbridge?page=1"
+    },
+    "Sicarian Infiltrator": {
+      "name": "Sicarian Infiltrator",
+      "lowestListing": 4.05,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/286536/magic-universes-beyond-warhammer-40000-sicarian-infiltrator?page=1"
+    },
+    "Bonescythe Sliver": {
+      "name": "Bonescythe Sliver",
+      "lowestListing": 3.18,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/71415/magic-media-promos-bonescythe-sliver?page=1"
+    },
+    "Evolution Sage": {
+      "name": "Evolution Sage",
+      "lowestListing": 4.95,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/525963/magic-commander-the-lost-caverns-of-ixalan-evolution-sage?page=1"
+    },
+    "Academy Manufactor": {
+      "name": "Academy Manufactor",
+      "lowestListing": 4.99,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/559952/magic-commander-bloomburrow-academy-manufactor?page=1"
+    },
+    "Cactus Preserve": {
+      "name": "Cactus Preserve",
+      "lowestListing": 5.14,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/545121/magic-commander-outlaws-of-thunder-junction-cactus-preserve?page=1"
+    },
+    "Battle at the Helvault": {
+      "name": "Battle at the Helvault",
+      "lowestListing": 4.95,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/505957/magic-commander-masters-battle-at-the-helvault?page=1"
+    },
+    "Setessan Champion": {
+      "name": "Setessan Champion",
+      "lowestListing": 5.5,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/207609/magic-prerelease-cards-setessan-champion?page=1"
+    },
+    "Talisman of Dominance": {
+      "name": "Talisman of Dominance",
+      "lowestListing": 2.4,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/273502/magic-commander-legends-battle-for-baldurs-gate-talisman-of-dominance?page=1"
+    },
+    "Vault of Whispers": {
+      "name": "Vault of Whispers",
+      "lowestListing": 1.34,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/11311/magic-mirrodin-vault-of-whispers?page=1"
+    },
+    "Authority of the Consuls": {
+      "name": "Authority of the Consuls",
+      "lowestListing": 5.3,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/122918/magic-kaladesh-authority-of-the-consuls?page=1"
+    },
+    "Giggling Skitterspike": {
+      "name": "Giggling Skitterspike",
+      "lowestListing": 5.68,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/577863/magic-commander-duskmourn-house-of-horror-giggling-skitterspike?page=1"
+    },
+    "Not of This World": {
+      "name": "Not of This World",
+      "lowestListing": 3.66,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/506674/magic-commander-masters-not-of-this-world?page=1"
+    },
+    "Reliquary Tower": {
+      "name": "Reliquary Tower",
+      "lowestListing": 2.49,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/624214/magic-commander-tarkir-dragonstorm-reliquary-tower?page=1"
+    },
+    "Retether": {
+      "name": "Retether",
+      "lowestListing": 2.64,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/513747/magic-commander-wilds-of-eldraine-retether?page=1"
+    },
+    "Illuminor Szeras": {
+      "name": "Illuminor Szeras",
+      "lowestListing": 3.99,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/286274/magic-universes-beyond-warhammer-40000-illuminor-szeras?page=1"
+    },
+    "Great Unclean One": {
+      "name": "Great Unclean One",
+      "lowestListing": 3.84,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/286148/magic-universes-beyond-warhammer-40000-great-unclean-one?page=1"
+    },
+    "Herald's Horn": {
+      "name": "Herald's Horn",
+      "lowestListing": 4.32,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/505911/magic-commander-masters-heralds-horn?page=1"
+    },
+    "Renewed Solidarity": {
+      "name": "Renewed Solidarity",
+      "lowestListing": 5.07,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/615058/magic-commander-aetherdrift-renewed-solidarity?page=1"
+    },
+    "Springleaf Parade": {
+      "name": "Springleaf Parade",
+      "lowestListing": 5.49,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/671172/magic-commander-lorwyn-eclipsed-springleaf-parade?page=1"
+    },
+    "Bennie Bracks, Zoologist": {
+      "name": "Bennie Bracks, Zoologist",
+      "lowestListing": 5.14,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/268976/magic-commander-streets-of-new-capenna-bennie-bracks-zoologist?page=1"
+    },
+    "Basilisk Collar": {
+      "name": "Basilisk Collar",
+      "lowestListing": 4.24,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/218627/magic-double-masters-basilisk-collar?page=1"
+    },
+    "Composer of Spring": {
+      "name": "Composer of Spring",
+      "lowestListing": 4.95,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/505960/magic-commander-masters-composer-of-spring?page=1"
+    },
+    "Swan Song": {
+      "name": "Swan Song",
+      "lowestListing": 9.09,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/71202/magic-theros-swan-song?page=1"
+    },
+    "Generous Patron": {
+      "name": "Generous Patron",
+      "lowestListing": 13.49,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/167775/magic-battlebond-generous-patron?page=1"
+    },
+    "Arwen, Weaver of Hope": {
+      "name": "Arwen, Weaver of Hope",
+      "lowestListing": 4,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/499578/magic-commander-the-lord-of-the-rings-tales-of-middle-earth-arwen-weaver-of-hope?page=1"
+    },
+    "Deflecting Palm": {
+      "name": "Deflecting Palm",
+      "lowestListing": 9.8,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/93384/magic-prerelease-cards-deflecting-palm?page=1"
+    },
+    "Kozilek, the Great Distortion": {
+      "name": "Kozilek, the Great Distortion",
+      "lowestListing": 4.34,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/503378/magic-commander-masters-kozilek-the-great-distortion?page=1"
+    },
+    "Basalt Monolith": {
+      "name": "Basalt Monolith",
+      "lowestListing": 4.29,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/72052/magic-commander-2013-basalt-monolith?page=1"
+    },
+    "Galadhrim Ambush": {
+      "name": "Galadhrim Ambush",
+      "lowestListing": 4.04,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/499582/magic-commander-the-lord-of-the-rings-tales-of-middle-earth-galadhrim-ambush?page=1"
+    },
+    "Tifa, Martial Artist": {
+      "name": "Tifa, Martial Artist",
+      "lowestListing": 0.89,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/630712/magic-commander-final-fantasy-tifa-martial-artist?page=1"
+    },
+    "The Chain Veil": {
+      "name": "The Chain Veil",
+      "lowestListing": 3.66,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/91253/magic-magic-2015-m15-the-chain-veil?page=1"
+    },
+    "Snuff Out": {
+      "name": "Snuff Out",
+      "lowestListing": 3.63,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/519996/magic-universes-beyond-doctor-who-snuff-out?page=1"
+    },
+    "Agate Instigator": {
+      "name": "Agate Instigator",
+      "lowestListing": 3,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/559718/magic-commander-bloomburrow-agate-instigator?page=1"
+    },
+    "The Red Terror": {
+      "name": "The Red Terror",
+      "lowestListing": 4.6,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/285916/magic-universes-beyond-warhammer-40000-the-red-terror?page=1"
+    },
+    "Teval, the Balanced Scale": {
+      "name": "Teval, the Balanced Scale",
+      "lowestListing": 2.04,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/619670/magic-commander-tarkir-dragonstorm-teval-the-balanced-scale-borderless?page=1"
+    },
+    "Brood Sliver": {
+      "name": "Brood Sliver",
+      "lowestListing": 2,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/37051/magic-premium-deck-series-slivers-brood-sliver?page=1"
+    },
+    "Hazel of the Rootbloom": {
+      "name": "Hazel of the Rootbloom",
+      "lowestListing": 0.84,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/558383/magic-commander-bloomburrow-hazel-of-the-rootbloom-borderless?page=1"
+    },
+    "Flesh Duplicate": {
+      "name": "Flesh Duplicate",
+      "lowestListing": 4.75,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/519221/magic-universes-beyond-doctor-who-flesh-duplicate?page=1"
+    },
+    "Fabled Passage": {
+      "name": "Fabled Passage",
+      "lowestListing": 5.25,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/199428/magic-throne-of-eldraine-fabled-passage?page=1"
+    },
+    "Teval's Judgment": {
+      "name": "Teval's Judgment",
+      "lowestListing": 4.57,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/624417/magic-commander-tarkir-dragonstorm-tevals-judgment?page=1"
+    },
+    "Darksteel Plate": {
+      "name": "Darksteel Plate",
+      "lowestListing": 4.85,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/631209/magic-commander-final-fantasy-darksteel-plate?page=1"
+    },
+    "Orochi Soul-Reaver": {
+      "name": "Orochi Soul-Reaver",
+      "lowestListing": 9.47,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/545272/magic-commander-outlaws-of-thunder-junction-orochi-soul-reaver?page=1"
+    },
+    "Dinosaurs on a Spaceship": {
+      "name": "Dinosaurs on a Spaceship",
+      "lowestListing": 4.98,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/519199/magic-universes-beyond-doctor-who-dinosaurs-on-a-spaceship?page=1"
+    },
+    "Arcane Bombardment": {
+      "name": "Arcane Bombardment",
+      "lowestListing": 3,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/268433/magic-streets-of-new-capenna-arcane-bombardment?page=1"
+    },
+    "Arcane Denial": {
+      "name": "Arcane Denial",
+      "lowestListing": 2,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/553261/magic-commander-modern-horizons-3-arcane-denial?page=1"
+    },
+    "Sanctum Weaver": {
+      "name": "Sanctum Weaver",
+      "lowestListing": 4,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/513683/magic-commander-wilds-of-eldraine-sanctum-weaver?page=1"
+    },
+    "The Scarab God": {
+      "name": "The Scarab God",
+      "lowestListing": 5.36,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/219023/magic-double-masters-the-scarab-god?page=1"
+    },
+    "Ornithopter of Paradise": {
+      "name": "Ornithopter of Paradise",
+      "lowestListing": 0.39,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/559835/magic-commander-bloomburrow-ornithopter-of-paradise?page=1"
+    },
+    "Necron Deathmark": {
+      "name": "Necron Deathmark",
+      "lowestListing": 6.25,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/286342/magic-universes-beyond-warhammer-40000-necron-deathmark?page=1"
+    },
+    "The Lost and the Damned": {
+      "name": "The Lost and the Damned",
+      "lowestListing": 5.97,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/286169/magic-universes-beyond-warhammer-40000-the-lost-and-the-damned?page=1"
+    },
+    "Damning Verdict": {
+      "name": "Damning Verdict",
+      "lowestListing": 33.36,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/270597/magic-promo-pack-streets-of-new-capenna-damning-verdict?page=1"
+    },
+    "Carmen, Cruel Skymarcher": {
+      "name": "Carmen, Cruel Skymarcher",
+      "lowestListing": 0.34,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/525709/magic-commander-the-lost-caverns-of-ixalan-carmen-cruel-skymarcher?page=1"
+    },
+    "Wound Reflection": {
+      "name": "Wound Reflection",
+      "lowestListing": 7.29,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/218938/magic-double-masters-wound-reflection?page=1"
+    },
+    "Ondu Spiritdancer": {
+      "name": "Ondu Spiritdancer",
+      "lowestListing": 3.37,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/505965/magic-commander-masters-ondu-spiritdancer?page=1"
+    },
+    "Bontu's Monument": {
+      "name": "Bontu's Monument",
+      "lowestListing": 4.65,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/129741/magic-amonkhet-bontus-monument?page=1"
+    },
+    "Lightning Greaves": {
+      "name": "Lightning Greaves",
+      "lowestListing": 4.23,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/615183/magic-commander-aetherdrift-lightning-greaves?page=1"
+    },
+    "Rise of the Dark Realms": {
+      "name": "Rise of the Dark Realms",
+      "lowestListing": 3.01,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/535773/magic-commander-murders-at-karlov-manor-rise-of-the-dark-realms?page=1"
+    },
+    "Mandate of Abaddon": {
+      "name": "Mandate of Abaddon",
+      "lowestListing": 4.57,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/286149/magic-universes-beyond-warhammer-40000-mandate-of-abaddon?page=1"
+    },
+    "Cyberman Patrol": {
+      "name": "Cyberman Patrol",
+      "lowestListing": 4.38,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/519738/magic-universes-beyond-doctor-who-cyberman-patrol?page=1"
+    },
+    "Farewell": {
+      "name": "Farewell",
+      "lowestListing": 3.92,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/518857/magic-universes-beyond-doctor-who-farewell?page=1"
+    },
+    "Mutational Advantage": {
+      "name": "Mutational Advantage",
+      "lowestListing": 4.59,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/540892/magic-universes-beyond-fallout-mutational-advantage?page=1"
+    },
+    "Vanquisher's Banner": {
+      "name": "Vanquisher's Banner",
+      "lowestListing": 3.79,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/491460/magic-commander-march-of-the-machine-vanquishers-banner?page=1"
+    },
+    "Selvala, Heart of the Wilds": {
+      "name": "Selvala, Heart of the Wilds",
+      "lowestListing": 2.04,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/671244/magic-commander-lorwyn-eclipsed-selvala-heart-of-the-wilds?page=1"
+    },
+    "Eldritch Immunity": {
+      "name": "Eldritch Immunity",
+      "lowestListing": 3,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/553174/magic-commander-modern-horizons-3-eldritch-immunity?page=1"
+    },
+    "Radstorm": {
+      "name": "Radstorm",
+      "lowestListing": 3.61,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/522928/magic-universes-beyond-fallout-radstorm?page=1"
+    },
+    "Xenagos, God of Revels": {
+      "name": "Xenagos, God of Revels",
+      "lowestListing": 4.06,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/525829/magic-commander-the-lost-caverns-of-ixalan-xenagos-god-of-revels?page=1"
+    },
+    "Knight Paladin": {
+      "name": "Knight Paladin",
+      "lowestListing": 3.75,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/286552/magic-universes-beyond-warhammer-40000-knight-paladin?page=1"
+    },
+    "Aberrant": {
+      "name": "Aberrant",
+      "lowestListing": 3.25,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/285936/magic-universes-beyond-warhammer-40000-aberrant?page=1"
+    },
+    "Windfall": {
+      "name": "Windfall",
+      "lowestListing": 3.51,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/525814/magic-commander-the-lost-caverns-of-ixalan-windfall?page=1"
+    },
+    "RMS Titanic": {
+      "name": "RMS Titanic",
+      "lowestListing": 4.33,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/519277/magic-universes-beyond-doctor-who-rms-titanic?page=1"
+    },
+    "Forth Eorlingas!": {
+      "name": "Forth Eorlingas!",
+      "lowestListing": 3.89,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/499782/magic-commander-the-lord-of-the-rings-tales-of-middle-earth-forth-eorlingas?page=1"
+    },
+    "Diffusion Sliver": {
+      "name": "Diffusion Sliver",
+      "lowestListing": 1.2,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/91291/magic-magic-2015-m15-diffusion-sliver?page=1"
+    },
+    "Y'shtola, Night's Blessed": {
+      "name": "Y'shtola, Night's Blessed",
+      "lowestListing": 0.67,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/618874/magic-commander-final-fantasy-yshtola-nights-blessed?page=1"
+    },
+    "Omnath, Locus of Rage": {
+      "name": "Omnath, Locus of Rage",
+      "lowestListing": 1.44,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/104298/magic-battle-for-zendikar-omnath-locus-of-rage?page=1"
+    },
+    "Tomb Fortress": {
+      "name": "Tomb Fortress",
+      "lowestListing": 3.49,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/286360/magic-universes-beyond-warhammer-40000-tomb-fortress?page=1"
+    },
+    "Betor, Ancestor's Voice": {
+      "name": "Betor, Ancestor's Voice",
+      "lowestListing": 0.55,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/625122/magic-commander-tarkir-dragonstorm-betor-ancestors-voice-borderless?page=1"
+    },
+    "Caged Sun": {
+      "name": "Caged Sun",
+      "lowestListing": 4.09,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/286366/magic-universes-beyond-warhammer-40000-caged-sun?page=1"
+    },
+    "Dauthi Voidwalker": {
+      "name": "Dauthi Voidwalker",
+      "lowestListing": 4.15,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/624420/magic-commander-tarkir-dragonstorm-dauthi-voidwalker?page=1"
+    },
+    "Atomize": {
+      "name": "Atomize",
+      "lowestListing": 9.3,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/540844/magic-universes-beyond-fallout-atomize?page=1"
+    },
+    "Zurgo Stormrender": {
+      "name": "Zurgo Stormrender",
+      "lowestListing": 1.13,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/623917/magic-commander-tarkir-dragonstorm-zurgo-stormrender-borderless?page=1"
+    },
+    "Archon of Cruelty": {
+      "name": "Archon of Cruelty",
+      "lowestListing": 3.71,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/552407/magic-commander-modern-horizons-3-archon-of-cruelty?page=1"
+    },
+    "Eidolon of Blossoms": {
+      "name": "Eidolon of Blossoms",
+      "lowestListing": 2.73,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/170951/magic-commander-2018-eidolon-of-blossoms?page=1"
+    },
+    "Nanogene Conversion": {
+      "name": "Nanogene Conversion",
+      "lowestListing": 4.12,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/519249/magic-universes-beyond-doctor-who-nanogene-conversion?page=1"
+    },
+    "Gríma, Saruman's Footman": {
+      "name": "Gríma, Saruman's Footman",
+      "lowestListing": 4.84,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/499749/magic-commander-the-lord-of-the-rings-tales-of-middle-earth-grima-sarumans-footman?page=1"
+    },
+    "Synapse Sliver": {
+      "name": "Synapse Sliver",
+      "lowestListing": 3.49,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/10741/magic-legions-synapse-sliver?page=1"
+    },
+    "Felothar the Steadfast": {
+      "name": "Felothar the Steadfast",
+      "lowestListing": 0.36,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/623911/magic-commander-tarkir-dragonstorm-felothar-the-steadfast-borderless?page=1"
+    },
+    "Forsaken Monument": {
+      "name": "Forsaken Monument",
+      "lowestListing": 3.52,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/222095/magic-zendikar-rising-forsaken-monument?page=1"
+    },
+    "Mass of Mysteries": {
+      "name": "Mass of Mysteries",
+      "lowestListing": 0.71,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/671252/magic-commander-lorwyn-eclipsed-mass-of-mysteries-borderless?page=1"
+    },
+    "Desecrate Reality": {
+      "name": "Desecrate Reality",
+      "lowestListing": 3,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/506756/magic-commander-masters-desecrate-reality?page=1"
+    },
+    "Panharmonicon": {
+      "name": "Panharmonicon",
+      "lowestListing": 3.91,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/540956/magic-universes-beyond-fallout-panharmonicon?page=1"
+    },
+    "Living Death": {
+      "name": "Living Death",
+      "lowestListing": 1.42,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/624424/magic-commander-tarkir-dragonstorm-living-death?page=1"
+    },
+    "Rukarumel, Biologist": {
+      "name": "Rukarumel, Biologist",
+      "lowestListing": 1.69,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/631641/magic-the-list-reprints-rukarumel-biologist?page=1"
+    },
+    "Be'lakor, the Dark Master": {
+      "name": "Be'lakor, the Dark Master",
+      "lowestListing": 2.95,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/285809/magic-universes-beyond-warhammer-40000-belakor-the-dark-master?page=1"
+    },
+    "Atalan Jackal": {
+      "name": "Atalan Jackal",
+      "lowestListing": 4.26,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/285942/magic-universes-beyond-warhammer-40000-atalan-jackal?page=1"
+    },
+    "Magnus the Red": {
+      "name": "Magnus the Red",
+      "lowestListing": 3.63,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/286039/magic-universes-beyond-warhammer-40000-magnus-the-red?page=1"
+    },
+    "Kenrith's Transformation": {
+      "name": "Kenrith's Transformation",
+      "lowestListing": 1,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/513734/magic-commander-wilds-of-eldraine-kenriths-transformation?page=1"
+    },
+    "Fiery Islet": {
+      "name": "Fiery Islet",
+      "lowestListing": 2.15,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/519239/magic-universes-beyond-doctor-who-fiery-islet?page=1"
+    },
+    "Reverberate": {
+      "name": "Reverberate",
+      "lowestListing": 2.89,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/47706/magic-magic-2012-m12-reverberate?page=1"
+    },
+    "Scute Swarm": {
+      "name": "Scute Swarm",
+      "lowestListing": 4.95,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/251181/magic-media-promos-scute-swarm?page=1"
+    },
+    "Seaside Citadel": {
+      "name": "Seaside Citadel",
+      "lowestListing": 0.2,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/535794/magic-commander-murders-at-karlov-manor-seaside-citadel?page=1"
+    },
+    "Mogis, God of Slaughter": {
+      "name": "Mogis, God of Slaughter",
+      "lowestListing": 3.05,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/578901/magic-commander-duskmourn-house-of-horror-mogis-god-of-slaughter?page=1"
+    },
+    "Unexpected Windfall": {
+      "name": "Unexpected Windfall",
+      "lowestListing": 1.47,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/243382/magic-adventures-in-the-forgotten-realms-unexpected-windfall?page=1"
+    },
+    "Destiny Spinner": {
+      "name": "Destiny Spinner",
+      "lowestListing": 2,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/513692/magic-commander-wilds-of-eldraine-destiny-spinner?page=1"
+    },
+    "Storm-Kiln Artist": {
+      "name": "Storm-Kiln Artist",
+      "lowestListing": 2.46,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/624187/magic-commander-tarkir-dragonstorm-storm-kiln-artist?page=1"
+    },
+    "Black Market": {
+      "name": "Black Market",
+      "lowestListing": 3.62,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/216565/magic-jumpstart-black-market?page=1"
+    },
+    "Kor Spiritdancer": {
+      "name": "Kor Spiritdancer",
+      "lowestListing": 2.23,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/34725/magic-rise-of-the-eldrazi-kor-spiritdancer?page=1"
+    },
+    "Ponder": {
+      "name": "Ponder",
+      "lowestListing": 9.95,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/451199/magic-secret-lair-countdown-kit-ponder?page=1"
+    },
+    "Aerial Extortionist": {
+      "name": "Aerial Extortionist",
+      "lowestListing": 2.22,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/535671/magic-commander-murders-at-karlov-manor-aerial-extortionist?page=1"
+    },
+    "Gleeful Arsonist": {
+      "name": "Gleeful Arsonist",
+      "lowestListing": 3.15,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/578915/magic-commander-duskmourn-house-of-horror-gleeful-arsonist?page=1"
+    },
+    "Koma, Cosmos Serpent": {
+      "name": "Koma, Cosmos Serpent",
+      "lowestListing": 11.92,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/231616/magic-prerelease-cards-koma-cosmos-serpent?page=1"
+    },
+    "Manaweft Sliver": {
+      "name": "Manaweft Sliver",
+      "lowestListing": 0.39,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/69262/magic-magic-2014-m14-manaweft-sliver?page=1"
+    },
+    "Notion Thief": {
+      "name": "Notion Thief",
+      "lowestListing": 1.64,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/499638/magic-commander-the-lord-of-the-rings-tales-of-middle-earth-notion-thief?page=1"
+    },
+    "Pip-Boy 3000": {
+      "name": "Pip-Boy 3000",
+      "lowestListing": 2.99,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/539753/magic-universes-beyond-fallout-pip-boy-3000?page=1"
+    },
+    "Wave Goodbye": {
+      "name": "Wave Goodbye",
+      "lowestListing": 3.25,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/525857/magic-commander-the-lost-caverns-of-ixalan-wave-goodbye?page=1"
+    },
+    "Shifting Sliver": {
+      "name": "Shifting Sliver",
+      "lowestListing": 0.93,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/10740/magic-legions-shifting-sliver?page=1"
+    },
+    "Kederekt Parasite": {
+      "name": "Kederekt Parasite",
+      "lowestListing": 3.42,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/28556/magic-conflux-kederekt-parasite?page=1"
+    },
+    "Bello, Bard of the Brambles": {
+      "name": "Bello, Bard of the Brambles",
+      "lowestListing": 0.82,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/558382/magic-commander-bloomburrow-bello-bard-of-the-brambles-borderless?page=1"
+    },
+    "Yuna, Grand Summoner": {
+      "name": "Yuna, Grand Summoner",
+      "lowestListing": 0.64,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/630780/magic-commander-final-fantasy-yuna-grand-summoner?page=1"
+    },
+    "Plague Drone": {
+      "name": "Plague Drone",
+      "lowestListing": 2.75,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/286153/magic-universes-beyond-warhammer-40000-plague-drone?page=1"
+    },
+    "Ancestral Mask": {
+      "name": "Ancestral Mask",
+      "lowestListing": 0.95,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/6425/magic-mercadian-masques-ancestral-mask?page=1"
+    },
+    "Professional Face-Breaker": {
+      "name": "Professional Face-Breaker",
+      "lowestListing": 3.2,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/631136/magic-commander-final-fantasy-professional-face-breaker?page=1"
+    },
+    "Chandra's Ignition": {
+      "name": "Chandra's Ignition",
+      "lowestListing": 8.73,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/100597/magic-prerelease-cards-chandras-ignition?page=1"
+    },
+    "Ms. Bumbleflower": {
+      "name": "Ms. Bumbleflower",
+      "lowestListing": 0.62,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/558384/magic-commander-bloomburrow-ms-bumbleflower-borderless?page=1"
+    },
+    "Mr. House, President and CEO": {
+      "name": "Mr. House, President and CEO",
+      "lowestListing": 0.46,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/523013/magic-universes-beyond-fallout-mr-house-president-and-ceo?page=1"
+    },
+    "Calamity of the Titans": {
+      "name": "Calamity of the Titans",
+      "lowestListing": 3.24,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/506754/magic-commander-masters-calamity-of-the-titans?page=1"
+    },
+    "Chromatic Lantern": {
+      "name": "Chromatic Lantern",
+      "lowestListing": 3.13,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/286131/magic-universes-beyond-warhammer-40000-chromatic-lantern?page=1"
+    },
+    "Eldrazi Conscription": {
+      "name": "Eldrazi Conscription",
+      "lowestListing": 3.42,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/180769/magic-ultimate-masters-eldrazi-conscription?page=1"
+    },
+    "Phyrexian Metamorph": {
+      "name": "Phyrexian Metamorph",
+      "lowestListing": 7.99,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/39455/magic-launch-party-and-release-event-promos-phyrexian-metamorph?page=1"
+    },
+    "Archmage Emeritus": {
+      "name": "Archmage Emeritus",
+      "lowestListing": 4.65,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/237092/magic-prerelease-cards-archmage-emeritus?page=1"
+    },
+    "Mizzix's Mastery": {
+      "name": "Mizzix's Mastery",
+      "lowestListing": 2.51,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/204741/magic-the-list-reprints-mizzixs-mastery?page=1"
+    },
+    "Flux Channeler": {
+      "name": "Flux Channeler",
+      "lowestListing": 2.69,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/187122/magic-war-of-the-spark-flux-channeler?page=1"
+    },
+    "Angel of Indemnity": {
+      "name": "Angel of Indemnity",
+      "lowestListing": 4,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/545120/magic-commander-outlaws-of-thunder-junction-angel-of-indemnity?page=1"
+    },
+    "Felix Five-Boots": {
+      "name": "Felix Five-Boots",
+      "lowestListing": 2.36,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/545159/magic-commander-outlaws-of-thunder-junction-felix-five-boots?page=1"
+    },
+    "Astrid Peth": {
+      "name": "Astrid Peth",
+      "lowestListing": 2.99,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/519215/magic-universes-beyond-doctor-who-astrid-peth?page=1"
+    },
+    "Veinwitch Coven": {
+      "name": "Veinwitch Coven",
+      "lowestListing": 0.72,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/545327/magic-commander-outlaws-of-thunder-junction-veinwitch-coven?page=1"
+    },
+    "Nashi, Moon Sage's Scion": {
+      "name": "Nashi, Moon Sage's Scion",
+      "lowestListing": 1.25,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/262564/magic-kamigawa-neon-dynasty-nashi-moon-sages-scion?page=1"
+    },
+    "Pongify": {
+      "name": "Pongify",
+      "lowestListing": 2.09,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/14777/magic-planar-chaos-pongify?page=1"
+    },
+    "Arcane Heist": {
+      "name": "Arcane Heist",
+      "lowestListing": 4.99,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/545276/magic-commander-outlaws-of-thunder-junction-arcane-heist?page=1"
+    },
+    "Blightwing Bandit": {
+      "name": "Blightwing Bandit",
+      "lowestListing": 4.98,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/513860/magic-commander-wilds-of-eldraine-blightwing-bandit?page=1"
+    },
+    "Doom Whisperer": {
+      "name": "Doom Whisperer",
+      "lowestListing": 2.85,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/535732/magic-commander-murders-at-karlov-manor-doom-whisperer?page=1"
+    },
+    "Cream of the Crop": {
+      "name": "Cream of the Crop",
+      "lowestListing": 3.21,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/671194/magic-commander-lorwyn-eclipsed-cream-of-the-crop?page=1"
+    },
+    "All Is Dust": {
+      "name": "All Is Dust",
+      "lowestListing": 2.78,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/553157/magic-commander-modern-horizons-3-all-is-dust?page=1"
+    },
+    "Thieving Varmint": {
+      "name": "Thieving Varmint",
+      "lowestListing": 4.99,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/545270/magic-commander-outlaws-of-thunder-junction-thieving-varmint?page=1"
+    },
+    "Kalonian Hydra": {
+      "name": "Kalonian Hydra",
+      "lowestListing": 3.2,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/559916/magic-commander-bloomburrow-kalonian-hydra?page=1"
+    },
+    "The Sound of Drums": {
+      "name": "The Sound of Drums",
+      "lowestListing": 3.27,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/519756/magic-universes-beyond-doctor-who-the-sound-of-drums?page=1"
+    },
+    "Plains": {
+      "name": "Plains",
+      "lowestListing": 0.36,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/208392/magic-unsanctioned-plains?page=1"
+    },
+    "Treasure Nabber": {
+      "name": "Treasure Nabber",
+      "lowestListing": 2.48,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/499635/magic-commander-the-lord-of-the-rings-tales-of-middle-earth-treasure-nabber?page=1"
+    },
+    "Deserted Beach": {
+      "name": "Deserted Beach",
+      "lowestListing": 5.98,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/255553/magic-innistrad-double-feature-deserted-beach?page=1"
+    },
+    "Conduit of Worlds": {
+      "name": "Conduit of Worlds",
+      "lowestListing": 3.2,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/624447/magic-commander-tarkir-dragonstorm-conduit-of-worlds?page=1"
+    },
+    "Swiftfoot Boots": {
+      "name": "Swiftfoot Boots",
+      "lowestListing": 1.45,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/525780/magic-commander-the-lost-caverns-of-ixalan-swiftfoot-boots?page=1"
+    },
+    "Wrathful Raptors": {
+      "name": "Wrathful Raptors",
+      "lowestListing": 2.95,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/526217/magic-commander-the-lost-caverns-of-ixalan-wrathful-raptors?page=1"
+    },
+    "Alchemist's Talent": {
+      "name": "Alchemist's Talent",
+      "lowestListing": 3.15,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/560228/magic-commander-bloomburrow-alchemists-talent?page=1"
+    },
+    "Lord of the Nazgûl": {
+      "name": "Lord of the Nazgûl",
+      "lowestListing": 2.95,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/499605/magic-commander-the-lord-of-the-rings-tales-of-middle-earth-lord-of-the-nazgul?page=1"
+    },
+    "Winged Hive Tyrant": {
+      "name": "Winged Hive Tyrant",
+      "lowestListing": 2.46,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/285878/magic-universes-beyond-warhammer-40000-winged-hive-tyrant?page=1"
+    },
+    "Shattered Sanctum": {
+      "name": "Shattered Sanctum",
+      "lowestListing": 7.88,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/255381/magic-innistrad-double-feature-shattered-sanctum?page=1"
+    },
+    "Mystic Gate": {
+      "name": "Mystic Gate",
+      "lowestListing": 3.65,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/18724/magic-shadowmoor-mystic-gate?page=1"
+    },
+    "Saw in Half": {
+      "name": "Saw in Half",
+      "lowestListing": 3.25,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/257009/magic-unfinity-saw-in-half?page=1"
+    },
+    "Company Commander": {
+      "name": "Company Commander",
+      "lowestListing": 2.42,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/286543/magic-universes-beyond-warhammer-40000-company-commander?page=1"
+    },
+    "Gogo, Mysterious Mime": {
+      "name": "Gogo, Mysterious Mime",
+      "lowestListing": 3.1,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/631124/magic-commander-final-fantasy-gogo-mysterious-mime?page=1"
+    },
+    "God-Eternal Oketra": {
+      "name": "God-Eternal Oketra",
+      "lowestListing": 10.55,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/189472/magic-prerelease-cards-god-eternal-oketra?page=1"
+    },
+    "Mantle of the Ancients": {
+      "name": "Mantle of the Ancients",
+      "lowestListing": 0.75,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/539569/magic-universes-beyond-fallout-mantle-of-the-ancients?page=1"
+    },
+    "Branching Evolution": {
+      "name": "Branching Evolution",
+      "lowestListing": 3.5,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/216588/magic-jumpstart-branching-evolution?page=1"
+    },
+    "Flaming Tyrannosaurus": {
+      "name": "Flaming Tyrannosaurus",
+      "lowestListing": 2.94,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/519539/magic-universes-beyond-doctor-who-flaming-tyrannosaurus?page=1"
+    },
+    "Rhythm of the Wild": {
+      "name": "Rhythm of the Wild",
+      "lowestListing": 3.25,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/530865/magic-ravnica-remastered-rhythm-of-the-wild?page=1"
+    },
+    "Daybreak Coronet": {
+      "name": "Daybreak Coronet",
+      "lowestListing": 1.99,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/14873/magic-future-sight-daybreak-coronet?page=1"
+    },
+    "Archaeomancer's Map": {
+      "name": "Archaeomancer's Map",
+      "lowestListing": 3,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/236070/magic-commander-2021-archaeomancers-map?page=1"
+    },
+    "Sythis, Harvest's Hand": {
+      "name": "Sythis, Harvest's Hand",
+      "lowestListing": 8.93,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/241530/magic-prerelease-cards-sythis-harvests-hand?page=1"
+    },
+    "Braids, Arisen Nightmare": {
+      "name": "Braids, Arisen Nightmare",
+      "lowestListing": 1.93,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/641961/magic-commander-edge-of-eternities-braids-arisen-nightmare?page=1"
+    },
+    "Rumbleweed": {
+      "name": "Rumbleweed",
+      "lowestListing": 4.44,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/545115/magic-commander-outlaws-of-thunder-junction-rumbleweed?page=1"
+    },
+    "Vronos, Masked Inquisitor": {
+      "name": "Vronos, Masked Inquisitor",
+      "lowestListing": 2.25,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/505859/magic-commander-masters-vronos-masked-inquisitor?page=1"
+    },
+    "Talisman of Creativity": {
+      "name": "Talisman of Creativity",
+      "lowestListing": 3.23,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/273587/magic-commander-legends-battle-for-baldurs-gate-talisman-of-creativity?page=1"
+    },
+    "Heliod's Intervention": {
+      "name": "Heliod's Intervention",
+      "lowestListing": 2.49,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/545289/magic-commander-outlaws-of-thunder-junction-heliods-intervention?page=1"
+    },
+    "Chandra, Torch of Defiance": {
+      "name": "Chandra, Torch of Defiance",
+      "lowestListing": 2.33,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/251641/magic-unique-and-miscellaneous-promos-chandra-torch-of-defiance?page=1"
+    },
+    "Murmuring Mystic": {
+      "name": "Murmuring Mystic",
+      "lowestListing": 0.34,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/545229/magic-commander-outlaws-of-thunder-junction-murmuring-mystic?page=1"
+    },
+    "Exploration Broodship": {
+      "name": "Exploration Broodship",
+      "lowestListing": 2.93,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/641978/magic-commander-edge-of-eternities-exploration-broodship?page=1"
+    },
+    "Eldrazi Temple": {
+      "name": "Eldrazi Temple",
+      "lowestListing": 2.28,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/506706/magic-commander-masters-eldrazi-temple?page=1"
+    },
+    "Elspeth, Sun's Champion": {
+      "name": "Elspeth, Sun's Champion",
+      "lowestListing": 3.4,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/448966/magic-secret-lair-countdown-kit-elspeth-suns-champion?page=1"
+    },
+    "Herald of Secret Streams": {
+      "name": "Herald of Secret Streams",
+      "lowestListing": 2.9,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/525908/magic-commander-the-lost-caverns-of-ixalan-herald-of-secret-streams?page=1"
+    },
+    "Eris, Roar of the Storm": {
+      "name": "Eris, Roar of the Storm",
+      "lowestListing": 2.75,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/545354/magic-commander-outlaws-of-thunder-junction-eris-roar-of-the-storm?page=1"
+    },
+    "Nexos": {
+      "name": "Nexos",
+      "lowestListing": 2.83,
+      "tcgplayerUrl": "https://www.tcgplayer.com/product/285880/magic-universes-beyond-warhammer-40000-nexos?page=1"
+    }
+  }
+}
