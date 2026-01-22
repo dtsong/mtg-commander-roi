@@ -71,6 +71,8 @@ export interface CardWithPrice {
   image?: string | null;
   isCommander?: boolean;
   lowestListing?: number | null;
+  tcgplayerId?: number;
+  cardmarketId?: number;
 }
 
 export interface TopCard {
@@ -119,11 +121,20 @@ export interface StaticCardData {
   usd?: string;
 }
 
+export interface PurchaseUrls {
+  tcgplayer?: string;
+  cardmarket?: string;
+  cardhoarder?: string;
+}
+
 export interface StaticCardEntry {
   name: string;
   quantity: number;
   usd?: string | null;
   isCommander?: boolean;
+  tcgplayerId?: number;
+  cardmarketId?: number;
+  purchaseUrls?: PurchaseUrls;
 }
 
 export interface LowestListingEntry {

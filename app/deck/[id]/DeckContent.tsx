@@ -16,6 +16,8 @@ interface FormattedCard extends CardWithPrice {
   id: string;
   isCommander?: boolean;
   lowestListing?: number | null;
+  tcgplayerId?: number;
+  cardmarketId?: number;
 }
 
 export default function DeckContent({ deckId }: { deckId: string }) {
@@ -64,6 +66,8 @@ export default function DeckContent({ deckId }: { deckId: string }) {
           total: card.total,
           isCommander: card.isCommander,
           lowestListing: card.lowestListing,
+          tcgplayerId: card.tcgplayerId,
+          cardmarketId: card.cardmarketId,
         }));
         const cardsWithoutPrice = formattedCards.filter(c => c.price === 0 || c.price === null);
         if (!cancelled) {
@@ -103,6 +107,8 @@ export default function DeckContent({ deckId }: { deckId: string }) {
           total: card.total,
           isCommander: card.isCommander,
           lowestListing: card.lowestListing,
+          tcgplayerId: card.tcgplayerId,
+          cardmarketId: card.cardmarketId,
         }));
         const cardsWithoutPrice = formattedCards.filter(c => c.price === 0 || c.price === null);
         if (!cancelled) {
