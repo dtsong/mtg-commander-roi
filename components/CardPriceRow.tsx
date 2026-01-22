@@ -1,12 +1,14 @@
 import { memo } from 'react';
-import { ExternalLink } from 'lucide-react';
 import { formatCurrency } from '@/lib/calculations';
+import PurchaseLinks from './PurchaseLinks';
 
 interface CardPriceRowCard {
   name: string;
   quantity?: number;
   price?: number | null;
   total?: number | null;
+  tcgplayerId?: number;
+  cardmarketId?: number;
 }
 
 interface CardPriceRowProps {
@@ -22,7 +24,6 @@ function CardPriceRow({ card, rank }: CardPriceRowProps) {
   const showQuantity = quantity > 1;
 
   const scryfallUrl = `https://scryfall.com/search?q=!"${encodeURIComponent(card.name)}"`;
-  const tcgPlayerUrl = `https://www.tcgplayer.com/search/magic/product?q=${encodeURIComponent(card.name)}`;
 
   return (
     <div className="flex items-center gap-3 p-3 min-h-[44px] bg-slate-700/30 rounded-lg hover:bg-slate-700/50 transition-colors">
@@ -43,16 +44,11 @@ function CardPriceRow({ card, rank }: CardPriceRowProps) {
           >
             {card.name}
           </a>
-          <a
-            href={tcgPlayerUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="ml-1 px-2 py-1 text-xs bg-slate-600 hover:bg-green-600 text-slate-300 hover:text-white rounded transition-colors flex items-center gap-1 flex-shrink-0"
-            title="Search on TCGPlayer"
-          >
-            TCG
-            <ExternalLink className="w-3 h-3" />
-          </a>
+          <PurchaseLinks
+            cardName={card.name}
+            tcgplayerId={card.tcgplayerId}
+            cardmarketId={card.cardmarketId}
+          />
         </div>
         {showQuantity && hasPriceData && (
           <div className="text-xs text-slate-400">
