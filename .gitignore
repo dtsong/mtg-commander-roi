@@ -31,6 +31,10 @@ dist-ssr
 /playwright/.cache/
 /playwright/.auth/
 
+# Non-Bun lockfiles
+package-lock.json
+pnpm-lock.yaml
+
 # Environment files
 .env
 .env.local
