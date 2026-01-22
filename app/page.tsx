@@ -44,6 +44,7 @@ export default function Home() {
         const errorMsg = `No deck list found for "${deck.name}"`;
         setError(errorMsg);
         toast(errorMsg, 'error');
+        setLoading(false);
         return;
       }
       const priceResult = await fetchDeckPrices(deckCards);
