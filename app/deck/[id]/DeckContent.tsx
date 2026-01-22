@@ -15,6 +15,8 @@ import type { PreconDeck, CardWithPrice } from '@/types';
 interface FormattedCard extends CardWithPrice {
   id: string;
   isCommander?: boolean;
+  tcgplayerId?: number;
+  cardmarketId?: number;
 }
 
 export default function DeckContent({ deckId }: { deckId: string }) {
@@ -48,6 +50,8 @@ export default function DeckContent({ deckId }: { deckId: string }) {
           price: card.price,
           total: card.total,
           isCommander: card.isCommander,
+          tcgplayerId: card.tcgplayerId,
+          cardmarketId: card.cardmarketId,
         }));
         const cardsWithoutPrice = formattedCards.filter(c => c.price === 0 || c.price === null);
         setExcludedCount(cardsWithoutPrice.length);
@@ -83,6 +87,8 @@ export default function DeckContent({ deckId }: { deckId: string }) {
           price: card.price,
           total: card.total,
           isCommander: card.isCommander,
+          tcgplayerId: card.tcgplayerId,
+          cardmarketId: card.cardmarketId,
         }));
         const cardsWithoutPrice = formattedCards.filter(c => c.price === 0 || c.price === null);
         setExcludedCount(cardsWithoutPrice.length);
