@@ -34,6 +34,13 @@ interface BulkCard {
   collector_number: string;
   promo?: boolean;
   prices?: CardPrices;
+  tcgplayer_id?: number;
+  cardmarket_id?: number;
+  purchase_uris?: {
+    tcgplayer?: string;
+    cardmarket?: string;
+    cardhoarder?: string;
+  };
 }
 
 interface ComputedCardPrice {
@@ -41,6 +48,8 @@ interface ComputedCardPrice {
   quantity: number;
   usd: string | null;
   isCommander?: boolean;
+  tcgplayerId?: number;
+  cardmarketId?: number;
 }
 
 interface ComputedDeckPrices {
@@ -141,6 +150,14 @@ interface CardVersion {
   collectorNumber: string;
   isPromo: boolean;
   isFoilOnly: boolean;
+  tcgplayerId?: number;
+  cardmarketId?: number;
+}
+
+interface PriceLookupEntry {
+  priceStr: string | null;
+  tcgplayerId?: number;
+  cardmarketId?: number;
 }
 
 function isSerializedCollectorNumber(cn: string): boolean {
@@ -150,7 +167,7 @@ function isSerializedCollectorNumber(cn: string): boolean {
 function buildSetAwarePriceLookup(
   allCards: BulkCard[],
   neededCardSets: Map<string, Set<string>>
-): Map<string, string | null> {
+): Map<string, PriceLookupEntry> {
   console.log('Building set-aware price lookup (selecting cheapest versions)...');
 
   const cardVersions = new Map<string, CardVersion[]>();
@@ -180,10 +197,12 @@ function buildSetAwarePriceLookup(
       collectorNumber: card.collector_number,
       isPromo: card.promo === true,
       isFoilOnly: usd === null && usdFoil !== null,
+      tcgplayerId: card.tcgplayer_id,
+      cardmarketId: card.cardmarket_id,
     });
   }
 
-  const lookup = new Map<string, string | null>();
+  const lookup = new Map<string, PriceLookupEntry>();
   let serializedSkipped = 0;
 
   for (const [setKey, versions] of cardVersions) {
@@ -204,7 +223,12 @@ function buildSetAwarePriceLookup(
     });
 
     if (candidates.length > 0) {
-      lookup.set(setKey, candidates[0].priceStr);
+      const best = candidates[0];
+      lookup.set(setKey, {
+        priceStr: best.priceStr,
+        tcgplayerId: best.tcgplayerId,
+        cardmarketId: best.cardmarketId,
+      });
     }
   }
 
@@ -216,7 +240,7 @@ function buildSetAwarePriceLookup(
 function computeDeckPrices(
   decklists: Decklists,
   deckSetMap: DeckSetMap,
-  priceLookup: Map<string, string | null>
+  priceLookup: Map<string, PriceLookupEntry>
 ): Record<string, ComputedDeckPrices> {
   console.log('Computing deck prices...');
   const decks: Record<string, ComputedDeckPrices> = {};
@@ -230,7 +254,8 @@ function computeDeckPrices(
 
     for (const card of cards) {
       const setKey = `${card.name}|${setCode}`;
-      const priceStr = priceLookup.get(setKey) ?? null;
+      const lookupEntry = priceLookup.get(setKey);
+      const priceStr = lookupEntry?.priceStr ?? null;
 
       if (!priceStr) {
         missingPrices++;
@@ -244,6 +269,8 @@ function computeDeckPrices(
         quantity: card.quantity,
         usd: priceStr,
         isCommander: card.isCommander,
+        tcgplayerId: lookupEntry?.tcgplayerId,
+        cardmarketId: lookupEntry?.cardmarketId,
       });
 
       totalValue += lineTotal;
