@@ -33,6 +33,7 @@ interface BulkCard {
   set: string;
   collector_number: string;
   promo?: boolean;
+  frame_effects?: string[];
   prices?: CardPrices;
   tcgplayer_id?: number;
   cardmarket_id?: number;
@@ -150,6 +151,7 @@ interface CardVersion {
   collectorNumber: string;
   isPromo: boolean;
   isFoilOnly: boolean;
+  isShowcase: boolean;
   tcgplayerId?: number;
   cardmarketId?: number;
 }
@@ -161,7 +163,7 @@ interface PriceLookupEntry {
 }
 
 function isSerializedCollectorNumber(cn: string): boolean {
-  return /[a-zA-Z]/.test(cn) || parseInt(cn, 10) > 500;
+  return /[a-zA-Z]/.test(cn) || parseInt(cn, 10) > 900;
 }
 
 function buildSetAwarePriceLookup(
@@ -191,12 +193,16 @@ function buildSetAwarePriceLookup(
       cardVersions.set(setKey, []);
     }
 
+    const SPECIAL_FRAMES = ['showcase', 'extendedart', 'borderless'];
+    const isShowcase = (card.frame_effects ?? []).some(f => SPECIAL_FRAMES.includes(f));
+
     cardVersions.get(setKey)!.push({
       price,
       priceStr,
       collectorNumber: card.collector_number,
       isPromo: card.promo === true,
       isFoilOnly: usd === null && usdFoil !== null,
+      isShowcase,
       tcgplayerId: card.tcgplayer_id,
       cardmarketId: card.cardmarket_id,
     });
@@ -217,8 +223,17 @@ function buildSetAwarePriceLookup(
     const candidates = validVersions.length > 0 ? validVersions : versions;
 
     candidates.sort((a, b) => {
+      // 1. Non-showcase/special frames first
+      if (a.isShowcase !== b.isShowcase) return a.isShowcase ? 1 : -1;
+      // 2. Non-promo first
       if (a.isPromo !== b.isPromo) return a.isPromo ? 1 : -1;
+      // 3. Lowest collector number (base versions are lowest)
+      const aNum = parseInt(a.collectorNumber, 10) || 999;
+      const bNum = parseInt(b.collectorNumber, 10) || 999;
+      if (aNum !== bNum) return aNum - bNum;
+      // 4. Non-foil-only last (prefer non-foil when other factors equal)
       if (a.isFoilOnly !== b.isFoilOnly) return a.isFoilOnly ? 1 : -1;
+      // 5. Cheapest price
       return a.price - b.price;
     });
 
