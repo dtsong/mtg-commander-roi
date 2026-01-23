@@ -39,6 +39,8 @@ interface PriceInfo {
   name: string;
   price: number;
   image: string | null;
+  foilPrice: number | null;
+  isFoilOnly: boolean;
 }
 
 const sessionPriceCache = new Map<string, PriceInfo>();
@@ -160,30 +162,26 @@ export const getStaticDeckPrices = async (deckId: string): Promise<StaticDeckPri
   if (!data?.decks?.[deckId]) return null;
 
   const deckData = data.decks[deckId];
+  const mapCard = (card: typeof deckData.cards[0]): CardWithPrice => ({
+    name: card.name,
+    quantity: card.quantity,
+    price: card.usd ? parseFloat(card.usd) : 0,
+    total: card.usd ? parseFloat(card.usd) * card.quantity : 0,
+    isCommander: card.isCommander,
+    tcgplayerId: card.tcgplayerId,
+    cardmarketId: card.cardmarketId,
+    foilPrice: card.usd_foil ? parseFloat(card.usd_foil) : null,
+    isFoilOnly: card.isFoilOnly,
+  });
+
   return {
     totalValue: deckData.totalValue,
     cardCount: deckData.cardCount,
-    cards: deckData.cards.map(card => ({
-      name: card.name,
-      quantity: card.quantity,
-      price: card.usd ? parseFloat(card.usd) : 0,
-      total: card.usd ? parseFloat(card.usd) * card.quantity : 0,
-      isCommander: card.isCommander,
-      tcgplayerId: card.tcgplayerId,
-      cardmarketId: card.cardmarketId,
-    })),
+    cards: deckData.cards.map(mapCard),
     topCards: deckData.cards
       .filter(c => c.usd)
       .slice(0, 5)
-      .map(card => ({
-        name: card.name,
-        quantity: card.quantity,
-        price: card.usd ? parseFloat(card.usd) : 0,
-        total: card.usd ? parseFloat(card.usd) * card.quantity : 0,
-        isCommander: card.isCommander,
-        tcgplayerId: card.tcgplayerId,
-        cardmarketId: card.cardmarketId,
-      })),
+      .map(mapCard),
   };
 };
 
@@ -389,10 +387,16 @@ export const fetchCardsPrices = async (
 
   for (const card of results) {
     const price = getCardPrice(card);
+    const usd = card.prices?.usd ?? null;
+    const usdFoil = card.prices?.usd_foil ?? null;
+    const foilPrice = usdFoil ? parseFloat(usdFoil) : null;
+    const isFoilOnly = usd === null && usdFoil !== null;
     const priceInfo: PriceInfo = {
       name: card.name,
       price,
       image: getCardImage(card),
+      foilPrice: foilPrice && foilPrice !== price ? foilPrice : null,
+      isFoilOnly,
     };
     priceMap.set(card.name, priceInfo);
     const cacheKey = card.set
@@ -425,6 +429,8 @@ export const fetchDeckPrices = async (
       total: lineTotal,
       image: priceInfo?.image || null,
       isCommander: card.isCommander,
+      foilPrice: priceInfo?.foilPrice ?? null,
+      isFoilOnly: priceInfo?.isFoilOnly,
     });
 
     totalValue += lineTotal;

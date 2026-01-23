@@ -48,6 +48,8 @@ interface ComputedCardPrice {
   name: string;
   quantity: number;
   usd: string | null;
+  usd_foil?: string | null;
+  isFoilOnly?: boolean;
   isCommander?: boolean;
   tcgplayerId?: number;
   cardmarketId?: number;
@@ -148,6 +150,7 @@ async function downloadBulkData(url: string): Promise<BulkCard[]> {
 interface CardVersion {
   price: number;
   priceStr: string;
+  foilPriceStr: string | null;
   collectorNumber: string;
   isPromo: boolean;
   isFoilOnly: boolean;
@@ -158,6 +161,8 @@ interface CardVersion {
 
 interface PriceLookupEntry {
   priceStr: string | null;
+  foilPriceStr: string | null;
+  isFoilOnly: boolean;
   tcgplayerId?: number;
   cardmarketId?: number;
 }
@@ -199,6 +204,7 @@ function buildSetAwarePriceLookup(
     cardVersions.get(setKey)!.push({
       price,
       priceStr,
+      foilPriceStr: usdFoil,
       collectorNumber: card.collector_number,
       isPromo: card.promo === true,
       isFoilOnly: usd === null && usdFoil !== null,
@@ -241,6 +247,8 @@ function buildSetAwarePriceLookup(
       const best = candidates[0];
       lookup.set(setKey, {
         priceStr: best.priceStr,
+        foilPriceStr: best.foilPriceStr,
+        isFoilOnly: best.isFoilOnly,
         tcgplayerId: best.tcgplayerId,
         cardmarketId: best.cardmarketId,
       });
@@ -279,10 +287,16 @@ function computeDeckPrices(
       const price = priceStr ? parseFloat(priceStr) : 0;
       const lineTotal = price * card.quantity;
 
+      const foilPriceStr = lookupEntry?.foilPriceStr ?? null;
+      const isFoilOnly = lookupEntry?.isFoilOnly ?? false;
+      const includeFoil = foilPriceStr && foilPriceStr !== priceStr;
+
       cardPrices.push({
         name: card.name,
         quantity: card.quantity,
         usd: priceStr,
+        ...(includeFoil && { usd_foil: foilPriceStr }),
+        ...(isFoilOnly && { isFoilOnly: true }),
         isCommander: card.isCommander,
         tcgplayerId: lookupEntry?.tcgplayerId,
         cardmarketId: lookupEntry?.cardmarketId,

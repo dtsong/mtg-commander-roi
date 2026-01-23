@@ -73,6 +73,8 @@ export interface CardWithPrice {
   lowestListing?: number | null;
   tcgplayerId?: number;
   cardmarketId?: number;
+  foilPrice?: number | null;
+  isFoilOnly?: boolean;
 }
 
 export interface TopCard {
@@ -131,6 +133,8 @@ export interface StaticCardEntry {
   name: string;
   quantity: number;
   usd?: string | null;
+  usd_foil?: string | null;
+  isFoilOnly?: boolean;
   isCommander?: boolean;
   tcgplayerId?: number;
   cardmarketId?: number;

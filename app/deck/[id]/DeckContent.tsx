@@ -68,6 +68,8 @@ export default function DeckContent({ deckId }: { deckId: string }) {
           lowestListing: card.lowestListing,
           tcgplayerId: card.tcgplayerId,
           cardmarketId: card.cardmarketId,
+          foilPrice: card.foilPrice,
+          isFoilOnly: card.isFoilOnly,
         }));
         const cardsWithoutPrice = formattedCards.filter(c => c.price === 0 || c.price === null);
         if (!cancelled) {
@@ -109,6 +111,8 @@ export default function DeckContent({ deckId }: { deckId: string }) {
           lowestListing: card.lowestListing,
           tcgplayerId: card.tcgplayerId,
           cardmarketId: card.cardmarketId,
+          foilPrice: card.foilPrice,
+          isFoilOnly: card.isFoilOnly,
         }));
         const cardsWithoutPrice = formattedCards.filter(c => c.price === 0 || c.price === null);
         if (!cancelled) {

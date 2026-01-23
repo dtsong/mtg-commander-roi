@@ -12,6 +12,8 @@ interface CardPriceRowCard {
   lowestListing?: number | null;
   tcgplayerId?: number;
   cardmarketId?: number;
+  foilPrice?: number | null;
+  isFoilOnly?: boolean;
 }
 
 interface CardPriceRowProps {
@@ -33,6 +35,13 @@ function CardPriceRow({ card, rank, showConditionInfo = false }: CardPriceRowPro
     ? ((price - lowestListing) / price) * 100
     : 0;
   const hasSignificantSavings = savingsPercent >= 10;
+
+  const isFoilOnly = card.isFoilOnly === true;
+  const hasFoilPrice = card.foilPrice !== null && card.foilPrice !== undefined && card.foilPrice > 0;
+  const foilPremiumPercent = hasFoilPrice && price > 0
+    ? ((card.foilPrice! - price) / price) * 100
+    : 0;
+  const hasSignificantFoilPremium = foilPremiumPercent > 10;
 
   const scryfallUrl = `https://scryfall.com/search?q=!"${encodeURIComponent(card.name)}"`;
 
@@ -60,6 +69,11 @@ function CardPriceRow({ card, rank, showConditionInfo = false }: CardPriceRowPro
             tcgplayerId={card.tcgplayerId}
             cardmarketId={card.cardmarketId}
           />
+          {isFoilOnly && (
+            <span className="text-[9px] px-1 py-0.5 bg-amber-900/50 text-amber-400 rounded font-medium whitespace-nowrap">
+              FOIL ONLY
+            </span>
+          )}
         </div>
         {showQuantity && hasPriceData && (
           <div className="text-xs text-slate-400">
@@ -74,8 +88,12 @@ function CardPriceRow({ card, rank, showConditionInfo = false }: CardPriceRowPro
               <span className={`font-bold ${price > 5 ? 'text-green-400' : 'text-white'}`}>
                 {formatCurrency(price)}
               </span>
-              <span className="text-[10px] px-1 py-0.5 bg-slate-600 text-slate-300 rounded font-medium">
-                NM
+              <span className={`text-[10px] px-1 py-0.5 rounded font-medium ${
+                isFoilOnly
+                  ? 'bg-amber-900/50 text-amber-400'
+                  : 'bg-slate-600 text-slate-300'
+              }`}>
+                {isFoilOnly ? 'FOIL' : 'NM'}
               </span>
               {showConditionInfo && (
                 <Link
@@ -87,6 +105,18 @@ function CardPriceRow({ card, rank, showConditionInfo = false }: CardPriceRowPro
                 </Link>
               )}
             </div>
+            {hasFoilPrice && !isFoilOnly && (
+              <div className="flex items-center gap-1 text-xs">
+                <span className={hasSignificantFoilPremium ? 'text-amber-400' : 'text-slate-400'}>
+                  Foil: {formatCurrency(card.foilPrice!)}
+                </span>
+                {hasSignificantFoilPremium && (
+                  <span className="text-amber-400 font-medium">
+                    (+{foilPremiumPercent.toFixed(0)}%)
+                  </span>
+                )}
+              </div>
+            )}
             {hasLowestListing && lowestListing < price && (
               <div className="flex items-center gap-1 text-xs">
                 <span className={hasSignificantSavings ? 'text-yellow-400' : 'text-slate-400'}>
