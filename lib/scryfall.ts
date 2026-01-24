@@ -134,14 +134,16 @@ let staticPricesCache: StaticPricesData | null = null;
 export const loadStaticPrices = async (): Promise<StaticPricesData | null> => {
   if (staticPricesCache) return staticPricesCache;
 
-  try {
-    const response = await fetchWithTimeout('/data/prices.json');
-    if (!response.ok) return null;
-    staticPricesCache = await response.json() as StaticPricesData;
-    return staticPricesCache;
-  } catch {
-    return null;
-  }
+  return deduplicatedFetch<StaticPricesData | null>('static:prices.json', async () => {
+    try {
+      const response = await fetchWithTimeout('/data/prices.json');
+      if (!response.ok) return null;
+      staticPricesCache = await response.json() as StaticPricesData;
+      return staticPricesCache;
+    } catch {
+      return null;
+    }
+  });
 };
 
 export const getStaticSetPrices = async (setCode: string): Promise<StaticCardData[] | null> => {
@@ -457,14 +459,16 @@ let lowestListingsCache: LowestListingsData | null = null;
 export const loadLowestListings = async (): Promise<LowestListingsData | null> => {
   if (lowestListingsCache) return lowestListingsCache;
 
-  try {
-    const response = await fetchWithTimeout('/data/lowest-listings.json');
-    if (!response.ok) return null;
-    lowestListingsCache = await response.json() as LowestListingsData;
-    return lowestListingsCache;
-  } catch {
-    return null;
-  }
+  return deduplicatedFetch<LowestListingsData | null>('static:lowest-listings.json', async () => {
+    try {
+      const response = await fetchWithTimeout('/data/lowest-listings.json');
+      if (!response.ok) return null;
+      lowestListingsCache = await response.json() as LowestListingsData;
+      return lowestListingsCache;
+    } catch {
+      return null;
+    }
+  });
 };
 
 export const getLowestListingForCard = async (cardName: string): Promise<number | null> => {
