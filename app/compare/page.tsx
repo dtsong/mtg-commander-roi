@@ -4,6 +4,7 @@ import { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
 import { ArrowLeft, Trash2, RefreshCw, Loader2 } from 'lucide-react';
 import DeckComparisonTable from '@/components/DeckComparisonTable';
+import { useToast } from '@/components/ui/ToastProvider';
 import { PRECON_DATABASE, getDeckCards } from '@/lib/precons';
 import { loadStaticPrices, fetchDeckPrices } from '@/lib/scryfall';
 import { getCachedPrice, setCachedPrice, clearCache, formatStaticPriceAge } from '@/lib/priceCache';
@@ -16,6 +17,7 @@ interface RefreshProgress {
 }
 
 export default function ComparePage() {
+  const { toast } = useToast();
   const [priceData, setPriceData] = useState<Record<string, CachedPriceData>>({});
   const [loadingDeck, setLoadingDeck] = useState<string | null>(null);
   const [refreshingAll, setRefreshingAll] = useState(false);
@@ -91,7 +93,9 @@ export default function ComparePage() {
         cardCount: priceResult.cardCount,
       };
 
-      setCachedPrice(deck.id, data);
+      if (!setCachedPrice(deck.id, data)) {
+        toast('Storage full — price cache unavailable', 'error');
+      }
 
       setPriceData(prev => ({
         ...prev,

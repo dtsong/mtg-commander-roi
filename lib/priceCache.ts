@@ -18,8 +18,8 @@ export const getCachedPrice = (deckId: string): CachedPriceData | null => {
   }
 };
 
-export const setCachedPrice = (deckId: string, data: Omit<CachedPriceData, 'fetchedAt'>): void => {
-  if (typeof window === 'undefined') return;
+export const setCachedPrice = (deckId: string, data: Omit<CachedPriceData, 'fetchedAt'>): boolean => {
+  if (typeof window === 'undefined') return false;
 
   const key = CACHE_PREFIX + deckId;
   const cacheData: CachedPriceData = {
@@ -29,8 +29,9 @@ export const setCachedPrice = (deckId: string, data: Omit<CachedPriceData, 'fetc
 
   try {
     localStorage.setItem(key, JSON.stringify(cacheData));
+    return true;
   } catch {
-    // Quota exceeded or private browsing - silently fail
+    return false;
   }
 };
 
