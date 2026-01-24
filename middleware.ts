@@ -15,17 +15,17 @@ interface RateLimitEntry {
 // or a distributed store (Redis/Upstash). Kept here since it's harmless and
 // provides basic protection in single-instance/dev environments.
 const rateLimitStore = new Map<string, RateLimitEntry>();
+let lastCleanup = 0;
 
-function cleanupExpiredEntries() {
-  const now = Date.now();
+function cleanupIfStale(now: number) {
+  if (now - lastCleanup < RATE_LIMIT_WINDOW_MS) return;
+  lastCleanup = now;
   for (const [key, entry] of rateLimitStore) {
     if (now > entry.resetTime) {
       rateLimitStore.delete(key);
     }
   }
 }
-
-setInterval(cleanupExpiredEntries, RATE_LIMIT_WINDOW_MS);
 
 function getClientIp(request: NextRequest): string {
   const forwardedFor = request.headers.get('x-forwarded-for');
@@ -68,6 +68,7 @@ export function middleware(request: NextRequest) {
 
   const clientIp = getClientIp(request);
   const now = Date.now();
+  cleanupIfStale(now);
   const entry = rateLimitStore.get(clientIp);
 
   if (!entry || now > entry.resetTime) {
