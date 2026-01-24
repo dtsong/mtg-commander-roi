@@ -38,13 +38,17 @@ export default function CookieConsent() {
   }, []);
 
   const handleAccept = useCallback(() => {
-    localStorage.setItem(CONSENT_KEY, 'accepted');
+    try {
+      localStorage.setItem(CONSENT_KEY, 'accepted');
+    } catch { /* storage unavailable */ }
     setShowBanner(false);
     updateGoogleConsent(true);
   }, []);
 
   const handleReject = useCallback(() => {
-    localStorage.setItem(CONSENT_KEY, 'rejected');
+    try {
+      localStorage.setItem(CONSENT_KEY, 'rejected');
+    } catch { /* storage unavailable */ }
     setShowBanner(false);
     updateGoogleConsent(false);
   }, []);
