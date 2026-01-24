@@ -33,13 +33,16 @@ const iconStyles = {
   loading: 'text-purple-400 animate-spin',
 };
 
+const AUTO_DISMISS_MS = 5000;
 const LOADING_MAX_DURATION = 30000;
 
-export function Toast({ message, type, duration = 4000, onClose }: ToastProps) {
+export function Toast({ message, type, duration, onClose }: ToastProps) {
   const Icon = icons[type];
 
   useEffect(() => {
-    const timeout = type === 'loading' ? LOADING_MAX_DURATION : duration;
+    const timeout = type === 'loading'
+      ? LOADING_MAX_DURATION
+      : Math.min(duration ?? AUTO_DISMISS_MS, LOADING_MAX_DURATION);
     const timer = setTimeout(onClose, timeout);
     return () => clearTimeout(timer);
   }, [duration, onClose, type]);
