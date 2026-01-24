@@ -1,4 +1,4 @@
-import { describe, it, expect, beforeEach } from 'vitest';
+import { describe, it, expect, beforeEach, vi } from 'vitest';
 import { deduplicatedFetch, getInflightCount, clearInflight } from '@/lib/deduplicator';
 
 describe('deduplicator', () => {
@@ -79,6 +79,44 @@ describe('deduplicator', () => {
 
     expect(results[0].status).toBe('rejected');
     expect(results[1].status).toBe('rejected');
+  });
+
+  it('rejects when queue reaches hard limit', async () => {
+    const pending: Array<{ resolve: (v: string) => void }> = [];
+
+    for (let i = 0; i < 500; i++) {
+      deduplicatedFetch(`limit-key-${i}`, () => new Promise<string>(resolve => {
+        pending.push({ resolve });
+      }));
+    }
+
+    expect(getInflightCount()).toBe(500);
+
+    await expect(
+      deduplicatedFetch('one-too-many', () => Promise.resolve('nope'))
+    ).rejects.toThrow('Deduplicator queue full');
+
+    // Resolve all so clearInflight() in beforeEach works cleanly
+    pending.forEach(p => p.resolve('done'));
+    await Promise.resolve();
+    clearInflight();
+  });
+
+  it('logs warning when queue exceeds threshold', async () => {
+    const warnSpy = vi.spyOn(console, 'warn').mockImplementation(() => {});
+    const pending: Array<{ resolve: (v: string) => void }> = [];
+
+    // Size is checked before adding, so warning fires when size=100 (adding entry #101)
+    for (let i = 0; i < 101; i++) {
+      deduplicatedFetch(`warn-key-${i}`, () => new Promise<string>(resolve => {
+        pending.push({ resolve });
+      }));
+    }
+
+    expect(warnSpy).toHaveBeenCalledWith('Deduplicator queue depth: 100/500');
+
+    pending.forEach(p => p.resolve('done'));
+    warnSpy.mockRestore();
   });
 
   it('tracks inflight count correctly', async () => {
