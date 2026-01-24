@@ -31,12 +31,12 @@ describe('Toast', () => {
     expect(onClose).toHaveBeenCalledTimes(1);
   });
 
-  it('uses default 4s duration', () => {
+  it('uses default 5s duration', () => {
     vi.useFakeTimers();
     const onClose = vi.fn();
     render(<Toast message="Default" type="info" onClose={onClose} />);
 
-    act(() => { vi.advanceTimersByTime(3999); });
+    act(() => { vi.advanceTimersByTime(4999); });
     expect(onClose).not.toHaveBeenCalled();
     act(() => { vi.advanceTimersByTime(1); });
     expect(onClose).toHaveBeenCalled();
@@ -63,7 +63,7 @@ describe('Toast', () => {
     const { container } = render(
       <Toast message="Click dismiss" type="success" onClose={onClose} />
     );
-    const dismissBtn = container.querySelector('button[aria-label="Dismiss"]');
+    const dismissBtn = container.querySelector<HTMLButtonElement>('button[aria-label="Dismiss"]');
     dismissBtn?.click();
     expect(onClose).toHaveBeenCalledTimes(1);
   });
