@@ -44,7 +44,27 @@ interface PriceInfo {
   isFoilOnly: boolean;
 }
 
+const SESSION_CACHE_MAX = 5000;
 const sessionPriceCache = new Map<string, PriceInfo>();
+
+function cacheGet(key: string): PriceInfo | undefined {
+  const value = sessionPriceCache.get(key);
+  if (value !== undefined) {
+    sessionPriceCache.delete(key);
+    sessionPriceCache.set(key, value);
+  }
+  return value;
+}
+
+function cacheSet(key: string, value: PriceInfo): void {
+  if (sessionPriceCache.has(key)) {
+    sessionPriceCache.delete(key);
+  } else if (sessionPriceCache.size >= SESSION_CACHE_MAX) {
+    const oldest = sessionPriceCache.keys().next().value;
+    if (oldest !== undefined) sessionPriceCache.delete(oldest);
+  }
+  sessionPriceCache.set(key, value);
+}
 
 const sleep = (ms: number): Promise<void> => new Promise(resolve => setTimeout(resolve, ms));
 
@@ -353,7 +373,7 @@ export const fetchCardsPrices = async (
     const cacheKey = card.setCode
       ? `${card.name.toLowerCase()}|${card.setCode.toLowerCase()}`
       : card.name.toLowerCase();
-    const cached = sessionPriceCache.get(cacheKey);
+    const cached = cacheGet(cacheKey);
     if (cached) {
       priceMap.set(card.name, cached);
     } else {
@@ -408,7 +428,7 @@ export const fetchCardsPrices = async (
     const cacheKey = card.set
       ? `${card.name.toLowerCase()}|${card.set.toLowerCase()}`
       : card.name.toLowerCase();
-    sessionPriceCache.set(cacheKey, priceInfo);
+    cacheSet(cacheKey, priceInfo);
   }
 
   return priceMap;
