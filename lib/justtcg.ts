@@ -2,6 +2,20 @@ const JUSTTCG_API = 'https://api.justtcg.com';
 const FREE_TIER_RATE_LIMIT = 10;
 const RATE_WINDOW_MS = 60 * 1000;
 const MAX_RETRIES = 3;
+const FETCH_TIMEOUT_MS = 30000;
+
+const fetchWithTimeout = async (
+  url: string,
+  options: RequestInit = {}
+): Promise<Response> => {
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
+  try {
+    return await fetch(url, { ...options, signal: controller.signal });
+  } finally {
+    clearTimeout(timeoutId);
+  }
+};
 
 let requestCount = 0;
 let rateLimitReset = Date.now() + RATE_WINDOW_MS;
@@ -94,7 +108,7 @@ export const fetchJustTCGCard = async (
   if (identifier.setCode) params.set('setCode', identifier.setCode);
 
   try {
-    const response = await fetch(`${JUSTTCG_API}/v1/card?${params.toString()}`, {
+    const response = await fetchWithTimeout(`${JUSTTCG_API}/v1/card?${params.toString()}`, {
       headers: {
         'Authorization': `Bearer ${getApiKey()}`,
         'Accept': 'application/json',
@@ -142,7 +156,7 @@ export const fetchJustTCGCards = async (
   }
 
   try {
-    const response = await fetch(`${JUSTTCG_API}/v1/cards`, {
+    const response = await fetchWithTimeout(`${JUSTTCG_API}/v1/cards`, {
       method: 'POST',
       headers: {
         'Authorization': `Bearer ${getApiKey()}`,
