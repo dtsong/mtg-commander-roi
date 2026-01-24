@@ -8,6 +8,7 @@ import {
   scrapeLowestListing,
   type LowestListingResult,
 } from '../lib/tcgplayer-scraper';
+import { validateDecklists, validatePriceData, validateLowestListings } from './validate-input';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
@@ -79,14 +80,16 @@ function loadWatchlist(): string[] {
 
 function loadDecklists(): Decklists {
   console.log('Loading decklists...');
-  const data = JSON.parse(readFileSync(DECKLISTS_PATH, 'utf-8')) as Decklists;
+  const raw = JSON.parse(readFileSync(DECKLISTS_PATH, 'utf-8'));
+  const data = validateDecklists(raw);
   console.log(`Loaded ${Object.keys(data).length} decks`);
   return data;
 }
 
 function loadPrices(): PriceData {
   console.log('Loading prices...');
-  const data = JSON.parse(readFileSync(PRICES_PATH, 'utf-8')) as PriceData;
+  const raw = JSON.parse(readFileSync(PRICES_PATH, 'utf-8'));
+  const data = validatePriceData(raw) as PriceData;
   console.log(`Loaded prices for ${Object.keys(data.decks).length} decks`);
   return data;
 }
@@ -180,10 +183,12 @@ function loadExistingListings(): LowestListingsData | null {
   if (!existsSync(OUTPUT_PATH)) return null;
 
   try {
-    const data = JSON.parse(readFileSync(OUTPUT_PATH, 'utf-8')) as LowestListingsData;
+    const raw = JSON.parse(readFileSync(OUTPUT_PATH, 'utf-8'));
+    const data = validateLowestListings(raw);
     console.log(`Loaded existing listings for ${Object.keys(data.cards).length} cards`);
     return data;
-  } catch {
+  } catch (error) {
+    console.warn(`Failed to load existing listings: ${(error as Error).message}`);
     return null;
   }
 }

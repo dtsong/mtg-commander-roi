@@ -13,6 +13,7 @@ import { writeFileSync, readFileSync, mkdirSync } from 'fs';
 import { dirname, join } from 'path';
 import { fileURLToPath } from 'url';
 import type { Decklists, CardPrices } from '../types';
+import { validateDecklists } from './validate-input';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
@@ -90,7 +91,8 @@ async function fetchWithRetry(url: string, maxRetries: number = 5): Promise<Resp
 
 function loadDecklists(): Decklists {
   console.log('Loading decklists...');
-  const data = JSON.parse(readFileSync(DECKLISTS_PATH, 'utf-8')) as Decklists;
+  const raw = JSON.parse(readFileSync(DECKLISTS_PATH, 'utf-8'));
+  const data = validateDecklists(raw);
   const deckCount = Object.keys(data).length;
   console.log(`Loaded ${deckCount} decks`);
   return data;
