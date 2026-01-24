@@ -94,7 +94,9 @@ export default function BulkImport({ onImport }: BulkImportProps) {
         Bulk Import
       </h3>
 
+      <label htmlFor="bulk-import-input" className="sr-only">Paste decklist</label>
       <textarea
+        id="bulk-import-input"
         value={text}
         onChange={(e) => setText(e.target.value)}
         placeholder={`Paste decklist here (max ${MAX_CARDS} cards)...\nFormat: 1 Sol Ring\nor just: Sol Ring`}
