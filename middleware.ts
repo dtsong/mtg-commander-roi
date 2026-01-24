@@ -97,6 +97,7 @@ export function middleware(request: NextRequest) {
   });
 
   response.headers.set('Content-Security-Policy', generateCspHeader(nonce));
+  response.headers.set('X-Permitted-Cross-Domain-Policies', 'none');
   response.headers.set('Report-To', JSON.stringify({
     group: 'csp-endpoint',
     max_age: 86400,
