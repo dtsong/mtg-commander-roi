@@ -17,6 +17,15 @@ const PRECONS_PATH = join(__dirname, '..', 'lib', 'precons.ts');
 const OUTPUT_PATH = join(__dirname, '..', 'public', 'data', 'lowest-listings.json');
 const WATCHLIST_PATH = join(__dirname, '..', 'public', 'data', 'watchlist.json');
 
+const MAX_CARD_NAME_LENGTH = 150;
+const VALID_CARD_NAME_RE = /^[a-zA-Z0-9 ',\-/.:!?"()&+]+$/;
+
+function isValidCardName(name: unknown): name is string {
+  if (typeof name !== 'string') return false;
+  if (name.length === 0 || name.length > MAX_CARD_NAME_LENGTH) return false;
+  return VALID_CARD_NAME_RE.test(name);
+}
+
 const DEFAULT_MIN_CARD_VALUE = 5;
 const DEFAULT_BATCH_SIZE = 50;
 const DISTRO_DISCOUNT = 0.4;
@@ -53,8 +62,15 @@ function loadWatchlist(): string[] {
 
   try {
     const data = JSON.parse(readFileSync(WATCHLIST_PATH, 'utf-8')) as Watchlist;
-    console.log(`Loaded ${data.cards.length} cards from watchlist`);
-    return data.cards;
+    const valid = data.cards.filter(name => {
+      if (!isValidCardName(name)) {
+        console.warn(`Skipping invalid card name in watchlist: ${String(name).slice(0, 50)}`);
+        return false;
+      }
+      return true;
+    });
+    console.log(`Loaded ${valid.length} cards from watchlist`);
+    return valid;
   } catch {
     console.log('Failed to parse watchlist, skipping');
     return [];
@@ -133,6 +149,7 @@ function extractHighValueCards(
     if (!deck) continue;
 
     for (const card of deck.cards) {
+      if (!isValidCardName(card.name)) continue;
       const price = card.usd ? parseFloat(card.usd) : 0;
       if (price < minValue) continue;
 
