@@ -128,7 +128,8 @@ export const fetchJustTCGCard = async (
 export const fetchJustTCGCards = async (
   identifiers: JustTCGIdentifier[],
   onProgress?: (current: number, total: number) => void,
-  waitAttempts = 0
+  waitAttempts = 0,
+  retryCount = 0
 ): Promise<JustTCGResponse> => {
   if (!checkRateLimit()) {
     if (waitAttempts >= 3) {
@@ -152,9 +153,12 @@ export const fetchJustTCGCards = async (
     });
 
     if (response.status === 429) {
-      const waitTime = rateLimitReset - Date.now();
-      await sleep(waitTime > 0 ? waitTime : 60000);
-      return fetchJustTCGCards(identifiers, onProgress);
+      if (retryCount >= MAX_RETRIES) {
+        throw new Error('JustTCG batch rate limit: max retries exceeded');
+      }
+      const delay = Math.pow(2, retryCount) * 1000;
+      await sleep(delay);
+      return fetchJustTCGCards(identifiers, onProgress, waitAttempts, retryCount + 1);
     }
 
     if (!response.ok) {
@@ -169,6 +173,11 @@ export const fetchJustTCGCards = async (
 
     return data;
   } catch (error) {
+    if (retryCount < MAX_RETRIES) {
+      const delay = Math.pow(2, retryCount) * 1000;
+      await sleep(delay);
+      return fetchJustTCGCards(identifiers, onProgress, waitAttempts, retryCount + 1);
+    }
     console.error('JustTCG batch fetch error:', error instanceof Error ? error.message : 'Unknown error');
     throw error;
   }

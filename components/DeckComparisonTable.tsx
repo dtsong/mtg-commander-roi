@@ -320,27 +320,27 @@ export default function DeckComparisonTable({
           <table className="w-full">
             <thead className="bg-slate-700/50">
               <tr>
-                <th className="px-4 py-3 text-left">
+                <th scope="col" className="px-4 py-3 text-left">
                   <SortHeader label="Deck" sortKey="name" currentSort={sort} onSort={handleSort} />
                 </th>
-                <th className="px-4 py-3 text-left">
+                <th scope="col" className="px-4 py-3 text-left">
                   <SortHeader label="Set" sortKey="set" currentSort={sort} onSort={handleSort} />
                 </th>
-                <th className="px-4 py-3 text-left">Colors</th>
-                <th className="px-4 py-3 text-right">
+                <th scope="col" className="px-4 py-3 text-left">Colors</th>
+                <th scope="col" className="px-4 py-3 text-right">
                   <SortHeader label="MSRP" sortKey="msrp" currentSort={sort} onSort={handleSort} />
                 </th>
-                <th className="px-4 py-3 text-right">
+                <th scope="col" className="px-4 py-3 text-right">
                   <SortHeader label="Value" sortKey="value" currentSort={sort} onSort={handleSort} />
                 </th>
-                <th className="px-4 py-3 text-center">
+                <th scope="col" className="px-4 py-3 text-center">
                   <SortHeader label="Distro ROI" sortKey="distroRoi" currentSort={sort} onSort={handleSort} />
                 </th>
-                <th className="px-4 py-3 text-center">
+                <th scope="col" className="px-4 py-3 text-center">
                   <SortHeader label="MSRP ROI" sortKey="roi" currentSort={sort} onSort={handleSort} />
                 </th>
-                <th className="px-4 py-3 text-center">Updated</th>
-                <th className="px-4 py-3 text-center">Action</th>
+                <th scope="col" className="px-4 py-3 text-center">Updated</th>
+                <th scope="col" className="px-4 py-3 text-center">Action</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-slate-700">

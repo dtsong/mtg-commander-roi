@@ -36,22 +36,7 @@ const nextConfig = {
             key: 'Strict-Transport-Security',
             value: 'max-age=31536000; includeSubDomains',
           },
-          {
-            key: 'Content-Security-Policy',
-            value: [
-              "default-src 'self'",
-              "script-src 'self' 'unsafe-inline' 'strict-dynamic' https://pagead2.googlesyndication.com https://va.vercel-scripts.com",
-              "style-src 'self' 'unsafe-inline'",
-              "img-src 'self' data: https://cards.scryfall.io https://pagead2.googlesyndication.com https://*.doubleclick.net",
-              "font-src 'self'",
-              "connect-src 'self' https://api.scryfall.com https://va.vercel-scripts.com https://pagead2.googlesyndication.com",
-              "frame-src https://googleads.g.doubleclick.net https://pagead2.googlesyndication.com",
-              "frame-ancestors 'none'",
-              "base-uri 'self'",
-              "form-action 'self' https://formspree.io",
-              "upgrade-insecure-requests",
-            ].join('; '),
-          },
+          // CSP is set dynamically in middleware.ts with per-request nonce
         ],
       },
     ];

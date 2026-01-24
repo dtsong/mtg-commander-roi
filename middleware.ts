@@ -42,6 +42,23 @@ function isStaticAsset(pathname: string): boolean {
   return false;
 }
 
+function generateCspHeader(nonce: string): string {
+  return [
+    "default-src 'self'",
+    `script-src 'self' 'nonce-${nonce}' 'strict-dynamic' https://pagead2.googlesyndication.com https://va.vercel-scripts.com`,
+    "style-src 'self' 'unsafe-inline'",
+    "img-src 'self' data: https://cards.scryfall.io https://pagead2.googlesyndication.com https://*.doubleclick.net",
+    "font-src 'self'",
+    "connect-src 'self' https://api.scryfall.com https://va.vercel-scripts.com https://pagead2.googlesyndication.com",
+    "frame-src https://googleads.g.doubleclick.net https://pagead2.googlesyndication.com",
+    "frame-ancestors 'none'",
+    "base-uri 'self'",
+    "form-action 'self' https://formspree.io",
+    "upgrade-insecure-requests",
+    "report-uri /api/csp-report",
+  ].join('; ');
+}
+
 export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
 
@@ -58,10 +75,7 @@ export function middleware(request: NextRequest) {
       count: 1,
       resetTime: now + RATE_LIMIT_WINDOW_MS,
     });
-    return NextResponse.next();
-  }
-
-  if (entry.count >= RATE_LIMIT_REQUESTS) {
+  } else if (entry.count >= RATE_LIMIT_REQUESTS) {
     const retryAfterSeconds = Math.ceil((entry.resetTime - now) / 1000);
     return new NextResponse('Too Many Requests', {
       status: 429,
@@ -70,10 +84,26 @@ export function middleware(request: NextRequest) {
         'Content-Type': 'text/plain',
       },
     });
+  } else {
+    entry.count++;
   }
 
-  entry.count++;
-  return NextResponse.next();
+  const nonce = crypto.randomUUID();
+  const requestHeaders = new Headers(request.headers);
+  requestHeaders.set('x-nonce', nonce);
+
+  const response = NextResponse.next({
+    request: { headers: requestHeaders },
+  });
+
+  response.headers.set('Content-Security-Policy', generateCspHeader(nonce));
+  response.headers.set('Report-To', JSON.stringify({
+    group: 'csp-endpoint',
+    max_age: 86400,
+    endpoints: [{ url: '/api/csp-report' }],
+  }));
+
+  return response;
 }
 
 export const config = {

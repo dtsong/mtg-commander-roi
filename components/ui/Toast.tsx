@@ -46,6 +46,8 @@ export function Toast({ message, type, duration = 4000, onClose }: ToastProps) {
 
   return (
     <div
+      role="status"
+      aria-live="polite"
       className={`flex items-center gap-3 px-4 py-3 rounded-lg border shadow-lg min-w-[280px] max-w-md animate-in slide-in-from-right-5 fade-in ${styles[type]}`}
     >
       <Icon className={`w-5 h-5 flex-shrink-0 ${iconStyles[type]}`} />

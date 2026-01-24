@@ -1,5 +1,24 @@
 @import "tailwindcss";
 
+@theme {
+  --color-brand-purple: #9333ea;
+  --color-brand-purple-light: #a855f7;
+  --color-brand-purple-dark: #7e22ce;
+
+  --color-surface-primary: var(--surface-primary);
+  --color-surface-secondary: var(--surface-secondary);
+  --color-surface-tertiary: var(--surface-tertiary);
+  --color-surface-border: var(--surface-border);
+
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+
+  --color-verdict-buy: #4ade80;
+  --color-verdict-hold: #facc15;
+  --color-verdict-pass: #f87171;
+}
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -8,4 +27,35 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* Light mode (default) */
+  --surface-primary: #f8fafc;
+  --surface-secondary: #f1f5f9;
+  --surface-tertiary: #e2e8f0;
+  --surface-border: #cbd5e1;
+  --text-primary: #1e293b;
+  --text-secondary: #475569;
+  --text-muted: #94a3b8;
+  --bg-gradient-from: #f8fafc;
+  --bg-gradient-via: #f3e8ff;
+  --bg-gradient-to: #f8fafc;
+  --header-bg: rgba(241, 245, 249, 0.8);
+  --card-bg: rgba(241, 245, 249, 0.5);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --surface-primary: #1e293b;
+    --surface-secondary: #334155;
+    --surface-tertiary: #475569;
+    --surface-border: #475569;
+    --text-primary: #f8fafc;
+    --text-secondary: #cbd5e1;
+    --text-muted: #94a3b8;
+    --bg-gradient-from: #0f172a;
+    --bg-gradient-via: #581c87;
+    --bg-gradient-to: #0f172a;
+    --header-bg: rgba(30, 41, 59, 0.5);
+    --card-bg: rgba(30, 41, 59, 0.5);
+  }
 }

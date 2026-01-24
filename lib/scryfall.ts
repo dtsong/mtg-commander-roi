@@ -9,6 +9,7 @@ import type {
   StaticCardData,
   LowestListingsData,
 } from '@/types';
+import { deduplicatedFetch } from './deduplicator';
 
 const SCRYFALL_API = 'https://api.scryfall.com';
 const RATE_LIMIT_MS = 100;
@@ -79,7 +80,7 @@ const checkClientRateLimit = (): boolean => {
   return true;
 };
 
-const rateLimitedFetch = async <T>(url: string, retryCount: number = 0): Promise<T> => {
+const rateLimitedFetchImpl = async <T>(url: string, retryCount: number = 0): Promise<T> => {
   if (!checkClientRateLimit()) {
     throw new Error('Client rate limit exceeded. Please wait before making more requests.');
   }
@@ -103,7 +104,7 @@ const rateLimitedFetch = async <T>(url: string, retryCount: number = 0): Promise
       const delay = Math.pow(2, retryCount) * 1000;
       console.log(`Rate limited, retrying in ${delay}ms...`);
       await sleep(delay);
-      return rateLimitedFetch<T>(url, retryCount + 1);
+      return rateLimitedFetchImpl<T>(url, retryCount + 1);
     }
 
     if (!response.ok) {
@@ -122,6 +123,10 @@ const rateLimitedFetch = async <T>(url: string, retryCount: number = 0): Promise
     }
     throw error;
   }
+};
+
+const rateLimitedFetch = <T>(url: string, retryCount: number = 0): Promise<T> => {
+  return deduplicatedFetch<T>(url, () => rateLimitedFetchImpl<T>(url, retryCount));
 };
 
 let staticPricesCache: StaticPricesData | null = null;
