@@ -17,3 +17,9 @@ repos:
         language: system
         types: [javascript, jsx, ts, tsx]
         pass_filenames: false
+      - id: tests
+        name: tests
+        entry: bun test:ci
+        language: system
+        pass_filenames: false
+        stages: [pre-commit]
