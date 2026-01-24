@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { Search, Plus, X } from 'lucide-react';
 import { searchCards, getCardImage, getCardPrice } from '@/lib/scryfall';
 import { formatCurrency } from '@/lib/calculations';
+import { useToast } from '@/components/ui/ToastProvider';
 import type { ScryfallCard } from '@/types';
 
 interface CardSearchProps {
@@ -12,6 +13,7 @@ interface CardSearchProps {
 }
 
 export default function CardSearch({ onAddCard }: CardSearchProps) {
+  const { toast } = useToast();
   const [query, setQuery] = useState('');
   const [results, setResults] = useState<ScryfallCard[]>([]);
   const [loading, setLoading] = useState(false);
@@ -28,6 +30,7 @@ export default function CardSearch({ onAddCard }: CardSearchProps) {
     } catch {
       setError('Failed to search cards');
       setResults([]);
+      toast('Card search failed — please try again', 'error');
     } finally {
       setLoading(false);
     }
