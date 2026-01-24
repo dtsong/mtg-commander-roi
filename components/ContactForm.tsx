@@ -19,6 +19,17 @@ export default function ContactForm() {
     const form = e.currentTarget;
     const formData = new FormData(form);
 
+    const encoder = new TextEncoder();
+    let totalSize = 0;
+    for (const [key, value] of formData.entries()) {
+      totalSize += encoder.encode(key).length + encoder.encode(String(value)).length;
+    }
+    if (totalSize > 5 * 1024) {
+      setStatus('error');
+      setErrorMessage('Your message is too large. Please shorten your input and try again.');
+      return;
+    }
+
     if (!formspreeId) {
       setStatus('error');
       setErrorMessage('Contact form is not configured. Please email us directly.');
