@@ -9,8 +9,11 @@ interface RateLimitEntry {
   resetTime: number;
 }
 
-// In-memory rate limiting: works for single-instance deployments.
-// For horizontal scaling (multiple instances), use Redis or similar distributed store.
+// In-memory rate limiting: works for single-instance deployments and local dev.
+// On Vercel serverless, each cold-start gets a fresh Map, so this is ineffective
+// at scale. For production rate limiting, use Vercel's built-in firewall rules
+// or a distributed store (Redis/Upstash). Kept here since it's harmless and
+// provides basic protection in single-instance/dev environments.
 const rateLimitStore = new Map<string, RateLimitEntry>();
 
 function cleanupExpiredEntries() {

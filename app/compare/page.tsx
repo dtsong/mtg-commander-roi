@@ -119,7 +119,7 @@ export default function ComparePage() {
         currentDeck: batch[0].name,
       });
 
-      await Promise.all(batch.map(deck => fetchDeckPrice(deck)));
+      await Promise.allSettled(batch.map(deck => fetchDeckPrice(deck)));
 
       if (i + BATCH_SIZE < PRECON_DATABASE.length) {
         await new Promise(r => setTimeout(r, 300));

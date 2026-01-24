@@ -1,10 +1,17 @@
 import type { PurchaseUrls } from '@/types';
 
+function isValidCardName(name: string): boolean {
+  if (!name || name.length > 200) return false;
+  if (/<|>|javascript:/i.test(name)) return false;
+  return true;
+}
+
 /**
  * Get TCGplayer URL for a card.
  * Uses direct product link if ID available, otherwise falls back to search.
  */
-export function getTCGplayerUrl(cardName: string, tcgplayerId?: number): string {
+export function getTCGplayerUrl(cardName: string, tcgplayerId?: number): string | null {
+  if (!isValidCardName(cardName) && !tcgplayerId) return null;
   if (tcgplayerId) {
     return `https://www.tcgplayer.com/product/${tcgplayerId}`;
   }
@@ -15,7 +22,8 @@ export function getTCGplayerUrl(cardName: string, tcgplayerId?: number): string 
  * Get CardMarket URL for a card.
  * Uses direct product link if ID available, otherwise falls back to search.
  */
-export function getCardMarketUrl(cardName: string, cardmarketId?: number): string {
+export function getCardMarketUrl(cardName: string, cardmarketId?: number): string | null {
+  if (!isValidCardName(cardName) && !cardmarketId) return null;
   if (cardmarketId) {
     return `https://www.cardmarket.com/en/Magic/Products/Singles/${cardmarketId}`;
   }
@@ -32,7 +40,7 @@ export function getPurchaseUrls(
   ids?: { tcgplayerId?: number; cardmarketId?: number }
 ): PurchaseUrls {
   return {
-    tcgplayer: getTCGplayerUrl(cardName, ids?.tcgplayerId),
-    cardmarket: getCardMarketUrl(cardName, ids?.cardmarketId),
+    tcgplayer: getTCGplayerUrl(cardName, ids?.tcgplayerId) ?? undefined,
+    cardmarket: getCardMarketUrl(cardName, ids?.cardmarketId) ?? undefined,
   };
 }

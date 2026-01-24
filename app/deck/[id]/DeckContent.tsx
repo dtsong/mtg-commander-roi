@@ -83,7 +83,7 @@ export default function DeckContent({ deckId }: { deckId: string }) {
         if (commanderCard) {
           getCardByName(commanderCard.name).then(commander => {
             if (commander && !cancelled) setCommanderImage(getCardImage(commander));
-          });
+          }).catch(() => {});
         }
         return;
       }

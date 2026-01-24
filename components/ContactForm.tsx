@@ -38,9 +38,8 @@ export default function ContactForm() {
         setStatus('success');
         form.reset();
       } else {
-        const data = await response.json();
         setStatus('error');
-        setErrorMessage(data.error || 'Something went wrong. Please try again.');
+        setErrorMessage('Something went wrong. Please try again.');
       }
     } catch {
       setStatus('error');

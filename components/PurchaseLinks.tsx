@@ -12,8 +12,11 @@ function PurchaseLinks({ cardName, tcgplayerId, cardmarketId }: PurchaseLinksPro
   const tcgplayerUrl = getTCGplayerUrl(cardName, tcgplayerId);
   const cardmarketUrl = getCardMarketUrl(cardName, cardmarketId);
 
+  if (!tcgplayerUrl && !cardmarketUrl) return null;
+
   return (
     <div className="flex items-center gap-1 flex-shrink-0">
+      {tcgplayerUrl && (
       <a
         href={tcgplayerUrl}
         target="_blank"
@@ -24,6 +27,8 @@ function PurchaseLinks({ cardName, tcgplayerId, cardmarketId }: PurchaseLinksPro
         TCG
         <ExternalLink className="w-3 h-3" />
       </a>
+      )}
+      {cardmarketUrl && (
       <a
         href={cardmarketUrl}
         target="_blank"
@@ -34,6 +39,7 @@ function PurchaseLinks({ cardName, tcgplayerId, cardmarketId }: PurchaseLinksPro
         CM
         <ExternalLink className="w-3 h-3" />
       </a>
+      )}
     </div>
   );
 }

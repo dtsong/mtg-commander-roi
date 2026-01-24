@@ -74,13 +74,17 @@ const getApiKey = (): string => {
 
 export const fetchJustTCGCard = async (
   identifier: JustTCGIdentifier,
-  retryCount = 0
+  retryCount = 0,
+  waitAttempts = 0
 ): Promise<JustTCGCard | null> => {
   if (!checkRateLimit()) {
+    if (waitAttempts >= 3) {
+      throw new Error('JustTCG rate limit: max wait attempts exceeded');
+    }
     const waitTime = rateLimitReset - Date.now();
     console.warn(`JustTCG rate limit reached. Waiting ${Math.ceil(waitTime / 1000)}s...`);
     await sleep(waitTime);
-    return fetchJustTCGCard(identifier, retryCount);
+    return fetchJustTCGCard(identifier, retryCount, waitAttempts + 1);
   }
 
   const params = new URLSearchParams();
@@ -123,13 +127,17 @@ export const fetchJustTCGCard = async (
 
 export const fetchJustTCGCards = async (
   identifiers: JustTCGIdentifier[],
-  onProgress?: (current: number, total: number) => void
+  onProgress?: (current: number, total: number) => void,
+  waitAttempts = 0
 ): Promise<JustTCGResponse> => {
   if (!checkRateLimit()) {
+    if (waitAttempts >= 3) {
+      throw new Error('JustTCG rate limit: max wait attempts exceeded');
+    }
     const waitTime = rateLimitReset - Date.now();
     console.warn(`JustTCG rate limit reached. Waiting ${Math.ceil(waitTime / 1000)}s...`);
     await sleep(waitTime);
-    return fetchJustTCGCards(identifiers, onProgress);
+    return fetchJustTCGCards(identifiers, onProgress, waitAttempts + 1);
   }
 
   try {

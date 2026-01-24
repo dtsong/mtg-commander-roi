@@ -27,7 +27,11 @@ export const setCachedPrice = (deckId: string, data: Omit<CachedPriceData, 'fetc
     fetchedAt: new Date().toISOString(),
   };
 
-  localStorage.setItem(key, JSON.stringify(cacheData));
+  try {
+    localStorage.setItem(key, JSON.stringify(cacheData));
+  } catch {
+    // Quota exceeded or private browsing - silently fail
+  }
 };
 
 export const getCacheAge = (deckId: string): number | null => {
