@@ -45,6 +45,7 @@ export default function AddDeckModal({ isOpen, onClose, onAdd }: AddDeckModalPro
   };
 
   const dialogRef = useRef<HTMLDivElement>(null);
+  const triggerRef = useRef<Element | null>(null);
 
   const handleKeyDown = useCallback((e: KeyboardEvent) => {
     if (e.key === 'Escape') {
@@ -69,10 +70,16 @@ export default function AddDeckModal({ isOpen, onClose, onAdd }: AddDeckModalPro
 
   useEffect(() => {
     if (!isOpen) return;
+    triggerRef.current = document.activeElement;
     document.addEventListener('keydown', handleKeyDown);
     const firstInput = dialogRef.current?.querySelector<HTMLElement>('input');
     firstInput?.focus();
-    return () => document.removeEventListener('keydown', handleKeyDown);
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown);
+      if (triggerRef.current instanceof HTMLElement) {
+        triggerRef.current.focus();
+      }
+    };
   }, [isOpen, handleKeyDown]);
 
   if (!isOpen) return null;
@@ -90,6 +97,7 @@ export default function AddDeckModal({ isOpen, onClose, onAdd }: AddDeckModalPro
           <h2 id="add-deck-title" className="text-lg font-semibold text-white">Add Custom Deck</h2>
           <button
             onClick={onClose}
+            aria-label="Close dialog"
             className="text-slate-400 hover:text-white"
           >
             <X className="w-5 h-5" />
