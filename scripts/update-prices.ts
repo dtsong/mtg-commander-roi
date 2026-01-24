@@ -9,7 +9,7 @@
  * For lowest listing data, run: bun scripts/fetch-lowest-listings.ts
  */
 
-import { writeFileSync, readFileSync, mkdirSync } from 'fs';
+import { writeFileSync, readFileSync, mkdirSync, existsSync, copyFileSync } from 'fs';
 import { dirname, join } from 'path';
 import { fileURLToPath } from 'url';
 import type { Decklists, CardPrices } from '../types';
@@ -348,6 +348,14 @@ async function main(): Promise<void> {
     };
 
     mkdirSync(dirname(OUTPUT_PATH), { recursive: true });
+
+    if (existsSync(OUTPUT_PATH)) {
+      const date = new Date().toISOString().split('T')[0];
+      const backupPath = OUTPUT_PATH.replace('.json', `.${date}.json`);
+      copyFileSync(OUTPUT_PATH, backupPath);
+      console.log(`Backed up existing prices to ${backupPath}`);
+    }
+
     writeFileSync(OUTPUT_PATH, JSON.stringify(output, null, 2));
 
     console.log(`\nWrote prices to ${OUTPUT_PATH}`);
