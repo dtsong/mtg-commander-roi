@@ -63,11 +63,13 @@ export default function CardSearch({ onAddCard }: CardSearchProps) {
             onChange={(e) => setQuery(e.target.value)}
             onKeyDown={handleKeyDown}
             placeholder="Search by card name..."
+            aria-label="Search cards by name"
             className="w-full bg-slate-700 border border-slate-600 rounded-lg px-3 py-2 min-h-[44px] text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-purple-500"
           />
           {query && (
             <button
               onClick={clearResults}
+              aria-label="Clear search"
               className="absolute right-2 top-1/2 -translate-y-1/2 p-2 text-slate-400 hover:text-white"
             >
               <X className="w-4 h-4" />
