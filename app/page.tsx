@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useCallback } from 'react';
+import { Suspense, useState, useEffect, useCallback } from 'react';
 import dynamic from 'next/dynamic';
 import { RefreshCw } from 'lucide-react';
 import Header from '@/components/Header';
@@ -11,14 +11,21 @@ import BulkImport from '@/components/BulkImport';
 import CardList from '@/components/CardList';
 import TopValueCards from '@/components/TopValueCards';
 import { useToast } from '@/components/ui/ToastProvider';
+import { useUrlState } from '@/hooks/useUrlState';
 
 const AddDeckModal = dynamic(() => import('@/components/AddDeckModal'));
 import { fetchDeckPrices, getCardPrice, mergeLowestListings } from '@/lib/scryfall';
-import { getDeckCards } from '@/lib/precons';
+import { getDeckCards, PRECON_DATABASE } from '@/lib/precons';
 import { calculateTotalValue } from '@/lib/calculations';
 import type { PreconDeck, CardWithPrice, ScryfallCard } from '@/types';
 
-export default function Home() {
+const URL_DEFAULTS = {
+  year: null as number | null,
+  set: null as string | null,
+  deck: null as string | null,
+};
+
+function HomeContent() {
   const [selectedYear, setSelectedYear] = useState<number | null>(2026);
   const [selectedSet, setSelectedSet] = useState<string | null>(null);
   const [selectedDeck, setSelectedDeck] = useState<PreconDeck | null>(null);
@@ -27,7 +34,30 @@ export default function Home() {
   const [error, setError] = useState<string | null>(null);
   const [customDecks, setCustomDecks] = useState<PreconDeck[]>([]);
   const [showAddModal, setShowAddModal] = useState(false);
+  const [isInitialized, setIsInitialized] = useState(false);
   const { toast } = useToast();
+
+  const { setParams } = useUrlState({
+    defaults: URL_DEFAULTS,
+    onUrlChange: useCallback((params: typeof URL_DEFAULTS) => {
+      // Only apply URL state on initial load
+      if (isInitialized) return;
+
+      if (params.year !== null) {
+        setSelectedYear(params.year);
+      }
+      if (params.set !== null) {
+        setSelectedSet(params.set);
+      }
+      if (params.deck !== null) {
+        const deck = PRECON_DATABASE.find((d) => d.id === params.deck);
+        if (deck) {
+          setSelectedDeck(deck);
+        }
+      }
+      setIsInitialized(true);
+    }, [isInitialized]),
+  });
 
   const totalValue = calculateTotalValue(cards);
 
@@ -66,6 +96,23 @@ export default function Home() {
       loadDeckCards(selectedDeck);
     }
   }, [selectedDeck, loadDeckCards]);
+
+  // Sync state changes to URL
+  const handleYearChange = useCallback((year: number | null) => {
+    setSelectedYear(year);
+    setSelectedSet(null);
+    setParams({ year, set: null, deck: selectedDeck?.id ?? null });
+  }, [setParams, selectedDeck?.id]);
+
+  const handleSetChange = useCallback((set: string | null) => {
+    setSelectedSet(set);
+    setParams({ year: selectedYear, set, deck: selectedDeck?.id ?? null });
+  }, [setParams, selectedYear, selectedDeck?.id]);
+
+  const handleDeckChange = useCallback((deck: PreconDeck) => {
+    setSelectedDeck(deck);
+    setParams({ year: selectedYear, set: selectedSet, deck: deck.id });
+  }, [setParams, selectedYear, selectedSet]);
 
   const scryfallToCardWithPrice = (card: ScryfallCard): CardWithPrice => {
     const price = getCardPrice(card);
@@ -124,11 +171,11 @@ export default function Home() {
           <div className="lg:col-span-4 space-y-6">
             <DeckSelector
               selectedYear={selectedYear}
-              setSelectedYear={setSelectedYear}
+              setSelectedYear={handleYearChange}
               selectedSet={selectedSet}
-              setSelectedSet={setSelectedSet}
+              setSelectedSet={handleSetChange}
               selectedDeck={selectedDeck}
-              setSelectedDeck={setSelectedDeck}
+              setSelectedDeck={handleDeckChange}
               customDecks={customDecks}
             />
           </div>
@@ -170,6 +217,29 @@ export default function Home() {
         onClose={() => setShowAddModal(false)}
         onAdd={handleAddCustomDeck}
       />
+    </div>
+  );
+}
+
+export default function Home() {
+  return (
+    <Suspense fallback={<HomeLoading />}>
+      <HomeContent />
+    </Suspense>
+  );
+}
+
+function HomeLoading() {
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+      <div className="bg-slate-800/50 border-b border-slate-700 px-4 sm:px-6 py-4">
+        <div className="max-w-7xl mx-auto h-10" />
+      </div>
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 py-6">
+        <div className="animate-pulse">
+          <div className="h-96 bg-slate-800/50 rounded-xl" />
+        </div>
+      </main>
     </div>
   );
 }

@@ -1,14 +1,15 @@
 'use client';
 
-import { useState, useEffect, useCallback } from 'react';
+import { Suspense, useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
 import { ArrowLeft, Trash2, RefreshCw, Loader2 } from 'lucide-react';
 import DeckComparisonTable from '@/components/DeckComparisonTable';
 import { useToast } from '@/components/ui/ToastProvider';
+import { useUrlState } from '@/hooks/useUrlState';
 import { PRECON_DATABASE, getDeckCards } from '@/lib/precons';
 import { loadStaticPrices, fetchDeckPrices } from '@/lib/scryfall';
 import { getCachedPrice, setCachedPrice, clearCache, formatStaticPriceAge } from '@/lib/priceCache';
-import type { PreconDeck, CachedPriceData } from '@/types';
+import type { PreconDeck, CachedPriceData, FilterState } from '@/types';
 
 interface RefreshProgress {
   current: number;
@@ -16,7 +17,13 @@ interface RefreshProgress {
   currentDeck: string;
 }
 
-export default function ComparePage() {
+const URL_DEFAULTS = {
+  year: 'all',
+  set: 'all',
+  roi: 'all',
+};
+
+function CompareContent() {
   const { toast } = useToast();
   const [priceData, setPriceData] = useState<Record<string, CachedPriceData>>({});
   const [loadingDeck, setLoadingDeck] = useState<string | null>(null);
@@ -24,6 +31,35 @@ export default function ComparePage() {
   const [refreshProgress, setRefreshProgress] = useState<RefreshProgress | null>(null);
   const [staticUpdatedAt, setStaticUpdatedAt] = useState<string | null>(null);
   const [loadingStatic, setLoadingStatic] = useState(true);
+  const [filter, setFilter] = useState<FilterState>({ year: 'all', set: 'all', roiThreshold: 'all' });
+  const [isInitialized, setIsInitialized] = useState(false);
+
+  const { setParams } = useUrlState({
+    defaults: URL_DEFAULTS,
+    onUrlChange: useCallback((params: typeof URL_DEFAULTS) => {
+      if (isInitialized) return;
+
+      setFilter({
+        year: params.year,
+        set: params.set,
+        roiThreshold: params.roi,
+      });
+      setIsInitialized(true);
+    }, [isInitialized]),
+  });
+
+  // Sync filter changes to URL
+  const handleFilterChange = useCallback((newFilter: Partial<FilterState>) => {
+    setFilter(prev => {
+      const updated = { ...prev, ...newFilter };
+      setParams({
+        year: updated.year,
+        set: updated.set,
+        roi: updated.roiThreshold,
+      });
+      return updated;
+    });
+  }, [setParams]);
 
   useEffect(() => {
     const loadPrices = async () => {
@@ -109,7 +145,7 @@ export default function ComparePage() {
     } finally {
       setLoadingDeck(null);
     }
-  }, []);
+  }, [toast]);
 
   const handleRefreshAll = async () => {
     setRefreshingAll(true);
@@ -214,6 +250,8 @@ export default function ComparePage() {
           loadingDeck={loadingDeck}
           onLoadPrice={fetchDeckPrice}
           onRefreshPrice={fetchDeckPrice}
+          filter={filter}
+          onFilterChange={handleFilterChange}
         />
 
         <footer className="mt-8 pt-6 border-t border-slate-700 text-center text-sm text-slate-500">
@@ -228,6 +266,30 @@ export default function ComparePage() {
           </a>
           . Prices update daily.
         </footer>
+      </main>
+    </div>
+  );
+}
+
+export default function ComparePage() {
+  return (
+    <Suspense fallback={<CompareLoading />}>
+      <CompareContent />
+    </Suspense>
+  );
+}
+
+function CompareLoading() {
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+      <header className="bg-slate-800/50 border-b border-slate-700 px-4 sm:px-6 py-4">
+        <div className="max-w-7xl mx-auto h-16" />
+      </header>
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 py-6">
+        <div className="animate-pulse">
+          <div className="h-12 bg-slate-800/50 rounded-lg mb-4" />
+          <div className="h-96 bg-slate-800/50 rounded-lg" />
+        </div>
       </main>
     </div>
   );

@@ -48,6 +48,8 @@ interface DeckComparisonTableProps {
   loadingDeck: string | null;
   onLoadPrice: (deck: PreconDeck) => void;
   onRefreshPrice: (deck: PreconDeck) => void;
+  filter: FilterState;
+  onFilterChange: (filter: Partial<FilterState>) => void;
 }
 
 export default function DeckComparisonTable({
@@ -56,9 +58,10 @@ export default function DeckComparisonTable({
   loadingDeck,
   onLoadPrice,
   onRefreshPrice,
+  filter,
+  onFilterChange,
 }: DeckComparisonTableProps) {
   const [sort, setSort] = useState<SortState>({ key: 'distroRoi', direction: 'desc' });
-  const [filter, setFilter] = useState<FilterState>({ year: 'all', set: 'all', roiThreshold: 'all' });
 
   const years = useMemo(() => {
     const uniqueYears = [...new Set(decks.map(d => d.year))];
@@ -197,7 +200,7 @@ export default function DeckComparisonTable({
         <div className="flex items-center gap-3 flex-wrap w-full sm:w-auto">
           <select
             value={filter.year}
-            onChange={(e) => setFilter(prev => ({ ...prev, year: e.target.value }))}
+            onChange={(e) => onFilterChange({ year: e.target.value })}
             className="bg-slate-700 border border-slate-600 rounded-lg px-3 py-2 min-h-[44px] text-white text-sm flex-1 sm:flex-none"
           >
             <option value="all">All Years</option>
@@ -208,7 +211,7 @@ export default function DeckComparisonTable({
 
           <select
             value={filter.set}
-            onChange={(e) => setFilter(prev => ({ ...prev, set: e.target.value }))}
+            onChange={(e) => onFilterChange({ set: e.target.value })}
             className="bg-slate-700 border border-slate-600 rounded-lg px-3 py-2 min-h-[44px] text-white text-sm flex-1 sm:flex-none"
           >
             <option value="all">All Sets</option>
@@ -219,7 +222,7 @@ export default function DeckComparisonTable({
 
           <select
             value={filter.roiThreshold}
-            onChange={(e) => setFilter(prev => ({ ...prev, roiThreshold: e.target.value }))}
+            onChange={(e) => onFilterChange({ roiThreshold: e.target.value })}
             className="bg-slate-700 border border-slate-600 rounded-lg px-3 py-2 min-h-[44px] text-white text-sm flex-1 sm:flex-none"
           >
             {ROI_FILTERS.map(opt => (
