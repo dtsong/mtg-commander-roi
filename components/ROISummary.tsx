@@ -1,6 +1,14 @@
-import { DollarSign, Tag, TrendingUp, Truck, AlertCircle, Loader2 } from 'lucide-react';
+import { DollarSign, Tag, TrendingUp, Truck, AlertCircle, Loader2, Info } from 'lucide-react';
 import { formatCurrency, calculateROI, calculateDistroROI, getDistroCost, getROIVerdict, formatPercentage } from '@/lib/calculations';
+import Tooltip from '@/components/ui/Tooltip';
 import type { PreconDeck } from '@/types';
+
+const VERDICT_TOOLTIPS: Record<string, string> = {
+  BUY: 'Distro ROI >15% with positive MSRP ROI',
+  DISTRO: 'Distro ROI >15% but negative MSRP ROI',
+  HOLD: 'Distro ROI 0-15%',
+  PASS: 'Negative Distro ROI',
+};
 
 interface ROISummaryProps {
   deck: PreconDeck | null;
@@ -31,9 +39,11 @@ export default function ROISummary({ deck, totalValue, loading, excludedCount = 
             <div className="text-slate-400">Loading prices...</div>
           ) : (
             <>
-              <div className={`text-4xl sm:text-5xl font-black ${verdict.color} mb-1`}>
-                {verdict.label}
-              </div>
+              <Tooltip content={VERDICT_TOOLTIPS[verdict.label]} side="bottom">
+                <div className={`text-4xl sm:text-5xl font-black ${verdict.color} mb-1 cursor-help`}>
+                  {verdict.label}
+                </div>
+              </Tooltip>
               {verdict.label === 'DISTRO' && (
                 <div className="text-sm text-orange-300 mb-1">Only at distributor pricing</div>
               )}
@@ -70,6 +80,9 @@ export default function ROISummary({ deck, totalValue, loading, excludedCount = 
             <div className="flex items-center gap-2 text-slate-400 text-xs mb-1">
               <Truck className="w-3 h-3" />
               Distro Cost
+              <Tooltip content="Game stores buy sealed product at ~40% below MSRP. Distro ROI shows profit at this cost basis.">
+                <Info className="w-3 h-3 cursor-help hover:text-slate-300 transition-colors" />
+              </Tooltip>
             </div>
             <div className="text-lg font-bold text-white">
               {formatCurrency(distroCost)}

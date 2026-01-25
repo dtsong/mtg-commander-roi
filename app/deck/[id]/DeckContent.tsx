@@ -221,7 +221,7 @@ export default function DeckContent({ deckId }: { deckId: string }) {
             <ROISummary deck={deck} totalValue={totalValue} loading={loading} excludedCount={excludedCount} />
           </div>
         </div>
-        <TopValueCards cards={cards} loading={loading} />
+        <TopValueCards cards={cards} loading={loading} totalValue={totalValue} />
         <CardList cards={cards} loading={loading} />
 
         <footer className="pt-6 border-t border-slate-700 text-center text-sm text-slate-500">

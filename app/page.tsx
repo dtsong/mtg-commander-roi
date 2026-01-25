@@ -192,7 +192,7 @@ function HomeContent() {
               <BulkImport onImport={handleBulkImport} />
             </div>
 
-            <TopValueCards cards={cards} loading={loading} />
+            <TopValueCards cards={cards} loading={loading} totalValue={totalValue} />
 
             <CardList cards={cards} loading={loading} />
           </div>

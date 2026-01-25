@@ -18,9 +18,10 @@ interface TopValueCardsCard {
 interface TopValueCardsProps {
   cards: TopValueCardsCard[];
   loading: boolean;
+  totalValue?: number;
 }
 
-export default function TopValueCards({ cards, loading }: TopValueCardsProps) {
+export default function TopValueCards({ cards, loading, totalValue = 0 }: TopValueCardsProps) {
   const topCards = useMemo(
     () => getTopValueCards(cards, TOP_CARDS_COUNT) as TopValueCardsCard[],
     [cards]
@@ -55,9 +56,20 @@ export default function TopValueCards({ cards, loading }: TopValueCardsProps) {
       </h3>
       <p className="text-sm text-slate-400 mb-4">Highest value singles in this deck</p>
       <div className="space-y-2">
-        {topCards.map((card, index) => (
-          <CardPriceRow key={card.name} card={card} rank={index + 1} />
-        ))}
+        {topCards.map((card, index) => {
+          const cardValue = card.total ?? card.price ?? 0;
+          const percentage = totalValue > 0 ? (cardValue / totalValue) * 100 : 0;
+          return (
+            <div key={card.name} className="relative">
+              <CardPriceRow card={card} rank={index + 1} />
+              {totalValue > 0 && percentage >= 1 && (
+                <span className="absolute top-3 right-24 text-xs text-slate-400">
+                  {percentage.toFixed(0)}% of total
+                </span>
+              )}
+            </div>
+          );
+        })}
       </div>
     </div>
   );
