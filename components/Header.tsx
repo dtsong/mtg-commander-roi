@@ -2,7 +2,8 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { Coins, Plus, BarChart3, Menu, X, Info, BookOpen } from 'lucide-react';
+import { Coins, Plus, BarChart3, Menu, X, Info, BookOpen, Sun, Moon } from 'lucide-react';
+import { useTheme } from '@/hooks/useTheme';
 
 interface HeaderProps {
   onAddDeck?: () => void;
@@ -10,6 +11,11 @@ interface HeaderProps {
 
 export default function Header({ onAddDeck }: HeaderProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { resolvedTheme, setTheme } = useTheme();
+
+  const toggleTheme = () => {
+    setTheme(resolvedTheme === 'dark' ? 'light' : 'dark');
+  };
 
   return (
     <header className="border-b px-4 sm:px-6 py-4 border-[var(--surface-border)]" style={{ backgroundColor: 'var(--header-bg)' }}>
@@ -25,6 +31,13 @@ export default function Header({ onAddDeck }: HeaderProps) {
         </Link>
 
         <div className="hidden md:flex items-center gap-3">
+          <button
+            onClick={toggleTheme}
+            className="flex items-center justify-center w-10 h-10 text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-slate-700/50 rounded-lg transition-colors"
+            aria-label={`Switch to ${resolvedTheme === 'dark' ? 'light' : 'dark'} mode`}
+          >
+            {resolvedTheme === 'dark' ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+          </button>
           <Link
             href="/about"
             className="flex items-center gap-2 text-[var(--text-secondary)] hover:text-[var(--text-primary)] px-3 py-2 min-h-[44px] transition-colors"
@@ -68,6 +81,13 @@ export default function Header({ onAddDeck }: HeaderProps) {
 
       {mobileMenuOpen && (
         <div className="md:hidden mt-4 pt-4 border-t border-[var(--surface-border)] space-y-2">
+          <button
+            onClick={toggleTheme}
+            className="flex items-center gap-2 text-[var(--text-secondary)] hover:text-[var(--text-primary)] px-4 py-3 min-h-[44px] transition-colors w-full"
+          >
+            {resolvedTheme === 'dark' ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
+            {resolvedTheme === 'dark' ? 'Light Mode' : 'Dark Mode'}
+          </button>
           <Link
             href="/about"
             onClick={() => setMobileMenuOpen(false)}

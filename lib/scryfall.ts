@@ -166,6 +166,11 @@ export const loadStaticPrices = async (): Promise<StaticPricesData | null> => {
   });
 };
 
+export const getPriceDataTimestamp = async (): Promise<string | null> => {
+  const data = await loadStaticPrices();
+  return data?.updatedAt ?? null;
+};
+
 export const getStaticSetPrices = async (setCode: string): Promise<StaticCardData[] | null> => {
   const data = await loadStaticPrices();
   if (!data?.sets?.[setCode]) return null;

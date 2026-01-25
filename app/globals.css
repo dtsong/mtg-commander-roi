@@ -43,8 +43,25 @@
   --card-bg: rgba(241, 245, 249, 0.5);
 }
 
+/* Dark mode via class (for manual toggle) */
+:root.dark {
+  --surface-primary: #1e293b;
+  --surface-secondary: #334155;
+  --surface-tertiary: #475569;
+  --surface-border: #475569;
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --bg-gradient-from: #0f172a;
+  --bg-gradient-via: #581c87;
+  --bg-gradient-to: #0f172a;
+  --header-bg: rgba(30, 41, 59, 0.5);
+  --card-bg: rgba(30, 41, 59, 0.5);
+}
+
+/* Dark mode via system preference (fallback when no class set) */
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not(.light):not(.dark) {
     --surface-primary: #1e293b;
     --surface-secondary: #334155;
     --surface-tertiary: #475569;

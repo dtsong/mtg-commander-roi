@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import PriceDataTimestamp from './PriceDataTimestamp';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -77,6 +78,9 @@ export default function Footer() {
           <p className="text-[var(--text-muted)] text-sm text-center mt-2">
             © {currentYear} MTG Commander ROI. All rights reserved.
           </p>
+          <div className="mt-2">
+            <PriceDataTimestamp />
+          </div>
         </div>
       </div>
     </footer>

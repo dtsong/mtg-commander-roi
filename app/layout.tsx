@@ -6,6 +6,7 @@ import { Analytics } from '@vercel/analytics/next';
 import CookieConsent from '@/components/CookieConsent';
 import Footer from '@/components/Footer';
 import { ToastProvider } from '@/components/ui/ToastProvider';
+import { ThemeProvider } from '@/hooks/useTheme';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://mtg-commander-roi.vercel.app'),
@@ -78,11 +79,13 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         >
           Skip to content
         </a>
-        <ToastProvider>
-          <div className="flex-1" id="main-content">{children}</div>
-          <Footer />
-          <CookieConsent />
-        </ToastProvider>
+        <ThemeProvider>
+          <ToastProvider>
+            <div className="flex-1" id="main-content">{children}</div>
+            <Footer />
+            <CookieConsent />
+          </ToastProvider>
+        </ThemeProvider>
         <Analytics />
       </body>
     </html>
