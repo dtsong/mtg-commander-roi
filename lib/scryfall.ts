@@ -368,6 +368,22 @@ export const getCardPrice = (card: ScryfallCard): number => {
   return usd || usdFoil || 0;
 };
 
+const isSerializedCollectorNumber = (cn: string): boolean => {
+  return /[a-zA-Z]/.test(cn) || parseInt(cn, 10) > 900;
+};
+
+const selectCheapestVersion = (cards: ScryfallCard[]): ScryfallCard | null => {
+  if (cards.length === 0) return null;
+  if (cards.length === 1) return cards[0];
+
+  // Filter out serialized versions first
+  const validCards = cards.filter(c => !isSerializedCollectorNumber(c.collector_number));
+  const candidates = validCards.length > 0 ? validCards : cards;
+
+  // Sort by price ascending
+  return candidates.sort((a, b) => getCardPrice(a) - getCardPrice(b))[0];
+};
+
 export const fetchCardsPrices = async (
   cardList: DeckCardEntry[],
   onProgress?: (progress: FetchProgress) => void
@@ -418,7 +434,19 @@ export const fetchCardsPrices = async (
     }
   }
 
+  // Group results by card name to handle multiple versions
+  const cardsByName = new Map<string, ScryfallCard[]>();
   for (const card of results) {
+    const existing = cardsByName.get(card.name) ?? [];
+    existing.push(card);
+    cardsByName.set(card.name, existing);
+  }
+
+  // Select cheapest version for each card
+  for (const [cardName, versions] of cardsByName) {
+    const card = selectCheapestVersion(versions);
+    if (!card) continue;
+
     const price = getCardPrice(card);
     const usd = card.prices?.usd ?? null;
     const usdFoil = card.prices?.usd_foil ?? null;
@@ -431,7 +459,7 @@ export const fetchCardsPrices = async (
       foilPrice: foilPrice && foilPrice !== price ? foilPrice : null,
       isFoilOnly,
     };
-    priceMap.set(card.name, priceInfo);
+    priceMap.set(cardName, priceInfo);
     const cacheKey = card.set
       ? `${card.name.toLowerCase()}|${card.set.toLowerCase()}`
       : card.name.toLowerCase();

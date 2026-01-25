@@ -231,18 +231,15 @@ function buildSetAwarePriceLookup(
     const candidates = validVersions.length > 0 ? validVersions : versions;
 
     candidates.sort((a, b) => {
-      // 1. Non-showcase/special frames first
+      // 1. Cheapest price first (primary criteria)
+      if (a.price !== b.price) return a.price - b.price;
+      // 2. Non-showcase/special frames preferred
       if (a.isShowcase !== b.isShowcase) return a.isShowcase ? 1 : -1;
-      // 2. Non-promo first
+      // 3. Non-promo preferred
       if (a.isPromo !== b.isPromo) return a.isPromo ? 1 : -1;
-      // 3. Lowest collector number (base versions are lowest)
-      const aNum = parseInt(a.collectorNumber, 10) || 999;
-      const bNum = parseInt(b.collectorNumber, 10) || 999;
-      if (aNum !== bNum) return aNum - bNum;
-      // 4. Non-foil-only last (prefer non-foil when other factors equal)
+      // 4. Non-foil-only preferred
       if (a.isFoilOnly !== b.isFoilOnly) return a.isFoilOnly ? 1 : -1;
-      // 5. Cheapest price
-      return a.price - b.price;
+      return 0;
     });
 
     if (candidates.length > 0) {
