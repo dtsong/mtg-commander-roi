@@ -7,6 +7,7 @@ import { ArrowLeft, Loader2, RefreshCw } from 'lucide-react';
 import { getPreconById, getDeckCards } from '@/lib/precons';
 import { getStaticDeckPrices, fetchDeckPrices, getCardByName, getCardImage, mergeLowestListings } from '@/lib/scryfall';
 import ColorIndicator from '@/components/ColorIndicator';
+import ShareButton from '@/components/ShareButton';
 import ROISummary from '@/components/ROISummary';
 import TopValueCards from '@/components/TopValueCards';
 import CardList from '@/components/CardList';
@@ -190,6 +191,7 @@ export default function DeckContent({ deckId }: { deckId: string }) {
                   <p className="text-sm text-slate-400">{deck.set} ({deck.year})</p>
                 </div>
                 <ColorIndicator colors={deck.colors} />
+                <ShareButton deckId={deckId} deckName={deck.name} />
               </div>
             ) : (
               <div className="flex items-center gap-2">
