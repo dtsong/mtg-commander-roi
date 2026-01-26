@@ -6,7 +6,7 @@ import { ChevronUp, ChevronDown, RefreshCw, AlertTriangle, Loader2 } from 'lucid
 import ColorIndicator from './ColorIndicator';
 import ROIBadge from './ROIBadge';
 import { formatCurrency, calculateROI, calculateDistroROI, getDistroCost, formatPercentage, getROIVerdict } from '@/lib/calculations';
-import { formatCacheAge, isCacheStale } from '@/lib/priceCache';
+import { formatStaticPriceAge, isTimestampStale } from '@/lib/priceCache';
 import type { PreconDeck, CachedPriceData, SortState, FilterState } from '@/types';
 
 interface SortHeaderProps {
@@ -350,7 +350,7 @@ export default function DeckComparisonTable({
               {filteredAndSortedDecks.map(deck => {
                 const data = priceData[deck.id];
                 const isLoading = loadingDeck === deck.id;
-                const stale = data && isCacheStale(deck.id);
+                const stale = data && isTimestampStale(data.fetchedAt);
                 const roi = data ? calculateROI(data.totalValue, deck.msrp) : null;
                 const distroCost = getDistroCost(deck.msrp);
                 const distroRoi = data ? calculateDistroROI(data.totalValue, distroCost) : null;
@@ -410,7 +410,7 @@ export default function DeckComparisonTable({
                             <AlertTriangle className="w-4 h-4 text-yellow-500" />
                           )}
                           <span className={`text-sm ${stale ? 'text-yellow-500' : 'text-green-400'}`}>
-                            {formatCacheAge(deck.id)}
+                            {formatStaticPriceAge(data.fetchedAt)}
                           </span>
                         </div>
                       ) : (

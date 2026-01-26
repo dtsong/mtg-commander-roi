@@ -97,3 +97,14 @@ export const formatStaticPriceAge = (updatedAt: string | null | undefined): stri
   if (diffDays === 1) return '1 day ago';
   return `${diffDays} days ago`;
 };
+
+export const isTimestampStale = (fetchedAt: string | null | undefined): boolean => {
+  if (!fetchedAt) return true;
+
+  const fetchedDate = new Date(fetchedAt);
+  const now = new Date();
+  const diffMs = now.getTime() - fetchedDate.getTime();
+  const diffDays = diffMs / (1000 * 60 * 60 * 24);
+
+  return diffDays > STALE_DAYS;
+};
