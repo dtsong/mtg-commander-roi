@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-01-27T20:19:59.547Z",
+  "updatedAt": "2026-01-28T01:00:52.189Z",
   "decks": {
     "ltc-elven-council": {
-      "totalValue": 103.09,
+      "totalValue": 103.1,
       "cardCount": 100,
       "cards": [
         {
@@ -72,7 +72,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "2.78",
+          "usd": "2.79",
           "tcgplayerId": 488278,
           "cardmarketId": 716208
         },
@@ -530,7 +530,7 @@
       ]
     },
     "ltc-food-and-fellowship": {
-      "totalValue": 95.83,
+      "totalValue": 95.84,
       "cardCount": 100,
       "cards": [
         {
@@ -585,7 +585,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "2.78",
+          "usd": "2.79",
           "tcgplayerId": 488278,
           "cardmarketId": 716208
         },
@@ -1124,7 +1124,7 @@
       ]
     },
     "ecc-dance-of-the-elements": {
-      "totalValue": 39.99,
+      "totalValue": 40.02,
       "cardCount": 100,
       "cards": [
         {
@@ -1174,18 +1174,18 @@
           "tcgplayerId": 671541
         },
         {
+          "name": "Sol Ring",
+          "quantity": 1,
+          "usd": "1.11",
+          "tcgplayerId": 671258,
+          "cardmarketId": 864992
+        },
+        {
           "name": "Chromatic Lantern",
           "quantity": 1,
           "usd": "1.08",
           "tcgplayerId": 671266,
           "cardmarketId": 865070
-        },
-        {
-          "name": "Sol Ring",
-          "quantity": 1,
-          "usd": "1.08",
-          "tcgplayerId": 671258,
-          "cardmarketId": 864992
         },
         {
           "name": "Blasphemous Act",
@@ -1731,7 +1731,7 @@
       ]
     },
     "ecc-blight-curse": {
-      "totalValue": 36.18,
+      "totalValue": 36.21,
       "cardCount": 100,
       "cards": [
         {
@@ -1773,7 +1773,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.08",
+          "usd": "1.11",
           "tcgplayerId": 671258,
           "cardmarketId": 864992
         },
@@ -2320,7 +2320,7 @@
       ]
     },
     "eoc-counter-intelligence": {
-      "totalValue": 50.66,
+      "totalValue": 50.67,
       "cardCount": 100,
       "cards": [
         {
@@ -2399,7 +2399,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.41",
+          "usd": "1.42",
           "tcgplayerId": 642025,
           "cardmarketId": 834083
         },
@@ -2981,7 +2981,7 @@
       ]
     },
     "eoc-world-shaper": {
-      "totalValue": 48.4,
+      "totalValue": 48.41,
       "cardCount": 100,
       "cards": [
         {
@@ -3058,7 +3058,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.41",
+          "usd": "1.42",
           "tcgplayerId": 642025,
           "cardmarketId": 834083
         },
@@ -9290,7 +9290,7 @@
       ]
     },
     "drc-living-energy": {
-      "totalValue": 44.98,
+      "totalValue": 44.95,
       "cardCount": 100,
       "cards": [
         {
@@ -9366,7 +9366,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.19",
+          "usd": "1.18",
           "tcgplayerId": 615157,
           "cardmarketId": 807954
         },
@@ -9469,13 +9469,6 @@
           "cardmarketId": 808344
         },
         {
-          "name": "Talisman of Curiosity",
-          "quantity": 1,
-          "usd": "0.30",
-          "tcgplayerId": 615190,
-          "cardmarketId": 808024
-        },
-        {
           "name": "Bootleggers' Stash",
           "quantity": 1,
           "usd": "0.29",
@@ -9488,6 +9481,13 @@
           "usd": "0.29",
           "tcgplayerId": 615219,
           "cardmarketId": 807988
+        },
+        {
+          "name": "Talisman of Curiosity",
+          "quantity": 1,
+          "usd": "0.28",
+          "tcgplayerId": 615190,
+          "cardmarketId": 808024
         },
         {
           "name": "Sulfur Falls",
@@ -9902,7 +9902,7 @@
       ]
     },
     "drc-eternal-might": {
-      "totalValue": 50.7,
+      "totalValue": 50.69,
       "cardCount": 100,
       "cards": [
         {
@@ -9971,7 +9971,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.19",
+          "usd": "1.18",
           "tcgplayerId": 615157,
           "cardmarketId": 807954
         },
@@ -10526,7 +10526,7 @@
       ]
     },
     "dsc-endless-punishment": {
-      "totalValue": 113.49,
+      "totalValue": 113.5,
       "cardCount": 100,
       "cards": [
         {
@@ -10703,7 +10703,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.37",
+          "usd": "1.38",
           "tcgplayerId": 577866,
           "cardmarketId": 787242
         },
@@ -11127,7 +11127,7 @@
       ]
     },
     "dsc-jump-scare": {
-      "totalValue": 51.87,
+      "totalValue": 51.88,
       "cardCount": 100,
       "cards": [
         {
@@ -11175,7 +11175,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.37",
+          "usd": "1.38",
           "tcgplayerId": 577866,
           "cardmarketId": 787242
         },
@@ -11712,7 +11712,7 @@
       ]
     },
     "dsc-miracle-worker": {
-      "totalValue": 53.53,
+      "totalValue": 53.54,
       "cardCount": 100,
       "cards": [
         {
@@ -11782,7 +11782,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.37",
+          "usd": "1.38",
           "tcgplayerId": 577866,
           "cardmarketId": 787242
         },
@@ -12334,7 +12334,7 @@
       ]
     },
     "blc-squirreled-away": {
-      "totalValue": 56.92,
+      "totalValue": 56.91,
       "cardCount": 100,
       "cards": [
         {
@@ -12419,7 +12419,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.40",
+          "usd": "1.39",
           "tcgplayerId": 559736,
           "cardmarketId": 778981
         },
@@ -12931,7 +12931,7 @@
       ]
     },
     "blc-family-matters": {
-      "totalValue": 49.59,
+      "totalValue": 49.58,
       "cardCount": 100,
       "cards": [
         {
@@ -12978,18 +12978,18 @@
           "cardmarketId": 778942
         },
         {
-          "name": "Sol Ring",
-          "quantity": 1,
-          "usd": "1.40",
-          "tcgplayerId": 559736,
-          "cardmarketId": 778981
-        },
-        {
           "name": "Path to Exile",
           "quantity": 1,
           "usd": "1.39",
           "tcgplayerId": 559845,
           "cardmarketId": 779286
+        },
+        {
+          "name": "Sol Ring",
+          "quantity": 1,
+          "usd": "1.39",
+          "tcgplayerId": 559736,
+          "cardmarketId": 778981
         },
         {
           "name": "Cascade Bluffs",
@@ -13563,7 +13563,7 @@
       ]
     },
     "blc-animated-army": {
-      "totalValue": 52.54,
+      "totalValue": 52.53,
       "cardCount": 100,
       "cards": [
         {
@@ -13655,7 +13655,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.40",
+          "usd": "1.39",
           "tcgplayerId": 559736,
           "cardmarketId": 778981
         },
@@ -14151,7 +14151,7 @@
       ]
     },
     "blc-peace-offering": {
-      "totalValue": 49.11,
+      "totalValue": 49.1,
       "cardCount": 100,
       "cards": [
         {
@@ -14222,7 +14222,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.40",
+          "usd": "1.39",
           "tcgplayerId": 559736,
           "cardmarketId": 778981
         },
@@ -15418,7 +15418,7 @@
       ]
     },
     "m3c-creative-energy": {
-      "totalValue": 51.69,
+      "totalValue": 51.67,
       "cardCount": 100,
       "cards": [
         {
@@ -15459,7 +15459,7 @@
         {
           "name": "Talisman of Creativity",
           "quantity": 1,
-          "usd": "2.52",
+          "usd": "2.51",
           "tcgplayerId": 552905,
           "cardmarketId": 772290
         },
@@ -15570,18 +15570,18 @@
           "cardmarketId": 772296
         },
         {
-          "name": "Talisman of Conviction",
-          "quantity": 1,
-          "usd": "0.30",
-          "tcgplayerId": 552928,
-          "cardmarketId": 772289
-        },
-        {
           "name": "Aetherworks Marvel",
           "quantity": 1,
           "usd": "0.29",
           "tcgplayerId": 552918,
           "cardmarketId": 772279
+        },
+        {
+          "name": "Talisman of Conviction",
+          "quantity": 1,
+          "usd": "0.29",
+          "tcgplayerId": 552928,
+          "cardmarketId": 772289
         },
         {
           "name": "Satya, Aetherflux Genius",
@@ -19741,7 +19741,7 @@
       ]
     },
     "pip-scrappy-survivors": {
-      "totalValue": 76.25,
+      "totalValue": 76.23,
       "cardCount": 100,
       "cards": [
         {
@@ -19795,7 +19795,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.63",
+          "usd": "1.61",
           "usd_foil": "6.74",
           "tcgplayerId": 539393,
           "cardmarketId": 757714
@@ -20476,7 +20476,7 @@
       ]
     },
     "pip-mutant-menace": {
-      "totalValue": 88.35,
+      "totalValue": 88.32,
       "cardCount": 100,
       "cards": [
         {
@@ -20570,7 +20570,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.63",
+          "usd": "1.61",
           "usd_foil": "6.74",
           "tcgplayerId": 539393,
           "cardmarketId": 757714
@@ -20753,20 +20753,20 @@
           "cardmarketId": 758586
         },
         {
-          "name": "Talisman of Curiosity",
-          "quantity": 1,
-          "usd": "0.32",
-          "usd_foil": "5.15",
-          "tcgplayerId": 540818,
-          "cardmarketId": 758604
-        },
-        {
           "name": "Hinterland Harbor",
           "quantity": 1,
           "usd": "0.32",
           "usd_foil": "3.21",
           "tcgplayerId": 540862,
           "cardmarketId": 758614
+        },
+        {
+          "name": "Talisman of Curiosity",
+          "quantity": 1,
+          "usd": "0.31",
+          "usd_foil": "5.15",
+          "tcgplayerId": 540818,
+          "cardmarketId": 758604
         },
         {
           "name": "Command Tower",
@@ -21225,7 +21225,7 @@
         {
           "name": "Talisman of Creativity",
           "quantity": 1,
-          "usd": "2.49",
+          "usd": "2.51",
           "usd_foil": "11.74",
           "tcgplayerId": 540963,
           "cardmarketId": 758285
@@ -21241,7 +21241,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.63",
+          "usd": "1.61",
           "usd_foil": "6.74",
           "tcgplayerId": 539393,
           "cardmarketId": 757714
@@ -21911,7 +21911,7 @@
       ]
     },
     "pip-hail-caesar": {
-      "totalValue": 55.23,
+      "totalValue": 55.21,
       "cardCount": 100,
       "cards": [
         {
@@ -21998,7 +21998,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.63",
+          "usd": "1.61",
           "usd_foil": "6.74",
           "tcgplayerId": 539393,
           "cardmarketId": 757714
@@ -25095,7 +25095,7 @@
       ]
     },
     "lcc-ahoy-mateys": {
-      "totalValue": 49.42,
+      "totalValue": 49.43,
       "cardCount": 100,
       "cards": [
         {
@@ -25150,7 +25150,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.27",
+          "usd": "1.28",
           "tcgplayerId": 525779,
           "cardmarketId": 743665
         },
@@ -25712,7 +25712,7 @@
       ]
     },
     "lcc-blood-rites": {
-      "totalValue": 63.79,
+      "totalValue": 63.8,
       "cardCount": 100,
       "cards": [
         {
@@ -25773,18 +25773,18 @@
           "cardmarketId": 743448
         },
         {
+          "name": "Sol Ring",
+          "quantity": 1,
+          "usd": "1.28",
+          "tcgplayerId": 525779,
+          "cardmarketId": 743665
+        },
+        {
           "name": "Master of Dark Rites",
           "quantity": 1,
           "usd": "1.28",
           "tcgplayerId": 525716,
           "cardmarketId": 743460
-        },
-        {
-          "name": "Sol Ring",
-          "quantity": 1,
-          "usd": "1.27",
-          "tcgplayerId": 525779,
-          "cardmarketId": 743665
         },
         {
           "name": "Swords to Plowshares",
@@ -26280,7 +26280,7 @@
       ]
     },
     "lcc-explorers-of-the-deep": {
-      "totalValue": 52.37,
+      "totalValue": 52.38,
       "cardCount": 100,
       "cards": [
         {
@@ -26375,18 +26375,18 @@
           "cardmarketId": 743660
         },
         {
+          "name": "Sol Ring",
+          "quantity": 1,
+          "usd": "1.28",
+          "tcgplayerId": 525779,
+          "cardmarketId": 743665
+        },
+        {
           "name": "Kodama's Reach",
           "quantity": 1,
           "usd": "1.28",
           "tcgplayerId": 526080,
           "cardmarketId": 743597
-        },
-        {
-          "name": "Sol Ring",
-          "quantity": 1,
-          "usd": "1.27",
-          "tcgplayerId": 525779,
-          "cardmarketId": 743665
         },
         {
           "name": "Rapid Hybridization",
@@ -26855,7 +26855,7 @@
       ]
     },
     "lcc-veloci-ramp-tor": {
-      "totalValue": 61.37,
+      "totalValue": 61.38,
       "cardCount": 100,
       "cards": [
         {
@@ -26931,7 +26931,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.27",
+          "usd": "1.28",
           "tcgplayerId": 525779,
           "cardmarketId": 743665
         },
@@ -31777,7 +31777,7 @@
           "name": "Sol Ring",
           "quantity": 1,
           "usd": "1.94",
-          "usd_foil": "3.97",
+          "usd_foil": "4.06",
           "tcgplayerId": 503397,
           "cardmarketId": 721733
         },
@@ -32320,7 +32320,7 @@
           "name": "Sol Ring",
           "quantity": 1,
           "usd": "1.94",
-          "usd_foil": "3.97",
+          "usd_foil": "4.06",
           "tcgplayerId": 503397,
           "cardmarketId": 721733
         },
@@ -32910,7 +32910,7 @@
           "name": "Sol Ring",
           "quantity": 1,
           "usd": "1.94",
-          "usd_foil": "3.97",
+          "usd_foil": "4.06",
           "tcgplayerId": 503397,
           "cardmarketId": 721733
         },
@@ -33607,7 +33607,7 @@
           "name": "Sol Ring",
           "quantity": 1,
           "usd": "1.94",
-          "usd_foil": "3.97",
+          "usd_foil": "4.06",
           "tcgplayerId": 503397,
           "cardmarketId": 721733
         },
@@ -34078,7 +34078,7 @@
       ]
     },
     "ltc-riders-of-rohan": {
-      "totalValue": 67.1,
+      "totalValue": 67.11,
       "cardCount": 100,
       "cards": [
         {
@@ -34127,7 +34127,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "2.78",
+          "usd": "2.79",
           "tcgplayerId": 488278,
           "cardmarketId": 716208
         },
@@ -34662,7 +34662,7 @@
       ]
     },
     "ltc-hosts-of-mordor": {
-      "totalValue": 123.65,
+      "totalValue": 123.66,
       "cardCount": 100,
       "cards": [
         {
@@ -34760,7 +34760,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "2.78",
+          "usd": "2.79",
           "tcgplayerId": 488278,
           "cardmarketId": 716208
         },
