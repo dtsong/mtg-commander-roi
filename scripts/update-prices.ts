@@ -220,7 +220,8 @@ function buildSetAwarePriceLookup(
   let serializedSkipped = 0;
 
   for (const [setKey, versions] of cardVersions) {
-    const validVersions = versions.filter(v => {
+    // Filter out serialized versions
+    const nonSerialized = versions.filter(v => {
       if (isSerializedCollectorNumber(v.collectorNumber)) {
         serializedSkipped++;
         return false;
@@ -228,16 +229,22 @@ function buildSetAwarePriceLookup(
       return true;
     });
 
-    const candidates = validVersions.length > 0 ? validVersions : versions;
+    // Filter out extended art/showcase/borderless (hard filter with fallback)
+    const regularCards = nonSerialized.filter(v => !v.isShowcase);
+
+    // Fallback chain: regular > non-serialized > all
+    const candidates = regularCards.length > 0
+      ? regularCards
+      : nonSerialized.length > 0
+        ? nonSerialized
+        : versions;
 
     candidates.sort((a, b) => {
       // 1. Cheapest price first (primary criteria)
       if (a.price !== b.price) return a.price - b.price;
-      // 2. Non-showcase/special frames preferred
-      if (a.isShowcase !== b.isShowcase) return a.isShowcase ? 1 : -1;
-      // 3. Non-promo preferred
+      // 2. Non-promo preferred
       if (a.isPromo !== b.isPromo) return a.isPromo ? 1 : -1;
-      // 4. Non-foil-only preferred
+      // 3. Non-foil-only preferred
       if (a.isFoilOnly !== b.isFoilOnly) return a.isFoilOnly ? 1 : -1;
       return 0;
     });

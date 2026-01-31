@@ -41,6 +41,7 @@ export interface ScryfallCard {
   rarity?: string;
   colors?: string[];
   color_identity?: string[];
+  frame_effects?: string[];
 }
 
 export interface PreconDeck {

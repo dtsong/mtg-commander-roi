@@ -372,13 +372,29 @@ const isSerializedCollectorNumber = (cn: string): boolean => {
   return /[a-zA-Z]/.test(cn) || parseInt(cn, 10) > 900;
 };
 
+const SPECIAL_FRAMES = ['showcase', 'extendedart', 'borderless'];
+
+const hasSpecialFrame = (card: ScryfallCard): boolean => {
+  const frameEffects = card.frame_effects ?? [];
+  return frameEffects.some(f => SPECIAL_FRAMES.includes(f));
+};
+
 const selectCheapestVersion = (cards: ScryfallCard[]): ScryfallCard | null => {
   if (cards.length === 0) return null;
   if (cards.length === 1) return cards[0];
 
-  // Filter out serialized versions first
-  const validCards = cards.filter(c => !isSerializedCollectorNumber(c.collector_number));
-  const candidates = validCards.length > 0 ? validCards : cards;
+  // Filter out serialized versions
+  const nonSerialized = cards.filter(c => !isSerializedCollectorNumber(c.collector_number));
+
+  // Filter out extended art/showcase/borderless
+  const regularCards = nonSerialized.filter(c => !hasSpecialFrame(c));
+
+  // Fallback chain: regular > non-serialized > all
+  const candidates = regularCards.length > 0
+    ? regularCards
+    : nonSerialized.length > 0
+      ? nonSerialized
+      : cards;
 
   // Sort by price ascending
   return candidates.sort((a, b) => getCardPrice(a) - getCardPrice(b))[0];
