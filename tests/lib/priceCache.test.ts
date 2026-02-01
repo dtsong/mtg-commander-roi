@@ -99,3 +99,128 @@ describe('clearCache', () => {
     expect(mockStorage['deck-prices-b']).toBeUndefined();
   });
 });
+
+describe('formatCacheAge', () => {
+  it('returns null when no cache', async () => {
+    const { formatCacheAge } = await import('@/lib/priceCache');
+    expect(formatCacheAge('nonexistent')).toBeNull();
+  });
+
+  it('returns "Just now" for very recent', async () => {
+    const { formatCacheAge } = await import('@/lib/priceCache');
+    const now = new Date().toISOString();
+    mockStorage['deck-prices-now'] = JSON.stringify({ fetchedAt: now });
+    expect(formatCacheAge('now')).toBe('Just now');
+  });
+
+  it('returns hours ago for same day', async () => {
+    const { formatCacheAge } = await import('@/lib/priceCache');
+    const fiveHoursAgo = new Date(Date.now() - 5 * 60 * 60 * 1000).toISOString();
+    mockStorage['deck-prices-hours'] = JSON.stringify({ fetchedAt: fiveHoursAgo });
+    expect(formatCacheAge('hours')).toBe('5h ago');
+  });
+
+  it('returns "1 day ago" for yesterday', async () => {
+    const { formatCacheAge } = await import('@/lib/priceCache');
+    const oneDayAgo = new Date(Date.now() - 1.5 * 24 * 60 * 60 * 1000).toISOString();
+    mockStorage['deck-prices-yesterday'] = JSON.stringify({ fetchedAt: oneDayAgo });
+    expect(formatCacheAge('yesterday')).toBe('1 day ago');
+  });
+
+  it('returns "X days ago" for multiple days', async () => {
+    const { formatCacheAge } = await import('@/lib/priceCache');
+    const threeDaysAgo = new Date(Date.now() - 3 * 24 * 60 * 60 * 1000).toISOString();
+    mockStorage['deck-prices-days'] = JSON.stringify({ fetchedAt: threeDaysAgo });
+    expect(formatCacheAge('days')).toBe('3 days ago');
+  });
+});
+
+describe('formatStaticPriceAge', () => {
+  it('returns null for null/undefined', async () => {
+    const { formatStaticPriceAge } = await import('@/lib/priceCache');
+    expect(formatStaticPriceAge(null)).toBeNull();
+    expect(formatStaticPriceAge(undefined)).toBeNull();
+  });
+
+  it('returns "Just now" for recent timestamp', async () => {
+    const { formatStaticPriceAge } = await import('@/lib/priceCache');
+    const now = new Date().toISOString();
+    expect(formatStaticPriceAge(now)).toBe('Just now');
+  });
+
+  it('returns hours ago for same day', async () => {
+    const { formatStaticPriceAge } = await import('@/lib/priceCache');
+    const threeHoursAgo = new Date(Date.now() - 3 * 60 * 60 * 1000).toISOString();
+    expect(formatStaticPriceAge(threeHoursAgo)).toBe('3h ago');
+  });
+
+  it('returns "1 day ago" for yesterday', async () => {
+    const { formatStaticPriceAge } = await import('@/lib/priceCache');
+    const oneDayAgo = new Date(Date.now() - 25 * 60 * 60 * 1000).toISOString();
+    expect(formatStaticPriceAge(oneDayAgo)).toBe('1 day ago');
+  });
+
+  it('returns "X days ago" for multiple days', async () => {
+    const { formatStaticPriceAge } = await import('@/lib/priceCache');
+    const fiveDaysAgo = new Date(Date.now() - 5 * 24 * 60 * 60 * 1000).toISOString();
+    expect(formatStaticPriceAge(fiveDaysAgo)).toBe('5 days ago');
+  });
+});
+
+describe('isTimestampStale', () => {
+  it('returns true for null/undefined', async () => {
+    const { isTimestampStale } = await import('@/lib/priceCache');
+    expect(isTimestampStale(null)).toBe(true);
+    expect(isTimestampStale(undefined)).toBe(true);
+  });
+
+  it('returns false for fresh timestamp', async () => {
+    const { isTimestampStale } = await import('@/lib/priceCache');
+    const now = new Date().toISOString();
+    expect(isTimestampStale(now)).toBe(false);
+  });
+
+  it('returns true for stale timestamp (>7 days)', async () => {
+    const { isTimestampStale } = await import('@/lib/priceCache');
+    const tenDaysAgo = new Date(Date.now() - 10 * 24 * 60 * 60 * 1000).toISOString();
+    expect(isTimestampStale(tenDaysAgo)).toBe(true);
+  });
+});
+
+describe('window undefined checks', () => {
+  it('getCachedPrice returns null when window undefined', async () => {
+    const originalWindow = globalThis.window;
+    // @ts-expect-error - testing undefined
+    globalThis.window = undefined;
+
+    vi.resetModules();
+    const { getCachedPrice: freshGetCachedPrice } = await import('@/lib/priceCache');
+    expect(freshGetCachedPrice('test')).toBeNull();
+
+    globalThis.window = originalWindow;
+  });
+
+  it('setCachedPrice returns false when window undefined', async () => {
+    const originalWindow = globalThis.window;
+    // @ts-expect-error - testing undefined
+    globalThis.window = undefined;
+
+    vi.resetModules();
+    const { setCachedPrice: freshSetCachedPrice } = await import('@/lib/priceCache');
+    expect(freshSetCachedPrice('test', { totalValue: 100, topCards: [], cardCount: 10 })).toBe(false);
+
+    globalThis.window = originalWindow;
+  });
+
+  it('clearCache does nothing when window undefined', async () => {
+    const originalWindow = globalThis.window;
+    // @ts-expect-error - testing undefined
+    globalThis.window = undefined;
+
+    vi.resetModules();
+    const { clearCache: freshClearCache } = await import('@/lib/priceCache');
+    expect(() => freshClearCache()).not.toThrow();
+
+    globalThis.window = originalWindow;
+  });
+});

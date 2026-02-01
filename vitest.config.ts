@@ -12,5 +12,19 @@ export default defineConfig({
   test: {
     environment: 'jsdom',
     include: ['tests/**/*.test.ts', 'tests/**/*.test.tsx'],
+    coverage: {
+      provider: 'v8',
+      reporter: ['text', 'html', 'lcov'],
+      include: ['lib/**/*.ts', 'components/**/*.tsx'],
+      exclude: [
+        'lib/tcgplayer-scraper.ts',
+        'components/AdUnit.tsx',
+      ],
+      thresholds: {
+        lines: 90,
+        branches: 84,
+        statements: 89,
+      },
+    },
   },
 });

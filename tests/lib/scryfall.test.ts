@@ -1,5 +1,5 @@
-import { describe, it, expect, vi, afterEach } from 'vitest';
-import { getCardPrice, getCardImage, getCardByName, getCardsByNames } from '@/lib/scryfall';
+import { describe, it, expect, vi, afterEach, beforeEach } from 'vitest';
+import { getCardPrice, getCardImage, getCardByName, getCardsByNames, searchCards, loadSetCards } from '@/lib/scryfall';
 import type { ScryfallCard } from '@/types';
 
 const mockCard = (overrides: Partial<ScryfallCard> = {}): ScryfallCard => ({
@@ -152,5 +152,458 @@ describe('getCardsByNames', () => {
     }));
 
     await expect(getCardsByNames(['Sol Ring'])).rejects.toThrow('Scryfall is temporarily unavailable');
+  });
+});
+
+describe('searchCards', () => {
+  afterEach(() => {
+    vi.restoreAllMocks();
+  });
+
+  it('returns empty array for short query', async () => {
+    const result = await searchCards('a');
+    expect(result).toEqual([]);
+  });
+
+  it('returns empty array for empty query', async () => {
+    const result = await searchCards('');
+    expect(result).toEqual([]);
+  });
+
+  it('returns cards from search', async () => {
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({
+      ok: true,
+      json: () => Promise.resolve({
+        data: [{ name: 'Sol Ring' }],
+        has_more: false,
+      }),
+    }));
+
+    const result = await searchCards('sol ring');
+    expect(result.length).toBe(1);
+    expect(result[0].name).toBe('Sol Ring');
+  });
+
+  it('returns empty array on 404', async () => {
+    // The searchCards function catches errors containing '404' in the message
+    vi.stubGlobal('fetch', vi.fn().mockRejectedValue(new Error('404 Not Found')));
+
+    const result = await searchCards('xyznonexistent');
+    expect(result).toEqual([]);
+  });
+});
+
+describe('loadSetCards', () => {
+  afterEach(() => {
+    vi.restoreAllMocks();
+  });
+
+  it('loads all cards from set', async () => {
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({
+      ok: true,
+      json: () => Promise.resolve({
+        data: [{ name: 'Sol Ring' }, { name: 'Command Tower' }],
+        has_more: false,
+      }),
+    }));
+
+    const result = await loadSetCards('c21');
+    expect(result.length).toBe(2);
+  });
+
+  it('paginates through multiple pages', async () => {
+    let callCount = 0;
+    vi.stubGlobal('fetch', vi.fn().mockImplementation(() => {
+      callCount++;
+      if (callCount === 1) {
+        return Promise.resolve({
+          ok: true,
+          json: () => Promise.resolve({
+            data: [{ name: 'Card 1' }],
+            has_more: true,
+            next_page: 'https://api.scryfall.com/cards/search?page=2',
+          }),
+        });
+      }
+      return Promise.resolve({
+        ok: true,
+        json: () => Promise.resolve({
+          data: [{ name: 'Card 2' }],
+          has_more: false,
+        }),
+      });
+    }));
+
+    const result = await loadSetCards('c21');
+    expect(result.length).toBe(2);
+  });
+
+  it('calls progress callback', async () => {
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({
+      ok: true,
+      json: () => Promise.resolve({
+        data: [{ name: 'Sol Ring' }],
+        has_more: false,
+      }),
+    }));
+
+    const onProgress = vi.fn();
+    await loadSetCards('c21', onProgress);
+    expect(onProgress).toHaveBeenCalledWith({ loaded: 1, hasMore: false });
+  });
+});
+
+describe('static price loading', () => {
+  afterEach(() => {
+    vi.restoreAllMocks();
+    vi.resetModules();
+  });
+
+  it('loadStaticPrices returns cached data on subsequent calls', async () => {
+    const mockData = { updatedAt: '2024-01-01', sets: {}, decks: {} };
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({
+      ok: true,
+      json: () => Promise.resolve(mockData),
+    }));
+
+    vi.resetModules();
+    const { loadStaticPrices } = await import('@/lib/scryfall');
+    const first = await loadStaticPrices();
+    const second = await loadStaticPrices();
+    expect(first).toEqual(second);
+  });
+
+  it('loadStaticPrices returns null on fetch failure', async () => {
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({ ok: false }));
+
+    vi.resetModules();
+    const { loadStaticPrices } = await import('@/lib/scryfall');
+    const result = await loadStaticPrices();
+    expect(result).toBeNull();
+  });
+
+  it('getPriceDataTimestamp returns timestamp', async () => {
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({
+      ok: true,
+      json: () => Promise.resolve({ updatedAt: '2024-01-15T10:00:00Z', sets: {}, decks: {} }),
+    }));
+
+    vi.resetModules();
+    const { getPriceDataTimestamp } = await import('@/lib/scryfall');
+    const result = await getPriceDataTimestamp();
+    expect(result).toBe('2024-01-15T10:00:00Z');
+  });
+
+  it('getStaticSetPrices returns set prices', async () => {
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({
+      ok: true,
+      json: () => Promise.resolve({
+        updatedAt: '2024-01-01',
+        sets: { dsc: [{ name: 'Sol Ring', collector_number: '1', usd: '2.50' }] },
+        decks: {},
+      }),
+    }));
+
+    vi.resetModules();
+    const { getStaticSetPrices } = await import('@/lib/scryfall');
+    const result = await getStaticSetPrices('dsc');
+    expect(result?.[0].name).toBe('Sol Ring');
+  });
+
+  it('getStaticSetPrices returns null for unknown set', async () => {
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({
+      ok: true,
+      json: () => Promise.resolve({ updatedAt: '2024-01-01', sets: {}, decks: {} }),
+    }));
+
+    vi.resetModules();
+    const { getStaticSetPrices } = await import('@/lib/scryfall');
+    const result = await getStaticSetPrices('unknown');
+    expect(result).toBeNull();
+  });
+
+  it('getStaticDeckPrices returns deck prices', async () => {
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({
+      ok: true,
+      json: () => Promise.resolve({
+        updatedAt: '2024-01-01',
+        sets: {},
+        decks: {
+          'test-deck': {
+            totalValue: 100,
+            cardCount: 100,
+            cards: [{ name: 'Sol Ring', quantity: 1, usd: '2.50', isCommander: false }],
+          },
+        },
+      }),
+    }));
+
+    vi.resetModules();
+    const { getStaticDeckPrices } = await import('@/lib/scryfall');
+    const result = await getStaticDeckPrices('test-deck');
+    expect(result?.totalValue).toBe(100);
+  });
+
+  it('getStaticDeckPrices returns null for unknown deck', async () => {
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({
+      ok: true,
+      json: () => Promise.resolve({ updatedAt: '2024-01-01', sets: {}, decks: {} }),
+    }));
+
+    vi.resetModules();
+    const { getStaticDeckPrices } = await import('@/lib/scryfall');
+    const result = await getStaticDeckPrices('unknown');
+    expect(result).toBeNull();
+  });
+});
+
+describe('fetchCardsPrices', () => {
+  afterEach(() => {
+    vi.restoreAllMocks();
+    vi.resetModules();
+  });
+
+  it('fetches prices for cards', async () => {
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({
+      ok: true,
+      json: () => Promise.resolve({
+        data: [{ name: 'Sol Ring', prices: { usd: '2.50' }, set: 'c21' }],
+      }),
+    }));
+
+    vi.resetModules();
+    const { fetchCardsPrices } = await import('@/lib/scryfall');
+
+    const cards = [{ name: 'Sol Ring', quantity: 1 }];
+    const result = await fetchCardsPrices(cards as never[]);
+    expect(result.get('Sol Ring')?.price).toBe(2.5);
+  });
+
+  it('calls progress callback', async () => {
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({
+      ok: true,
+      json: () => Promise.resolve({
+        data: [{ name: 'Sol Ring', prices: { usd: '2.50' } }],
+      }),
+    }));
+
+    vi.resetModules();
+    const { fetchCardsPrices } = await import('@/lib/scryfall');
+
+    const onProgress = vi.fn();
+    const cards = [{ name: 'Sol Ring', quantity: 1 }];
+    await fetchCardsPrices(cards as never[], onProgress);
+
+    expect(onProgress).toHaveBeenCalled();
+  });
+
+  it('handles foil-only cards', async () => {
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({
+      ok: true,
+      json: () => Promise.resolve({
+        data: [{ name: 'Foil Card', prices: { usd: null, usd_foil: '10.00' }, set: 'c21' }],
+      }),
+    }));
+
+    vi.resetModules();
+    const { fetchCardsPrices } = await import('@/lib/scryfall');
+
+    const cards = [{ name: 'Foil Card', quantity: 1 }];
+    const result = await fetchCardsPrices(cards as never[]);
+    expect(result.get('Foil Card')?.isFoilOnly).toBe(true);
+  });
+
+  it('uses set code when provided', async () => {
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({
+      ok: true,
+      json: () => Promise.resolve({
+        data: [{ name: 'Sol Ring', prices: { usd: '2.50' }, set: 'dsc' }],
+      }),
+    }));
+
+    vi.resetModules();
+    const { fetchCardsPrices } = await import('@/lib/scryfall');
+
+    const cards = [{ name: 'Sol Ring', quantity: 1, setCode: 'dsc' }];
+    const result = await fetchCardsPrices(cards as never[]);
+    expect(result.get('Sol Ring')?.price).toBe(2.5);
+  });
+});
+
+describe('fetchDeckPrices', () => {
+  afterEach(() => {
+    vi.restoreAllMocks();
+    vi.resetModules();
+  });
+
+  it('returns deck pricing result', async () => {
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({
+      ok: true,
+      json: () => Promise.resolve({
+        data: [
+          { name: 'Sol Ring', prices: { usd: '2.50' }, set: 'c21' },
+          { name: 'Command Tower', prices: { usd: '0.50' }, set: 'c21' },
+        ],
+      }),
+    }));
+
+    vi.resetModules();
+    const { fetchDeckPrices } = await import('@/lib/scryfall');
+
+    const cards = [
+      { name: 'Sol Ring', quantity: 1 },
+      { name: 'Command Tower', quantity: 1 },
+    ];
+    const result = await fetchDeckPrices(cards as never[]);
+
+    expect(result.totalValue).toBe(3);
+    expect(result.cards.length).toBe(2);
+    expect(result.cardCount).toBe(2);
+  });
+
+  it('sorts cards by value descending', async () => {
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({
+      ok: true,
+      json: () => Promise.resolve({
+        data: [
+          { name: 'Cheap Card', prices: { usd: '0.10' }, set: 'c21' },
+          { name: 'Expensive Card', prices: { usd: '50.00' }, set: 'c21' },
+        ],
+      }),
+    }));
+
+    vi.resetModules();
+    const { fetchDeckPrices } = await import('@/lib/scryfall');
+
+    const cards = [
+      { name: 'Cheap Card', quantity: 1 },
+      { name: 'Expensive Card', quantity: 1 },
+    ];
+    const result = await fetchDeckPrices(cards as never[]);
+
+    expect(result.cards[0].name).toBe('Expensive Card');
+    expect(result.cards[1].name).toBe('Cheap Card');
+  });
+
+  it('includes top 5 cards', async () => {
+    const mockCards = Array.from({ length: 10 }, (_, i) => ({
+      name: `Card ${i}`,
+      prices: { usd: `${10 - i}.00` },
+      set: 'c21',
+    }));
+
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({
+      ok: true,
+      json: () => Promise.resolve({ data: mockCards }),
+    }));
+
+    vi.resetModules();
+    const { fetchDeckPrices } = await import('@/lib/scryfall');
+
+    const cards = Array.from({ length: 10 }, (_, i) => ({ name: `Card ${i}`, quantity: 1 }));
+    const result = await fetchDeckPrices(cards as never[]);
+
+    expect(result.topCards.length).toBe(5);
+  });
+
+  it('handles commander cards', async () => {
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({
+      ok: true,
+      json: () => Promise.resolve({
+        data: [{ name: 'Atraxa', prices: { usd: '15.00' }, set: 'c21' }],
+      }),
+    }));
+
+    vi.resetModules();
+    const { fetchDeckPrices } = await import('@/lib/scryfall');
+
+    const cards = [{ name: 'Atraxa', quantity: 1, isCommander: true }];
+    const result = await fetchDeckPrices(cards as never[]);
+
+    expect(result.cards[0].isCommander).toBe(true);
+  });
+});
+
+describe('lowest listings', () => {
+  afterEach(() => {
+    vi.restoreAllMocks();
+    vi.resetModules();
+  });
+
+  it('loadLowestListings returns data', async () => {
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({
+      ok: true,
+      json: () => Promise.resolve({
+        updatedAt: '2024-01-01',
+        cards: { 'Sol Ring': { lowestListing: 1.99 } },
+      }),
+    }));
+
+    vi.resetModules();
+    const { loadLowestListings } = await import('@/lib/scryfall');
+    const result = await loadLowestListings();
+    expect(result?.cards['Sol Ring'].lowestListing).toBe(1.99);
+  });
+
+  it('loadLowestListings returns null on failure', async () => {
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({ ok: false }));
+
+    vi.resetModules();
+    const { loadLowestListings } = await import('@/lib/scryfall');
+    const result = await loadLowestListings();
+    expect(result).toBeNull();
+  });
+
+  it('getLowestListingForCard returns price', async () => {
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({
+      ok: true,
+      json: () => Promise.resolve({
+        updatedAt: '2024-01-01',
+        cards: { 'Sol Ring': { lowestListing: 1.99 } },
+      }),
+    }));
+
+    vi.resetModules();
+    const { getLowestListingForCard } = await import('@/lib/scryfall');
+    const result = await getLowestListingForCard('Sol Ring');
+    expect(result).toBe(1.99);
+  });
+
+  it('getLowestListingForCard returns null for unknown card', async () => {
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({
+      ok: true,
+      json: () => Promise.resolve({ updatedAt: '2024-01-01', cards: {} }),
+    }));
+
+    vi.resetModules();
+    const { getLowestListingForCard } = await import('@/lib/scryfall');
+    const result = await getLowestListingForCard('Unknown Card');
+    expect(result).toBeNull();
+  });
+
+  it('mergeLowestListings adds listings to cards', async () => {
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({
+      ok: true,
+      json: () => Promise.resolve({
+        updatedAt: '2024-01-01',
+        cards: { 'Sol Ring': { lowestListing: 1.99 } },
+      }),
+    }));
+
+    vi.resetModules();
+    const { mergeLowestListings } = await import('@/lib/scryfall');
+    const cards = [{ name: 'Sol Ring', price: 2.50 }] as never[];
+    const result = await mergeLowestListings(cards);
+    expect((result[0] as { lowestListing?: number }).lowestListing).toBe(1.99);
+  });
+
+  it('mergeLowestListings returns cards unchanged when no listings', async () => {
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({ ok: false }));
+
+    vi.resetModules();
+    const { mergeLowestListings } = await import('@/lib/scryfall');
+    const cards = [{ name: 'Sol Ring', price: 2.50 }] as never[];
+    const result = await mergeLowestListings(cards);
+    expect(result).toEqual(cards);
   });
 });
