@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowLeft, Loader2, RefreshCw } from 'lucide-react';
 import { getPreconById, getDeckCards } from '@/lib/precons';
-import { getStaticDeckPrices, fetchDeckPrices, getCardByName, getCardImage, mergeLowestListings } from '@/lib/scryfall';
+import { getStaticDeckPrices, fetchDeckPrices, getCardByName, getCardImage, mergeLowestListings, loadLowestListings } from '@/lib/scryfall';
 import ColorIndicator from '@/components/ColorIndicator';
 import ShareButton from '@/components/ShareButton';
 import ROISummary from '@/components/ROISummary';
@@ -54,10 +54,14 @@ export default function DeckContent({ deckId }: { deckId: string }) {
       }
       if (!cancelled) setDeck(deckInfo);
 
+      // Start loading lowest listings early (runs in parallel with price fetch)
+      const listingsPromise = loadLowestListings();
+
       const deckPrices = await getStaticDeckPrices(deckId);
 
       if (deckPrices) {
         if (!cancelled) setFetchSource('static');
+        await listingsPromise; // Ensure listings are loaded before merging
         const cardsWithListings = await mergeLowestListings(deckPrices.cards);
         const formattedCards: FormattedCard[] = cardsWithListings.map((card, index) => ({
           id: `${card.name}-${index}`,
@@ -101,6 +105,7 @@ export default function DeckContent({ deckId }: { deckId: string }) {
       try {
         if (!cancelled) setFetchSource('live');
         const liveData = await fetchDeckPrices(deckCards);
+        await listingsPromise; // Ensure listings are loaded before merging
         const cardsWithListings = await mergeLowestListings(liveData.cards);
         const formattedCards: FormattedCard[] = cardsWithListings.map((card, index) => ({
           id: `${card.name}-${index}`,

@@ -372,11 +372,11 @@ const isSerializedCollectorNumber = (cn: string): boolean => {
   return /[a-zA-Z]/.test(cn) || parseInt(cn, 10) > 900;
 };
 
-const SPECIAL_FRAMES = ['showcase', 'extendedart', 'borderless'];
+const SPECIAL_FRAMES = new Set(['showcase', 'extendedart', 'borderless']);
 
 const hasSpecialFrame = (card: ScryfallCard): boolean => {
   const frameEffects = card.frame_effects ?? [];
-  return frameEffects.some(f => SPECIAL_FRAMES.includes(f));
+  return frameEffects.some(f => SPECIAL_FRAMES.has(f));
 };
 
 const selectCheapestVersion = (cards: ScryfallCard[]): ScryfallCard | null => {

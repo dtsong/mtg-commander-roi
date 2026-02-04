@@ -1,4 +1,4 @@
-import { useMemo } from 'react';
+import { useMemo, memo } from 'react';
 import { Trophy } from 'lucide-react';
 import CardPriceRow from './CardPriceRow';
 import { getTopValueCards } from '@/lib/calculations';
@@ -21,7 +21,7 @@ interface TopValueCardsProps {
   totalValue?: number;
 }
 
-export default function TopValueCards({ cards, loading, totalValue = 0 }: TopValueCardsProps) {
+function TopValueCards({ cards, loading, totalValue = 0 }: TopValueCardsProps) {
   const topCards = useMemo(
     () => getTopValueCards(cards, TOP_CARDS_COUNT) as TopValueCardsCard[],
     [cards]
@@ -60,7 +60,7 @@ export default function TopValueCards({ cards, loading, totalValue = 0 }: TopVal
           const cardValue = card.total ?? card.price ?? 0;
           const percentage = totalValue > 0 ? (cardValue / totalValue) * 100 : 0;
           return (
-            <div key={card.name} className="relative">
+            <div key={card.id ?? `${card.name}-${index}`} className="relative">
               <CardPriceRow card={card} rank={index + 1} />
               {totalValue > 0 && percentage >= 1 && (
                 <span className="absolute top-3 right-24 text-xs text-slate-400 tabular-nums">
@@ -74,3 +74,5 @@ export default function TopValueCards({ cards, loading, totalValue = 0 }: TopVal
     </div>
   );
 }
+
+export default memo(TopValueCards);

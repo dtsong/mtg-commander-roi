@@ -22,9 +22,12 @@ export default function AdUnit({ slot, format = 'auto', responsive = true, class
   useEffect(() => {
     if (initialized.current) return;
     if (!adRef.current) return;
+    if (typeof window === 'undefined') return;
 
     try {
-      (window.adsbygoogle = window.adsbygoogle || []).push({});
+      const adsbygoogle = window.adsbygoogle ?? [];
+      window.adsbygoogle = adsbygoogle;
+      adsbygoogle.push({});
       initialized.current = true;
     } catch {
       console.error('AdSense push failed');

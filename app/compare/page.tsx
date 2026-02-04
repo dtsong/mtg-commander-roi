@@ -1,6 +1,6 @@
 'use client';
 
-import { Suspense, useState, useEffect, useCallback } from 'react';
+import { Suspense, useState, useEffect, useCallback, useTransition } from 'react';
 import Link from 'next/link';
 import { ArrowLeft, Trash2, RefreshCw, Loader2 } from 'lucide-react';
 import DeckComparisonTable from '@/components/DeckComparisonTable';
@@ -33,6 +33,7 @@ function CompareContent() {
   const [loadingStatic, setLoadingStatic] = useState(true);
   const [filter, setFilter] = useState<FilterState>({ year: 'all', set: 'all', roiThreshold: 'all' });
   const [isInitialized, setIsInitialized] = useState(false);
+  const [, startTransition] = useTransition();
 
   const { setParams } = useUrlState({
     defaults: URL_DEFAULTS,
@@ -48,16 +49,18 @@ function CompareContent() {
     }, [isInitialized]),
   });
 
-  // Sync filter changes to URL
+  // Sync filter changes to URL (wrapped in transition for better responsiveness)
   const handleFilterChange = useCallback((newFilter: Partial<FilterState>) => {
-    setFilter(prev => {
-      const updated = { ...prev, ...newFilter };
-      setParams({
-        year: updated.year,
-        set: updated.set,
-        roi: updated.roiThreshold,
+    startTransition(() => {
+      setFilter(prev => {
+        const updated = { ...prev, ...newFilter };
+        setParams({
+          year: updated.year,
+          set: updated.set,
+          roi: updated.roiThreshold,
+        });
+        return updated;
       });
-      return updated;
     });
   }, [setParams]);
 

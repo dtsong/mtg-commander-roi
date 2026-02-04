@@ -14,7 +14,7 @@ import { useToast } from '@/components/ui/ToastProvider';
 import { useUrlState } from '@/hooks/useUrlState';
 
 const AddDeckModal = dynamic(() => import('@/components/AddDeckModal'));
-import { fetchDeckPrices, getCardPrice, mergeLowestListings } from '@/lib/scryfall';
+import { fetchDeckPrices, getCardPrice, mergeLowestListings, loadLowestListings } from '@/lib/scryfall';
 import { getDeckCards, PRECON_DATABASE } from '@/lib/precons';
 import { calculateTotalValue } from '@/lib/calculations';
 import type { PreconDeck, CardWithPrice, ScryfallCard } from '@/types';
@@ -69,6 +69,9 @@ function HomeContent() {
     setCards([]);
 
     try {
+      // Start loading lowest listings early (runs in parallel with price fetch)
+      const listingsPromise = loadLowestListings();
+
       const deckCards = await getDeckCards(deck.id);
       if (!deckCards.length) {
         const errorMsg = `No deck list found for "${deck.name}"`;
@@ -78,6 +81,7 @@ function HomeContent() {
         return;
       }
       const priceResult = await fetchDeckPrices(deckCards);
+      await listingsPromise; // Ensure listings are loaded before merging
       const cardsWithListings = await mergeLowestListings(priceResult.cards);
       setCards(cardsWithListings);
       toast(`Loaded ${cardsWithListings.length} cards for "${deck.name}"`, 'success');

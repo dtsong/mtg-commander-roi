@@ -1,4 +1,4 @@
-import { useMemo } from 'react';
+import { useMemo, memo } from 'react';
 import { List, Package } from 'lucide-react';
 import CardPriceRow from './CardPriceRow';
 import { sortCardsByValue } from '@/lib/calculations';
@@ -17,7 +17,7 @@ interface CardListProps {
   loading: boolean;
 }
 
-export default function CardList({ cards, loading }: CardListProps) {
+function CardList({ cards, loading }: CardListProps) {
   const sortedCards = useMemo(
     () => sortCardsByValue(cards) as CardListCard[],
     [cards]
@@ -63,8 +63,8 @@ export default function CardList({ cards, loading }: CardListProps) {
         All Cards ({cards.length})
       </h3>
       <div className="space-y-2 max-h-96 overflow-y-auto pr-1">
-        {sortedCards.map(card => (
-          <div key={card.name} style={{ contentVisibility: 'auto', containIntrinsicSize: '0 48px' }}>
+        {sortedCards.map((card, index) => (
+          <div key={card.id ?? `${card.name}-${index}`} style={{ contentVisibility: 'auto', containIntrinsicSize: '0 48px' }}>
             <CardPriceRow card={card} />
           </div>
         ))}
@@ -72,3 +72,5 @@ export default function CardList({ cards, loading }: CardListProps) {
     </div>
   );
 }
+
+export default memo(CardList);
