@@ -161,7 +161,7 @@ describe('BulkImport', () => {
         fireEvent.click(importButton!);
       });
 
-      expect(container.textContent).toContain('Importing...');
+      expect(container.textContent).toContain('Importing…');
     });
   });
 
@@ -186,7 +186,7 @@ describe('BulkImport', () => {
       });
 
       await waitFor(() => {
-        expect(container.textContent).toContain('truncated to 150 cards');
+        expect(container.textContent).toContain('Decklist truncated from 160 to 150 cards');
       });
     });
 

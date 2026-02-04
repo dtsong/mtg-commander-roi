@@ -59,6 +59,16 @@ function generateCspHeader(nonce: string): string {
   ].join('; ');
 }
 
+function addRateLimitHeaders(
+  response: NextResponse,
+  remaining: number,
+  resetTime: number
+): void {
+  response.headers.set('X-RateLimit-Limit', RATE_LIMIT_REQUESTS.toString());
+  response.headers.set('X-RateLimit-Remaining', Math.max(0, remaining).toString());
+  response.headers.set('X-RateLimit-Reset', Math.ceil(resetTime / 1000).toString());
+}
+
 export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
 
@@ -71,22 +81,29 @@ export function middleware(request: NextRequest) {
   cleanupIfStale(now);
   const entry = rateLimitStore.get(clientIp);
 
+  let remaining = RATE_LIMIT_REQUESTS - 1;
+  let resetTime = now + RATE_LIMIT_WINDOW_MS;
+
   if (!entry || now > entry.resetTime) {
     rateLimitStore.set(clientIp, {
       count: 1,
-      resetTime: now + RATE_LIMIT_WINDOW_MS,
+      resetTime,
     });
   } else if (entry.count >= RATE_LIMIT_REQUESTS) {
     const retryAfterSeconds = Math.ceil((entry.resetTime - now) / 1000);
-    return new NextResponse('Too Many Requests', {
+    const response = new NextResponse('Too Many Requests', {
       status: 429,
       headers: {
         'Retry-After': retryAfterSeconds.toString(),
         'Content-Type': 'text/plain',
       },
     });
+    addRateLimitHeaders(response, 0, entry.resetTime);
+    return response;
   } else {
     entry.count++;
+    remaining = RATE_LIMIT_REQUESTS - entry.count;
+    resetTime = entry.resetTime;
   }
 
   const nonce = crypto.randomUUID();
@@ -99,17 +116,19 @@ export function middleware(request: NextRequest) {
 
   response.headers.set('Content-Security-Policy', generateCspHeader(nonce));
   response.headers.set('X-Permitted-Cross-Domain-Policies', 'none');
-  response.headers.set('Report-To', JSON.stringify({
-    group: 'csp-endpoint',
-    max_age: 86400,
-    endpoints: [{ url: '/api/csp-report' }],
-  }));
+  response.headers.set(
+    'Report-To',
+    JSON.stringify({
+      group: 'csp-endpoint',
+      max_age: 86400,
+      endpoints: [{ url: '/api/csp-report' }],
+    })
+  );
+  addRateLimitHeaders(response, remaining, resetTime);
 
   return response;
 }
 
 export const config = {
-  matcher: [
-    '/((?!api|_next/static|_next/image|favicon.ico).*)',
-  ],
+  matcher: ['/((?!api|_next/static|_next/image|favicon.ico).*)'],
 };
