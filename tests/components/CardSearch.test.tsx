@@ -263,7 +263,7 @@ describe('CardSearch', () => {
       });
 
       // Click add button on first result
-      const addButton = container.querySelector('button[title="Add to deck"]');
+      const addButton = container.querySelector('button[aria-label="Add Sol Ring to deck"]');
       fireEvent.click(addButton!);
 
       expect(mockOnAddCard).toHaveBeenCalledWith(mockCards[0]);

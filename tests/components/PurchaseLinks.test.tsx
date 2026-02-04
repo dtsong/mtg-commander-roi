@@ -44,7 +44,7 @@ describe('PurchaseLinks', () => {
         <PurchaseLinks cardName="Sol Ring" />
       );
 
-      const tcgLink = container.querySelector('a[title="Search on TCGplayer"]');
+      const tcgLink = container.querySelector('a[aria-label="Search Sol Ring on TCGplayer"]');
       expect(tcgLink).not.toBeNull();
       expect(tcgLink?.getAttribute('href')).toContain('tcgplayer.com');
     });
@@ -54,7 +54,7 @@ describe('PurchaseLinks', () => {
         <PurchaseLinks cardName="Sol Ring" tcgplayerId={12345} />
       );
 
-      const tcgLink = container.querySelector('a[title="View on TCGplayer"]');
+      const tcgLink = container.querySelector('a[aria-label="View Sol Ring on TCGplayer"]');
       expect(tcgLink).not.toBeNull();
     });
   });
@@ -65,7 +65,7 @@ describe('PurchaseLinks', () => {
         <PurchaseLinks cardName="Sol Ring" />
       );
 
-      const cmLink = container.querySelector('a[title="Search on CardMarket"]');
+      const cmLink = container.querySelector('a[aria-label="Search Sol Ring on CardMarket"]');
       expect(cmLink).not.toBeNull();
     });
 
@@ -74,7 +74,7 @@ describe('PurchaseLinks', () => {
         <PurchaseLinks cardName="Sol Ring" cardmarketId={67890} />
       );
 
-      const cmLink = container.querySelector('a[title="View on CardMarket"]');
+      const cmLink = container.querySelector('a[aria-label="View Sol Ring on CardMarket"]');
       expect(cmLink).not.toBeNull();
     });
   });

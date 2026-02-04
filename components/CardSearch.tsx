@@ -51,7 +51,7 @@ export default function CardSearch({ onAddCard }: CardSearchProps) {
   return (
     <div className="bg-slate-800/50 rounded-xl border border-slate-700 p-4">
       <h3 className="text-lg font-semibold text-white mb-4 flex items-center gap-2">
-        <Search className="w-5 h-5" />
+        <Search className="w-5 h-5" aria-hidden="true" />
         Search Cards
       </h3>
 
@@ -62,26 +62,27 @@ export default function CardSearch({ onAddCard }: CardSearchProps) {
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             onKeyDown={handleKeyDown}
-            placeholder="Search by card name..."
+            placeholder="Search by card name…"
             aria-label="Search cards by name"
-            className="w-full bg-slate-700 border border-slate-600 rounded-lg px-3 py-2 min-h-[44px] text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-purple-500"
+            autoComplete="off"
+            className="w-full bg-slate-700 border border-slate-600 rounded-lg px-3 py-2 min-h-[44px] text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900"
           />
           {query && (
             <button
               onClick={clearResults}
               aria-label="Clear search"
-              className="absolute right-2 top-1/2 -translate-y-1/2 p-2 text-slate-400 hover:text-white"
+              className="absolute right-2 top-1/2 -translate-y-1/2 p-2 text-slate-400 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 rounded"
             >
-              <X className="w-4 h-4" />
+              <X className="w-4 h-4" aria-hidden="true" />
             </button>
           )}
         </div>
         <button
           onClick={handleSearch}
           disabled={loading || query.length < 2}
-          className="bg-purple-600 hover:bg-purple-700 disabled:bg-slate-600 text-white px-4 py-2 min-h-[44px] rounded-lg transition-colors"
+          className="bg-purple-600 hover:bg-purple-700 disabled:bg-slate-600 text-white px-4 py-2 min-h-[44px] rounded-lg transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900"
         >
-          {loading ? 'Searching...' : 'Search'}
+          {loading ? 'Searching…' : 'Search'}
         </button>
       </div>
 
@@ -114,10 +115,10 @@ export default function CardSearch({ onAddCard }: CardSearchProps) {
               </div>
               <button
                 onClick={() => onAddCard(card)}
-                className="p-2 min-w-[44px] min-h-[44px] bg-green-600 hover:bg-green-700 rounded-lg text-white flex items-center justify-center flex-shrink-0"
-                title="Add to deck"
+                className="p-2 min-w-[44px] min-h-[44px] bg-green-600 hover:bg-green-700 rounded-lg text-white flex items-center justify-center flex-shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900"
+                aria-label={`Add ${card.name} to deck`}
               >
-                <Plus className="w-5 h-5" />
+                <Plus className="w-5 h-5" aria-hidden="true" />
               </button>
             </div>
           ))}

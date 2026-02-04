@@ -30,8 +30,8 @@ export default function TopValueCards({ cards, loading, totalValue = 0 }: TopVal
   if (loading) {
     return (
       <div className="bg-slate-800/50 rounded-xl border border-slate-700 p-4">
-        <h3 className="text-lg font-semibold text-white mb-2 flex items-center gap-2">
-          <Trophy className="w-5 h-5 text-yellow-400" />
+        <h3 className="text-lg font-semibold text-white mb-2 flex items-center gap-2 text-balance">
+          <Trophy className="w-5 h-5 text-yellow-400" aria-hidden="true" />
           Top {TOP_CARDS_COUNT} Most Valuable Cards
         </h3>
         <p className="text-sm text-slate-400 mb-4">Highest value singles in this deck</p>
@@ -50,8 +50,8 @@ export default function TopValueCards({ cards, loading, totalValue = 0 }: TopVal
 
   return (
     <div className="bg-slate-800/50 rounded-xl border border-slate-700 p-4">
-      <h3 className="text-lg font-semibold text-white mb-2 flex items-center gap-2">
-        <Trophy className="w-5 h-5 text-yellow-400" />
+      <h3 className="text-lg font-semibold text-white mb-2 flex items-center gap-2 text-balance">
+        <Trophy className="w-5 h-5 text-yellow-400" aria-hidden="true" />
         Top {TOP_CARDS_COUNT} Most Valuable Cards
       </h3>
       <p className="text-sm text-slate-400 mb-4">Highest value singles in this deck</p>
@@ -63,7 +63,7 @@ export default function TopValueCards({ cards, loading, totalValue = 0 }: TopVal
             <div key={card.name} className="relative">
               <CardPriceRow card={card} rank={index + 1} />
               {totalValue > 0 && percentage >= 1 && (
-                <span className="absolute top-3 right-24 text-xs text-slate-400">
+                <span className="absolute top-3 right-24 text-xs text-slate-400 tabular-nums">
                   {percentage.toFixed(0)}% of total
                 </span>
               )}

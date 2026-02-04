@@ -145,7 +145,7 @@ function HomeContent() {
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 py-6">
         {error && (
-          <div className="mb-4 p-4 bg-red-500/20 border border-red-500 rounded-lg">
+          <div className="mb-4 p-4 bg-red-500/20 border border-red-500 rounded-lg" role="alert">
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-red-300 font-medium">{error}</p>
@@ -157,9 +157,9 @@ function HomeContent() {
                 <button
                   onClick={() => loadDeckCards(selectedDeck)}
                   disabled={loading}
-                  className="flex items-center gap-2 px-3 py-1.5 bg-red-500/30 hover:bg-red-500/40 text-red-200 rounded-lg transition-colors disabled:opacity-50"
+                  className="flex items-center gap-2 px-3 py-1.5 bg-red-500/30 hover:bg-red-500/40 text-red-200 rounded-lg transition-colors disabled:opacity-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500"
                 >
-                  <RefreshCw className={`w-4 h-4 ${loading ? 'animate-spin' : ''}`} />
+                  <RefreshCw className={`w-4 h-4 ${loading ? 'animate-spin' : ''}`} aria-hidden="true" />
                   Retry
                 </button>
               )}
@@ -204,7 +204,7 @@ function HomeContent() {
             href="https://scryfall.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-purple-400 hover:text-purple-300"
+            className="text-purple-400 hover:text-purple-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 rounded"
           >
             Scryfall
           </a>

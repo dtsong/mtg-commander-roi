@@ -85,7 +85,7 @@ function CardPriceRow({ card, rank, showConditionInfo = false }: CardPriceRowPro
         {hasPriceData ? (
           <div className="flex flex-col items-end gap-0.5">
             <div className="flex items-center gap-1.5">
-              <span className={`font-bold ${price > 5 ? 'text-green-400' : 'text-white'}`}>
+              <span className={`font-bold tabular-nums ${price > 5 ? 'text-green-400' : 'text-white'}`}>
                 {formatCurrency(price)}
               </span>
               <span className={`text-[10px] px-1 py-0.5 rounded font-medium ${
@@ -98,20 +98,20 @@ function CardPriceRow({ card, rank, showConditionInfo = false }: CardPriceRowPro
               {showConditionInfo && (
                 <Link
                   href="/blog/understanding-card-conditions"
-                  className="text-slate-500 hover:text-slate-300 transition-colors"
-                  title="Learn about card conditions"
+                  className="text-slate-500 hover:text-slate-300 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 rounded"
+                  aria-label="Learn about card conditions"
                 >
-                  <Info className="w-3 h-3" />
+                  <Info className="w-3 h-3" aria-hidden="true" />
                 </Link>
               )}
             </div>
             {hasFoilPrice && !isFoilOnly && (
               <div className="flex items-center gap-1 text-xs">
-                <span className={hasSignificantFoilPremium ? 'text-amber-400' : 'text-slate-400'}>
+                <span className={`tabular-nums ${hasSignificantFoilPremium ? 'text-amber-400' : 'text-slate-400'}`}>
                   Foil: {formatCurrency(card.foilPrice!)}
                 </span>
                 {hasSignificantFoilPremium && (
-                  <span className="text-amber-400 font-medium">
+                  <span className="text-amber-400 font-medium tabular-nums">
                     (+{foilPremiumPercent.toFixed(0)}%)
                   </span>
                 )}
@@ -119,11 +119,11 @@ function CardPriceRow({ card, rank, showConditionInfo = false }: CardPriceRowPro
             )}
             {hasLowestListing && lowestListing < price && (
               <div className="flex items-center gap-1 text-xs">
-                <span className={hasSignificantSavings ? 'text-yellow-400' : 'text-slate-400'}>
+                <span className={`tabular-nums ${hasSignificantSavings ? 'text-yellow-400' : 'text-slate-400'}`}>
                   Low: {formatCurrency(lowestListing)}
                 </span>
                 {hasSignificantSavings && (
-                  <span className="text-yellow-400 font-medium">
+                  <span className="text-yellow-400 font-medium tabular-nums">
                     (-{savingsPercent.toFixed(0)}%)
                   </span>
                 )}

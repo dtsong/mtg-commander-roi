@@ -23,12 +23,13 @@ const SortHeader = memo(function SortHeader({ label, sortKey, currentSort, onSor
   return (
     <button
       onClick={() => onSort(sortKey)}
-      className={`flex items-center gap-1 font-semibold hover:text-purple-400 transition-colors ${
+      aria-label={`Sort by ${label}, ${isActive ? (currentSort.direction === 'desc' ? 'descending' : 'ascending') : 'not sorted'}`}
+      className={`flex items-center gap-1 font-semibold hover:text-purple-400 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 rounded ${
         isActive ? 'text-purple-400' : 'text-slate-300'
       }`}
     >
       {label}
-      <Icon className={`w-4 h-4 ${isActive ? 'opacity-100' : 'opacity-30'}`} />
+      <Icon className={`w-4 h-4 ${isActive ? 'opacity-100' : 'opacity-30'}`} aria-hidden="true" />
     </button>
   );
 });
@@ -201,7 +202,8 @@ export default function DeckComparisonTable({
           <select
             value={filter.year}
             onChange={(e) => onFilterChange({ year: e.target.value })}
-            className="bg-slate-700 border border-slate-600 rounded-lg px-3 py-2 min-h-[44px] text-white text-sm flex-1 sm:flex-none"
+            aria-label="Filter by year"
+            className="bg-slate-700 border border-slate-600 rounded-lg px-3 py-2 min-h-[44px] text-white text-sm flex-1 sm:flex-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900"
           >
             <option value="all">All Years</option>
             {years.map(year => (
@@ -212,7 +214,8 @@ export default function DeckComparisonTable({
           <select
             value={filter.set}
             onChange={(e) => onFilterChange({ set: e.target.value })}
-            className="bg-slate-700 border border-slate-600 rounded-lg px-3 py-2 min-h-[44px] text-white text-sm flex-1 sm:flex-none"
+            aria-label="Filter by set"
+            className="bg-slate-700 border border-slate-600 rounded-lg px-3 py-2 min-h-[44px] text-white text-sm flex-1 sm:flex-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900"
           >
             <option value="all">All Sets</option>
             {sets.map(set => (
@@ -223,7 +226,8 @@ export default function DeckComparisonTable({
           <select
             value={filter.roiThreshold}
             onChange={(e) => onFilterChange({ roiThreshold: e.target.value })}
-            className="bg-slate-700 border border-slate-600 rounded-lg px-3 py-2 min-h-[44px] text-white text-sm flex-1 sm:flex-none"
+            aria-label="Filter by ROI"
+            className="bg-slate-700 border border-slate-600 rounded-lg px-3 py-2 min-h-[44px] text-white text-sm flex-1 sm:flex-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900"
           >
             {ROI_FILTERS.map(opt => (
               <option key={opt.value} value={opt.value}>{opt.label}</option>
@@ -231,7 +235,7 @@ export default function DeckComparisonTable({
           </select>
         </div>
 
-        <div className="text-sm text-slate-400">
+        <div className="text-sm text-slate-400 tabular-nums" aria-live="polite">
           {stats.loaded}/{stats.total} loaded
           {stats.loaded > 0 && (
             <span className="ml-3">

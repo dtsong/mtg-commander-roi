@@ -98,20 +98,22 @@ export default function AddDeckModal({ isOpen, onClose, onAdd }: AddDeckModalPro
           <button
             onClick={onClose}
             aria-label="Close dialog"
-            className="text-slate-400 hover:text-white"
+            className="text-slate-400 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 rounded"
           >
-            <X className="w-5 h-5" />
+            <X className="w-5 h-5" aria-hidden="true" />
           </button>
         </div>
 
         <form onSubmit={handleSubmit} className="p-4 space-y-4">
           <div>
-            <label className="block text-sm text-slate-400 mb-1">Deck Name *</label>
+            <label htmlFor="deck-name" className="block text-sm text-slate-400 mb-1">Deck Name *</label>
             <input
               type="text"
+              id="deck-name"
               value={formData.name}
               onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-              className="w-full bg-slate-700 border border-slate-600 rounded-lg px-3 py-2 text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
+              autoComplete="off"
+              className="w-full bg-slate-700 border border-slate-600 rounded-lg px-3 py-2 text-white focus:outline-none focus:ring-2 focus:ring-purple-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900"
               placeholder="e.g., My Custom Deck"
               maxLength={100}
               required
@@ -119,12 +121,14 @@ export default function AddDeckModal({ isOpen, onClose, onAdd }: AddDeckModalPro
           </div>
 
           <div>
-            <label className="block text-sm text-slate-400 mb-1">Set Name</label>
+            <label htmlFor="set-name" className="block text-sm text-slate-400 mb-1">Set Name</label>
             <input
               type="text"
+              id="set-name"
               value={formData.set}
               onChange={(e) => setFormData({ ...formData, set: e.target.value })}
-              className="w-full bg-slate-700 border border-slate-600 rounded-lg px-3 py-2 text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
+              autoComplete="off"
+              className="w-full bg-slate-700 border border-slate-600 rounded-lg px-3 py-2 text-white focus:outline-none focus:ring-2 focus:ring-purple-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900"
               placeholder="e.g., Commander 2024"
               maxLength={100}
             />
@@ -132,23 +136,27 @@ export default function AddDeckModal({ isOpen, onClose, onAdd }: AddDeckModalPro
 
           <div className="grid grid-cols-2 gap-4">
             <div>
-              <label className="block text-sm text-slate-400 mb-1">Year</label>
+              <label htmlFor="deck-year" className="block text-sm text-slate-400 mb-1">Year</label>
               <input
                 type="number"
+                id="deck-year"
                 value={formData.year}
                 onChange={(e) => setFormData({ ...formData, year: e.target.value })}
-                className="w-full bg-slate-700 border border-slate-600 rounded-lg px-3 py-2 text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
+                inputMode="numeric"
+                className="w-full bg-slate-700 border border-slate-600 rounded-lg px-3 py-2 text-white focus:outline-none focus:ring-2 focus:ring-purple-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 tabular-nums"
                 min="2000"
                 max="2030"
               />
             </div>
             <div>
-              <label className="block text-sm text-slate-400 mb-1">MSRP (USD) *</label>
+              <label htmlFor="deck-msrp" className="block text-sm text-slate-400 mb-1">MSRP (USD) *</label>
               <input
                 type="number"
+                id="deck-msrp"
                 value={formData.msrp}
                 onChange={(e) => setFormData({ ...formData, msrp: e.target.value })}
-                className="w-full bg-slate-700 border border-slate-600 rounded-lg px-3 py-2 text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
+                inputMode="decimal"
+                className="w-full bg-slate-700 border border-slate-600 rounded-lg px-3 py-2 text-white focus:outline-none focus:ring-2 focus:ring-purple-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 tabular-nums"
                 placeholder="49.99"
                 step="0.01"
                 min="0"
@@ -158,12 +166,14 @@ export default function AddDeckModal({ isOpen, onClose, onAdd }: AddDeckModalPro
           </div>
 
           <div>
-            <label className="block text-sm text-slate-400 mb-1">Scryfall Set Code (optional)</label>
+            <label htmlFor="set-code" className="block text-sm text-slate-400 mb-1">Scryfall Set Code (optional)</label>
             <input
               type="text"
+              id="set-code"
               value={formData.setCode}
               onChange={(e) => setFormData({ ...formData, setCode: e.target.value.toLowerCase() })}
-              className="w-full bg-slate-700 border border-slate-600 rounded-lg px-3 py-2 text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
+              autoComplete="off"
+              className="w-full bg-slate-700 border border-slate-600 rounded-lg px-3 py-2 text-white focus:outline-none focus:ring-2 focus:ring-purple-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900"
               placeholder="e.g., dsc"
               maxLength={5}
             />
@@ -176,15 +186,15 @@ export default function AddDeckModal({ isOpen, onClose, onAdd }: AddDeckModalPro
             <button
               type="button"
               onClick={onClose}
-              className="flex-1 bg-slate-700 hover:bg-slate-600 text-white px-4 py-2 rounded-lg transition-colors"
+              className="flex-1 bg-slate-700 hover:bg-slate-600 text-white px-4 py-2 rounded-lg transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900"
             >
               Cancel
             </button>
             <button
               type="submit"
-              className="flex-1 flex items-center justify-center gap-2 bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg transition-colors"
+              className="flex-1 flex items-center justify-center gap-2 bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900"
             >
-              <Plus className="w-4 h-4" />
+              <Plus className="w-4 h-4" aria-hidden="true" />
               Add Deck
             </button>
           </div>

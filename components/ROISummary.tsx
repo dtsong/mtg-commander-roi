@@ -47,10 +47,10 @@ export default function ROISummary({ deck, totalValue, loading, excludedCount = 
               {verdict.label === 'DISTRO' && (
                 <div className="text-sm text-orange-300 mb-1">Only at distributor pricing</div>
               )}
-              <div className="text-2xl sm:text-3xl font-bold text-white mb-1">
+              <div className="text-2xl sm:text-3xl font-bold text-white mb-1 tabular-nums">
                 {formatCurrency(totalValue)}
               </div>
-              <div className="flex flex-col sm:flex-row items-center gap-1 sm:gap-4 text-sm">
+              <div className="flex flex-col sm:flex-row items-center gap-1 sm:gap-4 text-sm tabular-nums">
                 <span className={`${distroRoi >= 0 ? 'text-green-400' : 'text-red-400'} font-semibold`}>
                   {formatPercentage(distroRoi)} Distro ROI
                 </span>
@@ -68,23 +68,23 @@ export default function ROISummary({ deck, totalValue, loading, excludedCount = 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
           <div className="bg-slate-700/50 rounded-lg p-3">
             <div className="flex items-center gap-2 text-slate-400 text-xs mb-1">
-              <Tag className="w-3 h-3" />
+              <Tag className="w-3 h-3" aria-hidden="true" />
               MSRP
             </div>
-            <div className="text-lg font-bold text-white">
+            <div className="text-lg font-bold text-white tabular-nums">
               {formatCurrency(deck.msrp)}
             </div>
           </div>
 
           <div className="bg-slate-700/50 rounded-lg p-3">
             <div className="flex items-center gap-2 text-slate-400 text-xs mb-1">
-              <Truck className="w-3 h-3" />
+              <Truck className="w-3 h-3" aria-hidden="true" />
               Distro Cost
               <Tooltip content="Game stores buy sealed product at ~40% below MSRP. Distro ROI shows profit at this cost basis.">
-                <Info className="w-3 h-3 cursor-help hover:text-slate-300 transition-colors" />
+                <Info className="w-3 h-3 cursor-help hover:text-slate-300 transition-colors" aria-hidden="true" />
               </Tooltip>
             </div>
-            <div className="text-lg font-bold text-white">
+            <div className="text-lg font-bold text-white tabular-nums">
               {formatCurrency(distroCost)}
             </div>
             <div className="text-xs text-slate-500">40% discount</div>
@@ -92,28 +92,28 @@ export default function ROISummary({ deck, totalValue, loading, excludedCount = 
 
           <div className="bg-slate-700/50 rounded-lg p-3">
             <div className="flex items-center gap-2 text-slate-400 text-xs mb-1">
-              <DollarSign className="w-3 h-3" />
+              <DollarSign className="w-3 h-3" aria-hidden="true" />
               Current Value
             </div>
-            <div className="text-lg font-bold text-white">
-              {loading ? <Loader2 className="w-4 h-4 animate-spin inline" /> : formatCurrency(totalValue)}
+            <div className="text-lg font-bold text-white tabular-nums">
+              {loading ? <Loader2 className="w-4 h-4 animate-spin inline" aria-hidden="true" /> : formatCurrency(totalValue)}
             </div>
           </div>
 
           <div className="bg-slate-700/50 rounded-lg p-3">
             <div className="flex items-center gap-2 text-slate-400 text-xs mb-1">
-              <TrendingUp className="w-3 h-3" />
+              <TrendingUp className="w-3 h-3" aria-hidden="true" />
               Profit (Distro)
             </div>
-            <div className={`text-lg font-bold ${totalValue - distroCost >= 0 ? 'text-green-400' : 'text-red-400'}`}>
-              {loading ? <Loader2 className="w-4 h-4 animate-spin inline" /> : `${totalValue - distroCost >= 0 ? '+' : ''}${formatCurrency(totalValue - distroCost)}`}
+            <div className={`text-lg font-bold tabular-nums ${totalValue - distroCost >= 0 ? 'text-green-400' : 'text-red-400'}`}>
+              {loading ? <Loader2 className="w-4 h-4 animate-spin inline" aria-hidden="true" /> : `${totalValue - distroCost >= 0 ? '+' : ''}${formatCurrency(totalValue - distroCost)}`}
             </div>
           </div>
         </div>
 
         {excludedCount > 0 && !loading && (
-          <div className="mt-4 flex items-center gap-2 text-sm text-yellow-500">
-            <AlertCircle className="w-4 h-4" />
+          <div className="mt-4 flex items-center gap-2 text-sm text-yellow-500" role="status">
+            <AlertCircle className="w-4 h-4" aria-hidden="true" />
             {excludedCount} card{excludedCount > 1 ? 's' : ''} excluded (no price data)
           </div>
         )}
