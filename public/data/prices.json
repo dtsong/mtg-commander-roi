@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-02-09T20:35:31.728Z",
+  "updatedAt": "2026-02-10T01:24:16.569Z",
   "decks": {
     "ltc-elven-council": {
       "totalValue": 107.85,
@@ -1123,7 +1123,7 @@
       ]
     },
     "ecc-dance-of-the-elements": {
-      "totalValue": 48.65,
+      "totalValue": 48.86,
       "cardCount": 100,
       "cards": [
         {
@@ -1143,7 +1143,7 @@
         {
           "name": "Endurance",
           "quantity": 1,
-          "usd": "3.31",
+          "usd": "3.52",
           "tcgplayerId": 671173,
           "cardmarketId": 864986
         },
@@ -4927,7 +4927,7 @@
       ]
     },
     "fic-counter-blitz": {
-      "totalValue": 96.36,
+      "totalValue": 96.39,
       "cardCount": 100,
       "cards": [
         {
@@ -4983,19 +4983,19 @@
           "cardmarketId": 824813
         },
         {
+          "name": "Farewell",
+          "quantity": 1,
+          "usd": "3.90",
+          "tcgplayerId": 631183,
+          "cardmarketId": 824534
+        },
+        {
           "name": "Yuna, Grand Summoner",
           "quantity": 1,
           "usd": "3.89",
           "usd_foil": "0.77",
           "tcgplayerId": 630780,
           "cardmarketId": 824197
-        },
-        {
-          "name": "Farewell",
-          "quantity": 1,
-          "usd": "3.87",
-          "tcgplayerId": 631183,
-          "cardmarketId": 824534
         },
         {
           "name": "Damning Verdict",
@@ -15427,7 +15427,7 @@
       ]
     },
     "m3c-creative-energy": {
-      "totalValue": 54.46,
+      "totalValue": 54.45,
       "cardCount": 100,
       "cards": [
         {
@@ -15454,7 +15454,7 @@
         {
           "name": "Farewell",
           "quantity": 1,
-          "usd": "3.86",
+          "usd": "3.85",
           "tcgplayerId": 552946,
           "cardmarketId": 772259
         },
@@ -23887,7 +23887,7 @@
       ]
     },
     "mkc-deep-clue-sea": {
-      "totalValue": 70.22,
+      "totalValue": 70.2,
       "cardCount": 100,
       "cards": [
         {
@@ -23914,7 +23914,7 @@
         {
           "name": "Farewell",
           "quantity": 1,
-          "usd": "5.07",
+          "usd": "5.05",
           "tcgplayerId": 535709,
           "cardmarketId": 753420
         },
