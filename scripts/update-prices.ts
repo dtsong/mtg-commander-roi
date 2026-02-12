@@ -24,6 +24,11 @@ const OUTPUT_PATH = join(__dirname, '..', 'public', 'data', 'prices.json');
 
 const sleep = (ms: number): Promise<void> => new Promise(resolve => setTimeout(resolve, ms));
 
+function getFrontFaceName(name: string): string {
+  const idx = name.indexOf(' // ');
+  return idx !== -1 ? name.substring(0, idx) : name;
+}
+
 interface BulkDataMetadata {
   download_uri: string;
   updated_at: string;
@@ -173,37 +178,69 @@ function isSerializedCollectorNumber(cn: string): boolean {
   return /[a-zA-Z]/.test(cn) || parseInt(cn, 10) > 900;
 }
 
+function selectBest(versions: CardVersion[]): { best: CardVersion; serializedSkipped: number } | null {
+  let serializedSkipped = 0;
+
+  const nonSerialized = versions.filter(v => {
+    if (isSerializedCollectorNumber(v.collectorNumber)) {
+      serializedSkipped++;
+      return false;
+    }
+    return true;
+  });
+
+  const regularCards = nonSerialized.filter(v => !v.isShowcase);
+
+  const candidates = regularCards.length > 0
+    ? regularCards
+    : nonSerialized.length > 0
+      ? nonSerialized
+      : versions;
+
+  candidates.sort((a, b) => {
+    if (a.price !== b.price) return a.price - b.price;
+    if (a.isPromo !== b.isPromo) return a.isPromo ? 1 : -1;
+    if (a.isFoilOnly !== b.isFoilOnly) return a.isFoilOnly ? 1 : -1;
+    return 0;
+  });
+
+  if (candidates.length === 0) return null;
+  return { best: candidates[0], serializedSkipped };
+}
+
 function buildSetAwarePriceLookup(
   allCards: BulkCard[],
   neededCardSets: Map<string, Set<string>>
 ): Map<string, PriceLookupEntry> {
   console.log('Building set-aware price lookup (selecting cheapest versions)...');
 
+  const SPECIAL_FRAMES = ['showcase', 'extendedart', 'borderless'];
+
+  // Primary: exact set match; Fallback: any set
   const cardVersions = new Map<string, CardVersion[]>();
+  const fallbackVersions = new Map<string, CardVersion[]>();
 
   for (const card of allCards) {
-    const neededSets = neededCardSets.get(card.name);
-    if (!neededSets || !neededSets.has(card.set)) continue;
+    // Try full name first, then front-face name for adventure/DFC cards
+    const lookupName = neededCardSets.has(card.name)
+      ? card.name
+      : neededCardSets.has(getFrontFaceName(card.name))
+        ? getFrontFaceName(card.name)
+        : null;
+    if (!lookupName) continue;
+
+    const neededSets = neededCardSets.get(lookupName)!;
 
     const usd = card.prices?.usd ?? null;
     const usdFoil = card.prices?.usd_foil ?? null;
-
     const priceStr = usd || usdFoil;
     if (!priceStr) continue;
 
     const price = parseFloat(priceStr);
     if (isNaN(price) || price <= 0) continue;
 
-    const setKey = `${card.name}|${card.set}`;
-
-    if (!cardVersions.has(setKey)) {
-      cardVersions.set(setKey, []);
-    }
-
-    const SPECIAL_FRAMES = ['showcase', 'extendedart', 'borderless'];
     const isShowcase = (card.frame_effects ?? []).some(f => SPECIAL_FRAMES.includes(f));
-
-    cardVersions.get(setKey)!.push({
+    const version: CardVersion = {
       price,
       priceStr,
       foilPriceStr: usdFoil,
@@ -213,55 +250,60 @@ function buildSetAwarePriceLookup(
       isShowcase,
       tcgplayerId: card.tcgplayer_id,
       cardmarketId: card.cardmarket_id,
-    });
+    };
+
+    if (neededSets.has(card.set)) {
+      // Exact set match — use the decklist name as key (not the Scryfall full name)
+      const setKey = `${lookupName}|${card.set}`;
+      if (!cardVersions.has(setKey)) cardVersions.set(setKey, []);
+      cardVersions.get(setKey)!.push(version);
+    } else {
+      // Different set — collect for fallback, keyed by card name + needed sets
+      for (const neededSet of neededSets) {
+        const setKey = `${lookupName}|${neededSet}`;
+        if (!fallbackVersions.has(setKey)) fallbackVersions.set(setKey, []);
+        fallbackVersions.get(setKey)!.push(version);
+      }
+    }
   }
 
   const lookup = new Map<string, PriceLookupEntry>();
   let serializedSkipped = 0;
 
+  // Process exact set matches
   for (const [setKey, versions] of cardVersions) {
-    // Filter out serialized versions
-    const nonSerialized = versions.filter(v => {
-      if (isSerializedCollectorNumber(v.collectorNumber)) {
-        serializedSkipped++;
-        return false;
-      }
-      return true;
+    const result = selectBest(versions);
+    if (!result) continue;
+    serializedSkipped += result.serializedSkipped;
+    const best = result.best;
+    lookup.set(setKey, {
+      priceStr: best.priceStr,
+      foilPriceStr: best.foilPriceStr,
+      isFoilOnly: best.isFoilOnly,
+      tcgplayerId: best.tcgplayerId,
+      cardmarketId: best.cardmarketId,
     });
-
-    // Filter out extended art/showcase/borderless (hard filter with fallback)
-    const regularCards = nonSerialized.filter(v => !v.isShowcase);
-
-    // Fallback chain: regular > non-serialized > all
-    const candidates = regularCards.length > 0
-      ? regularCards
-      : nonSerialized.length > 0
-        ? nonSerialized
-        : versions;
-
-    candidates.sort((a, b) => {
-      // 1. Cheapest price first (primary criteria)
-      if (a.price !== b.price) return a.price - b.price;
-      // 2. Non-promo preferred
-      if (a.isPromo !== b.isPromo) return a.isPromo ? 1 : -1;
-      // 3. Non-foil-only preferred
-      if (a.isFoilOnly !== b.isFoilOnly) return a.isFoilOnly ? 1 : -1;
-      return 0;
-    });
-
-    if (candidates.length > 0) {
-      const best = candidates[0];
-      lookup.set(setKey, {
-        priceStr: best.priceStr,
-        foilPriceStr: best.foilPriceStr,
-        isFoilOnly: best.isFoilOnly,
-        tcgplayerId: best.tcgplayerId,
-        cardmarketId: best.cardmarketId,
-      });
-    }
   }
 
-  console.log(`Matched prices for ${lookup.size} card+set combinations`);
+  // Fill gaps from fallback (cross-set)
+  let fallbackFilled = 0;
+  for (const [setKey, versions] of fallbackVersions) {
+    if (lookup.has(setKey)) continue; // already have an exact set match
+    const result = selectBest(versions);
+    if (!result) continue;
+    serializedSkipped += result.serializedSkipped;
+    const best = result.best;
+    lookup.set(setKey, {
+      priceStr: best.priceStr,
+      foilPriceStr: best.foilPriceStr,
+      isFoilOnly: best.isFoilOnly,
+      tcgplayerId: best.tcgplayerId,
+      cardmarketId: best.cardmarketId,
+    });
+    fallbackFilled++;
+  }
+
+  console.log(`Matched prices for ${lookup.size} card+set combinations (${fallbackFilled} from cross-set fallback)`);
   console.log(`Skipped ${serializedSkipped} serialized/special versions`);
   return lookup;
 }

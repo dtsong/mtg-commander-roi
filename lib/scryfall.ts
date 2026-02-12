@@ -68,6 +68,11 @@ function cacheSet(key: string, value: PriceInfo): void {
 
 const sleep = (ms: number): Promise<void> => new Promise(resolve => setTimeout(resolve, ms));
 
+function getFrontFaceName(name: string): string {
+  const idx = name.indexOf(' // ');
+  return idx !== -1 ? name.substring(0, idx) : name;
+}
+
 interface ScryfallSearchResponse {
   data: ScryfallCard[];
   has_more: boolean;
@@ -450,12 +455,41 @@ export const fetchCardsPrices = async (
     }
   }
 
+  // Retry cards not found in initial batch without set constraint
+  const foundNames = new Set<string>();
+  for (const card of results) {
+    foundNames.add(card.name);
+    foundNames.add(getFrontFaceName(card.name));
+  }
+  const notFoundCards = uncachedCards.filter(
+    c => !foundNames.has(c.name) && !foundNames.has(getFrontFaceName(c.name))
+  );
+  if (notFoundCards.length > 0) {
+    const retryIdentifiers = notFoundCards.map(card => ({ name: card.name }));
+    for (let i = 0; i < retryIdentifiers.length; i += BATCH_SIZE) {
+      const batch = retryIdentifiers.slice(i, i + BATCH_SIZE);
+      const data = await collectionFetchWithRetry(batch);
+      results.push(...(data.data || []));
+      if (i + BATCH_SIZE < retryIdentifiers.length) {
+        await sleep(RATE_LIMIT_MS);
+      }
+    }
+  }
+
   // Group results by card name to handle multiple versions
   const cardsByName = new Map<string, ScryfallCard[]>();
   for (const card of results) {
     const existing = cardsByName.get(card.name) ?? [];
     existing.push(card);
     cardsByName.set(card.name, existing);
+
+    // Also index by front-face name for adventure/DFC cards
+    const frontFace = getFrontFaceName(card.name);
+    if (frontFace !== card.name) {
+      const frontExisting = cardsByName.get(frontFace) ?? [];
+      frontExisting.push(card);
+      cardsByName.set(frontFace, frontExisting);
+    }
   }
 
   // Select cheapest version for each card
@@ -476,10 +510,26 @@ export const fetchCardsPrices = async (
       isFoilOnly,
     };
     priceMap.set(cardName, priceInfo);
+
+    // Also set by front-face name for adventure/DFC cards
+    const frontFace = getFrontFaceName(cardName);
+    if (frontFace !== cardName) {
+      priceMap.set(frontFace, priceInfo);
+    }
+
     const cacheKey = card.set
       ? `${card.name.toLowerCase()}|${card.set.toLowerCase()}`
       : card.name.toLowerCase();
     cacheSet(cacheKey, priceInfo);
+
+    // Cache front-face name as well
+    const frontFaceForCache = getFrontFaceName(card.name);
+    if (frontFaceForCache !== card.name) {
+      const frontCacheKey = card.set
+        ? `${frontFaceForCache.toLowerCase()}|${card.set.toLowerCase()}`
+        : frontFaceForCache.toLowerCase();
+      cacheSet(frontCacheKey, priceInfo);
+    }
   }
 
   return priceMap;
