@@ -1,0 +1,25 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended"],
+  "timezone": "America/Los_Angeles",
+  "dependencyDashboard": true,
+  "labels": ["dependencies"],
+  "lockFileMaintenance": {
+    "enabled": true
+  },
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "groupName": "deps (minor/patch)"
+    },
+    {
+      "matchUpdateTypes": ["major"],
+      "groupName": "deps (major)",
+      "separateMultipleMajor": true
+    }
+  ],
+  "postUpgradeTasks": {
+    "commands": ["bun install"],
+    "fileFilters": ["bun.lock"]
+  }
+}

@@ -11,7 +11,7 @@ permissions:
 jobs:
   review:
     name: Code Review
-    if: ${{ github.event.pull_request.user.login != 'dependabot[bot]' }}
+    if: ${{ github.event.pull_request.user.type != 'Bot' }}
     continue-on-error: true
     uses: dtsong/code-review-agent/.github/workflows/pr-review-reusable.yml@main
     with:
