@@ -1,13 +1,8 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest';
 import {
   formatTrendingAge,
-  loadTrendingData,
-  getTrendingCards,
-  getWeeklyCommanders,
-  getDailyCommander,
-  findTrendingInPrecons,
 } from '@/lib/trending';
-import type { TrendingData, TrendingCard } from '@/types';
+import type { TrendingData } from '@/types';
 
 const mockTrendingData: TrendingData = {
   trendingCards: [
@@ -19,13 +14,6 @@ const mockTrendingData: TrendingData = {
   ],
   dailyCommander: { name: 'Edgar Markov', sanitized: 'edgar-markov' },
   updatedAt: new Date().toISOString(),
-};
-
-const mockDecklists = {
-  'test-deck': [
-    { name: 'Sol Ring', quantity: 1 },
-    { name: 'Island', quantity: 10 },
-  ],
 };
 
 beforeEach(() => {

@@ -3,9 +3,6 @@ import {
   getYears,
   getPreconsByYear,
   getPreconById,
-  getDeckCards,
-  hasDeckList,
-  loadDecklists,
   PRECON_DATABASE,
 } from '@/lib/precons';
 

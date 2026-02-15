@@ -144,7 +144,7 @@ const rateLimitedFetchImpl = async <T>(url: string, retryCount: number = 0): Pro
     return response.json() as Promise<T>;
   } catch (error) {
     if (error instanceof Error && error.name === 'AbortError') {
-      throw new Error('Request timed out. Please try again.');
+      throw new Error('Request timed out. Please try again.', { cause: error });
     }
     throw error;
   }
@@ -310,7 +310,7 @@ const collectionFetchWithRetry = async (
           await sleep(delay);
           continue;
         }
-        throw new Error('Request timed out. Please try again.');
+        throw new Error('Request timed out. Please try again.', { cause: error });
       }
       if (attempt < maxRetries && !(error instanceof Error && error.message.includes('temporarily unavailable'))) {
         const delay = Math.pow(2, attempt) * 1000;

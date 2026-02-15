@@ -78,7 +78,7 @@ describe('ToastProvider', () => {
     });
 
     it('shows toast with different types', () => {
-      const { container, rerender } = render(
+      const { container } = render(
         <ToastProvider>
           <TestComponent message="Info" type="info" />
         </ToastProvider>

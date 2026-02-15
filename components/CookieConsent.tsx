@@ -32,7 +32,6 @@ export default function CookieConsent() {
     if (stored) {
       updateGoogleConsent(stored === 'accepted');
     } else {
-      // eslint-disable-next-line react-hooks/set-state-in-effect -- initialization from localStorage
       setShowBanner(true);
     }
   }, []);
