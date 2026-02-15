@@ -159,7 +159,7 @@ async function main(): Promise<void> {
   const precons = loadPrecons();
   console.log(`Found ${precons.length} precons\n`);
 
-  let decklists: Decklists = {};
+  let decklists: Decklists;
   try {
     decklists = JSON.parse(readFileSync(DECKLISTS_PATH, 'utf-8')) as Decklists;
   } catch {

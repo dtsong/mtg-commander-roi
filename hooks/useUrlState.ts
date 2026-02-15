@@ -63,7 +63,7 @@ export function useUrlState<T extends Record<string, ParamValue>>({
 
   // Update URL with new params (shallow routing)
   const setParams = useCallback(
-    (updates: Partial<T>) => {
+    (updates: Partial<{ [K in keyof T]: T[K] | null | undefined }>) => {
       const params = new URLSearchParams(searchParams.toString());
 
       for (const [key, value] of Object.entries(updates)) {

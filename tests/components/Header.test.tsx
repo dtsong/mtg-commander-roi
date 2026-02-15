@@ -210,7 +210,6 @@ describe('Header', () => {
       fireEvent.click(menuButton!);
 
       // Find mobile add button
-      const mobileAddButton = container.querySelector('.md\\:hidden button');
       const addButtons = Array.from(container.querySelectorAll('.md\\:hidden button')).filter(
         btn => btn.textContent?.includes('Add Custom Deck')
       );

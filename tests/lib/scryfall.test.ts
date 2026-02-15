@@ -1,4 +1,4 @@
-import { describe, it, expect, vi, afterEach, beforeEach } from 'vitest';
+import { describe, it, expect, vi, afterEach } from 'vitest';
 import { getCardPrice, getCardImage, getCardByName, getCardsByNames, searchCards, loadSetCards } from '@/lib/scryfall';
 import type { ScryfallCard } from '@/types';
 
