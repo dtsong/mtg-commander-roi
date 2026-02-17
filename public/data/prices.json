@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-02-17T01:14:02.424Z",
+  "updatedAt": "2026-02-17T07:47:07.220Z",
   "decks": {
     "ltc-elven-council": {
-      "totalValue": 113.49,
+      "totalValue": 111.93,
       "cardCount": 100,
       "cards": [
         {
@@ -119,14 +119,6 @@
           "cardmarketId": 717443
         },
         {
-          "name": "Forest",
-          "quantity": 15,
-          "usd": "0.06",
-          "usd_foil": "0.46",
-          "tcgplayerId": 122780,
-          "cardmarketId": 292616
-        },
-        {
           "name": "Beast Within",
           "quantity": 1,
           "usd": "0.78",
@@ -146,14 +138,6 @@
           "usd": "0.66",
           "tcgplayerId": 499702,
           "cardmarketId": 717335
-        },
-        {
-          "name": "Island",
-          "quantity": 11,
-          "usd": "0.06",
-          "usd_foil": "0.32",
-          "tcgplayerId": 188361,
-          "cardmarketId": 371845
         },
         {
           "name": "Cultivate",
@@ -545,11 +529,21 @@
           "usd_foil": "0.14",
           "tcgplayerId": 498398,
           "cardmarketId": 715953
+        },
+        {
+          "name": "Forest",
+          "quantity": 15,
+          "usd": null
+        },
+        {
+          "name": "Island",
+          "quantity": 11,
+          "usd": null
         }
       ]
     },
     "ltc-food-and-fellowship": {
-      "totalValue": 106.56,
+      "totalValue": 105.6,
       "cardCount": 100,
       "cards": [
         {
@@ -763,14 +757,6 @@
           "usd": "0.51",
           "tcgplayerId": 499573,
           "cardmarketId": 717137
-        },
-        {
-          "name": "Forest",
-          "quantity": 8,
-          "usd": "0.06",
-          "usd_foil": "0.46",
-          "tcgplayerId": 122780,
-          "cardmarketId": 292616
         },
         {
           "name": "Crypt Incursion",
@@ -993,27 +979,11 @@
           "cardmarketId": 717169
         },
         {
-          "name": "Plains",
-          "quantity": 4,
-          "usd": "0.06",
-          "usd_foil": "0.24",
-          "tcgplayerId": 169371,
-          "cardmarketId": 360267
-        },
-        {
           "name": "Scattered Groves",
           "quantity": 1,
           "usd": "0.24",
           "tcgplayerId": 499580,
           "cardmarketId": 717339
-        },
-        {
-          "name": "Swamp",
-          "quantity": 4,
-          "usd": "0.06",
-          "usd_foil": "0.51",
-          "tcgplayerId": 145701,
-          "cardmarketId": 301834
         },
         {
           "name": "Bilbo, Birthday Celebrant",
@@ -1175,11 +1145,26 @@
           "usd_foil": "0.20",
           "tcgplayerId": 499310,
           "cardmarketId": 717759
+        },
+        {
+          "name": "Forest",
+          "quantity": 8,
+          "usd": null
+        },
+        {
+          "name": "Plains",
+          "quantity": 4,
+          "usd": null
+        },
+        {
+          "name": "Swamp",
+          "quantity": 4,
+          "usd": null
         }
       ]
     },
     "ecc-dance-of-the-elements": {
-      "totalValue": 58.58,
+      "totalValue": 57.68,
       "cardCount": 100,
       "cards": [
         {
@@ -1316,14 +1301,6 @@
           "usd": "0.54",
           "tcgplayerId": 671275,
           "cardmarketId": 865060
-        },
-        {
-          "name": "Forest",
-          "quantity": 8,
-          "usd": "0.06",
-          "usd_foil": "0.46",
-          "tcgplayerId": 122780,
-          "cardmarketId": 292616
         },
         {
           "name": "Mass of Mysteries",
@@ -1786,40 +1763,34 @@
           "cardmarketId": 865110
         },
         {
+          "name": "Forest",
+          "quantity": 8,
+          "usd": null
+        },
+        {
           "name": "Island",
           "quantity": 2,
-          "usd": "0.06",
-          "usd_foil": "0.32",
-          "tcgplayerId": 188361,
-          "cardmarketId": 371845
-        },
-        {
-          "name": "Plains",
-          "quantity": 2,
-          "usd": "0.06",
-          "usd_foil": "0.24",
-          "tcgplayerId": 169371,
-          "cardmarketId": 360267
-        },
-        {
-          "name": "Swamp",
-          "quantity": 2,
-          "usd": "0.06",
-          "usd_foil": "0.51",
-          "tcgplayerId": 145701,
-          "cardmarketId": 301834
+          "usd": null
         },
         {
           "name": "Mountain",
           "quantity": 2,
-          "usd": "0.03",
-          "tcgplayerId": 104265,
-          "cardmarketId": 284285
+          "usd": null
+        },
+        {
+          "name": "Plains",
+          "quantity": 2,
+          "usd": null
+        },
+        {
+          "name": "Swamp",
+          "quantity": 2,
+          "usd": null
         }
       ]
     },
     "ecc-blight-curse": {
-      "totalValue": 51.34,
+      "totalValue": 50.38,
       "cardCount": 100,
       "cards": [
         {
@@ -1966,14 +1937,6 @@
           "cardmarketId": 865065
         },
         {
-          "name": "Swamp",
-          "quantity": 8,
-          "usd": "0.06",
-          "usd_foil": "0.51",
-          "tcgplayerId": 145701,
-          "cardmarketId": 301834
-        },
-        {
           "name": "Arcane Signet",
           "quantity": 1,
           "usd": "0.46",
@@ -2056,14 +2019,6 @@
           "usd": "0.36",
           "tcgplayerId": 671154,
           "cardmarketId": 865012
-        },
-        {
-          "name": "Forest",
-          "quantity": 6,
-          "usd": "0.06",
-          "usd_foil": "0.46",
-          "tcgplayerId": 122780,
-          "cardmarketId": 292616
         },
         {
           "name": "Dusk Urchins",
@@ -2404,13 +2359,6 @@
           "cardmarketId": 865111
         },
         {
-          "name": "Mountain",
-          "quantity": 4,
-          "usd": "0.03",
-          "tcgplayerId": 104265,
-          "cardmarketId": 284285
-        },
-        {
           "name": "Wickerbough Elder",
           "quantity": 1,
           "usd": "0.10",
@@ -2424,11 +2372,26 @@
           "usd_foil": "0.19",
           "tcgplayerId": 98910,
           "cardmarketId": 283047
+        },
+        {
+          "name": "Forest",
+          "quantity": 6,
+          "usd": null
+        },
+        {
+          "name": "Mountain",
+          "quantity": 4,
+          "usd": null
+        },
+        {
+          "name": "Swamp",
+          "quantity": 8,
+          "usd": null
         }
       ]
     },
     "eoc-counter-intelligence": {
-      "totalValue": 50.68,
+      "totalValue": 50.23,
       "cardCount": 100,
       "cards": [
         {
@@ -2981,22 +2944,6 @@
           "cardmarketId": 834303
         },
         {
-          "name": "Island",
-          "quantity": 3,
-          "usd": "0.06",
-          "usd_foil": "0.32",
-          "tcgplayerId": 188361,
-          "cardmarketId": 371845
-        },
-        {
-          "name": "Plains",
-          "quantity": 3,
-          "usd": "0.06",
-          "usd_foil": "0.24",
-          "tcgplayerId": 169371,
-          "cardmarketId": 360267
-        },
-        {
           "name": "Golem Foundry",
           "quantity": 1,
           "usd": "0.18",
@@ -3081,23 +3028,31 @@
           "cardmarketId": 834138
         },
         {
-          "name": "Mountain",
-          "quantity": 3,
-          "usd": "0.03",
-          "tcgplayerId": 104265,
-          "cardmarketId": 284285
-        },
-        {
           "name": "Etched Oracle",
           "quantity": 1,
           "usd": "0.05",
           "tcgplayerId": 642832,
           "cardmarketId": 834281
+        },
+        {
+          "name": "Island",
+          "quantity": 3,
+          "usd": null
+        },
+        {
+          "name": "Mountain",
+          "quantity": 3,
+          "usd": null
+        },
+        {
+          "name": "Plains",
+          "quantity": 3,
+          "usd": null
         }
       ]
     },
     "eoc-world-shaper": {
-      "totalValue": 46.88,
+      "totalValue": 45.49,
       "cardCount": 100,
       "cards": [
         {
@@ -3251,21 +3206,6 @@
           "cardmarketId": 834098
         },
         {
-          "name": "Wastes",
-          "quantity": 1,
-          "usd": "0.52",
-          "tcgplayerId": 642074,
-          "cardmarketId": 834150
-        },
-        {
-          "name": "Forest",
-          "quantity": 8,
-          "usd": "0.06",
-          "usd_foil": "0.46",
-          "tcgplayerId": 122780,
-          "cardmarketId": 292616
-        },
-        {
           "name": "Omnath, Locus of Rage",
           "quantity": 1,
           "usd": "0.47",
@@ -3355,14 +3295,6 @@
           "usd": "0.30",
           "tcgplayerId": 642032,
           "cardmarketId": 834084
-        },
-        {
-          "name": "Swamp",
-          "quantity": 5,
-          "usd": "0.06",
-          "usd_foil": "0.51",
-          "tcgplayerId": 145701,
-          "cardmarketId": 301834
         },
         {
           "name": "Twilight Mire",
@@ -3701,55 +3633,44 @@
           "cardmarketId": 834111
         },
         {
-          "name": "Mountain",
-          "quantity": 3,
-          "usd": "0.03",
-          "tcgplayerId": 104265,
-          "cardmarketId": 284285
-        },
-        {
           "name": "Groundskeeper",
           "quantity": 1,
           "usd": "0.08",
           "tcgplayerId": 641992,
           "cardmarketId": 834102
+        },
+        {
+          "name": "Forest",
+          "quantity": 8,
+          "usd": null
+        },
+        {
+          "name": "Mountain",
+          "quantity": 3,
+          "usd": null
+        },
+        {
+          "name": "Swamp",
+          "quantity": 5,
+          "usd": null
+        },
+        {
+          "name": "Wastes",
+          "quantity": 1,
+          "usd": null
         }
       ]
     },
     "fic-revival-trance": {
-      "totalValue": 75.03,
+      "totalValue": 50.71,
       "cardCount": 100,
       "cards": [
-        {
-          "name": "Plains",
-          "quantity": 4,
-          "usd": "3.47",
-          "isFoilOnly": true,
-          "tcgplayerId": 656912,
-          "cardmarketId": 851645
-        },
         {
           "name": "Reanimate",
           "quantity": 1,
           "usd": "6.74",
           "tcgplayerId": 631573,
           "cardmarketId": 824594
-        },
-        {
-          "name": "Mountain",
-          "quantity": 3,
-          "usd": "1.80",
-          "isFoilOnly": true,
-          "tcgplayerId": 656915,
-          "cardmarketId": 851648
-        },
-        {
-          "name": "Swamp",
-          "quantity": 3,
-          "usd": "1.68",
-          "isFoilOnly": true,
-          "tcgplayerId": 656914,
-          "cardmarketId": 851647
         },
         {
           "name": "Rise of the Dark Realms",
@@ -4378,29 +4299,28 @@
           "usd": "0.11",
           "tcgplayerId": 631523,
           "cardmarketId": 824503
+        },
+        {
+          "name": "Mountain",
+          "quantity": 3,
+          "usd": null
+        },
+        {
+          "name": "Plains",
+          "quantity": 4,
+          "usd": null
+        },
+        {
+          "name": "Swamp",
+          "quantity": 3,
+          "usd": null
         }
       ]
     },
     "fic-limit-break": {
-      "totalValue": 99.1,
+      "totalValue": 73.48,
       "cardCount": 100,
       "cards": [
-        {
-          "name": "Plains",
-          "quantity": 3,
-          "usd": "3.47",
-          "isFoilOnly": true,
-          "tcgplayerId": 656912,
-          "cardmarketId": 851645
-        },
-        {
-          "name": "Forest",
-          "quantity": 3,
-          "usd": "3.27",
-          "isFoilOnly": true,
-          "tcgplayerId": 656916,
-          "cardmarketId": 851649
-        },
         {
           "name": "Clever Concealment",
           "quantity": 1,
@@ -4414,14 +4334,6 @@
           "usd": "5.72",
           "tcgplayerId": 631215,
           "cardmarketId": 824804
-        },
-        {
-          "name": "Mountain",
-          "quantity": 3,
-          "usd": "1.80",
-          "isFoilOnly": true,
-          "tcgplayerId": 656915,
-          "cardmarketId": 851648
         },
         {
           "name": "Skullclamp",
@@ -5049,37 +4961,28 @@
           "usd": "0.09",
           "tcgplayerId": 631144,
           "cardmarketId": 824948
-        }
-      ]
-    },
-    "fic-counter-blitz": {
-      "totalValue": 102.32,
-      "cardCount": 100,
-      "cards": [
-        {
-          "name": "Plains",
-          "quantity": 3,
-          "usd": "3.47",
-          "isFoilOnly": true,
-          "tcgplayerId": 656912,
-          "cardmarketId": 851645
         },
         {
           "name": "Forest",
           "quantity": 3,
-          "usd": "3.27",
-          "isFoilOnly": true,
-          "tcgplayerId": 656916,
-          "cardmarketId": 851649
+          "usd": null
         },
         {
-          "name": "Island",
+          "name": "Mountain",
           "quantity": 3,
-          "usd": "2.83",
-          "isFoilOnly": true,
-          "tcgplayerId": 656913,
-          "cardmarketId": 851646
+          "usd": null
         },
+        {
+          "name": "Plains",
+          "quantity": 3,
+          "usd": null
+        }
+      ]
+    },
+    "fic-counter-blitz": {
+      "totalValue": 73.61,
+      "cardCount": 100,
+      "cards": [
         {
           "name": "Sphere Grid",
           "quantity": 1,
@@ -5719,37 +5622,28 @@
           "usd": "0.13",
           "tcgplayerId": 631487,
           "cardmarketId": 824747
-        }
-      ]
-    },
-    "fic-scions-and-spellcraft": {
-      "totalValue": 90.02,
-      "cardCount": 100,
-      "cards": [
+        },
         {
-          "name": "Plains",
-          "quantity": 4,
-          "usd": "3.47",
-          "isFoilOnly": true,
-          "tcgplayerId": 656912,
-          "cardmarketId": 851645
+          "name": "Forest",
+          "quantity": 3,
+          "usd": null
         },
         {
           "name": "Island",
           "quantity": 3,
-          "usd": "2.83",
-          "isFoilOnly": true,
-          "tcgplayerId": 656913,
-          "cardmarketId": 851646
+          "usd": null
         },
         {
-          "name": "Swamp",
-          "quantity": 4,
-          "usd": "1.68",
-          "isFoilOnly": true,
-          "tcgplayerId": 656914,
-          "cardmarketId": 851647
-        },
+          "name": "Plains",
+          "quantity": 3,
+          "usd": null
+        }
+      ]
+    },
+    "fic-scions-and-spellcraft": {
+      "totalValue": 60.93,
+      "cardCount": 100,
+      "cards": [
         {
           "name": "Tataru Taru",
           "quantity": 1,
@@ -6379,11 +6273,26 @@
           "usd_foil": "0.08",
           "tcgplayerId": 631595,
           "cardmarketId": 824945
+        },
+        {
+          "name": "Island",
+          "quantity": 3,
+          "usd": null
+        },
+        {
+          "name": "Plains",
+          "quantity": 4,
+          "usd": null
+        },
+        {
+          "name": "Swamp",
+          "quantity": 4,
+          "usd": null
         }
       ]
     },
     "tdc-temur-roar": {
-      "totalValue": 65.94,
+      "totalValue": 65.28,
       "cardCount": 100,
       "cards": [
         {
@@ -6698,14 +6607,6 @@
           "cardmarketId": 819321
         },
         {
-          "name": "Forest",
-          "quantity": 5,
-          "usd": "0.06",
-          "usd_foil": "0.46",
-          "tcgplayerId": 122780,
-          "cardmarketId": 292616
-        },
-        {
           "name": "Steel Hellkite",
           "quantity": 1,
           "usd": "0.29",
@@ -6933,21 +6834,6 @@
           "cardmarketId": 819281
         },
         {
-          "name": "Island",
-          "quantity": 3,
-          "usd": "0.06",
-          "usd_foil": "0.32",
-          "tcgplayerId": 188361,
-          "cardmarketId": 371845
-        },
-        {
-          "name": "Mountain",
-          "quantity": 6,
-          "usd": "0.03",
-          "tcgplayerId": 104265,
-          "cardmarketId": 284285
-        },
-        {
           "name": "Temple of Mystery",
           "quantity": 1,
           "usd": "0.18",
@@ -7019,11 +6905,26 @@
           "usd_foil": "0.19",
           "tcgplayerId": 98910,
           "cardmarketId": 283047
+        },
+        {
+          "name": "Forest",
+          "quantity": 5,
+          "usd": null
+        },
+        {
+          "name": "Island",
+          "quantity": 3,
+          "usd": null
+        },
+        {
+          "name": "Mountain",
+          "quantity": 6,
+          "usd": null
         }
       ]
     },
     "tdc-abzan-armor": {
-      "totalValue": 62.15,
+      "totalValue": 61.07,
       "cardCount": 100,
       "cards": [
         {
@@ -7205,14 +7106,6 @@
           "cardmarketId": 818866
         },
         {
-          "name": "Forest",
-          "quantity": 7,
-          "usd": "0.06",
-          "usd_foil": "0.46",
-          "tcgplayerId": 122780,
-          "cardmarketId": 292616
-        },
-        {
           "name": "Sylvan Caryatid",
           "quantity": 1,
           "usd": "0.42",
@@ -7239,14 +7132,6 @@
           "usd": "0.37",
           "tcgplayerId": 624317,
           "cardmarketId": 818939
-        },
-        {
-          "name": "Plains",
-          "quantity": 6,
-          "usd": "0.06",
-          "usd_foil": "0.24",
-          "tcgplayerId": 169371,
-          "cardmarketId": 360267
         },
         {
           "name": "Shadrix Silverquill",
@@ -7296,14 +7181,6 @@
           "usd": "0.30",
           "tcgplayerId": 624594,
           "cardmarketId": 818907
-        },
-        {
-          "name": "Swamp",
-          "quantity": 5,
-          "usd": "0.06",
-          "usd_foil": "0.51",
-          "tcgplayerId": 145701,
-          "cardmarketId": 301834
         },
         {
           "name": "Colfenor's Urn",
@@ -7627,11 +7504,26 @@
           "usd_foil": "0.19",
           "tcgplayerId": 98910,
           "cardmarketId": 283047
+        },
+        {
+          "name": "Forest",
+          "quantity": 7,
+          "usd": null
+        },
+        {
+          "name": "Plains",
+          "quantity": 6,
+          "usd": null
+        },
+        {
+          "name": "Swamp",
+          "quantity": 5,
+          "usd": null
         }
       ]
     },
     "tdc-jeskai-striker": {
-      "totalValue": 58.72,
+      "totalValue": 58.03,
       "cardCount": 100,
       "cards": [
         {
@@ -7918,14 +7810,6 @@
           "cardmarketId": 818919
         },
         {
-          "name": "Island",
-          "quantity": 5,
-          "usd": "0.06",
-          "usd_foil": "0.32",
-          "tcgplayerId": 188361,
-          "cardmarketId": 371845
-        },
-        {
           "name": "Command Tower",
           "quantity": 1,
           "usd": "0.29",
@@ -8066,14 +7950,6 @@
           "cardmarketId": 818714
         },
         {
-          "name": "Plains",
-          "quantity": 4,
-          "usd": "0.06",
-          "usd_foil": "0.24",
-          "tcgplayerId": 169371,
-          "cardmarketId": 360267
-        },
-        {
           "name": "Opt",
           "quantity": 1,
           "usd": "0.23",
@@ -8186,13 +8062,6 @@
           "cardmarketId": 818928
         },
         {
-          "name": "Mountain",
-          "quantity": 5,
-          "usd": "0.03",
-          "tcgplayerId": 104265,
-          "cardmarketId": 284285
-        },
-        {
           "name": "Curse of the Swine",
           "quantity": 1,
           "usd": "0.15",
@@ -8262,11 +8131,26 @@
           "usd": "0.05",
           "tcgplayerId": 624173,
           "cardmarketId": 818777
+        },
+        {
+          "name": "Island",
+          "quantity": 5,
+          "usd": null
+        },
+        {
+          "name": "Mountain",
+          "quantity": 5,
+          "usd": null
+        },
+        {
+          "name": "Plains",
+          "quantity": 4,
+          "usd": null
         }
       ]
     },
     "tdc-sultai-arisen": {
-      "totalValue": 68.27,
+      "totalValue": 67.37,
       "cardCount": 100,
       "cards": [
         {
@@ -8497,14 +8381,6 @@
           "cardmarketId": 818800
         },
         {
-          "name": "Forest",
-          "quantity": 6,
-          "usd": "0.06",
-          "usd_foil": "0.46",
-          "tcgplayerId": 122780,
-          "cardmarketId": 292616
-        },
-        {
           "name": "Springbloom Druid",
           "quantity": 1,
           "usd": "0.34",
@@ -8538,14 +8414,6 @@
           "usd": "0.30",
           "tcgplayerId": 624446,
           "cardmarketId": 818918
-        },
-        {
-          "name": "Swamp",
-          "quantity": 5,
-          "usd": "0.06",
-          "usd_foil": "0.51",
-          "tcgplayerId": 145701,
-          "cardmarketId": 301834
         },
         {
           "name": "Casualties of War",
@@ -8644,14 +8512,6 @@
           "usd": "0.25",
           "tcgplayerId": 624479,
           "cardmarketId": 818961
-        },
-        {
-          "name": "Island",
-          "quantity": 4,
-          "usd": "0.06",
-          "usd_foil": "0.32",
-          "tcgplayerId": 188361,
-          "cardmarketId": 371845
         },
         {
           "name": "Shigeki, Jukai Visionary",
@@ -8893,11 +8753,26 @@
           "usd_foil": "0.18",
           "tcgplayerId": 624444,
           "cardmarketId": 818129
+        },
+        {
+          "name": "Forest",
+          "quantity": 6,
+          "usd": null
+        },
+        {
+          "name": "Island",
+          "quantity": 4,
+          "usd": null
+        },
+        {
+          "name": "Swamp",
+          "quantity": 5,
+          "usd": null
         }
       ]
     },
     "tdc-mardu-surge": {
-      "totalValue": 63.68,
+      "totalValue": 62.93,
       "cardCount": 100,
       "cards": [
         {
@@ -9212,22 +9087,6 @@
           "cardmarketId": 818919
         },
         {
-          "name": "Plains",
-          "quantity": 5,
-          "usd": "0.06",
-          "usd_foil": "0.24",
-          "tcgplayerId": 169371,
-          "cardmarketId": 360267
-        },
-        {
-          "name": "Swamp",
-          "quantity": 5,
-          "usd": "0.06",
-          "usd_foil": "0.51",
-          "tcgplayerId": 145701,
-          "cardmarketId": 301834
-        },
-        {
           "name": "Deadly Dispute",
           "quantity": 1,
           "usd": "0.29",
@@ -9466,13 +9325,6 @@
           "cardmarketId": 818928
         },
         {
-          "name": "Mountain",
-          "quantity": 5,
-          "usd": "0.03",
-          "tcgplayerId": 104265,
-          "cardmarketId": 284285
-        },
-        {
           "name": "Canyon Slough",
           "quantity": 1,
           "usd": "0.14",
@@ -9520,11 +9372,26 @@
           "usd": "0.07",
           "tcgplayerId": 624331,
           "cardmarketId": 818716
+        },
+        {
+          "name": "Mountain",
+          "quantity": 5,
+          "usd": null
+        },
+        {
+          "name": "Plains",
+          "quantity": 5,
+          "usd": null
+        },
+        {
+          "name": "Swamp",
+          "quantity": 5,
+          "usd": null
         }
       ]
     },
     "drc-living-energy": {
-      "totalValue": 50.52,
+      "totalValue": 49.71,
       "cardCount": 100,
       "cards": [
         {
@@ -9689,14 +9556,6 @@
           "cardmarketId": 808020
         },
         {
-          "name": "Forest",
-          "quantity": 6,
-          "usd": "0.06",
-          "usd_foil": "0.46",
-          "tcgplayerId": 122780,
-          "cardmarketId": 292616
-        },
-        {
           "name": "Rootbound Crag",
           "quantity": 1,
           "usd": "0.36",
@@ -9709,14 +9568,6 @@
           "usd": "0.33",
           "tcgplayerId": 615200,
           "cardmarketId": 808001
-        },
-        {
-          "name": "Island",
-          "quantity": 5,
-          "usd": "0.06",
-          "usd_foil": "0.32",
-          "tcgplayerId": 188361,
-          "cardmarketId": 371845
         },
         {
           "name": "Saheeli, Radiant Creator",
@@ -9946,13 +9797,6 @@
           "cardmarketId": 807999
         },
         {
-          "name": "Mountain",
-          "quantity": 5,
-          "usd": "0.03",
-          "tcgplayerId": 104265,
-          "cardmarketId": 284285
-        },
-        {
           "name": "Soul-Guide Lantern",
           "quantity": 1,
           "usd": "0.15",
@@ -10140,11 +9984,26 @@
           "usd": "0.07",
           "tcgplayerId": 615194,
           "cardmarketId": 808005
+        },
+        {
+          "name": "Forest",
+          "quantity": 6,
+          "usd": null
+        },
+        {
+          "name": "Island",
+          "quantity": 5,
+          "usd": null
+        },
+        {
+          "name": "Mountain",
+          "quantity": 5,
+          "usd": null
         }
       ]
     },
     "drc-eternal-might": {
-      "totalValue": 50.44,
+      "totalValue": 49.6,
       "cardCount": 100,
       "cards": [
         {
@@ -10389,22 +10248,6 @@
           "cardmarketId": 808390
         },
         {
-          "name": "Plains",
-          "quantity": 5,
-          "usd": "0.06",
-          "usd_foil": "0.24",
-          "tcgplayerId": 169371,
-          "cardmarketId": 360267
-        },
-        {
-          "name": "Swamp",
-          "quantity": 5,
-          "usd": "0.06",
-          "usd_foil": "0.51",
-          "tcgplayerId": 145701,
-          "cardmarketId": 301834
-        },
-        {
           "name": "Priest of the Crossing",
           "quantity": 1,
           "usd": "0.27",
@@ -10438,14 +10281,6 @@
           "usd": "0.25",
           "tcgplayerId": 615073,
           "cardmarketId": 808360
-        },
-        {
-          "name": "Island",
-          "quantity": 4,
-          "usd": "0.06",
-          "usd_foil": "0.32",
-          "tcgplayerId": 188361,
-          "cardmarketId": 371845
         },
         {
           "name": "Plague Belcher",
@@ -10775,11 +10610,26 @@
           "usd": "0.09",
           "tcgplayerId": 615061,
           "cardmarketId": 808365
+        },
+        {
+          "name": "Island",
+          "quantity": 4,
+          "usd": null
+        },
+        {
+          "name": "Plains",
+          "quantity": 5,
+          "usd": null
+        },
+        {
+          "name": "Swamp",
+          "quantity": 5,
+          "usd": null
         }
       ]
     },
     "dsc-endless-punishment": {
-      "totalValue": 140,
+      "totalValue": 139.28,
       "cardCount": 100,
       "cards": [
         {
@@ -11080,14 +10930,6 @@
           "cardmarketId": 788541
         },
         {
-          "name": "Swamp",
-          "quantity": 8,
-          "usd": "0.06",
-          "usd_foil": "0.51",
-          "tcgplayerId": 145701,
-          "cardmarketId": 301834
-        },
-        {
           "name": "Chaos Warp",
           "quantity": 1,
           "usd": "0.47",
@@ -11264,13 +11106,6 @@
           "cardmarketId": 788809
         },
         {
-          "name": "Mountain",
-          "quantity": 8,
-          "usd": "0.03",
-          "tcgplayerId": 104265,
-          "cardmarketId": 284285
-        },
-        {
           "name": "Light Up the Stage",
           "quantity": 1,
           "usd": "0.24",
@@ -11390,11 +11225,21 @@
           "usd_foil": "0.13",
           "tcgplayerId": 227049,
           "cardmarketId": 513685
+        },
+        {
+          "name": "Mountain",
+          "quantity": 8,
+          "usd": null
+        },
+        {
+          "name": "Swamp",
+          "quantity": 8,
+          "usd": null
         }
       ]
     },
     "dsc-jump-scare": {
-      "totalValue": 59.41,
+      "totalValue": 58.33,
       "cardCount": 100,
       "cards": [
         {
@@ -11473,22 +11318,6 @@
           "usd": "0.54",
           "tcgplayerId": 577821,
           "cardmarketId": 788863
-        },
-        {
-          "name": "Forest",
-          "quantity": 9,
-          "usd": "0.06",
-          "usd_foil": "0.46",
-          "tcgplayerId": 122780,
-          "cardmarketId": 292616
-        },
-        {
-          "name": "Island",
-          "quantity": 9,
-          "usd": "0.06",
-          "usd_foil": "0.32",
-          "tcgplayerId": 188361,
-          "cardmarketId": 371845
         },
         {
           "name": "Arcane Signet",
@@ -11992,11 +11821,21 @@
           "usd_foil": "0.08",
           "tcgplayerId": 577161,
           "cardmarketId": 786811
+        },
+        {
+          "name": "Forest",
+          "quantity": 9,
+          "usd": null
+        },
+        {
+          "name": "Island",
+          "quantity": 9,
+          "usd": null
         }
       ]
     },
     "dsc-miracle-worker": {
-      "totalValue": 63.78,
+      "totalValue": 62.94,
       "cardCount": 100,
       "cards": [
         {
@@ -12234,22 +12073,6 @@
           "cardmarketId": 787919
         },
         {
-          "name": "Plains",
-          "quantity": 5,
-          "usd": "0.06",
-          "usd_foil": "0.24",
-          "tcgplayerId": 169371,
-          "cardmarketId": 360267
-        },
-        {
-          "name": "Swamp",
-          "quantity": 5,
-          "usd": "0.06",
-          "usd_foil": "0.51",
-          "tcgplayerId": 145701,
-          "cardmarketId": 301834
-        },
-        {
           "name": "Tainted Isle",
           "quantity": 1,
           "usd": "0.30",
@@ -12353,14 +12176,6 @@
           "usd": "0.25",
           "tcgplayerId": 578970,
           "cardmarketId": 787922
-        },
-        {
-          "name": "Island",
-          "quantity": 4,
-          "usd": "0.06",
-          "usd_foil": "0.32",
-          "tcgplayerId": 188361,
-          "cardmarketId": 371845
         },
         {
           "name": "Temple of Deceit",
@@ -12629,11 +12444,26 @@
           "usd": "0.07",
           "tcgplayerId": 578959,
           "cardmarketId": 788582
+        },
+        {
+          "name": "Island",
+          "quantity": 4,
+          "usd": null
+        },
+        {
+          "name": "Plains",
+          "quantity": 5,
+          "usd": null
+        },
+        {
+          "name": "Swamp",
+          "quantity": 5,
+          "usd": null
         }
       ]
     },
     "blc-squirreled-away": {
-      "totalValue": 66.22,
+      "totalValue": 65.2,
       "cardCount": 100,
       "cards": [
         {
@@ -12795,14 +12625,6 @@
           "cardmarketId": 778512
         },
         {
-          "name": "Forest",
-          "quantity": 9,
-          "usd": "0.06",
-          "usd_foil": "0.46",
-          "tcgplayerId": 122780,
-          "cardmarketId": 292616
-        },
-        {
           "name": "Arcane Signet",
           "quantity": 1,
           "usd": "0.51",
@@ -12822,14 +12644,6 @@
           "usd": "0.49",
           "tcgplayerId": 560033,
           "cardmarketId": 779284
-        },
-        {
-          "name": "Swamp",
-          "quantity": 8,
-          "usd": "0.06",
-          "usd_foil": "0.51",
-          "tcgplayerId": 145701,
-          "cardmarketId": 301834
         },
         {
           "name": "Oran-Rief, the Vastwood",
@@ -13238,11 +13052,21 @@
           "usd": "0.08",
           "tcgplayerId": 560044,
           "cardmarketId": 779216
+        },
+        {
+          "name": "Forest",
+          "quantity": 9,
+          "usd": null
+        },
+        {
+          "name": "Swamp",
+          "quantity": 8,
+          "usd": null
         }
       ]
     },
     "blc-family-matters": {
-      "totalValue": 57.11,
+      "totalValue": 56.45,
       "cardCount": 100,
       "cards": [
         {
@@ -13544,14 +13368,6 @@
           "cardmarketId": 779404
         },
         {
-          "name": "Plains",
-          "quantity": 5,
-          "usd": "0.06",
-          "usd_foil": "0.24",
-          "tcgplayerId": 169371,
-          "cardmarketId": 360267
-        },
-        {
           "name": "Restoration Angel",
           "quantity": 1,
           "usd": "0.30",
@@ -13642,14 +13458,6 @@
           "usd": "0.24",
           "tcgplayerId": 559724,
           "cardmarketId": 778982
-        },
-        {
-          "name": "Island",
-          "quantity": 4,
-          "usd": "0.06",
-          "usd_foil": "0.32",
-          "tcgplayerId": 188361,
-          "cardmarketId": 371845
         },
         {
           "name": "Path of Ancestry",
@@ -13848,13 +13656,6 @@
           "cardmarketId": 779252
         },
         {
-          "name": "Mountain",
-          "quantity": 4,
-          "usd": "0.03",
-          "tcgplayerId": 104265,
-          "cardmarketId": 284285
-        },
-        {
           "name": "Thriving Bluff",
           "quantity": 1,
           "usd": "0.10",
@@ -13881,11 +13682,26 @@
           "usd": "0.08",
           "tcgplayerId": 559825,
           "cardmarketId": 779203
+        },
+        {
+          "name": "Island",
+          "quantity": 4,
+          "usd": null
+        },
+        {
+          "name": "Mountain",
+          "quantity": 4,
+          "usd": null
+        },
+        {
+          "name": "Plains",
+          "quantity": 5,
+          "usd": null
         }
       ]
     },
     "blc-animated-army": {
-      "totalValue": 62.92,
+      "totalValue": 62.08,
       "cardCount": 100,
       "cards": [
         {
@@ -14036,14 +13852,6 @@
           "usd": "0.60",
           "tcgplayerId": 559883,
           "cardmarketId": 779266
-        },
-        {
-          "name": "Forest",
-          "quantity": 10,
-          "usd": "0.06",
-          "usd_foil": "0.46",
-          "tcgplayerId": 122780,
-          "cardmarketId": 292616
         },
         {
           "name": "Farseek",
@@ -14321,13 +14129,6 @@
           "cardmarketId": 778982
         },
         {
-          "name": "Mountain",
-          "quantity": 8,
-          "usd": "0.03",
-          "tcgplayerId": 104265,
-          "cardmarketId": 284285
-        },
-        {
           "name": "Path of Ancestry",
           "quantity": 1,
           "usd": "0.24",
@@ -14482,11 +14283,21 @@
           "usd_foil": "0.15",
           "tcgplayerId": 559661,
           "cardmarketId": 778515
+        },
+        {
+          "name": "Forest",
+          "quantity": 10,
+          "usd": null
+        },
+        {
+          "name": "Mountain",
+          "quantity": 8,
+          "usd": null
         }
       ]
     },
     "blc-peace-offering": {
-      "totalValue": 57.65,
+      "totalValue": 56.93,
       "cardCount": 100,
       "cards": [
         {
@@ -14914,30 +14725,6 @@
           "cardmarketId": 778982
         },
         {
-          "name": "Forest",
-          "quantity": 4,
-          "usd": "0.06",
-          "usd_foil": "0.46",
-          "tcgplayerId": 122780,
-          "cardmarketId": 292616
-        },
-        {
-          "name": "Island",
-          "quantity": 4,
-          "usd": "0.06",
-          "usd_foil": "0.32",
-          "tcgplayerId": 188361,
-          "cardmarketId": 371845
-        },
-        {
-          "name": "Plains",
-          "quantity": 4,
-          "usd": "0.06",
-          "usd_foil": "0.24",
-          "tcgplayerId": 169371,
-          "cardmarketId": 360267
-        },
-        {
           "name": "Sunscorch Regent",
           "quantity": 1,
           "usd": "0.24",
@@ -15135,11 +14922,26 @@
           "usd_foil": "0.09",
           "tcgplayerId": 559994,
           "cardmarketId": 779260
+        },
+        {
+          "name": "Forest",
+          "quantity": 4,
+          "usd": null
+        },
+        {
+          "name": "Island",
+          "quantity": 4,
+          "usd": null
+        },
+        {
+          "name": "Plains",
+          "quantity": 4,
+          "usd": null
         }
       ]
     },
     "m3c-graveyard-overdrive": {
-      "totalValue": 71.3,
+      "totalValue": 70.67,
       "cardCount": 100,
       "cards": [
         {
@@ -15409,14 +15211,6 @@
           "cardmarketId": 773240
         },
         {
-          "name": "Forest",
-          "quantity": 5,
-          "usd": "0.06",
-          "usd_foil": "0.46",
-          "tcgplayerId": 122780,
-          "cardmarketId": 292616
-        },
-        {
           "name": "Smoldering Marsh",
           "quantity": 1,
           "usd": "0.30",
@@ -15500,14 +15294,6 @@
           "usd": "0.24",
           "tcgplayerId": 553576,
           "cardmarketId": 773230
-        },
-        {
-          "name": "Swamp",
-          "quantity": 4,
-          "usd": "0.06",
-          "usd_foil": "0.51",
-          "tcgplayerId": 145701,
-          "cardmarketId": 301834
         },
         {
           "name": "Twisted Landscape",
@@ -15745,13 +15531,6 @@
           "cardmarketId": 773226
         },
         {
-          "name": "Mountain",
-          "quantity": 3,
-          "usd": "0.03",
-          "tcgplayerId": 104265,
-          "cardmarketId": 284285
-        },
-        {
           "name": "Find // Finality",
           "quantity": 1,
           "usd": "0.09",
@@ -15785,11 +15564,26 @@
           "usd": "0.06",
           "tcgplayerId": 553542,
           "cardmarketId": 773219
+        },
+        {
+          "name": "Forest",
+          "quantity": 5,
+          "usd": null
+        },
+        {
+          "name": "Mountain",
+          "quantity": 3,
+          "usd": null
+        },
+        {
+          "name": "Swamp",
+          "quantity": 4,
+          "usd": null
         }
       ]
     },
     "m3c-creative-energy": {
-      "totalValue": 59.39,
+      "totalValue": 58.34,
       "cardCount": 100,
       "cards": [
         {
@@ -15875,14 +15669,6 @@
           "usd": "0.61",
           "tcgplayerId": 552945,
           "cardmarketId": 772280
-        },
-        {
-          "name": "Plains",
-          "quantity": 10,
-          "usd": "0.06",
-          "usd_foil": "0.24",
-          "tcgplayerId": 169371,
-          "cardmarketId": 360267
         },
         {
           "name": "Cayth, Famed Mechanist",
@@ -16052,14 +15838,6 @@
           "usd": "0.31",
           "tcgplayerId": 552902,
           "cardmarketId": 772251
-        },
-        {
-          "name": "Island",
-          "quantity": 5,
-          "usd": "0.06",
-          "usd_foil": "0.32",
-          "tcgplayerId": 188361,
-          "cardmarketId": 371845
         },
         {
           "name": "Demolition Field",
@@ -16241,13 +16019,6 @@
           "cardmarketId": 772311
         },
         {
-          "name": "Mountain",
-          "quantity": 5,
-          "usd": "0.03",
-          "tcgplayerId": 104265,
-          "cardmarketId": 284285
-        },
-        {
           "name": "Mystic Monastery",
           "quantity": 1,
           "usd": "0.15",
@@ -16385,11 +16156,26 @@
           "usd": "0.05",
           "tcgplayerId": 552942,
           "cardmarketId": 772268
+        },
+        {
+          "name": "Island",
+          "quantity": 5,
+          "usd": null
+        },
+        {
+          "name": "Mountain",
+          "quantity": 5,
+          "usd": null
+        },
+        {
+          "name": "Plains",
+          "quantity": 10,
+          "usd": null
         }
       ]
     },
     "m3c-tricky-terrain": {
-      "totalValue": 94.88,
+      "totalValue": 94.46,
       "cardCount": 100,
       "cards": [
         {
@@ -16809,14 +16595,6 @@
           "cardmarketId": 772951
         },
         {
-          "name": "Forest",
-          "quantity": 4,
-          "usd": "0.06",
-          "usd_foil": "0.46",
-          "tcgplayerId": 122780,
-          "cardmarketId": 292616
-        },
-        {
           "name": "Blast Zone",
           "quantity": 1,
           "usd": "0.23",
@@ -16892,14 +16670,6 @@
           "usd": "0.18",
           "tcgplayerId": 553249,
           "cardmarketId": 773063
-        },
-        {
-          "name": "Island",
-          "quantity": 3,
-          "usd": "0.06",
-          "usd_foil": "0.32",
-          "tcgplayerId": 188361,
-          "cardmarketId": 371845
         },
         {
           "name": "Lush Oasis",
@@ -17061,11 +16831,21 @@
           "usd": "0.03",
           "tcgplayerId": 553201,
           "cardmarketId": 772987
+        },
+        {
+          "name": "Forest",
+          "quantity": 4,
+          "usd": null
+        },
+        {
+          "name": "Island",
+          "quantity": 3,
+          "usd": null
         }
       ]
     },
     "m3c-eldrazi-incursion": {
-      "totalValue": 103.91,
+      "totalValue": 102.51,
       "cardCount": 100,
       "cards": [
         {
@@ -17242,13 +17022,6 @@
           "usd": "1.26",
           "tcgplayerId": 553095,
           "cardmarketId": 773062
-        },
-        {
-          "name": "Wastes",
-          "quantity": 1,
-          "usd": "1.13",
-          "tcgplayerId": 553516,
-          "cardmarketId": 773143
         },
         {
           "name": "Llanowar Wastes",
@@ -17744,46 +17517,37 @@
         {
           "name": "Forest",
           "quantity": 1,
-          "usd": "0.06",
-          "usd_foil": "0.46",
-          "tcgplayerId": 122780,
-          "cardmarketId": 292616
+          "usd": null
         },
         {
           "name": "Island",
           "quantity": 1,
-          "usd": "0.06",
-          "usd_foil": "0.32",
-          "tcgplayerId": 188361,
-          "cardmarketId": 371845
-        },
-        {
-          "name": "Plains",
-          "quantity": 1,
-          "usd": "0.06",
-          "usd_foil": "0.24",
-          "tcgplayerId": 169371,
-          "cardmarketId": 360267
-        },
-        {
-          "name": "Swamp",
-          "quantity": 1,
-          "usd": "0.06",
-          "usd_foil": "0.51",
-          "tcgplayerId": 145701,
-          "cardmarketId": 301834
+          "usd": null
         },
         {
           "name": "Mountain",
           "quantity": 1,
-          "usd": "0.03",
-          "tcgplayerId": 104265,
-          "cardmarketId": 284285
+          "usd": null
+        },
+        {
+          "name": "Plains",
+          "quantity": 1,
+          "usd": null
+        },
+        {
+          "name": "Swamp",
+          "quantity": 1,
+          "usd": null
+        },
+        {
+          "name": "Wastes",
+          "quantity": 1,
+          "usd": null
         }
       ]
     },
     "otc-quick-draw": {
-      "totalValue": 141.42,
+      "totalValue": 140.19,
       "cardCount": 100,
       "cards": [
         {
@@ -18035,14 +17799,6 @@
           "cardmarketId": 764752
         },
         {
-          "name": "Island",
-          "quantity": 14,
-          "usd": "0.06",
-          "usd_foil": "0.32",
-          "tcgplayerId": 188361,
-          "cardmarketId": 371845
-        },
-        {
           "name": "Chaos Warp",
           "quantity": 1,
           "usd": "0.74",
@@ -18104,13 +17860,6 @@
           "usd": "0.41",
           "tcgplayerId": 545303,
           "cardmarketId": 764920
-        },
-        {
-          "name": "Mountain",
-          "quantity": 13,
-          "usd": "0.03",
-          "tcgplayerId": 104265,
-          "cardmarketId": 284285
         },
         {
           "name": "Guttersnipe",
@@ -18314,11 +18063,21 @@
           "usd": "0.06",
           "tcgplayerId": 545309,
           "cardmarketId": 764621
+        },
+        {
+          "name": "Island",
+          "quantity": 14,
+          "usd": null
+        },
+        {
+          "name": "Mountain",
+          "quantity": 13,
+          "usd": null
         }
       ]
     },
     "otc-most-wanted": {
-      "totalValue": 115.02,
+      "totalValue": 114.6,
       "cardCount": 100,
       "cards": [
         {
@@ -18810,14 +18569,6 @@
           "cardmarketId": 764938
         },
         {
-          "name": "Swamp",
-          "quantity": 4,
-          "usd": "0.06",
-          "usd_foil": "0.51",
-          "tcgplayerId": 145701,
-          "cardmarketId": 301834
-        },
-        {
           "name": "Temple of Silence",
           "quantity": 1,
           "usd": "0.22",
@@ -18966,14 +18717,6 @@
           "cardmarketId": 764281
         },
         {
-          "name": "Plains",
-          "quantity": 2,
-          "usd": "0.06",
-          "usd_foil": "0.24",
-          "tcgplayerId": 169371,
-          "cardmarketId": 360267
-        },
-        {
           "name": "Tenured Inkcaster",
           "quantity": 1,
           "usd": "0.11",
@@ -18990,14 +18733,22 @@
         {
           "name": "Mountain",
           "quantity": 2,
-          "usd": "0.03",
-          "tcgplayerId": 104265,
-          "cardmarketId": 284285
+          "usd": null
+        },
+        {
+          "name": "Plains",
+          "quantity": 2,
+          "usd": null
+        },
+        {
+          "name": "Swamp",
+          "quantity": 4,
+          "usd": null
         }
       ]
     },
     "otc-grand-larceny": {
-      "totalValue": 154.61,
+      "totalValue": 153.71,
       "cardCount": 100,
       "cards": [
         {
@@ -19376,14 +19127,6 @@
           "cardmarketId": 764913
         },
         {
-          "name": "Swamp",
-          "quantity": 6,
-          "usd": "0.06",
-          "usd_foil": "0.51",
-          "tcgplayerId": 145701,
-          "cardmarketId": 301834
-        },
-        {
           "name": "Plasm Capture",
           "quantity": 1,
           "usd": "0.34",
@@ -19424,14 +19167,6 @@
           "usd": "0.31",
           "tcgplayerId": 545187,
           "cardmarketId": 764976
-        },
-        {
-          "name": "Island",
-          "quantity": 5,
-          "usd": "0.06",
-          "usd_foil": "0.32",
-          "tcgplayerId": 188361,
-          "cardmarketId": 371845
         },
         {
           "name": "Villainous Wealth",
@@ -19509,14 +19244,6 @@
           "usd": "0.25",
           "tcgplayerId": 545234,
           "cardmarketId": 764845
-        },
-        {
-          "name": "Forest",
-          "quantity": 4,
-          "usd": "0.06",
-          "usd_foil": "0.46",
-          "tcgplayerId": 122780,
-          "cardmarketId": 292616
         },
         {
           "name": "Darkwater Catacombs",
@@ -19622,11 +19349,26 @@
           "usd": "0.07",
           "tcgplayerId": 545559,
           "cardmarketId": 764768
+        },
+        {
+          "name": "Forest",
+          "quantity": 4,
+          "usd": null
+        },
+        {
+          "name": "Island",
+          "quantity": 5,
+          "usd": null
+        },
+        {
+          "name": "Swamp",
+          "quantity": 6,
+          "usd": null
         }
       ]
     },
     "otc-desert-bloom": {
-      "totalValue": 103.14,
+      "totalValue": 102.24,
       "cardCount": 100,
       "cards": [
         {
@@ -19862,14 +19604,6 @@
           "cardmarketId": 764847
         },
         {
-          "name": "Forest",
-          "quantity": 7,
-          "usd": "0.06",
-          "usd_foil": "0.46",
-          "tcgplayerId": 122780,
-          "cardmarketId": 292616
-        },
-        {
           "name": "Sunscorched Divide",
           "quantity": 1,
           "usd": "0.41",
@@ -19889,14 +19623,6 @@
           "usd": "0.38",
           "tcgplayerId": 545078,
           "cardmarketId": 764770
-        },
-        {
-          "name": "Plains",
-          "quantity": 6,
-          "usd": "0.06",
-          "usd_foil": "0.24",
-          "tcgplayerId": 169371,
-          "cardmarketId": 360267
         },
         {
           "name": "Yuma, Proud Protector",
@@ -20181,13 +19907,6 @@
           "cardmarketId": 764933
         },
         {
-          "name": "Mountain",
-          "quantity": 4,
-          "usd": "0.03",
-          "tcgplayerId": 104265,
-          "cardmarketId": 284285
-        },
-        {
           "name": "Elvish Rejuvenator",
           "quantity": 1,
           "usd": "0.12",
@@ -20243,11 +19962,26 @@
           "usd": "0.06",
           "tcgplayerId": 545086,
           "cardmarketId": 764931
+        },
+        {
+          "name": "Forest",
+          "quantity": 7,
+          "usd": null
+        },
+        {
+          "name": "Mountain",
+          "quantity": 4,
+          "usd": null
+        },
+        {
+          "name": "Plains",
+          "quantity": 6,
+          "usd": null
         }
       ]
     },
     "pip-scrappy-survivors": {
-      "totalValue": 84.66,
+      "totalValue": 81.82,
       "cardCount": 100,
       "cards": [
         {
@@ -20379,22 +20113,6 @@
           "cardmarketId": 757705
         },
         {
-          "name": "Forest",
-          "quantity": 4,
-          "usd": "0.24",
-          "usd_foil": "1.13",
-          "tcgplayerId": 522972,
-          "cardmarketId": 755898
-        },
-        {
-          "name": "Plains",
-          "quantity": 4,
-          "usd": "0.24",
-          "usd_foil": "0.88",
-          "tcgplayerId": 523002,
-          "cardmarketId": 755890
-        },
-        {
           "name": "Agility Bobblehead",
           "quantity": 1,
           "usd": "0.95",
@@ -20417,14 +20135,6 @@
           "usd_foil": "6.56",
           "tcgplayerId": 539574,
           "cardmarketId": 757842
-        },
-        {
-          "name": "Mountain",
-          "quantity": 4,
-          "usd": "0.23",
-          "usd_foil": "0.98",
-          "tcgplayerId": 523000,
-          "cardmarketId": 755896
         },
         {
           "name": "Dogmeat, Ever Loyal",
@@ -20978,11 +20688,26 @@
           "usd_foil": "0.62",
           "tcgplayerId": 539670,
           "cardmarketId": 757862
+        },
+        {
+          "name": "Forest",
+          "quantity": 4,
+          "usd": null
+        },
+        {
+          "name": "Mountain",
+          "quantity": 4,
+          "usd": null
+        },
+        {
+          "name": "Plains",
+          "quantity": 4,
+          "usd": null
         }
       ]
     },
     "pip-mutant-menace": {
-      "totalValue": 112.89,
+      "totalValue": 108.74,
       "cardCount": 100,
       "cards": [
         {
@@ -21114,14 +20839,6 @@
           "cardmarketId": 758612
         },
         {
-          "name": "Swamp",
-          "quantity": 5,
-          "usd": "0.34",
-          "usd_foil": "2.58",
-          "tcgplayerId": 522970,
-          "cardmarketId": 755894
-        },
-        {
           "name": "Talisman of Dominance",
           "quantity": 1,
           "usd": "1.57",
@@ -21138,28 +20855,12 @@
           "cardmarketId": 758533
         },
         {
-          "name": "Island",
-          "quantity": 5,
-          "usd": "0.25",
-          "usd_foil": "0.87",
-          "tcgplayerId": 522948,
-          "cardmarketId": 755892
-        },
-        {
           "name": "Alpha Deathclaw",
           "quantity": 1,
           "usd": "1.23",
           "usd_foil": "3.43",
           "tcgplayerId": 522995,
           "cardmarketId": 755884
-        },
-        {
-          "name": "Forest",
-          "quantity": 5,
-          "usd": "0.24",
-          "usd_foil": "1.13",
-          "tcgplayerId": 522972,
-          "cardmarketId": 755898
         },
         {
           "name": "The Wise Mothman",
@@ -21689,11 +21390,26 @@
           "usd_foil": "0.35",
           "tcgplayerId": 540882,
           "cardmarketId": 758595
+        },
+        {
+          "name": "Forest",
+          "quantity": 5,
+          "usd": null
+        },
+        {
+          "name": "Island",
+          "quantity": 5,
+          "usd": null
+        },
+        {
+          "name": "Swamp",
+          "quantity": 5,
+          "usd": null
         }
       ]
     },
     "pip-science": {
-      "totalValue": 69.01,
+      "totalValue": 65.88,
       "cardCount": 100,
       "cards": [
         {
@@ -21769,36 +21485,12 @@
           "cardmarketId": 758308
         },
         {
-          "name": "Island",
-          "quantity": 5,
-          "usd": "0.25",
-          "usd_foil": "0.87",
-          "tcgplayerId": 522948,
-          "cardmarketId": 755892
-        },
-        {
           "name": "Mystic Forge",
           "quantity": 1,
           "usd": "1.08",
           "usd_foil": "4.39",
           "tcgplayerId": 540954,
           "cardmarketId": 758280
-        },
-        {
-          "name": "Plains",
-          "quantity": 4,
-          "usd": "0.24",
-          "usd_foil": "0.88",
-          "tcgplayerId": 523002,
-          "cardmarketId": 755890
-        },
-        {
-          "name": "Mountain",
-          "quantity": 4,
-          "usd": "0.23",
-          "usd_foil": "0.98",
-          "tcgplayerId": 523000,
-          "cardmarketId": 755896
         },
         {
           "name": "Sulfur Falls",
@@ -22416,11 +22108,26 @@
           "usd_foil": "0.58",
           "tcgplayerId": 540938,
           "cardmarketId": 758342
+        },
+        {
+          "name": "Island",
+          "quantity": 5,
+          "usd": null
+        },
+        {
+          "name": "Mountain",
+          "quantity": 4,
+          "usd": null
+        },
+        {
+          "name": "Plains",
+          "quantity": 4,
+          "usd": null
         }
       ]
     },
     "pip-hail-caesar": {
-      "totalValue": 63.62,
+      "totalValue": 59.91,
       "cardCount": 100,
       "cards": [
         {
@@ -22521,14 +22228,6 @@
           "cardmarketId": 758579
         },
         {
-          "name": "Swamp",
-          "quantity": 4,
-          "usd": "0.34",
-          "usd_foil": "2.58",
-          "tcgplayerId": 522970,
-          "cardmarketId": 755894
-        },
-        {
           "name": "Wild Wasteland",
           "quantity": 1,
           "usd": "1.31",
@@ -22551,22 +22250,6 @@
           "usd_foil": "4.15",
           "tcgplayerId": 539902,
           "cardmarketId": 758611
-        },
-        {
-          "name": "Plains",
-          "quantity": 5,
-          "usd": "0.24",
-          "usd_foil": "0.88",
-          "tcgplayerId": 523002,
-          "cardmarketId": 755890
-        },
-        {
-          "name": "Mountain",
-          "quantity": 5,
-          "usd": "0.23",
-          "usd_foil": "0.98",
-          "tcgplayerId": 523000,
-          "cardmarketId": 755896
         },
         {
           "name": "Charisma Bobblehead",
@@ -23135,11 +22818,26 @@
           "usd_foil": "0.30",
           "tcgplayerId": 540031,
           "cardmarketId": 758597
+        },
+        {
+          "name": "Mountain",
+          "quantity": 5,
+          "usd": null
+        },
+        {
+          "name": "Plains",
+          "quantity": 5,
+          "usd": null
+        },
+        {
+          "name": "Swamp",
+          "quantity": 4,
+          "usd": null
         }
       ]
     },
     "mkc-deadly-disguise": {
-      "totalValue": 123.46,
+      "totalValue": 122.89,
       "cardCount": 100,
       "cards": [
         {
@@ -23429,22 +23127,6 @@
           "usd": "0.24",
           "tcgplayerId": 535819,
           "cardmarketId": 753271
-        },
-        {
-          "name": "Forest",
-          "quantity": 4,
-          "usd": "0.06",
-          "usd_foil": "0.46",
-          "tcgplayerId": 122780,
-          "cardmarketId": 292616
-        },
-        {
-          "name": "Plains",
-          "quantity": 4,
-          "usd": "0.06",
-          "usd_foil": "0.24",
-          "tcgplayerId": 169371,
-          "cardmarketId": 360267
         },
         {
           "name": "Scattered Groves",
@@ -23744,13 +23426,6 @@
           "cardmarketId": 753283
         },
         {
-          "name": "Mountain",
-          "quantity": 3,
-          "usd": "0.03",
-          "tcgplayerId": 104265,
-          "cardmarketId": 284285
-        },
-        {
           "name": "Master of Pearls",
           "quantity": 1,
           "usd": "0.08",
@@ -23792,11 +23467,26 @@
           "usd": "0.05",
           "tcgplayerId": 535858,
           "cardmarketId": 753528
+        },
+        {
+          "name": "Forest",
+          "quantity": 4,
+          "usd": null
+        },
+        {
+          "name": "Mountain",
+          "quantity": 3,
+          "usd": null
+        },
+        {
+          "name": "Plains",
+          "quantity": 4,
+          "usd": null
         }
       ]
     },
     "mkc-blame-game": {
-      "totalValue": 111.46,
+      "totalValue": 110.71,
       "cardCount": 100,
       "cards": [
         {
@@ -23945,14 +23635,6 @@
           "usd": "0.63",
           "tcgplayerId": 535604,
           "cardmarketId": 753505
-        },
-        {
-          "name": "Plains",
-          "quantity": 9,
-          "usd": "0.06",
-          "usd_foil": "0.24",
-          "tcgplayerId": 169371,
-          "cardmarketId": 360267
         },
         {
           "name": "Redemption Arc",
@@ -24246,13 +23928,6 @@
           "cardmarketId": 753383
         },
         {
-          "name": "Mountain",
-          "quantity": 7,
-          "usd": "0.03",
-          "tcgplayerId": 104265,
-          "cardmarketId": 284285
-        },
-        {
           "name": "Needle Spires",
           "quantity": 1,
           "usd": "0.20",
@@ -24405,11 +24080,21 @@
           "usd": "0.07",
           "tcgplayerId": 535591,
           "cardmarketId": 753417
+        },
+        {
+          "name": "Mountain",
+          "quantity": 7,
+          "usd": null
+        },
+        {
+          "name": "Plains",
+          "quantity": 9,
+          "usd": null
         }
       ]
     },
     "mkc-deep-clue-sea": {
-      "totalValue": 81.38,
+      "totalValue": 80.54,
       "cardCount": 100,
       "cards": [
         {
@@ -24588,14 +24273,6 @@
           "cardmarketId": 753405
         },
         {
-          "name": "Island",
-          "quantity": 6,
-          "usd": "0.06",
-          "usd_foil": "0.32",
-          "tcgplayerId": 188361,
-          "cardmarketId": 371845
-        },
-        {
           "name": "Talisman of Curiosity",
           "quantity": 1,
           "usd": "0.35",
@@ -24701,14 +24378,6 @@
           "usd": "0.30",
           "tcgplayerId": 535690,
           "cardmarketId": 753440
-        },
-        {
-          "name": "Forest",
-          "quantity": 5,
-          "usd": "0.06",
-          "usd_foil": "0.46",
-          "tcgplayerId": 122780,
-          "cardmarketId": 292616
         },
         {
           "name": "Disorder in the Court",
@@ -24836,14 +24505,6 @@
           "isFoilOnly": true,
           "tcgplayerId": 535653,
           "cardmarketId": 753236
-        },
-        {
-          "name": "Plains",
-          "quantity": 3,
-          "usd": "0.06",
-          "usd_foil": "0.24",
-          "tcgplayerId": 169371,
-          "cardmarketId": 360267
         },
         {
           "name": "Hornet Queen",
@@ -25041,11 +24702,26 @@
           "usd_foil": "0.07",
           "tcgplayerId": 529997,
           "cardmarketId": 750681
+        },
+        {
+          "name": "Forest",
+          "quantity": 5,
+          "usd": null
+        },
+        {
+          "name": "Island",
+          "quantity": 6,
+          "usd": null
+        },
+        {
+          "name": "Plains",
+          "quantity": 3,
+          "usd": null
         }
       ]
     },
     "mkc-revenant-recon": {
-      "totalValue": 104.2,
+      "totalValue": 103.12,
       "cardCount": 100,
       "cards": [
         {
@@ -25215,22 +24891,6 @@
           "usd": "0.63",
           "tcgplayerId": 535770,
           "cardmarketId": 753374
-        },
-        {
-          "name": "Island",
-          "quantity": 9,
-          "usd": "0.06",
-          "usd_foil": "0.32",
-          "tcgplayerId": 188361,
-          "cardmarketId": 371845
-        },
-        {
-          "name": "Swamp",
-          "quantity": 9,
-          "usd": "0.06",
-          "usd_foil": "0.51",
-          "tcgplayerId": 145701,
-          "cardmarketId": 301834
         },
         {
           "name": "Ravenous Chupacabra",
@@ -25640,11 +25300,21 @@
           "usd": "0.04",
           "tcgplayerId": 535749,
           "cardmarketId": 753358
+        },
+        {
+          "name": "Island",
+          "quantity": 9,
+          "usd": null
+        },
+        {
+          "name": "Swamp",
+          "quantity": 9,
+          "usd": null
         }
       ]
     },
     "lcc-ahoy-mateys": {
-      "totalValue": 58.68,
+      "totalValue": 57.93,
       "cardCount": 100,
       "cards": [
         {
@@ -25808,14 +25478,6 @@
           "usd": "0.36",
           "tcgplayerId": 525804,
           "cardmarketId": 743636
-        },
-        {
-          "name": "Island",
-          "quantity": 6,
-          "usd": "0.06",
-          "usd_foil": "0.32",
-          "tcgplayerId": 188361,
-          "cardmarketId": 371845
         },
         {
           "name": "Crumbling Necropolis",
@@ -25995,14 +25657,6 @@
           "cardmarketId": 740944
         },
         {
-          "name": "Swamp",
-          "quantity": 4,
-          "usd": "0.06",
-          "usd_foil": "0.51",
-          "tcgplayerId": 145701,
-          "cardmarketId": 301834
-        },
-        {
           "name": "Thriving Isle",
           "quantity": 1,
           "usd": "0.24",
@@ -26150,13 +25804,6 @@
           "cardmarketId": 743624
         },
         {
-          "name": "Mountain",
-          "quantity": 5,
-          "usd": "0.03",
-          "tcgplayerId": 104265,
-          "cardmarketId": 284285
-        },
-        {
           "name": "Desolate Lighthouse",
           "quantity": 1,
           "usd": "0.14",
@@ -26268,11 +25915,26 @@
           "usd": "0.04",
           "tcgplayerId": 525756,
           "cardmarketId": 743510
+        },
+        {
+          "name": "Island",
+          "quantity": 6,
+          "usd": null
+        },
+        {
+          "name": "Mountain",
+          "quantity": 5,
+          "usd": null
+        },
+        {
+          "name": "Swamp",
+          "quantity": 4,
+          "usd": null
         }
       ]
     },
     "lcc-blood-rites": {
-      "totalValue": 81.83,
+      "totalValue": 80.57,
       "cardCount": 100,
       "cards": [
         {
@@ -26382,14 +26044,6 @@
           "cardmarketId": 743493
         },
         {
-          "name": "Swamp",
-          "quantity": 13,
-          "usd": "0.06",
-          "usd_foil": "0.51",
-          "tcgplayerId": 145701,
-          "cardmarketId": 301834
-        },
-        {
           "name": "Cordial Vampire",
           "quantity": 1,
           "usd": "0.68",
@@ -26460,14 +26114,6 @@
           "usd": "0.48",
           "tcgplayerId": 525855,
           "cardmarketId": 743545
-        },
-        {
-          "name": "Plains",
-          "quantity": 8,
-          "usd": "0.06",
-          "usd_foil": "0.24",
-          "tcgplayerId": 169371,
-          "cardmarketId": 360267
         },
         {
           "name": "Vault of the Archangel",
@@ -26847,11 +26493,21 @@
           "usd": "0.09",
           "tcgplayerId": 525743,
           "cardmarketId": 743489
+        },
+        {
+          "name": "Plains",
+          "quantity": 8,
+          "usd": null
+        },
+        {
+          "name": "Swamp",
+          "quantity": 13,
+          "usd": null
         }
       ]
     },
     "lcc-explorers-of-the-deep": {
-      "totalValue": 69.22,
+      "totalValue": 68.02,
       "cardCount": 100,
       "cards": [
         {
@@ -26975,14 +26631,6 @@
           "cardmarketId": 743520
         },
         {
-          "name": "Island",
-          "quantity": 13,
-          "usd": "0.06",
-          "usd_foil": "0.32",
-          "tcgplayerId": 188361,
-          "cardmarketId": 371845
-        },
-        {
           "name": "Beast Within",
           "quantity": 1,
           "usd": "0.73",
@@ -27025,14 +26673,6 @@
           "isCommander": true,
           "tcgplayerId": 524264,
           "cardmarketId": 740941
-        },
-        {
-          "name": "Forest",
-          "quantity": 7,
-          "usd": "0.06",
-          "usd_foil": "0.46",
-          "tcgplayerId": 122780,
-          "cardmarketId": 292616
         },
         {
           "name": "Aetherize",
@@ -27434,11 +27074,21 @@
           "usd_foil": "0.09",
           "tcgplayerId": 525351,
           "cardmarketId": 743206
+        },
+        {
+          "name": "Forest",
+          "quantity": 7,
+          "usd": null
+        },
+        {
+          "name": "Island",
+          "quantity": 13,
+          "usd": null
         }
       ]
     },
     "lcc-veloci-ramp-tor": {
-      "totalValue": 70.96,
+      "totalValue": 70.12,
       "cardCount": 100,
       "cards": [
         {
@@ -27617,14 +27267,6 @@
           "usd": "0.48",
           "tcgplayerId": 525802,
           "cardmarketId": 743613
-        },
-        {
-          "name": "Forest",
-          "quantity": 8,
-          "usd": "0.06",
-          "usd_foil": "0.46",
-          "tcgplayerId": 122780,
-          "cardmarketId": 292616
         },
         {
           "name": "Quartzwood Crasher",
@@ -27831,14 +27473,6 @@
           "cardmarketId": 740944
         },
         {
-          "name": "Plains",
-          "quantity": 4,
-          "usd": "0.06",
-          "usd_foil": "0.24",
-          "tcgplayerId": 169371,
-          "cardmarketId": 360267
-        },
-        {
           "name": "Atzocan Seer",
           "quantity": 1,
           "usd": "0.23",
@@ -28030,13 +27664,6 @@
           "cardmarketId": 743484
         },
         {
-          "name": "Mountain",
-          "quantity": 4,
-          "usd": "0.03",
-          "tcgplayerId": 104265,
-          "cardmarketId": 284285
-        },
-        {
           "name": "Itzquinth, Firstborn of Gishath",
           "quantity": 1,
           "usd": "0.11",
@@ -28058,11 +27685,26 @@
           "usd_foil": "0.10",
           "tcgplayerId": 192508,
           "cardmarketId": 378276
+        },
+        {
+          "name": "Forest",
+          "quantity": 8,
+          "usd": null
+        },
+        {
+          "name": "Mountain",
+          "quantity": 4,
+          "usd": null
+        },
+        {
+          "name": "Plains",
+          "quantity": 4,
+          "usd": null
         }
       ]
     },
     "who-blast-from-the-past": {
-      "totalValue": 57.48,
+      "totalValue": 56.69,
       "cardCount": 100,
       "cards": [
         {
@@ -28250,14 +27892,6 @@
           "cardmarketId": 739177
         },
         {
-          "name": "Forest",
-          "quantity": 3,
-          "usd": "0.11",
-          "usd_foil": "0.31",
-          "tcgplayerId": 519100,
-          "cardmarketId": 739063
-        },
-        {
           "name": "Traverse Eternity",
           "quantity": 1,
           "usd": "0.32",
@@ -28363,28 +27997,12 @@
           "cardmarketId": 739152
         },
         {
-          "name": "Island",
-          "quantity": 2,
-          "usd": "0.12",
-          "usd_foil": "0.49",
-          "tcgplayerId": 496080,
-          "cardmarketId": 739058
-        },
-        {
           "name": "Irrigated Farmland",
           "quantity": 1,
           "usd": "0.23",
           "usd_foil": "0.35",
           "tcgplayerId": 519224,
           "cardmarketId": 739160
-        },
-        {
-          "name": "Plains",
-          "quantity": 2,
-          "usd": "0.11",
-          "usd_foil": "0.29",
-          "tcgplayerId": 496081,
-          "cardmarketId": 739055
         },
         {
           "name": "Explore",
@@ -28833,11 +28451,26 @@
           "usd_foil": "0.34",
           "tcgplayerId": 520202,
           "cardmarketId": 739212
+        },
+        {
+          "name": "Forest",
+          "quantity": 3,
+          "usd": null
+        },
+        {
+          "name": "Island",
+          "quantity": 2,
+          "usd": null
+        },
+        {
+          "name": "Plains",
+          "quantity": 2,
+          "usd": null
         }
       ]
     },
     "who-timey-wimey": {
-      "totalValue": 117.65,
+      "totalValue": 116.63,
       "cardCount": 100,
       "cards": [
         {
@@ -29058,14 +28691,6 @@
           "cardmarketId": 739208
         },
         {
-          "name": "Island",
-          "quantity": 3,
-          "usd": "0.12",
-          "usd_foil": "0.49",
-          "tcgplayerId": 496080,
-          "cardmarketId": 739058
-        },
-        {
           "name": "Rogue's Passage",
           "quantity": 1,
           "usd": "0.36",
@@ -29096,22 +28721,6 @@
           "usd_foil": "3.54",
           "tcgplayerId": 519270,
           "cardmarketId": 739074
-        },
-        {
-          "name": "Mountain",
-          "quantity": 3,
-          "usd": "0.11",
-          "usd_foil": "0.29",
-          "tcgplayerId": 496082,
-          "cardmarketId": 739062
-        },
-        {
-          "name": "Plains",
-          "quantity": 3,
-          "usd": "0.11",
-          "usd_foil": "0.29",
-          "tcgplayerId": 496081,
-          "cardmarketId": 739055
         },
         {
           "name": "Frostboil Snarl",
@@ -29592,11 +29201,26 @@
           "usd_foil": "0.29",
           "tcgplayerId": 519244,
           "cardmarketId": 738748
+        },
+        {
+          "name": "Island",
+          "quantity": 3,
+          "usd": null
+        },
+        {
+          "name": "Mountain",
+          "quantity": 3,
+          "usd": null
+        },
+        {
+          "name": "Plains",
+          "quantity": 3,
+          "usd": null
         }
       ]
     },
     "who-paradox-power": {
-      "totalValue": 71.19,
+      "totalValue": 69.94,
       "cardCount": 100,
       "cards": [
         {
@@ -29776,22 +29400,6 @@
           "cardmarketId": 739175
         },
         {
-          "name": "Island",
-          "quantity": 4,
-          "usd": "0.12",
-          "usd_foil": "0.49",
-          "tcgplayerId": 496080,
-          "cardmarketId": 739058
-        },
-        {
-          "name": "Forest",
-          "quantity": 4,
-          "usd": "0.11",
-          "usd_foil": "0.31",
-          "tcgplayerId": 519100,
-          "cardmarketId": 739063
-        },
-        {
           "name": "Chaos Warp",
           "quantity": 1,
           "usd": "0.40",
@@ -29871,14 +29479,6 @@
           "usd_foil": "0.95",
           "tcgplayerId": 519500,
           "cardmarketId": 738749
-        },
-        {
-          "name": "Mountain",
-          "quantity": 3,
-          "usd": "0.11",
-          "usd_foil": "0.29",
-          "tcgplayerId": 496082,
-          "cardmarketId": 739062
         },
         {
           "name": "Frostboil Snarl",
@@ -30335,11 +29935,26 @@
           "usd_foil": "0.16",
           "tcgplayerId": 519521,
           "cardmarketId": 738692
+        },
+        {
+          "name": "Forest",
+          "quantity": 4,
+          "usd": null
+        },
+        {
+          "name": "Island",
+          "quantity": 4,
+          "usd": null
+        },
+        {
+          "name": "Mountain",
+          "quantity": 3,
+          "usd": null
         }
       ]
     },
     "who-masters-of-evil": {
-      "totalValue": 124.52,
+      "totalValue": 123.6,
       "cardCount": 100,
       "cards": [
         {
@@ -30581,14 +30196,6 @@
           "usd_foil": "1.15",
           "tcgplayerId": 507040,
           "cardmarketId": 738606
-        },
-        {
-          "name": "Swamp",
-          "quantity": 2,
-          "usd": "0.23",
-          "usd_foil": "0.43",
-          "tcgplayerId": 519097,
-          "cardmarketId": 739059
         },
         {
           "name": "Dalek Squadron",
@@ -30840,14 +30447,6 @@
           "cardmarketId": 739083
         },
         {
-          "name": "Island",
-          "quantity": 2,
-          "usd": "0.12",
-          "usd_foil": "0.49",
-          "tcgplayerId": 496080,
-          "cardmarketId": 739058
-        },
-        {
           "name": "This Is How It Ends",
           "quantity": 1,
           "usd": "0.23",
@@ -30862,14 +30461,6 @@
           "usd_foil": "6.85",
           "tcgplayerId": 519752,
           "cardmarketId": 738827
-        },
-        {
-          "name": "Mountain",
-          "quantity": 2,
-          "usd": "0.11",
-          "usd_foil": "0.29",
-          "tcgplayerId": 496082,
-          "cardmarketId": 739062
         },
         {
           "name": "River of Tears",
@@ -31118,11 +30709,26 @@
           "usd_foil": "0.20",
           "tcgplayerId": 519483,
           "cardmarketId": 738812
+        },
+        {
+          "name": "Island",
+          "quantity": 2,
+          "usd": null
+        },
+        {
+          "name": "Mountain",
+          "quantity": 2,
+          "usd": null
+        },
+        {
+          "name": "Swamp",
+          "quantity": 2,
+          "usd": null
         }
       ]
     },
     "woc-fae-dominion": {
-      "totalValue": 220.01,
+      "totalValue": 218.51,
       "cardCount": 100,
       "cards": [
         {
@@ -31381,14 +30987,6 @@
           "cardmarketId": 730090
         },
         {
-          "name": "Island",
-          "quantity": 13,
-          "usd": "0.06",
-          "usd_foil": "0.32",
-          "tcgplayerId": 188361,
-          "cardmarketId": 371845
-        },
-        {
           "name": "Thrilling Encore",
           "quantity": 1,
           "usd": "0.77",
@@ -31408,14 +31006,6 @@
           "usd": "0.75",
           "tcgplayerId": 513693,
           "cardmarketId": 730040
-        },
-        {
-          "name": "Swamp",
-          "quantity": 12,
-          "usd": "0.06",
-          "usd_foil": "0.51",
-          "tcgplayerId": 145701,
-          "cardmarketId": 301834
         },
         {
           "name": "Puppeteer Clique",
@@ -31673,11 +31263,21 @@
           "usd": "0.09",
           "tcgplayerId": 513675,
           "cardmarketId": 730223
+        },
+        {
+          "name": "Island",
+          "quantity": 13,
+          "usd": null
+        },
+        {
+          "name": "Swamp",
+          "quantity": 12,
+          "usd": null
         }
       ]
     },
     "woc-virtue-and-valor": {
-      "totalValue": 121.64,
+      "totalValue": 119.9,
       "cardCount": 100,
       "cards": [
         {
@@ -31877,27 +31477,11 @@
           "cardmarketId": 730133
         },
         {
-          "name": "Forest",
-          "quantity": 15,
-          "usd": "0.06",
-          "usd_foil": "0.46",
-          "tcgplayerId": 122780,
-          "cardmarketId": 292616
-        },
-        {
           "name": "Archon of Sun's Grace",
           "quantity": 1,
           "usd": "0.86",
           "tcgplayerId": 513654,
           "cardmarketId": 730045
-        },
-        {
-          "name": "Plains",
-          "quantity": 14,
-          "usd": "0.06",
-          "usd_foil": "0.24",
-          "tcgplayerId": 169371,
-          "cardmarketId": 360267
         },
         {
           "name": "Snake Umbra",
@@ -32197,11 +31781,21 @@
           "usd": "0.08",
           "tcgplayerId": 513740,
           "cardmarketId": 730173
+        },
+        {
+          "name": "Forest",
+          "quantity": 15,
+          "usd": null
+        },
+        {
+          "name": "Plains",
+          "quantity": 14,
+          "usd": null
         }
       ]
     },
     "cmc-eldrazi-unbound": {
-      "totalValue": 251.5,
+      "totalValue": 243.55,
       "cardCount": 100,
       "cards": [
         {
@@ -32247,13 +31841,6 @@
           "usd": "12.23",
           "tcgplayerId": 506767,
           "cardmarketId": 723124
-        },
-        {
-          "name": "Wastes",
-          "quantity": 15,
-          "usd": "0.53",
-          "tcgplayerId": 507096,
-          "cardmarketId": 723189
         },
         {
           "name": "Kaldra Compleat",
@@ -32819,11 +32406,16 @@
           "usd_foil": "0.17",
           "tcgplayerId": 506705,
           "cardmarketId": 723112
+        },
+        {
+          "name": "Wastes",
+          "quantity": 15,
+          "usd": null
         }
       ]
     },
     "cmc-enduring-enchantments": {
-      "totalValue": 153.06,
+      "totalValue": 151.21,
       "cardCount": 100,
       "cards": [
         {
@@ -33099,25 +32691,11 @@
           "cardmarketId": 722863
         },
         {
-          "name": "Forest",
-          "quantity": 8,
-          "usd": "0.10",
-          "tcgplayerId": 505889,
-          "cardmarketId": 723334
-        },
-        {
           "name": "Jukai Naturalist",
           "quantity": 1,
           "usd": "0.73",
           "tcgplayerId": 506020,
           "cardmarketId": 723083
-        },
-        {
-          "name": "Plains",
-          "quantity": 6,
-          "usd": "0.10",
-          "tcgplayerId": 505870,
-          "cardmarketId": 723302
         },
         {
           "name": "Battle for Bretagard",
@@ -33161,13 +32739,6 @@
           "usd": "0.48",
           "tcgplayerId": 506037,
           "cardmarketId": 723075
-        },
-        {
-          "name": "Swamp",
-          "quantity": 5,
-          "usd": "0.09",
-          "tcgplayerId": 505887,
-          "cardmarketId": 723323
         },
         {
           "name": "Mesa Enchantress",
@@ -33423,11 +32994,26 @@
           "usd": "0.08",
           "tcgplayerId": 506005,
           "cardmarketId": 723105
+        },
+        {
+          "name": "Forest",
+          "quantity": 8,
+          "usd": null
+        },
+        {
+          "name": "Plains",
+          "quantity": 6,
+          "usd": null
+        },
+        {
+          "name": "Swamp",
+          "quantity": 5,
+          "usd": null
         }
       ]
     },
     "cmc-planeswalker-party": {
-      "totalValue": 127.13,
+      "totalValue": 125.44,
       "cardCount": 100,
       "cards": [
         {
@@ -33690,25 +33276,11 @@
           "cardmarketId": 721889
         },
         {
-          "name": "Plains",
-          "quantity": 7,
-          "usd": "0.10",
-          "tcgplayerId": 505870,
-          "cardmarketId": 723302
-        },
-        {
           "name": "Rugged Prairie",
           "quantity": 1,
           "usd": "0.69",
           "tcgplayerId": 505816,
           "cardmarketId": 722991
-        },
-        {
-          "name": "Island",
-          "quantity": 7,
-          "usd": "0.09",
-          "tcgplayerId": 505876,
-          "cardmarketId": 723313
         },
         {
           "name": "Arcane Signet",
@@ -33795,13 +33367,6 @@
           "usd": "0.36",
           "tcgplayerId": 505770,
           "cardmarketId": 722963
-        },
-        {
-          "name": "Mountain",
-          "quantity": 4,
-          "usd": "0.09",
-          "tcgplayerId": 505868,
-          "cardmarketId": 723329
         },
         {
           "name": "Talisman of Conviction",
@@ -34037,11 +33602,26 @@
           "usd": "0.11",
           "tcgplayerId": 505856,
           "cardmarketId": 723014
+        },
+        {
+          "name": "Island",
+          "quantity": 7,
+          "usd": null
+        },
+        {
+          "name": "Mountain",
+          "quantity": 4,
+          "usd": null
+        },
+        {
+          "name": "Plains",
+          "quantity": 7,
+          "usd": null
         }
       ]
     },
     "cmc-sliver-swarm": {
-      "totalValue": 195.22,
+      "totalValue": 194.18,
       "cardCount": 100,
       "cards": [
         {
@@ -34570,13 +34150,6 @@
           "cardmarketId": 722851
         },
         {
-          "name": "Forest",
-          "quantity": 3,
-          "usd": "0.10",
-          "tcgplayerId": 505889,
-          "cardmarketId": 723334
-        },
-        {
           "name": "Canopy Vista",
           "quantity": 1,
           "usd": "0.28",
@@ -34640,13 +34213,6 @@
           "cardmarketId": 722857
         },
         {
-          "name": "Plains",
-          "quantity": 2,
-          "usd": "0.10",
-          "tcgplayerId": 505870,
-          "cardmarketId": 723302
-        },
-        {
           "name": "Bonesplitter Sliver",
           "quantity": 1,
           "usd": "0.19",
@@ -34659,20 +34225,6 @@
           "usd": "0.18",
           "tcgplayerId": 505369,
           "cardmarketId": 722874
-        },
-        {
-          "name": "Island",
-          "quantity": 2,
-          "usd": "0.09",
-          "tcgplayerId": 505876,
-          "cardmarketId": 723313
-        },
-        {
-          "name": "Mountain",
-          "quantity": 2,
-          "usd": "0.09",
-          "tcgplayerId": 505868,
-          "cardmarketId": 723329
         },
         {
           "name": "Mystic Monastery",
@@ -34690,13 +34242,6 @@
           "cardmarketId": 721724
         },
         {
-          "name": "Swamp",
-          "quantity": 2,
-          "usd": "0.09",
-          "tcgplayerId": 505887,
-          "cardmarketId": 723323
-        },
-        {
           "name": "Sheltered Thicket",
           "quantity": 1,
           "usd": "0.14",
@@ -34710,11 +34255,36 @@
           "usd_foil": "0.26",
           "tcgplayerId": 505387,
           "cardmarketId": 722896
+        },
+        {
+          "name": "Forest",
+          "quantity": 3,
+          "usd": null
+        },
+        {
+          "name": "Island",
+          "quantity": 2,
+          "usd": null
+        },
+        {
+          "name": "Mountain",
+          "quantity": 2,
+          "usd": null
+        },
+        {
+          "name": "Plains",
+          "quantity": 2,
+          "usd": null
+        },
+        {
+          "name": "Swamp",
+          "quantity": 2,
+          "usd": null
         }
       ]
     },
     "ltc-riders-of-rohan": {
-      "totalValue": 73.73,
+      "totalValue": 72.74,
       "cardCount": 100,
       "cards": [
         {
@@ -34872,14 +34442,6 @@
           "cardmarketId": 717199
         },
         {
-          "name": "Plains",
-          "quantity": 9,
-          "usd": "0.06",
-          "usd_foil": "0.24",
-          "tcgplayerId": 169371,
-          "cardmarketId": 360267
-        },
-        {
           "name": "Call for Aid",
           "quantity": 1,
           "usd": "0.54",
@@ -35014,14 +34576,6 @@
           "usd": "0.30",
           "tcgplayerId": 499765,
           "cardmarketId": 717412
-        },
-        {
-          "name": "Island",
-          "quantity": 5,
-          "usd": "0.06",
-          "usd_foil": "0.32",
-          "tcgplayerId": 188361,
-          "cardmarketId": 371845
         },
         {
           "name": "Commander's Sphere",
@@ -35220,13 +34774,6 @@
           "cardmarketId": 717174
         },
         {
-          "name": "Mountain",
-          "quantity": 5,
-          "usd": "0.03",
-          "tcgplayerId": 104265,
-          "cardmarketId": 284285
-        },
-        {
           "name": "Fiend Hunter",
           "quantity": 1,
           "usd": "0.14",
@@ -35313,11 +34860,26 @@
           "usd_foil": "0.24",
           "tcgplayerId": 498373,
           "cardmarketId": 715964
+        },
+        {
+          "name": "Island",
+          "quantity": 5,
+          "usd": null
+        },
+        {
+          "name": "Mountain",
+          "quantity": 5,
+          "usd": null
+        },
+        {
+          "name": "Plains",
+          "quantity": 9,
+          "usd": null
         }
       ]
     },
     "ltc-hosts-of-mordor": {
-      "totalValue": 130.3,
+      "totalValue": 129.37,
       "cardCount": 100,
       "cards": [
         {
@@ -35592,27 +35154,11 @@
           "cardmarketId": 717150
         },
         {
-          "name": "Island",
-          "quantity": 6,
-          "usd": "0.06",
-          "usd_foil": "0.32",
-          "tcgplayerId": 188361,
-          "cardmarketId": 371845
-        },
-        {
           "name": "Smoldering Marsh",
           "quantity": 1,
           "usd": "0.36",
           "tcgplayerId": 499684,
           "cardmarketId": 717408
-        },
-        {
-          "name": "Swamp",
-          "quantity": 6,
-          "usd": "0.06",
-          "usd_foil": "0.51",
-          "tcgplayerId": 145701,
-          "cardmarketId": 301834
         },
         {
           "name": "Mind Stone",
@@ -35790,13 +35336,6 @@
           "cardmarketId": 717482
         },
         {
-          "name": "Mountain",
-          "quantity": 7,
-          "usd": "0.03",
-          "tcgplayerId": 104265,
-          "cardmarketId": 284285
-        },
-        {
           "name": "Thrill of Possibility",
           "quantity": 1,
           "usd": "0.20",
@@ -35919,11 +35458,26 @@
           "usd_foil": "0.17",
           "tcgplayerId": 498392,
           "cardmarketId": 715899
+        },
+        {
+          "name": "Island",
+          "quantity": 6,
+          "usd": null
+        },
+        {
+          "name": "Mountain",
+          "quantity": 7,
+          "usd": null
+        },
+        {
+          "name": "Swamp",
+          "quantity": 6,
+          "usd": null
         }
       ]
     },
     "40k-forces-of-the-imperium": {
-      "totalValue": 212.52,
+      "totalValue": 208.83,
       "cardCount": 100,
       "cards": [
         {
@@ -36082,13 +35636,6 @@
           "cardmarketId": 675747
         },
         {
-          "name": "Plains",
-          "quantity": 8,
-          "usd": "0.23",
-          "tcgplayerId": 286490,
-          "cardmarketId": 675778
-        },
-        {
           "name": "Talisman of Dominance",
           "quantity": 1,
           "usd": "1.82",
@@ -36131,13 +35678,6 @@
           "cardmarketId": 675719
         },
         {
-          "name": "Swamp",
-          "quantity": 7,
-          "usd": "0.15",
-          "tcgplayerId": 286493,
-          "cardmarketId": 675780
-        },
-        {
           "name": "Arcane Sanctum",
           "quantity": 1,
           "usd": "0.99",
@@ -36171,13 +35711,6 @@
           "usd": "0.80",
           "tcgplayerId": 286545,
           "cardmarketId": 675725
-        },
-        {
-          "name": "Island",
-          "quantity": 5,
-          "usd": "0.16",
-          "tcgplayerId": 286488,
-          "cardmarketId": 675779
         },
         {
           "name": "Vanguard Suppressor",
@@ -36509,11 +36042,26 @@
           "usd": "0.16",
           "tcgplayerId": 286010,
           "cardmarketId": 675234
+        },
+        {
+          "name": "Island",
+          "quantity": 5,
+          "usd": null
+        },
+        {
+          "name": "Plains",
+          "quantity": 8,
+          "usd": null
+        },
+        {
+          "name": "Swamp",
+          "quantity": 7,
+          "usd": null
         }
       ]
     },
     "40k-necron-dynasties": {
-      "totalValue": 219.71,
+      "totalValue": 215.21,
       "cardCount": 100,
       "cards": [
         {
@@ -36621,13 +36169,6 @@
           "usd": "4.88",
           "tcgplayerId": 286366,
           "cardmarketId": 675386
-        },
-        {
-          "name": "Swamp",
-          "quantity": 30,
-          "usd": "0.15",
-          "tcgplayerId": 286493,
-          "cardmarketId": 675780
         },
         {
           "name": "Vault of Whispers",
@@ -37015,11 +36556,16 @@
           "usd": "0.21",
           "tcgplayerId": 286379,
           "cardmarketId": 675771
+        },
+        {
+          "name": "Swamp",
+          "quantity": 30,
+          "usd": null
         }
       ]
     },
     "40k-the-ruinous-powers": {
-      "totalValue": 198.64,
+      "totalValue": 194.32,
       "cardCount": 100,
       "cards": [
         {
@@ -37206,13 +36752,6 @@
           "cardmarketId": 675217
         },
         {
-          "name": "Mountain",
-          "quantity": 8,
-          "usd": "0.23",
-          "tcgplayerId": 286099,
-          "cardmarketId": 675254
-        },
-        {
           "name": "Talisman of Dominance",
           "quantity": 1,
           "usd": "1.82",
@@ -37253,20 +36792,6 @@
           "usd": "1.36",
           "tcgplayerId": 286141,
           "cardmarketId": 675334
-        },
-        {
-          "name": "Island",
-          "quantity": 8,
-          "usd": "0.16",
-          "tcgplayerId": 286488,
-          "cardmarketId": 675779
-        },
-        {
-          "name": "Swamp",
-          "quantity": 8,
-          "usd": "0.15",
-          "tcgplayerId": 286493,
-          "cardmarketId": 675780
         },
         {
           "name": "Abaddon the Despoiler",
@@ -37577,11 +37102,26 @@
           "usd": "0.16",
           "tcgplayerId": 286010,
           "cardmarketId": 675234
+        },
+        {
+          "name": "Island",
+          "quantity": 8,
+          "usd": null
+        },
+        {
+          "name": "Mountain",
+          "quantity": 8,
+          "usd": null
+        },
+        {
+          "name": "Swamp",
+          "quantity": 8,
+          "usd": null
         }
       ]
     },
     "40k-tyranid-swarm": {
-      "totalValue": 181.59,
+      "totalValue": 177.34,
       "cardCount": 100,
       "cards": [
         {
@@ -37761,25 +37301,11 @@
           "cardmarketId": 674649
         },
         {
-          "name": "Mountain",
-          "quantity": 7,
-          "usd": "0.23",
-          "tcgplayerId": 286099,
-          "cardmarketId": 675254
-        },
-        {
           "name": "Exocrine",
           "quantity": 1,
           "usd": "1.53",
           "tcgplayerId": 285890,
           "cardmarketId": 674730
-        },
-        {
-          "name": "Forest",
-          "quantity": 8,
-          "usd": "0.19",
-          "tcgplayerId": 285963,
-          "cardmarketId": 674767
         },
         {
           "name": "Harrow",
@@ -37801,13 +37327,6 @@
           "usd": "1.21",
           "tcgplayerId": 285843,
           "cardmarketId": 674655
-        },
-        {
-          "name": "Island",
-          "quantity": 7,
-          "usd": "0.16",
-          "tcgplayerId": 286488,
-          "cardmarketId": 675779
         },
         {
           "name": "Farseek",
@@ -38153,6 +37672,21 @@
           "usd": "0.16",
           "tcgplayerId": 286010,
           "cardmarketId": 675234
+        },
+        {
+          "name": "Forest",
+          "quantity": 8,
+          "usd": null
+        },
+        {
+          "name": "Island",
+          "quantity": 7,
+          "usd": null
+        },
+        {
+          "name": "Mountain",
+          "quantity": 7,
+          "usd": null
         }
       ]
     }

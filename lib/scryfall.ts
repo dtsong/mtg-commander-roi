@@ -10,6 +10,7 @@ import type {
   LowestListingsData,
 } from '@/types';
 import { deduplicatedFetch } from './deduplicator';
+import { isBasicLand } from './basicLands';
 
 const SCRYFALL_API = 'https://api.scryfall.com';
 const RATE_LIMIT_MS = 100;
@@ -414,6 +415,17 @@ export const fetchCardsPrices = async (
   const uncachedCards: DeckCardEntry[] = [];
 
   for (const card of cardList) {
+    if (isBasicLand(card.name)) {
+      priceMap.set(card.name, {
+        name: card.name,
+        price: 0,
+        image: null,
+        foilPrice: null,
+        isFoilOnly: false,
+      });
+      continue;
+    }
+
     const cacheKey = card.setCode
       ? `${card.name.toLowerCase()}|${card.setCode.toLowerCase()}`
       : card.name.toLowerCase();
@@ -489,6 +501,39 @@ export const fetchCardsPrices = async (
       const frontExisting = cardsByName.get(frontFace) ?? [];
       frontExisting.push(card);
       cardsByName.set(frontFace, frontExisting);
+    }
+  }
+
+  // Retry foil-only cards without set constraint to find cheaper non-foil printings
+  const foilOnlyCards: string[] = [];
+  for (const [cardName, versions] of cardsByName) {
+    const allFoilOnly = versions.every(
+      c => c.prices?.usd === null && c.prices?.usd_foil !== null
+    );
+    if (allFoilOnly) {
+      foilOnlyCards.push(cardName);
+    }
+  }
+  if (foilOnlyCards.length > 0) {
+    const retryIdentifiers = foilOnlyCards.map(name => ({ name }));
+    for (let i = 0; i < retryIdentifiers.length; i += BATCH_SIZE) {
+      const batch = retryIdentifiers.slice(i, i + BATCH_SIZE);
+      const data = await collectionFetchWithRetry(batch);
+      for (const card of data.data || []) {
+        const existing = cardsByName.get(card.name) ?? [];
+        existing.push(card);
+        cardsByName.set(card.name, existing);
+
+        const frontFace = getFrontFaceName(card.name);
+        if (frontFace !== card.name) {
+          const frontExisting = cardsByName.get(frontFace) ?? [];
+          frontExisting.push(card);
+          cardsByName.set(frontFace, frontExisting);
+        }
+      }
+      if (i + BATCH_SIZE < retryIdentifiers.length) {
+        await sleep(RATE_LIMIT_MS);
+      }
     }
   }
 

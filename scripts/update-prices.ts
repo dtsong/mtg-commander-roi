@@ -14,6 +14,7 @@ import { dirname, join } from 'path';
 import { fileURLToPath } from 'url';
 import type { Decklists, CardPrices } from '../types';
 import { validateDecklists } from './validate-input';
+import { isBasicLand } from '../lib/basicLands';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
@@ -324,6 +325,16 @@ function computeDeckPrices(
     let totalValue = 0;
 
     for (const card of cards) {
+      if (isBasicLand(card.name)) {
+        cardPrices.push({
+          name: card.name,
+          quantity: card.quantity,
+          usd: null,
+          isCommander: card.isCommander,
+        });
+        continue;
+      }
+
       const setKey = `${card.name}|${setCode}`;
       const lookupEntry = priceLookup.get(setKey);
       const priceStr = lookupEntry?.priceStr ?? null;
