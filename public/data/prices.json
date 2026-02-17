@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-02-16T20:26:28.411Z",
+  "updatedAt": "2026-02-17T01:14:02.424Z",
   "decks": {
     "ltc-elven-council": {
       "totalValue": 113.49,
@@ -2428,7 +2428,7 @@
       ]
     },
     "eoc-counter-intelligence": {
-      "totalValue": 50.69,
+      "totalValue": 50.68,
       "cardCount": 100,
       "cards": [
         {
@@ -2785,13 +2785,6 @@
           "cardmarketId": 834299
         },
         {
-          "name": "Glacial Fortress",
-          "quantity": 1,
-          "usd": "0.24",
-          "tcgplayerId": 642852,
-          "cardmarketId": 834301
-        },
-        {
           "name": "Rugged Prairie",
           "quantity": 1,
           "usd": "0.24",
@@ -2804,6 +2797,13 @@
           "usd": "0.24",
           "tcgplayerId": 642787,
           "cardmarketId": 834241
+        },
+        {
+          "name": "Glacial Fortress",
+          "quantity": 1,
+          "usd": "0.23",
+          "tcgplayerId": 642852,
+          "cardmarketId": 834301
         },
         {
           "name": "Shivan Reef",
@@ -3717,7 +3717,7 @@
       ]
     },
     "fic-revival-trance": {
-      "totalValue": 75.04,
+      "totalValue": 75.03,
       "cardCount": 100,
       "cards": [
         {
@@ -3916,18 +3916,18 @@
           "cardmarketId": 824592
         },
         {
-          "name": "Evolving Wilds",
-          "quantity": 1,
-          "usd": "0.37",
-          "tcgplayerId": 631290,
-          "cardmarketId": 824831
-        },
-        {
           "name": "Stitcher's Supplier",
           "quantity": 1,
           "usd": "0.36",
           "tcgplayerId": 631512,
           "cardmarketId": 824599
+        },
+        {
+          "name": "Evolving Wilds",
+          "quantity": 1,
+          "usd": "0.36",
+          "tcgplayerId": 631290,
+          "cardmarketId": 824831
         },
         {
           "name": "Combustible Gearhulk",
@@ -4382,7 +4382,7 @@
       ]
     },
     "fic-limit-break": {
-      "totalValue": 99.11,
+      "totalValue": 99.1,
       "cardCount": 100,
       "cards": [
         {
@@ -4651,13 +4651,6 @@
           "cardmarketId": 824734
         },
         {
-          "name": "Evolving Wilds",
-          "quantity": 1,
-          "usd": "0.37",
-          "tcgplayerId": 631290,
-          "cardmarketId": 824831
-        },
-        {
           "name": "Rootbound Crag",
           "quantity": 1,
           "usd": "0.37",
@@ -4684,6 +4677,13 @@
           "usd": "0.36",
           "tcgplayerId": 631250,
           "cardmarketId": 824818
+        },
+        {
+          "name": "Evolving Wilds",
+          "quantity": 1,
+          "usd": "0.36",
+          "tcgplayerId": 631290,
+          "cardmarketId": 824831
         },
         {
           "name": "Vanquish the Horde",
@@ -5280,13 +5280,6 @@
           "cardmarketId": 824543
         },
         {
-          "name": "Evolving Wilds",
-          "quantity": 1,
-          "usd": "0.37",
-          "tcgplayerId": 631290,
-          "cardmarketId": 824831
-        },
-        {
           "name": "Hinterland Harbor",
           "quantity": 1,
           "usd": "0.37",
@@ -5306,6 +5299,13 @@
           "usd": "0.36",
           "tcgplayerId": 631157,
           "cardmarketId": 824515
+        },
+        {
+          "name": "Evolving Wilds",
+          "quantity": 1,
+          "usd": "0.36",
+          "tcgplayerId": 631290,
+          "cardmarketId": 824831
         },
         {
           "name": "Scholar of New Horizons",
@@ -5609,6 +5609,13 @@
           "cardmarketId": 824561
         },
         {
+          "name": "Port Town",
+          "quantity": 1,
+          "usd": "0.21",
+          "tcgplayerId": 631327,
+          "cardmarketId": 824854
+        },
+        {
           "name": "Yuna's Decision",
           "quantity": 1,
           "usd": "0.21",
@@ -5628,13 +5635,6 @@
           "usd": "0.20",
           "tcgplayerId": 631538,
           "cardmarketId": 824658
-        },
-        {
-          "name": "Port Town",
-          "quantity": 1,
-          "usd": "0.20",
-          "tcgplayerId": 631327,
-          "cardmarketId": 824854
         },
         {
           "name": "Radiant Grove",
@@ -5952,7 +5952,7 @@
         {
           "name": "Evolving Wilds",
           "quantity": 1,
-          "usd": "0.37",
+          "usd": "0.36",
           "tcgplayerId": 631290,
           "cardmarketId": 824831
         },
@@ -6274,18 +6274,18 @@
           "cardmarketId": 824825
         },
         {
+          "name": "Port Town",
+          "quantity": 1,
+          "usd": "0.21",
+          "tcgplayerId": 631327,
+          "cardmarketId": 824854
+        },
+        {
           "name": "Hraesvelgr of the First Brood",
           "quantity": 1,
           "usd": "0.20",
           "tcgplayerId": 631167,
           "cardmarketId": 824556
-        },
-        {
-          "name": "Port Town",
-          "quantity": 1,
-          "usd": "0.20",
-          "tcgplayerId": 631327,
-          "cardmarketId": 824854
         },
         {
           "name": "Papalymo Totolymo",
@@ -9524,7 +9524,7 @@
       ]
     },
     "drc-living-energy": {
-      "totalValue": 50.5,
+      "totalValue": 50.52,
       "cardCount": 100,
       "cards": [
         {
@@ -9558,7 +9558,7 @@
         {
           "name": "Conjurer's Closet",
           "quantity": 1,
-          "usd": "2.72",
+          "usd": "2.74",
           "tcgplayerId": 615204,
           "cardmarketId": 808014
         },
@@ -21693,7 +21693,7 @@
       ]
     },
     "pip-science": {
-      "totalValue": 69,
+      "totalValue": 69.01,
       "cardCount": 100,
       "cards": [
         {
@@ -21937,6 +21937,14 @@
           "cardmarketId": 757902
         },
         {
+          "name": "Glacial Fortress",
+          "quantity": 1,
+          "usd": "0.34",
+          "usd_foil": "2.50",
+          "tcgplayerId": 540991,
+          "cardmarketId": 758292
+        },
+        {
           "name": "Dr. Madison Li",
           "quantity": 1,
           "usd": "0.33",
@@ -21952,14 +21960,6 @@
           "isFoilOnly": true,
           "tcgplayerId": 539452,
           "cardmarketId": 757605
-        },
-        {
-          "name": "Glacial Fortress",
-          "quantity": 1,
-          "usd": "0.33",
-          "usd_foil": "2.50",
-          "tcgplayerId": 540991,
-          "cardmarketId": 758292
         },
         {
           "name": "Loyal Apprentice",
@@ -33427,7 +33427,7 @@
       ]
     },
     "cmc-planeswalker-party": {
-      "totalValue": 127.11,
+      "totalValue": 127.13,
       "cardCount": 100,
       "cards": [
         {
@@ -33948,6 +33948,13 @@
           "cardmarketId": 722948
         },
         {
+          "name": "Port Town",
+          "quantity": 1,
+          "usd": "0.20",
+          "tcgplayerId": 505815,
+          "cardmarketId": 723003
+        },
+        {
           "name": "Fog Bank",
           "quantity": 1,
           "usd": "0.19",
@@ -33988,13 +33995,6 @@
           "usd": "0.18",
           "tcgplayerId": 505344,
           "cardmarketId": 722884
-        },
-        {
-          "name": "Port Town",
-          "quantity": 1,
-          "usd": "0.18",
-          "tcgplayerId": 505815,
-          "cardmarketId": 723003
         },
         {
           "name": "Temple of Enlightenment",
