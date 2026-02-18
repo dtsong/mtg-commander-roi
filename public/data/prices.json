@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-02-17T20:33:03.104Z",
+  "updatedAt": "2026-02-18T01:15:54.296Z",
   "decks": {
     "ltc-elven-council": {
       "totalValue": 111.83,
@@ -1163,7 +1163,7 @@
       ]
     },
     "ecc-dance-of-the-elements": {
-      "totalValue": 58.55,
+      "totalValue": 58.45,
       "cardCount": 100,
       "cards": [
         {
@@ -1230,13 +1230,6 @@
           "cardmarketId": 865034
         },
         {
-          "name": "Path to Exile",
-          "quantity": 1,
-          "usd": "1.25",
-          "tcgplayerId": 671137,
-          "cardmarketId": 864959
-        },
-        {
           "name": "Blasphemous Act",
           "quantity": 1,
           "usd": "1.21",
@@ -1249,6 +1242,13 @@
           "usd": "1.15",
           "tcgplayerId": 671236,
           "cardmarketId": 865046
+        },
+        {
+          "name": "Path to Exile",
+          "quantity": 1,
+          "usd": "1.15",
+          "tcgplayerId": 671137,
+          "cardmarketId": 864959
         },
         {
           "name": "Kindred Summons",
@@ -4316,7 +4316,7 @@
       ]
     },
     "fic-limit-break": {
-      "totalValue": 72.75,
+      "totalValue": 72.76,
       "cardCount": 100,
       "cards": [
         {
@@ -4430,7 +4430,7 @@
         {
           "name": "Conqueror's Flail",
           "quantity": 1,
-          "usd": "0.94",
+          "usd": "0.95",
           "tcgplayerId": 631291,
           "cardmarketId": 824774
         },
@@ -4978,7 +4978,7 @@
       ]
     },
     "fic-counter-blitz": {
-      "totalValue": 74.22,
+      "totalValue": 74.21,
       "cardCount": 100,
       "cards": [
         {
@@ -5071,7 +5071,7 @@
         {
           "name": "Path to Exile",
           "quantity": 1,
-          "usd": "1.31",
+          "usd": "1.30",
           "tcgplayerId": 631196,
           "cardmarketId": 824540
         },
@@ -11832,7 +11832,7 @@
       ]
     },
     "dsc-miracle-worker": {
-      "totalValue": 63.14,
+      "totalValue": 63.13,
       "cardCount": 100,
       "cards": [
         {
@@ -11923,7 +11923,7 @@
         {
           "name": "Brainstorm",
           "quantity": 1,
-          "usd": "1.40",
+          "usd": "1.39",
           "tcgplayerId": 578953,
           "cardmarketId": 788639
         },
@@ -13063,7 +13063,7 @@
       ]
     },
     "blc-family-matters": {
-      "totalValue": 56.3,
+      "totalValue": 56.29,
       "cardCount": 100,
       "cards": [
         {
@@ -13119,7 +13119,7 @@
         {
           "name": "Path to Exile",
           "quantity": 1,
-          "usd": "1.31",
+          "usd": "1.30",
           "tcgplayerId": 559845,
           "cardmarketId": 779286
         },
@@ -19979,7 +19979,7 @@
       ]
     },
     "pip-scrappy-survivors": {
-      "totalValue": 81.11,
+      "totalValue": 81.12,
       "cardCount": 100,
       "cards": [
         {
@@ -20065,7 +20065,7 @@
         {
           "name": "Path to Exile",
           "quantity": 1,
-          "usd": "1.61",
+          "usd": "1.62",
           "usd_foil": "5.67",
           "tcgplayerId": 539579,
           "cardmarketId": 757857
@@ -23484,13 +23484,13 @@
       ]
     },
     "mkc-blame-game": {
-      "totalValue": 110.76,
+      "totalValue": 110.58,
       "cardCount": 100,
       "cards": [
         {
           "name": "Trouble in Pairs",
           "quantity": 1,
-          "usd": "30.62",
+          "usd": "30.44",
           "tcgplayerId": 535640,
           "cardmarketId": 753249
         },
@@ -26505,7 +26505,7 @@
       ]
     },
     "lcc-explorers-of-the-deep": {
-      "totalValue": 68.12,
+      "totalValue": 68.1,
       "cardCount": 100,
       "cards": [
         {
@@ -26560,7 +26560,7 @@
         {
           "name": "Metallic Mimic",
           "quantity": 1,
-          "usd": "2.76",
+          "usd": "2.74",
           "tcgplayerId": 525954,
           "cardmarketId": 743660
         },
@@ -27086,7 +27086,7 @@
       ]
     },
     "lcc-veloci-ramp-tor": {
-      "totalValue": 70.65,
+      "totalValue": 70.69,
       "cardCount": 100,
       "cards": [
         {
@@ -27120,7 +27120,7 @@
         {
           "name": "Rhythm of the Wild",
           "quantity": 1,
-          "usd": "3.66",
+          "usd": "3.69",
           "tcgplayerId": 525923,
           "cardmarketId": 743639
         },
@@ -27169,7 +27169,7 @@
         {
           "name": "Path to Exile",
           "quantity": 1,
-          "usd": "1.43",
+          "usd": "1.44",
           "tcgplayerId": 525898,
           "cardmarketId": 743487
         },
@@ -34282,7 +34282,7 @@
       ]
     },
     "ltc-riders-of-rohan": {
-      "totalValue": 73.49,
+      "totalValue": 73.47,
       "cardCount": 100,
       "cards": [
         {
@@ -34358,7 +34358,7 @@
         {
           "name": "Supreme Verdict",
           "quantity": 1,
-          "usd": "1.93",
+          "usd": "1.91",
           "tcgplayerId": 499834,
           "cardmarketId": 717168
         },
