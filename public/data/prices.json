@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-02-23T20:41:01.187Z",
+  "updatedAt": "2026-02-24T01:12:16.105Z",
   "decks": {
     "ltc-elven-council": {
       "totalValue": 113.54,
@@ -27693,7 +27693,7 @@
       ]
     },
     "who-blast-from-the-past": {
-      "totalValue": 60.89,
+      "totalValue": 60.9,
       "cardCount": 100,
       "cards": [
         {
@@ -27961,6 +27961,14 @@
           "cardmarketId": 739170
         },
         {
+          "name": "Scattered Groves",
+          "quantity": 1,
+          "usd": "0.30",
+          "usd_foil": "0.33",
+          "tcgplayerId": 520195,
+          "cardmarketId": 739176
+        },
+        {
           "name": "Adric, Mathematical Genius",
           "quantity": 1,
           "usd": "0.29",
@@ -27975,14 +27983,6 @@
           "usd_foil": "1.83",
           "tcgplayerId": 519326,
           "cardmarketId": 739133
-        },
-        {
-          "name": "Scattered Groves",
-          "quantity": 1,
-          "usd": "0.29",
-          "usd_foil": "0.33",
-          "tcgplayerId": 520195,
-          "cardmarketId": 739176
         },
         {
           "name": "Celestial Colonnade",
