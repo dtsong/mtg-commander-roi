@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-03-14T20:23:53.159Z",
+  "updatedAt": "2026-03-15T01:22:33.934Z",
   "decks": {
     "ltc-elven-council": {
-      "totalValue": 84.42,
+      "totalValue": 84.8,
       "cardCount": 100,
       "cards": [
         {
@@ -15,7 +15,7 @@
         {
           "name": "Heroic Intervention",
           "quantity": 1,
-          "usd": "11.09",
+          "usd": "11.47",
           "tcgplayerId": 499755,
           "cardmarketId": 717477
         },
@@ -8145,7 +8145,7 @@
       ]
     },
     "tdc-sultai-arisen": {
-      "totalValue": 75.5,
+      "totalValue": 75.49,
       "cardCount": 100,
       "cards": [
         {
@@ -8174,7 +8174,7 @@
         {
           "name": "Dauthi Voidwalker",
           "quantity": 1,
-          "usd": "5.14",
+          "usd": "5.13",
           "tcgplayerId": 624420,
           "cardmarketId": 818785
         },
@@ -18072,7 +18072,7 @@
       ]
     },
     "otc-most-wanted": {
-      "totalValue": 132.42,
+      "totalValue": 132.39,
       "cardCount": 100,
       "cards": [
         {
@@ -18410,13 +18410,6 @@
           "cardmarketId": 763931
         },
         {
-          "name": "Massacre Girl",
-          "quantity": 1,
-          "usd": "0.38",
-          "tcgplayerId": 545293,
-          "cardmarketId": 764798
-        },
-        {
           "name": "Orzhov Signet",
           "quantity": 1,
           "usd": "0.38",
@@ -18429,6 +18422,13 @@
           "usd": "0.37",
           "tcgplayerId": 545366,
           "cardmarketId": 764849
+        },
+        {
+          "name": "Massacre Girl",
+          "quantity": 1,
+          "usd": "0.35",
+          "tcgplayerId": 545293,
+          "cardmarketId": 764798
         },
         {
           "name": "Rugged Prairie",
@@ -27694,14 +27694,14 @@
       ]
     },
     "who-blast-from-the-past": {
-      "totalValue": 72.46,
+      "totalValue": 72.53,
       "cardCount": 100,
       "cards": [
         {
           "name": "Heroic Intervention",
           "quantity": 1,
-          "usd": "12.29",
-          "usd_foil": "12.04",
+          "usd": "12.36",
+          "usd_foil": "12.01",
           "tcgplayerId": 520174,
           "cardmarketId": 739095
         },
