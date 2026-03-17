@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-03-16T20:34:45.641Z",
+  "updatedAt": "2026-03-17T01:13:38.348Z",
   "decks": {
     "ltc-elven-council": {
       "totalValue": 84.33,
@@ -36558,7 +36558,7 @@
       ]
     },
     "40k-the-ruinous-powers": {
-      "totalValue": 220.18,
+      "totalValue": 220.24,
       "cardCount": 100,
       "cards": [
         {
@@ -36747,7 +36747,7 @@
         {
           "name": "Brainstorm",
           "quantity": 1,
-          "usd": "1.98",
+          "usd": "2.04",
           "tcgplayerId": 286133,
           "cardmarketId": 675220
         },
