@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-03-18T20:32:20.099Z",
+  "updatedAt": "2026-03-19T01:16:43.120Z",
   "decks": {
     "ltc-elven-council": {
-      "totalValue": 82.59,
+      "totalValue": 82.42,
       "cardCount": 100,
       "cards": [
         {
           "name": "Heroic Intervention",
           "quantity": 1,
-          "usd": "11.83",
+          "usd": "11.78",
           "tcgplayerId": 499755,
           "cardmarketId": 717477
         },
@@ -29,7 +29,7 @@
         {
           "name": "Asceticism",
           "quantity": 1,
-          "usd": "5.01",
+          "usd": "4.88",
           "tcgplayerId": 499776,
           "cardmarketId": 717470
         },
@@ -367,6 +367,13 @@
           "cardmarketId": 717183
         },
         {
+          "name": "Field of Ruin",
+          "quantity": 1,
+          "usd": "0.26",
+          "tcgplayerId": 498410,
+          "cardmarketId": 716210
+        },
+        {
           "name": "Sail into the West",
           "quantity": 1,
           "usd": "0.26",
@@ -393,13 +400,6 @@
           "usd": "0.25",
           "tcgplayerId": 499569,
           "cardmarketId": 717490
-        },
-        {
-          "name": "Field of Ruin",
-          "quantity": 1,
-          "usd": "0.25",
-          "tcgplayerId": 498410,
-          "cardmarketId": 716210
         },
         {
           "name": "Plea for Power",
@@ -544,7 +544,7 @@
       ]
     },
     "ltc-food-and-fellowship": {
-      "totalValue": 81.84,
+      "totalValue": 81.79,
       "cardCount": 100,
       "cards": [
         {
@@ -641,7 +641,7 @@
         {
           "name": "Generous Ent",
           "quantity": 1,
-          "usd": "1.30",
+          "usd": "1.28",
           "usd_foil": "2.47",
           "tcgplayerId": 498328,
           "cardmarketId": 715942
@@ -690,13 +690,6 @@
           "cardmarketId": 717191
         },
         {
-          "name": "Ghost Quarter",
-          "quantity": 1,
-          "usd": "0.69",
-          "tcgplayerId": 499590,
-          "cardmarketId": 717145
-        },
-        {
           "name": "Woodland Cemetery",
           "quantity": 1,
           "usd": "0.69",
@@ -716,6 +709,13 @@
           "usd": "0.67",
           "tcgplayerId": 499564,
           "cardmarketId": 717449
+        },
+        {
+          "name": "Ghost Quarter",
+          "quantity": 1,
+          "usd": "0.66",
+          "tcgplayerId": 499590,
+          "cardmarketId": 717145
         },
         {
           "name": "Gilded Goose",
@@ -11833,7 +11833,7 @@
       ]
     },
     "dsc-miracle-worker": {
-      "totalValue": 72.6,
+      "totalValue": 72.61,
       "cardCount": 100,
       "cards": [
         {
@@ -12332,7 +12332,7 @@
         {
           "name": "Commander's Sphere",
           "quantity": 1,
-          "usd": "0.22",
+          "usd": "0.23",
           "tcgplayerId": 579088,
           "cardmarketId": 788983
         },
@@ -19979,7 +19979,7 @@
       ]
     },
     "pip-scrappy-survivors": {
-      "totalValue": 95.52,
+      "totalValue": 95.44,
       "cardCount": 100,
       "cards": [
         {
@@ -19993,7 +19993,7 @@
         {
           "name": "Heroic Intervention",
           "quantity": 1,
-          "usd": "11.55",
+          "usd": "11.47",
           "usd_foil": "11.77",
           "tcgplayerId": 539474,
           "cardmarketId": 757711
@@ -27699,13 +27699,13 @@
       ]
     },
     "who-blast-from-the-past": {
-      "totalValue": 75.19,
+      "totalValue": 75.39,
       "cardCount": 100,
       "cards": [
         {
           "name": "Heroic Intervention",
           "quantity": 1,
-          "usd": "12.24",
+          "usd": "12.44",
           "usd_foil": "12.11",
           "tcgplayerId": 520174,
           "cardmarketId": 739095
@@ -34279,7 +34279,7 @@
       ]
     },
     "ltc-riders-of-rohan": {
-      "totalValue": 62.56,
+      "totalValue": 62.57,
       "cardCount": 100,
       "cards": [
         {
@@ -34713,6 +34713,13 @@
           "cardmarketId": 717131
         },
         {
+          "name": "Field of Ruin",
+          "quantity": 1,
+          "usd": "0.26",
+          "tcgplayerId": 498410,
+          "cardmarketId": 716210
+        },
+        {
           "name": "Faramir, Steward of Gondor",
           "quantity": 1,
           "usd": "0.25",
@@ -34725,13 +34732,6 @@
           "usd": "0.25",
           "tcgplayerId": 499569,
           "cardmarketId": 717490
-        },
-        {
-          "name": "Field of Ruin",
-          "quantity": 1,
-          "usd": "0.25",
-          "tcgplayerId": 498410,
-          "cardmarketId": 716210
         },
         {
           "name": "Throne of the High City",
@@ -34874,13 +34874,13 @@
       ]
     },
     "ltc-hosts-of-mordor": {
-      "totalValue": 92.12,
+      "totalValue": 92.1,
       "cardCount": 100,
       "cards": [
         {
           "name": "Cavern-Hoard Dragon",
           "quantity": 1,
-          "usd": "15.12",
+          "usd": "15.08",
           "tcgplayerId": 499732,
           "cardmarketId": 717439
         },
@@ -34943,7 +34943,7 @@
         {
           "name": "Gríma, Saruman's Footman",
           "quantity": 1,
-          "usd": "1.99",
+          "usd": "2.00",
           "tcgplayerId": 499749,
           "cardmarketId": 717215
         },
@@ -35338,6 +35338,13 @@
           "cardmarketId": 717216
         },
         {
+          "name": "Field of Ruin",
+          "quantity": 1,
+          "usd": "0.26",
+          "tcgplayerId": 498410,
+          "cardmarketId": 716210
+        },
+        {
           "name": "Corsairs of Umbar",
           "quantity": 1,
           "usd": "0.25",
@@ -35350,13 +35357,6 @@
           "usd": "0.25",
           "tcgplayerId": 499637,
           "cardmarketId": 717482
-        },
-        {
-          "name": "Field of Ruin",
-          "quantity": 1,
-          "usd": "0.25",
-          "tcgplayerId": 498410,
-          "cardmarketId": 716210
         },
         {
           "name": "Goblin Dark-Dwellers",
