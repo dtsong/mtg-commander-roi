@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-03-19T20:33:13.671Z",
+  "updatedAt": "2026-03-20T01:12:53.573Z",
   "decks": {
     "ltc-elven-council": {
       "totalValue": 83.29,
@@ -544,7 +544,7 @@
       ]
     },
     "ltc-food-and-fellowship": {
-      "totalValue": 80.76,
+      "totalValue": 80.74,
       "cardCount": 100,
       "cards": [
         {
@@ -627,7 +627,7 @@
         {
           "name": "Path to Exile",
           "quantity": 1,
-          "usd": "1.41",
+          "usd": "1.39",
           "tcgplayerId": 499536,
           "cardmarketId": 717367
         },
@@ -4980,7 +4980,7 @@
       ]
     },
     "fic-counter-blitz": {
-      "totalValue": 87.75,
+      "totalValue": 87.76,
       "cardCount": 100,
       "cards": [
         {
@@ -5059,7 +5059,7 @@
         {
           "name": "Path to Exile",
           "quantity": 1,
-          "usd": "1.62",
+          "usd": "1.63",
           "tcgplayerId": 631196,
           "cardmarketId": 824540
         },
@@ -9390,7 +9390,7 @@
       ]
     },
     "drc-living-energy": {
-      "totalValue": 54.15,
+      "totalValue": 54.13,
       "cardCount": 100,
       "cards": [
         {
@@ -9438,7 +9438,7 @@
         {
           "name": "Arcane Denial",
           "quantity": 1,
-          "usd": "1.99",
+          "usd": "1.97",
           "tcgplayerId": 615186,
           "cardmarketId": 807976
         },
@@ -16168,7 +16168,7 @@
       ]
     },
     "m3c-tricky-terrain": {
-      "totalValue": 96.05,
+      "totalValue": 96.06,
       "cardCount": 100,
       "cards": [
         {
@@ -16237,7 +16237,7 @@
         {
           "name": "Arcane Denial",
           "quantity": 1,
-          "usd": "2.10",
+          "usd": "2.11",
           "tcgplayerId": 553261,
           "cardmarketId": 772963
         },
@@ -17540,7 +17540,7 @@
       ]
     },
     "otc-quick-draw": {
-      "totalValue": 139.42,
+      "totalValue": 139.53,
       "cardCount": 100,
       "cards": [
         {
@@ -17640,7 +17640,7 @@
         {
           "name": "Arcane Denial",
           "quantity": 1,
-          "usd": "3.89",
+          "usd": "4.00",
           "tcgplayerId": 545310,
           "cardmarketId": 764635
         },
@@ -22827,7 +22827,7 @@
       ]
     },
     "mkc-deadly-disguise": {
-      "totalValue": 130.19,
+      "totalValue": 130.18,
       "cardCount": 100,
       "cards": [
         {
@@ -22917,7 +22917,7 @@
         {
           "name": "Path to Exile",
           "quantity": 1,
-          "usd": "1.48",
+          "usd": "1.47",
           "tcgplayerId": 535864,
           "cardmarketId": 753566
         },
@@ -30717,7 +30717,7 @@
       ]
     },
     "woc-fae-dominion": {
-      "totalValue": 213.67,
+      "totalValue": 213.76,
       "cardCount": 100,
       "cards": [
         {
@@ -30824,7 +30824,7 @@
         {
           "name": "Arcane Denial",
           "quantity": 1,
-          "usd": "3.23",
+          "usd": "3.32",
           "tcgplayerId": 513690,
           "cardmarketId": 730228
         },
@@ -34272,7 +34272,7 @@
       ]
     },
     "ltc-riders-of-rohan": {
-      "totalValue": 62.65,
+      "totalValue": 62.63,
       "cardCount": 100,
       "cards": [
         {
@@ -34348,7 +34348,7 @@
         {
           "name": "Path to Exile",
           "quantity": 1,
-          "usd": "1.41",
+          "usd": "1.39",
           "tcgplayerId": 499536,
           "cardmarketId": 717367
         },
@@ -34867,7 +34867,7 @@
       ]
     },
     "ltc-hosts-of-mordor": {
-      "totalValue": 90.11,
+      "totalValue": 90.09,
       "cardCount": 100,
       "cards": [
         {
@@ -34915,7 +34915,7 @@
         {
           "name": "Arcane Denial",
           "quantity": 1,
-          "usd": "2.26",
+          "usd": "2.24",
           "tcgplayerId": 499644,
           "cardmarketId": 717144
         },
