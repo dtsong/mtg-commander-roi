@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-03-20T20:28:03.129Z",
+  "updatedAt": "2026-03-21T01:08:13.858Z",
   "decks": {
     "ltc-elven-council": {
       "totalValue": 83.31,
@@ -4415,7 +4415,7 @@
           "name": "Cloud, Ex-SOLDIER",
           "quantity": 1,
           "usd": "1.12",
-          "usd_foil": "0.55",
+          "usd_foil": "0.57",
           "isCommander": true,
           "tcgplayerId": 618871,
           "cardmarketId": 824191
@@ -4979,7 +4979,7 @@
       ]
     },
     "fic-counter-blitz": {
-      "totalValue": 88.1,
+      "totalValue": 88.13,
       "cardCount": 100,
       "cards": [
         {
@@ -5013,7 +5013,7 @@
         {
           "name": "Farewell",
           "quantity": 1,
-          "usd": "5.16",
+          "usd": "5.19",
           "tcgplayerId": 631183,
           "cardmarketId": 824534
         },
@@ -5640,13 +5640,13 @@
       ]
     },
     "fic-scions-and-spellcraft": {
-      "totalValue": 68.74,
+      "totalValue": 68.69,
       "cardCount": 100,
       "cards": [
         {
           "name": "Tataru Taru",
           "quantity": 1,
-          "usd": "7.36",
+          "usd": "7.31",
           "tcgplayerId": 631106,
           "cardmarketId": 824518
         },
@@ -5997,14 +5997,6 @@
           "cardmarketId": 824873
         },
         {
-          "name": "Astrologian's Planisphere",
-          "quantity": 1,
-          "usd": "0.33",
-          "usd_foil": "0.89",
-          "tcgplayerId": 631588,
-          "cardmarketId": 824943
-        },
-        {
           "name": "Bastion of Remembrance",
           "quantity": 1,
           "usd": "0.33",
@@ -6024,6 +6016,21 @@
           "usd": "0.32",
           "tcgplayerId": 631314,
           "cardmarketId": 824826
+        },
+        {
+          "name": "Astrologian's Planisphere",
+          "quantity": 1,
+          "usd": "0.32",
+          "usd_foil": "0.89",
+          "tcgplayerId": 631588,
+          "cardmarketId": 824943
+        },
+        {
+          "name": "Dancer's Chakrams",
+          "quantity": 1,
+          "usd": "0.32",
+          "tcgplayerId": 631100,
+          "cardmarketId": 824505
         },
         {
           "name": "Final Judgment",
@@ -6052,13 +6059,6 @@
           "usd": "0.31",
           "tcgplayerId": 631329,
           "cardmarketId": 824855
-        },
-        {
-          "name": "Dancer's Chakrams",
-          "quantity": 1,
-          "usd": "0.31",
-          "tcgplayerId": 631100,
-          "cardmarketId": 824505
         },
         {
           "name": "Syphon Mind",
@@ -15579,7 +15579,7 @@
       ]
     },
     "m3c-creative-energy": {
-      "totalValue": 62.66,
+      "totalValue": 62.7,
       "cardCount": 100,
       "cards": [
         {
@@ -15606,7 +15606,7 @@
         {
           "name": "Farewell",
           "quantity": 1,
-          "usd": "4.03",
+          "usd": "4.07",
           "tcgplayerId": 552946,
           "cardmarketId": 772259
         },
@@ -23480,7 +23480,7 @@
       ]
     },
     "mkc-blame-game": {
-      "totalValue": 129.35,
+      "totalValue": 129.36,
       "cardCount": 100,
       "cards": [
         {
@@ -23743,6 +23743,13 @@
           "cardmarketId": 753326
         },
         {
+          "name": "Scavenger Grounds",
+          "quantity": 1,
+          "usd": "0.37",
+          "tcgplayerId": 535617,
+          "cardmarketId": 753332
+        },
+        {
           "name": "Steel Hellkite",
           "quantity": 1,
           "usd": "0.37",
@@ -23755,13 +23762,6 @@
           "usd": "0.37",
           "tcgplayerId": 535594,
           "cardmarketId": 753363
-        },
-        {
-          "name": "Scavenger Grounds",
-          "quantity": 1,
-          "usd": "0.36",
-          "tcgplayerId": 535617,
-          "cardmarketId": 753332
         },
         {
           "name": "Solemn Simulacrum",
@@ -24088,7 +24088,7 @@
       ]
     },
     "mkc-deep-clue-sea": {
-      "totalValue": 97.54,
+      "totalValue": 97.42,
       "cardCount": 100,
       "cards": [
         {
@@ -24108,7 +24108,7 @@
         {
           "name": "Farewell",
           "quantity": 1,
-          "usd": "7.40",
+          "usd": "7.28",
           "tcgplayerId": 535709,
           "cardmarketId": 753420
         },
