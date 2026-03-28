@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-03-27T20:34:46.957Z",
+  "updatedAt": "2026-03-28T01:14:59.270Z",
   "decks": {
     "ltc-elven-council": {
       "totalValue": 87.69,
@@ -544,7 +544,7 @@
       ]
     },
     "ltc-food-and-fellowship": {
-      "totalValue": 81.99,
+      "totalValue": 81.91,
       "cardCount": 100,
       "cards": [
         {
@@ -633,18 +633,18 @@
           "cardmarketId": 717438
         },
         {
-          "name": "Swords to Plowshares",
-          "quantity": 1,
-          "usd": "1.32",
-          "tcgplayerId": 499538,
-          "cardmarketId": 717139
-        },
-        {
           "name": "Sol Ring",
           "quantity": 1,
           "usd": "1.29",
           "tcgplayerId": 488278,
           "cardmarketId": 716208
+        },
+        {
+          "name": "Swords to Plowshares",
+          "quantity": 1,
+          "usd": "1.24",
+          "tcgplayerId": 499538,
+          "cardmarketId": 717139
         },
         {
           "name": "Chromatic Lantern",
@@ -2390,7 +2390,7 @@
       ]
     },
     "eoc-counter-intelligence": {
-      "totalValue": 60.13,
+      "totalValue": 60.14,
       "cardCount": 100,
       "cards": [
         {
@@ -2483,7 +2483,7 @@
         {
           "name": "Swords to Plowshares",
           "quantity": 1,
-          "usd": "1.40",
+          "usd": "1.41",
           "tcgplayerId": 642783,
           "cardmarketId": 834237
         },
@@ -5640,7 +5640,7 @@
       ]
     },
     "fic-scions-and-spellcraft": {
-      "totalValue": 67.52,
+      "totalValue": 67.51,
       "cardCount": 100,
       "cards": [
         {
@@ -5739,7 +5739,7 @@
         {
           "name": "Swords to Plowshares",
           "quantity": 1,
-          "usd": "1.44",
+          "usd": "1.43",
           "tcgplayerId": 631137,
           "cardmarketId": 824547
         },
@@ -6923,7 +6923,7 @@
       ]
     },
     "tdc-abzan-armor": {
-      "totalValue": 76.66,
+      "totalValue": 76.61,
       "cardCount": 100,
       "cards": [
         {
@@ -7009,7 +7009,7 @@
         {
           "name": "Swords to Plowshares",
           "quantity": 1,
-          "usd": "1.50",
+          "usd": "1.45",
           "tcgplayerId": 624152,
           "cardmarketId": 818748
         },
@@ -7522,7 +7522,7 @@
       ]
     },
     "tdc-jeskai-striker": {
-      "totalValue": 67.85,
+      "totalValue": 67.8,
       "cardCount": 100,
       "cards": [
         {
@@ -7614,7 +7614,7 @@
         {
           "name": "Swords to Plowshares",
           "quantity": 1,
-          "usd": "1.50",
+          "usd": "1.45",
           "tcgplayerId": 624152,
           "cardmarketId": 818748
         },
@@ -8771,7 +8771,7 @@
       ]
     },
     "tdc-mardu-surge": {
-      "totalValue": 73.56,
+      "totalValue": 73.51,
       "cardCount": 100,
       "cards": [
         {
@@ -8856,7 +8856,7 @@
         {
           "name": "Swords to Plowshares",
           "quantity": 1,
-          "usd": "1.50",
+          "usd": "1.45",
           "tcgplayerId": 624152,
           "cardmarketId": 818748
         },
@@ -14295,7 +14295,7 @@
       ]
     },
     "blc-peace-offering": {
-      "totalValue": 68.21,
+      "totalValue": 68.24,
       "cardCount": 100,
       "cards": [
         {
@@ -14394,7 +14394,7 @@
         {
           "name": "Swords to Plowshares",
           "quantity": 1,
-          "usd": "1.45",
+          "usd": "1.48",
           "tcgplayerId": 559797,
           "cardmarketId": 778967
         },
@@ -25931,7 +25931,7 @@
       ]
     },
     "lcc-blood-rites": {
-      "totalValue": 102.52,
+      "totalValue": 102.53,
       "cardCount": 100,
       "cards": [
         {
@@ -26029,7 +26029,7 @@
         {
           "name": "Swords to Plowshares",
           "quantity": 1,
-          "usd": "1.33",
+          "usd": "1.34",
           "tcgplayerId": 525744,
           "cardmarketId": 743490
         },
@@ -27700,7 +27700,7 @@
       ]
     },
     "who-blast-from-the-past": {
-      "totalValue": 79.44,
+      "totalValue": 79.41,
       "cardCount": 100,
       "cards": [
         {
@@ -27794,7 +27794,7 @@
         {
           "name": "Swords to Plowshares",
           "quantity": 1,
-          "usd": "1.57",
+          "usd": "1.54",
           "usd_foil": "5.81",
           "tcgplayerId": 520167,
           "cardmarketId": 739071
@@ -34279,7 +34279,7 @@
       ]
     },
     "ltc-riders-of-rohan": {
-      "totalValue": 61.69,
+      "totalValue": 61.61,
       "cardCount": 100,
       "cards": [
         {
@@ -34360,18 +34360,18 @@
           "cardmarketId": 717132
         },
         {
-          "name": "Swords to Plowshares",
-          "quantity": 1,
-          "usd": "1.32",
-          "tcgplayerId": 499538,
-          "cardmarketId": 717139
-        },
-        {
           "name": "Sol Ring",
           "quantity": 1,
           "usd": "1.29",
           "tcgplayerId": 488278,
           "cardmarketId": 716208
+        },
+        {
+          "name": "Swords to Plowshares",
+          "quantity": 1,
+          "usd": "1.24",
+          "tcgplayerId": 499538,
+          "cardmarketId": 717139
         },
         {
           "name": "Sulfur Falls",
