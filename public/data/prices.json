@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-03-28T20:25:38.105Z",
+  "updatedAt": "2026-03-29T01:24:22.410Z",
   "decks": {
     "ltc-elven-council": {
       "totalValue": 88.06,
@@ -14291,7 +14291,7 @@
       ]
     },
     "blc-peace-offering": {
-      "totalValue": 68.46,
+      "totalValue": 68.47,
       "cardCount": 100,
       "cards": [
         {
@@ -14833,6 +14833,13 @@
           "cardmarketId": 779197
         },
         {
+          "name": "Realm-Cloaked Giant",
+          "quantity": 1,
+          "usd": "0.25",
+          "tcgplayerId": 559907,
+          "cardmarketId": 779192
+        },
+        {
           "name": "Evolving Wilds",
           "quantity": 1,
           "usd": "0.24",
@@ -14860,13 +14867,6 @@
           "usd_foil": "0.31",
           "tcgplayerId": 559071,
           "cardmarketId": 778132
-        },
-        {
-          "name": "Realm-Cloaked Giant",
-          "quantity": 1,
-          "usd": "0.24",
-          "tcgplayerId": 559907,
-          "cardmarketId": 779192
         },
         {
           "name": "Thriving Grove",
@@ -31267,7 +31267,7 @@
       ]
     },
     "woc-virtue-and-valor": {
-      "totalValue": 102.87,
+      "totalValue": 102.88,
       "cardCount": 100,
       "cards": [
         {
@@ -31661,7 +31661,7 @@
         {
           "name": "Realm-Cloaked Giant",
           "quantity": 1,
-          "usd": "0.26",
+          "usd": "0.27",
           "tcgplayerId": 513665,
           "cardmarketId": 730211
         },
