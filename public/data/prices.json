@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-03-29T20:27:29.935Z",
+  "updatedAt": "2026-03-30T01:25:07.540Z",
   "decks": {
     "ltc-elven-council": {
-      "totalValue": 88.14,
+      "totalValue": 87.95,
       "cardCount": 100,
       "cards": [
         {
@@ -15,7 +15,7 @@
         {
           "name": "Raise the Palisade",
           "quantity": 1,
-          "usd": "12.00",
+          "usd": "11.82",
           "tcgplayerId": 499572,
           "cardmarketId": 717209
         },
@@ -84,18 +84,18 @@
           "cardmarketId": 717421
         },
         {
-          "name": "Sol Ring",
-          "quantity": 1,
-          "usd": "1.60",
-          "tcgplayerId": 488278,
-          "cardmarketId": 716208
-        },
-        {
           "name": "Overwhelming Stampede",
           "quantity": 1,
           "usd": "1.60",
           "tcgplayerId": 499762,
           "cardmarketId": 717365
+        },
+        {
+          "name": "Sol Ring",
+          "quantity": 1,
+          "usd": "1.59",
+          "tcgplayerId": 488278,
+          "cardmarketId": 716208
         },
         {
           "name": "Elvish Piper",
@@ -544,7 +544,7 @@
       ]
     },
     "ltc-food-and-fellowship": {
-      "totalValue": 79.26,
+      "totalValue": 79.23,
       "cardCount": 100,
       "cards": [
         {
@@ -606,7 +606,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.60",
+          "usd": "1.59",
           "tcgplayerId": 488278,
           "cardmarketId": 716208
         },
@@ -635,7 +635,7 @@
         {
           "name": "Swords to Plowshares",
           "quantity": 1,
-          "usd": "1.35",
+          "usd": "1.33",
           "tcgplayerId": 499538,
           "cardmarketId": 717139
         },
@@ -2390,7 +2390,7 @@
       ]
     },
     "eoc-counter-intelligence": {
-      "totalValue": 60.28,
+      "totalValue": 60.25,
       "cardCount": 100,
       "cards": [
         {
@@ -2481,18 +2481,18 @@
           "cardmarketId": 834083
         },
         {
-          "name": "Swords to Plowshares",
-          "quantity": 1,
-          "usd": "1.40",
-          "tcgplayerId": 642783,
-          "cardmarketId": 834237
-        },
-        {
           "name": "Uthros Research Craft",
           "quantity": 1,
           "usd": "1.37",
           "tcgplayerId": 642790,
           "cardmarketId": 834244
+        },
+        {
+          "name": "Swords to Plowshares",
+          "quantity": 1,
+          "usd": "1.37",
+          "tcgplayerId": 642783,
+          "cardmarketId": 834237
         },
         {
           "name": "Cloud Key",
@@ -3661,7 +3661,7 @@
       ]
     },
     "fic-revival-trance": {
-      "totalValue": 61.72,
+      "totalValue": 61.7,
       "cardCount": 100,
       "cards": [
         {
@@ -3824,7 +3824,7 @@
         {
           "name": "Arcane Signet",
           "quantity": 1,
-          "usd": "0.47",
+          "usd": "0.46",
           "tcgplayerId": 631491,
           "cardmarketId": 824767
         },
@@ -3922,9 +3922,9 @@
         {
           "name": "Command Tower",
           "quantity": 1,
-          "usd": "0.35",
-          "tcgplayerId": 631164,
-          "cardmarketId": 824884
+          "usd": "0.34",
+          "tcgplayerId": 631301,
+          "cardmarketId": 824885
         },
         {
           "name": "Desolate Mire",
@@ -4317,7 +4317,7 @@
       ]
     },
     "fic-limit-break": {
-      "totalValue": 77.28,
+      "totalValue": 77.26,
       "cardCount": 100,
       "cards": [
         {
@@ -4515,7 +4515,7 @@
         {
           "name": "Arcane Signet",
           "quantity": 1,
-          "usd": "0.47",
+          "usd": "0.46",
           "tcgplayerId": 631491,
           "cardmarketId": 824767
         },
@@ -4639,13 +4639,6 @@
           "cardmarketId": 824817
         },
         {
-          "name": "Command Tower",
-          "quantity": 1,
-          "usd": "0.35",
-          "tcgplayerId": 631164,
-          "cardmarketId": 824884
-        },
-        {
           "name": "Bronze Guardian",
           "quantity": 1,
           "usd": "0.34",
@@ -4658,6 +4651,13 @@
           "usd": "0.34",
           "tcgplayerId": 631111,
           "cardmarketId": 824629
+        },
+        {
+          "name": "Command Tower",
+          "quantity": 1,
+          "usd": "0.34",
+          "tcgplayerId": 631301,
+          "cardmarketId": 824885
         },
         {
           "name": "Cloud's Limit Break",
@@ -4980,7 +4980,7 @@
       ]
     },
     "fic-counter-blitz": {
-      "totalValue": 86.14,
+      "totalValue": 86.12,
       "cardCount": 100,
       "cards": [
         {
@@ -5169,18 +5169,18 @@
           "cardmarketId": 824874
         },
         {
-          "name": "Arcane Signet",
-          "quantity": 1,
-          "usd": "0.47",
-          "tcgplayerId": 631491,
-          "cardmarketId": 824767
-        },
-        {
           "name": "Protection Magic",
           "quantity": 1,
           "usd": "0.46",
           "tcgplayerId": 631154,
           "cardmarketId": 824512
+        },
+        {
+          "name": "Arcane Signet",
+          "quantity": 1,
+          "usd": "0.46",
+          "tcgplayerId": 631491,
+          "cardmarketId": 824767
         },
         {
           "name": "Brushland",
@@ -5232,13 +5232,6 @@
           "cardmarketId": 824647
         },
         {
-          "name": "Command Tower",
-          "quantity": 1,
-          "usd": "0.35",
-          "tcgplayerId": 631164,
-          "cardmarketId": 824884
-        },
-        {
           "name": "Flooded Grove",
           "quantity": 1,
           "usd": "0.35",
@@ -5272,6 +5265,13 @@
           "usd": "0.34",
           "tcgplayerId": 631325,
           "cardmarketId": 824728
+        },
+        {
+          "name": "Command Tower",
+          "quantity": 1,
+          "usd": "0.34",
+          "tcgplayerId": 631301,
+          "cardmarketId": 824885
         },
         {
           "name": "Resourceful Defense",
@@ -5641,7 +5641,7 @@
       ]
     },
     "fic-scions-and-spellcraft": {
-      "totalValue": 67.9,
+      "totalValue": 67.88,
       "cardCount": 100,
       "cards": [
         {
@@ -5811,7 +5811,7 @@
         {
           "name": "Arcane Signet",
           "quantity": 1,
-          "usd": "0.47",
+          "usd": "0.46",
           "tcgplayerId": 631491,
           "cardmarketId": 824767
         },
@@ -5928,18 +5928,18 @@
           "cardmarketId": 824578
         },
         {
-          "name": "Command Tower",
-          "quantity": 1,
-          "usd": "0.35",
-          "tcgplayerId": 631164,
-          "cardmarketId": 824884
-        },
-        {
           "name": "Rite of Replication",
           "quantity": 1,
           "usd": "0.35",
           "tcgplayerId": 631198,
           "cardmarketId": 824572
+        },
+        {
+          "name": "Command Tower",
+          "quantity": 1,
+          "usd": "0.34",
+          "tcgplayerId": 631301,
+          "cardmarketId": 824885
         },
         {
           "name": "Desolate Mire",
@@ -6291,7 +6291,7 @@
       ]
     },
     "tdc-temur-roar": {
-      "totalValue": 71.25,
+      "totalValue": 71.26,
       "cardCount": 100,
       "cards": [
         {
@@ -6370,7 +6370,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.64",
+          "usd": "1.67",
           "tcgplayerId": 624049,
           "cardmarketId": 818720
         },
@@ -6438,18 +6438,18 @@
           "cardmarketId": 818944
         },
         {
-          "name": "Arcane Signet",
-          "quantity": 1,
-          "usd": "0.57",
-          "tcgplayerId": 624048,
-          "cardmarketId": 818719
-        },
-        {
           "name": "Farseek",
           "quantity": 1,
           "usd": "0.56",
           "tcgplayerId": 624453,
           "cardmarketId": 818838
+        },
+        {
+          "name": "Arcane Signet",
+          "quantity": 1,
+          "usd": "0.55",
+          "tcgplayerId": 624048,
+          "cardmarketId": 818719
         },
         {
           "name": "Thundermane Dragon",
@@ -7000,7 +7000,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.64",
+          "usd": "1.67",
           "tcgplayerId": 624049,
           "cardmarketId": 818720
         },
@@ -7021,7 +7021,7 @@
         {
           "name": "Swords to Plowshares",
           "quantity": 1,
-          "usd": "1.35",
+          "usd": "1.34",
           "tcgplayerId": 624152,
           "cardmarketId": 818748
         },
@@ -7105,7 +7105,7 @@
         {
           "name": "Arcane Signet",
           "quantity": 1,
-          "usd": "0.57",
+          "usd": "0.55",
           "tcgplayerId": 624048,
           "cardmarketId": 818719
         },
@@ -7521,7 +7521,7 @@
       ]
     },
     "tdc-jeskai-striker": {
-      "totalValue": 68.95,
+      "totalValue": 68.93,
       "cardCount": 100,
       "cards": [
         {
@@ -7534,7 +7534,7 @@
         {
           "name": "Ghostly Prison",
           "quantity": 1,
-          "usd": "6.21",
+          "usd": "6.16",
           "tcgplayerId": 624149,
           "cardmarketId": 818730
         },
@@ -7588,6 +7588,13 @@
           "cardmarketId": 818822
         },
         {
+          "name": "Sol Ring",
+          "quantity": 1,
+          "usd": "1.67",
+          "tcgplayerId": 624049,
+          "cardmarketId": 818720
+        },
+        {
           "name": "Shiko and Narset, Unified",
           "quantity": 1,
           "usd": "1.64",
@@ -7597,23 +7604,16 @@
           "cardmarketId": 817902
         },
         {
-          "name": "Sol Ring",
-          "quantity": 1,
-          "usd": "1.64",
-          "tcgplayerId": 624049,
-          "cardmarketId": 818720
-        },
-        {
           "name": "Ponder",
           "quantity": 1,
-          "usd": "1.60",
+          "usd": "1.63",
           "tcgplayerId": 624168,
           "cardmarketId": 818771
         },
         {
           "name": "Swords to Plowshares",
           "quantity": 1,
-          "usd": "1.35",
+          "usd": "1.34",
           "tcgplayerId": 624152,
           "cardmarketId": 818748
         },
@@ -7691,7 +7691,7 @@
         {
           "name": "Arcane Signet",
           "quantity": 1,
-          "usd": "0.57",
+          "usd": "0.55",
           "tcgplayerId": 624048,
           "cardmarketId": 818719
         },
@@ -8148,7 +8148,7 @@
       ]
     },
     "tdc-sultai-arisen": {
-      "totalValue": 79.85,
+      "totalValue": 79.86,
       "cardCount": 100,
       "cards": [
         {
@@ -8226,7 +8226,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.64",
+          "usd": "1.67",
           "tcgplayerId": 624049,
           "cardmarketId": 818720
         },
@@ -8322,18 +8322,18 @@
           "cardmarketId": 818940
         },
         {
-          "name": "Arcane Signet",
-          "quantity": 1,
-          "usd": "0.57",
-          "tcgplayerId": 624048,
-          "cardmarketId": 818719
-        },
-        {
           "name": "Farseek",
           "quantity": 1,
           "usd": "0.56",
           "tcgplayerId": 624453,
           "cardmarketId": 818838
+        },
+        {
+          "name": "Arcane Signet",
+          "quantity": 1,
+          "usd": "0.55",
+          "tcgplayerId": 624048,
+          "cardmarketId": 818719
         },
         {
           "name": "Cultivate",
@@ -8847,7 +8847,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.64",
+          "usd": "1.67",
           "tcgplayerId": 624049,
           "cardmarketId": 818720
         },
@@ -8861,7 +8861,7 @@
         {
           "name": "Swords to Plowshares",
           "quantity": 1,
-          "usd": "1.35",
+          "usd": "1.34",
           "tcgplayerId": 624152,
           "cardmarketId": 818748
         },
@@ -8974,7 +8974,7 @@
         {
           "name": "Arcane Signet",
           "quantity": 1,
-          "usd": "0.57",
+          "usd": "0.55",
           "tcgplayerId": 624048,
           "cardmarketId": 818719
         },
@@ -10000,7 +10000,7 @@
       ]
     },
     "drc-eternal-might": {
-      "totalValue": 57.14,
+      "totalValue": 57.15,
       "cardCount": 100,
       "cards": [
         {
@@ -10090,7 +10090,7 @@
         {
           "name": "Maskwood Nexus",
           "quantity": 1,
-          "usd": "1.12",
+          "usd": "1.13",
           "tcgplayerId": 615110,
           "cardmarketId": 808376
         },
@@ -10626,7 +10626,7 @@
       ]
     },
     "dsc-endless-punishment": {
-      "totalValue": 148.42,
+      "totalValue": 148.41,
       "cardCount": 100,
       "cards": [
         {
@@ -10948,18 +10948,18 @@
           "cardmarketId": 788804
         },
         {
-          "name": "Mayhem Devil",
-          "quantity": 1,
-          "usd": "0.40",
-          "tcgplayerId": 579043,
-          "cardmarketId": 788964
-        },
-        {
           "name": "Command Tower",
           "quantity": 1,
           "usd": "0.39",
           "tcgplayerId": 577883,
           "cardmarketId": 787244
+        },
+        {
+          "name": "Mayhem Devil",
+          "quantity": 1,
+          "usd": "0.39",
+          "tcgplayerId": 579043,
+          "cardmarketId": 788964
         },
         {
           "name": "Tainted Peak",
@@ -12460,7 +12460,7 @@
       ]
     },
     "blc-squirreled-away": {
-      "totalValue": 69.76,
+      "totalValue": 69.8,
       "cardCount": 100,
       "cards": [
         {
@@ -12545,7 +12545,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.56",
+          "usd": "1.58",
           "tcgplayerId": 559736,
           "cardmarketId": 778981
         },
@@ -12658,7 +12658,7 @@
         {
           "name": "Arcane Signet",
           "quantity": 1,
-          "usd": "0.52",
+          "usd": "0.53",
           "tcgplayerId": 559719,
           "cardmarketId": 778979
         },
@@ -12811,6 +12811,13 @@
           "cardmarketId": 779227
         },
         {
+          "name": "Command Tower",
+          "quantity": 1,
+          "usd": "0.33",
+          "tcgplayerId": 559724,
+          "cardmarketId": 778982
+        },
+        {
           "name": "Golgari Rot Farm",
           "quantity": 1,
           "usd": "0.33",
@@ -12844,13 +12851,6 @@
           "usd": "0.32",
           "tcgplayerId": 560004,
           "cardmarketId": 778951
-        },
-        {
-          "name": "Command Tower",
-          "quantity": 1,
-          "usd": "0.32",
-          "tcgplayerId": 559724,
-          "cardmarketId": 778982
         },
         {
           "name": "Tear Asunder",
@@ -13063,7 +13063,7 @@
       ]
     },
     "blc-family-matters": {
-      "totalValue": 59.35,
+      "totalValue": 59.39,
       "cardCount": 100,
       "cards": [
         {
@@ -13112,7 +13112,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.56",
+          "usd": "1.58",
           "tcgplayerId": 559736,
           "cardmarketId": 778981
         },
@@ -13196,7 +13196,7 @@
         {
           "name": "Arcane Signet",
           "quantity": 1,
-          "usd": "0.52",
+          "usd": "0.53",
           "tcgplayerId": 559719,
           "cardmarketId": 778979
         },
@@ -13400,6 +13400,13 @@
           "cardmarketId": 779250
         },
         {
+          "name": "Command Tower",
+          "quantity": 1,
+          "usd": "0.33",
+          "tcgplayerId": 559724,
+          "cardmarketId": 778982
+        },
+        {
           "name": "Terramorphic Expanse",
           "quantity": 1,
           "usd": "0.33",
@@ -13426,13 +13433,6 @@
           "usd": "0.32",
           "tcgplayerId": 559861,
           "cardmarketId": 779393
-        },
-        {
-          "name": "Command Tower",
-          "quantity": 1,
-          "usd": "0.32",
-          "tcgplayerId": 559724,
-          "cardmarketId": 778982
         },
         {
           "name": "Inferno Titan",
@@ -13698,7 +13698,7 @@
       ]
     },
     "blc-animated-army": {
-      "totalValue": 66.9,
+      "totalValue": 66.95,
       "cardCount": 100,
       "cards": [
         {
@@ -13769,7 +13769,7 @@
         {
           "name": "Tendershoot Dryad",
           "quantity": 1,
-          "usd": "2.17",
+          "usd": "2.16",
           "tcgplayerId": 559843,
           "cardmarketId": 779191
         },
@@ -13783,7 +13783,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.56",
+          "usd": "1.58",
           "tcgplayerId": 559736,
           "cardmarketId": 778981
         },
@@ -13804,7 +13804,7 @@
         {
           "name": "Gilded Lotus",
           "quantity": 1,
-          "usd": "0.98",
+          "usd": "1.00",
           "tcgplayerId": 559914,
           "cardmarketId": 779291
         },
@@ -13874,7 +13874,7 @@
         {
           "name": "Arcane Signet",
           "quantity": 1,
-          "usd": "0.52",
+          "usd": "0.53",
           "tcgplayerId": 559719,
           "cardmarketId": 778979
         },
@@ -14077,6 +14077,13 @@
           "cardmarketId": 779280
         },
         {
+          "name": "Command Tower",
+          "quantity": 1,
+          "usd": "0.33",
+          "tcgplayerId": 559724,
+          "cardmarketId": 778982
+        },
+        {
           "name": "Terramorphic Expanse",
           "quantity": 1,
           "usd": "0.33",
@@ -14110,13 +14117,6 @@
           "usd": "0.32",
           "tcgplayerId": 560242,
           "cardmarketId": 779365
-        },
-        {
-          "name": "Command Tower",
-          "quantity": 1,
-          "usd": "0.32",
-          "tcgplayerId": 559724,
-          "cardmarketId": 778982
         },
         {
           "name": "Forgotten Cave",
@@ -14294,7 +14294,7 @@
       ]
     },
     "blc-peace-offering": {
-      "totalValue": 68.4,
+      "totalValue": 68.47,
       "cardCount": 100,
       "cards": [
         {
@@ -14386,14 +14386,14 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.56",
+          "usd": "1.58",
           "tcgplayerId": 559736,
           "cardmarketId": 778981
         },
         {
           "name": "Swords to Plowshares",
           "quantity": 1,
-          "usd": "1.51",
+          "usd": "1.55",
           "tcgplayerId": 559797,
           "cardmarketId": 778967
         },
@@ -14499,7 +14499,7 @@
         {
           "name": "Arcane Signet",
           "quantity": 1,
-          "usd": "0.52",
+          "usd": "0.53",
           "tcgplayerId": 559719,
           "cardmarketId": 778979
         },
@@ -14581,18 +14581,18 @@
           "cardmarketId": 778960
         },
         {
-          "name": "Simic Ascendancy",
-          "quantity": 1,
-          "usd": "0.39",
-          "tcgplayerId": 559899,
-          "cardmarketId": 779173
-        },
-        {
           "name": "Rites of Flourishing",
           "quantity": 1,
           "usd": "0.38",
           "tcgplayerId": 559898,
           "cardmarketId": 779388
+        },
+        {
+          "name": "Simic Ascendancy",
+          "quantity": 1,
+          "usd": "0.38",
+          "tcgplayerId": 559899,
+          "cardmarketId": 779173
         },
         {
           "name": "Glacial Fortress",
@@ -14686,6 +14686,13 @@
           "cardmarketId": 779221
         },
         {
+          "name": "Command Tower",
+          "quantity": 1,
+          "usd": "0.33",
+          "tcgplayerId": 559724,
+          "cardmarketId": 778982
+        },
+        {
           "name": "Terramorphic Expanse",
           "quantity": 1,
           "usd": "0.33",
@@ -14720,13 +14727,6 @@
           "usd": "0.33",
           "tcgplayerId": 559929,
           "cardmarketId": 779343
-        },
-        {
-          "name": "Command Tower",
-          "quantity": 1,
-          "usd": "0.32",
-          "tcgplayerId": 559724,
-          "cardmarketId": 778982
         },
         {
           "name": "Long River's Pull",
@@ -17546,7 +17546,7 @@
       ]
     },
     "otc-quick-draw": {
-      "totalValue": 140.74,
+      "totalValue": 140.71,
       "cardCount": 100,
       "cards": [
         {
@@ -17573,7 +17573,7 @@
         {
           "name": "Niv-Mizzet, Parun",
           "quantity": 1,
-          "usd": "5.85",
+          "usd": "5.82",
           "tcgplayerId": 545223,
           "cardmarketId": 764794
         },
@@ -19367,7 +19367,7 @@
       ]
     },
     "otc-desert-bloom": {
-      "totalValue": 100.97,
+      "totalValue": 100.95,
       "cardCount": 100,
       "cards": [
         {
@@ -19492,7 +19492,7 @@
         {
           "name": "Avenger of Zendikar",
           "quantity": 1,
-          "usd": "1.41",
+          "usd": "1.39",
           "tcgplayerId": 545077,
           "cardmarketId": 764963
         },
@@ -20066,7 +20066,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "2.06",
+          "usd": "2.07",
           "usd_foil": "5.74",
           "tcgplayerId": 539393,
           "cardmarketId": 757714
@@ -20203,7 +20203,7 @@
         {
           "name": "Arcane Signet",
           "quantity": 1,
-          "usd": "0.52",
+          "usd": "0.51",
           "usd_foil": "6.34",
           "tcgplayerId": 539403,
           "cardmarketId": 757713
@@ -20863,7 +20863,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "2.06",
+          "usd": "2.07",
           "usd_foil": "5.74",
           "tcgplayerId": 539393,
           "cardmarketId": 757714
@@ -20976,7 +20976,7 @@
         {
           "name": "Arcane Signet",
           "quantity": 1,
-          "usd": "0.52",
+          "usd": "0.51",
           "usd_foil": "6.34",
           "tcgplayerId": 539403,
           "cardmarketId": 757713
@@ -21461,7 +21461,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "2.06",
+          "usd": "2.07",
           "usd_foil": "5.74",
           "tcgplayerId": 539393,
           "cardmarketId": 757714
@@ -21539,20 +21539,20 @@
           "cardmarketId": 758271
         },
         {
-          "name": "Arcane Signet",
-          "quantity": 1,
-          "usd": "0.52",
-          "usd_foil": "6.34",
-          "tcgplayerId": 539403,
-          "cardmarketId": 757713
-        },
-        {
           "name": "Steel Overseer",
           "quantity": 1,
           "usd": "0.51",
           "usd_foil": "3.87",
           "tcgplayerId": 540982,
           "cardmarketId": 758287
+        },
+        {
+          "name": "Arcane Signet",
+          "quantity": 1,
+          "usd": "0.51",
+          "usd_foil": "6.34",
+          "tcgplayerId": 539403,
+          "cardmarketId": 757713
         },
         {
           "name": "Ash Barrens",
@@ -22236,7 +22236,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "2.06",
+          "usd": "2.07",
           "usd_foil": "5.74",
           "tcgplayerId": 539393,
           "cardmarketId": 757714
@@ -22348,7 +22348,7 @@
         {
           "name": "Arcane Signet",
           "quantity": 1,
-          "usd": "0.52",
+          "usd": "0.51",
           "usd_foil": "6.34",
           "tcgplayerId": 539403,
           "cardmarketId": 757713
@@ -25312,7 +25312,7 @@
       ]
     },
     "lcc-ahoy-mateys": {
-      "totalValue": 69.16,
+      "totalValue": 69.14,
       "cardCount": 100,
       "cards": [
         {
@@ -25367,7 +25367,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.59",
+          "usd": "1.57",
           "tcgplayerId": 525779,
           "cardmarketId": 743665
         },
@@ -25932,7 +25932,7 @@
       ]
     },
     "lcc-blood-rites": {
-      "totalValue": 101.96,
+      "totalValue": 101.94,
       "cardCount": 100,
       "cards": [
         {
@@ -26016,7 +26016,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.59",
+          "usd": "1.57",
           "tcgplayerId": 525779,
           "cardmarketId": 743665
         },
@@ -26505,7 +26505,7 @@
       ]
     },
     "lcc-explorers-of-the-deep": {
-      "totalValue": 83.34,
+      "totalValue": 83.32,
       "cardCount": 100,
       "cards": [
         {
@@ -26602,7 +26602,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.59",
+          "usd": "1.57",
           "tcgplayerId": 525779,
           "cardmarketId": 743665
         },
@@ -27085,7 +27085,7 @@
       ]
     },
     "lcc-veloci-ramp-tor": {
-      "totalValue": 85.27,
+      "totalValue": 85.25,
       "cardCount": 100,
       "cards": [
         {
@@ -27175,7 +27175,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.59",
+          "usd": "1.57",
           "tcgplayerId": 525779,
           "cardmarketId": 743665
         },
@@ -27701,7 +27701,7 @@
       ]
     },
     "who-blast-from-the-past": {
-      "totalValue": 78.82,
+      "totalValue": 78.8,
       "cardCount": 100,
       "cards": [
         {
@@ -27787,7 +27787,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.80",
+          "usd": "1.78",
           "usd_foil": "5.06",
           "tcgplayerId": 519305,
           "cardmarketId": 739108
@@ -28466,7 +28466,7 @@
       ]
     },
     "who-timey-wimey": {
-      "totalValue": 136.67,
+      "totalValue": 136.65,
       "cardCount": 100,
       "cards": [
         {
@@ -28624,7 +28624,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.80",
+          "usd": "1.78",
           "usd_foil": "5.06",
           "tcgplayerId": 519305,
           "cardmarketId": 739108
@@ -29216,7 +29216,7 @@
       ]
     },
     "who-paradox-power": {
-      "totalValue": 82.48,
+      "totalValue": 82.45,
       "cardCount": 100,
       "cards": [
         {
@@ -29284,20 +29284,20 @@
           "cardmarketId": 739353
         },
         {
-          "name": "Sol Ring",
-          "quantity": 1,
-          "usd": "1.80",
-          "usd_foil": "5.06",
-          "tcgplayerId": 519305,
-          "cardmarketId": 739108
-        },
-        {
           "name": "Cursed Mirror",
           "quantity": 1,
           "usd": "1.79",
           "usd_foil": "9.59",
           "tcgplayerId": 519502,
           "cardmarketId": 739088
+        },
+        {
+          "name": "Sol Ring",
+          "quantity": 1,
+          "usd": "1.78",
+          "usd_foil": "5.06",
+          "tcgplayerId": 519305,
+          "cardmarketId": 739108
         },
         {
           "name": "Carpet of Flowers",
@@ -29310,7 +29310,7 @@
         {
           "name": "Ponder",
           "quantity": 1,
-          "usd": "1.66",
+          "usd": "1.65",
           "usd_foil": "5.91",
           "tcgplayerId": 519494,
           "cardmarketId": 739077
@@ -29949,7 +29949,7 @@
       ]
     },
     "who-masters-of-evil": {
-      "totalValue": 131,
+      "totalValue": 130.98,
       "cardCount": 100,
       "cards": [
         {
@@ -30115,7 +30115,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.80",
+          "usd": "1.78",
           "usd_foil": "5.06",
           "tcgplayerId": 519305,
           "cardmarketId": 739108
@@ -31789,7 +31789,7 @@
       ]
     },
     "cmc-eldrazi-unbound": {
-      "totalValue": 264.56,
+      "totalValue": 264.63,
       "cardCount": 100,
       "cards": [
         {
@@ -31846,7 +31846,7 @@
         {
           "name": "Kaldra Compleat",
           "quantity": 1,
-          "usd": "7.62",
+          "usd": "7.69",
           "tcgplayerId": 506681,
           "cardmarketId": 723151
         },
@@ -32409,7 +32409,7 @@
       ]
     },
     "cmc-enduring-enchantments": {
-      "totalValue": 153.13,
+      "totalValue": 153.09,
       "cardCount": 100,
       "cards": [
         {
@@ -32437,7 +32437,7 @@
         {
           "name": "Ghoulish Impetus",
           "quantity": 1,
-          "usd": "7.34",
+          "usd": "7.30",
           "tcgplayerId": 505962,
           "cardmarketId": 723057
         },
@@ -34278,7 +34278,7 @@
       ]
     },
     "ltc-riders-of-rohan": {
-      "totalValue": 61.91,
+      "totalValue": 61.88,
       "cardCount": 100,
       "cards": [
         {
@@ -34340,7 +34340,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.60",
+          "usd": "1.59",
           "tcgplayerId": 488278,
           "cardmarketId": 716208
         },
@@ -34368,7 +34368,7 @@
         {
           "name": "Swords to Plowshares",
           "quantity": 1,
-          "usd": "1.35",
+          "usd": "1.33",
           "tcgplayerId": 499538,
           "cardmarketId": 717139
         },
@@ -34873,7 +34873,7 @@
       ]
     },
     "ltc-hosts-of-mordor": {
-      "totalValue": 82.91,
+      "totalValue": 82.9,
       "cardCount": 100,
       "cards": [
         {
@@ -34956,7 +34956,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.60",
+          "usd": "1.59",
           "tcgplayerId": 488278,
           "cardmarketId": 716208
         },
@@ -36556,7 +36556,7 @@
       ]
     },
     "40k-the-ruinous-powers": {
-      "totalValue": 231.08,
+      "totalValue": 231.11,
       "cardCount": 100,
       "cards": [
         {
@@ -36618,7 +36618,7 @@
         {
           "name": "Dark Ritual",
           "quantity": 1,
-          "usd": "7.23",
+          "usd": "7.26",
           "tcgplayerId": 286135,
           "cardmarketId": 675229
         },
