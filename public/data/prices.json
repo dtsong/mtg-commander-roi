@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-03-30T20:40:54.175Z",
+  "updatedAt": "2026-03-31T01:22:31.661Z",
   "decks": {
     "ltc-elven-council": {
       "totalValue": 88.16,
@@ -7524,7 +7524,7 @@
       ]
     },
     "tdc-jeskai-striker": {
-      "totalValue": 68.8,
+      "totalValue": 68.76,
       "cardCount": 100,
       "cards": [
         {
@@ -7544,7 +7544,7 @@
         {
           "name": "Reliquary Tower",
           "quantity": 1,
-          "usd": "4.50",
+          "usd": "4.46",
           "tcgplayerId": 624214,
           "cardmarketId": 818948
         },
@@ -8151,7 +8151,7 @@
       ]
     },
     "tdc-sultai-arisen": {
-      "totalValue": 79.79,
+      "totalValue": 79.78,
       "cardCount": 100,
       "cards": [
         {
@@ -8180,7 +8180,7 @@
         {
           "name": "Command Beacon",
           "quantity": 1,
-          "usd": "5.51",
+          "usd": "5.50",
           "tcgplayerId": 624449,
           "cardmarketId": 818920
         },
@@ -11833,7 +11833,7 @@
       ]
     },
     "dsc-miracle-worker": {
-      "totalValue": 80.48,
+      "totalValue": 80.46,
       "cardCount": 100,
       "cards": [
         {
@@ -11952,7 +11952,7 @@
         {
           "name": "Bojuka Bog",
           "quantity": 1,
-          "usd": "1.10",
+          "usd": "1.08",
           "tcgplayerId": 579144,
           "cardmarketId": 789003
         },
@@ -12460,7 +12460,7 @@
       ]
     },
     "blc-squirreled-away": {
-      "totalValue": 70.31,
+      "totalValue": 70.29,
       "cardCount": 100,
       "cards": [
         {
@@ -12510,7 +12510,7 @@
         {
           "name": "Toski, Bearer of Secrets",
           "quantity": 1,
-          "usd": "2.80",
+          "usd": "2.78",
           "tcgplayerId": 559947,
           "cardmarketId": 779277
         },
@@ -13698,7 +13698,7 @@
       ]
     },
     "blc-animated-army": {
-      "totalValue": 67.44,
+      "totalValue": 67.47,
       "cardCount": 100,
       "cards": [
         {
@@ -13711,7 +13711,7 @@
         {
           "name": "Reliquary Tower",
           "quantity": 1,
-          "usd": "4.91",
+          "usd": "4.94",
           "tcgplayerId": 559973,
           "cardmarketId": 779397
         },
@@ -14294,13 +14294,13 @@
       ]
     },
     "blc-peace-offering": {
-      "totalValue": 68.66,
+      "totalValue": 68.69,
       "cardCount": 100,
       "cards": [
         {
           "name": "Reliquary Tower",
           "quantity": 1,
-          "usd": "4.91",
+          "usd": "4.94",
           "tcgplayerId": 559973,
           "cardmarketId": 779397
         },
@@ -16843,7 +16843,7 @@
       ]
     },
     "m3c-eldrazi-incursion": {
-      "totalValue": 114.23,
+      "totalValue": 114.29,
       "cardCount": 100,
       "cards": [
         {
@@ -16898,7 +16898,7 @@
         {
           "name": "Reliquary Tower",
           "quantity": 1,
-          "usd": "4.01",
+          "usd": "4.07",
           "tcgplayerId": 553111,
           "cardmarketId": 773100
         },
@@ -31789,7 +31789,7 @@
       ]
     },
     "cmc-eldrazi-unbound": {
-      "totalValue": 265.71,
+      "totalValue": 265.82,
       "cardCount": 100,
       "cards": [
         {
@@ -31873,19 +31873,19 @@
           "cardmarketId": 723114
         },
         {
+          "name": "Reliquary Tower",
+          "quantity": 1,
+          "usd": "4.75",
+          "usd_foil": "5.34",
+          "tcgplayerId": 504617,
+          "cardmarketId": 722431
+        },
+        {
           "name": "Not of This World",
           "quantity": 1,
           "usd": "4.75",
           "tcgplayerId": 506674,
           "cardmarketId": 723134
-        },
-        {
-          "name": "Reliquary Tower",
-          "quantity": 1,
-          "usd": "4.64",
-          "usd_foil": "5.34",
-          "tcgplayerId": 504617,
-          "cardmarketId": 722431
         },
         {
           "name": "Kozilek, the Great Distortion",
@@ -33007,7 +33007,7 @@
       ]
     },
     "cmc-planeswalker-party": {
-      "totalValue": 128.13,
+      "totalValue": 128.24,
       "cardCount": 100,
       "cards": [
         {
@@ -33055,7 +33055,7 @@
         {
           "name": "Reliquary Tower",
           "quantity": 1,
-          "usd": "4.64",
+          "usd": "4.75",
           "usd_foil": "5.34",
           "tcgplayerId": 504617,
           "cardmarketId": 722431
@@ -34873,7 +34873,7 @@
       ]
     },
     "ltc-hosts-of-mordor": {
-      "totalValue": 82.1,
+      "totalValue": 82.13,
       "cardCount": 100,
       "cards": [
         {
@@ -34982,18 +34982,18 @@
           "cardmarketId": 717411
         },
         {
+          "name": "Anger",
+          "quantity": 1,
+          "usd": "1.14",
+          "tcgplayerId": 499640,
+          "cardmarketId": 717212
+        },
+        {
           "name": "Crumbling Necropolis",
           "quantity": 1,
           "usd": "1.14",
           "tcgplayerId": 499699,
           "cardmarketId": 717340
-        },
-        {
-          "name": "Anger",
-          "quantity": 1,
-          "usd": "1.11",
-          "tcgplayerId": 499640,
-          "cardmarketId": 717212
         },
         {
           "name": "Notion Thief",
