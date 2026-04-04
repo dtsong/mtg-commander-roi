@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-03T20:31:43.432Z",
+  "updatedAt": "2026-04-04T01:16:05.917Z",
   "decks": {
     "ltc-elven-council": {
       "totalValue": 88.65,
@@ -6291,7 +6291,7 @@
       ]
     },
     "tdc-temur-roar": {
-      "totalValue": 69.35,
+      "totalValue": 69.36,
       "cardCount": 100,
       "cards": [
         {
@@ -6405,7 +6405,7 @@
         {
           "name": "Command Tower",
           "quantity": 1,
-          "usd": "1.09",
+          "usd": "1.10",
           "tcgplayerId": 623982,
           "cardmarketId": 818721
         },
@@ -6922,7 +6922,7 @@
       ]
     },
     "tdc-abzan-armor": {
-      "totalValue": 75.57,
+      "totalValue": 75.58,
       "cardCount": 100,
       "cards": [
         {
@@ -7043,7 +7043,7 @@
         {
           "name": "Command Tower",
           "quantity": 1,
-          "usd": "1.09",
+          "usd": "1.10",
           "tcgplayerId": 623982,
           "cardmarketId": 818721
         },
@@ -7522,7 +7522,7 @@
       ]
     },
     "tdc-jeskai-striker": {
-      "totalValue": 67.53,
+      "totalValue": 67.54,
       "cardCount": 100,
       "cards": [
         {
@@ -7642,7 +7642,7 @@
         {
           "name": "Command Tower",
           "quantity": 1,
-          "usd": "1.09",
+          "usd": "1.10",
           "tcgplayerId": 623982,
           "cardmarketId": 818721
         },
@@ -8149,7 +8149,7 @@
       ]
     },
     "tdc-sultai-arisen": {
-      "totalValue": 80.62,
+      "totalValue": 80.63,
       "cardCount": 100,
       "cards": [
         {
@@ -8255,7 +8255,7 @@
         {
           "name": "Command Tower",
           "quantity": 1,
-          "usd": "1.09",
+          "usd": "1.10",
           "tcgplayerId": 623982,
           "cardmarketId": 818721
         },
@@ -8770,7 +8770,7 @@
       ]
     },
     "tdc-mardu-surge": {
-      "totalValue": 76.18,
+      "totalValue": 76.19,
       "cardCount": 100,
       "cards": [
         {
@@ -8911,7 +8911,7 @@
         {
           "name": "Command Tower",
           "quantity": 1,
-          "usd": "1.09",
+          "usd": "1.10",
           "tcgplayerId": 623982,
           "cardmarketId": 818721
         },
@@ -19976,7 +19976,7 @@
       ]
     },
     "pip-scrappy-survivors": {
-      "totalValue": 100.67,
+      "totalValue": 100.71,
       "cardCount": 100,
       "cards": [
         {
@@ -20245,6 +20245,14 @@
           "cardmarketId": 757855
         },
         {
+          "name": "Command Tower",
+          "quantity": 1,
+          "usd": "0.42",
+          "usd_foil": "2.66",
+          "tcgplayerId": 522978,
+          "cardmarketId": 755888
+        },
+        {
           "name": "Wild Growth",
           "quantity": 1,
           "usd": "0.40",
@@ -20275,14 +20283,6 @@
           "usd_foil": "5.85",
           "tcgplayerId": 539604,
           "cardmarketId": 757896
-        },
-        {
-          "name": "Command Tower",
-          "quantity": 1,
-          "usd": "0.38",
-          "usd_foil": "2.66",
-          "tcgplayerId": 522978,
-          "cardmarketId": 755888
         },
         {
           "name": "All That Glitters",
@@ -20702,7 +20702,7 @@
       ]
     },
     "pip-mutant-menace": {
-      "totalValue": 151.23,
+      "totalValue": 151.27,
       "cardCount": 100,
       "cards": [
         {
@@ -21035,6 +21035,14 @@
           "cardmarketId": 758614
         },
         {
+          "name": "Command Tower",
+          "quantity": 1,
+          "usd": "0.42",
+          "usd_foil": "2.66",
+          "tcgplayerId": 522978,
+          "cardmarketId": 755888
+        },
+        {
           "name": "Piper Wright, Publick Reporter",
           "quantity": 1,
           "usd": "0.41",
@@ -21089,14 +21097,6 @@
           "usd_foil": "8.03",
           "tcgplayerId": 540753,
           "cardmarketId": 758512
-        },
-        {
-          "name": "Command Tower",
-          "quantity": 1,
-          "usd": "0.38",
-          "usd_foil": "2.66",
-          "tcgplayerId": 522978,
-          "cardmarketId": 755888
         },
         {
           "name": "Lily Bowen, Raging Grandma",
@@ -21404,7 +21404,7 @@
       ]
     },
     "pip-science": {
-      "totalValue": 77.11,
+      "totalValue": 77.15,
       "cardCount": 100,
       "cards": [
         {
@@ -21568,6 +21568,14 @@
           "cardmarketId": 758287
         },
         {
+          "name": "Command Tower",
+          "quantity": 1,
+          "usd": "0.42",
+          "usd_foil": "2.66",
+          "tcgplayerId": 522978,
+          "cardmarketId": 755888
+        },
+        {
           "name": "Sulfur Falls",
           "quantity": 1,
           "usd": "0.41",
@@ -21638,14 +21646,6 @@
           "usd_foil": "5.85",
           "tcgplayerId": 539604,
           "cardmarketId": 757896
-        },
-        {
-          "name": "Command Tower",
-          "quantity": 1,
-          "usd": "0.38",
-          "usd_foil": "2.66",
-          "tcgplayerId": 522978,
-          "cardmarketId": 755888
         },
         {
           "name": "Glacial Fortress",
@@ -22122,7 +22122,7 @@
       ]
     },
     "pip-hail-caesar": {
-      "totalValue": 85.51,
+      "totalValue": 85.55,
       "cardCount": 100,
       "cards": [
         {
@@ -22375,6 +22375,14 @@
           "cardmarketId": 757716
         },
         {
+          "name": "Command Tower",
+          "quantity": 1,
+          "usd": "0.42",
+          "usd_foil": "2.66",
+          "tcgplayerId": 522978,
+          "cardmarketId": 755888
+        },
+        {
           "name": "Deadly Dispute",
           "quantity": 1,
           "usd": "0.40",
@@ -22389,14 +22397,6 @@
           "usd_foil": "4.96",
           "tcgplayerId": 539966,
           "cardmarketId": 758603
-        },
-        {
-          "name": "Command Tower",
-          "quantity": 1,
-          "usd": "0.38",
-          "usd_foil": "2.66",
-          "tcgplayerId": 522978,
-          "cardmarketId": 755888
         },
         {
           "name": "Tainted Peak",
@@ -25309,7 +25309,7 @@
       ]
     },
     "lcc-ahoy-mateys": {
-      "totalValue": 70.03,
+      "totalValue": 70.02,
       "cardCount": 100,
       "cards": [
         {
@@ -25545,13 +25545,6 @@
           "cardmarketId": 743458
         },
         {
-          "name": "Command Tower",
-          "quantity": 1,
-          "usd": "0.34",
-          "tcgplayerId": 525809,
-          "cardmarketId": 743677
-        },
-        {
           "name": "Sunken Hollow",
           "quantity": 1,
           "usd": "0.34",
@@ -25592,6 +25585,13 @@
           "usd": "0.33",
           "tcgplayerId": 525798,
           "cardmarketId": 743553
+        },
+        {
+          "name": "Command Tower",
+          "quantity": 1,
+          "usd": "0.33",
+          "tcgplayerId": 525809,
+          "cardmarketId": 743677
         },
         {
           "name": "Path of Ancestry",
@@ -25929,7 +25929,7 @@
       ]
     },
     "lcc-blood-rites": {
-      "totalValue": 107.17,
+      "totalValue": 107.16,
       "cardCount": 100,
       "cards": [
         {
@@ -26230,13 +26230,6 @@
           "cardmarketId": 743621
         },
         {
-          "name": "Command Tower",
-          "quantity": 1,
-          "usd": "0.34",
-          "tcgplayerId": 525809,
-          "cardmarketId": 743677
-        },
-        {
           "name": "Unclaimed Territory",
           "quantity": 1,
           "usd": "0.34",
@@ -26277,6 +26270,13 @@
           "usd": "0.33",
           "tcgplayerId": 525871,
           "cardmarketId": 743646
+        },
+        {
+          "name": "Command Tower",
+          "quantity": 1,
+          "usd": "0.33",
+          "tcgplayerId": 525809,
+          "cardmarketId": 743677
         },
         {
           "name": "Path of Ancestry",
@@ -26502,7 +26502,7 @@
       ]
     },
     "lcc-explorers-of-the-deep": {
-      "totalValue": 83.17,
+      "totalValue": 83.16,
       "cardCount": 100,
       "cards": [
         {
@@ -26768,13 +26768,6 @@
           "cardmarketId": 743701
         },
         {
-          "name": "Command Tower",
-          "quantity": 1,
-          "usd": "0.34",
-          "tcgplayerId": 525809,
-          "cardmarketId": 743677
-        },
-        {
           "name": "Hinterland Harbor",
           "quantity": 1,
           "usd": "0.34",
@@ -26843,6 +26836,13 @@
           "usd": "0.33",
           "tcgplayerId": 526092,
           "cardmarketId": 743596
+        },
+        {
+          "name": "Command Tower",
+          "quantity": 1,
+          "usd": "0.33",
+          "tcgplayerId": 525809,
+          "cardmarketId": 743677
         },
         {
           "name": "Path of Ancestry",
@@ -27083,7 +27083,7 @@
       ]
     },
     "lcc-veloci-ramp-tor": {
-      "totalValue": 89.55,
+      "totalValue": 89.54,
       "cardCount": 100,
       "cards": [
         {
@@ -27412,13 +27412,6 @@
           "cardmarketId": 743492
         },
         {
-          "name": "Command Tower",
-          "quantity": 1,
-          "usd": "0.34",
-          "tcgplayerId": 525809,
-          "cardmarketId": 743677
-        },
-        {
           "name": "Unclaimed Territory",
           "quantity": 1,
           "usd": "0.34",
@@ -27438,6 +27431,13 @@
           "usd": "0.33",
           "tcgplayerId": 525901,
           "cardmarketId": 743659
+        },
+        {
+          "name": "Command Tower",
+          "quantity": 1,
+          "usd": "0.33",
+          "tcgplayerId": 525809,
+          "cardmarketId": 743677
         },
         {
           "name": "Game Trail",
