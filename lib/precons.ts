@@ -1,6 +1,16 @@
 import type { PreconDeck, DeckCardEntry, Decklists } from '@/types';
 
 export const PRECON_DATABASE: PreconDeck[] = [
+  // 2026 - Secrets of Strixhaven
+  { id: 'soc-silverquill-influence', name: 'Silverquill Influence', set: 'Secrets of Strixhaven', year: 2026, msrp: 49.99, setCode: 'soc', colors: ['W', 'B'], edhrec: 'silverquill-influence' },
+  { id: 'soc-prismari-artistry', name: 'Prismari Artistry', set: 'Secrets of Strixhaven', year: 2026, msrp: 49.99, setCode: 'soc', colors: ['U', 'R'], edhrec: 'prismari-artistry' },
+  { id: 'soc-witherbloom-pestilence', name: 'Witherbloom Pestilence', set: 'Secrets of Strixhaven', year: 2026, msrp: 49.99, setCode: 'soc', colors: ['B', 'G'], edhrec: 'witherbloom-pestilence' },
+  { id: 'soc-lorehold-spirit', name: 'Lorehold Spirit', set: 'Secrets of Strixhaven', year: 2026, msrp: 49.99, setCode: 'soc', colors: ['R', 'W'], edhrec: 'lorehold-spirit' },
+  { id: 'soc-quandrix-unlimited', name: 'Quandrix Unlimited', set: 'Secrets of Strixhaven', year: 2026, msrp: 49.99, setCode: 'soc', colors: ['G', 'U'], edhrec: 'quandrix-unlimited' },
+
+  // 2026 - Teenage Mutant Ninja Turtles
+  { id: 'tmt-turtle-power', name: 'Turtle Power!', set: 'Teenage Mutant Ninja Turtles', year: 2026, msrp: 69.99, setCode: 'tmt', colors: ['W', 'U', 'B', 'R', 'G'], edhrec: 'turtle-power' },
+
   // 2026 - Lorwyn Eclipsed
   { id: 'ecc-dance-of-the-elements', name: 'Dance of the Elements', set: 'Lorwyn Eclipsed', year: 2026, msrp: 49.99, setCode: 'ecc', colors: ['W', 'U', 'B', 'R', 'G'], edhrec: 'dance-of-the-elements' },
   { id: 'ecc-blight-curse', name: 'Blight Curse', set: 'Lorwyn Eclipsed', year: 2026, msrp: 49.99, setCode: 'ecc', colors: ['B', 'R', 'G'], edhrec: 'blight-curse' },
@@ -30,7 +40,7 @@ export const PRECON_DATABASE: PreconDeck[] = [
   { id: 'dsc-endless-punishment', name: 'Endless Punishment', set: 'Duskmourn', year: 2024, msrp: 47.99, setCode: 'dsc', colors: ['B', 'R'], edhrec: 'endless-punishment' },
   { id: 'dsc-jump-scare', name: 'Jump Scare!', set: 'Duskmourn', year: 2024, msrp: 47.99, setCode: 'dsc', colors: ['W', 'U'], edhrec: 'jump-scare' },
   { id: 'dsc-miracle-worker', name: 'Miracle Worker', set: 'Duskmourn', year: 2024, msrp: 47.99, setCode: 'dsc', colors: ['W', 'B'], edhrec: 'miracle-worker' },
-  { id: 'dsc-haunted-lands', name: 'Haunted Lands', set: 'Duskmourn', year: 2024, msrp: 47.99, setCode: 'dsc', colors: ['B', 'G'], edhrec: 'haunted-lands' },
+  { id: 'dsc-death-toll', name: 'Death Toll', set: 'Duskmourn', year: 2024, msrp: 47.99, setCode: 'dsc', colors: ['B', 'G'], edhrec: 'death-toll' },
 
   // 2024 - Bloomburrow
   { id: 'blc-squirreled-away', name: 'Squirreled Away', set: 'Bloomburrow', year: 2024, msrp: 47.99, setCode: 'blc', colors: ['B', 'G'], edhrec: 'squirreled-away' },
