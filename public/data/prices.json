@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-07T20:42:14.082Z",
+  "updatedAt": "2026-04-08T01:23:42.905Z",
   "decks": {
     "ltc-elven-council": {
       "totalValue": 83.75,
@@ -5643,7 +5643,7 @@
       ]
     },
     "fic-scions-and-spellcraft": {
-      "totalValue": 71.94,
+      "totalValue": 71.93,
       "cardCount": 100,
       "cards": [
         {
@@ -6143,7 +6143,7 @@
         {
           "name": "Coveted Jewel",
           "quantity": 1,
-          "usd": "0.29",
+          "usd": "0.28",
           "tcgplayerId": 631289,
           "cardmarketId": 824775
         },
