@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-04-09T01:14:46.637Z",
+  "updatedAt": "2026-04-09T17:54:50.438Z",
   "decks": {
     "ltc-elven-council": {
-      "totalValue": 82.01,
+      "totalValue": 81.95,
       "cardCount": 100,
       "cards": [
         {
@@ -119,13 +119,6 @@
           "cardmarketId": 717141
         },
         {
-          "name": "Preordain",
-          "quantity": 1,
-          "usd": "0.52",
-          "tcgplayerId": 499733,
-          "cardmarketId": 717210
-        },
-        {
           "name": "Elvish Mystic",
           "quantity": 1,
           "usd": "0.48",
@@ -138,6 +131,13 @@
           "usd": "0.47",
           "tcgplayerId": 499708,
           "cardmarketId": 717388
+        },
+        {
+          "name": "Preordain",
+          "quantity": 1,
+          "usd": "0.46",
+          "tcgplayerId": 499733,
+          "cardmarketId": 717210
         },
         {
           "name": "Rampant Growth",
@@ -6925,7 +6925,7 @@
       ]
     },
     "tdc-abzan-armor": {
-      "totalValue": 75.16,
+      "totalValue": 75.17,
       "cardCount": 100,
       "cards": [
         {
@@ -7205,18 +7205,18 @@
           "cardmarketId": 818829
         },
         {
+          "name": "Feed the Swarm",
+          "quantity": 1,
+          "usd": "0.34",
+          "tcgplayerId": 624638,
+          "cardmarketId": 818789
+        },
+        {
           "name": "Hornet Nest",
           "quantity": 1,
           "usd": "0.33",
           "tcgplayerId": 624642,
           "cardmarketId": 818841
-        },
-        {
-          "name": "Feed the Swarm",
-          "quantity": 1,
-          "usd": "0.33",
-          "tcgplayerId": 624638,
-          "cardmarketId": 818789
         },
         {
           "name": "Canopy Vista",
@@ -7524,7 +7524,7 @@
       ]
     },
     "tdc-jeskai-striker": {
-      "totalValue": 62.94,
+      "totalValue": 62.91,
       "cardCount": 100,
       "cards": [
         {
@@ -7637,7 +7637,7 @@
         {
           "name": "Big Score",
           "quantity": 1,
-          "usd": "1.20",
+          "usd": "1.18",
           "tcgplayerId": 624179,
           "cardmarketId": 818814
         },
@@ -7657,18 +7657,18 @@
           "cardmarketId": 817897
         },
         {
+          "name": "Preordain",
+          "quantity": 1,
+          "usd": "0.56",
+          "tcgplayerId": 624170,
+          "cardmarketId": 818773
+        },
+        {
           "name": "Arcane Signet",
           "quantity": 1,
           "usd": "0.55",
           "tcgplayerId": 624048,
           "cardmarketId": 818719
-        },
-        {
-          "name": "Preordain",
-          "quantity": 1,
-          "usd": "0.55",
-          "tcgplayerId": 624170,
-          "cardmarketId": 818773
         },
         {
           "name": "Electrodominance",
@@ -7860,13 +7860,6 @@
           "cardmarketId": 818767
         },
         {
-          "name": "Abrade",
-          "quantity": 1,
-          "usd": "0.31",
-          "tcgplayerId": 624178,
-          "cardmarketId": 818812
-        },
-        {
           "name": "Consider",
           "quantity": 1,
           "usd": "0.31",
@@ -7921,6 +7914,13 @@
           "usd": "0.30",
           "tcgplayerId": 624183,
           "cardmarketId": 818819
+        },
+        {
+          "name": "Abrade",
+          "quantity": 1,
+          "usd": "0.29",
+          "tcgplayerId": 624178,
+          "cardmarketId": 818812
         },
         {
           "name": "Opt",
@@ -8772,7 +8772,7 @@
       ]
     },
     "tdc-mardu-surge": {
-      "totalValue": 76.59,
+      "totalValue": 76.57,
       "cardCount": 100,
       "cards": [
         {
@@ -9192,13 +9192,6 @@
           "cardmarketId": 818828
         },
         {
-          "name": "Abrade",
-          "quantity": 1,
-          "usd": "0.31",
-          "tcgplayerId": 624178,
-          "cardmarketId": 818812
-        },
-        {
           "name": "Canyon Slough",
           "quantity": 1,
           "usd": "0.31",
@@ -9232,6 +9225,13 @@
           "usd": "0.30",
           "tcgplayerId": 624304,
           "cardmarketId": 818784
+        },
+        {
+          "name": "Abrade",
+          "quantity": 1,
+          "usd": "0.29",
+          "tcgplayerId": 624178,
+          "cardmarketId": 818812
         },
         {
           "name": "Goldnight Commander",
@@ -10629,7 +10629,7 @@
       ]
     },
     "dsc-endless-punishment": {
-      "totalValue": 155.63,
+      "totalValue": 155.64,
       "cardCount": 100,
       "cards": [
         {
@@ -11071,6 +11071,13 @@
           "cardmarketId": 788961
         },
         {
+          "name": "Feed the Swarm",
+          "quantity": 1,
+          "usd": "0.28",
+          "tcgplayerId": 578904,
+          "cardmarketId": 788561
+        },
+        {
           "name": "Temple of Malice",
           "quantity": 1,
           "usd": "0.27",
@@ -11083,13 +11090,6 @@
           "usd": "0.27",
           "tcgplayerId": 579048,
           "cardmarketId": 788751
-        },
-        {
-          "name": "Feed the Swarm",
-          "quantity": 1,
-          "usd": "0.27",
-          "tcgplayerId": 578904,
-          "cardmarketId": 788561
         },
         {
           "name": "Smoldering Marsh",
@@ -12460,7 +12460,7 @@
       ]
     },
     "blc-squirreled-away": {
-      "totalValue": 74.64,
+      "totalValue": 74.66,
       "cardCount": 100,
       "cards": [
         {
@@ -12617,7 +12617,7 @@
         {
           "name": "Shamanic Revelation",
           "quantity": 1,
-          "usd": "0.88",
+          "usd": "0.90",
           "tcgplayerId": 560040,
           "cardmarketId": 779263
         },
@@ -15581,13 +15581,13 @@
       ]
     },
     "m3c-creative-energy": {
-      "totalValue": 65.6,
+      "totalValue": 65.58,
       "cardCount": 100,
       "cards": [
         {
           "name": "Akroma's Will",
           "quantity": 1,
-          "usd": "14.93",
+          "usd": "14.91",
           "tcgplayerId": 552925,
           "cardmarketId": 772256
         },
@@ -25309,7 +25309,7 @@
       ]
     },
     "lcc-ahoy-mateys": {
-      "totalValue": 70.77,
+      "totalValue": 70.76,
       "cardCount": 100,
       "cards": [
         {
@@ -25701,13 +25701,6 @@
           "cardmarketId": 743669
         },
         {
-          "name": "Feed the Swarm",
-          "quantity": 1,
-          "usd": "0.28",
-          "tcgplayerId": 525817,
-          "cardmarketId": 743550
-        },
-        {
           "name": "Admiral Beckett Brass",
           "quantity": 1,
           "usd": "0.27",
@@ -25727,6 +25720,13 @@
           "usd": "0.27",
           "tcgplayerId": 525748,
           "cardmarketId": 743650
+        },
+        {
+          "name": "Feed the Swarm",
+          "quantity": 1,
+          "usd": "0.27",
+          "tcgplayerId": 525817,
+          "cardmarketId": 743550
         },
         {
           "name": "Thriving Bluff",
@@ -27082,13 +27082,13 @@
       ]
     },
     "lcc-veloci-ramp-tor": {
-      "totalValue": 91.3,
+      "totalValue": 91.2,
       "cardCount": 100,
       "cards": [
         {
           "name": "Akroma's Will",
           "quantity": 1,
-          "usd": "17.78",
+          "usd": "17.68",
           "tcgplayerId": 526216,
           "cardmarketId": 743478
         },
@@ -34871,7 +34871,7 @@
       ]
     },
     "ltc-hosts-of-mordor": {
-      "totalValue": 79.06,
+      "totalValue": 79.05,
       "cardCount": 100,
       "cards": [
         {
@@ -35300,13 +35300,6 @@
           "cardmarketId": 717216
         },
         {
-          "name": "Feed the Swarm",
-          "quantity": 1,
-          "usd": "0.31",
-          "tcgplayerId": 498318,
-          "cardmarketId": 717371
-        },
-        {
           "name": "Summons of Saruman",
           "quantity": 1,
           "usd": "0.31",
@@ -35333,6 +35326,13 @@
           "usd": "0.30",
           "tcgplayerId": 499620,
           "cardmarketId": 717462
+        },
+        {
+          "name": "Feed the Swarm",
+          "quantity": 1,
+          "usd": "0.30",
+          "tcgplayerId": 498318,
+          "cardmarketId": 717371
         },
         {
           "name": "Smoldering Marsh",
