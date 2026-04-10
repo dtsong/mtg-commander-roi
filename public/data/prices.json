@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-09T20:44:07.466Z",
+  "updatedAt": "2026-04-10T01:24:51.737Z",
   "decks": {
     "ltc-elven-council": {
       "totalValue": 81.95,
@@ -12460,7 +12460,7 @@
       ]
     },
     "blc-squirreled-away": {
-      "totalValue": 74.66,
+      "totalValue": 74.68,
       "cardCount": 100,
       "cards": [
         {
@@ -12617,7 +12617,7 @@
         {
           "name": "Shamanic Revelation",
           "quantity": 1,
-          "usd": "0.90",
+          "usd": "0.92",
           "tcgplayerId": 560040,
           "cardmarketId": 779263
         },
@@ -14939,13 +14939,13 @@
       ]
     },
     "m3c-graveyard-overdrive": {
-      "totalValue": 74.46,
+      "totalValue": 74.49,
       "cardCount": 100,
       "cards": [
         {
           "name": "Barrowgoyf",
           "quantity": 1,
-          "usd": "13.10",
+          "usd": "13.13",
           "tcgplayerId": 553662,
           "cardmarketId": 773174
         },
@@ -15581,13 +15581,13 @@
       ]
     },
     "m3c-creative-energy": {
-      "totalValue": 65.58,
+      "totalValue": 65.51,
       "cardCount": 100,
       "cards": [
         {
           "name": "Akroma's Will",
           "quantity": 1,
-          "usd": "14.91",
+          "usd": "14.84",
           "tcgplayerId": 552925,
           "cardmarketId": 772256
         },
@@ -18076,7 +18076,7 @@
       ]
     },
     "otc-most-wanted": {
-      "totalValue": 144.44,
+      "totalValue": 144.47,
       "cardCount": 100,
       "cards": [
         {
@@ -18323,7 +18323,7 @@
         {
           "name": "Requisition Raid",
           "quantity": 1,
-          "usd": "0.95",
+          "usd": "0.98",
           "usd_foil": "1.27",
           "tcgplayerId": 544454,
           "cardmarketId": 764243
@@ -19367,7 +19367,7 @@
       ]
     },
     "otc-desert-bloom": {
-      "totalValue": 100.17,
+      "totalValue": 100.2,
       "cardCount": 100,
       "cards": [
         {
@@ -19504,19 +19504,19 @@
           "cardmarketId": 764837
         },
         {
+          "name": "Requisition Raid",
+          "quantity": 1,
+          "usd": "0.98",
+          "usd_foil": "1.27",
+          "tcgplayerId": 544454,
+          "cardmarketId": 764243
+        },
+        {
           "name": "Perpetual Timepiece",
           "quantity": 1,
           "usd": "0.97",
           "tcgplayerId": 545099,
           "cardmarketId": 764750
-        },
-        {
-          "name": "Requisition Raid",
-          "quantity": 1,
-          "usd": "0.95",
-          "usd_foil": "1.27",
-          "tcgplayerId": 544454,
-          "cardmarketId": 764243
         },
         {
           "name": "Dune Chanter",
@@ -22833,13 +22833,13 @@
       ]
     },
     "mkc-deadly-disguise": {
-      "totalValue": 138.16,
+      "totalValue": 138.01,
       "cardCount": 100,
       "cards": [
         {
           "name": "Jeska's Will",
           "quantity": 1,
-          "usd": "47.94",
+          "usd": "47.79",
           "tcgplayerId": 535882,
           "cardmarketId": 753468
         },
