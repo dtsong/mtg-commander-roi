@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-10T20:31:50.657Z",
+  "updatedAt": "2026-04-11T01:19:25.109Z",
   "decks": {
     "ltc-elven-council": {
       "totalValue": 79.84,
@@ -13694,7 +13694,7 @@
       ]
     },
     "blc-animated-army": {
-      "totalValue": 68.6,
+      "totalValue": 68.52,
       "cardCount": 100,
       "cards": [
         {
@@ -13707,7 +13707,7 @@
         {
           "name": "Reliquary Tower",
           "quantity": 1,
-          "usd": "5.10",
+          "usd": "5.02",
           "tcgplayerId": 559973,
           "cardmarketId": 779397
         },
@@ -14290,13 +14290,13 @@
       ]
     },
     "blc-peace-offering": {
-      "totalValue": 67.66,
+      "totalValue": 67.58,
       "cardCount": 100,
       "cards": [
         {
           "name": "Reliquary Tower",
           "quantity": 1,
-          "usd": "5.10",
+          "usd": "5.02",
           "tcgplayerId": 559973,
           "cardmarketId": 779397
         },
@@ -23479,7 +23479,7 @@
       ]
     },
     "mkc-blame-game": {
-      "totalValue": 137.72,
+      "totalValue": 137.54,
       "cardCount": 100,
       "cards": [
         {
@@ -23541,14 +23541,14 @@
         {
           "name": "Deflecting Palm",
           "quantity": 1,
-          "usd": "4.58",
+          "usd": "4.54",
           "tcgplayerId": 535585,
           "cardmarketId": 753487
         },
         {
           "name": "Reliquary Tower",
           "quantity": 1,
-          "usd": "4.56",
+          "usd": "4.42",
           "tcgplayerId": 535626,
           "cardmarketId": 753385
         },
@@ -24087,7 +24087,7 @@
       ]
     },
     "mkc-deep-clue-sea": {
-      "totalValue": 105.11,
+      "totalValue": 104.97,
       "cardCount": 100,
       "cards": [
         {
@@ -24135,7 +24135,7 @@
         {
           "name": "Reliquary Tower",
           "quantity": 1,
-          "usd": "4.56",
+          "usd": "4.42",
           "tcgplayerId": 535626,
           "cardmarketId": 753385
         },
@@ -24714,7 +24714,7 @@
       ]
     },
     "mkc-revenant-recon": {
-      "totalValue": 125.85,
+      "totalValue": 125.71,
       "cardCount": 100,
       "cards": [
         {
@@ -24783,7 +24783,7 @@
         {
           "name": "Reliquary Tower",
           "quantity": 1,
-          "usd": "4.56",
+          "usd": "4.42",
           "tcgplayerId": 535626,
           "cardmarketId": 753385
         },
@@ -26500,7 +26500,7 @@
       ]
     },
     "lcc-explorers-of-the-deep": {
-      "totalValue": 86.28,
+      "totalValue": 86.64,
       "cardCount": 100,
       "cards": [
         {
@@ -26525,18 +26525,18 @@
           "cardmarketId": 743511
         },
         {
+          "name": "Reliquary Tower",
+          "quantity": 1,
+          "usd": "4.64",
+          "tcgplayerId": 526100,
+          "cardmarketId": 743699
+        },
+        {
           "name": "Wave Goodbye",
           "quantity": 1,
           "usd": "4.39",
           "tcgplayerId": 525857,
           "cardmarketId": 743456
-        },
-        {
-          "name": "Reliquary Tower",
-          "quantity": 1,
-          "usd": "4.28",
-          "tcgplayerId": 526100,
-          "cardmarketId": 743699
         },
         {
           "name": "Thassa, God of the Sea",
@@ -36049,7 +36049,7 @@
       ]
     },
     "40k-necron-dynasties": {
-      "totalValue": 224.05,
+      "totalValue": 224.09,
       "cardCount": 100,
       "cards": [
         {
@@ -36126,7 +36126,7 @@
         {
           "name": "Reliquary Tower",
           "quantity": 1,
-          "usd": "6.23",
+          "usd": "6.27",
           "tcgplayerId": 286322,
           "cardmarketId": 675393
         },
