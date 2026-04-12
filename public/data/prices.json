@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-11T20:28:18.936Z",
+  "updatedAt": "2026-04-12T01:29:15.469Z",
   "decks": {
     "ltc-elven-council": {
       "totalValue": 80.44,
@@ -6922,7 +6922,7 @@
       ]
     },
     "tdc-abzan-armor": {
-      "totalValue": 72.07,
+      "totalValue": 72.06,
       "cardCount": 100,
       "cards": [
         {
@@ -7132,13 +7132,6 @@
           "cardmarketId": 818831
         },
         {
-          "name": "Access Tunnel",
-          "quantity": 1,
-          "usd": "0.39",
-          "tcgplayerId": 624594,
-          "cardmarketId": 818907
-        },
-        {
           "name": "Woodland Cemetery",
           "quantity": 1,
           "usd": "0.39",
@@ -7151,6 +7144,13 @@
           "usd": "0.39",
           "tcgplayerId": 624612,
           "cardmarketId": 818897
+        },
+        {
+          "name": "Access Tunnel",
+          "quantity": 1,
+          "usd": "0.38",
+          "tcgplayerId": 624594,
+          "cardmarketId": 818907
         },
         {
           "name": "Shadrix Silverquill",
@@ -37681,7 +37681,7 @@
       ]
     },
     "soc-silverquill-influence": {
-      "totalValue": 340.56,
+      "totalValue": 340.57,
       "cardCount": 100,
       "cards": [
         {
@@ -38031,7 +38031,7 @@
         {
           "name": "Command Tower",
           "quantity": 1,
-          "usd": "0.87",
+          "usd": "0.88",
           "tcgplayerId": 687664,
           "cardmarketId": 881451
         },
@@ -38306,7 +38306,7 @@
       ]
     },
     "soc-prismari-artistry": {
-      "totalValue": 243.95,
+      "totalValue": 243.96,
       "cardCount": 100,
       "cards": [
         {
@@ -38598,7 +38598,7 @@
         {
           "name": "Command Tower",
           "quantity": 1,
-          "usd": "0.87",
+          "usd": "0.88",
           "tcgplayerId": 687664,
           "cardmarketId": 881451
         },
@@ -38931,7 +38931,7 @@
       ]
     },
     "soc-witherbloom-pestilence": {
-      "totalValue": 241.63,
+      "totalValue": 241.64,
       "cardCount": 100,
       "cards": [
         {
@@ -39303,7 +39303,7 @@
         {
           "name": "Command Tower",
           "quantity": 1,
-          "usd": "0.87",
+          "usd": "0.88",
           "tcgplayerId": 687664,
           "cardmarketId": 881451
         },
@@ -39555,7 +39555,7 @@
       ]
     },
     "soc-lorehold-spirit": {
-      "totalValue": 290.34,
+      "totalValue": 294.39,
       "cardCount": 100,
       "cards": [
         {
@@ -39593,8 +39593,9 @@
         {
           "name": "Turbulent Steppe",
           "quantity": 1,
-          "usd": "15.99",
-          "tcgplayerId": 688224
+          "usd": "16.95",
+          "tcgplayerId": 687602,
+          "cardmarketId": 881416
         },
         {
           "name": "Bitterthorn, Nissa's Animus",
@@ -39609,6 +39610,13 @@
           "usd": "13.03",
           "tcgplayerId": 263098,
           "cardmarketId": 608586
+        },
+        {
+          "name": "Naktamun Lorespinner",
+          "quantity": 1,
+          "usd": "13.02",
+          "tcgplayerId": 687356,
+          "cardmarketId": 881284
         },
         {
           "name": "Currency Converter",
@@ -39636,12 +39644,6 @@
           "usd": "10.00",
           "tcgplayerId": 687334,
           "cardmarketId": 881232
-        },
-        {
-          "name": "Naktamun Lorespinner",
-          "quantity": 1,
-          "usd": "9.94",
-          "tcgplayerId": 688232
         },
         {
           "name": "Augusta, Order Returned",
@@ -39861,7 +39863,7 @@
         {
           "name": "Command Tower",
           "quantity": 1,
-          "usd": "0.87",
+          "usd": "0.88",
           "tcgplayerId": 687664,
           "cardmarketId": 881451
         },
@@ -40164,7 +40166,7 @@
       ]
     },
     "soc-quandrix-unlimited": {
-      "totalValue": 246.23,
+      "totalValue": 248.8,
       "cardCount": 100,
       "cards": [
         {
@@ -40179,8 +40181,9 @@
         {
           "name": "Yavimaya Bloomsage",
           "quantity": 1,
-          "usd": "18.80",
-          "tcgplayerId": 688243
+          "usd": "19.96",
+          "tcgplayerId": 687439,
+          "cardmarketId": 881311
         },
         {
           "name": "Unbound Flourishing",
@@ -40214,8 +40217,9 @@
         {
           "name": "Expansion Algorithm",
           "quantity": 1,
-          "usd": "9.93",
-          "tcgplayerId": 688213
+          "usd": "11.33",
+          "tcgplayerId": 687344,
+          "cardmarketId": 881248
         },
         {
           "name": "Benevolent Hydra",
@@ -40470,7 +40474,7 @@
         {
           "name": "Command Tower",
           "quantity": 1,
-          "usd": "0.87",
+          "usd": "0.88",
           "tcgplayerId": 687664,
           "cardmarketId": 881451
         },
