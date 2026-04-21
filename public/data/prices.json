@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-20T20:41:05.386Z",
+  "updatedAt": "2026-04-21T01:28:27.632Z",
   "decks": {
     "ltc-elven-council": {
       "totalValue": 78.41,
@@ -14288,7 +14288,7 @@
       ]
     },
     "blc-peace-offering": {
-      "totalValue": 67.25,
+      "totalValue": 67.23,
       "cardCount": 100,
       "cards": [
         {
@@ -14864,14 +14864,6 @@
           "cardmarketId": 779293
         },
         {
-          "name": "Wear Down",
-          "quantity": 1,
-          "usd": "0.23",
-          "usd_foil": "0.36",
-          "tcgplayerId": 558376,
-          "cardmarketId": 777654
-        },
-        {
           "name": "Baird, Steward of Argive",
           "quantity": 1,
           "usd": "0.22",
@@ -14884,6 +14876,14 @@
           "usd": "0.22",
           "tcgplayerId": 559907,
           "cardmarketId": 779192
+        },
+        {
+          "name": "Wear Down",
+          "quantity": 1,
+          "usd": "0.21",
+          "usd_foil": "0.36",
+          "tcgplayerId": 558376,
+          "cardmarketId": 777654
         },
         {
           "name": "Peerless Recycling",
