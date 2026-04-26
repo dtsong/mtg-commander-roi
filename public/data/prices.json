@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-25T20:34:39.887Z",
+  "updatedAt": "2026-04-26T01:46:56.763Z",
   "decks": {
     "ltc-elven-council": {
       "totalValue": 79.07,
@@ -1818,7 +1818,7 @@
           "quantity": 1,
           "usd": "2.78",
           "tcgplayerId": 671204,
-          "cardmarketId": 791907
+          "cardmarketId": 865037
         },
         {
           "name": "Sol Ring",
@@ -6766,7 +6766,7 @@
           "quantity": 1,
           "usd": "0.27",
           "tcgplayerId": 124515,
-          "cardmarketId": 714667
+          "cardmarketId": 293789
         },
         {
           "name": "Verix Bladewing",
@@ -9552,7 +9552,7 @@
           "quantity": 1,
           "usd": "0.40",
           "tcgplayerId": 615226,
-          "cardmarketId": 759045
+          "cardmarketId": 807995
         },
         {
           "name": "Sulfur Falls",
@@ -13158,7 +13158,7 @@
           "quantity": 1,
           "usd": "0.67",
           "tcgplayerId": 559803,
-          "cardmarketId": 678687
+          "cardmarketId": 779236
         },
         {
           "name": "Combat Celebrant",
@@ -13406,7 +13406,7 @@
           "quantity": 1,
           "usd": "0.33",
           "tcgplayerId": 559818,
-          "cardmarketId": 659464
+          "cardmarketId": 779240
         },
         {
           "name": "Mind Stone",
@@ -13511,7 +13511,7 @@
           "quantity": 1,
           "usd": "0.30",
           "tcgplayerId": 559837,
-          "cardmarketId": 791582
+          "cardmarketId": 779177
         },
         {
           "name": "Martial Coup",
@@ -13602,7 +13602,7 @@
           "quantity": 1,
           "usd": "0.27",
           "tcgplayerId": 559842,
-          "cardmarketId": 714639
+          "cardmarketId": 779190
         },
         {
           "name": "Hanged Executioner",
@@ -13616,7 +13616,7 @@
           "quantity": 1,
           "usd": "0.26",
           "tcgplayerId": 560179,
-          "cardmarketId": 656537
+          "cardmarketId": 779179
         },
         {
           "name": "Thriving Heath",
@@ -13766,7 +13766,7 @@
           "quantity": 1,
           "usd": "1.90",
           "tcgplayerId": 559843,
-          "cardmarketId": 823309
+          "cardmarketId": 779191
         },
         {
           "name": "Unnatural Growth",
@@ -13794,7 +13794,7 @@
           "quantity": 1,
           "usd": "1.36",
           "tcgplayerId": 559906,
-          "cardmarketId": 791478
+          "cardmarketId": 779217
         },
         {
           "name": "Beast Within",
@@ -13864,7 +13864,7 @@
           "quantity": 1,
           "usd": "0.53",
           "tcgplayerId": 559876,
-          "cardmarketId": 659462
+          "cardmarketId": 779201
         },
         {
           "name": "Chaos Warp",
@@ -14348,7 +14348,7 @@
           "quantity": 1,
           "usd": "2.65",
           "tcgplayerId": 560186,
-          "cardmarketId": 789754
+          "cardmarketId": 779272
         },
         {
           "name": "Swiftfoot Boots",
@@ -14426,7 +14426,7 @@
           "quantity": 1,
           "usd": "0.95",
           "tcgplayerId": 559919,
-          "cardmarketId": 685234
+          "cardmarketId": 779234
         },
         {
           "name": "Tempt with Bunnies",
@@ -14524,7 +14524,7 @@
           "quantity": 1,
           "usd": "0.42",
           "tcgplayerId": 559899,
-          "cardmarketId": 803359
+          "cardmarketId": 779173
         },
         {
           "name": "Communal Brewing",
@@ -14616,7 +14616,7 @@
           "quantity": 1,
           "usd": "0.36",
           "tcgplayerId": 559917,
-          "cardmarketId": 803411
+          "cardmarketId": 779269
         },
         {
           "name": "Secret Rendezvous",
@@ -14651,7 +14651,7 @@
           "quantity": 1,
           "usd": "0.35",
           "tcgplayerId": 559903,
-          "cardmarketId": 803449
+          "cardmarketId": 779278
         },
         {
           "name": "Fisher's Talent",
@@ -14883,7 +14883,7 @@
           "quantity": 1,
           "usd": "0.23",
           "tcgplayerId": 559981,
-          "cardmarketId": 823391
+          "cardmarketId": 779210
         },
         {
           "name": "Peerless Recycling",
@@ -14914,7 +14914,7 @@
           "quantity": 1,
           "usd": "0.12",
           "tcgplayerId": 560028,
-          "cardmarketId": 791530
+          "cardmarketId": 779222
         },
         {
           "name": "Hoofprints of the Stag",
@@ -25242,7 +25242,7 @@
           "quantity": 1,
           "usd": "0.22",
           "tcgplayerId": 535730,
-          "cardmarketId": 662682
+          "cardmarketId": 753574
         },
         {
           "name": "Otherworldly Gaze",
@@ -27668,7 +27668,7 @@
           "quantity": 1,
           "usd": "0.17",
           "tcgplayerId": 525837,
-          "cardmarketId": 791468
+          "cardmarketId": 743480
         },
         {
           "name": "Drover of the Mighty",
@@ -32047,7 +32047,7 @@
           "quantity": 1,
           "usd": "1.60",
           "tcgplayerId": 506667,
-          "cardmarketId": 701447
+          "cardmarketId": 723138
         },
         {
           "name": "Urza's Mine",
@@ -32259,7 +32259,7 @@
           "quantity": 1,
           "usd": "0.36",
           "tcgplayerId": 506673,
-          "cardmarketId": 734738
+          "cardmarketId": 723170
         },
         {
           "name": "Blast Zone",
@@ -32436,7 +32436,7 @@
           "quantity": 1,
           "usd": "9.90",
           "tcgplayerId": 505970,
-          "cardmarketId": 803408
+          "cardmarketId": 723082
         },
         {
           "name": "Ondu Spiritdancer",
@@ -32450,7 +32450,7 @@
           "quantity": 1,
           "usd": "7.80",
           "tcgplayerId": 505962,
-          "cardmarketId": 803372
+          "cardmarketId": 723057
         },
         {
           "name": "Boon of the Spirit Realm",
@@ -32494,7 +32494,7 @@
           "quantity": 1,
           "usd": "5.66",
           "tcgplayerId": 505999,
-          "cardmarketId": 803440
+          "cardmarketId": 723048
         },
         {
           "name": "Heliod, God of the Sun",
@@ -32564,7 +32564,7 @@
           "quantity": 1,
           "usd": "2.31",
           "tcgplayerId": 506010,
-          "cardmarketId": 791819
+          "cardmarketId": 723092
         },
         {
           "name": "Cunning Rhetoric",
@@ -33026,14 +33026,14 @@
           "quantity": 1,
           "usd": "11.70",
           "tcgplayerId": 505737,
-          "cardmarketId": 687551
+          "cardmarketId": 722988
         },
         {
           "name": "Chandra, Awakened Inferno",
           "quantity": 1,
           "usd": "11.21",
           "tcgplayerId": 505774,
-          "cardmarketId": 378855
+          "cardmarketId": 723026
         },
         {
           "name": "Teyo, Geometric Tactician",
@@ -33111,7 +33111,7 @@
           "quantity": 1,
           "usd": "2.82",
           "tcgplayerId": 505775,
-          "cardmarketId": 292775
+          "cardmarketId": 722978
         },
         {
           "name": "Chandra, Legacy of Fire",
@@ -33190,7 +33190,7 @@
           "quantity": 1,
           "usd": "1.52",
           "tcgplayerId": 505764,
-          "cardmarketId": 268050
+          "cardmarketId": 722958
         },
         {
           "name": "Boros Signet",
@@ -33293,7 +33293,7 @@
           "quantity": 1,
           "usd": "0.53",
           "tcgplayerId": 505778,
-          "cardmarketId": 461654
+          "cardmarketId": 723010
         },
         {
           "name": "Azorius Signet",
@@ -33734,7 +33734,7 @@
           "quantity": 1,
           "usd": "4.42",
           "tcgplayerId": 505388,
-          "cardmarketId": 734073
+          "cardmarketId": 722912
         },
         {
           "name": "Crystalline Sliver",
@@ -33776,7 +33776,7 @@
           "quantity": 1,
           "usd": "3.69",
           "tcgplayerId": 505106,
-          "cardmarketId": 823337
+          "cardmarketId": 722845
         },
         {
           "name": "Crypt Sliver",
@@ -33825,7 +33825,7 @@
           "quantity": 1,
           "usd": "2.22",
           "tcgplayerId": 505105,
-          "cardmarketId": 823395
+          "cardmarketId": 722898
         },
         {
           "name": "Sol Ring",
@@ -33841,7 +33841,7 @@
           "usd": "1.64",
           "isFoilOnly": true,
           "tcgplayerId": 505004,
-          "cardmarketId": 823397
+          "cardmarketId": 722876
         },
         {
           "name": "Crippling Fear",
@@ -33961,7 +33961,7 @@
           "quantity": 1,
           "usd": "0.82",
           "tcgplayerId": 505117,
-          "cardmarketId": 791754
+          "cardmarketId": 722856
         },
         {
           "name": "Nomad Outpost",
@@ -35913,14 +35913,14 @@
           "quantity": 1,
           "usd": "0.35",
           "tcgplayerId": 286520,
-          "cardmarketId": 714640
+          "cardmarketId": 675752
         },
         {
           "name": "Exotic Orchard",
           "quantity": 1,
           "usd": "0.35",
           "tcgplayerId": 285958,
-          "cardmarketId": 687621
+          "cardmarketId": 674764
         },
         {
           "name": "Port Town",
@@ -36313,7 +36313,7 @@
           "quantity": 1,
           "usd": "1.10",
           "tcgplayerId": 286377,
-          "cardmarketId": 687574
+          "cardmarketId": 675770
         },
         {
           "name": "Arcane Signet",
@@ -36677,7 +36677,7 @@
           "quantity": 1,
           "usd": "4.67",
           "tcgplayerId": 286121,
-          "cardmarketId": 687616
+          "cardmarketId": 675268
         },
         {
           "name": "Reverberate",
@@ -36698,7 +36698,7 @@
           "quantity": 1,
           "usd": "3.42",
           "tcgplayerId": 286131,
-          "cardmarketId": 803399
+          "cardmarketId": 675225
         },
         {
           "name": "Talisman of Indulgence",
@@ -36840,7 +36840,7 @@
           "quantity": 1,
           "usd": "0.69",
           "tcgplayerId": 286129,
-          "cardmarketId": 772038
+          "cardmarketId": 675340
         },
         {
           "name": "Let the Galaxy Burn",
@@ -37022,7 +37022,7 @@
           "quantity": 1,
           "usd": "0.35",
           "tcgplayerId": 285958,
-          "cardmarketId": 687621
+          "cardmarketId": 674764
         },
         {
           "name": "Path of Ancestry",
@@ -37345,7 +37345,7 @@
           "quantity": 1,
           "usd": "0.86",
           "tcgplayerId": 285950,
-          "cardmarketId": 789737
+          "cardmarketId": 674758
         },
         {
           "name": "Bred for the Hunt",
@@ -37578,14 +37578,14 @@
           "quantity": 1,
           "usd": "0.35",
           "tcgplayerId": 285958,
-          "cardmarketId": 687621
+          "cardmarketId": 674764
         },
         {
           "name": "Temple of Epiphany",
           "quantity": 1,
           "usd": "0.35",
           "tcgplayerId": 285989,
-          "cardmarketId": 687577
+          "cardmarketId": 674782
         },
         {
           "name": "Temple of Mystery",
