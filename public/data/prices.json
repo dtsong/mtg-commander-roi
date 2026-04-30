@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-04-29T20:59:50.274Z",
+  "updatedAt": "2026-04-30T01:59:56.057Z",
   "decks": {
     "ltc-elven-council": {
-      "totalValue": 79.61,
+      "totalValue": 79.62,
       "cardCount": 100,
       "cards": [
         {
@@ -135,7 +135,7 @@
         {
           "name": "Command Tower",
           "quantity": 1,
-          "usd": "0.43",
+          "usd": "0.44",
           "tcgplayerId": 499589,
           "cardmarketId": 717395
         },
@@ -544,7 +544,7 @@
       ]
     },
     "ltc-food-and-fellowship": {
-      "totalValue": 70.96,
+      "totalValue": 70.97,
       "cardCount": 100,
       "cards": [
         {
@@ -748,7 +748,7 @@
         {
           "name": "Command Tower",
           "quantity": 1,
-          "usd": "0.43",
+          "usd": "0.44",
           "tcgplayerId": 499589,
           "cardmarketId": 717395
         },
@@ -2389,7 +2389,7 @@
       ]
     },
     "eoc-counter-intelligence": {
-      "totalValue": 53.46,
+      "totalValue": 53.45,
       "cardCount": 100,
       "cards": [
         {
@@ -2704,13 +2704,6 @@
           "cardmarketId": 834299
         },
         {
-          "name": "Command Tower",
-          "quantity": 1,
-          "usd": "0.32",
-          "tcgplayerId": 642032,
-          "cardmarketId": 834084
-        },
-        {
           "name": "Glittering Massif",
           "quantity": 1,
           "usd": "0.32",
@@ -2730,6 +2723,13 @@
           "usd": "0.31",
           "tcgplayerId": 642845,
           "cardmarketId": 834294
+        },
+        {
+          "name": "Command Tower",
+          "quantity": 1,
+          "usd": "0.31",
+          "tcgplayerId": 642032,
+          "cardmarketId": 834084
         },
         {
           "name": "Exotic Orchard",
@@ -3050,7 +3050,7 @@
       ]
     },
     "eoc-world-shaper": {
-      "totalValue": 49.97,
+      "totalValue": 49.96,
       "cardCount": 100,
       "cards": [
         {
@@ -3372,13 +3372,6 @@
           "cardmarketId": 834093
         },
         {
-          "name": "Command Tower",
-          "quantity": 1,
-          "usd": "0.32",
-          "tcgplayerId": 642032,
-          "cardmarketId": 834084
-        },
-        {
           "name": "Eumidian Hatchery",
           "quantity": 1,
           "usd": "0.32",
@@ -3405,6 +3398,13 @@
           "usd": "0.31",
           "tcgplayerId": 641991,
           "cardmarketId": 834101
+        },
+        {
+          "name": "Command Tower",
+          "quantity": 1,
+          "usd": "0.31",
+          "tcgplayerId": 642032,
+          "cardmarketId": 834084
         },
         {
           "name": "Cinder Glade",
@@ -6291,7 +6291,7 @@
       ]
     },
     "tdc-temur-roar": {
-      "totalValue": 69.63,
+      "totalValue": 69.65,
       "cardCount": 100,
       "cards": [
         {
@@ -6746,6 +6746,13 @@
           "cardmarketId": 819281
         },
         {
+          "name": "Command Tower",
+          "quantity": 1,
+          "usd": "0.27",
+          "tcgplayerId": 623982,
+          "cardmarketId": 818721
+        },
+        {
           "name": "Frontier Bivouac",
           "quantity": 1,
           "usd": "0.27",
@@ -6801,13 +6808,6 @@
           "usd": "0.25",
           "tcgplayerId": 624944,
           "cardmarketId": 819308
-        },
-        {
-          "name": "Command Tower",
-          "quantity": 1,
-          "usd": "0.25",
-          "tcgplayerId": 623982,
-          "cardmarketId": 818721
         },
         {
           "name": "Mossfire Valley",
@@ -6921,7 +6921,7 @@
       ]
     },
     "tdc-abzan-armor": {
-      "totalValue": 74.64,
+      "totalValue": 74.66,
       "cardCount": 100,
       "cards": [
         {
@@ -7363,6 +7363,13 @@
           "cardmarketId": 818857
         },
         {
+          "name": "Command Tower",
+          "quantity": 1,
+          "usd": "0.27",
+          "tcgplayerId": 623982,
+          "cardmarketId": 818721
+        },
+        {
           "name": "Fortified Village",
           "quantity": 1,
           "usd": "0.27",
@@ -7431,13 +7438,6 @@
           "usd": "0.26",
           "tcgplayerId": 624663,
           "cardmarketId": 818745
-        },
-        {
-          "name": "Command Tower",
-          "quantity": 1,
-          "usd": "0.25",
-          "tcgplayerId": 623982,
-          "cardmarketId": 818721
         },
         {
           "name": "Isolated Chapel",
@@ -7520,7 +7520,7 @@
       ]
     },
     "tdc-jeskai-striker": {
-      "totalValue": 65.86,
+      "totalValue": 65.88,
       "cardCount": 100,
       "cards": [
         {
@@ -7919,6 +7919,13 @@
           "cardmarketId": 818825
         },
         {
+          "name": "Command Tower",
+          "quantity": 1,
+          "usd": "0.27",
+          "tcgplayerId": 623982,
+          "cardmarketId": 818721
+        },
+        {
           "name": "Prairie Stream",
           "quantity": 1,
           "usd": "0.27",
@@ -7987,13 +7994,6 @@
           "usd": "0.25",
           "tcgplayerId": 624198,
           "cardmarketId": 818886
-        },
-        {
-          "name": "Command Tower",
-          "quantity": 1,
-          "usd": "0.25",
-          "tcgplayerId": 623982,
-          "cardmarketId": 818721
         },
         {
           "name": "Compulsive Research",
@@ -8146,7 +8146,7 @@
       ]
     },
     "tdc-sultai-arisen": {
-      "totalValue": 75.25,
+      "totalValue": 75.27,
       "cardCount": 100,
       "cards": [
         {
@@ -8546,6 +8546,13 @@
           "cardmarketId": 818795
         },
         {
+          "name": "Command Tower",
+          "quantity": 1,
+          "usd": "0.27",
+          "tcgplayerId": 623982,
+          "cardmarketId": 818721
+        },
+        {
           "name": "Darkwater Catacombs",
           "quantity": 1,
           "usd": "0.27",
@@ -8586,13 +8593,6 @@
           "usd": "0.25",
           "tcgplayerId": 624478,
           "cardmarketId": 818704
-        },
-        {
-          "name": "Command Tower",
-          "quantity": 1,
-          "usd": "0.25",
-          "tcgplayerId": 623982,
-          "cardmarketId": 818721
         },
         {
           "name": "Haunted Mire",
@@ -8768,7 +8768,7 @@
       ]
     },
     "tdc-mardu-surge": {
-      "totalValue": 76.06,
+      "totalValue": 76.08,
       "cardCount": 100,
       "cards": [
         {
@@ -9230,6 +9230,13 @@
           "cardmarketId": 818915
         },
         {
+          "name": "Command Tower",
+          "quantity": 1,
+          "usd": "0.27",
+          "tcgplayerId": 623982,
+          "cardmarketId": 818721
+        },
+        {
           "name": "Smoldering Marsh",
           "quantity": 1,
           "usd": "0.27",
@@ -9284,13 +9291,6 @@
           "usd": "0.25",
           "tcgplayerId": 624338,
           "cardmarketId": 818880
-        },
-        {
-          "name": "Command Tower",
-          "quantity": 1,
-          "usd": "0.25",
-          "tcgplayerId": 623982,
-          "cardmarketId": 818721
         },
         {
           "name": "Isolated Chapel",
@@ -10625,7 +10625,7 @@
       ]
     },
     "dsc-endless-punishment": {
-      "totalValue": 151.41,
+      "totalValue": 151.39,
       "cardCount": 100,
       "cards": [
         {
@@ -10975,13 +10975,6 @@
           "cardmarketId": 788961
         },
         {
-          "name": "Command Tower",
-          "quantity": 1,
-          "usd": "0.35",
-          "tcgplayerId": 577883,
-          "cardmarketId": 787244
-        },
-        {
           "name": "Temple of Malice",
           "quantity": 1,
           "usd": "0.35",
@@ -11029,6 +11022,13 @@
           "usd": "0.33",
           "tcgplayerId": 579099,
           "cardmarketId": 788987
+        },
+        {
+          "name": "Command Tower",
+          "quantity": 1,
+          "usd": "0.33",
+          "tcgplayerId": 577883,
+          "cardmarketId": 787244
         },
         {
           "name": "Grab the Prize",
@@ -11235,7 +11235,7 @@
       ]
     },
     "dsc-jump-scare": {
-      "totalValue": 79.33,
+      "totalValue": 79.22,
       "cardCount": 100,
       "cards": [
         {
@@ -11276,7 +11276,7 @@
         {
           "name": "Counterspell",
           "quantity": 1,
-          "usd": "2.63",
+          "usd": "2.54",
           "tcgplayerId": 577794,
           "cardmarketId": 788642
         },
@@ -11417,13 +11417,6 @@
           "cardmarketId": 788895
         },
         {
-          "name": "Command Tower",
-          "quantity": 1,
-          "usd": "0.35",
-          "tcgplayerId": 577883,
-          "cardmarketId": 787244
-        },
-        {
           "name": "Overflowing Basin",
           "quantity": 1,
           "usd": "0.35",
@@ -11457,6 +11450,13 @@
           "usd": "0.33",
           "tcgplayerId": 577865,
           "cardmarketId": 788991
+        },
+        {
+          "name": "Command Tower",
+          "quantity": 1,
+          "usd": "0.33",
+          "tcgplayerId": 577883,
+          "cardmarketId": 787244
         },
         {
           "name": "Drownyard Temple",
@@ -11831,7 +11831,7 @@
       ]
     },
     "dsc-miracle-worker": {
-      "totalValue": 98.32,
+      "totalValue": 98.3,
       "cardCount": 100,
       "cards": [
         {
@@ -12097,13 +12097,6 @@
           "cardmarketId": 788997
         },
         {
-          "name": "Command Tower",
-          "quantity": 1,
-          "usd": "0.35",
-          "tcgplayerId": 577883,
-          "cardmarketId": 787244
-        },
-        {
           "name": "Obscura Storefront",
           "quantity": 1,
           "usd": "0.35",
@@ -12130,6 +12123,13 @@
           "usd": "0.33",
           "tcgplayerId": 579138,
           "cardmarketId": 788999
+        },
+        {
+          "name": "Command Tower",
+          "quantity": 1,
+          "usd": "0.33",
+          "tcgplayerId": 577883,
+          "cardmarketId": 787244
         },
         {
           "name": "Aminatou's Augury",
@@ -25310,7 +25310,7 @@
       ]
     },
     "lcc-ahoy-mateys": {
-      "totalValue": 69.44,
+      "totalValue": 69.42,
       "cardCount": 100,
       "cards": [
         {
@@ -25709,13 +25709,6 @@
           "cardmarketId": 743553
         },
         {
-          "name": "Command Tower",
-          "quantity": 1,
-          "usd": "0.28",
-          "tcgplayerId": 525809,
-          "cardmarketId": 743677
-        },
-        {
           "name": "Warkite Marauder",
           "quantity": 1,
           "usd": "0.27",
@@ -25749,6 +25742,13 @@
           "usd": "0.26",
           "tcgplayerId": 526198,
           "cardmarketId": 743464
+        },
+        {
+          "name": "Command Tower",
+          "quantity": 1,
+          "usd": "0.26",
+          "tcgplayerId": 525809,
+          "cardmarketId": 743677
         },
         {
           "name": "Captivating Crew",
@@ -25930,7 +25930,7 @@
       ]
     },
     "lcc-blood-rites": {
-      "totalValue": 109.4,
+      "totalValue": 109.38,
       "cardCount": 100,
       "cards": [
         {
@@ -26407,13 +26407,6 @@
           "cardmarketId": 743548
         },
         {
-          "name": "Command Tower",
-          "quantity": 1,
-          "usd": "0.28",
-          "tcgplayerId": 525809,
-          "cardmarketId": 743677
-        },
-        {
           "name": "Myriad Landscape",
           "quantity": 1,
           "usd": "0.28",
@@ -26440,6 +26433,13 @@
           "usd": "0.27",
           "tcgplayerId": 525864,
           "cardmarketId": 743562
+        },
+        {
+          "name": "Command Tower",
+          "quantity": 1,
+          "usd": "0.26",
+          "tcgplayerId": 525809,
+          "cardmarketId": 743677
         },
         {
           "name": "Orzhov Basilica",
@@ -26503,7 +26503,7 @@
       ]
     },
     "lcc-explorers-of-the-deep": {
-      "totalValue": 87.39,
+      "totalValue": 87.37,
       "cardCount": 100,
       "cards": [
         {
@@ -26895,13 +26895,6 @@
           "cardmarketId": 743703
         },
         {
-          "name": "Command Tower",
-          "quantity": 1,
-          "usd": "0.28",
-          "tcgplayerId": 525809,
-          "cardmarketId": 743677
-        },
-        {
           "name": "Llanowar Reborn",
           "quantity": 1,
           "usd": "0.28",
@@ -26942,6 +26935,13 @@
           "usd": "0.27",
           "tcgplayerId": 525969,
           "cardmarketId": 743629
+        },
+        {
+          "name": "Command Tower",
+          "quantity": 1,
+          "usd": "0.26",
+          "tcgplayerId": 525809,
+          "cardmarketId": 743677
         },
         {
           "name": "Sage of Fables",
@@ -27084,7 +27084,7 @@
       ]
     },
     "lcc-veloci-ramp-tor": {
-      "totalValue": 94.72,
+      "totalValue": 94.7,
       "cardCount": 100,
       "cards": [
         {
@@ -27511,13 +27511,6 @@
           "cardmarketId": 743694
         },
         {
-          "name": "Command Tower",
-          "quantity": 1,
-          "usd": "0.28",
-          "tcgplayerId": 525809,
-          "cardmarketId": 743677
-        },
-        {
           "name": "Myriad Landscape",
           "quantity": 1,
           "usd": "0.28",
@@ -27565,6 +27558,13 @@
           "usd": "0.27",
           "tcgplayerId": 525894,
           "cardmarketId": 743611
+        },
+        {
+          "name": "Command Tower",
+          "quantity": 1,
+          "usd": "0.26",
+          "tcgplayerId": 525809,
+          "cardmarketId": 743677
         },
         {
           "name": "Savage Stomp",
@@ -32738,7 +32738,7 @@
           "name": "Command Tower",
           "quantity": 1,
           "usd": "0.40",
-          "usd_foil": "1.21",
+          "usd_foil": "1.16",
           "tcgplayerId": 503408,
           "cardmarketId": 721737
         },
@@ -33337,7 +33337,7 @@
           "name": "Command Tower",
           "quantity": 1,
           "usd": "0.40",
-          "usd_foil": "1.21",
+          "usd_foil": "1.16",
           "tcgplayerId": 503408,
           "cardmarketId": 721737
         },
@@ -34104,7 +34104,7 @@
           "name": "Command Tower",
           "quantity": 1,
           "usd": "0.40",
-          "usd_foil": "1.21",
+          "usd_foil": "1.16",
           "tcgplayerId": 503408,
           "cardmarketId": 721737
         },
@@ -34278,7 +34278,7 @@
       ]
     },
     "ltc-riders-of-rohan": {
-      "totalValue": 54.88,
+      "totalValue": 54.89,
       "cardCount": 100,
       "cards": [
         {
@@ -34418,7 +34418,7 @@
         {
           "name": "Command Tower",
           "quantity": 1,
-          "usd": "0.43",
+          "usd": "0.44",
           "tcgplayerId": 499589,
           "cardmarketId": 717395
         },
@@ -34873,7 +34873,7 @@
       ]
     },
     "ltc-hosts-of-mordor": {
-      "totalValue": 76.17,
+      "totalValue": 76.18,
       "cardCount": 100,
       "cards": [
         {
@@ -35066,7 +35066,7 @@
         {
           "name": "Command Tower",
           "quantity": 1,
-          "usd": "0.43",
+          "usd": "0.44",
           "tcgplayerId": 499589,
           "cardmarketId": 717395
         },
@@ -37685,7 +37685,7 @@
       ]
     },
     "soc-silverquill-influence": {
-      "totalValue": 93.66,
+      "totalValue": 93.65,
       "cardCount": 100,
       "cards": [
         {
@@ -38175,18 +38175,18 @@
           "cardmarketId": 881441
         },
         {
-          "name": "Command Tower",
-          "quantity": 1,
-          "usd": "0.29",
-          "tcgplayerId": 687664,
-          "cardmarketId": 881451
-        },
-        {
           "name": "Killian, Ink Duelist",
           "quantity": 1,
           "usd": "0.29",
           "tcgplayerId": 687637,
           "cardmarketId": 881651
+        },
+        {
+          "name": "Command Tower",
+          "quantity": 1,
+          "usd": "0.28",
+          "tcgplayerId": 687664,
+          "cardmarketId": 881451
         },
         {
           "name": "Raffine's Guidance",
@@ -38294,7 +38294,7 @@
       ]
     },
     "soc-prismari-artistry": {
-      "totalValue": 88.41,
+      "totalValue": 88.4,
       "cardCount": 100,
       "cards": [
         {
@@ -38833,18 +38833,18 @@
           "cardmarketId": 881643
         },
         {
-          "name": "Command Tower",
-          "quantity": 1,
-          "usd": "0.29",
-          "tcgplayerId": 687664,
-          "cardmarketId": 881451
-        },
-        {
           "name": "Deep Analysis",
           "quantity": 1,
           "usd": "0.29",
           "tcgplayerId": 687412,
           "cardmarketId": 881514
+        },
+        {
+          "name": "Command Tower",
+          "quantity": 1,
+          "usd": "0.28",
+          "tcgplayerId": 687664,
+          "cardmarketId": 881451
         },
         {
           "name": "Frostboil Snarl",
@@ -38911,7 +38911,7 @@
       ]
     },
     "soc-witherbloom-pestilence": {
-      "totalValue": 88.16,
+      "totalValue": 88.15,
       "cardCount": 100,
       "cards": [
         {
@@ -39436,18 +39436,18 @@
           "cardmarketId": 881551
         },
         {
-          "name": "Command Tower",
-          "quantity": 1,
-          "usd": "0.29",
-          "tcgplayerId": 687664,
-          "cardmarketId": 881451
-        },
-        {
           "name": "Infernal Grasp",
           "quantity": 1,
           "usd": "0.29",
           "tcgplayerId": 687424,
           "cardmarketId": 881535
+        },
+        {
+          "name": "Command Tower",
+          "quantity": 1,
+          "usd": "0.28",
+          "tcgplayerId": 687664,
+          "cardmarketId": 881451
         },
         {
           "name": "Necroblossom Snarl",
@@ -39522,7 +39522,7 @@
       ]
     },
     "soc-lorehold-spirit": {
-      "totalValue": 92.09,
+      "totalValue": 92.08,
       "cardCount": 100,
       "cards": [
         {
@@ -40021,7 +40021,7 @@
         {
           "name": "Command Tower",
           "quantity": 1,
-          "usd": "0.29",
+          "usd": "0.28",
           "tcgplayerId": 687664,
           "cardmarketId": 881451
         },
@@ -40128,7 +40128,7 @@
       ]
     },
     "soc-quandrix-unlimited": {
-      "totalValue": 88.64,
+      "totalValue": 88.63,
       "cardCount": 100,
       "cards": [
         {
@@ -40639,13 +40639,6 @@
           "cardmarketId": 881706
         },
         {
-          "name": "Command Tower",
-          "quantity": 1,
-          "usd": "0.29",
-          "tcgplayerId": 687664,
-          "cardmarketId": 881451
-        },
-        {
           "name": "Mana Bloom",
           "quantity": 1,
           "usd": "0.29",
@@ -40658,6 +40651,13 @@
           "usd": "0.29",
           "tcgplayerId": 687404,
           "cardmarketId": 881512
+        },
+        {
+          "name": "Command Tower",
+          "quantity": 1,
+          "usd": "0.28",
+          "tcgplayerId": 687664,
+          "cardmarketId": 881451
         },
         {
           "name": "Vineglimmer Snarl",
@@ -41445,7 +41445,7 @@
       ]
     },
     "dsc-death-toll": {
-      "totalValue": 70.23,
+      "totalValue": 70.21,
       "cardCount": 100,
       "cards": [
         {
@@ -41653,13 +41653,6 @@
           "cardmarketId": 789000
         },
         {
-          "name": "Command Tower",
-          "quantity": 1,
-          "usd": "0.35",
-          "tcgplayerId": 577883,
-          "cardmarketId": 787244
-        },
-        {
           "name": "Giant Adephage",
           "quantity": 1,
           "usd": "0.35",
@@ -41700,6 +41693,13 @@
           "usd": "0.34",
           "tcgplayerId": 579059,
           "cardmarketId": 788775
+        },
+        {
+          "name": "Command Tower",
+          "quantity": 1,
+          "usd": "0.33",
+          "tcgplayerId": 577883,
+          "cardmarketId": 787244
         },
         {
           "name": "Mind Stone",
