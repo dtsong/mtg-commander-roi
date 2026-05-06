@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-05T20:59:26.075Z",
+  "updatedAt": "2026-05-06T01:53:10.731Z",
   "decks": {
     "ltc-elven-council": {
       "totalValue": 78.87,
@@ -17540,7 +17540,7 @@
       ]
     },
     "otc-quick-draw": {
-      "totalValue": 134.19,
+      "totalValue": 134.18,
       "cardCount": 100,
       "cards": [
         {
@@ -17911,18 +17911,18 @@
           "cardmarketId": 764866
         },
         {
-          "name": "Treasure Cruise",
-          "quantity": 1,
-          "usd": "0.37",
-          "tcgplayerId": 545269,
-          "cardmarketId": 764863
-        },
-        {
           "name": "Exotic Orchard",
           "quantity": 1,
           "usd": "0.37",
           "tcgplayerId": 545235,
           "cardmarketId": 764838
+        },
+        {
+          "name": "Treasure Cruise",
+          "quantity": 1,
+          "usd": "0.36",
+          "tcgplayerId": 545269,
+          "cardmarketId": 764863
         },
         {
           "name": "Temple of Epiphany",
