@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-07T21:01:22.035Z",
+  "updatedAt": "2026-05-08T02:03:33.294Z",
   "decks": {
     "ltc-elven-council": {
       "totalValue": 80.47,
@@ -37673,7 +37673,7 @@
       ]
     },
     "soc-silverquill-influence": {
-      "totalValue": 91.91,
+      "totalValue": 91.81,
       "cardCount": 100,
       "cards": [
         {
@@ -37700,7 +37700,7 @@
         {
           "name": "Eiganjo Dynastorian",
           "quantity": 1,
-          "usd": "4.74",
+          "usd": "4.64",
           "tcgplayerId": 686539,
           "cardmarketId": 880742
         },
@@ -38282,7 +38282,7 @@
       ]
     },
     "soc-prismari-artistry": {
-      "totalValue": 86.02,
+      "totalValue": 86.01,
       "cardCount": 100,
       "cards": [
         {
@@ -38452,7 +38452,7 @@
         {
           "name": "Dirgur Focusmage",
           "quantity": 1,
-          "usd": "0.97",
+          "usd": "0.96",
           "tcgplayerId": 687333,
           "cardmarketId": 881245
         },
@@ -38899,13 +38899,13 @@
       ]
     },
     "soc-witherbloom-pestilence": {
-      "totalValue": 85.29,
+      "totalValue": 85.22,
       "cardCount": 100,
       "cards": [
         {
           "name": "Stensian Sanguinist",
           "quantity": 1,
-          "usd": "9.30",
+          "usd": "9.23",
           "tcgplayerId": 687354,
           "cardmarketId": 881274
         },
@@ -39510,7 +39510,7 @@
       ]
     },
     "soc-lorehold-spirit": {
-      "totalValue": 87.15,
+      "totalValue": 87.09,
       "cardCount": 100,
       "cards": [
         {
@@ -39537,7 +39537,7 @@
         {
           "name": "Naktamun Lorespinner",
           "quantity": 1,
-          "usd": "5.32",
+          "usd": "5.33",
           "tcgplayerId": 687356,
           "cardmarketId": 881284
         },
@@ -39551,7 +39551,7 @@
         {
           "name": "Lotus Field",
           "quantity": 1,
-          "usd": "4.29",
+          "usd": "4.21",
           "tcgplayerId": 687695,
           "cardmarketId": 881718
         },
@@ -40074,7 +40074,7 @@
         {
           "name": "Kirol, History Buff",
           "quantity": 1,
-          "usd": "0.16",
+          "usd": "0.17",
           "usd_foil": "0.27",
           "tcgplayerId": 686544,
           "cardmarketId": 880521
@@ -40115,7 +40115,7 @@
       ]
     },
     "soc-quandrix-unlimited": {
-      "totalValue": 83.54,
+      "totalValue": 83.48,
       "cardCount": 100,
       "cards": [
         {
@@ -40176,18 +40176,18 @@
           "cardmarketId": 881446
         },
         {
-          "name": "Yavimaya Bloomsage",
-          "quantity": 1,
-          "usd": "2.80",
-          "tcgplayerId": 687439,
-          "cardmarketId": 881311
-        },
-        {
           "name": "Reliquary Tower",
           "quantity": 1,
           "usd": "2.76",
           "tcgplayerId": 687486,
           "cardmarketId": 881731
+        },
+        {
+          "name": "Yavimaya Bloomsage",
+          "quantity": 1,
+          "usd": "2.75",
+          "tcgplayerId": 687439,
+          "cardmarketId": 881311
         },
         {
           "name": "Kami of Whispered Hopes",
@@ -40416,13 +40416,6 @@
           "cardmarketId": 881598
         },
         {
-          "name": "Striding Shotcaller",
-          "quantity": 1,
-          "usd": "0.37",
-          "tcgplayerId": 687593,
-          "cardmarketId": 881385
-        },
-        {
           "name": "Opal Palace",
           "quantity": 1,
           "usd": "0.36",
@@ -40435,6 +40428,13 @@
           "usd": "0.36",
           "tcgplayerId": 687625,
           "cardmarketId": 881640
+        },
+        {
+          "name": "Striding Shotcaller",
+          "quantity": 1,
+          "usd": "0.36",
+          "tcgplayerId": 687593,
+          "cardmarketId": 881385
         },
         {
           "name": "Yavimaya Coast",
