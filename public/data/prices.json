@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-11T20:35:50.840Z",
+  "updatedAt": "2026-05-12T00:30:48.169Z",
   "decks": {
     "ltc-elven-council": {
       "totalValue": 83.09,
@@ -4316,7 +4316,7 @@
       ]
     },
     "fic-limit-break": {
-      "totalValue": 77.57,
+      "totalValue": 77.58,
       "cardCount": 100,
       "cards": [
         {
@@ -4395,7 +4395,7 @@
         {
           "name": "Vandalblast",
           "quantity": 1,
-          "usd": "1.95",
+          "usd": "1.96",
           "tcgplayerId": 631188,
           "cardmarketId": 824643
         },
@@ -39511,7 +39511,7 @@
       ]
     },
     "soc-lorehold-spirit": {
-      "totalValue": 79.42,
+      "totalValue": 79.41,
       "cardCount": 100,
       "cards": [
         {
@@ -39896,13 +39896,6 @@
           "cardmarketId": 881503
         },
         {
-          "name": "Squee, Goblin Nabob",
-          "quantity": 1,
-          "usd": "0.30",
-          "tcgplayerId": 687340,
-          "cardmarketId": 881574
-        },
-        {
           "name": "White Orchid Phantom",
           "quantity": 1,
           "usd": "0.30",
@@ -39957,6 +39950,13 @@
           "usd": "0.29",
           "tcgplayerId": 687445,
           "cardmarketId": 881559
+        },
+        {
+          "name": "Squee, Goblin Nabob",
+          "quantity": 1,
+          "usd": "0.29",
+          "tcgplayerId": 687340,
+          "cardmarketId": 881574
         },
         {
           "name": "Hofri Ghostforge",
