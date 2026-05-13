@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-12T20:34:03.710Z",
+  "updatedAt": "2026-05-13T00:26:22.323Z",
   "decks": {
     "ltc-elven-council": {
       "totalValue": 83.15,
@@ -1789,13 +1789,13 @@
       ]
     },
     "ecc-blight-curse": {
-      "totalValue": 47.61,
+      "totalValue": 47.62,
       "cardCount": 100,
       "cards": [
         {
           "name": "Chimil, the Inner Sun",
           "quantity": 1,
-          "usd": "4.42",
+          "usd": "4.43",
           "tcgplayerId": 671263,
           "cardmarketId": 865069
         },
