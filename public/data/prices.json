@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-14T20:32:13.245Z",
+  "updatedAt": "2026-05-15T00:24:58.479Z",
   "decks": {
     "ltc-elven-council": {
       "totalValue": 82.95,
@@ -3659,7 +3659,7 @@
       ]
     },
     "fic-revival-trance": {
-      "totalValue": 55.67,
+      "totalValue": 55.68,
       "cardCount": 100,
       "cards": [
         {
@@ -3738,7 +3738,7 @@
         {
           "name": "Sulfurous Springs",
           "quantity": 1,
-          "usd": "1.03",
+          "usd": "1.04",
           "tcgplayerId": 631594,
           "cardmarketId": 824869
         },
@@ -6289,7 +6289,7 @@
       ]
     },
     "tdc-temur-roar": {
-      "totalValue": 70.51,
+      "totalValue": 70.5,
       "cardCount": 100,
       "cards": [
         {
@@ -6590,13 +6590,6 @@
           "cardmarketId": 818937
         },
         {
-          "name": "Shivan Reef",
-          "quantity": 1,
-          "usd": "0.36",
-          "tcgplayerId": 624216,
-          "cardmarketId": 818952
-        },
-        {
           "name": "Nesting Dragon",
           "quantity": 1,
           "usd": "0.35",
@@ -6609,6 +6602,13 @@
           "usd": "0.35",
           "tcgplayerId": 624941,
           "cardmarketId": 819305
+        },
+        {
+          "name": "Shivan Reef",
+          "quantity": 1,
+          "usd": "0.35",
+          "tcgplayerId": 624216,
+          "cardmarketId": 818952
         },
         {
           "name": "Temple of Abandon",
@@ -7519,7 +7519,7 @@
       ]
     },
     "tdc-jeskai-striker": {
-      "totalValue": 67.01,
+      "totalValue": 67,
       "cardCount": 100,
       "cards": [
         {
@@ -7743,18 +7743,18 @@
           "cardmarketId": 818738
         },
         {
-          "name": "Shivan Reef",
-          "quantity": 1,
-          "usd": "0.36",
-          "tcgplayerId": 624216,
-          "cardmarketId": 818952
-        },
-        {
           "name": "Izzet Signet",
           "quantity": 1,
           "usd": "0.35",
           "tcgplayerId": 624200,
           "cardmarketId": 818893
+        },
+        {
+          "name": "Shivan Reef",
+          "quantity": 1,
+          "usd": "0.35",
+          "tcgplayerId": 624216,
+          "cardmarketId": 818952
         },
         {
           "name": "Faithless Looting",
@@ -8146,7 +8146,7 @@
       ]
     },
     "tdc-sultai-arisen": {
-      "totalValue": 82.23,
+      "totalValue": 82.22,
       "cardCount": 100,
       "cards": [
         {
@@ -8301,7 +8301,7 @@
         {
           "name": "Ob Nixilis, the Fallen",
           "quantity": 1,
-          "usd": "0.73",
+          "usd": "0.72",
           "tcgplayerId": 624430,
           "cardmarketId": 818801
         },
@@ -13694,7 +13694,7 @@
       ]
     },
     "blc-animated-army": {
-      "totalValue": 63.78,
+      "totalValue": 63.79,
       "cardCount": 100,
       "cards": [
         {
@@ -13912,7 +13912,7 @@
         {
           "name": "Karplusan Forest",
           "quantity": 1,
-          "usd": "0.42",
+          "usd": "0.43",
           "tcgplayerId": 559930,
           "cardmarketId": 779271
         },
@@ -16839,7 +16839,7 @@
       ]
     },
     "m3c-eldrazi-incursion": {
-      "totalValue": 124.48,
+      "totalValue": 124.51,
       "cardCount": 100,
       "cards": [
         {
@@ -16976,18 +16976,18 @@
           "cardmarketId": 773061
         },
         {
+          "name": "Karplusan Forest",
+          "quantity": 1,
+          "usd": "1.78",
+          "tcgplayerId": 553090,
+          "cardmarketId": 773087
+        },
+        {
           "name": "Sol Ring",
           "quantity": 1,
           "usd": "1.74",
           "tcgplayerId": 552939,
           "cardmarketId": 772287
-        },
-        {
-          "name": "Karplusan Forest",
-          "quantity": 1,
-          "usd": "1.73",
-          "tcgplayerId": 553090,
-          "cardmarketId": 773087
         },
         {
           "name": "Mutated Cultist",
@@ -17004,18 +17004,18 @@
           "cardmarketId": 772933
         },
         {
-          "name": "Ugin, the Ineffable",
-          "quantity": 1,
-          "usd": "1.56",
-          "tcgplayerId": 553076,
-          "cardmarketId": 772959
-        },
-        {
           "name": "Sulfurous Springs",
           "quantity": 1,
           "usd": "1.55",
           "tcgplayerId": 553092,
           "cardmarketId": 773110
+        },
+        {
+          "name": "Ugin, the Ineffable",
+          "quantity": 1,
+          "usd": "1.54",
+          "tcgplayerId": 553076,
+          "cardmarketId": 772959
         },
         {
           "name": "Awakening Zone",
@@ -34274,7 +34274,7 @@
       ]
     },
     "ltc-riders-of-rohan": {
-      "totalValue": 55.37,
+      "totalValue": 55.38,
       "cardCount": 100,
       "cards": [
         {
@@ -34589,6 +34589,13 @@
           "cardmarketId": 717468
         },
         {
+          "name": "Battlefield Forge",
+          "quantity": 1,
+          "usd": "0.32",
+          "tcgplayerId": 499737,
+          "cardmarketId": 717442
+        },
+        {
           "name": "Prairie Stream",
           "quantity": 1,
           "usd": "0.32",
@@ -34608,13 +34615,6 @@
           "usd": "0.31",
           "tcgplayerId": 499816,
           "cardmarketId": 717393
-        },
-        {
-          "name": "Battlefield Forge",
-          "quantity": 1,
-          "usd": "0.31",
-          "tcgplayerId": 499737,
-          "cardmarketId": 717442
         },
         {
           "name": "Humble Defector",
@@ -36554,7 +36554,7 @@
       ]
     },
     "40k-the-ruinous-powers": {
-      "totalValue": 247.2,
+      "totalValue": 247.17,
       "cardCount": 100,
       "cards": [
         {
@@ -36736,7 +36736,7 @@
         {
           "name": "Brainstorm",
           "quantity": 1,
-          "usd": "1.73",
+          "usd": "1.70",
           "tcgplayerId": 286133,
           "cardmarketId": 675220
         },
@@ -37680,7 +37680,7 @@
       ]
     },
     "soc-silverquill-influence": {
-      "totalValue": 83.01,
+      "totalValue": 83.03,
       "cardCount": 100,
       "cards": [
         {
@@ -37883,18 +37883,18 @@
           "cardmarketId": 881464
         },
         {
+          "name": "Caves of Koilos",
+          "quantity": 1,
+          "usd": "0.49",
+          "tcgplayerId": 687671,
+          "cardmarketId": 881698
+        },
+        {
           "name": "Sram, Senior Edificer",
           "quantity": 1,
           "usd": "0.48",
           "tcgplayerId": 687537,
           "cardmarketId": 881497
-        },
-        {
-          "name": "Caves of Koilos",
-          "quantity": 1,
-          "usd": "0.47",
-          "tcgplayerId": 687671,
-          "cardmarketId": 881698
         },
         {
           "name": "Flickering Ward",
@@ -40522,18 +40522,18 @@
           "cardmarketId": 881702
         },
         {
-          "name": "Yavimaya Coast",
-          "quantity": 1,
-          "usd": "0.31",
-          "tcgplayerId": 687588,
-          "cardmarketId": 881758
-        },
-        {
           "name": "Hydroid Krasis",
           "quantity": 1,
           "usd": "0.31",
           "tcgplayerId": 687636,
           "cardmarketId": 881649
+        },
+        {
+          "name": "Hangarback Walker",
+          "quantity": 1,
+          "usd": "0.31",
+          "tcgplayerId": 687604,
+          "cardmarketId": 881682
         },
         {
           "name": "Quandrix Apprentice",
@@ -40548,6 +40548,13 @@
           "usd": "0.31",
           "tcgplayerId": 687563,
           "cardmarketId": 881615
+        },
+        {
+          "name": "Yavimaya Coast",
+          "quantity": 1,
+          "usd": "0.30",
+          "tcgplayerId": 687588,
+          "cardmarketId": 881758
         },
         {
           "name": "Vineglimmer Snarl",
@@ -40569,13 +40576,6 @@
           "usd": "0.30",
           "tcgplayerId": 687504,
           "cardmarketId": 881597
-        },
-        {
-          "name": "Hangarback Walker",
-          "quantity": 1,
-          "usd": "0.30",
-          "tcgplayerId": 687604,
-          "cardmarketId": 881682
         },
         {
           "name": "Zimone, Quandrix Prodigy",
