@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-16T20:16:52.015Z",
+  "updatedAt": "2026-05-17T00:24:03.300Z",
   "decks": {
     "ltc-elven-council": {
       "totalValue": 83.68,
@@ -13826,7 +13826,7 @@
           "quantity": 1,
           "usd": "0.76",
           "tcgplayerId": 559912,
-          "cardmarketId": 714616
+          "cardmarketId": 779358
         },
         {
           "name": "Ghalta, Primal Hunger",
@@ -13960,7 +13960,7 @@
           "quantity": 1,
           "usd": "0.38",
           "tcgplayerId": 560215,
-          "cardmarketId": 791474
+          "cardmarketId": 779287
         },
         {
           "name": "Mind Stone",
@@ -14066,7 +14066,7 @@
           "quantity": 1,
           "usd": "0.35",
           "tcgplayerId": 559869,
-          "cardmarketId": 685197
+          "cardmarketId": 779398
         },
         {
           "name": "Garruk's Packleader",
@@ -25310,13 +25310,13 @@
       ]
     },
     "lcc-ahoy-mateys": {
-      "totalValue": 73.01,
+      "totalValue": 72.76,
       "cardCount": 100,
       "cards": [
         {
           "name": "Black Market Connections",
           "quantity": 1,
-          "usd": "19.24",
+          "usd": "18.99",
           "tcgplayerId": 525773,
           "cardmarketId": 743533
         },
@@ -36053,7 +36053,7 @@
       ]
     },
     "40k-necron-dynasties": {
-      "totalValue": 236.05,
+      "totalValue": 236.11,
       "cardCount": 100,
       "cards": [
         {
@@ -36172,7 +36172,7 @@
         {
           "name": "Caged Sun",
           "quantity": 1,
-          "usd": "4.14",
+          "usd": "4.20",
           "tcgplayerId": 286366,
           "cardmarketId": 675386
         },
