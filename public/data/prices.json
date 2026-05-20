@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-19T20:35:32.740Z",
+  "updatedAt": "2026-05-20T00:29:28.053Z",
   "decks": {
     "ltc-elven-council": {
       "totalValue": 83.62,
@@ -33005,7 +33005,7 @@
       ]
     },
     "cmc-planeswalker-party": {
-      "totalValue": 132.96,
+      "totalValue": 132.99,
       "cardCount": 100,
       "cards": [
         {
@@ -33094,18 +33094,18 @@
           "cardmarketId": 722962
         },
         {
+          "name": "Chandra, Torch of Defiance",
+          "quantity": 1,
+          "usd": "2.84",
+          "tcgplayerId": 505775,
+          "cardmarketId": 722978
+        },
+        {
           "name": "Karn's Bastion",
           "quantity": 1,
           "usd": "2.84",
           "tcgplayerId": 505812,
           "cardmarketId": 722954
-        },
-        {
-          "name": "Chandra, Torch of Defiance",
-          "quantity": 1,
-          "usd": "2.81",
-          "tcgplayerId": 505775,
-          "cardmarketId": 722978
         },
         {
           "name": "Narset, Parter of Veils",
