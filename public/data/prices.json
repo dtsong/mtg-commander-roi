@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-21T20:36:40.415Z",
+  "updatedAt": "2026-05-22T00:27:39.651Z",
   "decks": {
     "ltc-elven-council": {
       "totalValue": 85.6,
@@ -16845,7 +16845,7 @@
       ]
     },
     "m3c-eldrazi-incursion": {
-      "totalValue": 121.54,
+      "totalValue": 121.49,
       "cardCount": 100,
       "cards": [
         {
@@ -16900,7 +16900,7 @@
         {
           "name": "All Is Dust",
           "quantity": 1,
-          "usd": "4.45",
+          "usd": "4.40",
           "tcgplayerId": 553157,
           "cardmarketId": 772952
         },
