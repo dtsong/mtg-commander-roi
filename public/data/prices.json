@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-22T20:33:45.934Z",
+  "updatedAt": "2026-05-23T00:26:51.474Z",
   "decks": {
     "ltc-elven-council": {
       "totalValue": 85.19,
@@ -12463,7 +12463,7 @@
       ]
     },
     "blc-squirreled-away": {
-      "totalValue": 81.44,
+      "totalValue": 81.46,
       "cardCount": 100,
       "cards": [
         {
@@ -12626,7 +12626,7 @@
         {
           "name": "Deadly Dispute",
           "quantity": 1,
-          "usd": "0.71",
+          "usd": "0.73",
           "tcgplayerId": 560032,
           "cardmarketId": 779334
         },
@@ -25314,7 +25314,7 @@
       ]
     },
     "lcc-ahoy-mateys": {
-      "totalValue": 71.11,
+      "totalValue": 71.12,
       "cardCount": 100,
       "cards": [
         {
@@ -25487,6 +25487,13 @@
           "cardmarketId": 743705
         },
         {
+          "name": "Wayfarer's Bauble",
+          "quantity": 1,
+          "usd": "0.38",
+          "tcgplayerId": 525789,
+          "cardmarketId": 743669
+        },
+        {
           "name": "Distant Melody",
           "quantity": 1,
           "usd": "0.38",
@@ -25513,13 +25520,6 @@
           "usd": "0.37",
           "tcgplayerId": 525766,
           "cardmarketId": 743653
-        },
-        {
-          "name": "Wayfarer's Bauble",
-          "quantity": 1,
-          "usd": "0.37",
-          "tcgplayerId": 525789,
-          "cardmarketId": 743669
         },
         {
           "name": "Feed the Swarm",
@@ -25934,7 +25934,7 @@
       ]
     },
     "lcc-blood-rites": {
-      "totalValue": 116.83,
+      "totalValue": 116.84,
       "cardCount": 100,
       "cards": [
         {
@@ -26165,6 +26165,13 @@
           "cardmarketId": 740944
         },
         {
+          "name": "Wayfarer's Bauble",
+          "quantity": 1,
+          "usd": "0.38",
+          "tcgplayerId": 525789,
+          "cardmarketId": 743669
+        },
+        {
           "name": "Butcher of Malakir",
           "quantity": 1,
           "usd": "0.38",
@@ -26191,13 +26198,6 @@
           "usd": "0.37",
           "tcgplayerId": 525766,
           "cardmarketId": 743653
-        },
-        {
-          "name": "Wayfarer's Bauble",
-          "quantity": 1,
-          "usd": "0.37",
-          "tcgplayerId": 525789,
-          "cardmarketId": 743669
         },
         {
           "name": "Mind Stone",
