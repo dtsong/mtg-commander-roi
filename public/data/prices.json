@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-26T20:41:57.346Z",
+  "updatedAt": "2026-05-27T00:28:48.677Z",
   "decks": {
     "ltc-elven-council": {
       "totalValue": 88.65,
@@ -3661,7 +3661,7 @@
       ]
     },
     "fic-revival-trance": {
-      "totalValue": 55.03,
+      "totalValue": 54.96,
       "cardCount": 100,
       "cards": [
         {
@@ -3733,7 +3733,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.30",
+          "usd": "1.27",
           "tcgplayerId": 631243,
           "cardmarketId": 824799
         },
@@ -3747,7 +3747,7 @@
         {
           "name": "Ruinous Ultimatum",
           "quantity": 1,
-          "usd": "0.87",
+          "usd": "0.84",
           "tcgplayerId": 631577,
           "cardmarketId": 824755
         },
@@ -3969,13 +3969,6 @@
           "cardmarketId": 824802
         },
         {
-          "name": "Wayfarer's Bauble",
-          "quantity": 1,
-          "usd": "0.31",
-          "tcgplayerId": 631554,
-          "cardmarketId": 824814
-        },
-        {
           "name": "Demolition Field",
           "quantity": 1,
           "usd": "0.31",
@@ -3995,6 +3988,13 @@
           "usd": "0.30",
           "tcgplayerId": 631178,
           "cardmarketId": 824596
+        },
+        {
+          "name": "Wayfarer's Bauble",
+          "quantity": 1,
+          "usd": "0.30",
+          "tcgplayerId": 631554,
+          "cardmarketId": 824814
         },
         {
           "name": "Command Tower",
@@ -4317,7 +4317,7 @@
       ]
     },
     "fic-limit-break": {
-      "totalValue": 73.28,
+      "totalValue": 73.25,
       "cardCount": 100,
       "cards": [
         {
@@ -4410,7 +4410,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.30",
+          "usd": "1.27",
           "tcgplayerId": 631243,
           "cardmarketId": 824799
         },
@@ -4980,7 +4980,7 @@
       ]
     },
     "fic-counter-blitz": {
-      "totalValue": 78.34,
+      "totalValue": 78.31,
       "cardCount": 100,
       "cards": [
         {
@@ -5066,7 +5066,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.30",
+          "usd": "1.27",
           "tcgplayerId": 631243,
           "cardmarketId": 824799
         },
@@ -5641,7 +5641,7 @@
       ]
     },
     "fic-scions-and-spellcraft": {
-      "totalValue": 72.4,
+      "totalValue": 72.36,
       "cardCount": 100,
       "cards": [
         {
@@ -5726,7 +5726,7 @@
         {
           "name": "Swords to Plowshares",
           "quantity": 1,
-          "usd": "1.63",
+          "usd": "1.62",
           "tcgplayerId": 631137,
           "cardmarketId": 824547
         },
@@ -5754,7 +5754,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.30",
+          "usd": "1.27",
           "tcgplayerId": 631243,
           "cardmarketId": 824799
         },
@@ -8772,7 +8772,7 @@
       ]
     },
     "tdc-mardu-surge": {
-      "totalValue": 76.99,
+      "totalValue": 77,
       "cardCount": 100,
       "cards": [
         {
@@ -9192,6 +9192,13 @@
           "cardmarketId": 818750
         },
         {
+          "name": "Wayfarer's Bauble",
+          "quantity": 1,
+          "usd": "0.30",
+          "tcgplayerId": 624347,
+          "cardmarketId": 818905
+        },
+        {
           "name": "Windbrisk Heights",
           "quantity": 1,
           "usd": "0.30",
@@ -9232,13 +9239,6 @@
           "usd": "0.29",
           "tcgplayerId": 624330,
           "cardmarketId": 818820
-        },
-        {
-          "name": "Wayfarer's Bauble",
-          "quantity": 1,
-          "usd": "0.29",
-          "tcgplayerId": 624347,
-          "cardmarketId": 818905
         },
         {
           "name": "Commander's Insignia",
@@ -10003,7 +10003,7 @@
       ]
     },
     "drc-eternal-might": {
-      "totalValue": 59.65,
+      "totalValue": 59.63,
       "cardCount": 100,
       "cards": [
         {
@@ -10079,7 +10079,7 @@
         {
           "name": "Swords to Plowshares",
           "quantity": 1,
-          "usd": "1.47",
+          "usd": "1.45",
           "tcgplayerId": 615059,
           "cardmarketId": 808270
         },
@@ -11833,7 +11833,7 @@
       ]
     },
     "dsc-miracle-worker": {
-      "totalValue": 95.92,
+      "totalValue": 95.93,
       "cardCount": 100,
       "cards": [
         {
@@ -11952,7 +11952,7 @@
         {
           "name": "Swords to Plowshares",
           "quantity": 1,
-          "usd": "1.22",
+          "usd": "1.23",
           "tcgplayerId": 578992,
           "cardmarketId": 788612
         },
@@ -12460,7 +12460,7 @@
       ]
     },
     "blc-squirreled-away": {
-      "totalValue": 83.82,
+      "totalValue": 83.8,
       "cardCount": 100,
       "cards": [
         {
@@ -12559,7 +12559,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.66",
+          "usd": "1.64",
           "tcgplayerId": 559736,
           "cardmarketId": 778981
         },
@@ -13063,7 +13063,7 @@
       ]
     },
     "blc-family-matters": {
-      "totalValue": 58.76,
+      "totalValue": 58.74,
       "cardCount": 100,
       "cards": [
         {
@@ -13105,7 +13105,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.66",
+          "usd": "1.64",
           "tcgplayerId": 559736,
           "cardmarketId": 778981
         },
@@ -13698,7 +13698,7 @@
       ]
     },
     "blc-animated-army": {
-      "totalValue": 62.45,
+      "totalValue": 62.43,
       "cardCount": 100,
       "cards": [
         {
@@ -13767,7 +13767,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.66",
+          "usd": "1.64",
           "tcgplayerId": 559736,
           "cardmarketId": 778981
         },
@@ -14294,7 +14294,7 @@
       ]
     },
     "blc-peace-offering": {
-      "totalValue": 67.23,
+      "totalValue": 67.21,
       "cardCount": 100,
       "cards": [
         {
@@ -14386,7 +14386,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.66",
+          "usd": "1.64",
           "tcgplayerId": 559736,
           "cardmarketId": 778981
         },
@@ -26503,7 +26503,7 @@
       ]
     },
     "lcc-explorers-of-the-deep": {
-      "totalValue": 89.82,
+      "totalValue": 89.83,
       "cardCount": 100,
       "cards": [
         {
@@ -26635,7 +26635,7 @@
         {
           "name": "Beast Within",
           "quantity": 1,
-          "usd": "0.79",
+          "usd": "0.80",
           "tcgplayerId": 526091,
           "cardmarketId": 743585
         },
@@ -29215,7 +29215,7 @@
       ]
     },
     "who-paradox-power": {
-      "totalValue": 92.7,
+      "totalValue": 92.73,
       "cardCount": 100,
       "cards": [
         {
@@ -29317,7 +29317,7 @@
         {
           "name": "Beast Within",
           "quantity": 1,
-          "usd": "1.08",
+          "usd": "1.11",
           "usd_foil": "10.58",
           "tcgplayerId": 519531,
           "cardmarketId": 739090
@@ -31790,7 +31790,7 @@
       ]
     },
     "cmc-eldrazi-unbound": {
-      "totalValue": 264.18,
+      "totalValue": 264.42,
       "cardCount": 100,
       "cards": [
         {
@@ -31826,7 +31826,7 @@
         {
           "name": "It That Betrays",
           "quantity": 1,
-          "usd": "14.84",
+          "usd": "15.08",
           "tcgplayerId": 506648,
           "cardmarketId": 723132
         },
@@ -37685,7 +37685,7 @@
       ]
     },
     "soc-silverquill-influence": {
-      "totalValue": 75.79,
+      "totalValue": 75.75,
       "cardCount": 100,
       "cards": [
         {
@@ -37778,7 +37778,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.26",
+          "usd": "1.24",
           "tcgplayerId": 687542,
           "cardmarketId": 881450
         },
@@ -37792,7 +37792,7 @@
         {
           "name": "Sheltered by Ghosts",
           "quantity": 1,
-          "usd": "1.01",
+          "usd": "0.99",
           "tcgplayerId": 687523,
           "cardmarketId": 881492
         },
@@ -38293,7 +38293,7 @@
       ]
     },
     "soc-prismari-artistry": {
-      "totalValue": 75.59,
+      "totalValue": 75.57,
       "cardCount": 100,
       "cards": [
         {
@@ -38398,7 +38398,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.26",
+          "usd": "1.24",
           "tcgplayerId": 687542,
           "cardmarketId": 881450
         },
@@ -38909,7 +38909,7 @@
       ]
     },
     "soc-witherbloom-pestilence": {
-      "totalValue": 74.42,
+      "totalValue": 74.4,
       "cardCount": 100,
       "cards": [
         {
@@ -39002,7 +39002,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.26",
+          "usd": "1.24",
           "tcgplayerId": 687542,
           "cardmarketId": 881450
         },
@@ -39519,7 +39519,7 @@
       ]
     },
     "soc-lorehold-spirit": {
-      "totalValue": 65.81,
+      "totalValue": 65.79,
       "cardCount": 100,
       "cards": [
         {
@@ -39611,7 +39611,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.26",
+          "usd": "1.24",
           "tcgplayerId": 687542,
           "cardmarketId": 881450
         },
@@ -40124,7 +40124,7 @@
       ]
     },
     "soc-quandrix-unlimited": {
-      "totalValue": 69.7,
+      "totalValue": 69.68,
       "cardCount": 100,
       "cards": [
         {
@@ -40245,7 +40245,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.26",
+          "usd": "1.24",
           "tcgplayerId": 687542,
           "cardmarketId": 881450
         },
