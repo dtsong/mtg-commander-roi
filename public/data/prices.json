@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-29T20:48:33.676Z",
+  "updatedAt": "2026-05-30T00:28:04.496Z",
   "decks": {
     "ltc-elven-council": {
       "totalValue": 87.49,
@@ -14942,13 +14942,13 @@
       ]
     },
     "m3c-graveyard-overdrive": {
-      "totalValue": 83.47,
+      "totalValue": 83.52,
       "cardCount": 100,
       "cards": [
         {
           "name": "Barrowgoyf",
           "quantity": 1,
-          "usd": "14.24",
+          "usd": "14.29",
           "tcgplayerId": 553662,
           "cardmarketId": 773174
         },
@@ -38296,7 +38296,7 @@
       ]
     },
     "soc-prismari-artistry": {
-      "totalValue": 74.22,
+      "totalValue": 74.23,
       "cardCount": 100,
       "cards": [
         {
@@ -38871,18 +38871,18 @@
           "cardmarketId": 881740
         },
         {
+          "name": "Throes of Chaos",
+          "quantity": 1,
+          "usd": "0.21",
+          "tcgplayerId": 687335,
+          "cardmarketId": 881577
+        },
+        {
           "name": "Treasure Cruise",
           "quantity": 1,
           "usd": "0.21",
           "tcgplayerId": 687467,
           "cardmarketId": 881525
-        },
-        {
-          "name": "Throes of Chaos",
-          "quantity": 1,
-          "usd": "0.20",
-          "tcgplayerId": 687335,
-          "cardmarketId": 881577
         },
         {
           "name": "Spectacle Summit",
