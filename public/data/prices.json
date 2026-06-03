@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-06-02T21:04:07.696Z",
+  "updatedAt": "2026-06-03T00:38:36.472Z",
   "decks": {
     "ltc-elven-council": {
-      "totalValue": 88.97,
+      "totalValue": 88.96,
       "cardCount": 100,
       "cards": [
         {
@@ -114,7 +114,7 @@
         {
           "name": "Beast Within",
           "quantity": 1,
-          "usd": "0.52",
+          "usd": "0.51",
           "tcgplayerId": 499734,
           "cardmarketId": 717141
         },
@@ -3190,7 +3190,7 @@
         {
           "name": "Beast Within",
           "quantity": 1,
-          "usd": "0.57",
+          "usd": "0.56",
           "tcgplayerId": 641989,
           "cardmarketId": 834098
         },
@@ -3330,6 +3330,13 @@
           "cardmarketId": 834097
         },
         {
+          "name": "Escape to the Wilds",
+          "quantity": 1,
+          "usd": "0.33",
+          "tcgplayerId": 642010,
+          "cardmarketId": 834118
+        },
+        {
           "name": "Escape Tunnel",
           "quantity": 1,
           "usd": "0.33",
@@ -3342,13 +3349,6 @@
           "usd": "0.32",
           "tcgplayerId": 642017,
           "cardmarketId": 834125
-        },
-        {
-          "name": "Escape to the Wilds",
-          "quantity": 1,
-          "usd": "0.32",
-          "tcgplayerId": 642010,
-          "cardmarketId": 834118
         },
         {
           "name": "Splendid Reclamation",
@@ -6291,7 +6291,7 @@
       ]
     },
     "tdc-temur-roar": {
-      "totalValue": 66.15,
+      "totalValue": 66.16,
       "cardCount": 100,
       "cards": [
         {
@@ -6440,7 +6440,7 @@
         {
           "name": "Beast Within",
           "quantity": 1,
-          "usd": "0.45",
+          "usd": "0.46",
           "tcgplayerId": 624955,
           "cardmarketId": 819315
         },
@@ -8772,7 +8772,7 @@
       ]
     },
     "tdc-mardu-surge": {
-      "totalValue": 71.85,
+      "totalValue": 71.86,
       "cardCount": 100,
       "cards": [
         {
@@ -9143,6 +9143,13 @@
           "cardmarketId": 818905
         },
         {
+          "name": "Deadly Dispute",
+          "quantity": 1,
+          "usd": "0.30",
+          "tcgplayerId": 624305,
+          "cardmarketId": 818786
+        },
+        {
           "name": "Emeria Angel",
           "quantity": 1,
           "usd": "0.30",
@@ -9169,13 +9176,6 @@
           "usd": "0.30",
           "tcgplayerId": 124584,
           "cardmarketId": 293800
-        },
-        {
-          "name": "Deadly Dispute",
-          "quantity": 1,
-          "usd": "0.29",
-          "tcgplayerId": 624305,
-          "cardmarketId": 818786
         },
         {
           "name": "Beetleback Chief",
@@ -13701,7 +13701,7 @@
       ]
     },
     "blc-animated-army": {
-      "totalValue": 62.52,
+      "totalValue": 62.48,
       "cardCount": 100,
       "cards": [
         {
@@ -13756,7 +13756,7 @@
         {
           "name": "Unnatural Growth",
           "quantity": 1,
-          "usd": "2.51",
+          "usd": "2.47",
           "tcgplayerId": 559887,
           "cardmarketId": 779405
         },
@@ -16176,7 +16176,7 @@
       ]
     },
     "m3c-tricky-terrain": {
-      "totalValue": 111.12,
+      "totalValue": 111.09,
       "cardCount": 100,
       "cards": [
         {
@@ -16329,7 +16329,7 @@
         {
           "name": "Beast Within",
           "quantity": 1,
-          "usd": "0.60",
+          "usd": "0.57",
           "tcgplayerId": 553263,
           "cardmarketId": 772984
         },
@@ -22127,7 +22127,7 @@
       ]
     },
     "pip-hail-caesar": {
-      "totalValue": 86.84,
+      "totalValue": 86.83,
       "cardCount": 100,
       "cards": [
         {
@@ -22342,7 +22342,7 @@
         {
           "name": "Deadly Dispute",
           "quantity": 1,
-          "usd": "0.44",
+          "usd": "0.43",
           "usd_foil": "3.50",
           "tcgplayerId": 539876,
           "cardmarketId": 758576
@@ -40128,7 +40128,7 @@
       ]
     },
     "soc-quandrix-unlimited": {
-      "totalValue": 66.18,
+      "totalValue": 66.19,
       "cardCount": 100,
       "cards": [
         {
@@ -40284,7 +40284,7 @@
         {
           "name": "Beast Within",
           "quantity": 1,
-          "usd": "0.48",
+          "usd": "0.49",
           "tcgplayerId": 687484,
           "cardmarketId": 881593
         },
