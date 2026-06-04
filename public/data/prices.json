@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-03T21:05:37.398Z",
+  "updatedAt": "2026-06-04T00:38:58.099Z",
   "decks": {
     "ltc-elven-council": {
       "totalValue": 89.61,
@@ -17559,14 +17559,14 @@
           "quantity": 1,
           "usd": "7.78",
           "tcgplayerId": 545261,
-          "cardmarketId": 750315
+          "cardmarketId": 764979
         },
         {
           "name": "Niv-Mizzet, Parun",
           "quantity": 1,
           "usd": "7.30",
           "tcgplayerId": 545223,
-          "cardmarketId": 750333
+          "cardmarketId": 764794
         },
         {
           "name": "Veyran, Voice of Duality",
