@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-05T20:37:47.354Z",
+  "updatedAt": "2026-06-06T00:29:42.635Z",
   "decks": {
     "ltc-elven-council": {
       "totalValue": 90.32,
@@ -4315,7 +4315,7 @@
       ]
     },
     "fic-limit-break": {
-      "totalValue": 73.06,
+      "totalValue": 73.07,
       "cardCount": 100,
       "cards": [
         {
@@ -4401,7 +4401,7 @@
         {
           "name": "Trailblazer's Boots",
           "quantity": 1,
-          "usd": "1.20",
+          "usd": "1.21",
           "tcgplayerId": 631246,
           "cardmarketId": 701774
         },
@@ -29214,7 +29214,7 @@
       ]
     },
     "who-paradox-power": {
-      "totalValue": 92.19,
+      "totalValue": 92.18,
       "cardCount": 100,
       "cards": [
         {
@@ -29316,7 +29316,7 @@
         {
           "name": "Farseek",
           "quantity": 1,
-          "usd": "0.86",
+          "usd": "0.85",
           "usd_foil": "6.70",
           "tcgplayerId": 519548,
           "cardmarketId": 739094
