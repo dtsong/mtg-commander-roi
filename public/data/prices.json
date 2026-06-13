@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-06-12T20:45:28.442Z",
+  "updatedAt": "2026-06-13T00:34:46.605Z",
   "decks": {
     "ltc-elven-council": {
-      "totalValue": 93.05,
+      "totalValue": 93.03,
       "cardCount": 100,
       "cards": [
         {
@@ -22,7 +22,7 @@
         {
           "name": "Raise the Palisade",
           "quantity": 1,
-          "usd": "9.71",
+          "usd": "9.70",
           "tcgplayerId": 499572,
           "cardmarketId": 717209
         },
@@ -168,13 +168,6 @@
           "cardmarketId": 717404
         },
         {
-          "name": "Exotic Orchard",
-          "quantity": 1,
-          "usd": "0.39",
-          "tcgplayerId": 499569,
-          "cardmarketId": 717490
-        },
-        {
           "name": "Cultivate",
           "quantity": 1,
           "usd": "0.39",
@@ -194,6 +187,13 @@
           "usd": "0.38",
           "tcgplayerId": 499777,
           "cardmarketId": 717454
+        },
+        {
+          "name": "Exotic Orchard",
+          "quantity": 1,
+          "usd": "0.38",
+          "tcgplayerId": 499569,
+          "cardmarketId": 717490
         },
         {
           "name": "Hinterland Harbor",
@@ -544,13 +544,13 @@
       ]
     },
     "ltc-food-and-fellowship": {
-      "totalValue": 82.66,
+      "totalValue": 82.69,
       "cardCount": 100,
       "cards": [
         {
           "name": "Birds of Paradise",
           "quantity": 1,
-          "usd": "12.87",
+          "usd": "12.91",
           "tcgplayerId": 499510,
           "cardmarketId": 717422
         },
@@ -768,13 +768,6 @@
           "cardmarketId": 717444
         },
         {
-          "name": "Exotic Orchard",
-          "quantity": 1,
-          "usd": "0.39",
-          "tcgplayerId": 499569,
-          "cardmarketId": 717490
-        },
-        {
           "name": "Murmuring Bosk",
           "quantity": 1,
           "usd": "0.39",
@@ -815,6 +808,13 @@
           "usd": "0.38",
           "tcgplayerId": 499567,
           "cardmarketId": 717224
+        },
+        {
+          "name": "Exotic Orchard",
+          "quantity": 1,
+          "usd": "0.38",
+          "tcgplayerId": 499569,
+          "cardmarketId": 717490
         },
         {
           "name": "Path of Ancestry",
@@ -1789,7 +1789,7 @@
       ]
     },
     "ecc-blight-curse": {
-      "totalValue": 41.45,
+      "totalValue": 41.47,
       "cardCount": 100,
       "cards": [
         {
@@ -2244,6 +2244,13 @@
           "cardmarketId": 865052
         },
         {
+          "name": "Canyon Slough",
+          "quantity": 1,
+          "usd": "0.28",
+          "tcgplayerId": 671193,
+          "cardmarketId": 865077
+        },
+        {
           "name": "Ifnir Deadlands",
           "quantity": 1,
           "usd": "0.28",
@@ -2284,13 +2291,6 @@
           "usd": "0.26",
           "tcgplayerId": 671293,
           "cardmarketId": 865074
-        },
-        {
-          "name": "Canyon Slough",
-          "quantity": 1,
-          "usd": "0.26",
-          "tcgplayerId": 671193,
-          "cardmarketId": 865077
         },
         {
           "name": "Path of Ancestry",
@@ -2389,7 +2389,7 @@
       ]
     },
     "eoc-counter-intelligence": {
-      "totalValue": 55.24,
+      "totalValue": 55.23,
       "cardCount": 100,
       "cards": [
         {
@@ -2488,7 +2488,7 @@
         {
           "name": "Radiant Summit",
           "quantity": 1,
-          "usd": "0.93",
+          "usd": "0.92",
           "tcgplayerId": 642844,
           "cardmarketId": 834293
         },
@@ -2643,7 +2643,7 @@
         {
           "name": "Sulfur Falls",
           "quantity": 1,
-          "usd": "0.33",
+          "usd": "0.34",
           "tcgplayerId": 642868,
           "cardmarketId": 834317
         },
@@ -2653,13 +2653,6 @@
           "usd": "0.33",
           "tcgplayerId": 642821,
           "cardmarketId": 834270
-        },
-        {
-          "name": "Exotic Orchard",
-          "quantity": 1,
-          "usd": "0.32",
-          "tcgplayerId": 642851,
-          "cardmarketId": 834300
         },
         {
           "name": "Glittering Massif",
@@ -2716,6 +2709,13 @@
           "usd": "0.31",
           "tcgplayerId": 642032,
           "cardmarketId": 834084
+        },
+        {
+          "name": "Exotic Orchard",
+          "quantity": 1,
+          "usd": "0.31",
+          "tcgplayerId": 642851,
+          "cardmarketId": 834300
         },
         {
           "name": "Rustvale Bridge",
@@ -3050,7 +3050,7 @@
       ]
     },
     "eoc-world-shaper": {
-      "totalValue": 49.7,
+      "totalValue": 49.69,
       "cardCount": 100,
       "cards": [
         {
@@ -3091,7 +3091,7 @@
         {
           "name": "Fabled Passage",
           "quantity": 1,
-          "usd": "2.24",
+          "usd": "2.23",
           "tcgplayerId": 642033,
           "cardmarketId": 834085
         },
@@ -3660,7 +3660,7 @@
       ]
     },
     "fic-revival-trance": {
-      "totalValue": 51.49,
+      "totalValue": 51.55,
       "cardCount": 100,
       "cards": [
         {
@@ -3961,6 +3961,13 @@
           "cardmarketId": 824545
         },
         {
+          "name": "Exotic Orchard",
+          "quantity": 1,
+          "usd": "0.30",
+          "tcgplayerId": 631261,
+          "cardmarketId": 824832
+        },
+        {
           "name": "Geothermal Bog",
           "quantity": 1,
           "usd": "0.30",
@@ -4067,13 +4074,6 @@
           "cardmarketId": 824577
         },
         {
-          "name": "Exotic Orchard",
-          "quantity": 1,
-          "usd": "0.26",
-          "tcgplayerId": 631261,
-          "cardmarketId": 824832
-        },
-        {
           "name": "Sacred Peaks",
           "quantity": 1,
           "usd": "0.26",
@@ -4086,6 +4086,20 @@
           "usd": "0.26",
           "tcgplayerId": 631117,
           "cardmarketId": 824864
+        },
+        {
+          "name": "Bedevil",
+          "quantity": 1,
+          "usd": "0.26",
+          "tcgplayerId": 631558,
+          "cardmarketId": 824738
+        },
+        {
+          "name": "Tragic Arrogance",
+          "quantity": 1,
+          "usd": "0.26",
+          "tcgplayerId": 631571,
+          "cardmarketId": 824549
         },
         {
           "name": "Meteor Golem",
@@ -4123,25 +4137,11 @@
           "cardmarketId": 824853
         },
         {
-          "name": "Bedevil",
-          "quantity": 1,
-          "usd": "0.25",
-          "tcgplayerId": 631558,
-          "cardmarketId": 824738
-        },
-        {
           "name": "Espers to Magicite",
           "quantity": 1,
           "usd": "0.25",
           "tcgplayerId": 631160,
           "cardmarketId": 824575
-        },
-        {
-          "name": "Tragic Arrogance",
-          "quantity": 1,
-          "usd": "0.25",
-          "tcgplayerId": 631571,
-          "cardmarketId": 824549
         },
         {
           "name": "Edgar, Master Machinist",
@@ -4316,27 +4316,27 @@
       ]
     },
     "fic-limit-break": {
-      "totalValue": 72.82,
+      "totalValue": 72.94,
       "cardCount": 100,
       "cards": [
         {
           "name": "Skullclamp",
           "quantity": 1,
-          "usd": "6.65",
+          "usd": "6.68",
           "tcgplayerId": 631240,
           "cardmarketId": 824797
         },
         {
           "name": "Sword of the Animist",
           "quantity": 1,
-          "usd": "5.81",
+          "usd": "5.84",
           "tcgplayerId": 631215,
           "cardmarketId": 824804
         },
         {
           "name": "Clever Concealment",
           "quantity": 1,
-          "usd": "5.75",
+          "usd": "5.78",
           "tcgplayerId": 631155,
           "cardmarketId": 824528
         },
@@ -4505,18 +4505,18 @@
           "cardmarketId": 824201
         },
         {
-          "name": "Chaos Warp",
-          "quantity": 1,
-          "usd": "0.42",
-          "tcgplayerId": 631156,
-          "cardmarketId": 824634
-        },
-        {
           "name": "Cultivate",
           "quantity": 1,
           "usd": "0.41",
           "tcgplayerId": 631191,
           "cardmarketId": 824661
+        },
+        {
+          "name": "Chaos Warp",
+          "quantity": 1,
+          "usd": "0.40",
+          "tcgplayerId": 631156,
+          "cardmarketId": 824634
         },
         {
           "name": "Wrecking Ball Arm",
@@ -4666,6 +4666,20 @@
           "cardmarketId": 824782
         },
         {
+          "name": "Exotic Orchard",
+          "quantity": 1,
+          "usd": "0.30",
+          "tcgplayerId": 631261,
+          "cardmarketId": 824832
+        },
+        {
+          "name": "Rootbound Crag",
+          "quantity": 1,
+          "usd": "0.30",
+          "tcgplayerId": 631275,
+          "cardmarketId": 824858
+        },
+        {
           "name": "Harmonize",
           "quantity": 1,
           "usd": "0.30",
@@ -4685,13 +4699,6 @@
           "usd": "0.29",
           "tcgplayerId": 631257,
           "cardmarketId": 824822
-        },
-        {
-          "name": "Rootbound Crag",
-          "quantity": 1,
-          "usd": "0.29",
-          "tcgplayerId": 631275,
-          "cardmarketId": 824858
         },
         {
           "name": "Decimate",
@@ -4783,13 +4790,6 @@
           "usd": "0.26",
           "tcgplayerId": 631217,
           "cardmarketId": 824740
-        },
-        {
-          "name": "Exotic Orchard",
-          "quantity": 1,
-          "usd": "0.26",
-          "tcgplayerId": 631261,
-          "cardmarketId": 824832
         },
         {
           "name": "Sacred Peaks",
@@ -4979,7 +4979,7 @@
       ]
     },
     "fic-counter-blitz": {
-      "totalValue": 70.23,
+      "totalValue": 70.27,
       "cardCount": 100,
       "cards": [
         {
@@ -5287,6 +5287,13 @@
           "cardmarketId": 824498
         },
         {
+          "name": "Exotic Orchard",
+          "quantity": 1,
+          "usd": "0.30",
+          "tcgplayerId": 631261,
+          "cardmarketId": 824832
+        },
+        {
           "name": "Seaside Citadel",
           "quantity": 1,
           "usd": "0.30",
@@ -5425,13 +5432,6 @@
           "usd": "0.26",
           "tcgplayerId": 631232,
           "cardmarketId": 824553
-        },
-        {
-          "name": "Exotic Orchard",
-          "quantity": 1,
-          "usd": "0.26",
-          "tcgplayerId": 631261,
-          "cardmarketId": 824832
         },
         {
           "name": "Nesting Grounds",
@@ -5640,7 +5640,7 @@
       ]
     },
     "fic-scions-and-spellcraft": {
-      "totalValue": 69.86,
+      "totalValue": 69.89,
       "cardCount": 100,
       "cards": [
         {
@@ -5871,13 +5871,6 @@
           "cardmarketId": 824578
         },
         {
-          "name": "Sunken Hollow",
-          "quantity": 1,
-          "usd": "0.35",
-          "tcgplayerId": 631486,
-          "cardmarketId": 824871
-        },
-        {
           "name": "Summon: Good King Mog XII",
           "quantity": 1,
           "usd": "0.34",
@@ -5904,6 +5897,13 @@
           "usd": "0.34",
           "tcgplayerId": 631324,
           "cardmarketId": 824847
+        },
+        {
+          "name": "Sunken Hollow",
+          "quantity": 1,
+          "usd": "0.34",
+          "tcgplayerId": 631486,
+          "cardmarketId": 824871
         },
         {
           "name": "Vindicate",
@@ -5967,6 +5967,13 @@
           "usd": "0.31",
           "tcgplayerId": 631100,
           "cardmarketId": 824505
+        },
+        {
+          "name": "Exotic Orchard",
+          "quantity": 1,
+          "usd": "0.30",
+          "tcgplayerId": 631261,
+          "cardmarketId": 824832
         },
         {
           "name": "Rite of Replication",
@@ -6044,13 +6051,6 @@
           "usd": "0.26",
           "tcgplayerId": 631271,
           "cardmarketId": 824717
-        },
-        {
-          "name": "Exotic Orchard",
-          "quantity": 1,
-          "usd": "0.26",
-          "tcgplayerId": 631261,
-          "cardmarketId": 824832
         },
         {
           "name": "Shineshadow Snarl",
@@ -7519,7 +7519,7 @@
       ]
     },
     "tdc-jeskai-striker": {
-      "totalValue": 55.1,
+      "totalValue": 55.11,
       "cardCount": 100,
       "cards": [
         {
@@ -8044,6 +8044,13 @@
           "cardmarketId": 818865
         },
         {
+          "name": "Prairie Stream",
+          "quantity": 1,
+          "usd": "0.25",
+          "tcgplayerId": 624213,
+          "cardmarketId": 818946
+        },
+        {
           "name": "Sulfur Falls",
           "quantity": 1,
           "usd": "0.25",
@@ -8056,13 +8063,6 @@
           "usd": "0.24",
           "tcgplayerId": 624208,
           "cardmarketId": 818929
-        },
-        {
-          "name": "Prairie Stream",
-          "quantity": 1,
-          "usd": "0.24",
-          "tcgplayerId": 624213,
-          "cardmarketId": 818946
         },
         {
           "name": "Baral and Kari Zev",
@@ -8767,13 +8767,13 @@
       ]
     },
     "tdc-mardu-surge": {
-      "totalValue": 66.61,
+      "totalValue": 66.3,
       "cardCount": 100,
       "cards": [
         {
           "name": "Skullclamp",
           "quantity": 1,
-          "usd": "6.31",
+          "usd": "6.03",
           "tcgplayerId": 624340,
           "cardmarketId": 818718
         },
@@ -8895,7 +8895,7 @@
         {
           "name": "Divine Visitation",
           "quantity": 1,
-          "usd": "0.76",
+          "usd": "0.75",
           "tcgplayerId": 624283,
           "cardmarketId": 818727
         },
@@ -8944,7 +8944,7 @@
         {
           "name": "Dragonskull Summit",
           "quantity": 1,
-          "usd": "0.49",
+          "usd": "0.48",
           "tcgplayerId": 624315,
           "cardmarketId": 818925
         },
@@ -9040,13 +9040,6 @@
           "cardmarketId": 818895
         },
         {
-          "name": "Smoldering Marsh",
-          "quantity": 1,
-          "usd": "0.34",
-          "tcgplayerId": 624320,
-          "cardmarketId": 818954
-        },
-        {
           "name": "Terramorphic Expanse",
           "quantity": 1,
           "usd": "0.34",
@@ -9087,6 +9080,13 @@
           "usd": "0.33",
           "tcgplayerId": 624316,
           "cardmarketId": 818930
+        },
+        {
+          "name": "Smoldering Marsh",
+          "quantity": 1,
+          "usd": "0.33",
+          "tcgplayerId": 624320,
+          "cardmarketId": 818954
         },
         {
           "name": "Temple of Triumph",
@@ -9386,7 +9386,7 @@
       ]
     },
     "drc-living-energy": {
-      "totalValue": 49.99,
+      "totalValue": 50.01,
       "cardCount": 100,
       "cards": [
         {
@@ -9476,7 +9476,7 @@
         {
           "name": "Blasphemous Act",
           "quantity": 1,
-          "usd": "0.63",
+          "usd": "0.64",
           "tcgplayerId": 615171,
           "cardmarketId": 807990
         },
@@ -9635,6 +9635,13 @@
           "cardmarketId": 808024
         },
         {
+          "name": "Chaos Warp",
+          "quantity": 1,
+          "usd": "0.33",
+          "tcgplayerId": 615184,
+          "cardmarketId": 807944
+        },
+        {
           "name": "Aether Hub",
           "quantity": 1,
           "usd": "0.32",
@@ -9668,13 +9675,6 @@
           "usd": "0.32",
           "tcgplayerId": 615218,
           "cardmarketId": 807991
-        },
-        {
-          "name": "Chaos Warp",
-          "quantity": 1,
-          "usd": "0.32",
-          "tcgplayerId": 615184,
-          "cardmarketId": 807944
         },
         {
           "name": "Saheeli, Sublime Artificer",
@@ -11829,7 +11829,7 @@
       ]
     },
     "dsc-miracle-worker": {
-      "totalValue": 103.31,
+      "totalValue": 103.32,
       "cardCount": 100,
       "cards": [
         {
@@ -11884,7 +11884,7 @@
         {
           "name": "Monologue Tax",
           "quantity": 1,
-          "usd": "2.97",
+          "usd": "2.98",
           "tcgplayerId": 578965,
           "cardmarketId": 788588
         },
@@ -13060,7 +13060,7 @@
       ]
     },
     "blc-family-matters": {
-      "totalValue": 61.39,
+      "totalValue": 61.38,
       "cardCount": 100,
       "cards": [
         {
@@ -13242,13 +13242,6 @@
           "cardmarketId": 778965
         },
         {
-          "name": "Glacial Fortress",
-          "quantity": 1,
-          "usd": "0.36",
-          "tcgplayerId": 559857,
-          "cardmarketId": 779275
-        },
-        {
           "name": "Bident of Thassa",
           "quantity": 1,
           "usd": "0.36",
@@ -13275,6 +13268,13 @@
           "usd": "0.35",
           "tcgplayerId": 559868,
           "cardmarketId": 779200
+        },
+        {
+          "name": "Glacial Fortress",
+          "quantity": 1,
+          "usd": "0.35",
+          "tcgplayerId": 559857,
+          "cardmarketId": 779275
         },
         {
           "name": "Mystic Monastery",
@@ -13695,7 +13695,7 @@
       ]
     },
     "blc-animated-army": {
-      "totalValue": 64.76,
+      "totalValue": 64.78,
       "cardCount": 100,
       "cards": [
         {
@@ -13708,7 +13708,7 @@
         {
           "name": "Greater Good",
           "quantity": 1,
-          "usd": "4.63",
+          "usd": "4.64",
           "tcgplayerId": 559890,
           "cardmarketId": 779402
         },
@@ -13864,7 +13864,7 @@
         {
           "name": "Chaos Warp",
           "quantity": 1,
-          "usd": "0.50",
+          "usd": "0.51",
           "tcgplayerId": 559902,
           "cardmarketId": 779372
         },
@@ -14291,7 +14291,7 @@
       ]
     },
     "blc-peace-offering": {
-      "totalValue": 84.44,
+      "totalValue": 84.43,
       "cardCount": 100,
       "cards": [
         {
@@ -14557,13 +14557,6 @@
           "cardmarketId": 779207
         },
         {
-          "name": "Glacial Fortress",
-          "quantity": 1,
-          "usd": "0.36",
-          "tcgplayerId": 559857,
-          "cardmarketId": 779275
-        },
-        {
           "name": "Selvala, Explorer Returned",
           "quantity": 1,
           "usd": "0.36",
@@ -14583,6 +14576,13 @@
           "usd": "0.35",
           "tcgplayerId": 559963,
           "cardmarketId": 779322
+        },
+        {
+          "name": "Glacial Fortress",
+          "quantity": 1,
+          "usd": "0.35",
+          "tcgplayerId": 559857,
+          "cardmarketId": 779275
         },
         {
           "name": "Illusionist's Gambit",
@@ -16168,7 +16168,7 @@
       ]
     },
     "m3c-tricky-terrain": {
-      "totalValue": 115.23,
+      "totalValue": 115.2,
       "cardCount": 100,
       "cards": [
         {
@@ -16293,7 +16293,7 @@
         {
           "name": "Chromatic Lantern",
           "quantity": 1,
-          "usd": "1.35",
+          "usd": "1.32",
           "tcgplayerId": 553285,
           "cardmarketId": 773035
         },
@@ -19974,7 +19974,7 @@
       ]
     },
     "pip-scrappy-survivors": {
-      "totalValue": 118.19,
+      "totalValue": 118.21,
       "cardCount": 100,
       "cards": [
         {
@@ -20164,7 +20164,7 @@
         {
           "name": "Sunpetal Grove",
           "quantity": 1,
-          "usd": "0.57",
+          "usd": "0.58",
           "usd_foil": "4.37",
           "tcgplayerId": 539600,
           "cardmarketId": 757890
@@ -20227,6 +20227,14 @@
           "cardmarketId": 757903
         },
         {
+          "name": "Rootbound Crag",
+          "quantity": 1,
+          "usd": "0.40",
+          "usd_foil": "4.81",
+          "tcgplayerId": 539595,
+          "cardmarketId": 757905
+        },
+        {
           "name": "Sticky Fingers",
           "quantity": 1,
           "usd": "0.39",
@@ -20241,14 +20249,6 @@
           "usd_foil": "2.31",
           "tcgplayerId": 539591,
           "cardmarketId": 757889
-        },
-        {
-          "name": "Rootbound Crag",
-          "quantity": 1,
-          "usd": "0.39",
-          "usd_foil": "4.81",
-          "tcgplayerId": 539595,
-          "cardmarketId": 757905
         },
         {
           "name": "Buried Ruin",
@@ -22552,7 +22552,7 @@
           "name": "Lethal Scheme",
           "quantity": 1,
           "usd": "0.33",
-          "usd_foil": "0.97",
+          "usd_foil": "0.99",
           "tcgplayerId": 540663,
           "cardmarketId": 758577
         },
@@ -25305,13 +25305,13 @@
       ]
     },
     "lcc-ahoy-mateys": {
-      "totalValue": 76.88,
+      "totalValue": 75.08,
       "cardCount": 100,
       "cards": [
         {
           "name": "Black Market Connections",
           "quantity": 1,
-          "usd": "19.78",
+          "usd": "17.97",
           "tcgplayerId": 525773,
           "cardmarketId": 743533
         },
@@ -25388,7 +25388,7 @@
         {
           "name": "Blasphemous Act",
           "quantity": 1,
-          "usd": "0.96",
+          "usd": "0.97",
           "tcgplayerId": 525808,
           "cardmarketId": 743568
         },
@@ -29942,7 +29942,7 @@
       ]
     },
     "who-masters-of-evil": {
-      "totalValue": 138.83,
+      "totalValue": 138.86,
       "cardCount": 100,
       "cards": [
         {
@@ -30074,20 +30074,20 @@
           "cardmarketId": 739115
         },
         {
+          "name": "Drowned Catacomb",
+          "quantity": 1,
+          "usd": "2.45",
+          "usd_foil": "4.90",
+          "tcgplayerId": 519889,
+          "cardmarketId": 739145
+        },
+        {
           "name": "Vashta Nerada",
           "quantity": 1,
           "usd": "2.43",
           "usd_foil": "8.39",
           "tcgplayerId": 519753,
           "cardmarketId": 738615
-        },
-        {
-          "name": "Drowned Catacomb",
-          "quantity": 1,
-          "usd": "2.43",
-          "usd_foil": "4.90",
-          "tcgplayerId": 519889,
-          "cardmarketId": 739145
         },
         {
           "name": "Thought Vessel",
@@ -30315,6 +30315,14 @@
           "cardmarketId": 739178
         },
         {
+          "name": "Fetid Pools",
+          "quantity": 1,
+          "usd": "0.34",
+          "usd_foil": "0.73",
+          "tcgplayerId": 519885,
+          "cardmarketId": 739149
+        },
+        {
           "name": "Temple of Malice",
           "quantity": 1,
           "usd": "0.34",
@@ -30329,14 +30337,6 @@
           "usd_foil": "0.78",
           "tcgplayerId": 519238,
           "cardmarketId": 739107
-        },
-        {
-          "name": "Fetid Pools",
-          "quantity": 1,
-          "usd": "0.33",
-          "usd_foil": "0.73",
-          "tcgplayerId": 519885,
-          "cardmarketId": 739149
         },
         {
           "name": "Path of Ancestry",
@@ -31783,7 +31783,7 @@
       ]
     },
     "cmc-eldrazi-unbound": {
-      "totalValue": 273.41,
+      "totalValue": 273.5,
       "cardCount": 100,
       "cards": [
         {
@@ -31961,18 +31961,18 @@
           "cardmarketId": 723177
         },
         {
+          "name": "Metalwork Colossus",
+          "quantity": 1,
+          "usd": "2.98",
+          "tcgplayerId": 506668,
+          "cardmarketId": 723153
+        },
+        {
           "name": "Tyrite Sanctum",
           "quantity": 1,
           "usd": "2.98",
           "tcgplayerId": 506695,
           "cardmarketId": 723184
-        },
-        {
-          "name": "Metalwork Colossus",
-          "quantity": 1,
-          "usd": "2.89",
-          "tcgplayerId": 506668,
-          "cardmarketId": 723153
         },
         {
           "name": "Mystic Forge",
@@ -32403,7 +32403,7 @@
       ]
     },
     "cmc-enduring-enchantments": {
-      "totalValue": 170.32,
+      "totalValue": 170.33,
       "cardCount": 100,
       "cards": [
         {
@@ -32922,7 +32922,7 @@
         {
           "name": "Exotic Orchard",
           "quantity": 1,
-          "usd": "0.23",
+          "usd": "0.24",
           "tcgplayerId": 505369,
           "cardmarketId": 722874
         },
@@ -33001,7 +33001,7 @@
       ]
     },
     "cmc-planeswalker-party": {
-      "totalValue": 134.5,
+      "totalValue": 134.51,
       "cardCount": 100,
       "cards": [
         {
@@ -33564,18 +33564,18 @@
           "cardmarketId": 722969
         },
         {
+          "name": "Exotic Orchard",
+          "quantity": 1,
+          "usd": "0.24",
+          "tcgplayerId": 505369,
+          "cardmarketId": 722874
+        },
+        {
           "name": "Port Town",
           "quantity": 1,
           "usd": "0.24",
           "tcgplayerId": 505815,
           "cardmarketId": 723003
-        },
-        {
-          "name": "Exotic Orchard",
-          "quantity": 1,
-          "usd": "0.23",
-          "tcgplayerId": 505369,
-          "cardmarketId": 722874
         },
         {
           "name": "Sparkshaper Visionary",
@@ -33609,7 +33609,7 @@
       ]
     },
     "cmc-sliver-swarm": {
-      "totalValue": 204.35,
+      "totalValue": 204.38,
       "cardCount": 100,
       "cards": [
         {
@@ -34125,6 +34125,13 @@
           "cardmarketId": 721724
         },
         {
+          "name": "Cinder Glade",
+          "quantity": 1,
+          "usd": "0.34",
+          "tcgplayerId": 505373,
+          "cardmarketId": 722841
+        },
+        {
           "name": "Smoldering Marsh",
           "quantity": 1,
           "usd": "0.34",
@@ -34158,13 +34165,6 @@
           "usd": "0.33",
           "tcgplayerId": 505347,
           "cardmarketId": 722872
-        },
-        {
-          "name": "Cinder Glade",
-          "quantity": 1,
-          "usd": "0.32",
-          "tcgplayerId": 505373,
-          "cardmarketId": 722841
         },
         {
           "name": "Prairie Stream",
@@ -34232,7 +34232,7 @@
         {
           "name": "Exotic Orchard",
           "quantity": 1,
-          "usd": "0.23",
+          "usd": "0.24",
           "tcgplayerId": 505369,
           "cardmarketId": 722874
         },
@@ -34272,13 +34272,13 @@
       ]
     },
     "ltc-riders-of-rohan": {
-      "totalValue": 62.1,
+      "totalValue": 62.07,
       "cardCount": 100,
       "cards": [
         {
           "name": "Door of Destinies",
           "quantity": 1,
-          "usd": "7.31",
+          "usd": "7.30",
           "tcgplayerId": 499810,
           "cardmarketId": 717409
         },
@@ -34398,7 +34398,7 @@
         {
           "name": "Bastion Protector",
           "quantity": 1,
-          "usd": "0.58",
+          "usd": "0.57",
           "tcgplayerId": 499790,
           "cardmarketId": 717182
         },
@@ -34445,13 +34445,6 @@
           "cardmarketId": 717202
         },
         {
-          "name": "Exotic Orchard",
-          "quantity": 1,
-          "usd": "0.39",
-          "tcgplayerId": 499569,
-          "cardmarketId": 717490
-        },
-        {
           "name": "Secluded Courtyard",
           "quantity": 1,
           "usd": "0.39",
@@ -34492,6 +34485,13 @@
           "usd": "0.38",
           "tcgplayerId": 499741,
           "cardmarketId": 717208
+        },
+        {
+          "name": "Exotic Orchard",
+          "quantity": 1,
+          "usd": "0.38",
+          "tcgplayerId": 499569,
+          "cardmarketId": 717490
         },
         {
           "name": "Path of Ancestry",
@@ -34866,7 +34866,7 @@
       ]
     },
     "ltc-hosts-of-mordor": {
-      "totalValue": 87.88,
+      "totalValue": 87.9,
       "cardCount": 100,
       "cards": [
         {
@@ -34970,7 +34970,7 @@
         {
           "name": "Blasphemous Act",
           "quantity": 1,
-          "usd": "1.14",
+          "usd": "1.15",
           "tcgplayerId": 499613,
           "cardmarketId": 717411
         },
@@ -35098,6 +35098,13 @@
           "cardmarketId": 717340
         },
         {
+          "name": "Smoldering Marsh",
+          "quantity": 1,
+          "usd": "0.39",
+          "tcgplayerId": 499684,
+          "cardmarketId": 717408
+        },
+        {
           "name": "Revenge of Ravens",
           "quantity": 1,
           "usd": "0.39",
@@ -35145,13 +35152,6 @@
           "usd": "0.38",
           "tcgplayerId": 499591,
           "cardmarketId": 717466
-        },
-        {
-          "name": "Smoldering Marsh",
-          "quantity": 1,
-          "usd": "0.38",
-          "tcgplayerId": 499684,
-          "cardmarketId": 717408
         },
         {
           "name": "Saruman, the White Hand",
@@ -35463,7 +35463,7 @@
       ]
     },
     "40k-forces-of-the-imperium": {
-      "totalValue": 246.92,
+      "totalValue": 247.03,
       "cardCount": 100,
       "cards": [
         {
@@ -35533,7 +35533,7 @@
         {
           "name": "Skullclamp",
           "quantity": 1,
-          "usd": "8.45",
+          "usd": "8.56",
           "tcgplayerId": 286524,
           "cardmarketId": 675760
         },
@@ -36551,7 +36551,7 @@
       ]
     },
     "40k-the-ruinous-powers": {
-      "totalValue": 249.1,
+      "totalValue": 249.15,
       "cardCount": 100,
       "cards": [
         {
@@ -36700,7 +36700,7 @@
         {
           "name": "Blasphemous Act",
           "quantity": 1,
-          "usd": "2.94",
+          "usd": "2.99",
           "tcgplayerId": 286137,
           "cardmarketId": 675215
         },
@@ -37677,7 +37677,7 @@
       ]
     },
     "soc-silverquill-influence": {
-      "totalValue": 73.71,
+      "totalValue": 73.69,
       "cardCount": 100,
       "cards": [
         {
@@ -37775,18 +37775,18 @@
           "cardmarketId": 881492
         },
         {
-          "name": "Fabled Passage",
-          "quantity": 1,
-          "usd": "1.06",
-          "tcgplayerId": 687665,
-          "cardmarketId": 881452
-        },
-        {
           "name": "Sol Ring",
           "quantity": 1,
           "usd": "1.06",
           "tcgplayerId": 687542,
           "cardmarketId": 881450
+        },
+        {
+          "name": "Fabled Passage",
+          "quantity": 1,
+          "usd": "1.04",
+          "tcgplayerId": 687665,
+          "cardmarketId": 881452
         },
         {
           "name": "Eldrazi Conscription",
@@ -37910,7 +37910,7 @@
         {
           "name": "Exotic Orchard",
           "quantity": 1,
-          "usd": "0.35",
+          "usd": "0.36",
           "tcgplayerId": 687675,
           "cardmarketId": 881702
         },
@@ -38097,13 +38097,6 @@
           "cardmarketId": 881531
         },
         {
-          "name": "Promise of Loyalty",
-          "quantity": 1,
-          "usd": "0.26",
-          "tcgplayerId": 686694,
-          "cardmarketId": 881482
-        },
-        {
           "name": "Temple of Silence",
           "quantity": 1,
           "usd": "0.25",
@@ -38130,6 +38123,13 @@
           "usd": "0.25",
           "tcgplayerId": 687405,
           "cardmarketId": 881466
+        },
+        {
+          "name": "Promise of Loyalty",
+          "quantity": 1,
+          "usd": "0.25",
+          "tcgplayerId": 686694,
+          "cardmarketId": 881482
         },
         {
           "name": "Herald of Amity",
@@ -38391,18 +38391,18 @@
           "cardmarketId": 880736
         },
         {
-          "name": "Fabled Passage",
-          "quantity": 1,
-          "usd": "1.06",
-          "tcgplayerId": 687665,
-          "cardmarketId": 881452
-        },
-        {
           "name": "Sol Ring",
           "quantity": 1,
           "usd": "1.06",
           "tcgplayerId": 687542,
           "cardmarketId": 881450
+        },
+        {
+          "name": "Fabled Passage",
+          "quantity": 1,
+          "usd": "1.04",
+          "tcgplayerId": 687665,
+          "cardmarketId": 881452
         },
         {
           "name": "Mystic Sanctuary",
@@ -38426,18 +38426,18 @@
           "cardmarketId": 881571
         },
         {
+          "name": "Blasphemous Act",
+          "quantity": 1,
+          "usd": "0.80",
+          "tcgplayerId": 687417,
+          "cardmarketId": 881557
+        },
+        {
           "name": "Thunderclap Drake",
           "quantity": 1,
           "usd": "0.80",
           "tcgplayerId": 687463,
           "cardmarketId": 881524
-        },
-        {
-          "name": "Blasphemous Act",
-          "quantity": 1,
-          "usd": "0.79",
-          "tcgplayerId": 687417,
-          "cardmarketId": 881557
         },
         {
           "name": "Archmage Emeritus",
@@ -38517,18 +38517,18 @@
           "cardmarketId": 881741
         },
         {
+          "name": "Exotic Orchard",
+          "quantity": 1,
+          "usd": "0.36",
+          "tcgplayerId": 687675,
+          "cardmarketId": 881702
+        },
+        {
           "name": "Curiosity Crafter",
           "quantity": 1,
           "usd": "0.36",
           "tcgplayerId": 687402,
           "cardmarketId": 881511
-        },
-        {
-          "name": "Exotic Orchard",
-          "quantity": 1,
-          "usd": "0.35",
-          "tcgplayerId": 687675,
-          "cardmarketId": 881702
         },
         {
           "name": "Shivan Reef",
@@ -38903,7 +38903,7 @@
       ]
     },
     "soc-witherbloom-pestilence": {
-      "totalValue": 70.43,
+      "totalValue": 70.42,
       "cardCount": 100,
       "cards": [
         {
@@ -39001,18 +39001,18 @@
           "cardmarketId": 881268
         },
         {
-          "name": "Fabled Passage",
-          "quantity": 1,
-          "usd": "1.06",
-          "tcgplayerId": 687665,
-          "cardmarketId": 881452
-        },
-        {
           "name": "Sol Ring",
           "quantity": 1,
           "usd": "1.06",
           "tcgplayerId": 687542,
           "cardmarketId": 881450
+        },
+        {
+          "name": "Fabled Passage",
+          "quantity": 1,
+          "usd": "1.04",
+          "tcgplayerId": 687665,
+          "cardmarketId": 881452
         },
         {
           "name": "Zulaport Cutthroat",
@@ -39211,6 +39211,13 @@
           "cardmarketId": 881532
         },
         {
+          "name": "Exotic Orchard",
+          "quantity": 1,
+          "usd": "0.36",
+          "tcgplayerId": 687675,
+          "cardmarketId": 881702
+        },
+        {
           "name": "Creakwood Liege",
           "quantity": 1,
           "usd": "0.36",
@@ -39223,13 +39230,6 @@
           "usd": "0.36",
           "tcgplayerId": 687508,
           "cardmarketId": 881549
-        },
-        {
-          "name": "Exotic Orchard",
-          "quantity": 1,
-          "usd": "0.35",
-          "tcgplayerId": 687675,
-          "cardmarketId": 881702
         },
         {
           "name": "Ribtruss Roaster",
@@ -39514,7 +39514,7 @@
       ]
     },
     "soc-lorehold-spirit": {
-      "totalValue": 62.73,
+      "totalValue": 62.7,
       "cardCount": 100,
       "cards": [
         {
@@ -39618,13 +39618,6 @@
           "cardmarketId": 881480
         },
         {
-          "name": "Fabled Passage",
-          "quantity": 1,
-          "usd": "1.06",
-          "tcgplayerId": 687665,
-          "cardmarketId": 881452
-        },
-        {
           "name": "Sol Ring",
           "quantity": 1,
           "usd": "1.06",
@@ -39632,9 +39625,16 @@
           "cardmarketId": 881450
         },
         {
+          "name": "Fabled Passage",
+          "quantity": 1,
+          "usd": "1.04",
+          "tcgplayerId": 687665,
+          "cardmarketId": 881452
+        },
+        {
           "name": "Radiant Summit",
           "quantity": 1,
-          "usd": "0.87",
+          "usd": "0.85",
           "tcgplayerId": 687479,
           "cardmarketId": 881729
         },
@@ -39738,18 +39738,18 @@
           "cardmarketId": 881462
         },
         {
+          "name": "Exotic Orchard",
+          "quantity": 1,
+          "usd": "0.36",
+          "tcgplayerId": 687675,
+          "cardmarketId": 881702
+        },
+        {
           "name": "Sun Titan",
           "quantity": 1,
           "usd": "0.35",
           "tcgplayerId": 687544,
           "cardmarketId": 881499
-        },
-        {
-          "name": "Exotic Orchard",
-          "quantity": 1,
-          "usd": "0.35",
-          "tcgplayerId": 687675,
-          "cardmarketId": 881702
         },
         {
           "name": "Atsushi, the Blazing Sky",
@@ -40232,18 +40232,18 @@
           "cardmarketId": 881311
         },
         {
-          "name": "Fabled Passage",
-          "quantity": 1,
-          "usd": "1.06",
-          "tcgplayerId": 687665,
-          "cardmarketId": 881452
-        },
-        {
           "name": "Sol Ring",
           "quantity": 1,
           "usd": "1.06",
           "tcgplayerId": 687542,
           "cardmarketId": 881450
+        },
+        {
+          "name": "Fabled Passage",
+          "quantity": 1,
+          "usd": "1.04",
+          "tcgplayerId": 687665,
+          "cardmarketId": 881452
         },
         {
           "name": "Guardian Augmenter",
@@ -40267,18 +40267,18 @@
           "cardmarketId": 881518
         },
         {
+          "name": "Sodden Verdure",
+          "quantity": 1,
+          "usd": "0.49",
+          "tcgplayerId": 687541,
+          "cardmarketId": 881739
+        },
+        {
           "name": "Tyvar's Stand",
           "quantity": 1,
           "usd": "0.49",
           "tcgplayerId": 687589,
           "cardmarketId": 881624
-        },
-        {
-          "name": "Sodden Verdure",
-          "quantity": 1,
-          "usd": "0.48",
-          "tcgplayerId": 687541,
-          "cardmarketId": 881739
         },
         {
           "name": "Beast Within",
@@ -40316,18 +40316,18 @@
           "cardmarketId": 881621
         },
         {
+          "name": "Exotic Orchard",
+          "quantity": 1,
+          "usd": "0.36",
+          "tcgplayerId": 687675,
+          "cardmarketId": 881702
+        },
+        {
           "name": "Elementalist's Palette",
           "quantity": 1,
           "usd": "0.36",
           "tcgplayerId": 687594,
           "cardmarketId": 881680
-        },
-        {
-          "name": "Exotic Orchard",
-          "quantity": 1,
-          "usd": "0.35",
-          "tcgplayerId": 687675,
-          "cardmarketId": 881702
         },
         {
           "name": "Rogue's Passage",
@@ -40751,7 +40751,7 @@
       ]
     },
     "tmt-turtle-power": {
-      "totalValue": 86.36,
+      "totalValue": 86.34,
       "cardCount": 100,
       "cards": [
         {
@@ -40868,7 +40868,7 @@
         {
           "name": "Fabled Passage",
           "quantity": 1,
-          "usd": "1.87",
+          "usd": "1.85",
           "usd_foil": "5.50",
           "tcgplayerId": 679625,
           "cardmarketId": 873536
