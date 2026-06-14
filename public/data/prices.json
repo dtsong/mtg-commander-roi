@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-13T20:29:48.930Z",
+  "updatedAt": "2026-06-14T00:32:02.359Z",
   "decks": {
     "ltc-elven-council": {
       "totalValue": 92.9,
@@ -544,7 +544,7 @@
       ]
     },
     "ltc-food-and-fellowship": {
-      "totalValue": 82.26,
+      "totalValue": 82.24,
       "cardCount": 100,
       "cards": [
         {
@@ -571,7 +571,7 @@
         {
           "name": "Toxic Deluge",
           "quantity": 1,
-          "usd": "6.19",
+          "usd": "6.17",
           "tcgplayerId": 499504,
           "cardmarketId": 717414
         },
@@ -11236,7 +11236,7 @@
       ]
     },
     "dsc-jump-scare": {
-      "totalValue": 89.56,
+      "totalValue": 89.55,
       "cardCount": 100,
       "cards": [
         {
@@ -11277,7 +11277,7 @@
         {
           "name": "Counterspell",
           "quantity": 1,
-          "usd": "3.69",
+          "usd": "3.68",
           "tcgplayerId": 577794,
           "cardmarketId": 788642
         },
@@ -38905,7 +38905,7 @@
       ]
     },
     "soc-witherbloom-pestilence": {
-      "totalValue": 71.31,
+      "totalValue": 71.36,
       "cardCount": 100,
       "cards": [
         {
@@ -38925,7 +38925,7 @@
         {
           "name": "Toxic Deluge",
           "quantity": 1,
-          "usd": "5.18",
+          "usd": "5.23",
           "tcgplayerId": 687372,
           "cardmarketId": 881442
         },
