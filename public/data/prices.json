@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-20T20:29:44.579Z",
+  "updatedAt": "2026-06-21T00:32:23.608Z",
   "decks": {
     "ltc-elven-council": {
       "totalValue": 91.77,
@@ -22124,7 +22124,7 @@
       ]
     },
     "pip-hail-caesar": {
-      "totalValue": 97.3,
+      "totalValue": 97.29,
       "cardCount": 100,
       "cards": [
         {
@@ -22441,14 +22441,6 @@
           "cardmarketId": 758563
         },
         {
-          "name": "General's Enforcer",
-          "quantity": 1,
-          "usd": "0.37",
-          "usd_foil": "7.02",
-          "tcgplayerId": 540028,
-          "cardmarketId": 758596
-        },
-        {
           "name": "Smoldering Marsh",
           "quantity": 1,
           "usd": "0.37",
@@ -22471,6 +22463,14 @@
           "usd_foil": "2.85",
           "tcgplayerId": 539871,
           "cardmarketId": 758514
+        },
+        {
+          "name": "General's Enforcer",
+          "quantity": 1,
+          "usd": "0.36",
+          "usd_foil": "7.02",
+          "tcgplayerId": 540028,
+          "cardmarketId": 758596
         },
         {
           "name": "Stolen Strategy",
