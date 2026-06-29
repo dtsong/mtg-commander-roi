@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-28T20:27:25.930Z",
+  "updatedAt": "2026-06-29T00:30:15.745Z",
   "decks": {
     "ltc-elven-council": {
       "totalValue": 94.96,
@@ -4315,7 +4315,7 @@
       ]
     },
     "fic-limit-break": {
-      "totalValue": 72.98,
+      "totalValue": 73,
       "cardCount": 100,
       "cards": [
         {
@@ -4948,7 +4948,7 @@
         {
           "name": "Barret, Avalanche Leader",
           "quantity": 1,
-          "usd": "0.15",
+          "usd": "0.17",
           "tcgplayerId": 631119,
           "cardmarketId": 824708
         },
