@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-30T20:39:02.791Z",
+  "updatedAt": "2026-07-01T00:30:45.912Z",
   "decks": {
     "ltc-elven-council": {
       "totalValue": 93.72,
@@ -544,7 +544,7 @@
       ]
     },
     "ltc-food-and-fellowship": {
-      "totalValue": 85.82,
+      "totalValue": 85.8,
       "cardCount": 100,
       "cards": [
         {
@@ -683,18 +683,18 @@
           "cardmarketId": 717492
         },
         {
-          "name": "Woodland Cemetery",
-          "quantity": 1,
-          "usd": "0.54",
-          "tcgplayerId": 499585,
-          "cardmarketId": 717432
-        },
-        {
           "name": "Arcane Signet",
           "quantity": 1,
           "usd": "0.54",
           "tcgplayerId": 499562,
           "cardmarketId": 717140
+        },
+        {
+          "name": "Woodland Cemetery",
+          "quantity": 1,
+          "usd": "0.52",
+          "tcgplayerId": 499585,
+          "cardmarketId": 717432
         },
         {
           "name": "Necroblossom Snarl",
