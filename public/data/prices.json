@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-07-06T20:38:10.888Z",
+  "updatedAt": "2026-07-07T00:27:30.090Z",
   "decks": {
     "ltc-elven-council": {
-      "totalValue": 96.85,
+      "totalValue": 96.83,
       "cardCount": 100,
       "cards": [
         {
@@ -93,7 +93,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.75",
+          "usd": "1.74",
           "tcgplayerId": 488278,
           "cardmarketId": 716208
         },
@@ -163,7 +163,7 @@
         {
           "name": "Cultivate",
           "quantity": 1,
-          "usd": "0.44",
+          "usd": "0.43",
           "tcgplayerId": 499506,
           "cardmarketId": 717430
         },
@@ -543,7 +543,7 @@
       ]
     },
     "ltc-food-and-fellowship": {
-      "totalValue": 88.72,
+      "totalValue": 88.7,
       "cardCount": 100,
       "cards": [
         {
@@ -620,7 +620,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.75",
+          "usd": "1.74",
           "tcgplayerId": 488278,
           "cardmarketId": 716208
         },
@@ -726,7 +726,7 @@
         {
           "name": "Cultivate",
           "quantity": 1,
-          "usd": "0.44",
+          "usd": "0.43",
           "tcgplayerId": 499506,
           "cardmarketId": 717430
         },
@@ -1164,7 +1164,7 @@
       ]
     },
     "ecc-dance-of-the-elements": {
-      "totalValue": 54.37,
+      "totalValue": 54.35,
       "cardCount": 100,
       "cards": [
         {
@@ -1205,7 +1205,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.72",
+          "usd": "1.71",
           "tcgplayerId": 671258,
           "cardmarketId": 864992
         },
@@ -1542,13 +1542,6 @@
           "cardmarketId": 865007
         },
         {
-          "name": "Path of Ancestry",
-          "quantity": 1,
-          "usd": "0.29",
-          "tcgplayerId": 671212,
-          "cardmarketId": 865090
-        },
-        {
           "name": "Fertile Ground",
           "quantity": 1,
           "usd": "0.29",
@@ -1582,6 +1575,13 @@
           "usd": "0.28",
           "tcgplayerId": 671186,
           "cardmarketId": 864995
+        },
+        {
+          "name": "Path of Ancestry",
+          "quantity": 1,
+          "usd": "0.28",
+          "tcgplayerId": 671212,
+          "cardmarketId": 865090
         },
         {
           "name": "Belonging",
@@ -1790,7 +1790,7 @@
       ]
     },
     "ecc-blight-curse": {
-      "totalValue": 42.79,
+      "totalValue": 42.77,
       "cardCount": 100,
       "cards": [
         {
@@ -1817,7 +1817,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.72",
+          "usd": "1.71",
           "tcgplayerId": 671258,
           "cardmarketId": 864992
         },
@@ -2126,13 +2126,6 @@
           "cardmarketId": 865071
         },
         {
-          "name": "Path of Ancestry",
-          "quantity": 1,
-          "usd": "0.29",
-          "tcgplayerId": 671212,
-          "cardmarketId": 865090
-        },
-        {
           "name": "Aberrant Return",
           "quantity": 1,
           "usd": "0.28",
@@ -2159,6 +2152,13 @@
           "usd": "0.28",
           "tcgplayerId": 671186,
           "cardmarketId": 864995
+        },
+        {
+          "name": "Path of Ancestry",
+          "quantity": 1,
+          "usd": "0.28",
+          "tcgplayerId": 671212,
+          "cardmarketId": 865090
         },
         {
           "name": "Sheltered Thicket",
@@ -2390,7 +2390,7 @@
       ]
     },
     "eoc-counter-intelligence": {
-      "totalValue": 54.55,
+      "totalValue": 54.56,
       "cardCount": 100,
       "cards": [
         {
@@ -2445,7 +2445,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.55",
+          "usd": "1.56",
           "tcgplayerId": 642025,
           "cardmarketId": 834083
         },
@@ -3114,7 +3114,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.55",
+          "usd": "1.56",
           "tcgplayerId": 642025,
           "cardmarketId": 834083
         },
@@ -3228,7 +3228,7 @@
         {
           "name": "Cultivate",
           "quantity": 1,
-          "usd": "0.38",
+          "usd": "0.37",
           "tcgplayerId": 644795,
           "cardmarketId": 834100
         },
@@ -3661,7 +3661,7 @@
       ]
     },
     "fic-revival-trance": {
-      "totalValue": 52.45,
+      "totalValue": 52.44,
       "cardCount": 100,
       "cards": [
         {
@@ -3976,13 +3976,6 @@
           "cardmarketId": 824827
         },
         {
-          "name": "Path of Ancestry",
-          "quantity": 1,
-          "usd": "0.30",
-          "tcgplayerId": 631295,
-          "cardmarketId": 824853
-        },
-        {
           "name": "Combustible Gearhulk",
           "quantity": 1,
           "usd": "0.29",
@@ -3995,6 +3988,13 @@
           "usd": "0.29",
           "tcgplayerId": 631170,
           "cardmarketId": 824716
+        },
+        {
+          "name": "Path of Ancestry",
+          "quantity": 1,
+          "usd": "0.29",
+          "tcgplayerId": 631295,
+          "cardmarketId": 824853
         },
         {
           "name": "Bedevil",
@@ -4317,7 +4317,7 @@
       ]
     },
     "fic-limit-break": {
-      "totalValue": 74.55,
+      "totalValue": 74.54,
       "cardCount": 100,
       "cards": [
         {
@@ -4695,13 +4695,6 @@
           "cardmarketId": 824884
         },
         {
-          "name": "Path of Ancestry",
-          "quantity": 1,
-          "usd": "0.30",
-          "tcgplayerId": 631295,
-          "cardmarketId": 824853
-        },
-        {
           "name": "Spire of Industry",
           "quantity": 1,
           "usd": "0.30",
@@ -4736,6 +4729,13 @@
           "usd": "0.29",
           "tcgplayerId": 631293,
           "cardmarketId": 824848
+        },
+        {
+          "name": "Path of Ancestry",
+          "quantity": 1,
+          "usd": "0.29",
+          "tcgplayerId": 631295,
+          "cardmarketId": 824853
         },
         {
           "name": "Secret Rendezvous",
@@ -4980,7 +4980,7 @@
       ]
     },
     "fic-counter-blitz": {
-      "totalValue": 70.53,
+      "totalValue": 70.52,
       "cardCount": 100,
       "cards": [
         {
@@ -5316,13 +5316,6 @@
           "cardmarketId": 824852
         },
         {
-          "name": "Path of Ancestry",
-          "quantity": 1,
-          "usd": "0.30",
-          "tcgplayerId": 631295,
-          "cardmarketId": 824853
-        },
-        {
           "name": "Yuna's Decision",
           "quantity": 1,
           "usd": "0.30",
@@ -5335,6 +5328,13 @@
           "usd": "0.29",
           "tcgplayerId": 631308,
           "cardmarketId": 824674
+        },
+        {
+          "name": "Path of Ancestry",
+          "quantity": 1,
+          "usd": "0.29",
+          "tcgplayerId": 631295,
+          "cardmarketId": 824853
         },
         {
           "name": "Grateful Apparition",
@@ -5641,7 +5641,7 @@
       ]
     },
     "fic-scions-and-spellcraft": {
-      "totalValue": 70.21,
+      "totalValue": 70.19,
       "cardCount": 100,
       "cards": [
         {
@@ -5823,18 +5823,18 @@
           "cardmarketId": 824588
         },
         {
-          "name": "Crux of Fate",
-          "quantity": 1,
-          "usd": "0.37",
-          "tcgplayerId": 631233,
-          "cardmarketId": 824587
-        },
-        {
           "name": "Isolated Chapel",
           "quantity": 1,
           "usd": "0.36",
           "tcgplayerId": 631324,
           "cardmarketId": 824847
+        },
+        {
+          "name": "Crux of Fate",
+          "quantity": 1,
+          "usd": "0.36",
+          "tcgplayerId": 631233,
+          "cardmarketId": 824587
         },
         {
           "name": "Torrential Gearhulk",
@@ -5991,18 +5991,18 @@
           "cardmarketId": 824827
         },
         {
-          "name": "Path of Ancestry",
-          "quantity": 1,
-          "usd": "0.30",
-          "tcgplayerId": 631295,
-          "cardmarketId": 824853
-        },
-        {
           "name": "Summon: Good King Mog XII",
           "quantity": 1,
           "usd": "0.29",
           "tcgplayerId": 631104,
           "cardmarketId": 824514
+        },
+        {
+          "name": "Path of Ancestry",
+          "quantity": 1,
+          "usd": "0.29",
+          "tcgplayerId": 631295,
+          "cardmarketId": 824853
         },
         {
           "name": "Bastion of Remembrance",
@@ -6292,7 +6292,7 @@
       ]
     },
     "tdc-temur-roar": {
-      "totalValue": 71.85,
+      "totalValue": 71.86,
       "cardCount": 100,
       "cards": [
         {
@@ -6378,7 +6378,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.69",
+          "usd": "1.70",
           "tcgplayerId": 624049,
           "cardmarketId": 818720
         },
@@ -6923,7 +6923,7 @@
       ]
     },
     "tdc-abzan-armor": {
-      "totalValue": 75.92,
+      "totalValue": 75.93,
       "cardCount": 100,
       "cards": [
         {
@@ -7000,18 +7000,18 @@
           "cardmarketId": 818863
         },
         {
+          "name": "Sol Ring",
+          "quantity": 1,
+          "usd": "1.70",
+          "tcgplayerId": 624049,
+          "cardmarketId": 818720
+        },
+        {
           "name": "Rhox Faithmender",
           "quantity": 1,
           "usd": "1.69",
           "tcgplayerId": 624658,
           "cardmarketId": 818742
-        },
-        {
-          "name": "Sol Ring",
-          "quantity": 1,
-          "usd": "1.69",
-          "tcgplayerId": 624049,
-          "cardmarketId": 818720
         },
         {
           "name": "Arbor Adherent",
@@ -7522,7 +7522,7 @@
       ]
     },
     "tdc-jeskai-striker": {
-      "totalValue": 49.31,
+      "totalValue": 49.32,
       "cardCount": 100,
       "cards": [
         {
@@ -7570,7 +7570,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.69",
+          "usd": "1.70",
           "tcgplayerId": 624049,
           "cardmarketId": 818720
         },
@@ -8148,7 +8148,7 @@
       ]
     },
     "tdc-sultai-arisen": {
-      "totalValue": 91.74,
+      "totalValue": 91.75,
       "cardCount": 100,
       "cards": [
         {
@@ -8254,7 +8254,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.69",
+          "usd": "1.70",
           "tcgplayerId": 624049,
           "cardmarketId": 818720
         },
@@ -8770,7 +8770,7 @@
       ]
     },
     "tdc-mardu-surge": {
-      "totalValue": 66.79,
+      "totalValue": 66.8,
       "cardCount": 100,
       "cards": [
         {
@@ -8841,7 +8841,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.69",
+          "usd": "1.70",
           "tcgplayerId": 624049,
           "cardmarketId": 818720
         },
@@ -12461,7 +12461,7 @@
       ]
     },
     "blc-squirreled-away": {
-      "totalValue": 108.92,
+      "totalValue": 108.9,
       "cardCount": 100,
       "cards": [
         {
@@ -12588,7 +12588,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.59",
+          "usd": "1.58",
           "tcgplayerId": 559736,
           "cardmarketId": 778981
         },
@@ -12840,13 +12840,6 @@
           "cardmarketId": 779366
         },
         {
-          "name": "Path of Ancestry",
-          "quantity": 1,
-          "usd": "0.34",
-          "tcgplayerId": 559884,
-          "cardmarketId": 803432
-        },
-        {
           "name": "Nadier's Nightblade",
           "quantity": 1,
           "usd": "0.33",
@@ -12859,6 +12852,13 @@
           "usd": "0.33",
           "tcgplayerId": 559727,
           "cardmarketId": 778983
+        },
+        {
+          "name": "Path of Ancestry",
+          "quantity": 1,
+          "usd": "0.33",
+          "tcgplayerId": 559884,
+          "cardmarketId": 803432
         },
         {
           "name": "Maelstrom Pulse",
@@ -13064,7 +13064,7 @@
       ]
     },
     "blc-family-matters": {
-      "totalValue": 63.83,
+      "totalValue": 63.81,
       "cardCount": 100,
       "cards": [
         {
@@ -13106,7 +13106,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.59",
+          "usd": "1.58",
           "tcgplayerId": 559736,
           "cardmarketId": 778981
         },
@@ -13323,13 +13323,6 @@
           "cardmarketId": 779332
         },
         {
-          "name": "Path of Ancestry",
-          "quantity": 1,
-          "usd": "0.34",
-          "tcgplayerId": 559884,
-          "cardmarketId": 803432
-        },
-        {
           "name": "Sun Titan",
           "quantity": 1,
           "usd": "0.34",
@@ -13370,6 +13363,13 @@
           "usd": "0.33",
           "tcgplayerId": 559857,
           "cardmarketId": 779275
+        },
+        {
+          "name": "Path of Ancestry",
+          "quantity": 1,
+          "usd": "0.33",
+          "tcgplayerId": 559884,
+          "cardmarketId": 803432
         },
         {
           "name": "Cloudblazer",
@@ -13699,7 +13699,7 @@
       ]
     },
     "blc-animated-army": {
-      "totalValue": 69.43,
+      "totalValue": 69.41,
       "cardCount": 100,
       "cards": [
         {
@@ -13761,7 +13761,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.59",
+          "usd": "1.58",
           "tcgplayerId": 559736,
           "cardmarketId": 778981
         },
@@ -14085,13 +14085,6 @@
           "cardmarketId": 779396
         },
         {
-          "name": "Path of Ancestry",
-          "quantity": 1,
-          "usd": "0.34",
-          "tcgplayerId": 559884,
-          "cardmarketId": 803432
-        },
-        {
           "name": "Sunbird's Invocation",
           "quantity": 1,
           "usd": "0.33",
@@ -14118,6 +14111,13 @@
           "usd": "0.33",
           "tcgplayerId": 559727,
           "cardmarketId": 778983
+        },
+        {
+          "name": "Path of Ancestry",
+          "quantity": 1,
+          "usd": "0.33",
+          "tcgplayerId": 559884,
+          "cardmarketId": 803432
         },
         {
           "name": "Mind Stone",
@@ -14295,7 +14295,7 @@
       ]
     },
     "blc-peace-offering": {
-      "totalValue": 88.04,
+      "totalValue": 88.03,
       "cardCount": 100,
       "cards": [
         {
@@ -14401,7 +14401,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.59",
+          "usd": "1.58",
           "tcgplayerId": 559736,
           "cardmarketId": 778981
         },
@@ -19980,7 +19980,7 @@
       ]
     },
     "pip-scrappy-survivors": {
-      "totalValue": 120.64,
+      "totalValue": 120.62,
       "cardCount": 100,
       "cards": [
         {
@@ -20593,14 +20593,6 @@
           "cardmarketId": 757861
         },
         {
-          "name": "Path of Ancestry",
-          "quantity": 1,
-          "usd": "0.27",
-          "usd_foil": "0.81",
-          "tcgplayerId": 539349,
-          "cardmarketId": 757718
-        },
-        {
           "name": "Moira Brown, Guide Author",
           "quantity": 1,
           "usd": "0.26",
@@ -20622,6 +20614,14 @@
           "usd_foil": "0.40",
           "tcgplayerId": 539692,
           "cardmarketId": 757907
+        },
+        {
+          "name": "Path of Ancestry",
+          "quantity": 1,
+          "usd": "0.25",
+          "usd_foil": "0.81",
+          "tcgplayerId": 539349,
+          "cardmarketId": 757718
         },
         {
           "name": "Animal Friend",
@@ -20705,7 +20705,7 @@
       ]
     },
     "pip-mutant-menace": {
-      "totalValue": 150.56,
+      "totalValue": 150.54,
       "cardCount": 100,
       "cards": [
         {
@@ -21334,14 +21334,6 @@
           "cardmarketId": 758595
         },
         {
-          "name": "Path of Ancestry",
-          "quantity": 1,
-          "usd": "0.27",
-          "usd_foil": "0.81",
-          "tcgplayerId": 539349,
-          "cardmarketId": 757718
-        },
-        {
           "name": "Nightkin Ambusher",
           "quantity": 1,
           "usd": "0.26",
@@ -21364,6 +21356,14 @@
           "usd_foil": "1.67",
           "tcgplayerId": 540894,
           "cardmarketId": 758585
+        },
+        {
+          "name": "Path of Ancestry",
+          "quantity": 1,
+          "usd": "0.25",
+          "usd_foil": "0.81",
+          "tcgplayerId": 539349,
+          "cardmarketId": 757718
         },
         {
           "name": "Ash Barrens",
@@ -21407,7 +21407,7 @@
       ]
     },
     "pip-science": {
-      "totalValue": 80.87,
+      "totalValue": 80.85,
       "cardCount": 100,
       "cards": [
         {
@@ -21940,14 +21940,6 @@
           "cardmarketId": 758293
         },
         {
-          "name": "Path of Ancestry",
-          "quantity": 1,
-          "usd": "0.27",
-          "usd_foil": "0.81",
-          "tcgplayerId": 539349,
-          "cardmarketId": 757718
-        },
-        {
           "name": "Spire of Industry",
           "quantity": 1,
           "usd": "0.27",
@@ -22018,6 +22010,14 @@
           "usd_foil": "0.45",
           "tcgplayerId": 541416,
           "cardmarketId": 758272
+        },
+        {
+          "name": "Path of Ancestry",
+          "quantity": 1,
+          "usd": "0.25",
+          "usd_foil": "0.81",
+          "tcgplayerId": 539349,
+          "cardmarketId": 757718
         },
         {
           "name": "Nick Valentine, Private Eye",
@@ -22125,7 +22125,7 @@
       ]
     },
     "pip-hail-caesar": {
-      "totalValue": 99.48,
+      "totalValue": 99.46,
       "cardCount": 100,
       "cards": [
         {
@@ -22706,14 +22706,6 @@
           "cardmarketId": 758502
         },
         {
-          "name": "Path of Ancestry",
-          "quantity": 1,
-          "usd": "0.27",
-          "usd_foil": "0.81",
-          "tcgplayerId": 539349,
-          "cardmarketId": 757718
-        },
-        {
           "name": "Marshal's Anthem",
           "quantity": 1,
           "usd": "0.27",
@@ -22744,6 +22736,14 @@
           "usd_foil": "0.53",
           "tcgplayerId": 539970,
           "cardmarketId": 758559
+        },
+        {
+          "name": "Path of Ancestry",
+          "quantity": 1,
+          "usd": "0.25",
+          "usd_foil": "0.81",
+          "tcgplayerId": 539349,
+          "cardmarketId": 757718
         },
         {
           "name": "White Glove Gourmand",
@@ -25311,7 +25311,7 @@
       ]
     },
     "lcc-ahoy-mateys": {
-      "totalValue": 77.39,
+      "totalValue": 77.4,
       "cardCount": 100,
       "cards": [
         {
@@ -25373,7 +25373,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.66",
+          "usd": "1.67",
           "tcgplayerId": 525779,
           "cardmarketId": 743665
         },
@@ -25931,7 +25931,7 @@
       ]
     },
     "lcc-blood-rites": {
-      "totalValue": 121.78,
+      "totalValue": 121.79,
       "cardCount": 100,
       "cards": [
         {
@@ -26029,7 +26029,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.66",
+          "usd": "1.67",
           "tcgplayerId": 525779,
           "cardmarketId": 743665
         },
@@ -26504,7 +26504,7 @@
       ]
     },
     "lcc-explorers-of-the-deep": {
-      "totalValue": 92.26,
+      "totalValue": 92.27,
       "cardCount": 100,
       "cards": [
         {
@@ -26615,7 +26615,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.66",
+          "usd": "1.67",
           "tcgplayerId": 525779,
           "cardmarketId": 743665
         },
@@ -27085,7 +27085,7 @@
       ]
     },
     "lcc-veloci-ramp-tor": {
-      "totalValue": 110.61,
+      "totalValue": 110.62,
       "cardCount": 100,
       "cards": [
         {
@@ -27205,7 +27205,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.66",
+          "usd": "1.67",
           "tcgplayerId": 525779,
           "cardmarketId": 743665
         },
@@ -34280,7 +34280,7 @@
       ]
     },
     "ltc-riders-of-rohan": {
-      "totalValue": 64.44,
+      "totalValue": 64.43,
       "cardCount": 100,
       "cards": [
         {
@@ -34349,7 +34349,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.75",
+          "usd": "1.74",
           "tcgplayerId": 488278,
           "cardmarketId": 716208
         },
@@ -34875,7 +34875,7 @@
       ]
     },
     "ltc-hosts-of-mordor": {
-      "totalValue": 89.24,
+      "totalValue": 89.23,
       "cardCount": 100,
       "cards": [
         {
@@ -34951,7 +34951,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.75",
+          "usd": "1.74",
           "tcgplayerId": 488278,
           "cardmarketId": 716208
         },
@@ -37687,7 +37687,7 @@
       ]
     },
     "soc-silverquill-influence": {
-      "totalValue": 75.15,
+      "totalValue": 75.18,
       "cardCount": 100,
       "cards": [
         {
@@ -37742,7 +37742,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.48",
+          "usd": "1.50",
           "tcgplayerId": 687542,
           "cardmarketId": 881450
         },
@@ -38030,6 +38030,13 @@
           "cardmarketId": 881705
         },
         {
+          "name": "Path of Ancestry",
+          "quantity": 1,
+          "usd": "0.32",
+          "tcgplayerId": 687468,
+          "cardmarketId": 881726
+        },
+        {
           "name": "Parasitic Impetus",
           "quantity": 1,
           "usd": "0.32",
@@ -38049,13 +38056,6 @@
           "usd": "0.31",
           "tcgplayerId": 687549,
           "cardmarketId": 881742
-        },
-        {
-          "name": "Path of Ancestry",
-          "quantity": 1,
-          "usd": "0.31",
-          "tcgplayerId": 687468,
-          "cardmarketId": 881726
         },
         {
           "name": "Fracture",
@@ -38296,7 +38296,7 @@
       ]
     },
     "soc-prismari-artistry": {
-      "totalValue": 71.05,
+      "totalValue": 71.08,
       "cardCount": 100,
       "cards": [
         {
@@ -38387,7 +38387,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.48",
+          "usd": "1.50",
           "tcgplayerId": 687542,
           "cardmarketId": 881450
         },
@@ -38597,6 +38597,13 @@
           "cardmarketId": 881562
         },
         {
+          "name": "Path of Ancestry",
+          "quantity": 1,
+          "usd": "0.32",
+          "tcgplayerId": 687468,
+          "cardmarketId": 881726
+        },
+        {
           "name": "Rousing Refrain",
           "quantity": 1,
           "usd": "0.32",
@@ -38637,13 +38644,6 @@
           "usd": "0.31",
           "tcgplayerId": 687676,
           "cardmarketId": 881703
-        },
-        {
-          "name": "Path of Ancestry",
-          "quantity": 1,
-          "usd": "0.31",
-          "tcgplayerId": 687468,
-          "cardmarketId": 881726
         },
         {
           "name": "Expressive Iteration",
@@ -38913,7 +38913,7 @@
       ]
     },
     "soc-witherbloom-pestilence": {
-      "totalValue": 67.11,
+      "totalValue": 67.14,
       "cardCount": 100,
       "cards": [
         {
@@ -38978,7 +38978,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.48",
+          "usd": "1.50",
           "tcgplayerId": 687542,
           "cardmarketId": 881450
         },
@@ -39306,6 +39306,13 @@
           "cardmarketId": 881702
         },
         {
+          "name": "Path of Ancestry",
+          "quantity": 1,
+          "usd": "0.32",
+          "tcgplayerId": 687468,
+          "cardmarketId": 881726
+        },
+        {
           "name": "Gilded Goose",
           "quantity": 1,
           "usd": "0.32",
@@ -39318,13 +39325,6 @@
           "usd": "0.32",
           "tcgplayerId": 687619,
           "cardmarketId": 881637
-        },
-        {
-          "name": "Path of Ancestry",
-          "quantity": 1,
-          "usd": "0.31",
-          "tcgplayerId": 687468,
-          "cardmarketId": 881726
         },
         {
           "name": "Dina, Soul Steeper",
@@ -39524,7 +39524,7 @@
       ]
     },
     "soc-lorehold-spirit": {
-      "totalValue": 60.84,
+      "totalValue": 60.86,
       "cardCount": 100,
       "cards": [
         {
@@ -39600,7 +39600,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.48",
+          "usd": "1.50",
           "tcgplayerId": 687542,
           "cardmarketId": 881450
         },
@@ -40130,7 +40130,7 @@
       ]
     },
     "soc-quandrix-unlimited": {
-      "totalValue": 63,
+      "totalValue": 63.03,
       "cardCount": 100,
       "cards": [
         {
@@ -40206,7 +40206,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.48",
+          "usd": "1.50",
           "tcgplayerId": 687542,
           "cardmarketId": 881450
         },
@@ -40389,6 +40389,13 @@
           "cardmarketId": 881597
         },
         {
+          "name": "Path of Ancestry",
+          "quantity": 1,
+          "usd": "0.32",
+          "tcgplayerId": 687468,
+          "cardmarketId": 881726
+        },
+        {
           "name": "Hinterland Harbor",
           "quantity": 1,
           "usd": "0.32",
@@ -40408,13 +40415,6 @@
           "usd": "0.31",
           "tcgplayerId": 687681,
           "cardmarketId": 881706
-        },
-        {
-          "name": "Path of Ancestry",
-          "quantity": 1,
-          "usd": "0.31",
-          "tcgplayerId": 687468,
-          "cardmarketId": 881726
         },
         {
           "name": "Owlin Spiralmancer",
@@ -40761,7 +40761,7 @@
       ]
     },
     "tmt-turtle-power": {
-      "totalValue": 86.27,
+      "totalValue": 86.29,
       "cardCount": 100,
       "cards": [
         {
@@ -40932,7 +40932,7 @@
         {
           "name": "Sol Ring",
           "quantity": 1,
-          "usd": "1.04",
+          "usd": "1.06",
           "tcgplayerId": 697576,
           "cardmarketId": 891875
         },
