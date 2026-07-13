@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-12T20:16:37.791Z",
+  "updatedAt": "2026-07-13T00:22:20.490Z",
   "decks": {
     "ltc-elven-council": {
       "totalValue": 97.93,
@@ -1164,7 +1164,7 @@
       ]
     },
     "ecc-dance-of-the-elements": {
-      "totalValue": 53.28,
+      "totalValue": 53.25,
       "cardCount": 100,
       "cards": [
         {
@@ -1177,7 +1177,7 @@
         {
           "name": "Endurance",
           "quantity": 1,
-          "usd": "3.97",
+          "usd": "3.94",
           "tcgplayerId": 671173,
           "cardmarketId": 864986
         },
@@ -3660,7 +3660,7 @@
       ]
     },
     "fic-revival-trance": {
-      "totalValue": 52.9,
+      "totalValue": 52.92,
       "cardCount": 100,
       "cards": [
         {
@@ -3828,6 +3828,13 @@
           "cardmarketId": 824844
         },
         {
+          "name": "Night's Whisper",
+          "quantity": 1,
+          "usd": "0.37",
+          "tcgplayerId": 631578,
+          "cardmarketId": 824592
+        },
+        {
           "name": "Stitcher's Supplier",
           "quantity": 1,
           "usd": "0.36",
@@ -3861,13 +3868,6 @@
           "usd": "0.36",
           "tcgplayerId": 631569,
           "cardmarketId": 824618
-        },
-        {
-          "name": "Night's Whisper",
-          "quantity": 1,
-          "usd": "0.35",
-          "tcgplayerId": 631578,
-          "cardmarketId": 824592
         },
         {
           "name": "Wayfarer's Bauble",
