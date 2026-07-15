@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-14T20:25:22.018Z",
+  "updatedAt": "2026-07-15T00:18:17.188Z",
   "decks": {
     "ltc-elven-council": {
       "totalValue": 98.23,
@@ -8769,7 +8769,7 @@
       ]
     },
     "tdc-mardu-surge": {
-      "totalValue": 68.92,
+      "totalValue": 68.93,
       "cardCount": 100,
       "cards": [
         {
@@ -9133,6 +9133,13 @@
           "cardmarketId": 818728
         },
         {
+          "name": "Solemn Simulacrum",
+          "quantity": 1,
+          "usd": "0.32",
+          "tcgplayerId": 624344,
+          "cardmarketId": 818898
+        },
+        {
           "name": "Talisman of Conviction",
           "quantity": 1,
           "usd": "0.32",
@@ -9145,13 +9152,6 @@
           "usd": "0.32",
           "tcgplayerId": 624302,
           "cardmarketId": 818915
-        },
-        {
-          "name": "Solemn Simulacrum",
-          "quantity": 1,
-          "usd": "0.31",
-          "tcgplayerId": 624344,
-          "cardmarketId": 818898
         },
         {
           "name": "Sun Titan",
@@ -10626,7 +10626,7 @@
       ]
     },
     "dsc-endless-punishment": {
-      "totalValue": 178.3,
+      "totalValue": 178.31,
       "cardCount": 100,
       "cards": [
         {
@@ -11054,6 +11054,13 @@
           "cardmarketId": 788735
         },
         {
+          "name": "Solemn Simulacrum",
+          "quantity": 1,
+          "usd": "0.35",
+          "tcgplayerId": 579107,
+          "cardmarketId": 788992
+        },
+        {
           "name": "Blood Pact",
           "quantity": 1,
           "usd": "0.35",
@@ -11073,13 +11080,6 @@
           "usd": "0.34",
           "tcgplayerId": 579043,
           "cardmarketId": 788964
-        },
-        {
-          "name": "Solemn Simulacrum",
-          "quantity": 1,
-          "usd": "0.34",
-          "tcgplayerId": 579107,
-          "cardmarketId": 788992
         },
         {
           "name": "Shadowblood Ridge",
@@ -11832,7 +11832,7 @@
       ]
     },
     "dsc-miracle-worker": {
-      "totalValue": 104.21,
+      "totalValue": 104.22,
       "cardCount": 100,
       "cards": [
         {
@@ -12126,6 +12126,13 @@
           "cardmarketId": 787928
         },
         {
+          "name": "Solemn Simulacrum",
+          "quantity": 1,
+          "usd": "0.35",
+          "tcgplayerId": 579107,
+          "cardmarketId": 788992
+        },
+        {
           "name": "Extravagant Replication",
           "quantity": 1,
           "usd": "0.35",
@@ -12145,13 +12152,6 @@
           "usd": "0.34",
           "tcgplayerId": 579010,
           "cardmarketId": 788725
-        },
-        {
-          "name": "Solemn Simulacrum",
-          "quantity": 1,
-          "usd": "0.34",
-          "tcgplayerId": 579107,
-          "cardmarketId": 788992
         },
         {
           "name": "Otherworldly Gaze",
@@ -29948,7 +29948,7 @@
       ]
     },
     "who-masters-of-evil": {
-      "totalValue": 156.57,
+      "totalValue": 156.55,
       "cardCount": 100,
       "cards": [
         {
@@ -30224,14 +30224,6 @@
           "cardmarketId": 738599
         },
         {
-          "name": "Solemn Simulacrum",
-          "quantity": 1,
-          "usd": "0.41",
-          "usd_foil": "1.05",
-          "tcgplayerId": 520002,
-          "cardmarketId": 739109
-        },
-        {
           "name": "Temple of Malice",
           "quantity": 1,
           "usd": "0.41",
@@ -30255,6 +30247,14 @@
           "usd_foil": "3.25",
           "tcgplayerId": 519947,
           "cardmarketId": 739205
+        },
+        {
+          "name": "Solemn Simulacrum",
+          "quantity": 1,
+          "usd": "0.39",
+          "usd_foil": "1.05",
+          "tcgplayerId": 520002,
+          "cardmarketId": 739109
         },
         {
           "name": "The Flood of Mars",
@@ -41445,7 +41445,7 @@
       ]
     },
     "dsc-death-toll": {
-      "totalValue": 80.41,
+      "totalValue": 80.42,
       "cardCount": 100,
       "cards": [
         {
@@ -41739,6 +41739,13 @@
           "cardmarketId": 788883
         },
         {
+          "name": "Solemn Simulacrum",
+          "quantity": 1,
+          "usd": "0.35",
+          "tcgplayerId": 579107,
+          "cardmarketId": 788992
+        },
+        {
           "name": "Demonic Covenant",
           "quantity": 1,
           "usd": "0.35",
@@ -41772,13 +41779,6 @@
           "usd": "0.34",
           "tcgplayerId": 579035,
           "cardmarketId": 788958
-        },
-        {
-          "name": "Solemn Simulacrum",
-          "quantity": 1,
-          "usd": "0.34",
-          "tcgplayerId": 579107,
-          "cardmarketId": 788992
         },
         {
           "name": "Golgari Signet",
