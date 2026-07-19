@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-18T20:16:10.863Z",
+  "updatedAt": "2026-07-19T00:21:19.174Z",
   "decks": {
     "ltc-elven-council": {
       "totalValue": 97.16,
@@ -9386,7 +9386,7 @@
       ]
     },
     "drc-living-energy": {
-      "totalValue": 52.97,
+      "totalValue": 52.99,
       "cardCount": 100,
       "cards": [
         {
@@ -9455,7 +9455,7 @@
         {
           "name": "Treasure Vault",
           "quantity": 1,
-          "usd": "1.05",
+          "usd": "1.07",
           "tcgplayerId": 615181,
           "cardmarketId": 808043
         },
@@ -14936,13 +14936,13 @@
       ]
     },
     "m3c-graveyard-overdrive": {
-      "totalValue": 95.43,
+      "totalValue": 95.74,
       "cardCount": 100,
       "cards": [
         {
           "name": "The Reaver Cleaver",
           "quantity": 1,
-          "usd": "16.58",
+          "usd": "16.89",
           "tcgplayerId": 553539,
           "cardmarketId": 773195
         },
@@ -21401,7 +21401,7 @@
       ]
     },
     "pip-science": {
-      "totalValue": 84.38,
+      "totalValue": 84.37,
       "cardCount": 100,
       "cards": [
         {
@@ -21495,7 +21495,7 @@
         {
           "name": "Treasure Vault",
           "quantity": 1,
-          "usd": "1.56",
+          "usd": "1.55",
           "usd_foil": "3.28",
           "tcgplayerId": 540957,
           "cardmarketId": 758330
