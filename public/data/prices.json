@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-19T20:17:31.040Z",
+  "updatedAt": "2026-07-20T00:23:15.777Z",
   "decks": {
     "ltc-elven-council": {
       "totalValue": 97.95,
@@ -10624,7 +10624,7 @@
       ]
     },
     "dsc-endless-punishment": {
-      "totalValue": 181.02,
+      "totalValue": 181.05,
       "cardCount": 100,
       "cards": [
         {
@@ -10694,18 +10694,18 @@
           "cardmarketId": 788539
         },
         {
+          "name": "Basilisk Collar",
+          "quantity": 1,
+          "usd": "5.11",
+          "tcgplayerId": 578911,
+          "cardmarketId": 788980
+        },
+        {
           "name": "Lightning Greaves",
           "quantity": 1,
           "usd": "5.11",
           "tcgplayerId": 578899,
           "cardmarketId": 788575
-        },
-        {
-          "name": "Basilisk Collar",
-          "quantity": 1,
-          "usd": "5.08",
-          "tcgplayerId": 578911,
-          "cardmarketId": 788980
         },
         {
           "name": "Graven Cairns",
@@ -19976,7 +19976,7 @@
       ]
     },
     "pip-scrappy-survivors": {
-      "totalValue": 123.07,
+      "totalValue": 122.99,
       "cardCount": 100,
       "cards": [
         {
@@ -20014,7 +20014,7 @@
         {
           "name": "Basilisk Collar",
           "quantity": 1,
-          "usd": "5.52",
+          "usd": "5.44",
           "usd_foil": "6.94",
           "tcgplayerId": 539581,
           "cardmarketId": 757898
@@ -38292,7 +38292,7 @@
       ]
     },
     "soc-prismari-artistry": {
-      "totalValue": 68.08,
+      "totalValue": 68.09,
       "cardCount": 100,
       "cards": [
         {
@@ -38495,18 +38495,18 @@
           "cardmarketId": 881553
         },
         {
+          "name": "Big Score",
+          "quantity": 1,
+          "usd": "0.40",
+          "tcgplayerId": 687495,
+          "cardmarketId": 881556
+        },
+        {
           "name": "Coastal Peak",
           "quantity": 1,
           "usd": "0.40",
           "tcgplayerId": 687592,
           "cardmarketId": 881395
-        },
-        {
-          "name": "Big Score",
-          "quantity": 1,
-          "usd": "0.39",
-          "tcgplayerId": 687495,
-          "cardmarketId": 881556
         },
         {
           "name": "Plargg and Nassari",
