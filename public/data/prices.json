@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-21T20:27:19.206Z",
+  "updatedAt": "2026-07-22T00:20:50.895Z",
   "decks": {
     "ltc-elven-council": {
       "totalValue": 98.29,
@@ -8771,7 +8771,7 @@
       ]
     },
     "tdc-mardu-surge": {
-      "totalValue": 69.78,
+      "totalValue": 69.77,
       "cardCount": 100,
       "cards": [
         {
@@ -9051,13 +9051,6 @@
           "cardmarketId": 818746
         },
         {
-          "name": "Solemn Simulacrum",
-          "quantity": 1,
-          "usd": "0.35",
-          "tcgplayerId": 624344,
-          "cardmarketId": 818898
-        },
-        {
           "name": "Wayfarer's Bauble",
           "quantity": 1,
           "usd": "0.35",
@@ -9084,6 +9077,13 @@
           "usd": "0.34",
           "tcgplayerId": 624285,
           "cardmarketId": 818731
+        },
+        {
+          "name": "Solemn Simulacrum",
+          "quantity": 1,
+          "usd": "0.34",
+          "tcgplayerId": 624344,
+          "cardmarketId": 818898
         },
         {
           "name": "Command Tower",
