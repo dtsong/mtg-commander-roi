@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-24T20:29:58.102Z",
+  "updatedAt": "2026-07-25T00:24:14.381Z",
   "decks": {
     "ltc-elven-council": {
       "totalValue": 98.51,
@@ -544,7 +544,7 @@
       ]
     },
     "ltc-food-and-fellowship": {
-      "totalValue": 86.52,
+      "totalValue": 86.55,
       "cardCount": 100,
       "cards": [
         {
@@ -564,7 +564,7 @@
         {
           "name": "The Gaffer",
           "quantity": 1,
-          "usd": "7.18",
+          "usd": "7.21",
           "tcgplayerId": 499812,
           "cardmarketId": 717147
         },
