@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-07-27T20:31:05.737Z",
+  "updatedAt": "2026-07-28T00:21:54.296Z",
   "decks": {
     "ltc-elven-council": {
-      "totalValue": 99.98,
+      "totalValue": 100.01,
       "cardCount": 100,
       "cards": [
         {
@@ -65,7 +65,7 @@
         {
           "name": "Arwen, Weaver of Hope",
           "quantity": 1,
-          "usd": "3.59",
+          "usd": "3.62",
           "tcgplayerId": 499578,
           "cardmarketId": 717360
         },
